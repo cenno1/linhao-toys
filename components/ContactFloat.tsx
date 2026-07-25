@@ -1,1 +1,1 @@
-export default function ContactFloat(){return <div className="contact-float"><a href="mailto:sales@linhaotoys.com" aria-label="Email LINHAO">Email</a><a href="/contact" className="quote">Get Quote</a></div>}
+export default function ContactFloat(){return <div className="contact-float"><a href="mailto:info@lh-industrial.com" aria-label="Email LINHAO">Email</a><a href="/contact" className="quote">Get Quote</a></div>}
