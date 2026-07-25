@@ -31,8 +31,8 @@ export default function ContactPage() {
             <p className="mt-4 leading-7 text-slate-600">
               Attach your design or reference image and include the quantity, size, market and deadline.
             </p>
-            <a href="mailto:sales@linhaotoys.com" className="mt-8 inline-flex rounded-full bg-blue-600 px-7 py-4 font-black text-white shadow-lg shadow-blue-600/20">
-              sales@linhaotoys.com
+            <a href="mailto:info@lh-industrial.com" className="mt-8 inline-flex rounded-full bg-blue-600 px-7 py-4 font-black text-white shadow-lg shadow-blue-600/20">
+              info@lh-industrial.com
             </a>
           </div>
           <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-8 text-white shadow-sm">
