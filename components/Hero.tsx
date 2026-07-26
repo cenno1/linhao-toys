@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const hero = [
-  { src: "/images/real-products/glitter-buns.jpg", alt: "Glitter bun squishy toys" },
-  { src: "/images/real-products/butter-sticks.jpg", alt: "Butter stick squishy toys" },
-  { src: "/images/real-products/mini-squishy-assortment.jpg", alt: "Mini animal squishy assortment" },
-  { src: "/images/real-products/flower-bag-charm.jpg", alt: "Flower bag charm" },
+  { src: "/images/real-products/glitter-buns.jpg", alt: "OEM glitter bao bun squishy toy custom design wholesale supplier LINHAO China toy manufacturer" },
+  { src: "/images/blue-basket.png", alt: "OEM blue glitter basket squishy export bestseller wholesale China toy manufacturer LINHAO" },
+  { src: "/images/real-products/butter-sticks.jpg", alt: "OEM butter stick food squishy custom color wholesale China supplier LINHAO" },
+  { src: "/images/real-products/mini-squishy-assortment.jpg", alt: "OEM mini animal squishy assortment blind box wholesale China toy manufacturer LINHAO" },
 ];
 
 export default function Hero() {
