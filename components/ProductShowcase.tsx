@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { buildProductInquiryMailto } from "@/lib/product-utils";
 import { products } from "@/lib/products";
 
 export default function ProductShowcase() {
@@ -24,7 +25,7 @@ export default function ProductShowcase() {
                 <span>{p.category}</span>
                 <h3>{p.name}</h3>
                 <p>{p.note}</p>
-                <a href={`mailto:sales@linhaotoys.com?subject=${encodeURIComponent(`Inquiry about ${p.name}`)}`}>Request price & samples →</a>
+                <a href={buildProductInquiryMailto(p.name)}>Request price & samples →</a>
               </div>
             </article>
           ))}
