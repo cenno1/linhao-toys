@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { INQUIRY_EMAIL } from "@/lib/product-utils";
 
 export const metadata: Metadata = {
   title: "Contact LINHAO Toys",
@@ -31,8 +32,8 @@ export default function ContactPage() {
             <p className="mt-4 leading-7 text-slate-600">
               Attach your design or reference image and include the quantity, size, market and deadline.
             </p>
-            <a href="mailto:info@lh-industrial.com" className="mt-8 inline-flex rounded-full bg-blue-600 px-7 py-4 font-black text-white shadow-lg shadow-blue-600/20">
-              info@lh-industrial.com
+            <a href={`mailto:${INQUIRY_EMAIL}`} className="mt-8 inline-flex rounded-full bg-blue-600 px-7 py-4 font-black text-white shadow-lg shadow-blue-600/20">
+              {INQUIRY_EMAIL}
             </a>
           </div>
           <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-8 text-white shadow-sm">

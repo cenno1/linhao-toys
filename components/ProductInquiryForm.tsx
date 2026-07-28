@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import {
   buildProductInquiryMailtoFromForm,
+  INQUIRY_EMAIL,
   type ProductInquiryFormData,
 } from "@/lib/product-utils";
 
@@ -117,7 +118,7 @@ export default function ProductInquiryForm({ productName }: ProductInquiryFormPr
           Send inquiry via email →
         </button>
         <p className="mt-3 text-xs leading-6 text-slate-500">
-          Opens your email client with a pre-filled message to sales@lh-industrial.com.
+          Opens your email client with a pre-filled message to {INQUIRY_EMAIL}.
         </p>
       </div>
     </form>

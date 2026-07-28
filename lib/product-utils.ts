@@ -111,7 +111,7 @@ export function getCustomizationOptions(filterGroup: ProductFilterGroup): string
   return options[filterGroup];
 }
 
-const INQUIRY_EMAIL = "sales@lh-industrial.com";
+export const INQUIRY_EMAIL = "sales@lh-industrial.com";
 
 export function buildProductInquiryMailto(productName: string): string {
   const body = [

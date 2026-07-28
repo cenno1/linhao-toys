@@ -33,7 +33,7 @@ export default function ProductShowcase() {
         <div className="v7-heading">
           <div>
             <span className="eyebrow">REAL SAMPLE GALLERY</span>
-            <h2>Hot-looking products, not placeholder illustrations.</h2>
+            <h2>Wholesale-ready squishy &amp; plush SKUs for Amazon, retail and OEM.</h2>
           </div>
           <p>
             These images come from LINHAO&apos;s supplied product catalogue and existing
