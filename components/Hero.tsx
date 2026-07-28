@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { getHeroProducts } from "@/lib/product-utils";
+import { getHeroProducts, INQUIRY_EMAIL } from "@/lib/product-utils";
 
 const hero = getHeroProducts().map((product) => ({
   src: product.images.hero,
@@ -16,7 +16,7 @@ export default function Hero() {
           <p>Real LINHAO sample photography across glitter squishies, food shapes, mini sensory toys, plush gifts and bag accessories—supported by custom colors, faces, packaging and private label development.</p>
           <div className="hero-actions">
             <a className="btn btn-primary btn-lg" href="#products">Browse real products</a>
-            <a className="btn btn-outline btn-lg" href="mailto:sales@linhaotoys.com?subject=New%20OEM%20Project">Start an OEM project</a>
+            <a className="btn btn-outline btn-lg" href={`mailto:${INQUIRY_EMAIL}?subject=${encodeURIComponent("New OEM Project")}`}>Start an OEM project</a>
           </div>
           <div className="v7-proof">
             <div><b>500+</b><span>custom projects</span></div>
