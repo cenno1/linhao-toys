@@ -41,7 +41,7 @@ export const products: Product[] = [
     name: "OEM Glitter Bao Bun Squishy",
     category: "Glitter Squishy · OEM/ODM",
     tag: "OEM Available",
-    note: "Steamer-bun squishy with embedded glitter — strong impulse-buy appeal for retail shelves and gift stores. OEM/ODM: custom colors, faces, glitter fill, hangtags and retail packaging. Wholesale-ready for Amazon sellers, importers and chain retailers.",
+    note: "Glitter steamer-bun squishy with strong shelf appeal for gift and impulse retail. OEM colors, faces and packaging for Amazon sellers and wholesale importers.",
     alt: "OEM glitter bao bun squishy wholesale Amazon seller retail custom design LINHAO China toy manufacturer",
     keywords: [
       "OEM toy manufacturer",
@@ -60,7 +60,7 @@ export const products: Product[] = [
     name: "OEM Glitter Basket Squishy — Blue",
     category: "Glitter Squishy · Wholesale",
     tag: "Export Bestseller",
-    note: "Top export SKU with slow-rise glitter basket format and proven repeat orders. OEM/ODM: color series, face print, PDQ boxes and private label packaging. Ideal for Amazon FBA, claw machine operators and wholesale distributors.",
+    note: "Slow-rise glitter basket — LINHAO's top export SKU with repeat orders. Custom color series and private label for Amazon FBA and distributors.",
     alt: "OEM blue glitter basket squishy export bestseller wholesale Amazon FBA LINHAO China manufacturer",
     keywords: [
       "OEM toy manufacturer",
@@ -80,7 +80,7 @@ export const products: Product[] = [
     name: "OEM Butter Stick Food Squishy",
     category: "Food Squishy · OEM/ODM",
     tag: "Custom Color",
-    note: "Viral food-trend stretch squishy with long-format squeeze recovery for social-driven retail. OEM/ODM: custom food shapes, colors, scent and print artwork. Built for Amazon sellers, promotional wholesalers and gift retailers.",
+    note: "Viral food-trend stretch squishy with long-format recovery. Custom shapes and colors for Amazon sellers and promotional buyers.",
     alt: "OEM butter stick food squishy wholesale Amazon seller custom color LINHAO China supplier",
     keywords: [
       "OEM toy manufacturer",
@@ -100,7 +100,7 @@ export const products: Product[] = [
     name: "OEM Mini Animal Squishy Mix",
     category: "Mini Sensory · Wholesale",
     tag: "Blind Box Ready",
-    note: "20+ mini designs in one wholesale program — ready for blind bags, party packs and vending. OEM/ODM: custom animal mix, branded blind bags and display inner packs. For Amazon sellers, party favor distributors and retail buyers.",
+    note: "20+ mini designs for blind bags, party packs and vending. Custom mix and branded bags for Amazon and party favor wholesalers.",
     alt: "OEM mini animal squishy assortment blind box wholesale Amazon seller LINHAO China manufacturer",
     keywords: [
       "OEM toy manufacturer",
@@ -120,7 +120,7 @@ export const products: Product[] = [
     name: "OEM Halloween Shiny Bao Squishy",
     category: "Seasonal Squishy · OEM/ODM",
     tag: "Blind Box Ready",
-    note: "Halloween Mystery line with 6 glitter baozi designs for seasonal retail windows. OEM/ODM: custom faces, glitter colors, blind box artwork and PDQ shippers. Wholesale program for Amazon sellers, gift chains and seasonal importers.",
+    note: "Seasonal blind box line with 6 glitter baozi designs. Custom artwork and PDQ shippers for seasonal retail and Amazon sellers.",
     alt: "OEM Halloween shiny bao squishy blind box wholesale retail Amazon seller LINHAO China manufacturer",
     keywords: [
       "OEM toy manufacturer",
@@ -139,7 +139,7 @@ export const products: Product[] = [
     name: "OEM Taba Jelly Squeeze Ball",
     category: "Taba Squishy · Wholesale",
     tag: "OEM Available",
-    note: "Transparent taba jelly compound with high visual and squeeze appeal for fidget retail. OEM/ODM: custom colors, glitter inclusions and size tiers. Supply-ready for Amazon sellers, sensory toy retailers and wholesale importers.",
+    note: "Transparent taba jelly with high visual squeeze appeal. Custom colors and sizes for sensory retailers and Amazon FBA.",
     alt: "OEM taba jelly squeeze ball sensory toy wholesale Amazon seller LINHAO China manufacturer",
     keywords: [
       "OEM toy manufacturer",
@@ -157,7 +157,7 @@ export const products: Product[] = [
     name: "OEM Comfort Cat Plush Toy",
     category: "Emotional Plush · OEM/ODM",
     tag: "Custom Color",
-    note: "Soft emotional plush with expressive face — strong gifting and desk décor positioning. OEM/ODM: character design, fabric colors, embroidery and gift box branding. For Amazon sellers, gift brands and promotional wholesale buyers.",
+    note: "Soft emotional plush with expressive face for gifting and desk décor. Character and packaging OEM for gift brands and Amazon sellers.",
     alt: "OEM comfort cat plush toy wholesale Amazon seller emotional gift LINHAO China manufacturer",
     keywords: [
       "OEM plush manufacturer",
@@ -175,7 +175,7 @@ export const products: Product[] = [
     name: "OEM Long-Ear Mood Bunny Plush",
     category: "Emotional Plush · Wholesale",
     tag: "OEM Available",
-    note: "Long-ear mood character ready for collectible series and mascot IP development. OEM/ODM: expression variants, size family and branded hangtags. Wholesale program for retailers, Amazon private label and character licensors.",
+    note: "Long-ear mood character for collectible series and mascot IP. Expression variants for retailers and private label programs.",
     alt: "OEM mood bunny plush character series wholesale Amazon seller LINHAO China manufacturer",
     keywords: [
       "OEM plush manufacturer",
@@ -193,7 +193,7 @@ export const products: Product[] = [
     name: "OEM Flower Plush Bag Charm",
     category: "Bag Accessories · OEM/ODM",
     tag: "Custom Packaging",
-    note: "Lightweight flower clip-on with keyring for bag charm and accessory programs. OEM/ODM: flower styles, colorways, logo tags and retail card packaging. For accessory brands, Amazon sellers and gift add-on wholesalers.",
+    note: "Lightweight flower clip-on with keyring for bag charm programs. Custom styles and retail cards for accessory brands and Amazon sellers.",
     alt: "OEM flower plush bag charm wholesale Amazon seller keychain accessory LINHAO China supplier",
     keywords: [
       "OEM toy manufacturer",
@@ -211,7 +211,7 @@ export const products: Product[] = [
     name: "OEM Mini Kitty Desk Buddy Plush",
     category: "Desk Companion · Wholesale",
     tag: "OEM Available",
-    note: "Mini cat desk display format built for collectible and impulse retail sets. OEM/ODM: animal + furniture combos, 6–12 SKU series and display tray packaging. Wholesale-ready for gift shops, Amazon sellers and novelty retailers.",
+    note: "Mini cat desk display for collectible impulse sets. 6–12 SKU series with display trays for gift shops and Amazon sellers.",
     alt: "OEM mini kitty desk buddy plush wholesale Amazon seller collectible LINHAO China manufacturer",
     keywords: [
       "OEM plush manufacturer",
@@ -229,7 +229,7 @@ export const products: Product[] = [
     name: "OEM Light-Up Robot Gift Toy",
     category: "Interactive Gift · OEM/ODM",
     tag: "Custom Color",
-    note: "LED light and movement features for higher perceived value in gift and promo channels. OEM/ODM: custom shapes, LED programs, battery labeling and branded gift boxes. For promotional distributors, Amazon sellers and retail chains.",
+    note: "LED light and movement for higher gift perceived value. Custom shapes and branded boxes for promo distributors and retail chains.",
     alt: "OEM light up robot toy wholesale Amazon seller promotional gift LINHAO China manufacturer",
     keywords: [
       "OEM toy manufacturer",
@@ -247,7 +247,7 @@ export const products: Product[] = [
     name: "OEM Custom Retail Gift Set",
     category: "OEM / ODM · Turnkey",
     tag: "OEM Available",
-    note: "Turnkey OEM/ODM from your reference to finished retail gift set — squishy, plush, accessory and packaging in one program. Full private label support for brand owners, Amazon sellers and retail chain buyers seeking wholesale-ready collections.",
+    note: "Turnkey squishy, plush, accessory and packaging in one program. Private label collections for brand owners and Amazon wholesale buyers.",
     alt: "OEM custom retail gift set private label wholesale Amazon seller LINHAO China toy manufacturer",
     keywords: [
       "OEM toy manufacturer",
