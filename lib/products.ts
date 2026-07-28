@@ -29,9 +29,9 @@ export type Product = {
 function images(slug: string, hero: string): ProductImageSet {
   return {
     hero,
-    detail: `/images/products/${slug}/detail.jpg`,
-    packaging: `/images/products/${slug}/packaging.jpg`,
-    oemCase: `/images/products/${slug}/oem-case.jpg`,
+    detail: `/images/products/${slug}/detail.png`,
+    packaging: `/images/products/${slug}/packaging.png`,
+    oemCase: `/images/products/${slug}/oem-case.png`,
   };
 }
 
@@ -51,7 +51,7 @@ export const products: Product[] = [
       "glitter food squishy OEM",
       "bao bun squishy wholesale",
     ],
-    images: images("glitter-bao-bun", "/images/real-products/glitter-buns.jpg"),
+    images: images("glitter-bao-bun", "/images/products/glitter-bao-bun/hero.png"),
     featured: true,
     filterGroup: "squishy",
   },
@@ -70,7 +70,7 @@ export const products: Product[] = [
       "glitter basket squishy OEM",
       "export squishy wholesale",
     ],
-    images: images("glitter-basket-blue", "/images/blue-basket.png"),
+    images: images("glitter-basket-blue", "/images/products/glitter-basket-blue/hero.png"),
     featured: true,
     bestseller: true,
     filterGroup: "squishy",
@@ -90,7 +90,7 @@ export const products: Product[] = [
       "food squishy OEM",
       "butter stick squishy wholesale",
     ],
-    images: images("butter-stick", "/images/real-products/butter-sticks.jpg"),
+    images: images("butter-stick", "/images/products/butter-stick/hero.png"),
     featured: true,
     bestseller: true,
     filterGroup: "squishy",
@@ -110,7 +110,7 @@ export const products: Product[] = [
       "mini squishy assortment OEM",
       "blind box squishy wholesale",
     ],
-    images: images("mini-animal-mix", "/images/real-products/mini-squishy-assortment.jpg"),
+    images: images("mini-animal-mix", "/images/products/mini-animal-mix/hero.png"),
     featured: true,
     bestseller: true,
     filterGroup: "squishy",
