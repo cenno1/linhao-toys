@@ -1,8 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import Image from "next/image";
-import { buildProductInquiryMailto } from "@/lib/product-utils";
 import { products, type ProductFilterGroup } from "@/lib/products";
 
 type FilterOption = { label: string; value: "all" | ProductFilterGroup };
@@ -60,7 +60,7 @@ export default function ProductShowcase() {
 
             return (
               <article className="v7-card" key={p.slug}>
-                <div className="v7-photo">
+                <Link href={`/products/${p.slug}`} className="v7-photo">
                   <Image
                     src={p.images.hero}
                     alt={p.alt ?? p.name}
@@ -69,12 +69,14 @@ export default function ProductShowcase() {
                   />
                   <b>{p.tag}</b>
                   <em>{String(index + 1).padStart(2, "0")}</em>
-                </div>
+                </Link>
                 <div className="v7-card-copy">
                   <span>{p.category}</span>
-                  <h3>{p.name}</h3>
+                  <h3>
+                    <Link href={`/products/${p.slug}`}>{p.name}</Link>
+                  </h3>
                   <p>{p.note}</p>
-                  <a href={buildProductInquiryMailto(p.name)}>Request price & samples →</a>
+                  <Link href={`/products/${p.slug}`}>View details →</Link>
                 </div>
               </article>
             );
