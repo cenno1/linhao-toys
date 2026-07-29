@@ -10,6 +10,7 @@ import {
   getProductGallery,
   PRODUCT_MOQ,
 } from "@/lib/product-utils";
+import { getProductSpecs } from "@/lib/product-specs";
 
 const complianceDocs = [
   {
@@ -36,6 +37,7 @@ type ProductDetailProps = {
 export default function ProductDetail({ product }: ProductDetailProps) {
   const gallery = getProductGallery(product);
   const customization = getCustomizationOptions(product.filterGroup);
+  const specs = getProductSpecs(product);
 
   return (
     <main>
@@ -90,6 +92,26 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                   Sample turnaround after artwork and specs are confirmed. Mass production schedule
                   shared with quotation.
                 </p>
+              </div>
+            </div>
+
+            <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-lg font-black text-slate-950">Product specifications</h2>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Reference specs for sourcing and listing research. Final material and size
+                details are confirmed during sampling.
+              </p>
+              <div className="mt-4 overflow-x-auto">
+                <table className="min-w-full text-left text-sm">
+                  <tbody>
+                    {specs.map((row) => (
+                      <tr key={row.label} className="border-t border-slate-200 first:border-t-0">
+                        <th className="py-3 pr-4 font-black text-slate-500">{row.label}</th>
+                        <td className="py-3 text-slate-700">{row.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
 

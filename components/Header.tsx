@@ -19,6 +19,8 @@ export default function Header() {
           <Link href="/products">Products</Link>
           <Link href="/oem">OEM / ODM</Link>
           <Link href="/factory">Factory</Link>
+          <Link href="/resources">Guides</Link>
+          <Link href="/faq">FAQ</Link>
           <Link href="/#compliance">Compliance</Link>
         </nav>
         <a className="btn btn-primary" href={`mailto:${INQUIRY_EMAIL}`}>

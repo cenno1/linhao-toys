@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import type { Product } from "./products";
+import type { Guide } from "./guides";
+import { COMPANY_FACTS } from "./company";
 import { faqItems } from "./faq";
 import { INQUIRY_EMAIL, PRODUCT_MOQ } from "./product-utils";
 
@@ -71,6 +73,12 @@ export function organizationJsonLd() {
     description:
       "LINHAO Toys is a China-based OEM and ODM manufacturer of squishy toys, plush gifts and bag accessories for Amazon sellers, retailers and wholesale buyers.",
     areaServed: "Worldwide",
+    foundingDate: COMPANY_FACTS.founded,
+    address: {
+      "@type": "PostalAddress",
+      addressRegion: COMPANY_FACTS.location,
+      addressCountry: "CN",
+    },
   };
 }
 
@@ -140,5 +148,27 @@ export function productJsonLd(product: Product) {
         email: INQUIRY_EMAIL,
       },
     },
+  };
+}
+
+export function articleJsonLd(guide: Guide) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: guide.title,
+    description: guide.description,
+    datePublished: guide.publishedAt,
+    dateModified: guide.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    mainEntityOfPage: absoluteUrl(`/resources/${guide.slug}`),
   };
 }

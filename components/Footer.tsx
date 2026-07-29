@@ -19,6 +19,12 @@ export default function Footer() {
           <Link href="/products">Emotional Gifts</Link>
         </div>
         <div>
+          <b>Resources</b>
+          <Link href="/resources">Buyer guides</Link>
+          <Link href="/faq">FAQ</Link>
+          <Link href="/contact">Get a quote</Link>
+        </div>
+        <div>
           <b>Company</b>
           <Link href="/about">About</Link>
           <Link href="/oem">OEM / ODM</Link>
