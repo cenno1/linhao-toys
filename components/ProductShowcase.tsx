@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import Image from "next/image";
 import { products, type ProductFilterGroup } from "@/lib/products";
+import { productImageSizes, resolveProductHero } from "@/lib/product-images";
 
 type FilterOption = { label: string; value: "all" | ProductFilterGroup };
 
@@ -62,10 +63,13 @@ export default function ProductShowcase() {
               <article className="v7-card" key={p.slug}>
                 <Link href={`/products/${p.slug}`} className="v7-photo">
                   <Image
-                    src={p.images.hero}
+                    src={resolveProductHero(p.slug, p.images.hero)}
                     alt={p.alt ?? p.name}
                     width={1200}
                     height={900}
+                    sizes={productImageSizes(true)}
+                    priority={index < 4}
+                    loading={index < 4 ? "eager" : "lazy"}
                   />
                   <b>{p.tag}</b>
                   <em>{String(index + 1).padStart(2, "0")}</em>

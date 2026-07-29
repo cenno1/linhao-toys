@@ -1,3 +1,6 @@
+import { INQUIRY_EMAIL } from "@/lib/product-utils";
+import { complianceDocs } from "@/lib/compliance-docs";
+
 export default function Certificates() {
   return (
     <section id="compliance" className="section v5-compliance">
@@ -6,7 +9,9 @@ export default function Certificates() {
           <span className="eyebrow">RESPONSIBLE SOURCING</span>
           <h2>Compliance documents for confident purchasing.</h2>
           <p>
-            Available documentation includes EN71 testing for squeeze toys (EU), ASTM F963-23 testing and a Children&apos;s Product Certificate for the tested squishy item. Additional testing is arranged according to product, material and destination market.
+            Available documentation includes EN71 testing for squeeze toys (EU). ASTM
+            F963-23 and CPC copies for additional programs can be shared on request after
+            product and destination market are confirmed.
           </p>
           <div className="compliance-tags">
             <span>EN71</span>
@@ -17,24 +22,25 @@ export default function Certificates() {
           </div>
         </div>
         <div className="v5-docs">
-          <a href="/certificates/en71-squeeze-toy-linhao.pdf" target="_blank">
-            <small>TEST REPORT</small>
-            <b>EN71</b>
-            <span>Squeeze toy · EU safety standard</span>
-            <em>View PDF →</em>
-          </a>
-          <a href="/certificates/astm-f963-23-linhao.pdf" target="_blank">
-            <small>TEST REPORT</small>
-            <b>ASTM F963-23</b>
-            <span>Glitter Squishy · safety testing</span>
-            <em>View PDF →</em>
-          </a>
-          <a href="/certificates/cpc-linhao.pdf" target="_blank">
-            <small>CERTIFICATE</small>
-            <b>Children&apos;s Product Certificate</b>
-            <span>For the documented tested product</span>
-            <em>View PDF →</em>
-          </a>
+          {complianceDocs.map((doc) =>
+            doc.available && doc.href ? (
+              <a key={doc.id} href={doc.href} target="_blank" rel="noopener noreferrer">
+                <small>{doc.kind}</small>
+                <b>{doc.label}</b>
+                <span>{doc.detail}</span>
+                <em>View PDF →</em>
+              </a>
+            ) : (
+              <div key={doc.id} className="v5-doc-placeholder">
+                <small>{doc.kind}</small>
+                <b>{doc.label}</b>
+                <span>{doc.detail}</span>
+                <a href={`mailto:${INQUIRY_EMAIL}?subject=${encodeURIComponent(`${doc.label} request`)}`}>
+                  Request copy →
+                </a>
+              </div>
+            ),
+          )}
         </div>
       </div>
     </section>

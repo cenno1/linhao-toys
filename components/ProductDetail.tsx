@@ -8,27 +8,13 @@ import type { Product } from "@/lib/products";
 import {
   getCustomizationOptions,
   getProductGallery,
+  INQUIRY_EMAIL,
   PRODUCT_MOQ,
 } from "@/lib/product-utils";
 import { getProductSpecs } from "@/lib/product-specs";
+import { complianceDocs } from "@/lib/compliance-docs";
 
-const complianceDocs = [
-  {
-    href: "/certificates/en71-squeeze-toy-linhao.pdf",
-    label: "EN71",
-    detail: "Squeeze toy · EU safety standard",
-  },
-  {
-    href: "/certificates/astm-f963-23-linhao.pdf",
-    label: "ASTM F963-23",
-    detail: "Glitter squishy · safety testing",
-  },
-  {
-    href: "/certificates/cpc-linhao.pdf",
-    label: "CPC",
-    detail: "Children's Product Certificate",
-  },
-];
+const complianceDocsForDetail = complianceDocs;
 
 type ProductDetailProps = {
   product: Product;
@@ -134,29 +120,47 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                 be arranged by product, material and destination market.
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
-                {complianceDocs.map((doc) => (
-                  <a
-                    key={doc.href}
-                    href={doc.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-full bg-blue-50 px-3 py-2 text-xs font-black text-blue-700 transition hover:bg-blue-100"
-                  >
-                    {doc.label}
-                  </a>
-                ))}
-              </div>
-              <ul className="mt-5 space-y-3">
-                {complianceDocs.map((doc) => (
-                  <li key={doc.label}>
+                {complianceDocsForDetail.map((doc) =>
+                  doc.available && doc.href ? (
                     <a
+                      key={doc.id}
                       href={doc.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-bold text-blue-600 hover:underline"
+                      className="rounded-full bg-blue-50 px-3 py-2 text-xs font-black text-blue-700 transition hover:bg-blue-100"
                     >
                       {doc.label}
                     </a>
+                  ) : (
+                    <span
+                      key={doc.id}
+                      className="rounded-full bg-slate-100 px-3 py-2 text-xs font-black text-slate-600"
+                    >
+                      {doc.label} · on request
+                    </span>
+                  ),
+                )}
+              </div>
+              <ul className="mt-5 space-y-3">
+                {complianceDocsForDetail.map((doc) => (
+                  <li key={doc.id}>
+                    {doc.available && doc.href ? (
+                      <a
+                        href={doc.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-bold text-blue-600 hover:underline"
+                      >
+                        {doc.label}
+                      </a>
+                    ) : (
+                      <a
+                        href={`mailto:${INQUIRY_EMAIL}?subject=${encodeURIComponent(`${doc.label} request`)}`}
+                        className="text-sm font-bold text-blue-600 hover:underline"
+                      >
+                        {doc.label} — request copy
+                      </a>
+                    )}
                     <span className="mt-1 block text-xs text-slate-500">{doc.detail}</span>
                   </li>
                 ))}

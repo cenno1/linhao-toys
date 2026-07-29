@@ -21,6 +21,7 @@ export default function Footer() {
         <div>
           <b>Resources</b>
           <Link href="/resources">Buyer guides</Link>
+          <Link href="/cases">Case studies</Link>
           <Link href="/faq">FAQ</Link>
           <Link href="/contact">Get a quote</Link>
         </div>

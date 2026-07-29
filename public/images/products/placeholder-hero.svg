@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Product sample photo coming soon">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="80" y="80" width="1040" height="740" rx="48" fill="#ffffff" stroke="#dbeafe" stroke-width="4"/>
+  <text x="600" y="410" text-anchor="middle" fill="#1e3a8a" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700">LINHAO TOYS</text>
+  <text x="600" y="470" text-anchor="middle" fill="#64748b" font-family="Arial, Helvetica, sans-serif" font-size="28">Sample photography coming soon</text>
+  <text x="600" y="520" text-anchor="middle" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="22">Request current sample images by email</text>
+</svg>

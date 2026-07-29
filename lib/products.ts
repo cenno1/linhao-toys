@@ -149,7 +149,7 @@ export const products: Product[] = [
       "sensory toy wholesale",
       "taba jelly squishy OEM",
     ],
-    images: images("taba-jelly-ball", "/images/real-products/jelly-squeeze-ball.jpg"),
+    images: images("taba-jelly-ball", "/images/products/taba-jelly-ball/hero.png"),
     filterGroup: "squishy",
   },
   {
@@ -167,7 +167,7 @@ export const products: Product[] = [
       "retail gift wholesale",
       "emotional plush OEM",
     ],
-    images: images("comfort-cat-plush", "/images/real-products/green-cat-plush.jpg"),
+    images: images("comfort-cat-plush", "/images/products/comfort-cat-plush/hero.png"),
     filterGroup: "emotional-gifts",
   },
   {
@@ -185,7 +185,7 @@ export const products: Product[] = [
       "retail collectible wholesale",
       "ODM plush manufacturer",
     ],
-    images: images("mood-bunny-plush", "/images/real-products/emotion-bunny-plush.jpg"),
+    images: images("mood-bunny-plush", "/images/products/mood-bunny-plush/hero.png"),
     filterGroup: "emotional-gifts",
   },
   {
@@ -203,7 +203,7 @@ export const products: Product[] = [
       "retail gift wholesale",
       "ODM accessory manufacturer",
     ],
-    images: images("flower-bag-charm", "/images/real-products/flower-bag-charm.jpg"),
+    images: images("flower-bag-charm", "/images/products/flower-bag-charm/hero.png"),
     filterGroup: "bag-charms",
   },
   {
@@ -221,7 +221,7 @@ export const products: Product[] = [
       "retail collectible wholesale",
       "ODM plush manufacturer",
     ],
-    images: images("mini-kitty-desk-buddy", "/images/real-products/mini-kitty-chair.jpg"),
+    images: images("mini-kitty-desk-buddy", "/images/products/mini-kitty-desk-buddy/hero.png"),
     filterGroup: "plush",
   },
   {
@@ -239,7 +239,7 @@ export const products: Product[] = [
       "promotional toy wholesale",
       "retail novelty supplier",
     ],
-    images: images("light-up-robot", "/images/real-products/light-up-robot.jpg"),
+    images: images("light-up-robot", "/images/products/light-up-robot/hero.png"),
     filterGroup: "emotional-gifts",
   },
   {
@@ -257,7 +257,7 @@ export const products: Product[] = [
       "retail toy wholesale",
       "turnkey OEM toy supplier",
     ],
-    images: images("custom-gift-set", "/images/real-products/catalog-hero.jpg"),
+    images: images("custom-gift-set", "/images/products/custom-gift-set/hero.png"),
     filterGroup: "oem",
   },
 ];

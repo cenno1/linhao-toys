@@ -152,6 +152,10 @@ export default function Page() {
               OEM process guide
             </Link>{" "}
             or browse{" "}
+            <Link href="/cases" className="font-bold text-blue-600 hover:underline">
+              OEM case studies
+            </Link>{" "}
+            and{" "}
             <Link href="/products" className="font-bold text-blue-600 hover:underline">
               wholesale-ready SKUs
             </Link>

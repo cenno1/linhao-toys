@@ -20,10 +20,11 @@ export default function ProductGallery({ productName, items }: ProductGalleryPro
           key={active.src}
           src={active.src}
           alt={`${productName} — ${active.label}`}
-          width={1200}
-          height={900}
-          className="h-full w-full object-cover"
-          priority
+                  width={1200}
+                  height={900}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="h-full w-full object-cover"
+                  priority
         />
       </div>
       {items.length > 1 && (
@@ -46,7 +47,9 @@ export default function ProductGallery({ productName, items }: ProductGalleryPro
                   alt={`${productName} — ${item.label}`}
                   width={400}
                   height={300}
+                  sizes="120px"
                   className="h-full w-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <span className="block px-2 py-2 text-[10px] font-bold leading-tight text-slate-600">

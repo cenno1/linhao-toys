@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { caseStudies } from "@/lib/cases";
 import { guides } from "@/lib/guides";
 import { products } from "@/lib/products";
 
@@ -13,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
     "/faq",
     "/resources",
+    "/cases",
   ];
 
   return [
@@ -24,6 +26,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...guides.map((guide) => ({
       url: `${base}/resources/${guide.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.75,
+    })),
+    ...caseStudies.map((item) => ({
+      url: `${base}/cases/${item.slug}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.75,

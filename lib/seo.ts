@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import type { Product } from "./products";
 import type { Guide } from "./guides";
+import type { CaseStudy } from "./cases";
 import { COMPANY_FACTS } from "./company";
 import { faqItems } from "./faq";
 import { INQUIRY_EMAIL, PRODUCT_MOQ } from "./product-utils";
+import { resolveProductHero } from "./product-images";
 
 export const SITE_URL = "https://linhaotoys.com";
 export const SITE_NAME = "LINHAO Toys";
@@ -125,7 +127,7 @@ export function productJsonLd(product: Product) {
     "@type": "Product",
     name: product.name,
     description: product.note,
-    image: [absoluteUrl(product.images.hero)],
+    image: [absoluteUrl(resolveProductHero(product.slug, product.images.hero))],
     sku: product.slug,
     brand: {
       "@type": "Brand",
@@ -170,5 +172,31 @@ export function articleJsonLd(guide: Guide) {
       url: SITE_URL,
     },
     mainEntityOfPage: absoluteUrl(`/resources/${guide.slug}`),
+  };
+}
+
+export function caseStudyJsonLd(item: CaseStudy) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: item.title,
+    description: item.summary,
+    image: [absoluteUrl(item.image)],
+    author: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    about: {
+      "@type": "Product",
+      name: item.title,
+      url: absoluteUrl(`/products/${item.productSlug}`),
+    },
+    mainEntityOfPage: absoluteUrl(`/cases/${item.slug}`),
   };
 }

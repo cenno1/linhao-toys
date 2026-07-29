@@ -1,4 +1,5 @@
 import { products, type Product, type ProductFilterGroup } from "./products";
+import { resolveProductHero } from "./product-images";
 
 export const PRODUCT_MOQ = 100;
 
@@ -33,8 +34,9 @@ export function getProductBySlug(slug: string): Product | undefined {
 }
 
 export function getProductGallery(product: Product): ProductGalleryItem[] {
+  const heroSrc = resolveProductHero(product.slug, product.images.hero);
   const gallery: ProductGalleryItem[] = [
-    { id: "hero", src: product.images.hero, label: "Product view" },
+    { id: "hero", src: heroSrc, label: "Product view" },
   ];
 
   if (FULL_GALLERY_SLUGS.has(product.slug)) {

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const workflowImages = [
   "/images/workflow/01-design-sampling.jpg",
   "/images/workflow/02-foam-mixing.jpg",
@@ -34,10 +36,13 @@ export default function FactoryStory() {
           {stages.map(([t, d], i) => (
             <article key={t}>
               <div className={`v5-stage-art art-${i + 1}`}>
-                <img
+                <Image
                   src={workflowImages[i]}
                   alt={t}
-                  className="absolute inset-0 h-full w-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                  loading={i < 2 ? "eager" : "lazy"}
                 />
                 <span>{String(i + 1).padStart(2, "0")}</span>
               </div>
