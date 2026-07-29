@@ -1,5 +1,5 @@
 import { INQUIRY_EMAIL } from "@/lib/product-utils";
-import { complianceDocs } from "@/lib/compliance-docs";
+import { complianceDocs, productCatalogPdf } from "@/lib/compliance-docs";
 
 export default function Certificates() {
   return (
@@ -9,10 +9,17 @@ export default function Certificates() {
           <span className="eyebrow">RESPONSIBLE SOURCING</span>
           <h2>Compliance documents for confident purchasing.</h2>
           <p>
-            Available documentation includes EN71 testing for squeeze toys (EU). ASTM
-            F963-23 and CPC copies for additional programs can be shared on request after
-            product and destination market are confirmed.
+            Download EN71, ASTM F963-23 and CPC documentation for documented squeeze-toy
+            programs, plus the LINHAO squishy product catalog for buyer reference.
           </p>
+          <a
+            href={productCatalogPdf.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex text-sm font-black text-blue-600 hover:underline"
+          >
+            Download product catalog PDF →
+          </a>
           <div className="compliance-tags">
             <span>EN71</span>
             <span>ASTM F963-23</span>

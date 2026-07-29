@@ -21,6 +21,7 @@ export const COMPANY_FACTS = {
     "Emotional gift sets",
   ],
   certifications: ["EN71 (squeeze toy)", "ASTM F963-23", "CPC"],
+  catalogPdf: "/downloads/linhao-squishy-product-catalog.pdf",
   buyers: [
     "Amazon FBA sellers",
     "Retail chains",

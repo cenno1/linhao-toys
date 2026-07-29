@@ -19,17 +19,24 @@ export const complianceDocs: ComplianceDoc[] = [
   {
     id: "astm",
     label: "ASTM F963-23",
-    detail: "Glitter squishy · safety testing",
+    detail: "Glitter squishy · report XNO260702852XX2-1",
     kind: "TEST REPORT",
-    available: false,
+    href: "/certificates/astm-f963-23-linhao.pdf",
+    available: true,
   },
   {
     id: "cpc",
     label: "Children's Product Certificate",
-    detail: "For the documented tested product",
+    detail: "CPC for documented squishy program · XNO260702852XX2-1",
     kind: "CERTIFICATE",
-    available: false,
+    href: "/certificates/cpc-linhao.pdf",
+    available: true,
   },
 ];
+
+export const productCatalogPdf = {
+  href: "/downloads/linhao-squishy-product-catalog.pdf",
+  label: "LINHAO squishy product catalog",
+};
 
 export const availableComplianceDocs = complianceDocs.filter((doc) => doc.available);
