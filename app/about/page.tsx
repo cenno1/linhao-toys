@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "About LINHAO Toys",
-  description: "About LINHAO Toys and our custom squishy manufacturing service.",
-};
+  description:
+    "Learn about LINHAO Toys, a China OEM manufacturer of squishy toys, plush gifts and bag accessories for global brands and wholesale buyers.",
+  path: "/about",
+});
 
 const cards = [["Customer-Focused Development", "We begin with your market, quantity, cost and design priorities."], ["Clear Communication", "Project details and revisions are organized to reduce misunderstandings."], ["Flexible Customization", "Shape, color, printing, finish and packaging can be combined around your project."], ["Long-Term Support", "The website and service model are designed for repeat development and ongoing orders."]];
 

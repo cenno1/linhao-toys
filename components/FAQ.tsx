@@ -1,2 +1,25 @@
-const qs=[['What can be customized?','Shape, dimensions, softness, color, glitter effect, face artwork, logo, labels and packaging can be developed according to the project.'],['How long does sampling take?','Simple projects may be sampled in about 3–7 days after details are confirmed. Complex structures may require additional development time.'],['Can you support low MOQ projects?','MOQ depends on mold, material, printing and packaging requirements. We will recommend the most practical production plan after reviewing the design.'],['Which markets do you support?','We work with international buyers and can coordinate common export documents and shipping methods. Final compliance depends on the product and destination market.']];
-export default function FAQ(){return <section className="section section-soft"><div className="shell faq-grid"><div><span className="eyebrow">Buyer FAQ</span><h2>Answers before you send the first inquiry.</h2></div><div>{qs.map(([q,a])=><details key={q}><summary>{q}<span>+</span></summary><p>{a}</p></details>)}</div></div></section>}
+import { faqItems } from "@/lib/faq";
+
+export default function FAQ() {
+  return (
+    <section className="section section-soft">
+      <div className="shell faq-grid">
+        <div>
+          <span className="eyebrow">Buyer FAQ</span>
+          <h2>Answers before you send the first inquiry.</h2>
+        </div>
+        <div>
+          {faqItems.map((item) => (
+            <details key={item.question}>
+              <summary>
+                {item.question}
+                <span>+</span>
+              </summary>
+              <p>{item.answer}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

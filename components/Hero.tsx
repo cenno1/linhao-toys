@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { INQUIRY_EMAIL } from "@/lib/product-utils";
 
 const HERO_VIDEO = "/videos/oem-market-squishy-showcase.mp4";
@@ -40,9 +41,9 @@ export default function Hero() {
             faces, packaging and private label development.
           </p>
           <div className="hero-actions">
-            <a className="btn btn-primary btn-lg" href="#products">
+            <Link className="btn btn-primary btn-lg" href="/products">
               Browse real products
-            </a>
+            </Link>
             <a
               className="btn btn-outline btn-lg v7-hero-btn-outline"
               href={`mailto:${INQUIRY_EMAIL}?subject=${encodeURIComponent("New OEM Project")}`}

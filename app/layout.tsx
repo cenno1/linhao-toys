@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import JsonLd from "@/components/JsonLd";
+import { buildPageMetadata, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,13 +15,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://linhaotoys.com"),
+  ...buildPageMetadata({
+    title: "Custom Squishy Toy Manufacturer",
+    description:
+      "LINHAO Toys provides OEM and ODM squishy toy design, sampling, manufacturing, packaging and worldwide export support for brands, retailers and promotional campaigns.",
+    path: "/",
+  }),
   title: {
     default: "Custom Squishy Toy Manufacturer | LINHAO Toys",
     template: "%s | LINHAO Toys",
   },
-  description:
-    "LINHAO Toys provides OEM and ODM squishy toy design, sampling, manufacturing, packaging and worldwide export support for brands, retailers and promotional campaigns.",
   keywords: [
     "custom squishy toys",
     "squishy toy manufacturer",
@@ -30,15 +35,6 @@ export const metadata: Metadata = {
     "custom stress toys",
     "LINHAO Toys",
   ],
-  alternates: { canonical: "/" },
-  openGraph: {
-    title: "Custom Squishy Toys for Global Brands | LINHAO Toys",
-    description:
-      "OEM and ODM squishy toy design, sampling, manufacturing and packaging.",
-    type: "website",
-    locale: "en_US",
-    siteName: "LINHAO Toys",
-  },
 };
 
 export default function RootLayout({
@@ -49,7 +45,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
+        {children}
+      </body>
     </html>
   );
 }

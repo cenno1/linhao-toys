@@ -2,11 +2,20 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "OEM & ODM Squishy Toy Development",
-  description: "OEM and ODM custom squishy toy development by LINHAO Toys.",
-};
+  description:
+    "Structured OEM and ODM squishy development from concept review to sampling, printing, packaging and mass production at LINHAO Toys.",
+  path: "/oem",
+  keywords: [
+    "OEM squishy development",
+    "ODM toy manufacturer",
+    "custom squishy sampling",
+    "private label toys",
+  ],
+});
 
 const cards = [["Concept Review", "We clarify product size, shape, finish, target market and commercial requirements."], ["Design & Mold", "Your reference is converted into a production-ready structure and mold plan."], ["Sampling", "Samples are developed and revised before final production approval."], ["Color & Printing", "Custom colors, faces, logos and graphic details are matched to approved artwork."], ["Packaging", "Retail boxes, bags, labels and promotional packaging can be coordinated."], ["Mass Production", "The approved sample becomes the reference for production and quality checks."]];
 

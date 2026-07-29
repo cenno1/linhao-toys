@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { INQUIRY_EMAIL } from "@/lib/product-utils";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Contact LINHAO Toys",
-  description: "Send your custom squishy toy inquiry to LINHAO Toys.",
-};
+  description:
+    "Request a custom squishy or plush OEM quote from LINHAO Toys. Share your design, MOQ and target market to start sampling.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

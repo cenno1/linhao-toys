@@ -9,4 +9,24 @@ import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import ContactFloat from "@/components/ContactFloat";
-export default function Home(){return <main><Header/><Hero/><TrustStrip/><ProductShowcase/><Capabilities/><FactoryStory/><Certificates/><FAQ/><CTA/><Footer/><ContactFloat/></main>}
+import JsonLd from "@/components/JsonLd";
+import { faqPageJsonLd } from "@/lib/seo";
+
+export default function Home() {
+  return (
+    <main>
+      <JsonLd data={faqPageJsonLd()} />
+      <Header />
+      <Hero />
+      <TrustStrip />
+      <ProductShowcase />
+      <Capabilities />
+      <FactoryStory />
+      <Certificates />
+      <FAQ />
+      <CTA />
+      <Footer />
+      <ContactFloat />
+    </main>
+  );
+}
