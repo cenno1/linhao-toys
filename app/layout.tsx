@@ -86,6 +86,13 @@ export default function RootLayout({
     url: SITE_URL,
     logo: absoluteUrl("/favicon.ico"),
     email: "sales@lh-industrial.com",
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      email: "sales@lh-industrial.com",
+      url: absoluteUrl("/contact"),
+      availableLanguage: ["English", "Chinese"],
+    },
     description:
       "OEM and ODM manufacturer of custom squishy toys, plush accessories and creative gifts for global brands and buyers.",
   };

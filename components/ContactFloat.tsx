@@ -1,4 +1,4 @@
-import { INQUIRY_EMAIL } from "@/lib/product-utils";
+import { buildWhatsAppUrl, INQUIRY_EMAIL } from "@/lib/product-utils";
 
 export default function ContactFloat() {
   return (
@@ -12,7 +12,7 @@ export default function ContactFloat() {
       </a>
 
       <a
-        href="https://wa.me/8615088452259?text=Hello%20LINHAO%20Toys,%20I%20am%20interested%20in%20your%20products."
+        href={buildWhatsAppUrl()}
         target="_blank"
         aria-label="WhatsApp LINHAO"
       >

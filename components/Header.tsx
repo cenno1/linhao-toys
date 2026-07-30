@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { INQUIRY_EMAIL } from "@/lib/product-utils";
 
 export default function Header() {
   return (
@@ -19,9 +18,9 @@ export default function Header() {
           <Link href="/factory">Factory</Link>
           <Link href="/#compliance">Compliance</Link>
         </nav>
-        <a className="btn btn-primary" href={`mailto:${INQUIRY_EMAIL}`}>
+        <Link className="btn btn-primary" href="/contact">
           Get a Quote
-        </a>
+        </Link>
       </div>
     </header>
   );

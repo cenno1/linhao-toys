@@ -202,6 +202,21 @@ export function getProductFAQs(product: Product) {
 }
 
 export const INQUIRY_EMAIL = "sales@lh-industrial.com";
+export const WHATSAPP_NUMBER = "8615088452259";
+
+export function buildWhatsAppUrl(productName = "your products"): string {
+  const message = [
+    "Hello LINHAO Toys,",
+    `I am interested in ${productName}.`,
+    "",
+    "Company / brand:",
+    "Estimated quantity:",
+    "Target market:",
+    "Packaging requirements:",
+  ].join("\n");
+
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
 
 export function buildProductInquiryMailto(productName: string): string {
   const body = [
