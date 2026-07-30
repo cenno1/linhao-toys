@@ -34,10 +34,12 @@ export default function FactoryStory() {
           {stages.map(([t, d], i) => (
             <article key={t}>
               <div className={`v5-stage-art art-${i + 1}`}>
-                <img
+                <Image
                   src={workflowImages[i]}
                   alt={t}
-                  className="absolute inset-0 h-full w-full object-cover"
+                  fill
+                  sizes="(max-width: 700px) 100vw, (max-width: 1050px) 50vw, 33vw"
+                  className="object-cover"
                 />
                 <span>{String(i + 1).padStart(2, "0")}</span>
               </div>
@@ -50,3 +52,4 @@ export default function FactoryStory() {
     </section>
   );
 }
+import Image from "next/image";

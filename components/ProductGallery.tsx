@@ -22,6 +22,7 @@ export default function ProductGallery({ productName, items }: ProductGalleryPro
           alt={`${productName} — ${active.label}`}
           width={1200}
           height={900}
+          sizes="(max-width: 1024px) 100vw, 52vw"
           className="h-full w-full object-cover"
           priority
         />
@@ -46,6 +47,7 @@ export default function ProductGallery({ productName, items }: ProductGalleryPro
                   alt={`${productName} — ${item.label}`}
                   width={400}
                   height={300}
+                  sizes="(max-width: 1024px) 25vw, 13vw"
                   className="h-full w-full object-cover"
                 />
               </div>

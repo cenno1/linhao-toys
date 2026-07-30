@@ -86,6 +86,7 @@ export default function ProductShowcase({
                     alt={p.alt ?? p.name}
                     width={1200}
                     height={900}
+                    sizes="(max-width: 620px) 50vw, (max-width: 980px) 50vw, 25vw"
                   />
                   <b>{p.tag}</b>
                   <em>{String(index + 1).padStart(2, "0")}</em>

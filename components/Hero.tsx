@@ -1,4 +1,4 @@
-import { INQUIRY_EMAIL } from "@/lib/product-utils";
+import Link from "next/link";
 
 const HERO_VIDEO = "/videos/oem-market-squishy-showcase.mp4";
 const HERO_POSTER = "/images/products/glitter-bao-bun/hero.png";
@@ -12,7 +12,7 @@ export default function Hero() {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="none"
           poster={HERO_POSTER}
         >
           <source src={HERO_VIDEO} type="video/mp4" media="(min-width: 769px)" />
@@ -43,25 +43,25 @@ export default function Hero() {
             <a className="btn btn-primary btn-lg" href="#products">
               Browse real products
             </a>
-            <a
+            <Link
               className="btn btn-outline btn-lg v7-hero-btn-outline"
-              href={`mailto:${INQUIRY_EMAIL}?subject=${encodeURIComponent("New OEM Project")}`}
+              href="/contact"
             >
               Start an OEM project
-            </a>
+            </Link>
           </div>
           <div className="v7-proof">
             <div>
-              <b>500+</b>
-              <span>custom projects</span>
+              <b>OEM / ODM</b>
+              <span>development support</span>
             </div>
             <div>
-              <b>30+</b>
-              <span>export markets</span>
+              <b>Custom</b>
+              <span>products & packaging</span>
             </div>
             <div>
-              <b>24h</b>
-              <span>quotation response</span>
+              <b>Export</b>
+              <span>buyer coordination</span>
             </div>
           </div>
         </div>
