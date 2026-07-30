@@ -6,6 +6,7 @@ import CTA from "@/components/CTA";
 export const metadata: Metadata = {
   title: "About LINHAO Toys",
   description: "About LINHAO Toys and our custom squishy manufacturing service.",
+  alternates: { canonical: "/about" },
 };
 
 const cards = [["Customer-Focused Development", "We begin with your market, quantity, cost and design priorities."], ["Clear Communication", "Project details and revisions are organized to reduce misunderstandings."], ["Flexible Customization", "Shape, color, printing, finish and packaging can be combined around your project."], ["Long-Term Support", "The website and service model are designed for repeat development and ongoing orders."]];

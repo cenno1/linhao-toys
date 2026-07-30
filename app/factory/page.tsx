@@ -6,6 +6,7 @@ import CTA from "@/components/CTA";
 export const metadata: Metadata = {
   title: "Squishy Toy Factory Process",
   description: "Learn about LINHAO Toys manufacturing and quality workflow.",
+  alternates: { canonical: "/factory" },
 };
 
 const cards = [["Material Preparation", "Materials and project specifications are prepared according to the confirmed order."], ["Molding & Forming", "Products are formed using the approved shape and construction."], ["Finishing & Printing", "Surface effects, colors, faces and logo details are applied."], ["Quality Checks", "Appearance, function and packaging are checked during production."], ["Packing", "Products are packed according to the approved retail or shipping specification."], ["Export Coordination", "Carton information and shipping requirements are prepared for delivery."]];

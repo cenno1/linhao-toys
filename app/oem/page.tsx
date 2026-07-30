@@ -6,6 +6,7 @@ import CTA from "@/components/CTA";
 export const metadata: Metadata = {
   title: "OEM & ODM Squishy Toy Development",
   description: "OEM and ODM custom squishy toy development by LINHAO Toys.",
+  alternates: { canonical: "/oem" },
 };
 
 const cards = [["Concept Review", "We clarify product size, shape, finish, target market and commercial requirements."], ["Design & Mold", "Your reference is converted into a production-ready structure and mold plan."], ["Sampling", "Samples are developed and revised before final production approval."], ["Color & Printing", "Custom colors, faces, logos and graphic details are matched to approved artwork."], ["Packaging", "Retail boxes, bags, labels and promotional packaging can be coordinated."], ["Mass Production", "The approved sample becomes the reference for production and quality checks."]];

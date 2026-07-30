@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ProductDetail from "@/components/ProductDetail";
 import { products } from "@/lib/products";
 import { getProductBySlug } from "@/lib/product-utils";
+import { SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/seo";
 
 type ProductPageProps = {
   params: Promise<{ slug: string }>;
@@ -27,6 +28,19 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     alternates: {
       canonical: `/products/${product.slug}`,
     },
+    openGraph: {
+      title: `${product.name} | ${SITE_NAME}`,
+      description: product.note,
+      url: `/products/${product.slug}`,
+      type: "website",
+      images: [{ url: product.images.hero, alt: product.alt }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} | ${SITE_NAME}`,
+      description: product.note,
+      images: [product.images.hero],
+    },
   };
 }
 
@@ -38,5 +52,60 @@ export default async function ProductPage({ params }: ProductPageProps) {
     notFound();
   }
 
-  return <ProductDetail product={product} />;
+  const productUrl = absoluteUrl(`/products/${product.slug}`);
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${productUrl}#product`,
+    name: product.name,
+    description: product.note,
+    image: [absoluteUrl(product.images.hero)],
+    category: product.category,
+    brand: {
+      "@type": "Brand",
+      name: SITE_NAME,
+    },
+    manufacturer: {
+      "@id": `${SITE_URL}/#organization`,
+    },
+    url: productUrl,
+  };
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: SITE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Products",
+        item: absoluteUrl("/products"),
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: product.name,
+        item: productUrl,
+      },
+    ],
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ProductDetail product={product} />
+    </>
+  );
 }

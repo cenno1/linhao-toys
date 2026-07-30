@@ -6,6 +6,7 @@ import { INQUIRY_EMAIL } from "@/lib/product-utils";
 export const metadata: Metadata = {
   title: "Contact LINHAO Toys",
   description: "Send your custom squishy toy inquiry to LINHAO Toys.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {
