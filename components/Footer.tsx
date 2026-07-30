@@ -14,8 +14,9 @@ export default function Footer() {
         </div>
         <div>
           <b>Collections</b>
-          <Link href="/products">Squishy Toys</Link>
-          <Link href="/products">Plush Bag Charms</Link>
+          <Link href="/wholesale-squishy-toys">Wholesale Squishy Toys</Link>
+          <Link href="/taba-squishy-manufacturer">Taba Squishy</Link>
+          <Link href="/custom-plush-bag-charms">Plush Bag Charms</Link>
           <Link href="/products">Emotional Gifts</Link>
         </div>
         <div>

@@ -3,7 +3,18 @@ import { products } from "@/lib/products";
 import { SITE_LAST_MODIFIED, SITE_URL, absoluteUrl } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/products", "/oem", "/factory", "/about", "/contact"];
+  const staticPaths = [
+    "",
+    "/products",
+    "/custom-squishy-toy-manufacturer",
+    "/wholesale-squishy-toys",
+    "/taba-squishy-manufacturer",
+    "/custom-plush-bag-charms",
+    "/oem",
+    "/factory",
+    "/about",
+    "/contact",
+  ];
 
   return [
     ...staticPaths.map((path) => ({

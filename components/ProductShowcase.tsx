@@ -7,6 +7,15 @@ import { products, type ProductFilterGroup } from "@/lib/products";
 
 type FilterOption = { label: string; value: "all" | ProductFilterGroup };
 
+type ProductShowcaseProps = {
+  initialFilter?: FilterOption["value"];
+  productSlugs?: string[];
+  showFilters?: boolean;
+  eyebrow?: string;
+  heading?: string;
+  description?: string;
+};
+
 const filters: FilterOption[] = [
   { label: "All", value: "all" },
   { label: "Squishy", value: "squishy" },
@@ -16,15 +25,29 @@ const filters: FilterOption[] = [
   { label: "OEM", value: "oem" },
 ];
 
-export default function ProductShowcase() {
-  const [activeFilter, setActiveFilter] = useState<FilterOption["value"]>("all");
+export default function ProductShowcase({
+  initialFilter = "all",
+  productSlugs,
+  showFilters = true,
+  eyebrow = "REAL SAMPLE GALLERY",
+  heading = "Wholesale-ready squishy & plush SKUs for Amazon, retail and OEM.",
+  description = "Review real product directions for wholesale, private-label and custom development projects.",
+}: ProductShowcaseProps = {}) {
+  const [activeFilter, setActiveFilter] =
+    useState<FilterOption["value"]>(initialFilter);
 
   const visibleProducts = useMemo(
-    () =>
-      activeFilter === "all"
-        ? products
-        : products.filter((p) => p.filterGroup === activeFilter),
-    [activeFilter],
+    () => {
+      const filtered =
+        activeFilter === "all"
+          ? products
+          : products.filter((p) => p.filterGroup === activeFilter);
+
+      return productSlugs
+        ? filtered.filter((product) => productSlugs.includes(product.slug))
+        : filtered;
+    },
+    [activeFilter, productSlugs],
   );
 
   return (
@@ -32,17 +55,14 @@ export default function ProductShowcase() {
       <div className="shell">
         <div className="v7-heading">
           <div>
-            <span className="eyebrow">REAL SAMPLE GALLERY</span>
-            <h2>Wholesale-ready squishy &amp; plush SKUs for Amazon, retail and OEM.</h2>
+            <span className="eyebrow">{eyebrow}</span>
+            <h2>{heading}</h2>
           </div>
           <p>
-            These images come from LINHAO&apos;s supplied product catalogue and existing
-            sample photography. Current market research is used to prioritize food
-            squishies, glitter formats, sensory assortments, emotional plush and bag
-            accessories.
+            {description}
           </p>
         </div>
-        <div className="v7-filters">
+        {showFilters && <div className="v7-filters">
           {filters.map(({ label, value }) => (
             <button
               key={value}
@@ -53,7 +73,7 @@ export default function ProductShowcase() {
               {label}
             </button>
           ))}
-        </div>
+        </div>}
         <div className="v7-product-grid">
           {visibleProducts.map((p) => {
             const index = products.findIndex((item) => item.slug === p.slug);
