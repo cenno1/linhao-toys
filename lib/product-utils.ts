@@ -111,6 +111,96 @@ export function getCustomizationOptions(filterGroup: ProductFilterGroup): string
   return options[filterGroup];
 }
 
+export type ProductSpecification = {
+  label: string;
+  value: string;
+};
+
+export function getProductSpecifications(product: Product): ProductSpecification[] {
+  const groupDetails: Record<ProductFilterGroup, ProductSpecification[]> = {
+    squishy: [
+      { label: "Product type", value: "Soft squeeze / sensory toy" },
+      { label: "Customization", value: "Shape, size, color, print and packaging" },
+      { label: "Typical buyers", value: "Retailers, distributors, brands and online sellers" },
+    ],
+    plush: [
+      { label: "Product type", value: "Custom plush collectible" },
+      { label: "Customization", value: "Character, fabric, embroidery, size and packaging" },
+      { label: "Typical buyers", value: "Gift brands, retailers and collectible programs" },
+    ],
+    "bag-charms": [
+      { label: "Product type", value: "Plush bag charm / keychain" },
+      { label: "Customization", value: "Shape, fabric, hardware, label and retail card" },
+      { label: "Typical buyers", value: "Accessory brands, gift shops and online sellers" },
+    ],
+    "emotional-gifts": [
+      { label: "Product type", value: "Character and emotional-value gift" },
+      { label: "Customization", value: "Expression, color, accessory, message and packaging" },
+      { label: "Typical buyers", value: "Gift retailers, lifestyle brands and distributors" },
+    ],
+    oem: [
+      { label: "Product type", value: "Turnkey private-label gift set" },
+      { label: "Customization", value: "Product mix, branding, inserts and packaging" },
+      { label: "Typical buyers", value: "Brand owners, retailers and promotional buyers" },
+    ],
+  };
+
+  return [
+    { label: "Product", value: product.name },
+    ...groupDetails[product.filterGroup],
+    { label: "Indicative MOQ", value: `From ${PRODUCT_MOQ} pcs; confirmed by specification` },
+    { label: "Sampling", value: "Typically 3–7 days after specifications are confirmed" },
+  ];
+}
+
+export function getProductUseCases(filterGroup: ProductFilterGroup): string[] {
+  const useCases: Record<ProductFilterGroup, string[]> = {
+    squishy: ["Impulse retail", "Sensory assortments", "Blind bags", "Party and promotional packs"],
+    plush: ["Collectible series", "Gift retail", "Desk companions", "Mascot programs"],
+    "bag-charms": ["Fashion accessories", "Gift-with-purchase", "Collectible drops", "Bag and key accessories"],
+    "emotional-gifts": ["Lifestyle gifting", "Seasonal campaigns", "Desk décor", "Promotional programs"],
+    oem: ["Private-label launches", "Retail gift sets", "Marketplace bundles", "Promotional campaigns"],
+  };
+  return useCases[filterGroup];
+}
+
+export function getRelatedProducts(product: Product, limit = 3): Product[] {
+  const sameGroup = products.filter(
+    (item) => item.slug !== product.slug && item.filterGroup === product.filterGroup,
+  );
+  const otherProducts = products.filter(
+    (item) => item.slug !== product.slug && item.filterGroup !== product.filterGroup,
+  );
+  return [...sameGroup, ...otherProducts].slice(0, limit);
+}
+
+export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): string {
+  if (filterGroup === "squishy") return "/wholesale-squishy-toys";
+  if (filterGroup === "bag-charms") return "/custom-plush-bag-charms";
+  return "/products";
+}
+
+export function getProductFAQs(product: Product) {
+  return [
+    {
+      question: `Can ${product.name} be customized?`,
+      answer: "Yes. Available options depend on the product and may include shape, dimensions, color, artwork, logo, labels and retail packaging.",
+    },
+    {
+      question: `What is the MOQ for ${product.name}?`,
+      answer: `The indicative starting point is ${PRODUCT_MOQ} pieces. Final MOQ depends on mold, material, printing, assortment and packaging requirements.`,
+    },
+    {
+      question: "Can I approve a sample before mass production?",
+      answer: "Yes. Sampling and buyer approval are part of the OEM workflow before the approved reference moves into mass production.",
+    },
+    {
+      question: "Which compliance documents are available?",
+      answer: "Existing documents are shown on the page where applicable. Final testing and documentation must be confirmed for the exact product, age grade and destination market.",
+    },
+  ];
+}
+
 export const INQUIRY_EMAIL = "sales@lh-industrial.com";
 
 export function buildProductInquiryMailto(productName: string): string {

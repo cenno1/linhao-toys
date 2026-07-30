@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ProductDetail from "@/components/ProductDetail";
 import { products } from "@/lib/products";
-import { getProductBySlug } from "@/lib/product-utils";
+import {
+  getProductBySlug,
+  getProductFAQs,
+  getProductSpecifications,
+} from "@/lib/product-utils";
 import { SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/seo";
 
 type ProductPageProps = {
@@ -53,6 +57,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
   }
 
   const productUrl = absoluteUrl(`/products/${product.slug}`);
+  const specifications = getProductSpecifications(product);
+  const faqs = getProductFAQs(product);
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -68,6 +74,15 @@ export default async function ProductPage({ params }: ProductPageProps) {
     manufacturer: {
       "@id": `${SITE_URL}/#organization`,
     },
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType: "Wholesale buyers, retailers, distributors and brand owners",
+    },
+    additionalProperty: specifications.map(({ label, value }) => ({
+      "@type": "PropertyValue",
+      name: label,
+      value,
+    })),
     url: productUrl,
   };
   const breadcrumbJsonLd = {
@@ -94,6 +109,18 @@ export default async function ProductPage({ params }: ProductPageProps) {
       },
     ],
   };
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer,
+      },
+    })),
+  };
 
   return (
     <>
@@ -104,6 +131,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <ProductDetail product={product} />
     </>
