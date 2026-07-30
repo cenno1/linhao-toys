@@ -1,22 +1,59 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 const HERO_VIDEO = "/videos/oem-market-squishy-showcase.mp4";
 const HERO_POSTER = "/images/products/glitter-bao-bun/hero.png";
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const desktop = window.matchMedia("(min-width: 769px)");
+    if (!video) return;
+
+    const startVideo = () => {
+      if (!desktop.matches) {
+        video.pause();
+        video.removeAttribute("src");
+        video.load();
+        return;
+      }
+
+      if (!video.src) {
+        video.src = HERO_VIDEO;
+        video.load();
+      }
+
+      void video.play().catch(() => {
+        // The canplay listener below retries once enough video data is available.
+      });
+    };
+
+    video.addEventListener("canplay", startVideo);
+    desktop.addEventListener("change", startVideo);
+    startVideo();
+
+    return () => {
+      video.removeEventListener("canplay", startVideo);
+      desktop.removeEventListener("change", startVideo);
+    };
+  }, []);
+
   return (
     <section className="v7-hero v7-hero-video">
       <div className="v7-hero-bg" aria-hidden="true">
         <video
+          ref={videoRef}
           autoPlay
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
           poster={HERO_POSTER}
-        >
-          <source src={HERO_VIDEO} type="video/mp4" media="(min-width: 769px)" />
-        </video>
+        />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="v7-hero-bg-fallback"
