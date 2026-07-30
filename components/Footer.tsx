@@ -24,6 +24,7 @@ export default function Footer() {
           <Link href="/oem">OEM / ODM</Link>
           <Link href="/factory">Factory</Link>
           <Link href="/about">About LINHAO</Link>
+          <Link href="/resources">Buyer Resources</Link>
         </div>
         <div>
           <b>Contact</b>

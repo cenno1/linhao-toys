@@ -1,11 +1,13 @@
 import type { MetadataRoute } from "next";
 import { products } from "@/lib/products";
+import { buyerGuides } from "@/lib/guides";
 import { SITE_LAST_MODIFIED, SITE_URL, absoluteUrl } from "@/lib/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = [
     "",
     "/products",
+    "/resources",
     "/custom-squishy-toy-manufacturer",
     "/wholesale-squishy-toys",
     "/taba-squishy-manufacturer",
@@ -29,6 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.7,
       images: [new URL(product.images.hero, SITE_URL).toString()],
+    })),
+    ...buyerGuides.map((guide) => ({
+      url: absoluteUrl(`/resources/${guide.slug}`),
+      lastModified: guide.updated,
+      changeFrequency: "monthly" as const,
+      priority: 0.65,
     })),
   ];
 }

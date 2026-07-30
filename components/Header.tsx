@@ -16,6 +16,7 @@ export default function Header() {
           <Link href="/products">Products</Link>
           <Link href="/oem">OEM / ODM</Link>
           <Link href="/factory">Factory</Link>
+          <Link href="/resources">Resources</Link>
           <Link href="/#compliance">Compliance</Link>
         </nav>
         <Link className="btn btn-primary" href="/contact">
