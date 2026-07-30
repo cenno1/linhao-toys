@@ -1,2 +1,36 @@
+import Link from "next/link";
 import { INQUIRY_EMAIL } from "@/lib/product-utils";
-export default function Footer(){return <footer><div className="shell footer-grid"><div><b className="footer-brand">LINHAO TOYS</b><p>Creative squishy, plush accessory and emotional-value gift manufacturing for global brands and buyers.</p></div><div><b>Collections</b><a href="#products">Squishy Toys</a><a href="#products">Plush Bag Charms</a><a href="#products">Emotional Gifts</a></div><div><b>Company</b><a href="#oem">OEM / ODM</a><a href="#factory">Factory</a><a href="#compliance">Compliance</a></div><div><b>Contact</b><a href={`mailto:${INQUIRY_EMAIL}`}>{INQUIRY_EMAIL}</a><a href={`mailto:${INQUIRY_EMAIL}`}>Request quotation</a></div></div><div className="shell copyright">© 2026 LINHAO Toys. All rights reserved.</div></footer>}
+
+export default function Footer() {
+  return (
+    <footer>
+      <div className="shell footer-grid">
+        <div>
+          <b className="footer-brand">LINHAO TOYS</b>
+          <p>
+            Creative squishy, plush accessory and emotional-value gift manufacturing
+            for global brands and buyers.
+          </p>
+        </div>
+        <div>
+          <b>Collections</b>
+          <Link href="/products">Squishy Toys</Link>
+          <Link href="/products">Plush Bag Charms</Link>
+          <Link href="/products">Emotional Gifts</Link>
+        </div>
+        <div>
+          <b>Company</b>
+          <Link href="/oem">OEM / ODM</Link>
+          <Link href="/factory">Factory</Link>
+          <Link href="/about">About LINHAO</Link>
+        </div>
+        <div>
+          <b>Contact</b>
+          <Link href="/contact">Contact us</Link>
+          <a href={`mailto:${INQUIRY_EMAIL}`}>{INQUIRY_EMAIL}</a>
+        </div>
+      </div>
+      <div className="shell copyright">© 2026 LINHAO Toys. All rights reserved.</div>
+    </footer>
+  );
+}
