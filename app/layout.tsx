@@ -7,6 +7,7 @@ import {
   SITE_URL,
   absoluteUrl,
 } from "@/lib/seo";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -106,6 +107,7 @@ export default function RootLayout({
     publisher: { "@id": `${SITE_URL}/#organization` },
     inLanguage: "en",
   };
+  const measurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
   return (
     <html
@@ -122,6 +124,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
         {children}
+        {measurementId && <GoogleAnalytics measurementId={measurementId} />}
       </body>
     </html>
   );
