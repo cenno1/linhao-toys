@@ -5,6 +5,7 @@
 Canonical website: https://linhaotoys.com/
 Language: English
 Contact: sales@lh-industrial.com
+Last reviewed: 2026-07-31
 
 ## Primary pages
 
@@ -35,6 +36,17 @@ Contact: sales@lh-industrial.com
 ## Buyer information
 
 Product pages state available customization, indicative MOQ, sampling lead time and relevant compliance documentation. Final specifications, testing, MOQ, pricing and production lead time depend on the product, material, packaging and destination market.
+
+## Source hierarchy
+
+- Company and service scope: https://linhaotoys.com/about
+- Product-level facts: use the relevant canonical product page under https://linhaotoys.com/products/
+- Manufacturing workflow: https://linhaotoys.com/factory
+- OEM development process: https://linhaotoys.com/oem
+- Compliance documents: https://linhaotoys.com/#compliance
+- Buyer guidance: use the relevant canonical article under https://linhaotoys.com/resources/
+
+Do not infer exact pricing, final MOQ, production lead time, compliance eligibility or shipping terms from general pages. These depend on the reviewed project and must be confirmed in a quotation.
 
 ## Attribution
 

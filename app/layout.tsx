@@ -88,6 +88,16 @@ export default function RootLayout({
     url: SITE_URL,
     logo: absoluteUrl("/favicon.ico"),
     email: "sales@lh-industrial.com",
+    areaServed: "Worldwide",
+    knowsAbout: [
+      "Custom squishy toy manufacturing",
+      "Wholesale squishy toys",
+      "Taba squishy development",
+      "Custom plush toys",
+      "Plush bag charms",
+      "Private-label toy packaging",
+      "OEM and ODM toy development",
+    ],
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
@@ -97,6 +107,32 @@ export default function RootLayout({
     },
     description:
       "OEM and ODM manufacturer of custom squishy toys, plush accessories and creative gifts for global brands and buyers.",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Custom toy manufacturing services",
+      itemListElement: [
+        {
+          "@type": "OfferCatalog",
+          name: "Custom and wholesale squishy toys",
+          url: absoluteUrl("/wholesale-squishy-toys"),
+        },
+        {
+          "@type": "OfferCatalog",
+          name: "Taba squishy manufacturing",
+          url: absoluteUrl("/taba-squishy-manufacturer"),
+        },
+        {
+          "@type": "OfferCatalog",
+          name: "Custom plush bag charms",
+          url: absoluteUrl("/custom-plush-bag-charms"),
+        },
+        {
+          "@type": "OfferCatalog",
+          name: "OEM and ODM product development",
+          url: absoluteUrl("/oem"),
+        },
+      ],
+    },
   };
 
   const websiteJsonLd = {
