@@ -8,7 +8,7 @@ import { buyerGuides } from "@/lib/guides";
 export const metadata: Metadata = {
   title: "Toy Sourcing Guides for Wholesale & OEM Buyers",
   description:
-    "Practical guides for custom squishy toys, wholesale packaging and plush bag charm development from LINHAO Toys.",
+    "Practical guides covering custom toy quotations, MOQ, compliance documents, squishy packaging and plush bag charm development.",
   alternates: { canonical: "/resources" },
 };
 
@@ -24,8 +24,8 @@ export default function ResourcesPage() {
             Practical toy sourcing guides for OEM and wholesale buyers.
           </h1>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">
-            Prepare clearer product briefs, compare packaging options and organize
-            the information needed for sampling and quotation.
+            Prepare clearer briefs, understand quotation and compliance factors,
+            compare packaging options and organize sampling requirements.
           </p>
         </div>
       </section>

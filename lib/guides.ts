@@ -15,6 +15,134 @@ export type BuyerGuide = {
 
 export const buyerGuides: BuyerGuide[] = [
   {
+    slug: "custom-squishy-toy-moq-cost-guide",
+    title: "Custom Squishy Toy MOQ and Cost Drivers: A Buyer’s Guide",
+    description:
+      "Understand how mold setup, design count, material effects, printing, packaging and order quantity influence a custom squishy toy quotation.",
+    eyebrow: "QUOTATION PLANNING",
+    updated: "2026-07-31",
+    readTime: "7 min read",
+    sections: [
+      {
+        heading: "MOQ is a production-planning result",
+        paragraphs: [
+          "A useful MOQ is not determined by one number alone. The practical minimum depends on the mold or tooling plan, number of designs, compound and finish, printing steps, individual packaging and how efficiently the order can move through production.",
+          "A standard product with a custom label can usually be planned differently from a completely new shape with several colors and a printed retail box. Buyers should therefore compare quotations with the same specification rather than comparing MOQ in isolation.",
+        ],
+      },
+      {
+        heading: "Separate one-time development from unit cost",
+        paragraphs: [
+          "Ask the quotation to distinguish development or mold costs from the bulk unit price when applicable. This makes it easier to understand which costs may not repeat on a reorder using the same approved design.",
+        ],
+        checklist: [
+          "New shape, mold or structural development",
+          "Artwork preparation and sample revisions",
+          "Color, glitter, transparency or special surface effects",
+          "Number of print positions and colors",
+          "Individual packaging and printed inserts",
+          "Testing requested for the product and destination market",
+        ],
+      },
+      {
+        heading: "Design count changes the production plan",
+        paragraphs: [
+          "A 3,000-piece order split across one design is not the same production plan as 3,000 pieces split across six designs. Each color change, face artwork, package or assortment can add setup and inspection work.",
+          "For a collection, state both total quantity and quantity per design. If you are flexible, ask the manufacturer to propose a practical assortment that reduces unnecessary setup.",
+        ],
+      },
+      {
+        heading: "Packaging can have its own minimum",
+        paragraphs: [
+          "Custom printed bags, boxes and display trays may have supplier minimums that differ from the toy. A standard bag or box with a branded label or insert may be a more practical launch option for a smaller market test.",
+        ],
+      },
+      {
+        heading: "Request comparable quotation tiers",
+        paragraphs: [
+          "Provide one confirmed specification and ask for two or three realistic quantity tiers. Include the destination country and clarify whether freight, testing, retail preparation or marketplace labeling should be quoted separately.",
+        ],
+        checklist: [
+          "Product drawing or reference and target dimensions",
+          "Quantity per design and total quantity",
+          "Material feel, recovery and visual effects",
+          "Logo, printing and artwork requirements",
+          "Packaging format and barcode requirements",
+          "Destination market and requested delivery timing",
+        ],
+      },
+    ],
+    relatedLinks: [
+      { label: "Prepare a custom squishy manufacturing brief", href: "/resources/how-to-prepare-custom-squishy-toy-brief" },
+      { label: "Compare real product directions", href: "/products" },
+      { label: "Request quantity-based quotation options", href: "/contact" },
+    ],
+  },
+  {
+    slug: "en71-astm-f963-cpc-toy-compliance-guide",
+    title: "EN71, ASTM F963 and CPC: A Practical Toy Buyer Guide",
+    description:
+      "A sourcing-oriented explanation of EN71, ASTM F963 and Children’s Product Certificates, including what buyers should confirm for each product and market.",
+    eyebrow: "COMPLIANCE PLANNING",
+    updated: "2026-07-31",
+    readTime: "8 min read",
+    sections: [
+      {
+        heading: "Start with the product and destination market",
+        paragraphs: [
+          "Testing and documentation should be planned for the actual product, intended age group, materials, functions and country of sale. A report for one squishy construction or color formulation should not automatically be treated as coverage for every future design.",
+          "Give the supplier the destination market and intended age grade before sampling is finalized. Special functions, small components, coatings, scent, batteries, magnets or accessories can change which requirements need review.",
+        ],
+      },
+      {
+        heading: "What EN71 means in an EU sourcing discussion",
+        paragraphs: [
+          "EN71 is a series of European toy safety standards used in the EU toy safety framework. Relevant parts depend on the product and can address areas such as mechanical and physical properties, flammability and migration of certain elements.",
+          "A buyer should check the exact product identification, tested materials, applicable standard parts, report date and whether the report matches the product being ordered. EU requirements can change, so final market access decisions should be checked against current official guidance.",
+        ],
+      },
+      {
+        heading: "ASTM F963 and the US toy framework",
+        paragraphs: [
+          "For US children’s toys, CPSC guidance explains that 16 CFR part 1250 incorporates ASTM F963. The applicable sections and testing depend on the toy. CPSC guidance also states that toys manufactured after April 20, 2024 must meet ASTM F963-23.",
+          "Do not ask only whether a factory has an ASTM report. Confirm which product, age grading, materials, colors and ASTM sections the report covers, and whether additional US requirements apply.",
+        ],
+      },
+      {
+        heading: "A CPC is a certificate, not a laboratory report",
+        paragraphs: [
+          "The US Consumer Product Safety Commission describes a Children’s Product Certificate as the written certificate in which the manufacturer or importer certifies that a children’s product complies with applicable children’s product safety rules.",
+          "The CPC should identify the covered product and applicable rules and be supported by the required testing or other permitted basis. Buyers and importers should determine who is responsible for issuing and maintaining the certificate for the specific shipment and product.",
+        ],
+      },
+      {
+        heading: "Build a product-specific document file",
+        paragraphs: [
+          "Keep the approved specification, bill of materials or material description, color and artwork references, age grade, test reports, certificate, production identification and packaging files connected to the same product version.",
+        ],
+        checklist: [
+          "Exact product name, model or SKU on each document",
+          "Product photos and tested color or material variants",
+          "Applicable standard version and tested sections",
+          "Laboratory identity and report issue date",
+          "Manufacturer or importer details where required",
+          "Batch, production date or traceability information",
+        ],
+      },
+      {
+        heading: "Use official guidance for final decisions",
+        paragraphs: [
+          "This guide is general sourcing information, not legal or regulatory advice. Buyers remain responsible for confirming the rules that apply to their product and market with qualified compliance professionals and current regulator guidance.",
+        ],
+      },
+    ],
+    relatedLinks: [
+      { label: "View LINHAO’s available compliance documents", href: "/#compliance" },
+      { label: "US CPSC toy safety guidance", href: "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Toy-Safety" },
+      { label: "European Commission toy safety legislation", href: "https://single-market-economy.ec.europa.eu/sectors/toys/toy-safety/legislation_en" },
+    ],
+  },
+  {
     slug: "how-to-prepare-custom-squishy-toy-brief",
     title: "How to Prepare a Custom Squishy Toy Manufacturing Brief",
     description:
