@@ -157,6 +157,28 @@ export const products: Product[] = [
     filterGroup: "squishy",
   },
   {
+    slug: "custom-pu-fruit-animal-figures",
+    name: "Custom PU Slow-Rise Fruit & Animal Squishy Figures",
+    category: "Custom Shape Squishy · OEM/ODM",
+    tag: "Any Shape Custom",
+    note: "Turn drawings, fruit ideas, animals, mascots or original characters into PU slow-rise squeeze figures. Shape, size, softness, color, face artwork, logo and retail packaging can be developed for your project.",
+    alt: "custom PU slow-rise fruit animal squishy figures made from buyer artwork OEM manufacturer",
+    keywords: [
+      "custom PU squishy manufacturer",
+      "custom shape slow rise toy",
+      "fruit squishy custom",
+      "animal PU figure OEM",
+      "squishy toy from drawing",
+      "custom decompression figure",
+    ],
+    images: images(
+      "custom-pu-fruit-animal-figures",
+      "/images/products/custom-pu-fruit-animal-figures/hero.png",
+    ),
+    featured: true,
+    filterGroup: "squishy",
+  },
+  {
     slug: "comfort-cat-plush",
     name: "OEM Comfort Cat Plush Toy",
     category: "Emotional Plush · OEM/ODM",

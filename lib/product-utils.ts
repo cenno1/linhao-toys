@@ -7,6 +7,7 @@ export const FULL_GALLERY_SLUGS = new Set([
   "glitter-basket-blue",
   "butter-stick",
   "mini-animal-mix",
+  "custom-pu-fruit-animal-figures",
 ]);
 
 export type ProductGalleryItem = {
@@ -67,7 +68,9 @@ export function getProductGallery(product: Product): ProductGalleryItem[] {
 export function getCustomizationOptions(filterGroup: ProductFilterGroup): string[] {
   const options: Record<ProductFilterGroup, string[]> = {
     squishy: [
-      "Shape & dimensions",
+      "Custom 3D shape from buyer artwork",
+      "Fruit, animal, mascot or character forms",
+      "Dimensions & slow-rise softness",
       "Color & glitter fill",
       "Face artwork & pad print",
       "Scent option",
