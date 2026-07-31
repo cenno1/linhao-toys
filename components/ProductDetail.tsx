@@ -64,7 +64,11 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
       <section className="bg-[#f4f7fb] pb-16 sm:pb-20">
         <div className="shell grid gap-12 lg:grid-cols-[1.05fr_.95fr] lg:items-start">
-          <ProductGallery productName={product.name} items={gallery} />
+          <ProductGallery
+            productName={product.name}
+            items={gallery}
+            videoSrc={product.video}
+          />
 
           <div>
             <span className="text-[10px] font-black uppercase tracking-[0.14em] text-blue-600">

@@ -83,6 +83,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
       name: label,
       value,
     })),
+    subjectOf: product.video
+      ? {
+          "@type": "VideoObject",
+          name: `${product.name} product demonstration`,
+          description: `Product appearance, squeeze feel and recovery demonstration for ${product.name}.`,
+          thumbnailUrl: absoluteUrl(product.images.hero),
+          contentUrl: absoluteUrl(product.video),
+          uploadDate: "2025-04-08",
+        }
+      : undefined,
     url: productUrl,
   };
   const breadcrumbJsonLd = {

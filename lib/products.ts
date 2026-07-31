@@ -21,6 +21,7 @@ export type Product = {
   alt: string;
   keywords: string[];
   images: ProductImageSet;
+  video?: string;
   featured?: boolean;
   bestseller?: boolean;
   filterGroup: ProductFilterGroup;
@@ -36,6 +37,29 @@ function images(slug: string, hero: string): ProductImageSet {
 }
 
 export const products: Product[] = [
+  {
+    slug: "crystal-clear-cat-paw-squishy",
+    name: "Wholesale Crystal Clear Cat Paw Squishy",
+    category: "Crystal Jelly Squishy · Wholesale",
+    tag: "High Visual Appeal",
+    note: "Ice-clear cat paw squishies with glitter bubbles, butterfly details and five bright color options. Designed for sensory retail, gift shops, online marketplaces and collectible assortments, with custom colors, inclusions and packaging available.",
+    alt: "wholesale crystal clear cat paw squishy colorful transparent squeeze toys factory supplier",
+    keywords: [
+      "crystal clear cat paw squishy",
+      "transparent paw squeeze toy wholesale",
+      "ice clear squishy manufacturer",
+      "cat paw sensory toy",
+      "wholesale cute squishy toys",
+      "custom jelly paw squishy",
+    ],
+    images: images(
+      "crystal-clear-cat-paw-squishy",
+      "/images/products/crystal-clear-cat-paw-squishy/hero.png",
+    ),
+    video: "/videos/crystal-clear-cat-paw-squishy.mp4",
+    bestseller: true,
+    filterGroup: "squishy",
+  },
   {
     slug: "glitter-bao-bun",
     name: "OEM Glitter Bao Bun Squishy",

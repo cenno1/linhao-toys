@@ -7,9 +7,10 @@ import type { ProductGalleryItem } from "@/lib/product-utils";
 type ProductGalleryProps = {
   productName: string;
   items: ProductGalleryItem[];
+  videoSrc?: string;
 };
 
-export default function ProductGallery({ productName, items }: ProductGalleryProps) {
+export default function ProductGallery({ productName, items, videoSrc }: ProductGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = items[activeIndex];
 
@@ -56,6 +57,24 @@ export default function ProductGallery({ productName, items }: ProductGalleryPro
               </span>
             </button>
           ))}
+        </div>
+      )}
+      {videoSrc && (
+        <div className="mt-5 overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-950 shadow-sm">
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            poster={items[0].src}
+            aria-label={`${productName} squeeze and product demonstration video`}
+            className="aspect-video w-full object-cover"
+          >
+            <source src={videoSrc} type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <p className="px-5 py-3 text-xs font-bold text-slate-300">
+            Product demonstration · appearance, squeeze feel and recovery
+          </p>
         </div>
       )}
     </div>
