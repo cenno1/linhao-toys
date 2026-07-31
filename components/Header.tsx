@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TrackedLink from "@/components/TrackedLink";
 
 export default function Header() {
   return (
@@ -19,9 +20,9 @@ export default function Header() {
           <Link href="/resources">Resources</Link>
           <Link href="/#compliance">Compliance</Link>
         </nav>
-        <Link className="btn btn-primary" href="/contact">
+        <TrackedLink className="btn btn-primary" href="/contact" method="quote" location="header">
           Get a Quote
-        </Link>
+        </TrackedLink>
       </div>
     </header>
   );

@@ -1,23 +1,27 @@
 import { buildWhatsAppUrl, INQUIRY_EMAIL } from "@/lib/product-utils";
+import TrackedLink from "@/components/TrackedLink";
 
 export default function ContactFloat() {
   return (
     <div className="contact-float">
-      <a href={`mailto:${INQUIRY_EMAIL}`} aria-label="Email LINHAO">
+      <TrackedLink href={`mailto:${INQUIRY_EMAIL}`} ariaLabel="Email LINHAO" method="email" location="floating_contact">
         Email
-      </a>
+      </TrackedLink>
 
-      <a href="/contact" className="quote">
+      <TrackedLink href="/contact" className="quote" method="quote" location="floating_contact">
         Get Quote
-      </a>
+      </TrackedLink>
 
-      <a
+      <TrackedLink
         href={buildWhatsAppUrl()}
         target="_blank"
-        aria-label="WhatsApp LINHAO"
+        rel="noopener noreferrer"
+        ariaLabel="WhatsApp LINHAO"
+        method="whatsapp"
+        location="floating_contact"
       >
         WhatsApp
-      </a>
+      </TrackedLink>
     </div>
   );
 }

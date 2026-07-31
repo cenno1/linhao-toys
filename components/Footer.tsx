@@ -25,6 +25,7 @@ export default function Footer() {
           <Link href="/factory">Factory</Link>
           <Link href="/about">About LINHAO</Link>
           <Link href="/resources">Buyer Resources</Link>
+          <Link href="/privacy">Privacy Policy</Link>
         </div>
         <div>
           <b>Contact</b>

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { buildWhatsAppUrl } from "@/lib/product-utils";
+import TrackedLink from "@/components/TrackedLink";
 
 export default function CTA() {
   return (
@@ -17,17 +17,19 @@ export default function CTA() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <Link className="btn btn-white" href="/contact">
+          <TrackedLink className="btn btn-white" href="/contact" method="quote" location="section_cta">
             Request a Quote
-          </Link>
-          <a
+          </TrackedLink>
+          <TrackedLink
             className="btn border border-white/40 text-white"
             href={buildWhatsAppUrl()}
             target="_blank"
             rel="noopener noreferrer"
+            method="whatsapp"
+            location="section_cta"
           >
             Ask on WhatsApp
-          </a>
+          </TrackedLink>
         </div>
       </div>
     </section>

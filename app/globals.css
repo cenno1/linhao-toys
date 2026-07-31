@@ -37,6 +37,11 @@
 .v5-stage-art{height:260px;border-radius:18px}
 .v5-stage-art span{z-index:2;display:grid;width:36px;height:36px;place-items:center;border-radius:50%;background:rgba(255,255,255,.9);color:#0b57d0;box-shadow:0 8px 22px rgba(15,40,80,.16)}
 @media(max-width:700px){.v5-stage-grid{grid-template-columns:1fr}.v5-stage-art{height:220px}}
+
+/* Analytics privacy and policy */
+.consent-banner{position:fixed;left:50%;bottom:20px;z-index:100;width:min(760px,calc(100% - 28px));transform:translateX(-50%);display:flex;align-items:center;justify-content:space-between;gap:24px;padding:19px 20px;border:1px solid #d6e0ec;border-radius:18px;background:rgba(255,255,255,.98);box-shadow:0 22px 65px rgba(8,26,60,.2);backdrop-filter:blur(16px)}
+.consent-banner b{display:block;font-size:15px;color:#0b1d43}.consent-banner p{margin:6px 0 0;max-width:520px;color:#5d6b82;font-size:12px;line-height:1.55}.consent-banner p a{color:#075be8;font-weight:800}.consent-actions{display:flex;gap:8px;flex-shrink:0}.consent-actions button,.privacy-settings-button{border:0;font:inherit;font-size:12px;font-weight:900;cursor:pointer}.consent-actions button{padding:11px 14px;border-radius:9px}.consent-decline{background:#eef2f7;color:#263a58}.consent-accept{background:#075be8;color:#fff}.privacy-settings-button{position:fixed;left:14px;bottom:14px;z-index:79;padding:9px 12px;border:1px solid #d6e0ec;border-radius:999px;background:#fff;color:#43536b;box-shadow:0 8px 24px rgba(8,26,60,.1)}.privacy-page{padding:96px 0;background:#f7f9fc}.privacy-copy{max-width:800px}.privacy-copy h1{margin:16px 0 8px;font-size:clamp(44px,7vw,72px);letter-spacing:-.055em}.privacy-updated{color:#7a8799}.privacy-copy h2{margin:42px 0 12px;font-size:25px;letter-spacing:-.02em}.privacy-copy p{color:#53617a;line-height:1.8}.privacy-copy a{color:#075be8;font-weight:800}
+@media(max-width:700px){.consent-banner{align-items:stretch;flex-direction:column;gap:14px}.consent-actions{display:grid;grid-template-columns:1fr 1fr}.privacy-settings-button{bottom:74px}.privacy-page{padding:68px 0}}
 .v7-hero-grid{display:grid;grid-template-columns:.88fr 1.22fr;gap:60px;align-items:center}
 .v7-copy h1{font-size:clamp(54px,6vw,88px);line-height:.92;letter-spacing:-.065em;margin:18px 0 24px;color:#0b1d43}
 .v7-copy h1 span{color:#1769ff}.v7-copy>p{font-size:18px;line-height:1.72;color:#53617d;max-width:660px}

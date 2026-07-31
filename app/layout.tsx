@@ -8,6 +8,7 @@ import {
   absoluteUrl,
 } from "@/lib/seo";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import ConsentBanner from "@/components/ConsentBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -115,6 +116,24 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <body>
+        {measurementId && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                window.gtag = gtag;
+                gtag('consent', 'default', {
+                  analytics_storage: localStorage.getItem('linhao_analytics_consent') === 'accepted' ? 'granted' : 'denied',
+                  ad_storage: 'denied',
+                  ad_user_data: 'denied',
+                  ad_personalization: 'denied',
+                  wait_for_update: 500
+                });
+              `,
+            }}
+          />
+        )}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
@@ -125,6 +144,7 @@ export default function RootLayout({
         />
         {children}
         {measurementId && <GoogleAnalytics measurementId={measurementId} />}
+        {measurementId && <ConsentBanner />}
       </body>
     </html>
   );

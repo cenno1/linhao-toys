@@ -16,11 +16,22 @@ function PageViewTracker({ measurementId }: { measurementId: string }) {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (!window.gtag) return;
-    const query = searchParams.toString();
-    window.gtag("event", "page_view", {
-      page_path: query ? `${pathname}?${query}` : pathname,
-    });
+    function sendPageView() {
+      if (
+        !window.gtag ||
+        window.localStorage.getItem("linhao_analytics_consent") !== "accepted"
+      ) {
+        return;
+      }
+      const query = searchParams.toString();
+      window.gtag("event", "page_view", {
+        page_path: query ? `${pathname}?${query}` : pathname,
+      });
+    }
+
+    sendPageView();
+    window.addEventListener("linhao-consent-accepted", sendPageView);
+    return () => window.removeEventListener("linhao-consent-accepted", sendPageView);
   }, [measurementId, pathname, searchParams]);
 
   return null;
