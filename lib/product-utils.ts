@@ -93,6 +93,14 @@ export function getCustomizationOptions(filterGroup: ProductFilterGroup): string
       "Blister / retail card packaging",
       "Assortment mix",
     ],
+    "diy-crafts": [
+      "Character, motif or landscape artwork",
+      "Material and color palette",
+      "Beginner or advanced difficulty",
+      "Tools and accessory configuration",
+      "Multilingual instruction card",
+      "Private-label retail packaging",
+    ],
     "emotional-gifts": [
       "Character & mood expression",
       "Material & color",
@@ -136,6 +144,11 @@ export function getProductSpecifications(product: Product): ProductSpecification
       { label: "Customization", value: "Shape, fabric, hardware, label and retail card" },
       { label: "Typical buyers", value: "Accessory brands, gift shops and online sellers" },
     ],
+    "diy-crafts": [
+      { label: "Product type", value: "DIY needle felting, crochet or embroidery kit" },
+      { label: "Customization", value: "Design, materials, tools, instructions and packaging" },
+      { label: "Typical buyers", value: "Craft retailers, gift brands, workshops and online sellers" },
+    ],
     "emotional-gifts": [
       { label: "Product type", value: "Character and emotional-value gift" },
       { label: "Customization", value: "Expression, color, accessory, message and packaging" },
@@ -161,6 +174,7 @@ export function getProductUseCases(filterGroup: ProductFilterGroup): string[] {
     squishy: ["Impulse retail", "Sensory assortments", "Blind bags", "Party and promotional packs"],
     plush: ["Collectible series", "Gift retail", "Desk companions", "Mascot programs"],
     "bag-charms": ["Fashion accessories", "Gift-with-purchase", "Collectible drops", "Bag and key accessories"],
+    "diy-crafts": ["Creative gifting", "Craft retail", "Beginner workshops", "Mindful hobby collections"],
     "emotional-gifts": ["Lifestyle gifting", "Seasonal campaigns", "Desk décor", "Promotional programs"],
     oem: ["Private-label launches", "Retail gift sets", "Marketplace bundles", "Promotional campaigns"],
   };
