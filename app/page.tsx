@@ -10,6 +10,8 @@ import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import ContactFloat from "@/components/ContactFloat";
+import FactoryDirectComparison from "@/components/FactoryDirectComparison";
+import BuyerValue from "@/components/BuyerValue";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -23,7 +25,9 @@ export default function Home() {
       <TrustStrip />
       <ProductShowcase />
       <Capabilities />
+      <FactoryDirectComparison />
       <FactoryStory />
+      <BuyerValue />
       <Certificates />
       <FAQ />
       <CTA />
