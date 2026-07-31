@@ -30,6 +30,13 @@
 .v7-hero-video .v7-proof span{color:rgba(255,255,255,.68)}
 .v7-hero-btn-outline{border-color:rgba(255,255,255,.75)!important;color:#fff!important;background:rgba(255,255,255,.08)!important}
 @media(max-width:768px){.v7-hero-video{min-height:auto;padding:0;align-items:flex-start}.v7-hero-bg video{display:none}.v7-hero-bg-fallback{display:block}.v7-hero-content{padding:112px 0 72px}.v7-hero-video .v7-copy h1{font-size:clamp(2rem,11vw,2.65rem)!important;line-height:1.12!important;letter-spacing:-.02em!important}}
+
+/* Premium manufacturing workflow */
+.v5-stage-grid{grid-template-columns:repeat(2,1fr);gap:24px}
+.v5-stage-grid article{padding:14px;border-color:#d8e2ef;box-shadow:0 14px 40px rgba(18,42,82,.06)}
+.v5-stage-art{height:260px;border-radius:18px}
+.v5-stage-art span{z-index:2;display:grid;width:36px;height:36px;place-items:center;border-radius:50%;background:rgba(255,255,255,.9);color:#0b57d0;box-shadow:0 8px 22px rgba(15,40,80,.16)}
+@media(max-width:700px){.v5-stage-grid{grid-template-columns:1fr}.v5-stage-art{height:220px}}
 .v7-hero-grid{display:grid;grid-template-columns:.88fr 1.22fr;gap:60px;align-items:center}
 .v7-copy h1{font-size:clamp(54px,6vw,88px);line-height:.92;letter-spacing:-.065em;margin:18px 0 24px;color:#0b1d43}
 .v7-copy h1 span{color:#1769ff}.v7-copy>p{font-size:18px;line-height:1.72;color:#53617d;max-width:660px}
