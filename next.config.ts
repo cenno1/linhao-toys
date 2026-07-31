@@ -2,6 +2,15 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  async redirects() {
+    return [
+      {
+        source: "/products/taba-jelly-ball",
+        destination: "/products/pu-slow-rise-animal-keychain",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
