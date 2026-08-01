@@ -28,6 +28,7 @@ export default function TrendingSquishyToysPage() {
       productHeading="Six high-interest squishy directions for your next collection."
       productDescription="Choose a product direction, then customize its shape, feel, color series, assortment strategy and retail packaging with the LINHAO development team."
       productSlugs={trendingProductSlugs}
+      lastReviewed="2026-08-01"
       capabilities={[
         { title: "Original shape development", text: "Translate a trend direction into original characters, food forms or tactile shapes instead of copying protected products." },
         { title: "Material and feel review", text: "Confirm the intended softness, recovery, surface finish and use case before sampling." },

@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import ProductShowcase from "@/components/ProductShowcase";
-import type { ProductFilterGroup } from "@/lib/products";
+import { products, type ProductFilterGroup } from "@/lib/products";
 import { absoluteUrl } from "@/lib/seo";
 
 type FAQItem = { question: string; answer: string };
@@ -18,12 +18,42 @@ type Props = {
   productDescription: string;
   initialFilter?: "all" | ProductFilterGroup;
   productSlugs?: string[];
+  lastReviewed?: string;
   capabilities: InfoItem[];
   faqs: FAQItem[];
 };
 
 export default function SeoLandingPage(props: Props) {
+  const listedProducts = props.productSlugs
+    ? props.productSlugs
+        .map((slug) => products.find((product) => product.slug === slug))
+        .filter((product): product is (typeof products)[number] => Boolean(product))
+    : [];
+  const pageUrl = absoluteUrl(props.path);
   const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: props.title,
+      description: props.introduction,
+      inLanguage: "en",
+      dateModified: props.lastReviewed,
+      mainEntity: listedProducts.length
+        ? {
+            "@type": "ItemList",
+            numberOfItems: listedProducts.length,
+            itemListElement: listedProducts.map((product, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              name: product.name,
+              url: absoluteUrl(`/products/${product.slug}`),
+              image: absoluteUrl(product.images.hero),
+            })),
+          }
+        : undefined,
+    },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -54,6 +84,16 @@ export default function SeoLandingPage(props: Props) {
           <h1 className="mt-5 max-w-5xl text-5xl font-black tracking-[-0.055em] sm:text-6xl">{props.title}</h1>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">{props.introduction}</p>
           <p className="mt-5 max-w-3xl text-sm leading-7 text-slate-400">{props.buyerNote}</p>
+          {props.lastReviewed && (
+            <p className="mt-4 text-xs font-bold uppercase tracking-[0.16em] text-blue-300">
+              Trend review updated {new Date(`${props.lastReviewed}T00:00:00Z`).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                timeZone: "UTC",
+              })}
+            </p>
+          )}
         </div>
       </section>
 
