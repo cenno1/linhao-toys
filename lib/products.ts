@@ -19,6 +19,8 @@ export type Product = {
   category: string;
   tag: string;
   note: string;
+  seoTitle?: string;
+  seoDescription?: string;
   alt: string;
   keywords: string[];
   images: ProductImageSet;
@@ -44,6 +46,8 @@ export const products: Product[] = [
     category: "Viral Squishy · OEM/ODM",
     tag: "2026 Trend Pick",
     note: "Pastel dumpling and bao bun squishies developed as blind-box assortments for collectible retail and social-commerce launches. Customize expressions, colorways, softness, scent, rarity mix and display packaging.",
+    seoTitle: "Dumpling Squishy Blind Box Manufacturer",
+    seoDescription: "Develop custom dumpling and bao bun squishy blind boxes with original expressions, color assortments, private-label packaging and OEM sampling.",
     alt: "custom dumpling squishy blind box bao bun sensory toys wholesale manufacturer",
     keywords: [
       "dumpling squishy manufacturer",
@@ -64,6 +68,8 @@ export const products: Product[] = [
     category: "Sensory Stress Cube · Wholesale",
     tag: "High Search Interest",
     note: "Clear rounded sensory cubes with colorful transparent finishes and optional glitter effects for tactile, desk and gift assortments. Customize dimensions, firmness, color, inclusions and retail packaging after material review.",
+    seoTitle: "Transparent Gel Cube Squishy Manufacturer",
+    seoDescription: "Source custom transparent gel cube squishies with buyer-specified firmness, colors, inclusions and private-label retail packaging.",
     alt: "custom transparent gel cube squishy sensory stress cube wholesale supplier",
     keywords: [
       "gel cube squishy",
@@ -84,6 +90,8 @@ export const products: Product[] = [
     category: "Character Squishy · OEM/ODM",
     tag: "Viral Character",
     note: "Original capybara squeeze characters with accessory variations for collectible assortments, impulse gifting and key retail moments. Customize poses, accessories, colors, material feel, packaging and assortment ratios.",
+    seoTitle: "Capybara Squishy Wholesale & OEM Manufacturer",
+    seoDescription: "Create original capybara squishy assortments with custom poses, accessories, colors, packaging and wholesale assortment planning.",
     alt: "custom capybara squishy stress toy assortment wholesale OEM manufacturer",
     keywords: [
       "capybara squishy",
@@ -104,6 +112,8 @@ export const products: Product[] = [
     category: "Taba-Style Squishy · OEM/ODM",
     tag: "Social Trend",
     note: "Ultra-soft fruit and animal squeeze shapes created for trend-led sensory collections. Develop original shapes with custom surface feel, color, print, firmness, dust-control packaging and private-label presentation.",
+    seoTitle: "Soft Sticky Squishy OEM Manufacturer",
+    seoDescription: "Develop original soft sticky squishy shapes with custom firmness, surface feel, printing, protective packaging and private-label presentation.",
     alt: "custom soft sticky taba style squishy assortment wholesale manufacturer",
     keywords: [
       "taba squishy manufacturer",
@@ -124,6 +134,8 @@ export const products: Product[] = [
     category: "Food Squishy · Wholesale",
     tag: "Evergreen Seller",
     note: "Croissant, toast, roll, waffle, cake and cream-bun slow-rise toys for food-themed retail and gift programs. Customize bakery shapes, recovery speed, scent, faces, colorways and branded packaging.",
+    seoTitle: "Bakery Slow-Rise Squishy Wholesale Manufacturer",
+    seoDescription: "Build custom bakery slow-rise squishy assortments with food shapes, recovery options, scent, face artwork and branded retail packaging.",
     alt: "custom bakery food slow rise squishy toys wholesale manufacturer",
     keywords: [
       "food squishy wholesale",
@@ -144,6 +156,8 @@ export const products: Product[] = [
     category: "Quiet Desk Sensory · Private Label",
     tag: "Kidult Market",
     note: "Minimal pebble-shaped squeeze pieces designed for quiet desk, lifestyle gift and adult sensory collections. Customize form, resistance, color palette, surface finish, gift box and corporate branding without medical claims.",
+    seoTitle: "Adult Desk Sensory Squishy Manufacturer",
+    seoDescription: "Create private-label adult desk sensory squishies with custom resistance, shapes, color palettes, surface finish and corporate gift packaging.",
     alt: "custom adult desk sensory squishy quiet stress relief toy wholesale",
     keywords: [
       "adult stress relief toy",

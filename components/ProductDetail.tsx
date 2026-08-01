@@ -8,6 +8,7 @@ import type { Product } from "@/lib/products";
 import {
   getCustomizationOptions,
   getProductCategoryLandingPath,
+  getProductBuyerBrief,
   getProductFAQs,
   getProductGallery,
   getProductSpecifications,
@@ -40,9 +41,10 @@ type ProductDetailProps = {
 
 export default function ProductDetail({ product }: ProductDetailProps) {
   const gallery = getProductGallery(product);
-  const customization = getCustomizationOptions(product.filterGroup);
+  const customization = getCustomizationOptions(product);
   const specifications = getProductSpecifications(product);
-  const useCases = getProductUseCases(product.filterGroup);
+  const useCases = getProductUseCases(product);
+  const buyerBrief = getProductBuyerBrief(product);
   const relatedProducts = getRelatedProducts(product);
   const faqs = getProductFAQs(product);
   const categoryPath = getProductCategoryLandingPath(product.filterGroup);
@@ -182,6 +184,23 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                 </div>
               ))}
             </dl>
+            <div className="mt-8 rounded-3xl border border-blue-100 bg-blue-50/60 p-6">
+              <h3 className="text-lg font-black text-slate-950">
+                Prepare these details for quotation
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                A complete buyer brief helps us confirm feasibility, sampling scope and a more
+                useful quotation.
+              </p>
+              <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                {buyerBrief.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm leading-6 text-slate-700">
+                    <span className="mt-0.5 font-black text-blue-600">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className="rounded-[2rem] bg-slate-950 p-7 text-white sm:p-9">
             <span className="text-xs font-black uppercase tracking-[0.18em] text-blue-400">

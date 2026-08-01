@@ -25,24 +25,27 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     return {};
   }
 
+  const seoTitle = product.seoTitle ?? product.name;
+  const seoDescription = product.seoDescription ?? product.note;
+
   return {
-    title: product.name,
-    description: product.note,
+    title: seoTitle,
+    description: seoDescription,
     keywords: product.keywords,
     alternates: {
       canonical: `/products/${product.slug}`,
     },
     openGraph: {
-      title: `${product.name} | ${SITE_NAME}`,
-      description: product.note,
+      title: `${seoTitle} | ${SITE_NAME}`,
+      description: seoDescription,
       url: `/products/${product.slug}`,
       type: "website",
       images: [{ url: product.images.hero, alt: product.alt }],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${product.name} | ${SITE_NAME}`,
-      description: product.note,
+      title: `${seoTitle} | ${SITE_NAME}`,
+      description: seoDescription,
       images: [product.images.hero],
     },
   };
