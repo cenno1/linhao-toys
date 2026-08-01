@@ -58,6 +58,8 @@ export default function Page() {
     relatedPages={[
       { title: "Wholesale Packaging Guide", text: "Compare bags, blind packs, retail boxes, displays and online multipack directions.", href: "/resources/wholesale-squishy-toy-packaging-guide" },
       { title: "MOQ & Cost Planning", text: "Learn why product mix, packaging, setup and volume must be compared on one specification.", href: "/resources/custom-squishy-toy-moq-cost-guide" },
+      { title: "Blind Box Assortment Planning", text: "Plan design count, ratios, packaging and quantity per character for an original collectible series.", href: "/resources/blind-box-squishy-assortment-planning-guide" },
+      { title: "Choose a Squishy Manufacturer", text: "Evaluate suppliers using one brief, comparable quotations, samples and product-specific controls.", href: "/resources/how-to-choose-squishy-toy-manufacturer" },
       { title: "Complete Product Catalog", text: "Review more current squishy, bag-charm, craft and gift product directions.", href: "/products" },
     ]}
     faqs={[

@@ -58,6 +58,7 @@ export default function Page() {
     relatedPages={[
       { title: "Custom Squishy Manufacturing", text: "Compare the broader OEM path for molded squeeze products, artwork and private-label packaging.", href: "/custom-squishy-toy-manufacturer" },
       { title: "Toy Compliance Planning", text: "Understand why documentation must match the exact product, materials, age grade and market.", href: "/resources/en71-astm-f963-cpc-toy-compliance-guide" },
+      { title: "PU vs TPR vs Silicone", text: "Compare common squishy material routes and the sample details needed before choosing one.", href: "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide" },
       { title: "Trending Squishy Directions", text: "Review current product directions selected for buyer assortment and concept planning.", href: "/trending-squishy-toys" },
     ]}
     faqs={[

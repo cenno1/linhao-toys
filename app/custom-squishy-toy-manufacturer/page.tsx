@@ -58,6 +58,8 @@ export default function Page() {
     relatedPages={[
       { title: "Custom Squishy MOQ & Cost Guide", text: "Understand how molds, design count, effects, packaging and volume shape a quotation.", href: "/resources/custom-squishy-toy-moq-cost-guide" },
       { title: "How to Prepare an OEM Brief", text: "Use a practical checklist for artwork, size, softness, quantity, packaging and market details.", href: "/resources/how-to-prepare-custom-squishy-toy-brief" },
+      { title: "PU vs TPR vs Silicone", text: "Compare material routes by squeeze feel, recovery, appearance, surface behavior and packaging needs.", href: "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide" },
+      { title: "Sample Approval Checklist", text: "Approve dimensions, appearance, squeeze behavior, artwork and packaging against one production reference.", href: "/resources/custom-squishy-toy-sample-approval-checklist" },
       { title: "OEM / ODM Development Process", text: "See how a broader custom toy project moves from concept review to production coordination.", href: "/oem" },
     ]}
     faqs={[

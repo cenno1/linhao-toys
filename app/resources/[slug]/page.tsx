@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import { buyerGuides, getBuyerGuide } from "@/lib/guides";
-import { SITE_NAME, absoluteUrl } from "@/lib/seo";
+import { DEFAULT_OG_IMAGE, SITE_NAME, absoluteUrl } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -16,16 +16,25 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const guide = getBuyerGuide((await params).slug);
   if (!guide) return {};
+  const title = guide.seoTitle ?? guide.title;
   return {
-    title: guide.title,
+    title,
     description: guide.description,
+    keywords: guide.keywords,
     alternates: { canonical: `/resources/${guide.slug}` },
     openGraph: {
-      title: guide.title,
+      title,
       description: guide.description,
       type: "article",
       url: `/resources/${guide.slug}`,
       modifiedTime: guide.updated,
+      images: [{ url: DEFAULT_OG_IMAGE, alt: `${guide.title} by ${SITE_NAME}` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: guide.description,
+      images: [DEFAULT_OG_IMAGE],
     },
   };
 }
@@ -44,8 +53,12 @@ export default async function GuidePage({ params }: Props) {
       datePublished: guide.updated,
       dateModified: guide.updated,
       mainEntityOfPage: url,
-      author: { "@type": "Organization", name: SITE_NAME },
+      image: absoluteUrl(DEFAULT_OG_IMAGE),
+      keywords: guide.keywords.join(", "),
+      about: guide.keywords,
+      author: { "@id": `${absoluteUrl("/")}#organization` },
       publisher: { "@id": `${absoluteUrl("/")}#organization` },
+      isPartOf: { "@type": "CollectionPage", "@id": `${absoluteUrl("/resources")}#collection` },
     },
     {
       "@context": "https://schema.org",
@@ -56,12 +69,24 @@ export default async function GuidePage({ params }: Props) {
         { "@type": "ListItem", position: 3, name: guide.title, item: url },
       ],
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: guide.faqs.map(({ question, answer }) => ({
+        "@type": "Question",
+        name: question,
+        acceptedAnswer: { "@type": "Answer", text: answer },
+      })),
+    },
   ];
 
   return (
     <main>
       <Header />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       <article>
         <header className="bg-slate-950 py-20 text-white sm:py-24">
           <div className="mx-auto max-w-4xl px-5 sm:px-6">
@@ -79,6 +104,10 @@ export default async function GuidePage({ params }: Props) {
         </header>
 
         <div className="mx-auto max-w-4xl px-5 py-16 sm:px-6 sm:py-20">
+          <section className="mb-14 rounded-[2rem] border border-blue-100 bg-blue-50/70 p-7 sm:p-9">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-600">Quick answer</p>
+            <p className="mt-4 text-lg font-bold leading-8 text-slate-800">{guide.quickAnswer}</p>
+          </section>
           <div className="space-y-14">
             {guide.sections.map((section) => (
               <section key={section.heading}>
@@ -101,6 +130,23 @@ export default async function GuidePage({ params }: Props) {
               </section>
             ))}
           </div>
+
+          <section className="mt-16">
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-600">Buyer FAQ</p>
+            <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
+              Questions buyers ask about this topic.
+            </h2>
+            <div className="mt-7 space-y-3">
+              {guide.faqs.map(({ question, answer }) => (
+                <details key={question} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                  <summary className="cursor-pointer list-none font-black text-slate-950">
+                    {question}<span className="float-right text-blue-600">+</span>
+                  </summary>
+                  <p className="mt-4 pr-8 text-sm leading-7 text-slate-600">{answer}</p>
+                </details>
+              ))}
+            </div>
+          </section>
 
           <aside className="mt-16 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-600">Next steps</p>

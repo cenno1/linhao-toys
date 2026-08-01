@@ -69,6 +69,7 @@ export default function TrendingSquishyToysPage() {
       relatedPages={[
         { title: "Custom Squishy Manufacturing", text: "Turn a selected direction into an original OEM product and private-label program.", href: "/custom-squishy-toy-manufacturer" },
         { title: "Wholesale Squishy Supply", text: "Plan practical product mixes, retail packs and quantity tiers for resale.", href: "/wholesale-squishy-toys" },
+        { title: "Blind Box Collection Planning", text: "Organize original designs, assortment ratios, packaging and approvals for a collectible series.", href: "/resources/blind-box-squishy-assortment-planning-guide" },
         { title: "MOQ & Cost Guide", text: "Understand how molds, design count, effects, packaging and volume influence quotation planning.", href: "/resources/custom-squishy-toy-moq-cost-guide" },
       ]}
       faqs={[

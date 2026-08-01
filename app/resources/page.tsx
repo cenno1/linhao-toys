@@ -4,18 +4,63 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import { buyerGuides } from "@/lib/guides";
+import { DEFAULT_OG_IMAGE, SITE_NAME, absoluteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Toy Sourcing Guides for Wholesale & OEM Buyers",
   description:
     "Practical guides covering custom toy quotations, MOQ, compliance documents, squishy packaging and plush bag charm development.",
   alternates: { canonical: "/resources" },
+  keywords: ["toy sourcing guide", "custom squishy toy guide", "OEM toy buyer", "squishy toy MOQ", "toy supplier checklist"],
+  openGraph: {
+    title: "Toy Sourcing Guides for Wholesale & OEM Buyers",
+    description: "Practical guides for clearer briefs, samples, quotations, materials, packaging and supplier evaluation.",
+    url: "/resources",
+    type: "website",
+    images: [{ url: DEFAULT_OG_IMAGE, alt: "LINHAO Toys buyer sourcing guides" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Toy Sourcing Guides for Wholesale & OEM Buyers",
+    description: "Practical guides for clearer briefs, samples, quotations, materials, packaging and supplier evaluation.",
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 export default function ResourcesPage() {
+  const sortedGuides = [...buyerGuides].sort((a, b) => b.updated.localeCompare(a.updated));
+  const pageUrl = absoluteUrl("/resources");
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": `${pageUrl}#collection`,
+      url: pageUrl,
+      name: "Toy Sourcing Guides for Wholesale & OEM Buyers",
+      description: "Practical sourcing guidance for custom squishy toys, wholesale assortments, materials, sampling, packaging and supplier evaluation.",
+      publisher: { "@id": `${absoluteUrl("/")}#organization` },
+      inLanguage: "en",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      numberOfItems: sortedGuides.length,
+      itemListElement: sortedGuides.map((guide, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: guide.title,
+        url: absoluteUrl(`/resources/${guide.slug}`),
+      })),
+    },
+  ];
+
   return (
     <main>
       <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       <section className="relative overflow-hidden bg-slate-950 py-24 text-white sm:py-28">
         <div className="absolute right-0 top-0 h-80 w-80 rounded-full bg-blue-600/20 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
@@ -27,18 +72,23 @@ export default function ResourcesPage() {
             Prepare clearer briefs, understand quotation and compliance factors,
             compare packaging options and organize sampling requirements.
           </p>
+          <p className="mt-5 text-sm font-bold text-blue-300">
+            {sortedGuides.length} sourcing guides reviewed by {SITE_NAME}.
+          </p>
         </div>
       </section>
       <section className="bg-[#f8fafc] py-20 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-6 px-5 sm:px-6 md:grid-cols-2 lg:px-8">
-          {buyerGuides.map((guide) => (
+          {sortedGuides.map((guide) => (
             <article key={guide.slug} className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
               <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-600">{guide.eyebrow}</p>
               <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
                 <Link href={`/resources/${guide.slug}`} className="hover:text-blue-600">{guide.title}</Link>
               </h2>
               <p className="mt-4 leading-7 text-slate-600">{guide.description}</p>
-              <p className="mt-5 text-xs font-bold text-slate-500">{guide.readTime}</p>
+              <p className="mt-5 text-xs font-bold text-slate-500">
+                Updated {guide.updated} · {guide.readTime}
+              </p>
               <Link href={`/resources/${guide.slug}`} className="mt-6 inline-flex text-sm font-black text-blue-600">
                 Read buyer guide →
               </Link>
