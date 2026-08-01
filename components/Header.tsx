@@ -13,7 +13,7 @@ export default function Header() {
           </span>
         </Link>
         <nav aria-label="Primary navigation">
-          <Link href="/products">Collections</Link>
+          <Link href="/trending-squishy-toys">Trending</Link>
           <Link href="/products">Products</Link>
           <Link href="/oem">OEM / ODM</Link>
           <Link href="/factory">Factory</Link>

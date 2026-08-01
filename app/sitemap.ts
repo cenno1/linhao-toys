@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/custom-squishy-toy-manufacturer",
     "/wholesale-squishy-toys",
     "/taba-squishy-manufacturer",
+    "/trending-squishy-toys",
     "/custom-plush-bag-charms",
     "/oem",
     "/factory",
