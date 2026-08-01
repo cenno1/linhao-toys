@@ -9,6 +9,7 @@ import {
 } from "@/lib/seo";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import ConsentBanner from "@/components/ConsentBanner";
+import { WHATSAPP_NUMBER } from "@/lib/product-utils";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -86,8 +87,16 @@ export default function RootLayout({
     "@id": `${SITE_URL}/#organization`,
     name: SITE_NAME,
     url: SITE_URL,
-    logo: absoluteUrl("/favicon.ico"),
+    logo: {
+      "@type": "ImageObject",
+      url: absoluteUrl("/logo-linhao.svg"),
+      contentUrl: absoluteUrl("/logo-linhao.svg"),
+      width: 512,
+      height: 512,
+    },
+    image: absoluteUrl("/logo-linhao.svg"),
     email: "sales@lh-industrial.com",
+    telephone: `+${WHATSAPP_NUMBER}`,
     areaServed: "Worldwide",
     knowsAbout: [
       "Custom squishy toy manufacturing",
@@ -102,6 +111,7 @@ export default function RootLayout({
       "@type": "ContactPoint",
       contactType: "sales",
       email: "sales@lh-industrial.com",
+      telephone: `+${WHATSAPP_NUMBER}`,
       url: absoluteUrl("/contact"),
       availableLanguage: ["English", "Chinese"],
     },

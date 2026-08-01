@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">LINHAO Toys logo</title>
+  <desc id="desc">White LH initials on a blue rounded square</desc>
+  <rect width="512" height="512" rx="112" fill="#0b5ee8"/>
+  <path fill="#fff" d="M112 132h58v190h93v58H112V132Zm173 0h58v92h57v-92h58v248h-58v-98h-57v98h-58V132Z"/>
+</svg>

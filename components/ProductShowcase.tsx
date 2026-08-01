@@ -11,6 +11,8 @@ type ProductShowcaseProps = {
   initialFilter?: FilterOption["value"];
   productSlugs?: string[];
   showFilters?: boolean;
+  limit?: number;
+  showCatalogLink?: boolean;
   eyebrow?: string;
   heading?: string;
   description?: string;
@@ -29,6 +31,8 @@ export default function ProductShowcase({
   initialFilter = "all",
   productSlugs,
   showFilters = true,
+  limit,
+  showCatalogLink = false,
   eyebrow = "REAL SAMPLE GALLERY",
   heading = "Wholesale-ready squishy & plush SKUs for Amazon, retail and OEM.",
   description = "Review real product directions for wholesale, private-label and custom development projects.",
@@ -43,11 +47,13 @@ export default function ProductShowcase({
           ? products
           : products.filter((p) => p.filterGroup === activeFilter);
 
-      return productSlugs
+      const selectedProducts = productSlugs
         ? filtered.filter((product) => productSlugs.includes(product.slug))
         : filtered;
+
+      return limit ? selectedProducts.slice(0, limit) : selectedProducts;
     },
-    [activeFilter, productSlugs],
+    [activeFilter, limit, productSlugs],
   );
 
   return (
@@ -103,6 +109,13 @@ export default function ProductShowcase({
             );
           })}
         </div>
+        {showCatalogLink && (
+          <div className="mt-10 text-center">
+            <Link className="btn btn-outline" href="/products">
+              View the complete product catalog
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
