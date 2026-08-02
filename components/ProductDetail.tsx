@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import ContactFloat from "@/components/ContactFloat";
 import ProductGallery from "@/components/ProductGallery";
 import ProductInquiryForm from "@/components/ProductInquiryForm";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import type { Product } from "@/lib/products";
 import {
   getCustomizationOptions,
@@ -116,9 +117,9 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <h2 className="text-lg font-black text-slate-950">Compliance & testing</h2>
               <p className="mt-3 text-sm leading-7 text-slate-600">
-            Download EN71, ASTM F963-23 and CPC PDFs for documented squishy programs.
-            Additional testing can be arranged by product, material and destination market.
-          </p>
+                Download EN71, ASTM F963-23 and CPC PDFs for documented squishy programs.
+                Additional testing can be arranged by product, material and destination market.
+              </p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {complianceDocsForDetail.map((doc) =>
                   doc.available && doc.href ? (
@@ -173,6 +174,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             >
               Request price & samples →
             </a>
+            <WhatsAppButton context="product" productName={product.name} />
           </div>
         </div>
       </section>

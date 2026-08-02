@@ -1,4 +1,5 @@
 import Link from "next/link";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { INQUIRY_EMAIL } from "@/lib/product-utils";
 
 const HERO_VIDEO = "/videos/oem-market-squishy-showcase.mp4";
@@ -41,6 +42,7 @@ export default function Hero() {
             faces, packaging and private label development.
           </p>
           <div className="hero-actions">
+            <WhatsAppButton context="hero" />
             <Link className="btn btn-primary btn-lg" href="/products">
               Browse real products
             </Link>
