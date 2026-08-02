@@ -1,9 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 
 type ConsentChoice = "accepted" | "declined" | null;
+
+const subscribeToMount = () => () => {};
+
+function getStoredChoice(): ConsentChoice {
+  const stored = window.localStorage.getItem("linhao_analytics_consent");
+  return stored === "accepted" || stored === "declined" ? stored : null;
+}
 
 function updateGoogleConsent(choice: Exclude<ConsentChoice, null>) {
   if (!window.gtag) return;
@@ -17,19 +24,16 @@ function updateGoogleConsent(choice: Exclude<ConsentChoice, null>) {
 
 export default function ConsentBanner() {
   const [choice, setChoice] = useState<ConsentChoice>(null);
-  const [ready, setReady] = useState(false);
   const [editing, setEditing] = useState(false);
+  const mounted = useSyncExternalStore(subscribeToMount, () => true, () => false);
+  const storedChoice = mounted ? getStoredChoice() : null;
+  const activeChoice = choice ?? storedChoice;
 
   useEffect(() => {
-    const stored = window.localStorage.getItem(
-      "linhao_analytics_consent",
-    ) as ConsentChoice;
-    if (stored === "accepted" || stored === "declined") {
-      setChoice(stored);
-      updateGoogleConsent(stored);
+    if (storedChoice) {
+      updateGoogleConsent(storedChoice);
     }
-    setReady(true);
-  }, []);
+  }, [storedChoice]);
 
   function save(nextChoice: Exclude<ConsentChoice, null>) {
     window.localStorage.setItem("linhao_analytics_consent", nextChoice);
@@ -42,9 +46,9 @@ export default function ConsentBanner() {
     }
   }
 
-  if (!ready) return null;
+  if (!mounted) return null;
 
-  if (choice && !editing) {
+  if (activeChoice && !editing) {
     return (
       <button
         className="privacy-settings-button"

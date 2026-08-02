@@ -5,7 +5,6 @@ import { products } from "@/lib/products";
 import {
   getProductBySlug,
   getProductFAQs,
-  getProductSpecifications,
 } from "@/lib/product-utils";
 import { SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/seo";
 
@@ -60,32 +59,31 @@ export default async function ProductPage({ params }: ProductPageProps) {
   }
 
   const productUrl = absoluteUrl(`/products/${product.slug}`);
-  const specifications = getProductSpecifications(product);
   const faqs = getProductFAQs(product);
-  const productJsonLd = {
+  const serviceJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": `${productUrl}#product`,
-    name: product.name,
+    "@type": "Service",
+    "@id": `${productUrl}#service`,
+    name: `${product.name} custom manufacturing and wholesale supply`,
     description: product.note,
     image: [absoluteUrl(product.images.hero)],
-    category: product.category,
+    serviceType: product.category,
+    category: "Custom toys and wholesale toy supply",
     brand: {
       "@type": "Brand",
       name: SITE_NAME,
     },
-    manufacturer: {
+    provider: {
       "@id": `${SITE_URL}/#organization`,
+    },
+    areaServed: {
+      "@type": "Place",
+      name: "Worldwide",
     },
     audience: {
       "@type": "BusinessAudience",
       audienceType: "Wholesale buyers, retailers, distributors and brand owners",
     },
-    additionalProperty: specifications.map(({ label, value }) => ({
-      "@type": "PropertyValue",
-      name: label,
-      value,
-    })),
     subjectOf: product.video
       ? {
           "@type": "VideoObject",
@@ -139,15 +137,15 @@ export default async function ProductPage({ params }: ProductPageProps) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd).replace(/</g, "\\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c") }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c") }}
       />
       <ProductDetail product={product} />
     </>
