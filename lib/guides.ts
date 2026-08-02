@@ -611,6 +611,278 @@ export const buyerGuides: BuyerGuide[] = [
       { label: "MOQ and cost planning guide", href: "/resources/custom-squishy-toy-moq-cost-guide" },
     ],
   },
+  {
+    slug: "scented-vs-unscented-squishy-toy-odor-control-guide",
+    title: "Scented vs. Unscented Squishy Toys: An Odor-Control Guide for Buyers",
+    seoTitle: "Squishy Toy Scent and Odor-Control Guide",
+    description:
+      "Plan scented or no-added-fragrance squishy toys with clear odor targets, sealed-sample checks, packaging review and product-specific compliance planning.",
+    eyebrow: "SENSORY SPECIFICATION",
+    updated: "2026-08-02",
+    readTime: "8 min read",
+    quickAnswer: "A squishy toy scent brief should separate intentional fragrance from base-material and packaging odor. Define whether fragrance is allowed, approve the exact finished product after sealed storage, check odor and hand transfer at opening, and confirm product-specific testing for the destination market.",
+    keywords: ["unscented squishy toys", "scented squishy manufacturer", "squishy toy chemical smell", "squishy toy odor control", "custom scented stress toy"],
+    sections: [
+      {
+        heading: "Separate fragrance, material odor and safety",
+        paragraphs: [
+          "Consumers often use the word smell for several different experiences: an intentionally added fragrance, the normal odor of a newly manufactured material, ink or adhesive odor, or odor concentrated inside a sealed package. These should be investigated separately because they can have different sources and controls.",
+          "Odor alone does not prove that a product is safe or unsafe. It is still an important acceptance signal, especially when a product is held near the face or handled for long periods. Safety decisions should rely on the exact formulation, finished-product construction and applicable testing rather than a sensory judgment alone.",
+        ],
+      },
+      {
+        heading: "Write an actionable scent requirement",
+        paragraphs: [
+          "If no fragrance should be added, state no added fragrance rather than assuming that unscented means absolutely odorless. Materials and packaging can retain a temporary production odor even when no fragrance is used.",
+          "For a scented product, define the fragrance direction and acceptable strength. A verbal request such as strong bread smell or light peach smell is subjective, so approve a physical reference and record the sample revision used for production.",
+        ],
+        checklist: [
+          "No added fragrance or intentional scent",
+          "Target fragrance family and intensity",
+          "Markets, intended age grade and use scenario",
+          "Acceptable odor immediately after opening",
+          "Whether odor may transfer to hands or nearby packaging",
+          "Required ingredient, formulation or testing documentation",
+        ],
+      },
+      {
+        heading: "Evaluate the product after sealed storage",
+        paragraphs: [
+          "An open sample on a factory desk may smell different from a retail unit that has been sealed for weeks. Review the product in its proposed inner bag and retail package, then record the opening condition, odor intensity, surface feel and any transfer to hands or printed components.",
+          "Use consistent evaluation conditions and several reviewers when possible. The goal is not to create a universal laboratory odor score, but to reduce the risk that one person's tolerance becomes the entire approval standard.",
+        ],
+      },
+      {
+        heading: "Control changes that can alter odor",
+        paragraphs: [
+          "A change in compound, colorant, coating, ink, adhesive, fragrance level or inner bag can change the opening experience. Treat these as controlled product revisions and decide which changes require a new retained sample or verification check.",
+          "Ventilation time and packing schedule can also affect initial odor, but airing out a product is not a substitute for correct formulation, process control or compliance review. The approved product should represent the actual packed unit buyers will receive.",
+        ],
+      },
+      {
+        heading: "Prepare consumer instructions and complaint handling",
+        paragraphs: [
+          "If the product has an intentional fragrance, describe it accurately on the listing and package so sensitive consumers can make an informed choice. Avoid medical, therapeutic or safety claims that are not supported.",
+          "Keep batch, material and packaging records so an odor complaint can be traced. A useful investigation compares the returned unit, retained sample, production lot, storage conditions and any recent material or package change.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Does unscented mean a squishy toy has no smell at all?", answer: "Not necessarily. No added fragrance is a clearer specification. Base materials, printing and sealed packaging can still create an initial odor that should be evaluated on the finished packed sample." },
+      { question: "Does a strong smell prove a squishy toy is unsafe?", answer: "Odor alone cannot establish compliance or toxicity. Treat a strong or unpleasant odor as a quality and consumer-acceptance concern, then review the exact materials, formulation, finished product and applicable testing." },
+      { question: "Can custom squishy toys use a branded fragrance?", answer: "A fragrance direction may be developed, but intensity, compatibility, labeling and market requirements should be reviewed on the exact product before production." },
+      { question: "When should scent be approved?", answer: "Approve scent on the finished product in its intended inner and retail packaging after representative sealed storage, not only on an open material sample." },
+    ],
+    relatedLinks: [
+      { label: "Compare PU, TPR and silicone material routes", href: "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide" },
+      { label: "Approve a custom squishy sample", href: "/resources/custom-squishy-toy-sample-approval-checklist" },
+      { label: "Discuss a scented or no-added-fragrance project", href: "/contact" },
+    ],
+  },
+  {
+    slug: "taba-squishy-packaging-sticky-surface-guide",
+    title: "Taba Squishy Packaging and Sticky-Surface Guide for Buyers",
+    seoTitle: "Taba Squishy Packaging and Surface Guide",
+    description:
+      "Plan Taba squishy inner bags, surface tack, dust protection, handling instructions and packed-sample approval for retail or private-label projects.",
+    eyebrow: "TABA PACKAGING",
+    updated: "2026-08-02",
+    readTime: "8 min read",
+    quickAnswer: "For a sticky-touch Taba squishy, the inner bag is part of the product experience. Buyers should approve surface tack and dust behavior together with bag softness, clarity, seam position, seal strength, printing, product fit and instructions for handling or storage.",
+    keywords: ["Taba squishy packaging", "sticky squishy bag", "soft bag for Taba squishy", "Taba squishy dust control", "private label Taba squishy"],
+    sections: [
+      {
+        heading: "Treat Taba as a market description, not one specification",
+        paragraphs: [
+          "The name Taba is used online for several very soft, sticky or jelly-style squishy experiences. It does not guarantee one standardized material, formula, firmness or package. Begin by confirming the exact construction and approved reference instead of sourcing by the trend name alone.",
+          "Surface tack can be part of the intended experience, but it also affects dust pickup, handling, packing speed and how the product feels inside or outside its bag. Define the desired balance during sampling.",
+        ],
+      },
+      {
+        heading: "The inner bag changes the sensory experience",
+        paragraphs: [
+          "Reddit discussions show that some users enjoy a crinkly bag while others actively search for a softer, quieter bag. Neither direction is automatically correct. The package should match the target user, retail position and product construction.",
+          "Approve the bag with the squishy inside it. Film softness, thickness, seam location and available space can change squeeze feel, noise, visibility and the risk of the product sticking to a seal area.",
+        ],
+        checklist: [
+          "Soft, crisp or low-noise hand feel",
+          "Film clarity, haze and color",
+          "Bag dimensions and free space around the product",
+          "Seal width, seam position and opening method",
+          "Printed warnings, branding and traceability code",
+          "Single-use seal, reusable closure or secondary retail box",
+        ],
+      },
+      {
+        heading: "Control tack, dust and surface transfer",
+        paragraphs: [
+          "Evaluate whether the surface collects fibers or particles during normal sample handling and whether color, coating or residue transfers to the bag or hands. Define the acceptable condition at packing, after transport simulation and after the consumer opens the package.",
+          "Do not add powder, coating or a consumer cleaning method only because it appears in a social-media comment. Any treatment should be compatible with the approved material, decoration, instructions and compliance plan.",
+        ],
+      },
+      {
+        heading: "Test storage and transport as a packed system",
+        paragraphs: [
+          "Review how the product and bag behave after representative time, pressure and temperature conditions. Check deformation, surface blocking, oil or color transfer, bag clouding, seal condition and whether printed components contact the sticky surface.",
+          "The outer retail package and master carton should prevent excessive compression while keeping the product presentation consistent. A beautiful product can still disappoint if it arrives flattened, dusty or attached to an unsuitable inner film.",
+        ],
+      },
+      {
+        heading: "Give buyers accurate handling information",
+        paragraphs: [
+          "If the approved product is designed to remain in its bag during squeezing, show that clearly in images and instructions. If it may be removed, explain the expected surface behavior and only provide cleaning or storage directions that have been checked for the actual formulation.",
+          "Avoid presenting all sticky squishies as identical. Accurate product-specific instructions reduce returns and help the end customer choose a texture and package they will enjoy.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Should a Taba squishy stay inside its bag?", answer: "It depends on the approved construction. Many sticky-touch products are designed to be squeezed through the inner bag, while other formulations may allow removal. The listing and instructions should match the tested product." },
+      { question: "Can Taba squishy bags be soft instead of crinkly?", answer: "Different film and bag constructions can create softer or crisper hand feel. Confirm compatibility, seal performance, clarity and squeeze experience with the actual squishy inside." },
+      { question: "Why do sticky squishies collect dust?", answer: "A tacky surface can attract fibers and particles during handling. Surface formulation, protective treatment, packing environment and inner packaging should be reviewed together." },
+      { question: "Can a private-label Taba bag include a logo and instructions?", answer: "Yes. Branding, warnings, traceability details and handling instructions can be planned on the inner bag, insert or retail box according to the product and market." },
+    ],
+    relatedLinks: [
+      { label: "Taba squishy manufacturing overview", href: "/taba-squishy-manufacturer" },
+      { label: "Wholesale packaging planning guide", href: "/resources/wholesale-squishy-toy-packaging-guide" },
+      { label: "Explore Taba and sticky-touch product directions", href: "/products" },
+    ],
+  },
+  {
+    slug: "squishy-toy-durability-testing-quality-control-guide",
+    title: "Squishy Toy Durability Testing and Quality-Control Guide",
+    seoTitle: "Squishy Toy Durability Testing Guide",
+    description:
+      "Build a practical durability plan for foam, gel, TPR and filled squishy toys covering tears, seams, leakage, recovery, decoration and packed-unit checks.",
+    eyebrow: "DURABILITY PLANNING",
+    updated: "2026-08-02",
+    readTime: "8 min read",
+    quickAnswer: "Squishy durability should be evaluated by construction and intended use. Define likely failure modes, approve the shape and material, run repeatable compression or squeeze checks, inspect thin areas and seals, review decoration and recovery, and compare production units with the approved reference.",
+    keywords: ["squishy toy durability test", "stress ball leak testing", "squishy toy quality control", "slow rising squishy tearing", "squeeze toy inspection"],
+    sections: [
+      {
+        heading: "Start with the construction-specific failure modes",
+        paragraphs: [
+          "A slow-rising foam shape, a filled stress ball and a sticky gel-style squishy do not fail in the same way. Foam may tear at thin projections or printed surfaces, while a filled construction may be more sensitive at a plug, seam or neck. A useful test plan follows the actual design rather than applying one generic squeeze claim.",
+          "List the failures that would make the product unacceptable: leakage, skin rupture, permanent deformation, poor recovery, delamination, print loss, surface transfer, attachment failure or package damage. This list becomes the basis for sample review and inspection.",
+        ],
+      },
+      {
+        heading: "Design out fragile geometry before tooling",
+        paragraphs: [
+          "Very thin ears, tails, straps, corners and abrupt thickness changes can concentrate stress. Review the concept at the intended size and material, then thicken, round or reposition vulnerable details where the visual design allows.",
+          "For keychains and attached accessories, test the connection separately from the squeeze body. The product may survive compression while a loop, chain, eyelet or glued component fails under pulling or repeated movement.",
+        ],
+      },
+      {
+        heading: "Create a repeatable sample durability protocol",
+        paragraphs: [
+          "Record how the sample is compressed, stretched or squeezed, how often it is checked, the environmental condition and what counts as a failure. The number of cycles should come from the product risk, intended use and buyer requirement rather than an unsupported universal target.",
+          "Photograph the sample before and after the check. Record recovery time, visible damage, leakage, tack change, color transfer and print condition so revisions can be compared consistently.",
+        ],
+        checklist: [
+          "Initial dimensions, weight and appearance",
+          "Compression or squeeze method and frequency",
+          "Recovery after a defined rest period",
+          "Inspection of seals, plugs, corners and thin features",
+          "Print, coating and surface condition",
+          "Attachment and package condition",
+        ],
+      },
+      {
+        heading: "Connect production inspection to the approved sample",
+        paragraphs: [
+          "A durability result on one development sample does not control mass production by itself. Define incoming-material checks, first-piece confirmation, in-process observations and final sampling against a dated approved reference.",
+          "Critical construction points should be visible on the inspection checklist. When a process or material changes, decide whether the durability check must be repeated before the new revision is released.",
+        ],
+      },
+      {
+        heading: "Use complaints to improve the next production run",
+        paragraphs: [
+          "Ask for photos, batch information, use conditions and the location of any tear or leak. Grouping failures by design area and lot can reveal whether the issue is random damage, a geometry weakness, a seal problem, material variation or unsuitable instructions.",
+          "Keep retained samples and revision records long enough to support a useful comparison. Do not promise that a squeeze toy will last forever; state the intended use accurately and improve the controllable failure risks.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "How many squeeze cycles should a squishy toy pass?", answer: "There is no universal number for every construction. Set a documented protocol based on intended use, material, design risk and buyer requirements, then apply it consistently to approved and production samples." },
+      { question: "Why do filled squeeze toys often fail near a seal?", answer: "Seams, plugs and neck areas can concentrate material and process risk. Their geometry, bonding or sealing method and production consistency need focused review." },
+      { question: "Can shape design affect slow-rising squishy durability?", answer: "Yes. Thin projections, sharp transitions and large thickness differences can create tear or recovery risks, so durability should be considered before the mold is finalized." },
+      { question: "Is durability testing the same as toy safety testing?", answer: "No. Internal durability checks help control performance and foreseeable failures, while applicable safety and compliance testing is determined separately for the exact product, age grade and market." },
+    ],
+    relatedLinks: [
+      { label: "Custom squishy sample approval checklist", href: "/resources/custom-squishy-toy-sample-approval-checklist" },
+      { label: "Factory production and quality workflow", href: "/factory" },
+      { label: "Send a design for durability review", href: "/contact" },
+    ],
+  },
+  {
+    slug: "taba-squishy-texture-firm-watery-buttery-guide",
+    title: "Taba Squishy Texture Guide: Firm, Watery, Buttery and Cloudy Feel",
+    seoTitle: "Taba Squishy Texture and Softness Guide",
+    description:
+      "Translate firm, watery, buttery, cloudy and jiggly Taba trend language into a usable texture, surface, recovery and packaging brief.",
+    eyebrow: "TEXTURE DEVELOPMENT",
+    updated: "2026-08-02",
+    readTime: "7 min read",
+    quickAnswer: "Terms such as watery, buttery, cloudy and firm are useful creative directions but not standardized material specifications. Convert them into an approved physical reference plus target resistance, flow, recovery, tack, stretch, appearance, bag feel and use conditions.",
+    keywords: ["Taba squishy texture", "watery Taba squishy", "buttery squishy", "cloudy Taba squishy", "custom soft Taba squishy"],
+    sections: [
+      {
+        heading: "Trend words are a starting point, not a formula",
+        paragraphs: [
+          "Reddit users describe extra-soft Taba products with words such as watery, buttery, cloudy, jiggly and spread. These labels communicate an impression, but different sellers may use them for different materials and constructions.",
+          "A factory cannot reliably reproduce a texture from the adjective alone. Share a physical reference or clear comparison video and state which features matter most: low resistance, slow flow, fast recovery, stretch, tack, transparency or the way the product fills its bag.",
+        ],
+      },
+      {
+        heading: "Break the hand feel into separate attributes",
+        paragraphs: [
+          "Two products can both feel soft while behaving differently. One may spread under light pressure and recover slowly; another may be elastic and snap back quickly. Separating the attributes makes sample feedback clearer.",
+        ],
+        checklist: [
+          "Initial resistance at first touch",
+          "Flow or spread under sustained pressure",
+          "Recovery speed and final shape retention",
+          "Stretch and tear resistance",
+          "Surface tack and dust pickup",
+          "Transparency, haze, glitter or internal visual effect",
+          "Feel and sound through the intended inner bag",
+        ],
+      },
+      {
+        heading: "Use texture families to organize sampling",
+        paragraphs: [
+          "A firm direction may prioritize controlled resistance and shape definition. A watery or spread direction may prioritize very low resistance and movement through the bag. Buttery often suggests smooth deformation, while cloudy can refer to both a soft visual appearance and a soft hand-feel concept.",
+          "Treat these as sample families, not guaranteed technical definitions. Label each sample with its formulation or construction code, date and revision so the selected direction can be reproduced and compared.",
+        ],
+      },
+      {
+        heading: "Balance extreme softness with durability and packing",
+        paragraphs: [
+          "Making a product softer can change mold release, deformation, tear risk, surface handling and transport behavior. Review the thinnest areas, decorative details and how the shape rests inside the bag or retail package.",
+          "The softest sample is not automatically the best commercial product. The selected texture must also survive production, packing, storage and expected consumer handling while presenting the intended shape.",
+        ],
+      },
+      {
+        heading: "Approve texture under realistic conditions",
+        paragraphs: [
+          "Temperature, time and packaging can affect perceived texture. Compare samples under consistent conditions and repeat the assessment after representative sealed storage and transport review.",
+          "Record approval with a retained physical sample and a short written sensory profile. A video is useful for communicating movement, but it should support rather than replace the approved reference.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "What is a watery Taba squishy?", answer: "Watery usually describes a very low-resistance, flowing or spreading sensory direction. It is not one standardized formulation, so buyers should approve a physical reference and measurable handling attributes." },
+      { question: "What does buttery squishy mean?", answer: "Buttery commonly suggests smooth, easy deformation, but sellers use the term differently. Define resistance, flow, recovery, tack and package feel rather than relying on the word alone." },
+      { question: "Can an extra-soft Taba squishy keep a detailed shape?", answer: "There can be a tradeoff between extreme softness, shape definition and durability. Size, geometry, construction and packaging should be reviewed together during sampling." },
+      { question: "Is a video enough to match a Taba texture?", answer: "A video helps communicate movement and recovery, but lighting, speed and editing can change perception. A labeled physical reference is the stronger approval standard when available." },
+    ],
+    relatedLinks: [
+      { label: "Compare squishy material routes", href: "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide" },
+      { label: "Taba packaging and sticky-surface planning", href: "/resources/taba-squishy-packaging-sticky-surface-guide" },
+      { label: "Request custom texture samples", href: "/contact" },
+    ],
+  },
 ];
 
 export function getBuyerGuide(slug: string) {
