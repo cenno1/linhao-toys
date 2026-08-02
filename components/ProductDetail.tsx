@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import ContactFloat from "@/components/ContactFloat";
 import ProductGallery from "@/components/ProductGallery";
 import ProductInquiryForm from "@/components/ProductInquiryForm";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import type { Product } from "@/lib/products";
 import {
   getCustomizationOptions,
@@ -163,6 +164,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             >
               Request price & samples →
             </a>
+            <WhatsAppButton context="product" productName={product.name} />
           </div>
         </div>
       </section>

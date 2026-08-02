@@ -365,16 +365,39 @@ export function getProductFAQs(product: Product) {
 export const INQUIRY_EMAIL = "sales@lh-industrial.com";
 export const WHATSAPP_NUMBER = "8615088452259";
 
-export function buildWhatsAppUrl(productName = "your products"): string {
-  const message = [
-    "Hello LINHAO Toys,",
-    `I am interested in ${productName}.`,
-    "",
-    "Company / brand:",
-    "Estimated quantity:",
-    "Target market:",
-    "Packaging requirements:",
-  ].join("\n");
+type WhatsAppContext = "hero" | "product" | "general";
+
+type BuildWhatsAppUrlInput =
+  | string
+  | {
+      productName?: string;
+      context?: WhatsAppContext;
+    };
+
+export function buildWhatsAppUrl(input: BuildWhatsAppUrlInput = "your products"): string {
+  const options =
+    typeof input === "string" ? { productName: input, context: "general" as const } : input;
+  const context = options.context ?? "general";
+
+  let message =
+    "Hello LINHAO Toys, I am interested in your OEM squishy products.";
+
+  if (context === "hero") {
+    message =
+      "Hello LINHAO Toys, I would like factory pricing for custom squishy OEM / wholesale.";
+  } else if (context === "product" && options.productName) {
+    message = `Hello LINHAO Toys, I would like a quote for: ${options.productName}`;
+  } else if (options.productName) {
+    message = [
+      "Hello LINHAO Toys,",
+      `I am interested in ${options.productName}.`,
+      "",
+      "Company / brand:",
+      "Estimated quantity:",
+      "Target market:",
+      "Packaging requirements:",
+    ].join("\n");
+  }
 
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
