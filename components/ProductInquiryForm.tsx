@@ -13,9 +13,12 @@ type Props = { productName: string };
 const initialForm: ProductInquiryFormData = {
   company: "",
   email: "",
+  projectType: "",
   quantity: "",
   market: "",
+  timeline: "",
   packaging: "",
+  referenceUrl: "",
   requirements: "",
 };
 
@@ -49,7 +52,10 @@ export default function ProductInquiryForm({ productName }: Props) {
 
       setStatus("success");
       setForm(initialForm);
-      trackEvent("generate_lead", { product_name: productName });
+      trackEvent("generate_lead", {
+        product_name: productName,
+        project_type: form.projectType,
+      });
     } catch {
       setStatus("fallback");
       trackEvent("inquiry_email_fallback", { product_name: productName });
@@ -80,6 +86,17 @@ export default function ProductInquiryForm({ productName }: Props) {
         <input required type="email" value={form.email} onChange={(event) => updateField("email", event.target.value)} className={inputClass} placeholder="you@company.com" />
       </label>
       <label className="block">
+        <span className={labelClass}>Project type</span>
+        <select required value={form.projectType} onChange={(event) => updateField("projectType", event.target.value)} className={inputClass}>
+          <option value="" disabled>Select a project type</option>
+          <option value="Custom OEM / ODM product">Custom OEM / ODM product</option>
+          <option value="Wholesale existing products">Wholesale existing products</option>
+          <option value="Private-label packaging">Private-label packaging</option>
+          <option value="Sample / prototype request">Sample / prototype request</option>
+          <option value="Other sourcing inquiry">Other sourcing inquiry</option>
+        </select>
+      </label>
+      <label className="block">
         <span className={labelClass}>Estimated quantity</span>
         <input required type="text" value={form.quantity} onChange={(event) => updateField("quantity", event.target.value)} className={inputClass} placeholder="e.g. 500 pcs / 2,000 pcs" />
       </label>
@@ -87,9 +104,17 @@ export default function ProductInquiryForm({ productName }: Props) {
         <span className={labelClass}>Target market</span>
         <input required type="text" value={form.market} onChange={(event) => updateField("market", event.target.value)} className={inputClass} placeholder="e.g. US Amazon FBA, EU retail" />
       </label>
+      <label className="block">
+        <span className={labelClass}>Requested timeline</span>
+        <input type="text" value={form.timeline} onChange={(event) => updateField("timeline", event.target.value)} className={inputClass} placeholder="e.g. sample in September" />
+      </label>
       <label className="block sm:col-span-2">
         <span className={labelClass}>Preferred packaging</span>
         <input type="text" value={form.packaging} onChange={(event) => updateField("packaging", event.target.value)} className={inputClass} placeholder="e.g. PDQ display, blind bag, gift box" />
+      </label>
+      <label className="block sm:col-span-2">
+        <span className={labelClass}>Artwork or reference link</span>
+        <input type="url" value={form.referenceUrl} onChange={(event) => updateField("referenceUrl", event.target.value)} className={inputClass} placeholder="https://drive.google.com/... or product reference" />
       </label>
       <label className="block sm:col-span-2">
         <span className={labelClass}>Additional requirements</span>

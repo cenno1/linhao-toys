@@ -3,13 +3,27 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
 import Link from "next/link";
-import { SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/seo";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "About LINHAO Toys",
   description:
-    "Verified sourcing profile for LINHAO Toys: product categories, OEM and ODM services, buyer types, manufacturing workflow and available compliance documents.",
+    "Review LINHAO Toys' sourcing profile, custom toy categories, OEM and ODM workflow, buyer types, direct contact and available product documents.",
+  keywords: ["LINHAO Toys", "custom squishy toy manufacturer", "OEM toy supplier", "toy sourcing profile", "squishy toy factory"],
   alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About LINHAO Toys",
+    description: "Review LINHAO's product scope, custom-development workflow, buyer evidence and direct sourcing information.",
+    url: "/about",
+    type: "website",
+    images: [{ url: DEFAULT_OG_IMAGE, alt: "About LINHAO Toys custom squishy manufacturing" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About LINHAO Toys",
+    description: "Review LINHAO's product scope, custom-development workflow, buyer evidence and direct sourcing information.",
+    images: [DEFAULT_OG_IMAGE],
+  },
 };
 
 const cards = [["Customer-Focused Development", "We begin with your market, quantity, cost and design priorities."], ["Clear Communication", "Project details and revisions are organized to reduce misunderstandings."], ["Flexible Customization", "Shape, color, printing, finish and packaging can be combined around your project."], ["Long-Term Support", "The website and service model are designed for repeat development and ongoing orders."]];
@@ -34,13 +48,14 @@ export default function Page() {
       "Sourcing profile covering LINHAO Toys product categories, buyers, customization services and manufacturing workflow.",
     mainEntity: { "@id": `${SITE_URL}/#organization` },
     isPartOf: { "@id": `${SITE_URL}/#website` },
+    dateModified: "2026-08-02",
   };
 
   return (
     <main>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd).replace(/</g, "\\u003c") }}
       />
       <Header />
       <section className="relative overflow-hidden bg-slate-950 py-24 text-white sm:py-28">
@@ -49,6 +64,7 @@ export default function Page() {
           <p className="text-sm font-black uppercase tracking-[0.22em] text-blue-400">About us</p>
           <h1 className="mt-5 max-w-4xl text-5xl font-black tracking-[-0.055em] sm:text-6xl">A custom toy partner focused on practical execution.</h1>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">LINHAO Toys works with international brands, retailers and promotional buyers to develop distinctive squishy products.</p>
+          <p className="mt-5 text-xs font-black uppercase tracking-[0.16em] text-blue-300">Sourcing profile reviewed August 2, 2026</p>
         </div>
       </section>
       <section className="bg-[#f8fafc] py-24 sm:py-28">

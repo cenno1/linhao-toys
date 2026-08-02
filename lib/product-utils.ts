@@ -138,9 +138,12 @@ const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
 export type ProductInquiryFormData = {
   company: string;
   email: string;
+  projectType: string;
   quantity: string;
   market: string;
+  timeline: string;
   packaging: string;
+  referenceUrl: string;
   requirements: string;
 };
 
@@ -176,7 +179,7 @@ export function getProductGallery(product: Product): ProductGalleryItem[] {
       gallery.push({
         id: "oemCase",
         src: product.images.oemCase,
-        label: "OEM case study",
+        label: "OEM customization reference",
       });
     }
   }
@@ -398,9 +401,12 @@ export function buildProductInquiryMailtoFromForm(
     "",
     `Company: ${data.company}`,
     `Email: ${data.email}`,
+    `Project type: ${data.projectType}`,
     `Estimated quantity: ${data.quantity}`,
     `Target market: ${data.market}`,
+    `Requested timeline: ${data.timeline}`,
     `Preferred packaging: ${data.packaging}`,
+    `Reference link: ${data.referenceUrl}`,
     "",
     "Additional requirements:",
     data.requirements,

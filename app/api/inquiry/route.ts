@@ -4,9 +4,12 @@ type InquiryPayload = {
   productName?: string;
   company?: string;
   email?: string;
+  projectType?: string;
   quantity?: string;
   market?: string;
+  timeline?: string;
   packaging?: string;
+  referenceUrl?: string;
   requirements?: string;
   website?: string;
 };
@@ -54,15 +57,19 @@ export async function POST(request: Request) {
     productName: clean(payload.productName, 200),
     company: clean(payload.company, 200),
     email: clean(payload.email, 320),
+    projectType: clean(payload.projectType, 200),
     quantity: clean(payload.quantity, 100),
     market: clean(payload.market, 200),
+    timeline: clean(payload.timeline, 200),
     packaging: clean(payload.packaging, 500),
+    referenceUrl: clean(payload.referenceUrl, 1000),
     requirements: clean(payload.requirements, 3000),
   };
 
   if (
     !data.productName ||
     !data.company ||
+    !data.projectType ||
     !data.quantity ||
     !data.market ||
     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)
@@ -77,9 +84,12 @@ export async function POST(request: Request) {
     ["Product / project", data.productName],
     ["Company / brand", data.company],
     ["Buyer email", data.email],
+    ["Project type", data.projectType],
     ["Estimated quantity", data.quantity],
     ["Target market", data.market],
+    ["Requested timeline", data.timeline || "Not provided"],
     ["Preferred packaging", data.packaging || "Not provided"],
+    ["Artwork / reference link", data.referenceUrl || "Not provided"],
     ["Additional requirements", data.requirements || "Not provided"],
   ];
 
