@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useEffect, useRef } from "react";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -56,13 +55,15 @@ export default function Hero() {
           playsInline
           preload="metadata"
         />
-        <Image
+        {/* The mobile LCP image is intentionally served directly from the CDN.
+            This avoids a cold Next Image optimization request before first paint. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           className="v7-hero-bg-fallback"
           src={HERO_POSTER}
           alt=""
-          fill
-          priority
-          sizes="100vw"
+          fetchPriority="high"
+          decoding="sync"
         />
       </div>
       <div className="v7-hero-overlay" aria-hidden="true" />
