@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
@@ -52,14 +53,16 @@ export default function Hero() {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           poster={HERO_POSTER}
         />
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           className="v7-hero-bg-fallback"
           src={HERO_POSTER}
           alt=""
+          fill
+          priority
+          sizes="100vw"
         />
       </div>
       <div className="v7-hero-overlay" aria-hidden="true" />
