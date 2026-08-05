@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const HERO_VIDEO = "/videos/oem-market-squishy-showcase.mp4";
-const HERO_POSTER = "/images/products/glitter-bao-bun/hero.png";
+const HERO_POSTER = "/images/products/glitter-bao-bun/hero.webp";
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
