@@ -25,6 +25,7 @@ export default function Hero() {
       }
 
       if (!video.src) {
+        video.poster = HERO_POSTER;
         video.src = HERO_VIDEO;
         video.load();
       }
@@ -54,7 +55,6 @@ export default function Hero() {
           loop
           playsInline
           preload="metadata"
-          poster={HERO_POSTER}
         />
         <Image
           className="v7-hero-bg-fallback"
