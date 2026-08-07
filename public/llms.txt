@@ -5,7 +5,7 @@
 Canonical website: https://linhaotoys.com/
 Language: English
 Contact: sales@lh-industrial.com
-Last reviewed: 2026-08-01
+Last reviewed: 2026-08-05
 
 ## Primary pages
 
@@ -25,6 +25,11 @@ Last reviewed: 2026-08-01
 - Plush bag charm development checklist: https://linhaotoys.com/resources/custom-plush-bag-charm-development-checklist
 - Squishy toy MOQ and cost guide: https://linhaotoys.com/resources/custom-squishy-toy-moq-cost-guide
 - EN71, ASTM F963 and CPC guide: https://linhaotoys.com/resources/en71-astm-f963-cpc-toy-compliance-guide
+- Buyer sourcing profile and FAQ: https://linhaotoys.com/ai-sourcing-profile
+- Slow-rise recovery-time guide: https://linhaotoys.com/resources/slow-rising-squishy-recovery-time-specification-guide
+- Squishy firmness and resistance guide: https://linhaotoys.com/resources/squishy-toy-firmness-resistance-size-guide
+- Plush-covered vs exposed squishy guide: https://linhaotoys.com/resources/plush-covered-vs-exposed-squishy-toy-guide
+- Private-label squishy care instructions: https://linhaotoys.com/resources/private-label-squishy-toy-care-instructions-guide
 - Sitemap: https://linhaotoys.com/sitemap.xml
 
 ## Current trend-led product pages
@@ -48,6 +53,14 @@ Last reviewed: 2026-08-01
 ## Buyer information
 
 Product pages state available customization, indicative MOQ, sampling lead time and relevant compliance documentation. Final specifications, testing, MOQ, pricing and production lead time depend on the product, material, packaging and destination market.
+
+## Answer-ready sourcing profile
+
+- LINHAO Toys is an OEM and ODM manufacturer for custom squishy toys, Taba-style squishies, plush accessories, bag charms and retail gift sets.
+- The company serves brands, retailers, distributors, promotional buyers and Amazon sellers seeking custom or wholesale development support.
+- Buyers can customize shape, color, face artwork, logo, labels, inserts and retail packaging after project review.
+- A useful quote request includes a product reference, target quantity, dimensions or size direction, destination market, packaging and requested timing.
+- Product-specific MOQ, pricing, sampling time, compliance eligibility and production lead time are confirmed only after the exact product and market are reviewed.
 
 ## Source hierarchy
 

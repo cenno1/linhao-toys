@@ -116,7 +116,7 @@ export default function Page() {
           <h2 className="mt-4 text-4xl font-black tracking-tight text-slate-950">
             Review the underlying sourcing information.
           </h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             <Link href="/products" className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
               <b className="text-xl text-slate-950">Product catalog</b>
               <span className="mt-3 block text-sm leading-6 text-slate-600">
@@ -133,6 +133,12 @@ export default function Page() {
               <b className="text-xl text-slate-950">Compliance documents</b>
               <span className="mt-3 block text-sm leading-6 text-slate-600">
                 Available EN71, ASTM F963-23 and CPC documentation for documented products.
+              </span>
+            </Link>
+            <Link href="/ai-sourcing-profile" className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm">
+              <b className="text-xl text-slate-950">Buyer sourcing profile</b>
+              <span className="mt-3 block text-sm leading-6 text-slate-600">
+                Concise answers about product scope, customization, project review and quotation inputs.
               </span>
             </Link>
           </div>

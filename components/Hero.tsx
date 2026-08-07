@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const HERO_VIDEO = "/videos/oem-market-squishy-showcase.mp4";
-const HERO_POSTER = "/images/products/glitter-bao-bun/hero.png";
+const HERO_POSTER = "/images/products/glitter-bao-bun/hero.webp";
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -24,6 +24,7 @@ export default function Hero() {
       }
 
       if (!video.src) {
+        video.poster = HERO_POSTER;
         video.src = HERO_VIDEO;
         video.load();
       }
@@ -52,14 +53,17 @@ export default function Hero() {
           muted
           loop
           playsInline
-          preload="auto"
-          poster={HERO_POSTER}
+          preload="metadata"
         />
+        {/* The mobile LCP image is intentionally served directly from the CDN.
+            This avoids a cold Next Image optimization request before first paint. */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="v7-hero-bg-fallback"
           src={HERO_POSTER}
           alt=""
+          fetchPriority="high"
+          decoding="sync"
         />
       </div>
       <div className="v7-hero-overlay" aria-hidden="true" />

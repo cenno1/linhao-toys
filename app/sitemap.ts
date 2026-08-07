@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/oem",
     "/factory",
     "/about",
+    "/ai-sourcing-profile",
     "/contact",
     "/privacy",
   ];

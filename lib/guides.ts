@@ -880,7 +880,281 @@ export const buyerGuides: BuyerGuide[] = [
     relatedLinks: [
       { label: "Compare squishy material routes", href: "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide" },
       { label: "Taba packaging and sticky-surface planning", href: "/resources/taba-squishy-packaging-sticky-surface-guide" },
+      { label: "Specify firmness, resistance and size", href: "/resources/squishy-toy-firmness-resistance-size-guide" },
       { label: "Request custom texture samples", href: "/contact" },
+    ],
+  },
+  {
+    slug: "slow-rising-squishy-recovery-time-specification-guide",
+    title: "Slow-Rising Squishy Recovery Time: A Buyer Specification Guide",
+    seoTitle: "Slow-Rising Squishy Recovery Time Guide",
+    description:
+      "Define slow-rise squishy recovery time with a repeatable sample method covering compression, shape, foam feel, coating, decoration and packaging.",
+    eyebrow: "SLOW-RISE SPECIFICATION",
+    updated: "2026-08-04",
+    readTime: "8 min read",
+    quickAnswer: "Slow rise should be approved as a repeatable product behavior, not a vague quality claim. Define the sample condition, compression method, recovery endpoint, target range, shape retention and acceptable change after packed storage.",
+    keywords: ["slow rising squishy", "slow rise squishy manufacturer", "PU foam squishy recovery time", "custom slow rising squishy", "butter squishy manufacturer"],
+    sections: [
+      {
+        heading: "Recovery time is one part of the hand feel",
+        paragraphs: [
+          "Buyers often ask for a squishy that rises slowly, but two samples with a similar recovery time can feel very different. Initial resistance, compression depth, surface drag, shape thickness and the last stage of recovery all affect the experience.",
+          "Use recovery time as one controlled attribute within a sensory profile. Keep an approved physical sample and describe whether the target feels airy, dense, buttery, springy or very low resistance.",
+        ],
+      },
+      {
+        heading: "Use a repeatable recovery-time method",
+        paragraphs: [
+          "Condition comparison samples in the same environment, compress the same area to a defined depth for a defined time, release without stretching, and measure to an agreed endpoint. Record the method with the result so another team can repeat it.",
+          "A practical endpoint may be when the sample returns close to its approved outline rather than waiting for an invisible final change. Film the test from a fixed position and include a timer when remote approval is required.",
+        ],
+        checklist: [
+          "Sample temperature and conditioning time",
+          "Compression location, depth and hold time",
+          "Release method and recovery endpoint",
+          "Target range rather than one perfect second",
+          "Permanent dents, leaning or incomplete recovery",
+          "Result before and after representative packed storage",
+        ],
+      },
+      {
+        heading: "Shape and thickness change the result",
+        paragraphs: [
+          "A thick rounded body may recover differently from thin ears, tails or layered features. Compare the main body and vulnerable details separately, especially when the design has large thickness changes.",
+          "If exact recovery behavior is commercially important, approve it after the final size and geometry are fixed. A material sample or a different mold cannot reliably predict every part of the finished shape.",
+        ],
+      },
+      {
+        heading: "Balance slow rise with coating and durability",
+        paragraphs: [
+          "Foam formulation, skin, coating and printed decoration interact. Pushing only for a longer rise may affect shape definition, tear resistance, surface feel or how decoration behaves during repeated compression.",
+          "Review recovery together with thin-area durability, paint flex, surface transfer and appearance after repeated handling. The best retail specification balances the desired sensory effect with consistent production performance.",
+        ],
+      },
+      {
+        heading: "Approve the packed product, not only an open sample",
+        paragraphs: [
+          "Compression during sealing, cartons, heat and storage time can temporarily or permanently change the shape. Repeat the recovery check after representative packaging and transport review.",
+          "Define how long a newly opened product may need to regain its intended form and only state a recovery claim that the packed production item can support.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "How many seconds should a slow-rising squishy take to recover?", answer: "There is no universal ideal. Choose a target range from approved samples using one documented compression and measurement method." },
+      { question: "Why does the same foam recover differently in another shape?", answer: "Wall thickness, volume, geometry, skin and decoration can change compression and airflow behavior, so the finished molded shape must be approved." },
+      { question: "Can recovery time change after shipping?", answer: "Yes. Packed pressure, temperature and storage time may affect the first recovery cycles. Test the finished product in representative packaging before approving claims." },
+      { question: "Is a longer recovery time always higher quality?", answer: "No. Quality means meeting the approved sensory, appearance, durability and safety requirements consistently. Extremely slow recovery may not suit every product or buyer." },
+    ],
+    relatedLinks: [
+      { label: "Compare PU, TPR and silicone routes", href: "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide" },
+      { label: "Plan squishy durability checks", href: "/resources/squishy-toy-durability-testing-quality-control-guide" },
+      { label: "Reddit discussion that informed this buyer question", href: "https://www.reddit.com/r/fidgettoys/comments/1url0xg/help_me_find_the_exact_material_of_this_fidget/" },
+      { label: "Request slow-rise samples", href: "/contact" },
+    ],
+  },
+  {
+    slug: "squishy-toy-firmness-resistance-size-guide",
+    title: "Squishy Toy Firmness, Resistance and Size: A Buyer Guide",
+    seoTitle: "Squishy Toy Firmness and Resistance Guide",
+    description:
+      "Turn soft, firm and high-resistance requests into testable squishy toy sample specifications covering hand size, squeeze force, recovery and intended use.",
+    eyebrow: "HAND-FEEL PLANNING",
+    updated: "2026-08-04",
+    readTime: "8 min read",
+    quickAnswer: "Do not specify firmness with soft or firm alone. Approve a physical reference and define product size, grip style, initial resistance, compression depth, sustained-pressure behavior, recovery and the intended user context.",
+    keywords: ["squishy toy firmness", "stress ball resistance", "soft vs firm squishy", "desk sensory toy size", "custom stress toy hand feel"],
+    sections: [
+      {
+        heading: "Firmness preference depends on the user and task",
+        paragraphs: [
+          "Some users want a low-effort object for repetitive fidgeting, while others prefer stronger resistance for a deliberate hand squeeze. Reddit recommendation threads repeatedly separate soft sensory feel from a firmer stress-ball experience.",
+          "Define the retail use case without making medical or therapeutic promises. A desk fidget, promotional stress shape and collectible slow-rise character may need different hand feel even when their dimensions look similar.",
+        ],
+      },
+      {
+        heading: "Break hand feel into testable attributes",
+        paragraphs: [
+          "Initial resistance describes the first pressure needed to deform the product. Compression depth describes how far it can be squeezed. Rebound and recovery describe what happens after release. These attributes should be reviewed separately.",
+        ],
+        checklist: [
+          "Force at first touch and at deeper compression",
+          "Maximum comfortable compression depth",
+          "One-hand, two-finger or palm grip",
+          "Fast rebound or slow recovery",
+          "Surface grip, tack and texture",
+          "Noise, internal movement or package feel",
+        ],
+      },
+      {
+        heading: "Size and shape can change perceived resistance",
+        paragraphs: [
+          "A material may feel firmer in a thick compact shape and easier to squeeze in a smaller or thinner section. Product diameter, hand coverage and projections also determine whether the user can establish a comfortable grip.",
+          "Evaluate the intended dimensions in hand. If the audience includes younger users, check age grading, foreseeable use and applicable market requirements separately from sensory preference.",
+        ],
+      },
+      {
+        heading: "Approve a small sample ladder",
+        paragraphs: [
+          "Instead of requesting one soft sample, ask for clearly labeled low, medium and higher-resistance directions when the construction allows it. Compare them under the same conditions and record why one is selected.",
+          "Keep the chosen reference, formulation or construction code and date. A short comparison video helps communication, but the physical sample remains the stronger production reference.",
+        ],
+      },
+      {
+        heading: "Check stability, durability and claim language",
+        paragraphs: [
+          "Higher resistance can increase stress at seams, plugs, thin features and attachments. Very soft constructions may create other risks such as deformation, leakage or reduced shape definition. Test the chosen direction as a complete product.",
+          "Use accurate terms such as low resistance, firm squeeze or slow recovery. Avoid claims about anxiety, rehabilitation, strength improvement or medical outcomes unless they are properly substantiated for the exact product and market.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "What is the best firmness for a squishy toy?", answer: "There is no universal best firmness. Match resistance, size and recovery to the target user, use context and approved reference sample." },
+      { question: "Does a larger squishy always feel firmer?", answer: "Not always, but geometry, wall or foam thickness and grip span can change perceived resistance. Approve the intended size rather than extrapolating from a small sample." },
+      { question: "Can one product have multiple firmness options?", answer: "Potentially, if formulations or constructions can be controlled and clearly identified. Each option should receive its own sample and quality reference." },
+      { question: "Can a supplier claim a stress toy treats anxiety?", answer: "Sensory preference and medical benefit are different matters. Product and marketing claims should be accurate, supported and appropriate for the destination market." },
+    ],
+    relatedLinks: [
+      { label: "Compare Taba texture directions", href: "/resources/taba-squishy-texture-firm-watery-buttery-guide" },
+      { label: "Review squishy durability planning", href: "/resources/squishy-toy-durability-testing-quality-control-guide" },
+      { label: "Reddit discussion that informed this buyer question", href: "https://www.reddit.com/r/fidgettoys/comments/1tae6sl/squishy_ball_that_stays_firm/" },
+      { label: "Discuss a custom hand-feel brief", href: "/contact" },
+    ],
+  },
+  {
+    slug: "plush-covered-vs-exposed-squishy-toy-guide",
+    title: "Plush-Covered vs. Exposed Squishy Toys: A Buyer Construction Guide",
+    seoTitle: "Plush-Covered vs Exposed Squishy Toy Guide",
+    description:
+      "Compare fabric-covered and exposed squishy toy construction for sensory feel, dust behavior, seams, decoration, cleaning, durability and retail packaging.",
+    eyebrow: "CONSTRUCTION CHOICE",
+    updated: "2026-08-04",
+    readTime: "8 min read",
+    quickAnswer: "A plush or fabric cover can reduce direct contact with a tacky surface and create a softer textile feel, but it adds seams, fit, fabric, lint and cleaning requirements. Choose the construction from the intended sensory experience and validate the complete covered product.",
+    keywords: ["plush covered squishy toy", "fabric covered stress ball", "plush squishy fidget", "dust resistant squishy toy", "custom sensory plush"],
+    sections: [
+      {
+        heading: "The cover is a functional product component",
+        paragraphs: [
+          "Reddit users searching for products that feel less sticky or tolerate frequent handling sometimes mention fabric-covered options. A cover changes surface contact, grip, sound and visual style; it is not only decorative packaging.",
+          "The inner squishy and outer textile must be developed as a system. Stretch, friction, shape fit and recovery can change once the insert is enclosed.",
+        ],
+      },
+      {
+        heading: "Compare the sensory and retail tradeoffs",
+        paragraphs: [
+          "An exposed surface shows molded and printed details directly and may deliver the intended foam, gel or tacky hand feel. A textile cover can provide warmth, softness and less direct dust pickup while hiding some molded detail.",
+        ],
+        checklist: [
+          "Direct material feel versus textile hand feel",
+          "Grip, slip and squeeze noise",
+          "Visibility of molded or printed details",
+          "Dust, lint and hair behavior",
+          "Embroidery, print, applique or woven labels",
+          "Washability or surface-cleaning limitations",
+        ],
+      },
+      {
+        heading: "Engineer seams, openings and attachments",
+        paragraphs: [
+          "Seam position should avoid the highest squeeze stress where practical. Review stitch density, seam allowance, fabric stretch and whether the insert can move, twist or bunch inside the cover.",
+          "If the cover is removable, define the closure and foreseeable access to the inner component. Keyrings, loops, ears and decorative parts need pull and repeated-handling checks appropriate to the exact product and market.",
+        ],
+      },
+      {
+        heading: "Validate cleaning instructions on the exact build",
+        paragraphs: [
+          "A textile exterior does not automatically make the product machine washable. Water, detergent, soaking and drying can affect fabric color, filling, printed details, adhesive, foam or internal components.",
+          "Test the intended care method, then state only the instructions the finished product supports. If only surface cleaning is approved, say so clearly on the label or packaging.",
+        ],
+      },
+      {
+        heading: "Approve shape recovery and packing together",
+        paragraphs: [
+          "A tight cover may restrict recovery, while a loose cover can wrinkle or make the shape look underfilled. Evaluate appearance and squeeze behavior before and after representative packed storage.",
+          "Use packaging that protects the textile from dust and crushing without creating an inaccurate promise that the cover prevents all contamination or damage.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Are plush-covered squishy toys less sticky?", answer: "The user touches the textile rather than the inner squishy, so direct tack may be reduced. Fabric can still collect lint or dust and must be evaluated as part of the finished product." },
+      { question: "Can a fabric-covered squishy be washed?", answer: "Only if the exact fabric, insert, decoration, seams and drying method have been validated. Many constructions may support surface cleaning rather than machine washing." },
+      { question: "Does a cover change slow-rise recovery?", answer: "It can. Fabric stretch, pattern fit, seam tension and friction may restrict or reshape recovery, so timing should be checked after assembly." },
+      { question: "Can the inner squishy be removable?", answer: "It may be possible, but the opening, closure, age grade, foreseeable access and applicable safety requirements must be reviewed for the intended market." },
+    ],
+    relatedLinks: [
+      { label: "Plan a custom plush bag charm", href: "/resources/custom-plush-bag-charm-development-checklist" },
+      { label: "Review durability and attachment checks", href: "/resources/squishy-toy-durability-testing-quality-control-guide" },
+      { label: "Reddit discussion that informed this buyer question", href: "https://www.reddit.com/r/fidgettoys/comments/1vcesta/tough_squish_toy_recommendations_for_destructive/" },
+      { label: "Request a covered construction sample", href: "/contact" },
+    ],
+  },
+  {
+    slug: "private-label-squishy-toy-care-instructions-guide",
+    title: "Private-Label Squishy Toy Care Instructions: A Buyer Guide",
+    seoTitle: "Squishy Toy Care Instructions for Private Label",
+    description:
+      "Create accurate private-label squishy toy cleaning, handling and storage instructions based on material, coating, decoration, stickiness and packaging.",
+    eyebrow: "CARE INSTRUCTIONS",
+    updated: "2026-08-04",
+    readTime: "8 min read",
+    quickAnswer: "There is no universal squishy cleaning method. Private-label care instructions should be validated on the exact material, coating, decoration and package, then explain handling, cleaning, drying, storage and when to stop using a damaged product.",
+    keywords: ["squishy toy care instructions", "how to clean squishy toy", "sticky squishy maintenance", "private label squishy packaging", "squishy toy storage instructions"],
+    sections: [
+      {
+        heading: "Do not copy one cleaning method across every squishy",
+        paragraphs: [
+          "Reddit cleaning discussions include water, soap, powder and other home methods, but products sold as squishies can use different foams, elastomers, gels, coatings, inks and adhesives. A method that helps one construction may damage another.",
+          "Ask the manufacturer to validate the care direction on the finished decorated product. Consumer comments are useful for identifying pain points, not for replacing product-specific testing.",
+        ],
+      },
+      {
+        heading: "Build instructions from the construction",
+        paragraphs: [
+          "First decide whether the product is intended for dry wiping, damp surface cleaning, bag-only handling or another tested method. Then define the permitted cleaning agent, water exposure, drying method and prohibited conditions.",
+        ],
+        checklist: [
+          "Material, coating and printed decoration",
+          "Open-cell, sealed, filled or fabric-covered construction",
+          "Surface tack and dust pickup",
+          "Seams, plugs, holes and attachments",
+          "Approved cleaning and drying method",
+          "Heat, sunlight, sharp-object and chemical restrictions",
+        ],
+      },
+      {
+        heading: "Validate any tack-restoring or powder instruction",
+        paragraphs: [
+          "Some sticky squishy users want to retain tack while others want less dust pickup. Do not recommend powder, oil, solvent or a household chemical unless its compatibility, intended effect and instruction language have been checked on the exact formulation.",
+          "Record appearance, hand feel, color transfer, print condition and dust behavior after the complete care cycle. Repeat the check if the material or coating changes.",
+        ],
+      },
+      {
+        heading: "Put care information where buyers will see it",
+        paragraphs: [
+          "Use a short version on the package or label and a fuller version on the product page, insert or QR-linked support page. Keep instructions consistent across wholesale files, listings and customer service responses.",
+          "Plain language and simple icons help, but icons should not replace necessary warnings or market-specific labeling. Translate instructions professionally for each destination market.",
+        ],
+      },
+      {
+        heading: "Use care questions to reduce complaints",
+        paragraphs: [
+          "Track complaints about dust, tack loss, paint transfer, tears, odor, deformation and leakage by batch and product construction. They can reveal whether the care instruction, package or product itself needs revision.",
+          "Tell users to stop using and dispose of a damaged or leaking item according to local guidance. Avoid promising unlimited life or complete cleanliness under every handling condition.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Can every squishy toy be washed with soap and water?", answer: "No. Water and detergent can affect foam, coatings, print, seams, adhesives or filled constructions. Follow a method validated for the exact finished product." },
+      { question: "Should cornstarch be recommended for a sticky squishy?", answer: "Only when the supplier has confirmed the intended effect and compatibility for that formulation. A social-media method should not become a private-label instruction without testing." },
+      { question: "Where should squishy care instructions appear?", answer: "Use concise instructions on the package or label and provide expanded guidance on an insert, product page or support page where appropriate." },
+      { question: "What should a customer do if a squishy leaks or tears?", answer: "The instruction should tell the user to stop using the damaged item, keep its contents away from unintended contact and follow applicable disposal guidance." },
+    ],
+    relatedLinks: [
+      { label: "Plan sticky-surface packaging", href: "/resources/taba-squishy-packaging-sticky-surface-guide" },
+      { label: "Review scented and unscented specifications", href: "/resources/scented-vs-unscented-squishy-toy-odor-control-guide" },
+      { label: "Reddit discussion that informed this buyer question", href: "https://www.reddit.com/r/fidgettoys/comments/1ko69un/how_do_you_keep_the_squishy_slightly_sticky/" },
+      { label: "Ask about private-label care testing", href: "/contact" },
     ],
   },
 ];
