@@ -133,6 +133,24 @@ const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
     buyerBrief: ["Target user and sales channel", "Preferred shape and dimensions", "Resistance or reference feel", "Brand colors and logo placement", "Gift packaging, quantity and destination market"],
     packagingAnswer: "Protective pouches, premium boxes and corporate gift sets can be developed. Claims and wording should remain lifestyle-focused unless the buyer has appropriate substantiation for another use.",
   },
+  "custom-eva-geometric-cutout-squeeze-ball": {
+    specifications: [
+      { label: "Material route", value: "EVA foam construction selected for the target resilience, color and surface finish" },
+      { label: "Typical size", value: "Buyer-specified diameter; final size and weight confirmed with the approved sample" },
+      { label: "Packaging route", value: "Individual bag, header card, multipack or promotional-gift presentation" },
+    ],
+    customization: [
+      "Buyer-specified ball diameter and colorway assortment",
+      "Original rounded-triangle cutout and diagonal-slot pattern direction",
+      "Compatible logo panel, message or event printing",
+      "Squeeze resilience and surface-finish review",
+      "Individual bag, carded pack or multipack packaging",
+      "Mixed-color display pack and private-label artwork",
+    ],
+    useCases: ["School and party favors", "Promotional giveaways", "Colorful sensory-toy assortments", "Retail gift programs"],
+    buyerBrief: ["Target diameter and reference feel", "Color count and logo or print artwork", "Quantity per color", "Individual or multipack packaging", "Destination market and requested timeline"],
+    packagingAnswer: "Individual bags, header cards and mixed-color displays can be developed. The packaging dimensions and any print area should be confirmed with the selected ball size before bulk quotation.",
+  },
 };
 
 export type ProductInquiryFormData = {
