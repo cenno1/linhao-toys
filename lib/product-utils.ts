@@ -151,6 +151,25 @@ const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
     buyerBrief: ["Target diameter and reference feel", "Color count and logo or print artwork", "Quantity per color", "Individual or multipack packaging", "Destination market and requested timeline"],
     packagingAnswer: "Individual bags, header cards and mixed-color displays can be developed. The packaging dimensions and any print area should be confirmed with the selected ball size before bulk quotation.",
   },
+  "custom-jumbo-ghost-squishy": {
+    specifications: [
+      { label: "Material route", value: "PU slow-rise foam or another buyer-approved construction selected with the production sample" },
+      { label: "Typical size", value: "Jumbo format; final dimensions, weight and rebound feel are confirmed after artwork and sampling" },
+      { label: "Artwork route", value: "Original ghost silhouette, facial artwork, color palette and compatible logo placement" },
+      { label: "Packaging route", value: "Individual bag, color box, party-favor set or seasonal retail display carton" },
+    ],
+    customization: [
+      "Original ghost silhouette, arm shape and base profile",
+      "Buyer-approved facial artwork, colors and seasonal accent details",
+      "Custom size, density and slow-rise recovery target",
+      "Logo, message card and private-label packaging",
+      "Single color, mixed-color or seasonal assortment planning",
+      "Retail carton, gift box and party-favor presentation",
+    ],
+    useCases: ["Halloween retail campaigns", "Party favors", "Seasonal gift programs", "Branded promotional giveaways"],
+    buyerBrief: ["Original artwork direction and target user", "Preferred size and squeeze or recovery feel", "Colorway and logo placement", "Quantity per color or assortment", "Packaging, destination market and requested timeline"],
+    packagingAnswer: "Individual bags, themed retail boxes, party-favor sets and display cartons can be planned around the approved jumbo size. Confirm final artwork and carton dimensions with the pre-production sample before bulk quotation.",
+  },
 };
 
 export type ProductInquiryFormData = {
