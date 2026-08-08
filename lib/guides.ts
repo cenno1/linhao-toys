@@ -1157,6 +1157,208 @@ export const buyerGuides: BuyerGuide[] = [
       { label: "Ask about private-label care testing", href: "/contact" },
     ],
   },
+  {
+    slug: "quiet-fidget-toys-office-classroom-buyer-guide",
+    title: "Quiet Fidget Toys for Office and Classroom: A Buyer Design Guide",
+    seoTitle: "Quiet Fidget Toys for Office and Classroom Buyers",
+    description:
+      "Plan quiet fidget and squishy-toy assortments for offices, classrooms and discreet everyday use with practical checks for operating noise, drop noise, size and packaging.",
+    eyebrow: "QUIET FIDGET DESIGN",
+    updated: "2026-08-08",
+    readTime: "8 min read",
+    quickAnswer: "A quiet fidget toy should be evaluated as a complete product, not only by mechanism. Buyers should check operating sound, accidental drop noise, surface contact, loose parts, size, visual discretion and packed-unit behavior in the intended office or classroom setting.",
+    keywords: ["quiet fidget toys", "silent squishy toys", "office fidget toys", "classroom fidget toys", "custom sensory toy"],
+    sections: [
+      {
+        heading: "Quiet use is a complete-product requirement",
+        paragraphs: [
+          "Recent Reddit discussions repeatedly ask for fidgets that can be used in class, meetings or shared workspaces without clicking or distracting nearby people. The useful sourcing question is not whether a category is always silent, but what sound the exact finished product makes during normal handling and foreseeable drops.",
+          "Define the use environment in the buyer brief. A sound that is acceptable in a retail demonstration may still be noticeable in a quiet classroom, library or meeting room.",
+        ],
+      },
+      {
+        heading: "Choose constructions with fewer noise sources",
+        paragraphs: [
+          "Soft foam, silicone and textile-covered constructions can avoid the repeated clicking associated with hard moving parts, but material alone does not guarantee quiet use. Air release, sticky film, internal beads, hardware, keyrings and packaging can all add sound.",
+        ],
+        checklist: [
+          "Sound during slow squeezing and repeated fidgeting",
+          "Air movement through holes, valves or seams",
+          "Noise from beads, chains, clips or loose accessories",
+          "Sound when placed on or dropped onto a desk",
+          "Package crinkle during intended use",
+          "Visible movement that may distract nearby users",
+        ],
+      },
+      {
+        heading: "Test operating sound and drop sound separately",
+        paragraphs: [
+          "A product can feel quiet in the hand but create a loud impact when dropped. Review samples on representative surfaces such as a desk, hard floor and desk mat, using one documented height and orientation plan selected for the intended product.",
+          "Record the test setup and compare development samples under the same conditions. Avoid publishing a universal decibel promise unless the claim has been measured and supported for the exact product and method.",
+        ],
+      },
+      {
+        heading: "Design for discreet adult and student use",
+        paragraphs: [
+          "Office buyers may prefer compact forms, muted colorways and shapes that do not look strongly juvenile. Classroom programs may prioritize small size, easy identification and simple storage. A useful assortment can offer the same quiet construction in different colors and grip profiles without making medical claims.",
+          "Confirm whether accessories such as magnets, detachable parts or metal clips are appropriate for the intended age group and setting. Age grading and destination-market requirements remain separate from a preference for quiet use.",
+        ],
+      },
+      {
+        heading: "Approve the packed product in the real use scenario",
+        paragraphs: [
+          "If the product is intended to remain inside a soft bag, approve the sound and feel through that exact film. If it will be removed, check storage noise, dust pickup and whether the pack can be opened and closed without disrupting the intended environment.",
+          "Keep a retained approval sample and a short written profile covering sound, size, resistance, surface feel, color and packaging. This gives production and inspection teams a more useful reference than the word quiet alone.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Are squishy toys completely silent?", answer: "Many soft squishy constructions can be very quiet during hand use, but air movement, sticky packaging, accessories and accidental drops may still create sound. Approve the exact finished product in the intended setting." },
+      { question: "What makes a fidget suitable for an office?", answer: "Buyers often look for low operating noise, compact size, discreet appearance, clean handling and durable everyday use. The final specification should reflect the exact workplace and audience." },
+      { question: "Can a supplier claim a toy helps students focus?", answer: "Product features and unsupported therapeutic or educational outcomes are different matters. Keep marketing accurate and review any performance or health-related claim for the destination market." },
+    ],
+    relatedLinks: [
+      { label: "Specify squishy firmness and size", href: "/resources/squishy-toy-firmness-resistance-size-guide" },
+      { label: "Review durability and quality-control planning", href: "/resources/squishy-toy-durability-testing-quality-control-guide" },
+      { label: "Reddit discussion about silent office fidgets", href: "https://www.reddit.com/r/fidgettoys/comments/1su1law/what_fidget_type_toy_should_i_get_thats_silent_so/" },
+      { label: "Reddit discussion about quiet classroom fidgets", href: "https://www.reddit.com/r/fidgettoys/comments/1saxvwy/what_are_the_bestquietestcheapest_fidget_toys_im/" },
+      { label: "Request a quiet-fidget development review", href: "/contact" },
+    ],
+  },
+  {
+    slug: "non-sticky-squishy-surface-finish-guide",
+    title: "Non-Sticky Squishy Toys: Surface-Finish and Packaging Guide",
+    seoTitle: "Non-Sticky Squishy Toy Surface Guide for Buyers",
+    description:
+      "Develop lower-tack or non-sticky squishy toys by defining surface feel, skin-oil behavior, dust pickup, coating, packaging and care checks on the finished product.",
+    eyebrow: "SURFACE FEEL",
+    updated: "2026-08-08",
+    readTime: "8 min read",
+    quickAnswer: "Non-sticky should be treated as a measurable sample target rather than a vague material label. Buyers should approve initial tack, feel after repeated handling, dust pickup, surface transfer, cleaning instructions and packaging compatibility on the exact finished squishy.",
+    keywords: ["non sticky squishy", "squishy surface coating", "tack free sensory toy", "office squishy fidget", "dust resistant squishy toy"],
+    sections: [
+      {
+        heading: "Define what non-sticky means for the project",
+        paragraphs: [
+          "A July 2026 Reddit discussion highlights a practical complaint: some users like a very soft squishy but do not want the surface to become sticky during a workday. For sourcing, separate initial tack from the way the surface changes after warmth, skin oil, dust and repeated handling.",
+          "Use clear terms such as low initial tack, dry-touch finish or no added tack coating, then confirm those words against an approved physical sample. Do not assume one material name guarantees the same surface behavior across suppliers.",
+        ],
+      },
+      {
+        heading: "Evaluate the complete surface system",
+        paragraphs: [
+          "Base material, pigment, molded skin, paint, printed decoration and clear coating can all affect hand feel. A dry-touch sample may change when a different color, print area or curing process is introduced, so review every production-relevant finish.",
+        ],
+        checklist: [
+          "Initial dry-hand tack and drag",
+          "Feel after repeated warm-hand handling",
+          "Dust, lint and hair pickup",
+          "Color or coating transfer",
+          "Print cracking or surface whitening",
+          "Odor after sealed packaging",
+        ],
+      },
+      {
+        heading: "Simulate real handling before approval",
+        paragraphs: [
+          "Create a repeatable handling check using a defined duration, clean hands and representative room conditions. Observe whether the product becomes oily, sticky, glossy, dusty or difficult to release from the hand. Compare samples using the same method instead of relying on memory.",
+          "If the product is intended for shared office, school or promotional use, consider how easily the approved surface can be maintained. Care language should be validated on the exact coating and decoration rather than copied from another product.",
+        ],
+      },
+      {
+        heading: "Packaging can preserve or change surface feel",
+        paragraphs: [
+          "Film type, print, plasticizer compatibility, storage heat and product-to-bag contact can influence appearance and tack. Approve the squishy after realistic packed storage, not only before it enters the bag.",
+          "A tray, soft inner bag, separator or individual box may reduce surface contact and dust exposure. The correct route depends on the material, surface target, retail channel and shipping conditions.",
+        ],
+      },
+      {
+        heading: "Avoid unsupported maintenance shortcuts",
+        paragraphs: [
+          "Online users sometimes suggest household powders or other methods to reduce stickiness. A private-label brand should not put such advice on a package unless compatibility, intended effect and instruction wording have been validated for the exact formulation.",
+          "Track complaints by batch and surface specification. If users repeatedly report tack, dust or transfer, review the formulation, coating, cure, packaging and storage conditions before changing only the care instructions.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Can a very soft squishy also feel non-sticky?", answer: "It may be possible, but softness and surface tack are separate attributes. Approve the exact material, finish and packed sample because changes to formulation or coating can affect both." },
+      { question: "Does non-sticky mean dust-proof?", answer: "No. A lower-tack surface may collect less debris, but texture, static, handling and storage still matter. Evaluate dust and lint pickup directly." },
+      { question: "Should powder be included with a sticky squishy?", answer: "Only when the manufacturer and buyer have validated compatibility, instructions and destination-market requirements for the exact product. Do not rely solely on social-media advice." },
+    ],
+    relatedLinks: [
+      { label: "Compare PU, TPR and silicone material routes", href: "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide" },
+      { label: "Plan private-label care instructions", href: "/resources/private-label-squishy-toy-care-instructions-guide" },
+      { label: "Reddit discussion about non-sticky squishy preferences", href: "https://www.reddit.com/r/fidgettoys/comments/1ukmx5u/wanted_to_find_non_sticky_squishy_fidget_toy/" },
+      { label: "Request a surface-finish sample review", href: "/contact" },
+    ],
+  },
+  {
+    slug: "custom-squishy-keychain-attachment-durability-guide",
+    title: "Custom Squishy Keychain Attachment: Durability and Safety Guide",
+    seoTitle: "Custom Squishy Keychain Attachment and Durability Guide",
+    description:
+      "Plan custom squishy keychains with practical attachment, pull, twist, drop, decoration, packaging and age-grade checks for daily carry and promotional programs.",
+    eyebrow: "KEYCHAIN DEVELOPMENT",
+    updated: "2026-08-08",
+    readTime: "8 min read",
+    quickAnswer: "A squishy keychain should be approved as an assembled carry product. Buyers need to define the attachment route, expected load and daily-use scenario, then check pull, twist, repeated movement, drop impact, material tearing, hardware finish and applicable age-grade requirements.",
+    keywords: ["custom squishy keychain", "stress ball keychain wholesale", "PU squishy keyring", "fidget keychain manufacturer", "squishy attachment pull test"],
+    sections: [
+      {
+        heading: "A keychain changes the product risk profile",
+        paragraphs: [
+          "Reddit fidget discussions about portable keychains often move quickly from appearance to one practical question: will the attachment survive daily use with keys? A decorative loop that works in a product photo may experience pulling, twisting, abrasion and repeated impact once carried on a bag or keyring.",
+          "Describe whether the product is a decorative bag charm, promotional keychain or frequently handled fidget. The intended use helps the factory choose and test the attachment route without promising unlimited durability.",
+        ],
+      },
+      {
+        heading: "Choose the attachment route with the body design",
+        paragraphs: [
+          "Possible constructions include a molded loop, embedded eyelet, textile strap or attached hardware component. Each route changes local thickness, tear concentration, appearance and assembly steps. The body geometry should provide enough material around the attachment area for the selected construction.",
+        ],
+        checklist: [
+          "Body material and local thickness",
+          "Loop, eyelet, strap or connector construction",
+          "Ring, chain, clasp and metal finish",
+          "Rotation and abrasion at contact points",
+          "Decoration near the attachment area",
+          "Age grade and foreseeable access to small components",
+        ],
+      },
+      {
+        heading: "Build a repeatable durability plan",
+        paragraphs: [
+          "Check pull, twist, repeated flexing and drop behavior using a written protocol selected for the product, intended use and buyer requirements. Record where deformation or failure starts and compare revised samples under the same conditions.",
+          "There is no single universal pull value or cycle count that suits every squishy keychain. Applicable toy, promotional-product and customer requirements should be identified for the destination market and exact age grade.",
+        ],
+      },
+      {
+        heading: "Inspect hardware and finished assembly",
+        paragraphs: [
+          "Review sharp edges, burrs, plating, gaps, ring closure and whether hardware can rub through the soft body. Decorative paint or printing near the attachment may crack when the loop flexes, so the assembled sample should be handled rather than approved only from a static photo.",
+          "Production inspection should include attachment position, hardware completeness, visible damage and a documented sample-based check. Keep retained approved units from the final material and hardware combination.",
+        ],
+      },
+      {
+        heading: "Package to prevent transit damage and tangling",
+        paragraphs: [
+          "Loose chains and rings can mark a painted squishy, tangle with neighboring units or press into soft surfaces during shipment. Consider a protective bag, backing card, hardware restraint or compartment that keeps metal away from delicate decoration.",
+          "Approve the packed unit after compression, vibration or other transport checks appropriate to the order. Confirm barcode, warning and country-specific labeling areas before printed packaging is finalized.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Can any squishy shape be turned into a keychain?", answer: "Not automatically. Thin projections, very soft materials and limited attachment thickness may require a design change or different connector route before a durable sample can be produced." },
+      { question: "Is a metal eyelet stronger than a molded loop?", answer: "Neither is universally stronger. Performance depends on material, geometry, insertion method, local thickness, hardware and the complete assembled design. Compare approved samples with one test plan." },
+      { question: "Does a squishy keychain need toy testing?", answer: "Requirements depend on the product, intended age group, claims and destination market. Confirm the applicable standards and documentation for the exact finished version with its hardware." },
+    ],
+    relatedLinks: [
+      { label: "Review squishy durability and quality control", href: "/resources/squishy-toy-durability-testing-quality-control-guide" },
+      { label: "Prepare a custom squishy manufacturing brief", href: "/resources/how-to-prepare-custom-squishy-toy-brief" },
+      { label: "Reddit discussion about daily keychain durability", href: "https://www.reddit.com/r/fidgettoys/comments/1tnkqvc/so_comfortable_in_the_hands/" },
+      { label: "Request a custom keychain feasibility review", href: "/contact" },
+    ],
+  },
 ];
 
 export function getBuyerGuide(slug: string) {
