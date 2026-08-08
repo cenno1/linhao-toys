@@ -214,7 +214,7 @@ export const products: Product[] = [
     ],
     images: images(
       "custom-jumbo-ghost-squishy",
-      "/images/products/custom-jumbo-ghost-squishy/hero.webp",
+      "/images/products/custom-jumbo-ghost-squishy/hero.png",
     ),
     featured: true,
     filterGroup: "squishy",
