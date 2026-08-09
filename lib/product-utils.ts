@@ -97,6 +97,25 @@ const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
     buyerBrief: ["Shape artwork and approximate size", "Required softness and surface feel", "Color and print directions", "Quantity per design", "Protective packaging and destination market"],
     packagingAnswer: "Individual sealed protection is normally reviewed for sticky-touch products to control dust and surface contact. Retail cards, boxes and multipacks can be built around that inner protection.",
   },
+  "custom-tpr-popsicle-butter-cube-squishy": {
+    specifications: [
+      { label: "Material route", value: "TPR or another approved soft-elastic construction selected for the target squeeze and finish" },
+      { label: "Assortment format", value: "Popsicle, butter cube, ice-cream and other original food-inspired novelty shapes" },
+      { label: "Color route", value: "Solid, transparent, glitter, gradient or marbled effects reviewed with the production sample" },
+      { label: "Packaging route", value: "Individual protective bag, retail card, display box or mixed-SKU multipack" },
+    ],
+    customization: [
+      "Original popsicle, cube, ice-cream and novelty-food shape development",
+      "Target softness, rebound and surface-finish direction",
+      "Transparent, glitter, swirl or gradient color effects",
+      "Compatible logo, message card and private-label artwork",
+      "Single-SKU or mixed-shape assortment ratios",
+      "Protective bag, counter display and retail multipack packaging",
+    ],
+    useCases: ["Impulse retail", "Colorful sensory assortments", "Party and gift programs", "Private-label fidget-toy collections"],
+    buyerBrief: ["Selected shapes and approximate size", "Target softness and finish", "Color effect and logo artwork", "Quantity per shape", "Packaging, destination market and requested timeline"],
+    packagingAnswer: "The assortment can be quoted as individual protected pieces, mixed retail packs or display cartons. Confirm the final shape count, color mix and package size with the pre-production sample before bulk production.",
+  },
   "bakery-slow-rise-squishy-assortment": {
     specifications: [
       { label: "Material route", value: "PU slow-rise foam or approved recovery construction confirmed with the reference sample" },
