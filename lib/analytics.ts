@@ -1,4 +1,4 @@
-export function trackEvent(name: string, parameters?: Record<string, string>) {
+export function trackEvent(name: string, parameters?: Record<string, unknown>) {
   if (
     typeof window !== "undefined" &&
     window.gtag &&

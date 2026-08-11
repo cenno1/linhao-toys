@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ProductDetail from "@/components/ProductDetail";
+import ProductAnalyticsTracker from "@/components/ProductAnalyticsTracker";
 import { products } from "@/lib/products";
 import {
   getProductBySlug,
@@ -135,6 +136,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   return (
     <>
+      <ProductAnalyticsTracker
+        slug={product.slug}
+        name={product.name}
+        category={product.category}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd).replace(/</g, "\\u003c") }}

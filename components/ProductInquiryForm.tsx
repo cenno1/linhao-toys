@@ -56,6 +56,11 @@ export default function ProductInquiryForm({ productName }: Props) {
         product_name: productName,
         project_type: form.projectType,
       });
+      trackEvent("quote_form_submit", {
+        form_name: "product_inquiry",
+        product_name: productName,
+        project_type: form.projectType,
+      });
     } catch {
       setStatus("fallback");
       trackEvent("inquiry_email_fallback", { product_name: productName });

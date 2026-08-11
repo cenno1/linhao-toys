@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactFloat from "@/components/ContactFloat";
 import ProductInquiryForm from "@/components/ProductInquiryForm";
+import TrackedLink from "@/components/TrackedLink";
 import { buildWhatsAppUrl, INQUIRY_EMAIL, WHATSAPP_NUMBER } from "@/lib/product-utils";
 import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/seo";
 
@@ -133,12 +134,12 @@ export default function ContactPage() {
                 for a quick initial discussion.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <a href={`mailto:${INQUIRY_EMAIL}`} className="inline-flex rounded-full bg-blue-600 px-6 py-3 text-sm font-black text-white">
+                <TrackedLink href={`mailto:${INQUIRY_EMAIL}`} className="inline-flex rounded-full bg-blue-600 px-6 py-3 text-sm font-black text-white" method="email" location="contact_page">
                   Email sales
-                </a>
-                <a href={buildWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full border border-slate-300 px-6 py-3 text-sm font-black text-slate-950">
+                </TrackedLink>
+                <TrackedLink href={buildWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="inline-flex rounded-full border border-slate-300 px-6 py-3 text-sm font-black text-slate-950" method="whatsapp" location="contact_page">
                   WhatsApp
-                </a>
+                </TrackedLink>
               </div>
               <p className="mt-4 break-all text-sm text-slate-500">{INQUIRY_EMAIL}</p>
             </div>

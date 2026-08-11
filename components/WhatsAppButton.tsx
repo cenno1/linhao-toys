@@ -1,4 +1,5 @@
 import { buildWhatsAppUrl } from "@/lib/product-utils";
+import TrackedLink from "@/components/TrackedLink";
 
 type WhatsAppButtonProps = {
   productName?: string;
@@ -18,13 +19,16 @@ export default function WhatsAppButton({
   className = "",
 }: WhatsAppButtonProps) {
   return (
-    <a
+    <TrackedLink
       href={buildWhatsAppUrl({ productName, context })}
       target="_blank"
       rel="noopener noreferrer"
       className={`btn-whatsapp ${context === "hero" ? "btn-whatsapp-hero btn-lg" : ""} ${context === "product" ? "btn-whatsapp-product" : ""} ${className}`.trim()}
+      method="whatsapp"
+      location={`whatsapp_${context}`}
+      productName={productName}
     >
       {labels[context]}
-    </a>
+    </TrackedLink>
   );
 }

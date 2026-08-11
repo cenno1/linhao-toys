@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import ContactFloat from "@/components/ContactFloat";
 import ProductGallery from "@/components/ProductGallery";
 import ProductInquiryForm from "@/components/ProductInquiryForm";
+import TrackedLink from "@/components/TrackedLink";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import type { Product } from "@/lib/products";
 import {
@@ -158,12 +159,15 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               </ul>
             </div>
 
-            <a
+            <TrackedLink
               href="#inquiry"
               className="mt-8 inline-flex rounded-full bg-blue-600 px-8 py-4 text-sm font-black text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700"
+              method="quote"
+              location="product_hero"
+              productName={product.name}
             >
               Request price & samples →
-            </a>
+            </TrackedLink>
             <WhatsAppButton context="product" productName={product.name} />
           </div>
         </div>

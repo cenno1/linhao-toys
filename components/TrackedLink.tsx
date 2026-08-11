@@ -12,6 +12,7 @@ type TrackedLinkProps = {
   ariaLabel?: string;
   method: "quote" | "email" | "whatsapp";
   location: string;
+  productName?: string;
 };
 
 export default function TrackedLink({
@@ -23,7 +24,10 @@ export default function TrackedLink({
   ariaLabel,
   method,
   location,
+  productName,
 }: TrackedLinkProps) {
+  const eventName = `${method}_click`;
+
   return (
     <a
       href={href}
@@ -31,7 +35,13 @@ export default function TrackedLink({
       target={target}
       rel={rel}
       aria-label={ariaLabel}
-      onClick={() => trackEvent("contact_click", { method, location })}
+      onClick={() =>
+        trackEvent(eventName, {
+          contact_method: method,
+          contact_location: location,
+          ...(productName ? { product_name: productName } : {}),
+        })
+      }
     >
       {children}
     </a>
