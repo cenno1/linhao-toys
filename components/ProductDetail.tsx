@@ -42,6 +42,7 @@ type ProductDetailProps = {
 };
 
 export default function ProductDetail({ product }: ProductDetailProps) {
+  const isReadyStock = product.availability === "ready-stock";
   const gallery = getProductGallery(product);
   const customization = getCustomizationOptions(product);
   const specifications = getProductSpecifications(product);
@@ -91,28 +92,36 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-xs font-black uppercase tracking-[0.14em] text-slate-500">
-                  MOQ
+                  {isReadyStock ? "Stock status" : "MOQ"}
                 </p>
-                <p className="mt-2 text-3xl font-black text-slate-950">{PRODUCT_MOQ} pcs</p>
+                <p className="mt-2 text-3xl font-black text-slate-950">
+                  {isReadyStock ? "Check stock" : `${PRODUCT_MOQ} pcs`}
+                </p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                  Standard minimum for OEM sampling and bulk production. Final MOQ may vary by
-                  mold, material and packaging.
+                  {isReadyStock
+                    ? "Live quantity, available colors and carton packing are confirmed with your inquiry."
+                    : "Standard minimum for OEM sampling and bulk production. Final MOQ may vary by mold, material and packaging."}
                 </p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-xs font-black uppercase tracking-[0.14em] text-slate-500">
-                  Lead time
+                  {isReadyStock ? "Stock dispatch" : "Lead time"}
                 </p>
-                <p className="mt-2 text-3xl font-black text-slate-950">3–7 days</p>
+                <p className="mt-2 text-3xl font-black text-slate-950">
+                  {isReadyStock ? "Confirm first" : "3–7 days"}
+                </p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
-                  Sample turnaround after artwork and specs are confirmed. Mass production schedule
-                  shared with quotation.
+                  {isReadyStock
+                    ? "Dispatch timing is confirmed after the live-stock check and destination freight review."
+                    : "Sample turnaround after artwork and specs are confirmed. Mass production schedule shared with quotation."}
                 </p>
               </div>
             </div>
 
             <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h2 className="text-lg font-black text-slate-950">Customization options</h2>
+              <h2 className="text-lg font-black text-slate-950">
+                {isReadyStock ? "Wholesale stock details" : "Customization options"}
+              </h2>
               <ul className="mt-4 grid gap-2 sm:grid-cols-2">
                 {customization.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-slate-600">
@@ -192,11 +201,12 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             </dl>
             <div className="mt-8 rounded-3xl border border-blue-100 bg-blue-50/60 p-6">
               <h3 className="text-lg font-black text-slate-950">
-                Prepare these details for quotation
+                {isReadyStock ? "Prepare these details for a stock quotation" : "Prepare these details for quotation"}
               </h3>
               <p className="mt-2 text-sm leading-6 text-slate-600">
-                A complete buyer brief helps us confirm feasibility, sampling scope and a more
-                useful quotation.
+                {isReadyStock
+                  ? "A complete request helps us check live availability, carton packing and shipment options quickly."
+                  : "A complete buyer brief helps us confirm feasibility, sampling scope and a more useful quotation."}
               </p>
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {buyerBrief.map((item) => (
@@ -234,7 +244,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             Related products
           </span>
           <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950">
-            Compare more wholesale and OEM directions.
+            {isReadyStock ? "Compare more ready-stock wholesale items." : "Compare more wholesale and OEM directions."}
           </h2>
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {relatedProducts.map((item) => (
@@ -281,15 +291,16 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               Inquiry
             </span>
             <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
-              Get a quote for {product.name}
+              {isReadyStock ? `Check stock and pricing for ${product.name}` : `Get a quote for ${product.name}`}
             </h2>
             <p className="mt-4 max-w-md text-sm leading-7 text-slate-600">
-              Share your quantity, target market and packaging requirements. Our sales team will
-              reply with pricing, sampling steps and production timeline.
+              {isReadyStock
+                ? "Share your quantity, destination and required receiving date. Our sales team will reply with live stock, packing and shipment details."
+                : "Share your quantity, target market and packaging requirements. Our sales team will reply with pricing, sampling steps and production timeline."}
             </p>
           </div>
           <div className="rounded-[2rem] border border-slate-200 bg-[#f8fafc] p-6 shadow-sm sm:p-8">
-            <ProductInquiryForm productName={product.name} />
+            <ProductInquiryForm productName={product.name} stockItem={isReadyStock} />
           </div>
         </div>
       </section>

@@ -8,7 +8,22 @@ import {
   type ProductInquiryFormData,
 } from "@/lib/product-utils";
 
-type Props = { productName: string };
+type Props = { productName: string; stockItem?: boolean };
+
+const stockProjectTypes = [
+  "Ready-stock wholesale inquiry",
+  "Carton quantity and shipping check",
+  "Mixed ready-stock assortment",
+  "Other wholesale inquiry",
+];
+
+const customProjectTypes = [
+  "Custom OEM / ODM product",
+  "Wholesale existing products",
+  "Private-label packaging",
+  "Sample / prototype request",
+  "Other sourcing inquiry",
+];
 
 const initialForm: ProductInquiryFormData = {
   company: "",
@@ -27,7 +42,7 @@ const inputClass =
 const labelClass =
   "text-xs font-black uppercase tracking-[0.14em] text-slate-500";
 
-export default function ProductInquiryForm({ productName }: Props) {
+export default function ProductInquiryForm({ productName, stockItem = false }: Props) {
   const [form, setForm] = useState<ProductInquiryFormData>(initialForm);
   const [website, setWebsite] = useState("");
   const [status, setStatus] = useState<
@@ -93,12 +108,10 @@ export default function ProductInquiryForm({ productName }: Props) {
       <label className="block">
         <span className={labelClass}>Project type</span>
         <select required value={form.projectType} onChange={(event) => updateField("projectType", event.target.value)} className={inputClass}>
-          <option value="" disabled>Select a project type</option>
-          <option value="Custom OEM / ODM product">Custom OEM / ODM product</option>
-          <option value="Wholesale existing products">Wholesale existing products</option>
-          <option value="Private-label packaging">Private-label packaging</option>
-          <option value="Sample / prototype request">Sample / prototype request</option>
-          <option value="Other sourcing inquiry">Other sourcing inquiry</option>
+          <option value="" disabled>{stockItem ? "Select a wholesale request" : "Select a project type"}</option>
+          {(stockItem ? stockProjectTypes : customProjectTypes).map((projectType) => (
+            <option key={projectType} value={projectType}>{projectType}</option>
+          ))}
         </select>
       </label>
       <label className="block">

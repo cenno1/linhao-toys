@@ -2,6 +2,15 @@ import { products, type Product, type ProductFilterGroup } from "./products";
 
 export const PRODUCT_MOQ = 100;
 
+const READY_STOCK_SLUGS = new Set([
+  "ready-stock-mango-squishy",
+  "ready-stock-giant-peach-squishy",
+  "ready-stock-cheese-cube-squishy",
+  "ready-stock-giant-strawberry-squishy",
+  "ready-stock-giant-banana-squishy",
+  "ready-stock-dragon-fruit-squishy",
+]);
+
 export const FULL_GALLERY_SLUGS = new Set([
   "glitter-bao-bun",
   "glitter-basket-blue",
@@ -189,6 +198,48 @@ const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
     buyerBrief: ["Original artwork direction and target user", "Preferred size and squeeze or recovery feel", "Colorway and logo placement", "Quantity per color or assortment", "Packaging, destination market and requested timeline"],
     packagingAnswer: "Individual bags, themed retail boxes, party-favor sets and display cartons can be planned around the approved jumbo size. Confirm final artwork and carton dimensions with the pre-production sample before bulk quotation.",
   },
+  "ready-stock-mango-squishy": {
+    specifications: [{ label: "Availability", value: "Ready stock; live quantity confirmed before order acceptance" }, { label: "Reference size", value: "11.5 × 6 cm" }, { label: "Order route", value: "Bulk wholesale by available color and carton quantity" }],
+    customization: ["Live stock check", "Available colors", "Carton quantity", "Dispatch and shipping coordination"],
+    useCases: ["Novelty retail", "Gift shops", "Party packs", "Bulk wholesale assortments"],
+    buyerBrief: ["Required quantity", "Destination country", "Preferred delivery method", "Required receiving date"],
+    packagingAnswer: "Current individual packing and outer-carton details are confirmed with the live stock check. Request a quantity-based quotation before payment.",
+  },
+  "ready-stock-giant-peach-squishy": {
+    specifications: [{ label: "Availability", value: "Ready stock; live quantity confirmed before order acceptance" }, { label: "Reference size", value: "17 × 15 cm" }, { label: "Order route", value: "Bulk wholesale by available stock and carton quantity" }],
+    customization: ["Live stock check", "Available colors", "Carton quantity", "Dispatch and shipping coordination"],
+    useCases: ["Novelty retail", "Seasonal displays", "Gift shops", "Bulk wholesale assortments"],
+    buyerBrief: ["Required quantity", "Destination country", "Preferred delivery method", "Required receiving date"],
+    packagingAnswer: "The live stock check confirms available pieces, inner packing and carton details before the wholesale order is accepted.",
+  },
+  "ready-stock-cheese-cube-squishy": {
+    specifications: [{ label: "Availability", value: "Ready stock; live quantity confirmed before order acceptance" }, { label: "Reference size", value: "12 × 12 × 12 cm" }, { label: "Packing route", value: "Retail presentation box with wholesale carton packing" }],
+    customization: ["Live stock check", "Available retail presentation", "Carton quantity", "Dispatch and shipping coordination"],
+    useCases: ["Countertop retail", "Novelty gift packs", "Impulse displays", "Bulk wholesale assortments"],
+    buyerBrief: ["Required quantity", "Destination country", "Preferred delivery method", "Required receiving date"],
+    packagingAnswer: "This item is supplied in its available retail presentation. Ask for current carton quantity, carton dimensions and dispatch timing.",
+  },
+  "ready-stock-giant-strawberry-squishy": {
+    specifications: [{ label: "Availability", value: "Ready stock; live quantity confirmed before order acceptance" }, { label: "Reference size", value: "16 × 13 cm" }, { label: "Order route", value: "Bulk wholesale by available stock and carton quantity" }],
+    customization: ["Live stock check", "Available colors", "Carton quantity", "Dispatch and shipping coordination"],
+    useCases: ["Novelty retail", "Party gifts", "Gift shops", "Bulk wholesale assortments"],
+    buyerBrief: ["Required quantity", "Destination country", "Preferred delivery method", "Required receiving date"],
+    packagingAnswer: "Available stock, carton packing and dispatch options are confirmed with the quantity inquiry.",
+  },
+  "ready-stock-giant-banana-squishy": {
+    specifications: [{ label: "Availability", value: "Ready stock; live quantity confirmed before order acceptance" }, { label: "Reference size", value: "35 × 7.5 cm" }, { label: "Order route", value: "Bulk wholesale by available stock and carton quantity" }],
+    customization: ["Live stock check", "Carton quantity", "Individual packing availability", "Dispatch and shipping coordination"],
+    useCases: ["Display-focused retail", "Party prizes", "Novelty gift shops", "Bulk wholesale assortments"],
+    buyerBrief: ["Required quantity", "Destination country", "Preferred delivery method", "Required receiving date"],
+    packagingAnswer: "Because this is an oversized item, current carton quantity and shipping options should be confirmed with the live stock quotation.",
+  },
+  "ready-stock-dragon-fruit-squishy": {
+    specifications: [{ label: "Availability", value: "Ready stock; live quantity confirmed before order acceptance" }, { label: "Reference size", value: "18.2 × 12 cm" }, { label: "Order route", value: "Bulk wholesale by available stock and carton quantity" }],
+    customization: ["Live stock check", "Available colors", "Carton quantity", "Dispatch and shipping coordination"],
+    useCases: ["Colorful novelty retail", "Gift assortments", "Party packs", "Bulk wholesale assortments"],
+    buyerBrief: ["Required quantity", "Destination country", "Preferred delivery method", "Required receiving date"],
+    packagingAnswer: "Request a live stock confirmation for available quantity, carton packing and dispatch timing before ordering.",
+  },
 };
 
 export type ProductInquiryFormData = {
@@ -307,6 +358,22 @@ export type ProductSpecification = {
 
 export function getProductSpecifications(product: Product): ProductSpecification[] {
   const profile = productBuyingProfiles[product.slug];
+  const isReadyStock = READY_STOCK_SLUGS.has(product.slug);
+
+  if (isReadyStock) {
+    return [
+      { label: "Product", value: product.name },
+      ...(profile?.specifications ?? []),
+      {
+        label: "Wholesale supply",
+        value: "Ready-stock item supplied according to live inventory and carton availability",
+      },
+      {
+        label: "Stock confirmation",
+        value: "Current quantity, packing and dispatch schedule are confirmed with each inquiry",
+      },
+    ];
+  }
   const groupDetails: Record<ProductFilterGroup, ProductSpecification[]> = {
     squishy: [
       { label: "Product type", value: "Soft squeeze / sensory toy" },
@@ -389,6 +456,32 @@ export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): 
 
 export function getProductFAQs(product: Product) {
   const profile = productBuyingProfiles[product.slug];
+  const isReadyStock = READY_STOCK_SLUGS.has(product.slug);
+
+  if (isReadyStock) {
+    return [
+      {
+        question: `Is ${product.name} available now?`,
+        answer: "This is a ready-stock wholesale item. We confirm the current quantity, available colors and dispatch schedule when you send your requested quantity.",
+      },
+      {
+        question: "What wholesale quantity can I order?",
+        answer: "Order quantity is based on live stock and carton packing. Send the quantity you need and we will confirm the available allocation and price.",
+      },
+      {
+        question: "Can you provide current packing and shipping details?",
+        answer: "Yes. We can confirm individual packing, outer-carton quantity, carton dimensions and shipment options after checking live inventory.",
+      },
+      {
+        question: "Can this product be mixed with other ready-stock toys?",
+        answer: "Mixed ready-stock assortments may be possible depending on the items, quantities and destination. Include your preferred assortment in the inquiry.",
+      },
+      {
+        question: "What information should I send for a stock quotation?",
+        answer: "Send your requested quantity, destination country, preferred shipping method and required receiving date. This lets us check stock and prepare a practical wholesale quotation.",
+      },
+    ];
+  }
 
   return [
     {
