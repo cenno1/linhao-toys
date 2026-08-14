@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import ProductShowcase from "@/components/ProductShowcase";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import PriorityBuyerGuides from "@/components/PriorityBuyerGuides";
 
 export const metadata: Metadata = {
   title: "Custom Squishy Toys, Plush Charms & OEM Gifts",
@@ -24,6 +25,7 @@ export default function Products() {
         </p>
       </div>
       <ProductShowcase />
+      <PriorityBuyerGuides />
       <CTA />
       <Footer />
     </main>

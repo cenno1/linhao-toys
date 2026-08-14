@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import ContactFloat from "@/components/ContactFloat";
 import FactoryDirectComparison from "@/components/FactoryDirectComparison";
 import BuyerValue from "@/components/BuyerValue";
+import PriorityBuyerGuides from "@/components/PriorityBuyerGuides";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -28,6 +29,7 @@ export default function Home() {
       <FactoryDirectComparison />
       <FactoryStory />
       <BuyerValue />
+      <PriorityBuyerGuides />
       <Certificates />
       <FAQ />
       <CTA />

@@ -6,6 +6,7 @@ import ProductGallery from "@/components/ProductGallery";
 import ProductInquiryForm from "@/components/ProductInquiryForm";
 import TrackedLink from "@/components/TrackedLink";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import PriorityBuyerGuides from "@/components/PriorityBuyerGuides";
 import type { Product } from "@/lib/products";
 import {
   getCustomizationOptions,
@@ -266,6 +267,8 @@ export default function ProductDetail({ product }: ProductDetailProps) {
           </div>
         </div>
       </section>
+
+      <PriorityBuyerGuides />
 
       <section className="section section-soft">
         <div className="shell faq-grid">
