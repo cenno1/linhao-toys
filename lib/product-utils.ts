@@ -9,6 +9,7 @@ const READY_STOCK_SLUGS = new Set([
   "ready-stock-giant-strawberry-squishy",
   "ready-stock-giant-banana-squishy",
   "ready-stock-dragon-fruit-squishy",
+  "ready-stock-halloween-butter-bar-squishy",
 ]);
 
 export const FULL_GALLERY_SLUGS = new Set([
@@ -239,6 +240,13 @@ const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
     useCases: ["Colorful novelty retail", "Gift assortments", "Party packs", "Bulk wholesale assortments"],
     buyerBrief: ["Required quantity", "Destination country", "Preferred delivery method", "Required receiving date"],
     packagingAnswer: "Request a live stock confirmation for available quantity, carton packing and dispatch timing before ordering.",
+  },
+  "ready-stock-halloween-butter-bar-squishy": {
+    specifications: [{ label: "Availability", value: "Ready stock; live quantity confirmed before order acceptance" }, { label: "Season", value: "Halloween retail and party-favor assortment" }, { label: "Order route", value: "Bulk wholesale by available stock and carton quantity" }],
+    customization: ["Live stock check", "Available unit-packing review", "Carton quantity", "Dispatch and shipping coordination"],
+    useCases: ["Halloween retail", "Party favors", "Seasonal gift shops", "Bulk novelty assortments"],
+    buyerBrief: ["Required quantity", "Destination country", "Preferred delivery method", "Required receiving date"],
+    packagingAnswer: "The available unit packing and outer-carton details are confirmed with the live stock check. Request a quantity-based quotation before payment.",
   },
 };
 

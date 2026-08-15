@@ -28,7 +28,7 @@ export default function Page() {
     title="Wholesale squishy toys in stock for faster retail and distribution orders."
     introduction="Review current fruit and novelty squeeze-toy directions for gift shops, importers, distributors, party suppliers and online sellers. Live quantity, available colors, carton packing and dispatch timing are confirmed before order placement."
     buyerNote="Send the product name, required quantity, destination country and receiving date. We will check current stock first, then return the available quantity, packing and freight route."
-    productSlugs={["ready-stock-mango-squishy", "ready-stock-giant-peach-squishy", "ready-stock-cheese-cube-squishy", "ready-stock-giant-strawberry-squishy", "ready-stock-giant-banana-squishy", "ready-stock-dragon-fruit-squishy"]}
+    productSlugs={["ready-stock-mango-squishy", "ready-stock-giant-peach-squishy", "ready-stock-cheese-cube-squishy", "ready-stock-giant-strawberry-squishy", "ready-stock-giant-banana-squishy", "ready-stock-dragon-fruit-squishy", "ready-stock-halloween-butter-bar-squishy"]}
     lastReviewed="2026-08-14"
     serviceType="Ready-stock wholesale squishy toy supply"
     productHeading="Current ready-stock squishy directions for bulk buyers."
