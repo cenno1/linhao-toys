@@ -13,6 +13,7 @@ type ProductGalleryProps = {
 export default function ProductGallery({ productName, items, videoSrc }: ProductGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = items[activeIndex];
+  const useOriginalImage = active.src.includes("ready-stock-halloween-butter-bar-squishy");
 
   return (
     <div>
@@ -20,12 +21,13 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
         <Image
           key={active.src}
           src={active.src}
-          alt={`${productName} — ${active.label}`}
+          alt={`${productName} 鈥?${active.label}`}
           width={1200}
           height={900}
           sizes="(max-width: 1024px) 100vw, 52vw"
           className="h-full w-full object-cover"
           priority
+          unoptimized={useOriginalImage}
         />
       </div>
       {items.length > 1 && (
@@ -45,11 +47,12 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
               <div className="relative aspect-[4/3]">
                 <Image
                   src={item.src}
-                  alt={`${productName} — ${item.label}`}
+                  alt={`${productName} 鈥?${item.label}`}
                   width={400}
                   height={300}
                   sizes="(max-width: 1024px) 25vw, 13vw"
                   className="h-full w-full object-cover"
+                  unoptimized={item.src.includes("ready-stock-halloween-butter-bar-squishy")}
                 />
               </div>
               <span className="block px-2 py-2 text-[10px] font-bold leading-tight text-slate-600">
@@ -73,7 +76,7 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
             Your browser does not support embedded video.
           </video>
           <p className="px-5 py-3 text-xs font-bold text-slate-300">
-            Product demonstration · appearance, squeeze feel and recovery
+            Product demonstration 路 appearance, squeeze feel and recovery
           </p>
         </div>
       )}
