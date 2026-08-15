@@ -52,7 +52,7 @@ export const products: Product[] = [
     seoDescription: "Source ready-stock chocolate bar squishy toys for wholesale novelty retail, gift stores and seasonal displays. Request a live stock, packing and dispatch check.",
     alt: "ready stock chocolate bar squishy squeeze toy wholesale retail packaging",
     keywords: ["chocolate bar squishy wholesale", "food squishy toy bulk", "ready stock squeeze toy", "chocolate stress toy supplier"],
-    images: images("ready-stock-chocolate-bar-squishy", "/images/products/ready-stock-chocolate-bar-squishy/hero.png"),
+    images: images("ready-stock-chocolate-bar-squishy", "/images/products/ready-stock-chocolate-bar-squishy/hero-20260815.png"),
     featured: true,
     availability: "ready-stock",
     filterGroup: "squishy",
