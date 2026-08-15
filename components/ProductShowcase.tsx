@@ -93,7 +93,7 @@ export default function ProductShowcase({
                     width={1200}
                     height={900}
                     sizes="(max-width: 620px) 50vw, (max-width: 980px) 50vw, 25vw"
-                    unoptimized={p.images.hero.includes("ready-stock-halloween-butter-bar-squishy") || p.images.hero.includes("ready-stock-chocolate-bar-squishy")}
+                    unoptimized={p.images.hero.includes("ready-stock-halloween-butter-bar-squishy") || p.images.hero.includes("ready-stock-chocolate-bar-squishy") || p.images.hero.includes("squeaky-tongue-popping-animal-squishy")}
                   />
                   <b>{p.tag}</b>
                   <em>{String(index + 1).padStart(2, "0")}</em>

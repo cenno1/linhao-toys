@@ -43,6 +43,24 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    slug: "squeaky-tongue-popping-animal-squishy",
+    name: "Squeaky Tongue-Popping Animal Squishy Toy",
+    category: "Squeaky Animal Squishy / Wholesale",
+    tag: "Funny Squeeze Toy",
+    note: "Funny animal squeeze toy with a tongue-popping action and built-in squeaker sound. Supplied in a colorful countertop display box with assorted animal designs for novelty stores, gift shops, party favors and bulk toy assortments.",
+    seoTitle: "Squeaky Tongue-Popping Animal Squishy Toy Wholesale",
+    seoDescription: "Wholesale squeaky tongue-popping animal squishy toys with funny squeeze action, BB squeaker sound, assorted animal designs and retail display-box packing.",
+    alt: "squeaky tongue popping animal squishy toy wholesale display box",
+    keywords: ["squeaky animal squishy toy", "tongue popping squeeze toy", "funny stress toy wholesale", "animal squeaker toy bulk"],
+    images: {
+      hero: "/images/products/squeaky-tongue-popping-animal-squishy/hero.png",
+      packaging: "/images/products/squeaky-tongue-popping-animal-squishy/display-box.png",
+    },
+    featured: true,
+    filterGroup: "squishy",
+  },
+
+  {
     slug: "ready-stock-chocolate-bar-squishy",
     name: "Ready Stock Chocolate Bar Squishy",
     category: "Food Squishy / Wholesale",
