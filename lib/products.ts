@@ -43,6 +43,22 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    slug: "ready-stock-chocolate-bar-squishy",
+    name: "Ready Stock Chocolate Bar Squishy",
+    category: "Food Squishy / Wholesale",
+    tag: "Ready Stock",
+    note: "Chocolate-bar squeeze toy in retail-ready packaging for novelty shops, gift stores, seasonal displays and bulk buyers. Ask us to confirm live quantity, unit packing, carton details and dispatch timing before ordering.",
+    seoTitle: "Ready Stock Chocolate Bar Squishy Wholesale",
+    seoDescription: "Source ready-stock chocolate bar squishy toys for wholesale novelty retail, gift stores and seasonal displays. Request a live stock, packing and dispatch check.",
+    alt: "ready stock chocolate bar squishy squeeze toy wholesale retail packaging",
+    keywords: ["chocolate bar squishy wholesale", "food squishy toy bulk", "ready stock squeeze toy", "chocolate stress toy supplier"],
+    images: images("ready-stock-chocolate-bar-squishy", "/images/products/ready-stock-chocolate-bar-squishy/hero.png"),
+    featured: true,
+    availability: "ready-stock",
+    filterGroup: "squishy",
+  },
+
+  {
     slug: "ready-stock-halloween-butter-bar-squishy",
     name: "Ready Stock Halloween Butter Bar Squishy",
     category: "Halloween Squishy / Wholesale",

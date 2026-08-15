@@ -13,7 +13,7 @@ type ProductGalleryProps = {
 export default function ProductGallery({ productName, items, videoSrc }: ProductGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = items[activeIndex];
-  const useOriginalImage = active.src.includes("ready-stock-halloween-butter-bar-squishy");
+  const useOriginalImage = active.src.includes("ready-stock-halloween-butter-bar-squishy") || active.src.includes("ready-stock-chocolate-bar-squishy");
 
   return (
     <div>
@@ -52,7 +52,7 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
                   height={300}
                   sizes="(max-width: 1024px) 25vw, 13vw"
                   className="h-full w-full object-cover"
-                  unoptimized={item.src.includes("ready-stock-halloween-butter-bar-squishy")}
+                  unoptimized={item.src.includes("ready-stock-halloween-butter-bar-squishy") || item.src.includes("ready-stock-chocolate-bar-squishy")}
                 />
               </div>
               <span className="block px-2 py-2 text-[10px] font-bold leading-tight text-slate-600">
