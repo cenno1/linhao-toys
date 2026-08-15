@@ -14,11 +14,12 @@ export default function Header() {
         </Link>
         <nav aria-label="Primary navigation">
           <Link href="/trending-squishy-toys">Trending</Link>
+          <Link href="/wholesale-squishy-toys">Wholesale</Link>
+          <Link href="/custom-squishy-toy-manufacturer">Custom</Link>
           <Link href="/products">Products</Link>
           <Link href="/oem">OEM / ODM</Link>
           <Link href="/factory">Factory</Link>
-          <Link href="/resources">Resources</Link>
-          <Link href="/#compliance">Compliance</Link>
+          <Link href="/resources">Guides</Link>
         </nav>
         <TrackedLink className="btn btn-primary" href="/contact" method="quote" location="header">
           Get a Quote
@@ -27,3 +28,4 @@ export default function Header() {
     </header>
   );
 }
+

@@ -15,7 +15,23 @@ import BuyerValue from "@/components/BuyerValue";
 import PriorityBuyerGuides from "@/components/PriorityBuyerGuides";
 
 export const metadata: Metadata = {
+  title: { absolute: "Squishy Toy Manufacturer & Wholesale Supplier | LINHAO Toys" },
+  description:
+    "Source custom and wholesale squishy toys from LINHAO Toys, with OEM/ODM development, ready-stock options, private-label packaging and worldwide export support.",
   alternates: { canonical: "/" },
+  openGraph: {
+    title: "Squishy Toy Manufacturer & Wholesale Supplier | LINHAO Toys",
+    description:
+      "Custom and wholesale squishy toys for brands, retailers and distributors, with OEM/ODM development and export support.",
+    url: "/",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Squishy Toy Manufacturer & Wholesale Supplier | LINHAO Toys",
+    description:
+      "Custom and wholesale squishy toys with OEM/ODM development, ready-stock options and export support.",
+  },
 };
 
 export default function Home() {
@@ -38,3 +54,4 @@ export default function Home() {
     </main>
   );
 }
+

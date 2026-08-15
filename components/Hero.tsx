@@ -70,16 +70,16 @@ export default function Hero() {
 
       <div className="shell v7-hero-content">
         <div className="v7-copy">
-          <span className="eyebrow">REAL PRODUCTS · TREND-LED OEM</span>
+          <span className="eyebrow">REAL PRODUCTS 路 TREND-LED OEM</span>
           <h1>
-            Products buyers
+            Custom &amp; wholesale squishy toys
             <br />
-            <span>want to pick up.</span>
+            <span>for global buyers.</span>
           </h1>
           <p>
-            Real LINHAO sample photography across glitter squishies, food shapes, mini
-            sensory toys, plush gifts and bag accessories—supported by custom colors,
-            faces, packaging and private label development.
+            Develop OEM/ODM squishy toys or source ready-stock styles for retail and
+            distribution. Compare real glitter, food, TPR, slow-rise and sensory
+            samples with custom colors, artwork, packaging and private-label support.
           </p>
           <div className="hero-actions">
             <WhatsAppButton context="hero" />
@@ -112,3 +112,4 @@ export default function Hero() {
     </section>
   );
 }
+

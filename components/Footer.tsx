@@ -15,10 +15,12 @@ export default function Footer() {
         <div>
           <b>Collections</b>
           <Link href="/trending-squishy-toys">Trending Squishy Toys</Link>
+          <Link href="/custom-squishy-toy-manufacturer">Custom Squishy Toys</Link>
           <Link href="/wholesale-squishy-toys">Wholesale Squishy Toys</Link>
+          <Link href="/tpr-squishy-toy-manufacturer">TPR Squishy Toys</Link>
+          <Link href="/slow-rising-squishy-wholesale">Slow-Rising Squishies</Link>
           <Link href="/taba-squishy-manufacturer">Taba Squishy</Link>
-          <Link href="/custom-plush-bag-charms">Plush Bag Charms</Link>
-          <Link href="/products">Emotional Gifts</Link>
+          <Link href="/custom-plush-bag-charms">Plush Keychains &amp; Bag Charms</Link>
         </div>
         <div>
           <b>Company</b>
@@ -34,7 +36,8 @@ export default function Footer() {
           <a href={`mailto:${INQUIRY_EMAIL}`}>{INQUIRY_EMAIL}</a>
         </div>
       </div>
-      <div className="shell copyright">© 2026 LINHAO Toys. All rights reserved.</div>
+      <div className="shell copyright">漏 2026 LINHAO Toys. All rights reserved.</div>
     </footer>
   );
 }
+

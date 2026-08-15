@@ -13,11 +13,11 @@ import { WHATSAPP_NUMBER } from "@/lib/product-utils";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Custom Squishy Toy Manufacturer | LINHAO Toys",
+    default: "Squishy Toy Manufacturer & Wholesale Supplier | LINHAO Toys",
     template: "%s | LINHAO Toys",
   },
   description:
-    "LINHAO Toys provides OEM and ODM squishy toy design, sampling, manufacturing, packaging and worldwide export support for brands, retailers and promotional campaigns.",
+    "LINHAO Toys manufactures custom and wholesale squishy toys with OEM/ODM development, private-label packaging and export support for brands, retailers and distributors.",
   keywords: [
     "custom squishy toys",
     "squishy toy manufacturer",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Custom Squishy Toys for Global Brands | LINHAO Toys",
+    title: "Squishy Toy Manufacturer & Wholesale Supplier | LINHAO Toys",
     description:
-      "OEM and ODM squishy toy design, sampling, manufacturing and packaging.",
+      "Custom and wholesale squishy toys with OEM/ODM development, private-label packaging and export support.",
     url: SITE_URL,
     type: "website",
     locale: "en_US",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Squishy Toy Manufacturer | LINHAO Toys",
+    title: "Squishy Toy Manufacturer & Wholesale Supplier | LINHAO Toys",
     description:
-      "OEM and ODM squishy toy design, sampling, manufacturing and packaging.",
+      "Custom and wholesale squishy toys with OEM/ODM development, private-label packaging and export support.",
     images: [DEFAULT_OG_IMAGE],
   },
 };
@@ -168,11 +168,11 @@ export default function RootLayout({
         )}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c") }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd).replace(/</g, "\\u003c") }}
         />
         {children}
         {measurementId && <GoogleAnalytics measurementId={measurementId} />}
@@ -181,3 +181,4 @@ export default function RootLayout({
     </html>
   );
 }
+
