@@ -1404,7 +1404,157 @@ export const buyerGuides: BuyerGuide[] = [
       { label: "Request a custom keychain feasibility review", href: "/contact" },
     ],
   },
-];
+  {
+    slug: "custom-toy-production-lead-time-guide",
+    title: "Custom Toy Production Lead Time: Sampling-to-Shipment Buyer Guide",
+    seoTitle: "Custom Toy Production Lead Time: Sampling to Shipment",
+    description:
+      "Plan realistic custom toy timing by separating brief review, sampling, packaging approval, production, inspection and freight preparation instead of relying on one generic lead-time promise.",
+    eyebrow: "PRODUCTION PLANNING",
+    updated: "2026-08-16",
+    readTime: "7 min read",
+    quickAnswer:
+      "Custom toy lead time is a sequence, not one fixed number. A practical plan separates artwork and brief review, sampling and revisions, packaging approval, material and production scheduling, inspection, packing and the buyer鈥檚 freight arrangement.",
+    keywords: [
+      "custom toy production lead time",
+      "custom squishy sample lead time",
+      "OEM toy manufacturing timeline",
+      "custom toy sampling process",
+      "toy production schedule",
+    ],
+    sections: [
+      {
+        heading: "Separate the project stages before requesting timing",
+        paragraphs: [
+          "A useful delivery discussion starts by separating feasibility review, sample making, sample revisions, artwork and packaging approval, bulk production, inspection and shipment preparation. These stages may overlap in limited ways, but each depends on decisions that can change the next stage.",
+          "A supplier should not be asked to promise one fixed date before the shape, material route, decoration, packout, quantity and destination are known. Instead, use the approved brief to identify the critical path and the buyer approvals that can affect it.",
+        ],
+      },
+      {
+        heading: "The first sample is a decision point, not the end of development",
+        paragraphs: [
+          "The first sample helps evaluate shape, dimensions, color, artwork placement, squeeze behavior, hardware and packaging direction. A change to any of those elements can require another material, decoration or packing review before a production reference is ready.",
+          "Give feedback against a numbered list of criteria and consolidate comments from the buyer team. Fragmented changes from multiple reviewers are a common source of avoidable delay and unclear sample approval.",
+        ],
+        checklist: [
+          "Approved artwork, logo and print positions",
+          "Target dimensions, color and material feel",
+          "Variant list and quantity per design",
+          "Retail packaging, barcode and warning-text requirements",
+          "Destination market, intended age grade and documentation discussion",
+        ],
+      },
+      {
+        heading: "Packaging should be approved on the same timeline",
+        paragraphs: [
+          "A toy can be ready while its printed box, blind pack, insert or display tray is still waiting for artwork approval. Packaging has its own material, print, proofing and supplier steps, so treat it as part of the production schedule rather than a final add-on.",
+          "For faster market tests, buyers can compare a fully printed format with a standard protective format plus a branded label or insert. The right choice depends on the channel, product protection and brand objective.",
+        ],
+      },
+      {
+        heading: "Protect the production slot with a complete approval record",
+        paragraphs: [
+          "Before bulk production, make sure the product reference, color and artwork files, packaging artwork, quantity by variant, quality checkpoints and shipping marks all describe the same version. This reduces the risk that an approved product is held while the production team waits for a missing decision.",
+          "Ask for milestone-based updates rather than a single unverified completion date. Useful milestones include sample dispatch, approval received, material readiness, production start, inspection window, packing completion and handover for freight.",
+        ],
+      },
+      {
+        heading: "Freight timing is separate from manufacturing timing",
+        paragraphs: [
+          "Factory completion is not the same as arrival at a warehouse. The buyer鈥檚 destination, shipment method, booking availability, customs requirements and local delivery arrangements all sit after packed goods are ready for collection.",
+          "State the requested delivery date and the final delivery location at the beginning. This lets the commercial and freight plan be evaluated together instead of treating a manufacturing date as the final customer-arrival date.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "How long does a custom toy sample take?", answer: "The timing depends on the shape, material, decoration, number of variants and required revisions. Confirm the sample scope and feedback process before relying on a launch schedule." },
+      { question: "When should packaging artwork be finalized?", answer: "Start it alongside product development whenever practical, then release final print files only after the product, labels and required information are confirmed for the intended market." },
+      { question: "Can production start before every detail is approved?", answer: "Only proceed when the agreed production specification identifies what is fully approved and what remains open. Unresolved artwork, packout or material decisions can create rework or delay." },
+      { question: "Is a factory production date the same as the delivery date?", answer: "No. Freight booking, transport, customs and final delivery occur after production and packing are complete." },
+    ],
+    relatedLinks: [
+      { label: "Prepare a custom squishy manufacturing brief", href: "/resources/how-to-prepare-custom-squishy-toy-brief" },
+      { label: "Approve a production sample with one checklist", href: "/resources/custom-squishy-toy-sample-approval-checklist" },
+      { label: "Plan packaging for wholesale or retail", href: "/resources/wholesale-squishy-toy-packaging-guide" },
+      { label: "Request a project timeline review", href: "/contact" },
+    ],
+  },
+  {
+    slug: "wholesale-squishy-toy-buying-checklist",
+    title: "Wholesale Squishy Toy Buying Checklist for Retail and Online Sellers",
+    seoTitle: "Wholesale Squishy Toy Buying Checklist",
+    description:
+      "Use a practical wholesale squishy toy checklist to compare live stock, product condition, packing, carton data, documents, delivery timing and sales-channel requirements before ordering.",
+    eyebrow: "WHOLESALE BUYER GUIDE",
+    updated: "2026-08-16",
+    readTime: "6 min read",
+    quickAnswer:
+      "A wholesale squishy order should be checked against the exact in-stock SKU, live quantity, color or variant availability, product condition, unit packing, inner pack, outer carton, dispatch timing, destination requirements and final delivered cost.",
+    keywords: [
+      "wholesale squishy toys buying guide",
+      "bulk squishy toys checklist",
+      "squishy toys wholesale supplier",
+      "wholesale squeeze toys for retail",
+      "bulk squishy toy carton packing",
+    ],
+    sections: [
+      {
+        heading: "Confirm the exact SKU and live availability",
+        paragraphs: [
+          "Wholesale stock changes. Use the product name, photo, size and packing description to identify the exact SKU, then request a current quantity check rather than treating a catalog photo as a stock guarantee.",
+          "If several styles are being combined, ask whether each can be released in the same shipment and whether color, packaging or condition differs by SKU. A mixed assortment needs a clear order list before carton planning begins.",
+        ],
+      },
+      {
+        heading: "Check the condition and presentation for your sales channel",
+        paragraphs: [
+          "A product suitable for a value assortment may not be suitable for a premium gift store, ecommerce unboxing experience or marketplace fulfillment program. Confirm whether units are individually packed, labeled, retail-ready or intended for repacking.",
+          "Ask for current photos or video when appearance, print, packaging condition or an assortment mix is critical to the order. This is especially useful for soft surfaces and seasonal or clearance inventory.",
+        ],
+      },
+      {
+        heading: "Collect carton and packing data before comparing freight",
+        paragraphs: [
+          "Unit price alone does not explain delivered cost. Request units per inner pack, inners per carton, carton dimensions, gross weight, carton count and total shipment volume for the confirmed order mix.",
+          "Use that same data when comparing courier, air, sea or warehouse-delivery options. If a sales channel has labeling or appointment requirements, include them before the goods are packed.",
+        ],
+        checklist: [
+          "Confirmed SKU, photo and available quantity",
+          "Unit dimensions, unit packing and barcode status",
+          "Inner-pack and outer-carton quantity",
+          "Carton dimensions, gross weight and total volume",
+          "Dispatch readiness and requested handover date",
+          "Destination, delivery terms and fulfillment requirements",
+        ],
+      },
+      {
+        heading: "Keep product documentation product-specific",
+        paragraphs: [
+          "If testing, product declarations or other documentation is relevant to the buyer鈥檚 market, ask whether the file identifies the exact product, construction, material and variant being purchased. A document for a different item should not be treated as automatic coverage.",
+          "Confirm the buyer鈥檚 intended age grade, claims and market requirements early. Retailers and online marketplaces can have additional requirements beyond a general product description.",
+        ],
+      },
+      {
+        heading: "Create a reorder record from the first shipment",
+        paragraphs: [
+          "Keep the approved SKU list, photos, packing configuration, carton details, price basis, shipment method and any agreed quality notes with the purchase record. A good reorder record reduces ambiguity when the same items or a revised assortment are requested later.",
+          "For a regular program, discuss whether the preferred product mix can be replenished or whether availability should be reconfirmed by each order cycle.",
+        ],
+      },
+    ],
+    faqs: [
+      { question: "Can I assume a wholesale squishy is in stock because it appears online?", answer: "No. Product pages are useful for identifying styles, but live quantity, color availability, packing and dispatch timing should be confirmed for the exact order." },
+      { question: "What carton information should I request before booking freight?", answer: "Request the confirmed carton count, units per carton, dimensions, gross weight and total volume for the exact SKU mix and packing format." },
+      { question: "Can different squishy styles be mixed in one order?", answer: "It depends on current stock, packing, carton planning and the supplier鈥檚 release conditions. Provide the requested SKU mix so it can be checked together." },
+      { question: "Should I request product documents before placing a wholesale order?", answer: "If documentation matters to your destination, retailer or marketplace, review whether it applies to the exact finished product and variant you intend to buy." },
+    ],
+    relatedLinks: [
+      { label: "Browse wholesale squishy toy directions", href: "/wholesale-squishy-toys" },
+      { label: "Plan wholesale packaging and retail presentation", href: "/resources/wholesale-squishy-toy-packaging-guide" },
+      { label: "Review toy compliance planning", href: "/resources/en71-astm-f963-cpc-toy-compliance-guide" },
+      { label: "Request a live stock and carton check", href: "/contact" },
+    ],
+  },];
 
 export function getBuyerGuide(slug: string) {
   return buyerGuides.find((guide) => guide.slug === slug);

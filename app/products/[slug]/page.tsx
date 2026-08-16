@@ -97,6 +97,36 @@ export default async function ProductPage({ params }: ProductPageProps) {
       : undefined,
     url: productUrl,
   };
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${productUrl}#product`,
+    name: product.name,
+    description: product.seoDescription ?? product.note,
+    image: [absoluteUrl(product.images.hero)],
+    category: product.category,
+    sku: product.slug,
+    brand: {
+      "@type": "Brand",
+      name: SITE_NAME,
+    },
+    manufacturer: {
+      "@id": `${SITE_URL}/#organization`,
+    },
+    url: productUrl,
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "Supply model",
+        value: product.availability === "ready-stock" ? "Wholesale ready stock; live availability confirmed on inquiry" : "OEM / ODM custom manufacturing",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "MOQ guidance",
+        value: product.availability === "ready-stock" ? "Confirm current stock, carton packing and dispatch timing" : "From 100 pieces; final MOQ depends on specification and packaging",
+      },
+    ],
+  };
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -147,6 +177,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd).replace(/</g, "\\u003c") }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c") }}
       />
       <script
@@ -157,3 +191,4 @@ export default async function ProductPage({ params }: ProductPageProps) {
     </>
   );
 }
+

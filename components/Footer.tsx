@@ -16,6 +16,8 @@ export default function Footer() {
           <b>Collections</b>
           <Link href="/trending-squishy-toys">Trending Squishy Toys</Link>
           <Link href="/custom-squishy-toy-manufacturer">Custom Squishy Toys</Link>
+          <Link href="/custom-stress-ball-manufacturer">Custom Stress Balls</Link>
+          <Link href="/custom-blind-box-toys-manufacturer">Custom Blind Box Toys</Link>
           <Link href="/wholesale-squishy-toys">Wholesale Squishy Toys</Link>
           <Link href="/tpr-squishy-toy-manufacturer">TPR Squishy Toys</Link>
           <Link href="/slow-rising-squishy-wholesale">Slow-Rising Squishies</Link>
