@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/taba-squishy-manufacturer",
     "/trending-squishy-toys",
     "/custom-plush-bag-charms",
+    "/tpr-squishy-toy-manufacturer",
+    "/slow-rising-squishy-wholesale",
     "/oem",
     "/factory",
     "/about",
@@ -43,3 +45,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 }
+

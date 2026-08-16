@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
 export const metadata: Metadata = {
-  title: "Custom Plush Bag Charm Manufacturer | OEM Keychains",
+  title: "Custom Plush Keychain & Bag Charm Manufacturer",
   description: "Develop custom plush bag charms and keychains with character construction, fabric, embroidery, attachment hardware, labels and retail packaging.",
   alternates: { canonical: "/custom-plush-bag-charms" },
   keywords: ["custom plush bag charm manufacturer", "plush keychain manufacturer", "OEM plush charms", "custom plush keychains", "private label bag charms"],
   openGraph: {
-    title: "Custom Plush Bag Charm Manufacturer | OEM Keychains",
+    title: "Custom Plush Keychain & Bag Charm Manufacturer",
     description: "Develop branded plush charms and keychains with custom characters, hardware, labels and packaging.",
     url: "/custom-plush-bag-charms",
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Plush Bag Charm Manufacturer | OEM Keychains",
+    title: "Custom Plush Keychain & Bag Charm Manufacturer",
     description: "Develop branded plush charms and keychains with custom characters, hardware, labels and packaging.",
     images: ["/images/products/long-leg-fuzzy-character-bag-charm/hero.jpg"],
   },
@@ -70,3 +70,4 @@ export default function Page() {
     ]}
   />;
 }
+

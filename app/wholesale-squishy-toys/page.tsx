@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
 export const metadata: Metadata = {
-  title: "Wholesale Squishy Toys in Stock | MOQ & Lead Time",
-  description: "Source ready-stock fruit and novelty squishy toys for bulk wholesale. Check live quantity, carton packing, MOQ, dispatch timing and worldwide freight options.",
+  title: "Wholesale Squishy Toys & Bulk Supplier | Ready Stock",
+  description: "Source wholesale squishy toys in bulk from LINHAO Toys. Compare ready-stock fruit and novelty styles, MOQ, carton packing, dispatch timing and freight options.",
   alternates: { canonical: "/wholesale-squishy-toys" },
   keywords: ["wholesale squishy toys", "squishy toys in stock", "bulk squishy toys", "ready stock squishy toys", "squishy toy supplier", "squishy toys wholesale"],
   openGraph: {
-    title: "Wholesale Squishy Toys in Stock | MOQ & Lead Time",
-    description: "Review ready-stock fruit and novelty squishy toys and request live quantity, packing and dispatch details.",
+    title: "Wholesale Squishy Toys & Bulk Supplier | Ready Stock",
+    description: "Review ready-stock and bulk squishy toy options for retailers and distributors, then request live quantity, packing and dispatch details.",
     url: "/wholesale-squishy-toys",
     type: "website",
     images: [{ url: "/images/products/ready-stock-mango-squishy/hero.png", alt: "Ready-stock fruit squishy toys for bulk wholesale" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wholesale Squishy Toys in Stock | MOQ & Lead Time",
-    description: "Review ready-stock fruit and novelty squishy toys and request live quantity, packing and dispatch details.",
+    title: "Wholesale Squishy Toys & Bulk Supplier | Ready Stock",
+    description: "Review ready-stock and bulk squishy toy options for retailers and distributors, then request live quantity, packing and dispatch details.",
     images: ["/images/products/ready-stock-mango-squishy/hero.png"],
   },
 };
@@ -25,8 +25,8 @@ export default function Page() {
   return <SeoLandingPage
     path="/wholesale-squishy-toys"
     eyebrow="READY-STOCK WHOLESALE SQUISHY TOYS"
-    title="Wholesale squishy toys in stock for faster retail and distribution orders."
-    introduction="Review current fruit and novelty squeeze-toy directions for gift shops, importers, distributors, party suppliers and online sellers. Live quantity, available colors, carton packing and dispatch timing are confirmed before order placement."
+    title="Wholesale squishy toys for retail, distribution and ready-stock orders."
+    introduction="Source bulk squishy toys for gift shops, importers, distributors, party suppliers and online sellers. Review current fruit and novelty styles, then confirm live quantity, available colors, carton packing and dispatch timing before ordering."
     buyerNote="Send the product name, required quantity, destination country and receiving date. We will check current stock first, then return the available quantity, packing and freight route."
     productSlugs={["ready-stock-mango-squishy", "ready-stock-giant-peach-squishy", "ready-stock-cheese-cube-squishy", "ready-stock-giant-strawberry-squishy", "ready-stock-giant-banana-squishy", "ready-stock-dragon-fruit-squishy", "ready-stock-halloween-butter-bar-squishy"]}
     lastReviewed="2026-08-14"
@@ -72,3 +72,4 @@ export default function Page() {
     ]}
   />;
 }
+
