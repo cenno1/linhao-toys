@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 30588)
-Total output lines: 1563
-
 export type BuyerGuide = {
   slug: string;
   title: string;
@@ -23,7 +20,7 @@ export type BuyerGuide = {
 export const buyerGuides: BuyerGuide[] = [
   {
     slug: "custom-squishy-toy-moq-cost-guide",
-    title: "Custom Squishy Toy MOQ and Cost Drivers: A Buyer鈥檚 Guide",
+    title: "Custom Squishy Toy MOQ and Cost Drivers: A Buyer’s Guide",
     description:
       "Understand how mold setup, design count, material effects, printing, packaging and order quantity influence a custom squishy toy quotation.",
     eyebrow: "QUOTATION PLANNING",
@@ -114,8 +111,8 @@ export const buyerGuides: BuyerGuide[] = [
       {
         heading: "ASTM F963-23 is the current mandatory version",
         paragraphs: [
-          "CPSC guidance states that children鈥檚 toys manufactured after April 20, 2024 must meet ASTM F963-23. Search results and supplier files may still mention ASTM F963-17 because that version applied to toys manufactured after February 28, 2018 and before the newer version became mandatory.",
-          "Do not compare reports only by the words 鈥楢STM passed.鈥?Check the manufacture date, standard version, exact product identification, tested colors and materials, applicable sections, laboratory and report date.",
+          "CPSC guidance states that children’s toys manufactured after April 20, 2024 must meet ASTM F963-23. Search results and supplier files may still mention ASTM F963-17 because that version applied to toys manufactured after February 28, 2018 and before the newer version became mandatory.",
+          "Do not compare reports only by the words ‘ASTM passed.’ Check the manufacture date, standard version, exact product identification, tested colors and materials, applicable sections, laboratory and report date.",
         ],
       },
       {
@@ -128,14 +125,14 @@ export const buyerGuides: BuyerGuide[] = [
       {
         heading: "ASTM F963 is not a universal BPA-free certificate",
         paragraphs: [
-          "Buyers sometimes search for 鈥楢STM F963 BPA,鈥?but these should not be treated as interchangeable claims. An ASTM F963 report does not automatically prove that every material or finished toy is BPA-free for every market, retailer or product claim.",
+          "Buyers sometimes search for ‘ASTM F963 BPA,’ but these should not be treated as interchangeable claims. An ASTM F963 report does not automatically prove that every material or finished toy is BPA-free for every market, retailer or product claim.",
           "If BPA or another restricted substance is important to the project, identify the exact material, destination, age grade and buyer specification. Ask the laboratory or compliance adviser which separate chemical requirement, test method or declaration is appropriate, then keep that evidence with the same product version.",
         ],
       },
       {
         heading: "A CPC is a certificate, not the laboratory report",
         paragraphs: [
-          "The US Consumer Product Safety Commission describes a Children鈥檚 Product Certificate as the written certificate in which the domestic manufacturer or importer certifies that a children鈥檚 product complies with the applicable children鈥檚 product safety rules.",
+          "The US Consumer Product Safety Commission describes a Children’s Product Certificate as the written certificate in which the domestic manufacturer or importer certifies that a children’s product complies with the applicable children’s product safety rules.",
           "A CPSC-accepted laboratory supplies test results; it does not issue the CPC. The responsible manufacturer or importer prepares the certificate for the covered product and must keep its product identification, rules, manufacture details, test details and laboratory information accurate.",
         ],
       },
@@ -168,9 +165,9 @@ export const buyerGuides: BuyerGuide[] = [
       },
     ],
     faqs: [
-      { question: "Which ASTM F963 version applies to new squishy toys?", answer: "CPSC guidance states that children鈥檚 toys manufactured after April 20, 2024 must meet ASTM F963-23. The product manufacture date matters when reviewing an older ASTM F963-17 report." },
+      { question: "Which ASTM F963 version applies to new squishy toys?", answer: "CPSC guidance states that children’s toys manufactured after April 20, 2024 must meet ASTM F963-23. The product manufacture date matters when reviewing an older ASTM F963-17 report." },
       { question: "Does ASTM F963 mean a squishy toy is BPA-free?", answer: "Not automatically. Treat BPA or other restricted-substance requests as product-, material- and market-specific requirements and confirm the appropriate evidence separately." },
-      { question: "Is a CPC the same as a laboratory test report?", answer: "No. The laboratory supplies testing and results; the responsible domestic manufacturer or importer prepares the CPC for the covered children鈥檚 product." },
+      { question: "Is a CPC the same as a laboratory test report?", answer: "No. The laboratory supplies testing and results; the responsible domestic manufacturer or importer prepares the CPC for the covered children’s product." },
       { question: "When should compliance planning begin?", answer: "Share the destination market and intended age grade before sampling is finalized so product, labeling and testing decisions can be reviewed together." },
     ],
     relatedLinks: [
@@ -241,7 +238,7 @@ export const buyerGuides: BuyerGuide[] = [
   },
   {
     slug: "wholesale-squishy-toy-packaging-guide",
-    title: "Wholesale Squishy Toy Packaging: A Buyer鈥檚 Planning Guide",
+    title: "Wholesale Squishy Toy Packaging: A Buyer’s Planning Guide",
     description:
       "Compare common squishy toy packaging formats and learn which information buyers should confirm before requesting a wholesale quotation.",
     eyebrow: "WHOLESALE BUYER GUIDE",
@@ -798,7 +795,36 @@ export const buyerGuides: BuyerGuide[] = [
       {
         heading: "Start with the construction-specific failure modes",
         paragraphs: [
-  …588 tokens truncated…roved material and surface. Buyers may need instructions about excessive stretching, sharp objects, cleaning method, direct sunlight, high temperature, dust and contact with inks or packaging materials that can transfer to a tacky surface.",
+          "A slow-rising foam shape, a filled stress ball and a sticky gel-style squishy do not fail in the same way. Foam may tear at thin projections or printed surfaces, while a filled construction may be more sensitive at a plug, seam or neck. A useful test plan follows the actual design rather than applying one generic squeeze claim.",
+          "List the failures that would make the product unacceptable: leakage, skin rupture, permanent deformation, poor recovery, delamination, print loss, surface transfer, attachment failure or package damage. This list becomes the basis for sample review and inspection.",
+        ],
+      },
+      {
+        heading: "Design out fragile geometry before tooling",
+        paragraphs: [
+          "Very thin ears, tails, straps, corners and abrupt thickness changes can concentrate stress. Review the concept at the intended size and material, then thicken, round or reposition vulnerable details where the visual design allows.",
+          "For keychains and attached accessories, test the connection separately from the squeeze body. The product may survive compression while a loop, chain, eyelet or glued component fails under pulling or repeated movement.",
+        ],
+      },
+      {
+        heading: "Create a repeatable sample durability protocol",
+        paragraphs: [
+          "Record how the sample is compressed, stretched or squeezed, how often it is checked, the environmental condition and what counts as a failure. The number of cycles should come from the product risk, intended use and buyer requirement rather than an unsupported universal target.",
+          "Photograph the sample before and after the check. Record recovery time, visible damage, leakage, tack change, color transfer and print condition so revisions can be compared consistently.",
+        ],
+        checklist: [
+          "Initial dimensions, weight and appearance",
+          "Compression or squeeze method and frequency",
+          "Recovery after a defined rest period",
+          "Inspection of seals, plugs, corners and thin features",
+          "Print, coating and surface condition",
+          "Attachment and package condition",
+        ],
+      },
+      {
+        heading: "Add care and storage instructions to reduce avoidable damage",
+        paragraphs: [
+          "Care guidance should match the approved material and surface. Buyers may need instructions about excessive stretching, sharp objects, cleaning method, direct sunlight, high temperature, dust and contact with inks or packaging materials that can transfer to a tacky surface.",
           "Test the packed unit after realistic storage and shipment conditions. A product can pass an unpackaged squeeze check but still develop print transfer, deformation, tack change or surface marks inside an unsuitable bag or insert.",
         ],
       },
@@ -1528,10 +1554,8 @@ export const buyerGuides: BuyerGuide[] = [
       { label: "Review toy compliance planning", href: "/resources/en71-astm-f963-cpc-toy-compliance-guide" },
       { label: "Request a live stock and carton check", href: "/contact" },
     ],
-  },
-];
+  },];
 
 export function getBuyerGuide(slug: string) {
   return buyerGuides.find((guide) => guide.slug === slug);
 }
-
