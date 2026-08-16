@@ -16,11 +16,11 @@ const priorityGuides = [
     linkLabel: "Review the ASTM F963 buyer checklist",
   },
   {
-    eyebrow: "READY STOCK",
-    title: "Wholesale squishy toys in stock",
-    text: "Review current fruit and novelty directions, then request live quantity, carton packing and dispatch timing.",
-    href: "/wholesale-squishy-toys",
-    linkLabel: "Explore ready-stock wholesale squishy toys",
+    eyebrow: "PRODUCTION PLANNING",
+    title: "Custom toy lead time from sample to shipment",
+    text: "Plan a realistic timeline around sample approval, packaging, production milestones, inspection and freight preparation.",
+    href: "/resources/custom-toy-production-lead-time-guide",
+    linkLabel: "Read the custom toy lead-time guide",
   },
 ];
 
@@ -53,8 +53,7 @@ export default function PriorityBuyerGuides() {
               </h3>
               <p className="mt-4 text-sm leading-7 text-slate-600">{guide.text}</p>
               <Link href={guide.href} className="mt-5 inline-flex text-sm font-black text-blue-600 hover:underline">
-                {guide.linkLabel} →
-              </Link>
+                {guide.linkLabel} 鈫?              </Link>
             </article>
           ))}
         </div>
@@ -62,3 +61,4 @@ export default function PriorityBuyerGuides() {
     </section>
   );
 }
+
