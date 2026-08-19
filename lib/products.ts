@@ -43,6 +43,32 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    slug: "ready-stock-highland-cow-tpr-squishy",
+    name: "Ready Stock Highland Cow TPR Squishy Toy",
+    category: "TPR Animal Squishy / Wholesale",
+    tag: "Ready Stock",
+    note: "Highland cow TPR squeeze toy available in brown and orange colorways with a retail presentation box. Suitable for novelty stores, gift shops, impulse displays and bulk toy assortments. Request a live stock, unit-packing and carton check before ordering.",
+    seoTitle: "Highland Cow TPR Squishy Toy Wholesale | Ready Stock",
+    seoDescription: "Source ready-stock Highland cow TPR squishy toys in brown and orange colorways with retail-box presentation. Request live stock, carton packing and dispatch details.",
+    alt: "ready stock brown and orange Highland cow TPR squishy toys wholesale",
+    keywords: [
+      "Highland cow squishy wholesale",
+      "TPR cow squeeze toy",
+      "cow stress toy bulk",
+      "ready stock TPR squishy",
+      "animal squishy toy supplier",
+      "Highland cattle fidget toy",
+    ],
+    images: {
+      hero: "/images/products/ready-stock-highland-cow-tpr-squishy/hero.png",
+      packaging: "/images/products/ready-stock-highland-cow-tpr-squishy/packaging.png",
+    },
+    featured: true,
+    bestseller: true,
+    availability: "ready-stock",
+    filterGroup: "squishy",
+  },
+  {
     slug: "squeaky-tongue-popping-animal-squishy",
     name: "Squeaky Tongue-Popping Animal Squishy Toy",
     category: "Squeaky Animal Squishy / Wholesale",
