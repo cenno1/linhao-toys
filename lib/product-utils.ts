@@ -3,6 +3,7 @@ import { products, type Product, type ProductFilterGroup } from "./products";
 export const PRODUCT_MOQ = 100;
 
 const READY_STOCK_SLUGS = new Set([
+  "ready-stock-highland-cow-tpr-squishy",
   "ready-stock-mango-squishy",
   "ready-stock-giant-peach-squishy",
   "ready-stock-cheese-cube-squishy",
@@ -13,6 +14,7 @@ const READY_STOCK_SLUGS = new Set([
 ]);
 
 export const FULL_GALLERY_SLUGS = new Set([
+  "ready-stock-highland-cow-tpr-squishy",
   "glitter-bao-bun",
   "glitter-basket-blue",
   "butter-stick",
@@ -35,6 +37,23 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "ready-stock-highland-cow-tpr-squishy": {
+    specifications: [
+      { label: "Availability", value: "Ready stock; live quantity confirmed before order acceptance" },
+      { label: "Material", value: "TPR squeeze-toy construction" },
+      { label: "Available colorways", value: "Brown and orange shown; confirm the current color allocation with the stock check" },
+      { label: "Packing route", value: "Retail presentation box shown; unit packing and outer-carton details confirmed with live inventory" },
+    ],
+    customization: [
+      "Live stock and colorway check",
+      "Available retail-box presentation",
+      "Carton quantity and dimensions",
+      "Dispatch and shipping coordination",
+    ],
+    useCases: ["Novelty retail", "Gift shops", "Impulse displays", "Bulk animal-toy assortments"],
+    buyerBrief: ["Required quantity", "Preferred color allocation", "Destination country", "Preferred delivery method", "Required receiving date"],
+    packagingAnswer: "The current retail presentation, unit packing, carton quantity, carton dimensions and dispatch timing are confirmed against live stock before the wholesale order is accepted.",
+  },
   "dumpling-squishy-blind-box": {
     specifications: [
       { label: "Material route", value: "PU slow-rise or another approved squeeze construction confirmed during sampling" },
