@@ -60,6 +60,11 @@ export async function POST(request: Request) {
     return Response.json({ ok: true });
   }
 
+  const suppliedLeadId = clean(payload.leadId, 64);
+  const leadId = /^[a-z0-9-]{8,64}$/i.test(suppliedLeadId)
+    ? suppliedLeadId
+    : crypto.randomUUID();
+
   const data = {
     productName: clean(payload.productName, 200),
     company: clean(payload.company, 200),
@@ -71,7 +76,7 @@ export async function POST(request: Request) {
     packaging: clean(payload.packaging, 500),
     referenceUrl: clean(payload.referenceUrl, 1000),
     requirements: clean(payload.requirements, 3000),
-    leadId: clean(payload.leadId, 100),
+    leadId,
     sourcePage: clean(payload.sourcePage, 500),
     landingPage: clean(payload.landingPage, 500),
     referrerHost: clean(payload.referrerHost, 200),

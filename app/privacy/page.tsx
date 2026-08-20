@@ -33,12 +33,12 @@ export default function PrivacyPage() {
             contact actions. Analytics storage remains denied until you allow it.
           </p>
           <p>
-            When analytics is allowed and you send an inquiry, we may attach a
-            first landing page, source page, referring website hostname and
-            campaign parameters to the inquiry. A randomly generated lead ID
-            helps connect the inquiry with the corresponding website event. We
-            do not store this optional session-attribution data when analytics is
-            declined.
+            When you send an inquiry, we attach the current form page and a
+            randomly generated lead ID to help identify the request. If analytics
+            is allowed, we may also attach the first landing page, referring
+            website hostname and campaign parameters to connect the inquiry with
+            the corresponding website event. We do not store this optional
+            session-attribution data when analytics is declined.
           </p>
 
           <h2>How we use information</h2>
