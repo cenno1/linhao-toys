@@ -97,35 +97,32 @@ export default async function ProductPage({ params }: ProductPageProps) {
       : undefined,
     url: productUrl,
   };
-  const productJsonLd = {
+  const webPageJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": `${productUrl}#product`,
-    name: product.name,
-    description: product.seoDescription ?? product.note,
-    image: [absoluteUrl(product.images.hero)],
-    category: product.category,
-    sku: product.slug,
-    brand: {
-      "@type": "Brand",
-      name: SITE_NAME,
-    },
-    manufacturer: {
-      "@id": `${SITE_URL}/#organization`,
-    },
+    "@type": "WebPage",
+    "@id": `${productUrl}#webpage`,
     url: productUrl,
-    additionalProperty: [
-      {
-        "@type": "PropertyValue",
-        name: "Supply model",
-        value: product.availability === "ready-stock" ? "Wholesale ready stock; live availability confirmed on inquiry" : "OEM / ODM custom manufacturing",
-      },
-      {
-        "@type": "PropertyValue",
-        name: "MOQ guidance",
-        value: product.availability === "ready-stock" ? "Confirm current stock, carton packing and dispatch timing" : "From 100 pieces; final MOQ depends on specification and packaging",
-      },
-    ],
+    name: product.seoTitle ?? product.name,
+    description: product.seoDescription ?? product.note,
+    inLanguage: "en",
+    isPartOf: {
+      "@id": `${SITE_URL}/#website`,
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: absoluteUrl(product.images.hero),
+    },
+    mainEntity: {
+      "@id": `${productUrl}#service`,
+    },
+    about: {
+      "@type": "Thing",
+      "@id": `${productUrl}#item`,
+      name: product.name,
+      description: product.seoDescription ?? product.note,
+      image: absoluteUrl(product.images.hero),
+      identifier: product.slug,
+    },
   };
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -177,7 +174,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd).replace(/</g, "\\u003c") }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd).replace(/</g, "\\u003c") }}
       />
       <script
         type="application/ld+json"
