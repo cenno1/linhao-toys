@@ -11,6 +11,13 @@ type InquiryPayload = {
   packaging?: string;
   referenceUrl?: string;
   requirements?: string;
+  leadId?: string;
+  sourcePage?: string;
+  landingPage?: string;
+  referrerHost?: string;
+  utmSource?: string;
+  utmMedium?: string;
+  utmCampaign?: string;
   website?: string;
 };
 
@@ -64,6 +71,13 @@ export async function POST(request: Request) {
     packaging: clean(payload.packaging, 500),
     referenceUrl: clean(payload.referenceUrl, 1000),
     requirements: clean(payload.requirements, 3000),
+    leadId: clean(payload.leadId, 100),
+    sourcePage: clean(payload.sourcePage, 500),
+    landingPage: clean(payload.landingPage, 500),
+    referrerHost: clean(payload.referrerHost, 200),
+    utmSource: clean(payload.utmSource, 200),
+    utmMedium: clean(payload.utmMedium, 200),
+    utmCampaign: clean(payload.utmCampaign, 200),
   };
 
   if (
@@ -81,7 +95,13 @@ export async function POST(request: Request) {
   }
 
   const rows = [
+    ["Lead ID", data.leadId || "Not available"],
     ["Product / project", data.productName],
+    ["Source page", data.sourcePage || "Not available"],
+    ["Landing page", data.landingPage || "Not available"],
+    ["Referrer", data.referrerHost || "Not available"],
+    ["Campaign", data.utmCampaign || "Not available"],
+    ["UTM source / medium", `${data.utmSource || "Not available"} / ${data.utmMedium || "Not available"}`],
     ["Company / brand", data.company],
     ["Buyer email", data.email],
     ["Project type", data.projectType],
@@ -103,7 +123,7 @@ export async function POST(request: Request) {
       from: fromEmail,
       to: [toEmail],
       reply_to: data.email,
-      subject: `Website inquiry: ${data.productName}`,
+      subject: `Website inquiry${data.leadId ? ` [${data.leadId.slice(0, 8)}]` : ""}: ${data.productName}`,
       html: `
         <div style="font-family:Arial,sans-serif;max-width:720px;margin:auto">
           <h1 style="color:#0b1d43">New LINHAO website inquiry</h1>
@@ -127,3 +147,4 @@ export async function POST(request: Request) {
 
   return Response.json({ ok: true });
 }
+

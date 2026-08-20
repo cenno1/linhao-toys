@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         <div className="shell privacy-copy">
           <span className="eyebrow">Privacy</span>
           <h1>Privacy Policy</h1>
-          <p className="privacy-updated">Last updated: July 31, 2026</p>
+          <p className="privacy-updated">Last updated: August 20, 2026</p>
 
           <h2>Information we receive</h2>
           <p>
@@ -31,6 +31,14 @@ export default function PrivacyPage() {
             information about visits and interactions, including pages viewed,
             approximate location, device and browser information, and selected
             contact actions. Analytics storage remains denied until you allow it.
+          </p>
+          <p>
+            When analytics is allowed and you send an inquiry, we may attach a
+            first landing page, source page, referring website hostname and
+            campaign parameters to the inquiry. A randomly generated lead ID
+            helps connect the inquiry with the corresponding website event. We
+            do not store this optional session-attribution data when analytics is
+            declined.
           </p>
 
           <h2>How we use information</h2>
@@ -68,3 +76,4 @@ export default function PrivacyPage() {
     </main>
   );
 }
+
