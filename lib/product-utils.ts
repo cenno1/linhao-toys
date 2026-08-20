@@ -1,5 +1,4 @@
 import { products, type Product, type ProductFilterGroup } from "./products";
-import type { InquiryAttribution } from "./inquiry-attribution";
 
 export const PRODUCT_MOQ = 100;
 
@@ -595,16 +594,9 @@ export function buildProductInquiryMailto(productName: string): string {
 export function buildProductInquiryMailtoFromForm(
   productName: string,
   data: ProductInquiryFormData,
-  attribution?: InquiryAttribution,
 ): string {
   const body = [
-    `Lead ID: ${attribution?.leadId || "Not available"}`,
     `Product: ${productName}`,
-    `Source page: ${attribution?.sourcePage || "Not available"}`,
-    `Landing page: ${attribution?.landingPage || "Not available"}`,
-    `Referrer: ${attribution?.referrerHost || "Not available"}`,
-    `Campaign: ${attribution?.utmCampaign || "Not available"}`,
-    `UTM source / medium: ${attribution?.utmSource || "Not available"} / ${attribution?.utmMedium || "Not available"}`,
     "",
     `Company: ${data.company}`,
     `Email: ${data.email}`,
@@ -619,9 +611,5 @@ export function buildProductInquiryMailtoFromForm(
     data.requirements,
   ].join("\n");
 
-  const subjectLeadId = attribution?.leadId
-    ? ` [${attribution.leadId.slice(0, 8)}]`
-    : "";
-  return `mailto:${INQUIRY_EMAIL}?subject=${encodeURIComponent(`${productName}${subjectLeadId} — Inquiry`)}&body=${encodeURIComponent(body)}`;
+  return `mailto:${INQUIRY_EMAIL}?subject=${encodeURIComponent(`${productName} — Inquiry`)}&body=${encodeURIComponent(body)}`;
 }
-

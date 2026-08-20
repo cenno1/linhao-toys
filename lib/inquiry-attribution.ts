@@ -96,3 +96,33 @@ export function createInquiryAttribution(): InquiryAttribution {
   }
 }
 
+export function addAttributionToMailto(
+  mailto: string,
+  attribution: InquiryAttribution,
+) {
+  try {
+    const url = new URL(mailto);
+    const existingBody = url.searchParams.get("body") ?? "";
+    const existingSubject = url.searchParams.get("subject") ?? "Website inquiry";
+    const attributionBody = [
+      `Lead ID: ${attribution.leadId}`,
+      `Source page: ${attribution.sourcePage || "Not available"}`,
+      `Landing page: ${attribution.landingPage || "Not available"}`,
+      `Referrer: ${attribution.referrerHost || "Not available"}`,
+      `Campaign: ${attribution.utmCampaign || "Not available"}`,
+      `UTM source / medium: ${attribution.utmSource || "Not available"} / ${attribution.utmMedium || "Not available"}`,
+      "",
+      existingBody,
+    ].join("\n");
+
+    url.searchParams.set(
+      "subject",
+      `${existingSubject} [${attribution.leadId.slice(0, 8)}]`,
+    );
+    url.searchParams.set("body", attributionBody);
+    return url.toString();
+  } catch {
+    return mailto;
+  }
+}
+

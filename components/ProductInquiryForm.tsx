@@ -2,7 +2,10 @@
 
 import { useState, type FormEvent } from "react";
 import { trackEvent } from "@/lib/analytics";
-import { createInquiryAttribution } from "@/lib/inquiry-attribution";
+import {
+  addAttributionToMailto,
+  createInquiryAttribution,
+} from "@/lib/inquiry-attribution";
 import {
   buildProductInquiryMailtoFromForm,
   INQUIRY_EMAIL,
@@ -90,9 +93,8 @@ export default function ProductInquiryForm({ productName, stockItem = false }: P
         lead_id: attribution.leadId,
         product_name: productName,
       });
-      window.location.href = buildProductInquiryMailtoFromForm(
-        productName,
-        form,
+      window.location.href = addAttributionToMailto(
+        buildProductInquiryMailtoFromForm(productName, form),
         attribution,
       );
     }
