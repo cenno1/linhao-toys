@@ -37,6 +37,22 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "tpr-slow-rising-dice-squishy-color-box": {
+    specifications: [
+      { label: "Material", value: "TPR squeeze-toy construction stated for this item" },
+      { label: "Product form", value: "Slow-rising dice-shaped squishy shown" },
+      { label: "Packing shown", value: "Printed color-box presentation; exact unit and carton packing confirmed with quotation" },
+    ],
+    customization: [
+      "TPR slow-rising dice form shown",
+      "Printed color-box presentation shown",
+      "Confirm current colors and packing configuration",
+      "Confirm order quantity and supply timing",
+    ],
+    useCases: ["Novelty retail", "Gift shops", "Impulse displays", "Wholesale toy assortments"],
+    buyerBrief: ["Required quantity", "Destination country", "Preferred color", "Required packing", "Requested receiving date"],
+    packagingAnswer: "The photo shows a printed color-box presentation. Confirm the exact unit pack, display configuration, outer-carton quantity and current availability with the quotation.",
+  },
   "ready-stock-highland-cow-tpr-squishy": {
     specifications: [
       { label: "Availability", value: "Ready stock; live quantity confirmed before order acceptance" },
@@ -387,6 +403,15 @@ export function getProductSpecifications(product: Product): ProductSpecification
   const profile = productBuyingProfiles[product.slug];
   const isReadyStock = READY_STOCK_SLUGS.has(product.slug);
 
+  if (product.detailsOnRequest) {
+    return [
+      { label: "Product", value: product.name },
+      ...(profile?.specifications ?? []),
+      { label: "Order quantity", value: "Confirmed with requested quantity and packing" },
+      { label: "Supply timing", value: "Confirmed after availability, packing and destination review" },
+    ];
+  }
+
   if (isReadyStock) {
     return [
       { label: "Product", value: product.name },
@@ -484,6 +509,31 @@ export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): 
 export function getProductFAQs(product: Product) {
   const profile = productBuyingProfiles[product.slug];
   const isReadyStock = READY_STOCK_SLUGS.has(product.slug);
+
+  if (product.detailsOnRequest) {
+    return [
+      {
+        question: `Can ${product.name} be customized?`,
+        answer: "Any color, artwork or packaging change must be reviewed against the exact product, quantity and production route before it is confirmed.",
+      },
+      {
+        question: `What is the order quantity for ${product.name}?`,
+        answer: "Send the quantity you need and the destination market. We will confirm the practical order quantity together with the available packing configuration.",
+      },
+      {
+        question: "Is the color-box packaging included?",
+        answer: profile?.packagingAnswer ?? "The shown packaging and exact carton configuration are confirmed with the quotation.",
+      },
+      {
+        question: "Which compliance documents are available for this item?",
+        answer: "Testing scope and available documents must be checked against the exact item, age grade and destination market. No product-specific certificate is claimed on this page before that review.",
+      },
+      {
+        question: "What should I send for a useful quotation?",
+        answer: "Send the required quantity, destination country, preferred color, packing requirement and requested receiving date.",
+      },
+    ];
+  }
 
   if (isReadyStock) {
     return [

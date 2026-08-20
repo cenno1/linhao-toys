@@ -44,6 +44,7 @@ type ProductDetailProps = {
 
 export default function ProductDetail({ product }: ProductDetailProps) {
   const isReadyStock = product.availability === "ready-stock";
+  const detailsOnRequest = product.detailsOnRequest === true;
   const gallery = getProductGallery(product);
   const customization = getCustomizationOptions(product);
   const specifications = getProductSpecifications(product);
@@ -93,27 +94,31 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-xs font-black uppercase tracking-[0.14em] text-slate-500">
-                  {isReadyStock ? "Stock status" : "MOQ"}
+                  {isReadyStock ? "Stock status" : detailsOnRequest ? "Order quantity" : "MOQ"}
                 </p>
                 <p className="mt-2 text-3xl font-black text-slate-950">
-                  {isReadyStock ? "Check stock" : `${PRODUCT_MOQ} pcs`}
+                  {isReadyStock ? "Check stock" : detailsOnRequest ? "Confirm" : `${PRODUCT_MOQ} pcs`}
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
                   {isReadyStock
                     ? "Live quantity, available colors and carton packing are confirmed with your inquiry."
+                    : detailsOnRequest
+                      ? "Current order quantity and packing configuration are confirmed with the quotation."
                     : "Standard minimum for OEM sampling and bulk production. Final MOQ may vary by mold, material and packaging."}
                 </p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-xs font-black uppercase tracking-[0.14em] text-slate-500">
-                  {isReadyStock ? "Stock dispatch" : "Lead time"}
+                  {isReadyStock ? "Stock dispatch" : detailsOnRequest ? "Timing" : "Lead time"}
                 </p>
                 <p className="mt-2 text-3xl font-black text-slate-950">
-                  {isReadyStock ? "Confirm first" : "3–7 days"}
+                  {isReadyStock ? "Confirm first" : detailsOnRequest ? "Confirm" : "3–7 days"}
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
                   {isReadyStock
                     ? "Dispatch timing is confirmed after the live-stock check and destination freight review."
+                    : detailsOnRequest
+                      ? "Availability, sampling or dispatch timing is confirmed after the product and destination review."
                     : "Sample turnaround after artwork and specs are confirmed. Mass production schedule shared with quotation."}
                 </p>
               </div>
@@ -121,7 +126,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
             <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <h2 className="text-lg font-black text-slate-950">
-                {isReadyStock ? "Wholesale stock details" : "Customization options"}
+                {isReadyStock ? "Wholesale stock details" : detailsOnRequest ? "Product & packing details" : "Customization options"}
               </h2>
               <ul className="mt-4 grid gap-2 sm:grid-cols-2">
                 {customization.map((item) => (
@@ -136,37 +141,42 @@ export default function ProductDetail({ product }: ProductDetailProps) {
             <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
               <h2 className="text-lg font-black text-slate-950">Compliance & testing</h2>
               <p className="mt-3 text-sm leading-7 text-slate-600">
-                Documentation available for documented squishy programs. Additional testing can
-                be arranged by product, material and destination market.
+                {detailsOnRequest
+                  ? "Testing scope and available documentation must be confirmed for this exact item, age grade and destination market before any compliance claim is made."
+                  : "Documentation available for documented squishy programs. Additional testing can be arranged by product, material and destination market."}
               </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {complianceDocs.map((doc) => (
-                  <a
-                    key={doc.href}
-                    href={doc.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-full bg-blue-50 px-3 py-2 text-xs font-black text-blue-700 transition hover:bg-blue-100"
-                  >
-                    {doc.label}
-                  </a>
-                ))}
-              </div>
-              <ul className="mt-5 space-y-3">
-                {complianceDocs.map((doc) => (
-                  <li key={doc.label}>
-                    <a
-                      href={doc.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-bold text-blue-600 hover:underline"
-                    >
-                      {doc.label}
-                    </a>
-                    <span className="mt-1 block text-xs text-slate-500">{doc.detail}</span>
-                  </li>
-                ))}
-              </ul>
+              {!detailsOnRequest && (
+                <>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {complianceDocs.map((doc) => (
+                      <a
+                        key={doc.href}
+                        href={doc.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-full bg-blue-50 px-3 py-2 text-xs font-black text-blue-700 transition hover:bg-blue-100"
+                      >
+                        {doc.label}
+                      </a>
+                    ))}
+                  </div>
+                  <ul className="mt-5 space-y-3">
+                    {complianceDocs.map((doc) => (
+                      <li key={doc.label}>
+                        <a
+                          href={doc.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-bold text-blue-600 hover:underline"
+                        >
+                          {doc.label}
+                        </a>
+                        <span className="mt-1 block text-xs text-slate-500">{doc.detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
             </div>
 
             <TrackedLink

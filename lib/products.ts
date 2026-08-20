@@ -28,6 +28,7 @@ export type Product = {
   featured?: boolean;
   bestseller?: boolean;
   availability?: "ready-stock";
+  detailsOnRequest?: boolean;
   referenceSize?: string;
   filterGroup: ProductFilterGroup;
 };
@@ -42,6 +43,29 @@ function images(slug: string, hero: string): ProductImageSet {
 }
 
 export const products: Product[] = [
+  {
+    slug: "tpr-slow-rising-dice-squishy-color-box",
+    name: "TPR Slow-Rising Dice Squishy in Color Box",
+    category: "TPR Dice Squishy / Wholesale",
+    tag: "Color Box Packaging",
+    note: "Dice-shaped TPR squishy supplied in a printed color box for novelty retail, gift shops and wholesale toy assortments. Contact us to confirm available colors, packing configuration, order quantity and current lead time before ordering.",
+    seoTitle: "TPR Slow-Rising Dice Squishy Wholesale | Color Box",
+    seoDescription: "Source TPR slow-rising dice squishy toys in color-box packaging for wholesale novelty and gift assortments. Request colors, packing and quotation details.",
+    alt: "TPR slow-rising dice squishy toy in blue color box packaging wholesale",
+    keywords: [
+      "TPR dice squishy wholesale",
+      "slow rising dice squishy",
+      "dice squeeze toy bulk",
+      "TPR stress toy supplier",
+      "color box squishy toy",
+      "novelty dice fidget toy",
+    ],
+    images: {
+      hero: "/images/products/tpr-slow-rising-dice-squishy-color-box/hero.png",
+    },
+    detailsOnRequest: true,
+    filterGroup: "squishy",
+  },
   {
     slug: "ready-stock-highland-cow-tpr-squishy",
     name: "Ready Stock Highland Cow TPR Squishy Toy",
