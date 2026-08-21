@@ -3,6 +3,7 @@
 import Script from "next/script";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Suspense, useEffect } from "react";
+import { captureConsentedSessionAttribution } from "@/lib/inquiry-attribution";
 
 declare global {
   interface Window {
@@ -24,6 +25,7 @@ function PageViewTracker({ measurementId }: { measurementId: string }) {
         return;
       }
       const query = searchParams.toString();
+      captureConsentedSessionAttribution(pathname, searchParams);
       window.gtag("event", "page_view", {
         page_path: query ? `${pathname}?${query}` : pathname,
       });
@@ -59,3 +61,4 @@ export default function GoogleAnalytics({ measurementId }: { measurementId: stri
     </>
   );
 }
+
