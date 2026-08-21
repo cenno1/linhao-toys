@@ -14,6 +14,7 @@ const READY_STOCK_SLUGS = new Set([
 ]);
 
 export const FULL_GALLERY_SLUGS = new Set([
+  "halloween-pumpkin-candy-corn-squishy",
   "ready-stock-highland-cow-tpr-squishy",
   "glitter-bao-bun",
   "glitter-basket-blue",
@@ -37,6 +38,38 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "halloween-pumpkin-candy-corn-squishy": {
+    specifications: [
+      { label: "Designs shown", value: "Orange pumpkin and orange-yellow-white candy corn squeeze-toy designs" },
+      { label: "Material", value: "Confirm the exact squeeze-toy material and recovery feel with the quotation" },
+      { label: "Packing", value: "Unit and assortment packing are confirmed after the required design mix and quantity are reviewed" },
+    ],
+    customization: [
+      "Two seasonal designs shown",
+      "Confirm the available pumpkin and candy-corn mix",
+      "Confirm individual or assortment packing",
+      "Confirm order quantity and supply timing",
+    ],
+    useCases: ["Halloween retail displays", "Holiday gift assortments", "Novelty stores", "Seasonal stress-relief ranges"],
+    buyerBrief: ["Required quantity", "Preferred design ratio", "Destination country", "Required packing", "Requested receiving date"],
+    packagingAnswer: "No specific retail pack is shown in the supplied photos. Confirm the individual pack, assortment ratio, display option and outer-carton configuration with the quotation.",
+  },
+  "monster-munch-squishy-display-box": {
+    specifications: [
+      { label: "Design shown", value: "Green one-eyed Monster Munch squeeze-toy character" },
+      { label: "Display box shown", value: "12 × 12 × 12 cm reference dimensions printed on the supplied image" },
+      { label: "Material", value: "Confirm the exact squeeze-toy material and recovery feel with the quotation" },
+    ],
+    customization: [
+      "Monster character and green colorway shown",
+      "Clear retail display-box presentation shown",
+      "Confirm current item and packing configuration",
+      "Confirm order quantity and supply timing",
+    ],
+    useCases: ["Halloween assortments", "Christmas gift ranges", "Novelty stores", "Stress-relief toy displays"],
+    buyerBrief: ["Required quantity", "Destination country", "Required packing", "Barcode or label requirement", "Requested receiving date"],
+    packagingAnswer: "The supplied image shows one toy in a clear retail display box marked 12 × 12 × 12 cm. Confirm the final unit pack, printed artwork, outer-carton quantity and dimensions with the quotation.",
+  },
   "tpr-slow-rising-dice-squishy-color-box": {
     specifications: [
       { label: "Material", value: "TPR squeeze-toy construction stated for this item" },
