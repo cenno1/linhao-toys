@@ -38,6 +38,22 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "sea-salt-blue-coconut-oil-squishy-ball": {
+    specifications: [
+      { label: "Design shown", value: "Round handmade squishy ball with a sea-salt-blue focus and pastel color references" },
+      { label: "Material", value: "Moldable coconut-oil squishy construction stated for this product; confirm exact composition with the quotation" },
+      { label: "Hand feel", value: "Confirm the preferred firmness, moldability and recovery behavior before ordering" },
+    ],
+    customization: [
+      "Sea-salt blue and pastel color directions shown",
+      "Confirm target size and hand feel",
+      "Confirm individual or assortment packing",
+      "Confirm order quantity and supply timing",
+    ],
+    useCases: ["Sensory toy assortments", "Desk stress-relief ranges", "Novelty gift retail", "Color-coordinated sets"],
+    buyerBrief: ["Required quantity", "Preferred color mix", "Target size and hand feel", "Destination country", "Required packing", "Requested receiving date"],
+    packagingAnswer: "No retail packaging is shown in the supplied product photo. Confirm the individual pack, color ratio, label requirement and outer-carton configuration with the quotation.",
+  },
   "halloween-pumpkin-candy-corn-squishy": {
     specifications: [
       { label: "Designs shown", value: "Orange pumpkin and orange-yellow-white candy corn squeeze-toy designs" },
