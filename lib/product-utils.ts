@@ -14,6 +14,7 @@ const READY_STOCK_SLUGS = new Set([
 ]);
 
 export const FULL_GALLERY_SLUGS = new Set([
+  "custom-teddy-bear-plush-keychain",
   "halloween-pumpkin-candy-corn-squishy",
   "ready-stock-highland-cow-tpr-squishy",
   "glitter-bao-bun",
@@ -38,6 +39,23 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "custom-teddy-bear-plush-keychain": {
+    specifications: [
+      { label: "Product type", value: "Plush teddy bear keychain and bag charm with outfit and attachment variations shown" },
+      { label: "Material", value: "Confirm the outer fabric, filling and hand feel during sampling or quotation" },
+      { label: "Hardware", value: "Clip, ring, strap and label configuration are confirmed for the selected design" },
+    ],
+    customization: [
+      "Bear color, face and expression",
+      "Seasonal or everyday outfit direction",
+      "Embroidery, buyer logo and woven label",
+      "Clip, keyring or wrist-strap hardware",
+      "Retail card, bag or gift-box packaging",
+    ],
+    useCases: ["Fashion bag accessories", "Gift and seasonal collections", "Collectible plush programs", "Promotional merchandise"],
+    buyerBrief: ["Required quantity", "Preferred bear and outfit design", "Target size", "Hardware choice", "Destination country", "Required packaging", "Requested receiving date"],
+    packagingAnswer: "No final retail packaging specification is confirmed from the supplied photos. Confirm the unit pack, branded card or box, barcode or label requirement and outer-carton configuration with the quotation.",
+  },
   "sea-salt-blue-coconut-oil-squishy-ball": {
     specifications: [
       { label: "Design shown", value: "Round handmade squishy ball with a sea-salt-blue focus and pastel color references" },

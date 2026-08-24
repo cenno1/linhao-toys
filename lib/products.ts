@@ -44,6 +44,31 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    slug: "custom-teddy-bear-plush-keychain",
+    name: "Custom Teddy Bear Plush Keychain & Bag Charm",
+    category: "Plush Keychain · OEM/ODM",
+    tag: "Custom Outfit & Hardware",
+    note: "Cute teddy bear plush keychain and bag charm shown in seasonal and everyday outfit directions for gift, fashion-accessory and collectible programs. Customize the bear color, clothing, embroidery, hook or strap, logo tag and retail packaging. Confirm the final material, filling, size, sample, packing, order quantity and supply timing with the quotation.",
+    seoTitle: "Custom Teddy Bear Plush Keychain Manufacturer",
+    seoDescription: "Develop custom teddy bear plush keychains and bag charms with buyer-specified outfits, embroidery, hardware, logo tags and retail packaging for wholesale programs.",
+    alt: "custom teddy bear plush keychain and cute bag charm with outfit and clip options wholesale",
+    keywords: [
+      "custom teddy bear keychain",
+      "plush bear bag charm wholesale",
+      "cute plush keychain manufacturer",
+      "OEM teddy bear keychain",
+      "custom stuffed animal bag charm",
+      "plush keychain with custom outfit",
+    ],
+    images: {
+      hero: "/images/products/custom-teddy-bear-plush-keychain/hero.webp",
+      oemCase: "/images/products/custom-teddy-bear-plush-keychain/oem-case.webp",
+    },
+    featured: true,
+    detailsOnRequest: true,
+    filterGroup: "bag-charms",
+  },
+  {
     slug: "sea-salt-blue-coconut-oil-squishy-ball",
     name: "Sea Salt Blue Moldable Coconut Oil Squishy Ball",
     category: "Handmade Squishy Ball / Wholesale",
