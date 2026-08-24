@@ -14,6 +14,7 @@ const READY_STOCK_SLUGS = new Set([
 ]);
 
 export const FULL_GALLERY_SLUGS = new Set([
+  "custom-bunny-plush-keychain",
   "custom-teddy-bear-plush-keychain",
   "halloween-pumpkin-candy-corn-squishy",
   "ready-stock-highland-cow-tpr-squishy",
@@ -39,6 +40,23 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "custom-bunny-plush-keychain": {
+    specifications: [
+      { label: "Product type", value: "Bunny plush keychain and bag charm with two character and outfit directions shown" },
+      { label: "Material", value: "Confirm the outer fabric, pile, filling and hand feel during sampling or quotation" },
+      { label: "Attachment", value: "Keyring, clip, chain or loop configuration is confirmed for the selected design and intended use" },
+    ],
+    customization: [
+      "Rabbit proportions, ear shape and expression",
+      "Fabric color, pile and filling",
+      "Facial embroidery and outfit details",
+      "Keyring, clip, chain or loop hardware",
+      "Woven label, hang card, bag or gift-box packaging",
+    ],
+    useCases: ["Fashion bag accessories", "Gift and seasonal collections", "Collectible plush ranges", "Promotional merchandise"],
+    buyerBrief: ["Required quantity", "Rabbit artwork or preferred reference", "Target size", "Fabric and color direction", "Hardware choice", "Destination country", "Required packaging", "Requested receiving date"],
+    packagingAnswer: "No final retail packaging specification is confirmed from the supplied photos. Confirm the unit pack, branded card or box, barcode or label requirement and outer-carton configuration with the quotation.",
+  },
   "custom-teddy-bear-plush-keychain": {
     specifications: [
       { label: "Product type", value: "Plush teddy bear keychain and bag charm with outfit and attachment variations shown" },

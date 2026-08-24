@@ -44,6 +44,31 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    slug: "custom-bunny-plush-keychain",
+    name: "Custom Bunny Plush Keychain & Bag Charm",
+    category: "Plush Keychain · OEM/ODM",
+    tag: "Custom Character & Outfit",
+    note: "Soft bunny plush keychain and bag charm shown in two cute character directions for accessory, gift and collectible programs. Develop a custom plush keychain with buyer-specified rabbit proportions, fabric colors, facial embroidery, clothing, attachment hardware, label and retail packaging. Confirm the final material, filling, size, sample, quantity and supply timing with the quotation.",
+    seoTitle: "Custom Bunny Plush Keychain Manufacturer",
+    seoDescription: "Source custom bunny plush keychains and bag charms with custom colors, embroidery, outfits, hardware, labels and retail packaging for wholesale programs.",
+    alt: "custom bunny plush keychain and rabbit bag charm manufacturer with outfit and hardware options",
+    keywords: [
+      "custom plush keychain",
+      "custom plush keychain manufacturer",
+      "custom bunny plush keychain",
+      "rabbit bag charm wholesale",
+      "OEM plush keychain supplier",
+      "custom stuffed animal keychain",
+    ],
+    images: {
+      hero: "/images/products/custom-bunny-plush-keychain/hero.webp",
+      detail: "/images/products/custom-bunny-plush-keychain/detail.webp",
+    },
+    featured: true,
+    detailsOnRequest: true,
+    filterGroup: "bag-charms",
+  },
+  {
     slug: "custom-teddy-bear-plush-keychain",
     name: "Custom Teddy Bear Plush Keychain & Bag Charm",
     category: "Plush Keychain · OEM/ODM",
