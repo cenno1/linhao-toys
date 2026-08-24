@@ -44,6 +44,30 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    slug: "sea-salt-blue-coconut-oil-squishy-ball",
+    name: "Sea Salt Blue Moldable Coconut Oil Squishy Ball",
+    category: "Handmade Squishy Ball / Wholesale",
+    tag: "Moldable Coconut Oil",
+    note: "Sea-salt-blue handmade squeeze ball shown with pastel color options for sensory assortments, desk stress relief and novelty gifting. The product is stated as a moldable coconut-oil squishy; confirm the exact composition, size, firmness, color assortment, packing, order quantity and supply timing with the quotation.",
+    seoTitle: "Moldable Coconut Oil Squishy Ball Wholesale",
+    seoDescription: "Source sea-salt-blue moldable coconut oil squishy balls with pastel color options for sensory, gift and wholesale novelty assortments. Request product and packing details.",
+    alt: "sea salt blue handmade moldable coconut oil squishy ball with pastel color options wholesale",
+    keywords: [
+      "coconut oil squishy ball",
+      "moldable squishy ball wholesale",
+      "handmade stress ball supplier",
+      "pastel sensory ball bulk",
+      "sea salt blue squeeze ball",
+      "custom squishy ball",
+    ],
+    images: {
+      hero: "/images/products/sea-salt-blue-coconut-oil-squishy-ball/hero.webp",
+    },
+    featured: true,
+    detailsOnRequest: true,
+    filterGroup: "squishy",
+  },
+  {
     slug: "halloween-pumpkin-candy-corn-squishy",
     name: "Halloween Pumpkin & Candy Corn Squishy Assortment",
     category: "Halloween Squishy / Wholesale",
