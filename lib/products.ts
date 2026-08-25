@@ -61,9 +61,9 @@ export const products: Product[] = [
       "building block squishy assortment",
     ],
     images: {
-      hero: "/images/products/fruit-building-block-squishy-assortment/hero.webp",
-      detail: "/images/products/fruit-building-block-squishy-assortment/detail.webp",
-      oemCase: "/images/products/fruit-building-block-squishy-assortment/oem-case.webp",
+      hero: "/images/products/fruit-building-block-squishy-assortment/hero-20260825.webp",
+      detail: "/images/products/fruit-building-block-squishy-assortment/detail-20260825.webp",
+      oemCase: "/images/products/fruit-building-block-squishy-assortment/oem-case-20260825.webp",
     },
     featured: true,
     detailsOnRequest: true,
