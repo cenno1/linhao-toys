@@ -14,6 +14,7 @@ const READY_STOCK_SLUGS = new Set([
 ]);
 
 export const FULL_GALLERY_SLUGS = new Set([
+  "fruit-building-block-squishy-assortment",
   "custom-bunny-plush-keychain",
   "custom-teddy-bear-plush-keychain",
   "halloween-pumpkin-candy-corn-squishy",
@@ -40,6 +41,23 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "fruit-building-block-squishy-assortment": {
+    specifications: [
+      { label: "Designs shown", value: "Dragon-fruit and strawberry squishies with building-block pieces, plus a peanut squeeze comparison" },
+      { label: "Interior shown", value: "Soft white interior with red and green building-block pieces visible in the supplied cut-open views; exact fill and construction confirmed with the quotation" },
+      { label: "Recovery and sound", value: "Supplied images state slow rebound and an audible squeeze effect; confirm the sound mechanism, feel and repeatability on the approved sample" },
+    ],
+    customization: [
+      "Fruit design and assortment mix",
+      "Outer color and building-block color mix",
+      "Target firmness, rebound and sound direction",
+      "Individual or assortment packaging",
+      "Label, barcode and display presentation",
+    ],
+    useCases: ["Novelty toy retail", "Sensory and stress-relief ranges", "Gift and impulse displays", "Fruit-themed assortments"],
+    buyerBrief: ["Required quantity", "Preferred fruit designs and ratio", "Target size and squeeze feel", "Sound requirement", "Destination country", "Required packaging", "Requested receiving date"],
+    packagingAnswer: "No final retail packaging is shown in the supplied images. Confirm the unit pack, assortment ratio, display option, label or barcode requirement and outer-carton configuration with the quotation.",
+  },
   "custom-bunny-plush-keychain": {
     specifications: [
       { label: "Product type", value: "Bunny plush keychain and bag charm with two character and outfit directions shown" },

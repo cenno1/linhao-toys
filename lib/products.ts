@@ -44,6 +44,32 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    slug: "fruit-building-block-squishy-assortment",
+    name: "Fruit Building Block Slow-Rising Squishy Assortment",
+    category: "Novelty Fruit Squishy / Wholesale",
+    tag: "Block Fill & Sound Effect",
+    note: "Dragon-fruit and strawberry squishy designs shown with a soft white interior and colored building-block pieces, plus a peanut squeeze comparison. The supplied images state slow rebound and an audible squeeze effect. Confirm the exact outer material, internal fill, block configuration, sound mechanism, size, packing, quantity and supply timing with the quotation.",
+    seoTitle: "Fruit Building Block Squishy Toys Wholesale",
+    seoDescription: "Source dragon-fruit, strawberry and peanut building-block squishy toys with slow rebound and sound effects for novelty retail. Request specifications.",
+    alt: "fruit building block slow-rising squishy assortment with dragon fruit strawberry and peanut designs",
+    keywords: [
+      "building block squishy toy",
+      "fruit squishy wholesale",
+      "dragon fruit squishy toy",
+      "strawberry squishy toy bulk",
+      "slow rising sensory toy",
+      "sound effect squeeze toy",
+    ],
+    images: {
+      hero: "/images/products/fruit-building-block-squishy-assortment/hero.webp",
+      detail: "/images/products/fruit-building-block-squishy-assortment/detail.webp",
+      oemCase: "/images/products/fruit-building-block-squishy-assortment/oem-case.webp",
+    },
+    featured: true,
+    detailsOnRequest: true,
+    filterGroup: "squishy",
+  },
+  {
     slug: "custom-bunny-plush-keychain",
     name: "Custom Bunny Plush Keychain & Bag Charm",
     category: "Plush Keychain · OEM/ODM",
