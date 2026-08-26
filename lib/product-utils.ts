@@ -14,6 +14,10 @@ const READY_STOCK_SLUGS = new Set([
 ]);
 
 export const FULL_GALLERY_SLUGS = new Set([
+  "fruit-building-block-squishy-assortment",
+  "custom-bunny-plush-keychain",
+  "custom-teddy-bear-plush-keychain",
+  "halloween-pumpkin-candy-corn-squishy",
   "ready-stock-highland-cow-tpr-squishy",
   "glitter-bao-bun",
   "glitter-basket-blue",
@@ -37,6 +41,121 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "fruit-building-block-squishy-assortment": {
+    specifications: [
+      { label: "Designs shown", value: "Potato, strawberry, cheese cube and wedge, plus a white ball with colored building-block pieces" },
+      { label: "Sound and feel", value: "Supplied visuals show a crunchy sound and soft squeeze direction; confirm the exact internal construction, sound response and hand feel on the approved sample" },
+      { label: "Packing shown", value: "Clear potato unit box and countertop display presentation shown; final unit and outer-carton configuration confirmed with the quotation" },
+    ],
+    customization: [
+      "Food shape and assortment mix",
+      "Surface color, texture and decorative details",
+      "Target firmness and crunchy sound direction",
+      "Unit box, assortment pack or display presentation",
+      "Artwork, label and barcode requirements",
+    ],
+    useCases: ["Novelty toy retail", "Sensory and desk-toy ranges", "Gift and impulse displays", "Food-themed assortments"],
+    buyerBrief: ["Required quantity", "Preferred designs and ratio", "Target size and squeeze feel", "Sound requirement", "Destination country", "Required packaging", "Requested receiving date"],
+    packagingAnswer: "The replacement visuals show a clear potato unit box and a countertop display tray. Confirm the selected design mix, printed artwork, unit pack, display quantity, label or barcode requirement and outer-carton configuration with the quotation.",
+  },
+  "custom-bunny-plush-keychain": {
+    specifications: [
+      { label: "Product type", value: "Bunny plush keychain and bag charm with two character and outfit directions shown" },
+      { label: "Material", value: "Confirm the outer fabric, pile, filling and hand feel during sampling or quotation" },
+      { label: "Attachment", value: "Keyring, clip, chain or loop configuration is confirmed for the selected design and intended use" },
+    ],
+    customization: [
+      "Rabbit proportions, ear shape and expression",
+      "Fabric color, pile and filling",
+      "Facial embroidery and outfit details",
+      "Keyring, clip, chain or loop hardware",
+      "Woven label, hang card, bag or gift-box packaging",
+    ],
+    useCases: ["Fashion bag accessories", "Gift and seasonal collections", "Collectible plush ranges", "Promotional merchandise"],
+    buyerBrief: ["Required quantity", "Rabbit artwork or preferred reference", "Target size", "Fabric and color direction", "Hardware choice", "Destination country", "Required packaging", "Requested receiving date"],
+    packagingAnswer: "No final retail packaging specification is confirmed from the supplied photos. Confirm the unit pack, branded card or box, barcode or label requirement and outer-carton configuration with the quotation.",
+  },
+  "custom-teddy-bear-plush-keychain": {
+    specifications: [
+      { label: "Product type", value: "Plush teddy bear keychain and bag charm with outfit and attachment variations shown" },
+      { label: "Material", value: "Confirm the outer fabric, filling and hand feel during sampling or quotation" },
+      { label: "Hardware", value: "Clip, ring, strap and label configuration are confirmed for the selected design" },
+    ],
+    customization: [
+      "Bear color, face and expression",
+      "Seasonal or everyday outfit direction",
+      "Embroidery, buyer logo and woven label",
+      "Clip, keyring or wrist-strap hardware",
+      "Retail card, bag or gift-box packaging",
+    ],
+    useCases: ["Fashion bag accessories", "Gift and seasonal collections", "Collectible plush programs", "Promotional merchandise"],
+    buyerBrief: ["Required quantity", "Preferred bear and outfit design", "Target size", "Hardware choice", "Destination country", "Required packaging", "Requested receiving date"],
+    packagingAnswer: "No final retail packaging specification is confirmed from the supplied photos. Confirm the unit pack, branded card or box, barcode or label requirement and outer-carton configuration with the quotation.",
+  },
+  "sea-salt-blue-coconut-oil-squishy-ball": {
+    specifications: [
+      { label: "Design shown", value: "Round handmade squishy ball with a sea-salt-blue focus and pastel color references" },
+      { label: "Material", value: "Moldable coconut-oil squishy construction stated for this product; confirm exact composition with the quotation" },
+      { label: "Hand feel", value: "Confirm the preferred firmness, moldability and recovery behavior before ordering" },
+    ],
+    customization: [
+      "Sea-salt blue and pastel color directions shown",
+      "Confirm target size and hand feel",
+      "Confirm individual or assortment packing",
+      "Confirm order quantity and supply timing",
+    ],
+    useCases: ["Sensory toy assortments", "Desk stress-relief ranges", "Novelty gift retail", "Color-coordinated sets"],
+    buyerBrief: ["Required quantity", "Preferred color mix", "Target size and hand feel", "Destination country", "Required packing", "Requested receiving date"],
+    packagingAnswer: "No retail packaging is shown in the supplied product photo. Confirm the individual pack, color ratio, label requirement and outer-carton configuration with the quotation.",
+  },
+  "halloween-pumpkin-candy-corn-squishy": {
+    specifications: [
+      { label: "Designs shown", value: "Orange pumpkin and orange-yellow-white candy corn squeeze-toy designs" },
+      { label: "Material", value: "Confirm the exact squeeze-toy material and recovery feel with the quotation" },
+      { label: "Packing", value: "Unit and assortment packing are confirmed after the required design mix and quantity are reviewed" },
+    ],
+    customization: [
+      "Two seasonal designs shown",
+      "Confirm the available pumpkin and candy-corn mix",
+      "Confirm individual or assortment packing",
+      "Confirm order quantity and supply timing",
+    ],
+    useCases: ["Halloween retail displays", "Holiday gift assortments", "Novelty stores", "Seasonal stress-relief ranges"],
+    buyerBrief: ["Required quantity", "Preferred design ratio", "Destination country", "Required packing", "Requested receiving date"],
+    packagingAnswer: "No specific retail pack is shown in the supplied photos. Confirm the individual pack, assortment ratio, display option and outer-carton configuration with the quotation.",
+  },
+  "monster-munch-squishy-display-box": {
+    specifications: [
+      { label: "Design shown", value: "Green one-eyed Monster Munch squeeze-toy character" },
+      { label: "Display box shown", value: "12 × 12 × 12 cm reference dimensions printed on the supplied image" },
+      { label: "Material", value: "Confirm the exact squeeze-toy material and recovery feel with the quotation" },
+    ],
+    customization: [
+      "Monster character and green colorway shown",
+      "Clear retail display-box presentation shown",
+      "Confirm current item and packing configuration",
+      "Confirm order quantity and supply timing",
+    ],
+    useCases: ["Halloween assortments", "Christmas gift ranges", "Novelty stores", "Stress-relief toy displays"],
+    buyerBrief: ["Required quantity", "Destination country", "Required packing", "Barcode or label requirement", "Requested receiving date"],
+    packagingAnswer: "The supplied image shows one toy in a clear retail display box marked 12 × 12 × 12 cm. Confirm the final unit pack, printed artwork, outer-carton quantity and dimensions with the quotation.",
+  },
+  "tpr-slow-rising-dice-squishy-color-box": {
+    specifications: [
+      { label: "Material", value: "TPR squeeze-toy construction stated for this item" },
+      { label: "Product form", value: "Slow-rising dice-shaped squishy shown" },
+      { label: "Packing shown", value: "Printed color-box presentation; exact unit and carton packing confirmed with quotation" },
+    ],
+    customization: [
+      "TPR slow-rising dice form shown",
+      "Printed color-box presentation shown",
+      "Confirm current colors and packing configuration",
+      "Confirm order quantity and supply timing",
+    ],
+    useCases: ["Novelty retail", "Gift shops", "Impulse displays", "Wholesale toy assortments"],
+    buyerBrief: ["Required quantity", "Destination country", "Preferred color", "Required packing", "Requested receiving date"],
+    packagingAnswer: "The photo shows a printed color-box presentation. Confirm the exact unit pack, display configuration, outer-carton quantity and current availability with the quotation.",
+  },
   "ready-stock-highland-cow-tpr-squishy": {
     specifications: [
       { label: "Availability", value: "Ready stock; live quantity confirmed before order acceptance" },
@@ -387,6 +506,15 @@ export function getProductSpecifications(product: Product): ProductSpecification
   const profile = productBuyingProfiles[product.slug];
   const isReadyStock = READY_STOCK_SLUGS.has(product.slug);
 
+  if (product.detailsOnRequest) {
+    return [
+      { label: "Product", value: product.name },
+      ...(profile?.specifications ?? []),
+      { label: "Order quantity", value: "Confirmed with requested quantity and packing" },
+      { label: "Supply timing", value: "Confirmed after availability, packing and destination review" },
+    ];
+  }
+
   if (isReadyStock) {
     return [
       { label: "Product", value: product.name },
@@ -484,6 +612,31 @@ export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): 
 export function getProductFAQs(product: Product) {
   const profile = productBuyingProfiles[product.slug];
   const isReadyStock = READY_STOCK_SLUGS.has(product.slug);
+
+  if (product.detailsOnRequest) {
+    return [
+      {
+        question: `Can ${product.name} be customized?`,
+        answer: "Any color, artwork or packaging change must be reviewed against the exact product, quantity and production route before it is confirmed.",
+      },
+      {
+        question: `What is the order quantity for ${product.name}?`,
+        answer: "Send the quantity you need and the destination market. We will confirm the practical order quantity together with the available packing configuration.",
+      },
+      {
+        question: "Is the color-box packaging included?",
+        answer: profile?.packagingAnswer ?? "The shown packaging and exact carton configuration are confirmed with the quotation.",
+      },
+      {
+        question: "Which compliance documents are available for this item?",
+        answer: "Testing scope and available documents must be checked against the exact item, age grade and destination market. No product-specific certificate is claimed on this page before that review.",
+      },
+      {
+        question: "What should I send for a useful quotation?",
+        answer: "Send the required quantity, destination country, preferred color, packing requirement and requested receiving date.",
+      },
+    ];
+  }
 
   if (isReadyStock) {
     return [
