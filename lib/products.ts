@@ -44,6 +44,29 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    slug: "aurora-glitter-strawberry-slow-rise-squishy",
+    name: "Aurora Glitter Strawberry Slow-Rise Squishy Assortment",
+    category: "Glitter Strawberry Squishy / Wholesale",
+    tag: "Four-Color Aurora Glitter",
+    note: "Translucent strawberry-shaped slow-rise squishy assortment stated as a four-color maltose-fill direction, with aurora glitter flakes and bright fruit colorways for sensory, novelty and gift retail. The supplied image shows pink, yellow-green and orange examples; confirm the fourth color, exact outer material, internal fill, rebound target, size, packing, quantity and supply timing with the quotation.",
+    seoTitle: "Aurora Glitter Strawberry Slow-Rise Squishy Wholesale",
+    seoDescription: "Source four-color aurora glitter strawberry slow-rise squishy toys for sensory, novelty and gift assortments. Request color, fill, rebound and packing details.",
+    alt: "aurora glitter strawberry slow-rise squishy assortment in translucent pink yellow-green and orange colorways",
+    keywords: [
+      "glitter strawberry squishy wholesale",
+      "aurora glitter squishy toy",
+      "slow rise strawberry squishy",
+      "maltose filled squishy toy",
+      "transparent fruit squishy bulk",
+      "four color squishy assortment",
+    ],
+    images: images("aurora-glitter-strawberry-slow-rise-squishy", "/images/products/aurora-glitter-strawberry-slow-rise-squishy/hero.webp"),
+    featured: true,
+    detailsOnRequest: true,
+    filterGroup: "squishy",
+  },
+
+  {
     slug: "fruit-building-block-squishy-assortment",
     name: "Food-Themed Crunchy Building Block Squishy Assortment",
     category: "Food Sensory Squishy / Wholesale",

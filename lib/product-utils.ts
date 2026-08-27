@@ -41,6 +41,39 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "aurora-glitter-strawberry-slow-rise-squishy": {
+    specifications: [
+      { label: "Design direction", value: "Translucent strawberry form with aurora glitter flakes" },
+      { label: "Color assortment", value: "Four-color assortment stated; final colors and ratio confirmed with the quotation" },
+      { label: "Fill direction", value: "Maltose-style fill stated by the owner; exact composition confirmed against the sample" },
+      { label: "Rebound", value: "Slow-rise direction; recovery target confirmed on the approved sample" },
+      { label: "Packaging", value: "Individual protective packing or buyer-specified retail presentation confirmed with the quotation" },
+    ],
+    customization: [
+      "Four-color assortment and color ratio",
+      "Aurora glitter-flake appearance",
+      "Strawberry shape and stem details",
+      "Softness and slow-rise rebound target",
+      "Individual or mixed-SKU packing",
+      "Private-label card, bag or retail box",
+    ],
+    useCases: [
+      "Fruit-themed sensory assortments",
+      "Novelty and gift retail",
+      "Color-mix impulse displays",
+      "Stress-relief toy programs",
+    ],
+    buyerBrief: [
+      "Required quantity and destination market",
+      "Four-color selection and ratio",
+      "Target size and rebound reference",
+      "Glitter appearance and fill confirmation",
+      "Packaging, labels and requested timing",
+    ],
+    packagingAnswer:
+      "The supplied image shows loose product samples. Confirm individual protective packing, labels, display or retail-box requirements with the quotation.",
+  },
+
   "fruit-building-block-squishy-assortment": {
     specifications: [
       { label: "Designs shown", value: "Potato, strawberry, cheese cube and wedge, plus a white ball with colored building-block pieces" },
