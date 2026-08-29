@@ -3,6 +3,10 @@
 import { useState, type FormEvent } from "react";
 import { trackEvent } from "@/lib/analytics";
 import {
+  addAttributionToMailto,
+  createInquiryAttribution,
+} from "@/lib/inquiry-attribution";
+import {
   buildProductInquiryMailtoFromForm,
   INQUIRY_EMAIL,
   type ProductInquiryFormData,
@@ -56,30 +60,43 @@ export default function ProductInquiryForm({ productName, stockItem = false }: P
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setStatus("sending");
+    const attribution = createInquiryAttribution();
 
     try {
       const response = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ productName, ...form, website }),
+        body: JSON.stringify({ productName, ...form, ...attribution, website }),
       });
       if (!response.ok) throw new Error("Delivery unavailable");
 
       setStatus("success");
       setForm(initialForm);
       trackEvent("generate_lead", {
+        lead_id: attribution.leadId,
         product_name: productName,
         project_type: form.projectType,
+        source_page: attribution.sourcePage,
+        landing_page: attribution.landingPage,
       });
       trackEvent("quote_form_submit", {
+        lead_id: attribution.leadId,
         form_name: "product_inquiry",
         product_name: productName,
         project_type: form.projectType,
+        source_page: attribution.sourcePage,
+        landing_page: attribution.landingPage,
       });
     } catch {
       setStatus("fallback");
-      trackEvent("inquiry_email_fallback", { product_name: productName });
-      window.location.href = buildProductInquiryMailtoFromForm(productName, form);
+      trackEvent("inquiry_email_fallback", {
+        lead_id: attribution.leadId,
+        product_name: productName,
+      });
+      window.location.href = addAttributionToMailto(
+        buildProductInquiryMailtoFromForm(productName, form),
+        attribution,
+      );
     }
   }
 
@@ -164,3 +181,4 @@ export default function ProductInquiryForm({ productName, stockItem = false }: P
     </form>
   );
 }
+
