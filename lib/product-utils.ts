@@ -14,6 +14,7 @@ const READY_STOCK_SLUGS = new Set([
 ]);
 
 export const FULL_GALLERY_SLUGS = new Set([
+  "dessert-cake-pu-squishy-keychain-assortment",
   "fruit-building-block-squishy-assortment",
   "custom-bunny-plush-keychain",
   "custom-teddy-bear-plush-keychain",
@@ -41,6 +42,139 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "christmas-pu-squishy-toy-assortment": {
+    specifications: [
+      { label: "Material", value: "PU material stated by the owner; final material and finish confirmed against the approved sample" },
+      { label: "Designs shown", value: "Snowman, Christmas tree cake, wreath, bow cake, house and paw-style holiday directions" },
+      { label: "Assortment", value: "Final design mix, colors and quantity ratio confirmed with the quotation" },
+      { label: "Feel and rebound", value: "Softness and recovery target confirmed on the approved sample" },
+      { label: "Packaging", value: "Individual protection, gift packing or display presentation confirmed with the quotation" },
+    ],
+    customization: [
+      "Christmas character and dessert design mix",
+      "Red, green, white and buyer-specified colorways",
+      "Surface decoration and printed details",
+      "Size, softness and rebound target",
+      "Assortment ratio and seasonal display packing",
+      "Private-label card, bag or gift box",
+    ],
+    useCases: [
+      "Christmas gift and novelty programs",
+      "Seasonal retail displays",
+      "Holiday party-favor assortments",
+      "Gift shops and online seasonal sellers",
+    ],
+    buyerBrief: [
+      "Required quantity and destination market",
+      "Selected Christmas designs and mix ratio",
+      "Target size and squeeze reference",
+      "Packing, labels and display requirements",
+      "Requested delivery window",
+    ],
+    packagingAnswer:
+      "The supplied image shows a mixed Christmas sample presentation. Confirm individual protection, gift box, display tray, labels and outer-carton requirements with the quotation.",
+  },
+
+  "sesame-braided-bread-pu-squishy": {
+    specifications: [
+      { label: "Material", value: "PU material stated by the owner; final material and coating confirmed against the approved sample" },
+      { label: "Design", value: "Braided toasted bread form with black and white sesame-style decoration" },
+      { label: "Reference size", value: "10 × 5.5 × 5.5 cm shown in the supplied image; production tolerance confirmed with the sample" },
+      { label: "Presentation shown", value: "Paper baking tray shown; final unit protection and retail packing confirmed with the quotation" },
+      { label: "Feel and rebound", value: "Softness and recovery target confirmed on the approved sample" },
+    ],
+    customization: [
+      "Bread shape and braided surface detail",
+      "Toast color shading and sesame-style decoration",
+      "Target dimensions and squeeze feel",
+      "Paper tray, protective bag or retail box",
+      "Logo label and barcode",
+      "Mixed bakery-series assortment",
+    ],
+    useCases: [
+      "Bakery-themed novelty assortments",
+      "Food sensory toy programs",
+      "Gift shops and impulse retail",
+      "Online novelty sellers",
+    ],
+    buyerBrief: [
+      "Required quantity and destination market",
+      "Target size and softness reference",
+      "Color and surface-decoration confirmation",
+      "Unit packing and labeling requirements",
+      "Requested timing",
+    ],
+    packagingAnswer:
+      "A paper baking tray is visible in the supplied image. Confirm protective bag, tray print, retail box, label and outer-carton requirements with the quotation.",
+  },
+
+  "dessert-cake-pu-squishy-keychain-assortment": {
+    specifications: [
+      { label: "Material", value: "PU material stated by the owner; final material and coating confirmed against the approved sample" },
+      { label: "Designs shown", value: "Chocolate pudding, pink strawberry cake, brown sweet biscuit and blue strawberry roll-cake directions" },
+      { label: "Accessories shown", value: "Clear zip-style cover with keyring, bell or flower-shaped charm details; final hardware confirmed with the quotation" },
+      { label: "Assortment", value: "Final design mix, colors and quantity ratio confirmed with the quotation" },
+      { label: "Feel and rebound", value: "Size, softness and recovery target confirmed on the approved sample" },
+    ],
+    customization: [
+      "Dessert design and color assortment",
+      "Cream, fruit and drizzle decoration",
+      "Keyring, bell and charm hardware",
+      "Clear protective cover color and stitching",
+      "Size, softness and rebound target",
+      "Private-label card, bag or retail box",
+    ],
+    useCases: [
+      "Food-themed bag charms and keychains",
+      "Dessert novelty assortments",
+      "Gift shops and accessory retailers",
+      "Online impulse and collectible programs",
+    ],
+    buyerBrief: [
+      "Required quantity and destination market",
+      "Selected dessert designs and mix ratio",
+      "Keyring, bell and charm requirements",
+      "Target size and squeeze reference",
+      "Packing, labels and requested timing",
+    ],
+    packagingAnswer:
+      "The supplied photos show clear zip-style protective covers and accessory hardware. Confirm cover construction, backing card, labels, retail box and outer-carton requirements with the quotation.",
+  },
+
+  "chocolate-drizzle-cream-cake-pu-squishy": {
+    specifications: [
+      { label: "Material", value: "PU material stated by the owner; final material and coating confirmed against the approved sample" },
+      { label: "Design", value: "Square cream-cake direction with pink textured cream, chocolate-colored drizzle and colorful decorations" },
+      { label: "Decoration", value: "Final cream texture, drizzle pattern and decorative mix confirmed against the approved sample" },
+      { label: "Feel and rebound", value: "Size, softness and recovery target confirmed on the approved sample" },
+      { label: "Packaging", value: "Individual protection and retail presentation confirmed with the quotation" },
+    ],
+    customization: [
+      "Cake shape and cream texture",
+      "Drizzle color and pattern",
+      "Decorative piece color mix",
+      "Size, softness and rebound target",
+      "Protective bag, card or retail box",
+      "Private-label artwork and barcode",
+    ],
+    useCases: [
+      "Bakery-themed novelty assortments",
+      "Food sensory toy programs",
+      "Gift shops and impulse displays",
+      "Online novelty sellers",
+    ],
+    buyerBrief: [
+      "Required quantity and destination market",
+      "Target size and squeeze reference",
+      "Cream, drizzle and decoration requirements",
+      "Packing and label requirements",
+      "Requested timing",
+    ],
+    packagingAnswer:
+      "Confirm individual protective packing, backing card or retail-box presentation, labels and outer-carton requirements with the quotation.",
+  },
+
+
   "aurora-glitter-strawberry-slow-rise-squishy": {
     specifications: [
       { label: "Design direction", value: "Translucent strawberry form with aurora glitter flakes" },
