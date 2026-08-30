@@ -40,7 +40,7 @@ export default function Home() {
       <Header />
       <Hero />
       <TrustStrip />
-      <ProductShowcase limit={12} showCatalogLink />
+      <ProductShowcase limit={30} showCatalogLink />
       <Capabilities />
       <FactoryDirectComparison />
       <FactoryStory />
