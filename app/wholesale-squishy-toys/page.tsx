@@ -4,7 +4,15 @@ import SeoLandingPage from "@/components/SeoLandingPage";
 export const metadata: Metadata = {
   title: "Wholesale Squishy Toys & Bulk Supplier | Ready Stock",
   description: "Source wholesale squishy toys in bulk from LINHAO Toys. Compare ready-stock fruit and novelty styles, MOQ, carton packing, dispatch timing and freight options.",
-  alternates: { canonical: "/wholesale-squishy-toys" },
+  alternates: {
+    canonical: "/wholesale-squishy-toys",
+    languages: {
+      en: "/wholesale-squishy-toys",
+      es: "/es/squishy-toys",
+      de: "/de/squishy-toys",
+      "x-default": "/wholesale-squishy-toys",
+    },
+  },
   keywords: ["wholesale squishy toys", "squishy toys in stock", "bulk squishy toys", "ready stock squishy toys", "squishy toy supplier", "squishy toys wholesale"],
   openGraph: {
     title: "Wholesale Squishy Toys & Bulk Supplier | Ready Stock",

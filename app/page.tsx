@@ -18,7 +18,15 @@ export const metadata: Metadata = {
   title: { absolute: "Squishy Toy Manufacturer & Wholesale Supplier | LINHAO Toys" },
   description:
     "Source custom and wholesale squishy toys from LINHAO Toys, with OEM/ODM development, ready-stock options, private-label packaging and worldwide export support.",
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/",
+      es: "/es",
+      de: "/de",
+      "x-default": "/",
+    },
+  },
   openGraph: {
     title: "Squishy Toy Manufacturer & Wholesale Supplier | LINHAO Toys",
     description:

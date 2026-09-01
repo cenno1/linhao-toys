@@ -7,6 +7,10 @@ import {
   getProductBySlug,
   getProductFAQs,
 } from "@/lib/product-utils";
+import {
+  localizedAlternates,
+  localizedProductSlugs,
+} from "@/lib/localized-catalog";
 import { SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/seo";
 
 type ProductPageProps = {
@@ -27,6 +31,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   const seoTitle = product.seoTitle ?? product.name;
   const seoDescription = product.seoDescription ?? product.note;
+  const hasLocalizedVersion = localizedProductSlugs.some(
+    (localizedSlug) => localizedSlug === product.slug,
+  );
 
   return {
     title: seoTitle,
@@ -34,6 +41,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     keywords: product.keywords,
     alternates: {
       canonical: `/products/${product.slug}`,
+      ...(hasLocalizedVersion
+        ? { languages: localizedAlternates("product", product.slug) }
+        : {}),
     },
     openGraph: {
       title: `${seoTitle} | ${SITE_NAME}`,
