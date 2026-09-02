@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/products",
     "/resources",
     "/custom-squishy-toy-manufacturer",
+    "/custom-pu-squishy-manufacturer",
     "/custom-stress-ball-manufacturer",
     "/custom-blind-box-toys-manufacturer",
     "/wholesale-squishy-toys",

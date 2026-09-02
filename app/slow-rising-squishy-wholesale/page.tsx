@@ -76,6 +76,7 @@ export default function Page() {
         "Destination market, age grade and required launch date",
       ]}
       relatedPages={[
+        { title: "Custom PU Squishy Manufacturer", text: "Plan custom PU shape, recovery, decoration and private-label packaging in one buyer brief.", href: "/custom-pu-squishy-manufacturer" },
         { title: "Custom Squishy Manufacturing", text: "Review mold, sampling, decoration, packaging and sample-to-bulk controls.", href: "/custom-squishy-toy-manufacturer" },
         { title: "Recovery-Time Specification Guide", text: "Learn how to define and compare slow-rise recovery using a repeatable buyer reference.", href: "/resources/slow-rising-squishy-recovery-time-specification-guide" },
         { title: "Scented vs Unscented Squishies", text: "Plan odor, ventilation, packaging and sample approval for scented product routes.", href: "/resources/scented-vs-unscented-squishy-toy-odor-control-guide" },
