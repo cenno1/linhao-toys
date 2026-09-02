@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
+import { localizedAlternates } from "@/lib/localized-catalog";
 
 export const metadata: Metadata = {
   title: "Custom PU Squishy Manufacturer | Slow-Rising OEM",
   description:
     "Custom PU squishy manufacturing with MOQ from 500 pieces, buyer-defined shapes, slow-rise sample approval and private-label packaging.",
-  alternates: { canonical: "/custom-pu-squishy-manufacturer" },
+  alternates: {
+    canonical: "/custom-pu-squishy-manufacturer",
+    languages: localizedAlternates("customPu"),
+  },
   keywords: [
     "custom PU squishy manufacturer",
     "slow rising PU squishy",

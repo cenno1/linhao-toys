@@ -28,6 +28,7 @@ export type LocalizedMarketCopy = {
   navigation: {
     home: string;
     wholesale: string;
+    customPu: string;
     contact: string;
     language: string;
   };
@@ -80,6 +81,7 @@ export const localizedCatalog: Record<Locale, LocalizedMarketCopy> = {
     navigation: {
       home: "Inicio",
       wholesale: "Squishies al por mayor",
+      customPu: "Squishies PU personalizados",
       contact: "Solicitar cotización",
       language: "Idioma",
     },
@@ -297,6 +299,7 @@ export const localizedCatalog: Record<Locale, LocalizedMarketCopy> = {
     navigation: {
       home: "Startseite",
       wholesale: "Squishies im Großhandel",
+      customPu: "Individuelle PU-Squishies",
       contact: "Angebot anfragen",
       language: "Sprache",
     },
@@ -518,18 +521,34 @@ export function getLocalizedProduct(locale: Locale, slug: string) {
   return localizedCatalog[locale].products.find((product) => product.slug === slug);
 }
 
-export function localizedAlternates(path: "home" | "wholesale" | "product", slug?: string) {
+export function localizedAlternates(path: "home" | "wholesale" | "customPu" | "product", slug?: string) {
   const english =
     path === "home"
       ? "/"
       : path === "wholesale"
         ? "/wholesale-squishy-toys"
-        : `/products/${slug}`;
+        : path === "customPu"
+          ? "/custom-pu-squishy-manufacturer"
+          : `/products/${slug}`;
 
   return {
     en: english,
-    es: path === "home" ? "/es" : path === "wholesale" ? "/es/squishy-toys" : `/es/products/${slug}`,
-    de: path === "home" ? "/de" : path === "wholesale" ? "/de/squishy-toys" : `/de/products/${slug}`,
+    es:
+      path === "home"
+        ? "/es"
+        : path === "wholesale"
+          ? "/es/squishy-toys"
+          : path === "customPu"
+            ? "/es/custom-pu-squishy-manufacturer"
+            : `/es/products/${slug}`,
+    de:
+      path === "home"
+        ? "/de"
+        : path === "wholesale"
+          ? "/de/squishy-toys"
+          : path === "customPu"
+            ? "/de/custom-pu-squishy-manufacturer"
+            : `/de/products/${slug}`,
     "x-default": english,
   };
 }

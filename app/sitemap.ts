@@ -62,6 +62,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: absoluteLanguages(localizedAlternates("wholesale")),
       },
     },
+    {
+      url: absoluteUrl(`/${locale}/custom-pu-squishy-manufacturer`),
+      lastModified: "2026-09-02",
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+      alternates: {
+        languages: absoluteLanguages(localizedAlternates("customPu")),
+      },
+    },
   ]);
 
   const localizedProductPages = locales.flatMap((locale) =>
@@ -94,7 +103,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
                   localizedAlternates("wholesale"),
                 ),
               }
-            : undefined,
+            : path === "/custom-pu-squishy-manufacturer"
+              ? {
+                  languages: absoluteLanguages(
+                    localizedAlternates("customPu"),
+                  ),
+                }
+              : undefined,
     })),
     ...localizedMarketPages,
     ...products.map((product) => {
