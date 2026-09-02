@@ -4,7 +4,7 @@ import SeoLandingPage from "@/components/SeoLandingPage";
 export const metadata: Metadata = {
   title: "Custom PU Squishy Manufacturer | Slow-Rising OEM",
   description:
-    "Develop custom PU squishy toys with buyer-defined shapes, slow-rise feel, artwork and private-label packaging for wholesale and retail programs.",
+    "Custom PU squishy manufacturing with MOQ from 500 pieces, buyer-defined shapes, slow-rise sample approval and private-label packaging.",
   alternates: { canonical: "/custom-pu-squishy-manufacturer" },
   keywords: [
     "custom PU squishy manufacturer",
@@ -42,7 +42,7 @@ export default function Page() {
       eyebrow="CUSTOM PU SQUISHY MANUFACTURER"
       title="Custom PU squishy manufacturing for slow-rise, original-shape programs."
       introduction="LINHAO Toys supports custom PU squishy projects from buyer artwork and shape review through sample approval, surface decoration, assortment planning and private-label packaging. The approved sample defines the finished appearance, squeeze feel and recovery behavior for production."
-      buyerNote="Send your artwork or reference, finished size, target squeeze and recovery feel, quantity, destination market, packaging requirement and required receive date. MOQ, timing, testing scope and final cost are confirmed only after the exact specification is reviewed."
+      buyerNote="A typical custom PU project starts at 500 pieces. The current mold fee is US$680. The sample fee is US$360 with a 20-day sampling time, and the sample fee can be credited against the bulk order. Bulk-production timing, testing scope and final cost are confirmed for the exact specification."
       productSlugs={[
         "custom-pu-fruit-animal-figures",
         "pu-slow-rise-animal-keychain",
@@ -77,8 +77,8 @@ export default function Page() {
           text: "Coordinate individual bags, branded boxes, hangtags, inserts, barcode labels, display trays and export cartons for the exact product.",
         },
         {
-          title: "Assortment Planning",
-          text: "Set the design mix, colorways, quantity per style and packing ratio for seasonal, collectible or food-themed ranges.",
+          title: "U.S. & European Testing",
+          text: "For the exact product and destination, documentation can be arranged against ASTM F963 and CPSIA with CPC for the U.S., and EN 71 for relevant European-market projects.",
         },
       ]}
       process={[
@@ -88,7 +88,7 @@ export default function Page() {
         },
         {
           title: "Develop the Sample",
-          text: "Align shape feasibility, PU feel, recovery reference, colors, decoration and package protection.",
+          text: "Align shape feasibility, PU feel, recovery, colors, decoration and packaging. The current sample fee is US$360 and the stated sampling time is 20 days; the sample fee can be credited against the bulk order.",
         },
         {
           title: "Approve the Reference",
@@ -159,16 +159,16 @@ export default function Page() {
           answer: "Private-label packaging can be planned with the product. Options may include bags, boxes, hangtags, inserts, barcode labels, display trays and export cartons, subject to the final specification and quantity.",
         },
         {
-          question: "What is the MOQ for a custom PU squishy?",
-          answer: "There is no universal MOQ for every project. The practical quantity depends on the mold, dimensions, design count, decoration, packaging and production setup, so it is confirmed after the brief is reviewed.",
+          question: "What is the MOQ and mold fee for a custom PU squishy?",
+          answer: "The current typical MOQ starts at 500 pieces and the mold fee is US$680. The final quotation is confirmed against the shape, dimensions, design count, decoration and packaging specification.",
         },
         {
-          question: "How long does sampling and production take?",
-          answer: "Timing is project-specific and should be confirmed after the design, mold route, decoration, packaging and approval steps are defined. Share your required receive date so the quotation can use the same schedule reference.",
+          question: "What is the sample fee and sampling time?",
+          answer: "The current sample fee is US$360 and the stated sampling time is 20 days. The sample fee can be credited against the bulk order. Bulk-production timing is confirmed separately after the approved specification and order details are reviewed.",
         },
         {
-          question: "Can testing documents be arranged?",
-          answer: "The testing and documentation scope must be reviewed for the exact product, intended age grade and destination market. Requirements from one product or market should not be assumed to cover another.",
+          question: "Which testing documents can be arranged?",
+          answer: "For the exact custom PU product and intended market, documentation can be arranged against ASTM F963 and CPSIA with CPC for the United States, and EN 71 for relevant European-market projects. The required scope is confirmed for the final product and age grade.",
         },
       ]}
     />
