@@ -6,12 +6,14 @@ import type {
   Locale,
 } from "@/lib/localized-catalog";
 
-function LocalizedHeader({
+export function LocalizedHeader({
   locale,
   copy,
+  pagePath = "",
 }: {
   locale: Locale;
   copy: LocalizedMarketCopy;
+  pagePath?: string;
 }) {
   return (
     <header className="border-b border-slate-200 bg-white">
@@ -26,21 +28,24 @@ function LocalizedHeader({
           <Link href={`/${locale}/squishy-toys`} className="hover:text-blue-600">
             {copy.navigation.wholesale}
           </Link>
+          <Link href={`/${locale}/custom-pu-squishy-manufacturer`} className="hover:text-blue-600">
+            {copy.navigation.customPu}
+          </Link>
           <Link href="/contact" className="rounded-full bg-blue-600 px-5 py-3 text-white hover:bg-blue-700">
             {copy.navigation.contact}
           </Link>
         </nav>
         <nav className="flex items-center gap-3 text-xs font-black uppercase tracking-wider text-slate-500" aria-label={copy.navigation.language}>
-          <Link href="/" hrefLang="en" lang="en" className="hover:text-blue-600">EN</Link>
-          <Link href="/es" hrefLang="es" lang="es" className={locale === "es" ? "text-blue-600" : "hover:text-blue-600"}>ES</Link>
-          <Link href="/de" hrefLang="de" lang="de" className={locale === "de" ? "text-blue-600" : "hover:text-blue-600"}>DE</Link>
+          <Link href={pagePath || "/"} hrefLang="en" lang="en" className="hover:text-blue-600">EN</Link>
+          <Link href={`/es${pagePath}`} hrefLang="es" lang="es" className={locale === "es" ? "text-blue-600" : "hover:text-blue-600"}>ES</Link>
+          <Link href={`/de${pagePath}`} hrefLang="de" lang="de" className={locale === "de" ? "text-blue-600" : "hover:text-blue-600"}>DE</Link>
         </nav>
       </div>
     </header>
   );
 }
 
-function LocalizedFooter({ locale }: { locale: Locale }) {
+export function LocalizedFooter({ locale }: { locale: Locale }) {
   const text =
     locale === "es"
       ? "Información B2B para compradores de juguetes. Las existencias, cantidades, plazos y requisitos se confirman por solicitud."
@@ -98,7 +103,7 @@ function ProductCard({
   );
 }
 
-function FaqList({
+export function FaqList({
   heading,
   faqs,
 }: {
@@ -122,7 +127,7 @@ function FaqList({
   );
 }
 
-function LocalizedCta({
+export function LocalizedCta({
   title,
   text,
   label,
