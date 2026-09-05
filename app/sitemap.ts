@@ -21,6 +21,12 @@ function absoluteLanguages(
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  // Keep dates tied to material page changes, not the date of each build.
+  const reviewedPaths: Record<string, string> = {
+    "": "2026-09-05",
+    "/resources": "2026-09-05",
+    "/custom-pu-squishy-manufacturer": "2026-09-02",
+  };
   const staticPaths = [
     "",
     "/products",
@@ -91,7 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPaths.map((path) => ({
       url: absoluteUrl(path || "/"),
-      lastModified: SITE_LAST_MODIFIED,
+      lastModified: reviewedPaths[path] ?? SITE_LAST_MODIFIED,
       changeFrequency: path === "" ? ("weekly" as const) : ("monthly" as const),
       priority: path === "" ? 1 : 0.8,
       alternates:
@@ -119,7 +125,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       return {
         url: absoluteUrl(`/products/${product.slug}`),
-        lastModified: SITE_LAST_MODIFIED,
+        lastModified:
+          product.detailsOnRequest || product.availability === "ready-stock"
+            ? SITE_LAST_MODIFIED
+            : "2026-09-05",
         changeFrequency: "monthly" as const,
         priority: 0.7,
         images: [new URL(product.images.hero, SITE_URL).toString()],

@@ -1,7 +1,5 @@
 import { products, type Product, type ProductFilterGroup } from "./products";
 
-export const PRODUCT_MOQ = 100;
-
 const READY_STOCK_SLUGS = new Set([
   "ready-stock-highland-cow-tpr-squishy",
   "ready-stock-mango-squishy",
@@ -733,8 +731,8 @@ export function getProductSpecifications(product: Product): ProductSpecification
     { label: "Product", value: product.name },
     ...(profile?.specifications ?? []),
     ...groupDetails[product.filterGroup],
-    { label: "Indicative MOQ", value: `From ${PRODUCT_MOQ} pcs; confirmed by specification` },
-    { label: "Sampling", value: "Typically 3–7 days after specifications are confirmed" },
+    { label: "MOQ", value: "Confirmed for the product, design, material and packaging specification" },
+    { label: "Sampling", value: "Schedule confirmed for the material, design and sample scope; bulk timing quoted separately" },
   ];
 }
 
@@ -837,7 +835,7 @@ export function getProductFAQs(product: Product) {
     },
     {
       question: `What is the MOQ for ${product.name}?`,
-      answer: `The indicative starting point is ${PRODUCT_MOQ} pieces. Final MOQ depends on mold, material, printing, assortment and packaging requirements.`,
+      answer: "MOQ is confirmed for this product after the design, material, printing, assortment and packaging are reviewed. Send the quantity you need and the quantity per design for a practical quotation.",
     },
     {
       question: "Can I approve a sample before mass production?",

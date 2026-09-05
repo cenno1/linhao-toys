@@ -50,7 +50,6 @@ export default async function GuidePage({ params }: Props) {
       "@type": "Article",
       headline: guide.title,
       description: guide.description,
-      datePublished: guide.updated,
       dateModified: guide.updated,
       mainEntityOfPage: url,
       image: absoluteUrl(DEFAULT_OG_IMAGE),

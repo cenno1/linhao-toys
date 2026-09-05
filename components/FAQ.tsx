@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const questions = [
   {
     question: "What can be customized?",
@@ -7,12 +9,12 @@ const questions = [
   {
     question: "How long does sampling take?",
     answer:
-      "Simple projects may be sampled in about 3–7 days after details are confirmed. Complex structures may require additional development time.",
+      "For custom PU squishy projects, our current sampling time is 20 days. Sampling for other materials and product types is confirmed with the project brief. Bulk-production and shipping times are quoted separately.",
   },
   {
     question: "Can you support low MOQ projects?",
     answer:
-      "MOQ depends on mold, material, printing and packaging requirements. We will recommend the most practical production plan after reviewing the design.",
+      "Our typical custom PU squishy MOQ starts at 500 pieces. Other products and ready-stock orders have their own quantity requirements. Final MOQ is confirmed against the design, material, decoration and packaging.",
   },
   {
     question: "Which markets do you support?",
@@ -45,6 +47,11 @@ export default function FAQ() {
         <div>
           <span className="eyebrow">Buyer FAQ</span>
           <h2>Answers before you send the first inquiry.</h2>
+          <p className="mt-5">
+            <Link href="/custom-pu-squishy-manufacturer" className="font-bold text-blue-600 hover:underline">
+              Custom PU MOQ, mold fee and sampling details →
+            </Link>
+          </p>
         </div>
         <div>
           {questions.map(({ question, answer }) => (
