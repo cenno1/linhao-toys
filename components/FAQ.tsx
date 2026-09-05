@@ -9,7 +9,7 @@ const questions = [
   {
     question: "How long does sampling take?",
     answer:
-      "For custom PU squishy projects, our current sampling time is 20 days. Sampling for other materials and product types is confirmed with the project brief. Bulk-production and shipping times are quoted separately.",
+      "For custom PU squishy projects, our current sampling time is 20 days. Sampling for other materials and product types is confirmed with the project brief. Custom PU bulk production typically takes 25–30 days after sample approval; shipping time is confirmed separately.",
   },
   {
     question: "Can you support low MOQ projects?",

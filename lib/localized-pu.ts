@@ -36,14 +36,14 @@ export const localizedPuPages: Record<Locale, LocalizedPuPageCopy> = {
     introduction:
       "LINHAO Toys revisa proyectos PU a partir de bocetos, personajes, archivos 3D o referencias. El proceso cubre la forma, el tacto, la recuperación, el color, la decoración, la muestra y el embalaje privado antes de confirmar la producción.",
     directAnswer:
-      "La cantidad mínima habitual empieza en 500 unidades. El coste actual del molde es de 680 USD. La muestra cuesta 360 USD, requiere 20 días y su coste puede acreditarse al pedido de producción. El plazo de producción se confirma por separado según la especificación aprobada.",
+      "La cantidad mínima habitual empieza en 500 unidades. El coste actual del molde es de 680 USD. La muestra cuesta 360 USD, requiere 20 días y su coste puede acreditarse al pedido de producción. La producción habitual tarda entre 25 y 30 días después de aprobar la muestra. El transporte y el calendario final se confirman por separado.",
     commercialHeading: "Datos comerciales confirmados para proyectos PU",
     commercialFacts: [
       "MOQ habitual: desde 500 unidades",
       "Coste actual del molde: 680 USD",
       "Muestra: 360 USD y 20 días",
       "El coste de la muestra puede acreditarse al pedido de producción",
-      "El plazo de producción se confirma para el diseño y la cantidad finales",
+      "Producción habitual: 25–30 días después de aprobar la muestra; transporte aparte",
       "EE. UU.: ASTM F963 y CPSIA con CPC; Europa: EN 71, según producto y mercado",
     ],
     capabilityHeading: "¿Qué puede personalizar un comprador?",
@@ -131,7 +131,7 @@ export const localizedPuPages: Record<Locale, LocalizedPuPageCopy> = {
       {
         question: "¿Cuánto cuesta y tarda la muestra?",
         answer:
-          "La muestra cuesta 360 USD y el plazo indicado es de 20 días. El coste de la muestra puede acreditarse al pedido de producción. El plazo de producción se confirma por separado.",
+          "La muestra cuesta 360 USD y el plazo indicado es de 20 días. El coste de la muestra puede acreditarse al pedido de producción. La producción habitual tarda entre 25 y 30 días después de aprobar la muestra; el transporte se confirma por separado.",
       },
       {
         question: "¿Se puede fabricar una forma original?",
@@ -169,14 +169,14 @@ export const localizedPuPages: Record<Locale, LocalizedPuPageCopy> = {
     introduction:
       "LINHAO Toys prüft PU-Projekte anhand von Skizzen, Charaktervorlagen, 3D-Dateien oder Referenzen. Form, Haptik, Rückstellung, Farbe, Dekoration, Muster und Private-Label-Verpackung werden vor der Produktionsfreigabe abgestimmt.",
     directAnswer:
-      "Die übliche Mindestbestellmenge beginnt bei 500 Stück. Die aktuellen Formkosten betragen 680 USD. Ein Muster kostet 360 USD, benötigt 20 Tage und die Mustergebühr kann auf den Produktionsauftrag angerechnet werden. Die Serienproduktionszeit wird separat bestätigt.",
+      "Die übliche Mindestbestellmenge beginnt bei 500 Stück. Die aktuellen Formkosten betragen 680 USD. Ein Muster kostet 360 USD, benötigt 20 Tage und die Mustergebühr kann auf den Produktionsauftrag angerechnet werden. Die Serienproduktion dauert üblicherweise 25–30 Tage nach Musterfreigabe. Transport und endgültiger Zeitplan werden separat bestätigt.",
     commercialHeading: "Bestätigte Eckdaten für individuelle PU-Projekte",
     commercialFacts: [
       "Übliche Mindestbestellmenge: ab 500 Stück",
       "Aktuelle Formkosten: 680 USD",
       "Muster: 360 USD und 20 Tage",
       "Die Mustergebühr kann auf den Produktionsauftrag angerechnet werden",
-      "Die Serienproduktionszeit wird für finales Design und Menge bestätigt",
+      "Übliche Serienproduktion: 25–30 Tage nach Musterfreigabe; Transport separat",
       "USA: ASTM F963 und CPSIA mit CPC; Europa: EN 71, je Produkt und Markt",
     ],
     capabilityHeading: "Was kann ein Einkäufer individuell festlegen?",
@@ -264,7 +264,7 @@ export const localizedPuPages: Record<Locale, LocalizedPuPageCopy> = {
       {
         question: "Was kostet ein Muster und wie lange dauert es?",
         answer:
-          "Das Muster kostet 360 USD und die angegebene Musterzeit beträgt 20 Tage. Die Mustergebühr kann auf den Produktionsauftrag angerechnet werden. Die Serienproduktionszeit wird separat bestätigt.",
+          "Das Muster kostet 360 USD und die angegebene Musterzeit beträgt 20 Tage. Die Mustergebühr kann auf den Produktionsauftrag angerechnet werden. Die Serienproduktion dauert üblicherweise 25–30 Tage nach Musterfreigabe. Transport und endgültiger Zeitplan werden separat bestätigt.",
       },
       {
         question: "Kann eine eigene Form hergestellt werden?",

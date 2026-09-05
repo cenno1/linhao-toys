@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const reviewedPaths: Record<string, string> = {
     "": "2026-09-05",
     "/resources": "2026-09-05",
-    "/custom-pu-squishy-manufacturer": "2026-09-02",
+    "/custom-pu-squishy-manufacturer": "2026-09-05",
   };
   const staticPaths = [
     "",
@@ -70,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: absoluteUrl(`/${locale}/custom-pu-squishy-manufacturer`),
-      lastModified: "2026-09-02",
+      lastModified: "2026-09-05",
       changeFrequency: "monthly" as const,
       priority: 0.9,
       alternates: {

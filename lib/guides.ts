@@ -33,13 +33,14 @@ export const buyerGuides: BuyerGuide[] = [
         heading: "LINHAO custom PU MOQ, mold fee and sample policy",
         paragraphs: [
           "The following custom-PU commercial guidance was confirmed on September 2, 2026. Use it to prepare a sourcing budget, then confirm the exact shape, dimensions, design count, decoration and packaging in your quotation.",
-          "The mold fee and sample fee are separate from the finished-toy unit price. Bulk-production time, shipping time, freight and product-specific testing are confirmed separately. The 20-day sampling period should not be treated as an order-to-delivery promise.",
+          "The mold fee and sample fee are separate from the finished-toy unit price. Typical custom PU bulk production takes 25–30 days after sample approval, as confirmed on September 5, 2026. Shipping time, freight, product-specific testing and the final order schedule are confirmed separately. The 20-day sampling period should not be treated as an order-to-delivery promise.",
         ],
         checklist: [
           "Typical custom PU MOQ: from 500 pieces",
           "Current mold fee: US$680",
           "Current sample fee: US$360",
           "Stated custom PU sampling time: 20 days",
+          "Typical custom PU bulk production: 25–30 days after sample approval",
           "Sample fee can be credited against the bulk order",
           "Final quotation: confirm design, size, decoration and packaging",
         ],
@@ -103,7 +104,7 @@ export const buyerGuides: BuyerGuide[] = [
     ],
     faqs: [
       { question: "How much are the mold and sample fees for a custom PU squishy?", answer: "The current custom PU mold fee is US$680 and the sample fee is US$360. The sample fee can be credited against the bulk order. Confirm the final quotation for your specification; these fees are not the finished-toy unit price." },
-      { question: "Does the 20-day sampling time include bulk production and delivery?", answer: "No. The stated 20 days is custom PU sampling time. Bulk production, inspection, packing and freight timing are confirmed separately for the approved product and order." },
+      { question: "Does the 20-day sampling time include bulk production and delivery?", answer: "No. The stated 20 days is custom PU sampling time. Typical custom PU bulk production takes another 25–30 days after sample approval. Confirm inspection, packing, freight and the final schedule for the approved product and order." },
       { question: "What is a typical MOQ for custom squishy toys?", answer: "LINHAO's typical custom PU squishy MOQ starts at 500 pieces, subject to the final design, size, decoration and packaging. This is not a universal minimum for other materials, ready-stock items or custom packaging." },
       { question: "Does each color or character count toward MOQ separately?", answer: "Often the quantity per design matters because each color, face artwork or package variant can add setup and inspection work. State both the total quantity and the split per design." },
       { question: "Can packaging have a different MOQ from the toy?", answer: "Yes. Printed bags, boxes and display trays may have supplier minimums of their own, so packaging should be planned together with the product." },
@@ -1476,7 +1477,7 @@ export const buyerGuides: BuyerGuide[] = [
     updated: "2026-09-05",
     readTime: "7 min read",
     quickAnswer:
-      "LINHAO's current custom PU sampling time is 20 days. That is the sampling stage, not the time until a bulk order arrives. Plan brief review, sample revisions, packaging approval, production, inspection and freight as separate milestones. Other materials and product types require their own sample schedule.",
+      "LINHAO's current custom PU sampling time is 20 days, followed by typical bulk production of 25–30 days after sample approval. Shipping time is separate. Plan brief review, sample revisions, packaging approval, production, inspection and freight as separate milestones. Other materials and product types require their own sample schedule.",
     keywords: [
       "custom toy production lead time",
       "custom squishy sample lead time",
@@ -1489,7 +1490,7 @@ export const buyerGuides: BuyerGuide[] = [
         heading: "A concrete custom PU sampling reference",
         paragraphs: [
           "For a custom PU squishy project, LINHAO's current stated sampling time is 20 days, with a US$360 sample fee that can be credited against the bulk order. These commercial details were confirmed on September 2, 2026; confirm the sample scope and schedule for your exact project before setting a launch date.",
-          "Ask the quotation to identify when the sampling period starts, what the sample includes and how requested revisions affect the schedule. The 20-day figure does not establish bulk-production, testing, transport or final delivery time.",
+          "Ask the quotation to identify when the sampling period starts, what the sample includes and how requested revisions affect the schedule. Typical custom PU bulk production takes 25–30 days after sample approval, as confirmed on September 5, 2026. Confirm testing, transport and the final delivery schedule separately; requested revisions and approval time must also be included in launch planning.",
         ],
       },
       {
@@ -1536,7 +1537,7 @@ export const buyerGuides: BuyerGuide[] = [
       },
     ],
     faqs: [
-      { question: "How long does a custom toy sample take?", answer: "LINHAO's current custom PU sampling time is 20 days. Confirm the scope, starting point and revision schedule for the exact design. Sampling for other materials and product types, and all bulk-production and shipping times, are confirmed separately." },
+      { question: "How long does a custom toy sample take?", answer: "LINHAO's current custom PU sampling time is 20 days. Confirm the scope, starting point and revision schedule for the exact design. Typical custom PU bulk production takes 25–30 days after sample approval; shipping time is separate. Sampling and production for other materials and product types are confirmed separately." },
       { question: "When should packaging artwork be finalized?", answer: "Start it alongside product development whenever practical, then release final print files only after the product, labels and required information are confirmed for the intended market." },
       { question: "Can production start before every detail is approved?", answer: "Only proceed when the agreed production specification identifies what is fully approved and what remains open. Unresolved artwork, packout or material decisions can create rework or delay." },
       { question: "Is a factory production date the same as the delivery date?", answer: "No. Freight booking, transport, customs and final delivery occur after production and packing are complete." },

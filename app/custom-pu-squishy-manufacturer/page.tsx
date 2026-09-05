@@ -46,7 +46,7 @@ export default function Page() {
       eyebrow="CUSTOM PU SQUISHY MANUFACTURER"
       title="Custom PU squishy manufacturing for slow-rise, original-shape programs."
       introduction="LINHAO Toys supports custom PU squishy projects from buyer artwork and shape review through sample approval, surface decoration, assortment planning and private-label packaging. The approved sample defines the finished appearance, squeeze feel and recovery behavior for production."
-      buyerNote="A typical custom PU project starts at 500 pieces. The current mold fee is US$680. The sample fee is US$360 with a 20-day sampling time, and the sample fee can be credited against the bulk order. Bulk-production timing, testing scope and final cost are confirmed for the exact specification."
+      buyerNote="A typical custom PU project starts at 500 pieces. The current mold fee is US$680. The sample fee is US$360 with a 20-day sampling time, and the sample fee can be credited against the bulk order. Typical bulk production takes 25–30 days after sample approval. Shipping time, testing scope and the final schedule are confirmed for the exact specification."
       productSlugs={[
         "custom-pu-fruit-animal-figures",
         "pu-slow-rise-animal-keychain",
@@ -55,7 +55,7 @@ export default function Page() {
         "sesame-braided-bread-pu-squishy",
         "dessert-cake-pu-squishy-keychain-assortment",
       ]}
-      lastReviewed="2026-09-02"
+      lastReviewed="2026-09-05"
       serviceType="Custom PU slow-rising squishy OEM and private-label manufacturing"
       productHeading="PU squishy directions for custom shapes and retail collections."
       productDescription="Review original fruit and animal figures, slow-rise keychains, bakery assortments, seasonal designs and food shapes as references for a buyer-defined program."
@@ -100,7 +100,7 @@ export default function Page() {
         },
         {
           title: "Confirm Production",
-          text: "Finalize production, inspection, packing and shipping terms only after the approved specification and quotation are accepted.",
+          text: "Typical custom PU bulk production takes 25–30 days after sample approval. Confirm the final production, inspection, packing and shipping schedule for the accepted specification and quotation.",
         },
       ]}
       buyerChecklist={[
@@ -168,7 +168,7 @@ export default function Page() {
         },
         {
           question: "What is the sample fee and sampling time?",
-          answer: "The current sample fee is US$360 and the stated sampling time is 20 days. The sample fee can be credited against the bulk order. Bulk-production timing is confirmed separately after the approved specification and order details are reviewed.",
+          answer: "The current sample fee is US$360 and the stated sampling time is 20 days. The sample fee can be credited against the bulk order. Typical bulk production takes 25–30 days after sample approval; shipping time is separate. Confirm the final schedule against the approved specification and order.",
         },
         {
           question: "Which testing documents can be arranged?",
