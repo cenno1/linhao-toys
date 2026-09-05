@@ -24,11 +24,35 @@ export const buyerGuides: BuyerGuide[] = [
     description:
       "Understand how mold setup, design count, material effects, printing, packaging and order quantity influence a custom squishy toy quotation.",
     eyebrow: "QUOTATION PLANNING",
-    updated: "2026-07-31",
+    updated: "2026-09-05",
     readTime: "7 min read",
-    quickAnswer: "Custom squishy MOQ is not one universal number. It is determined by mold setup, quantity per design, material and decoration steps, packaging minimums and the efficiency of the complete production plan.",
+    quickAnswer: "For LINHAO custom PU squishy projects, the typical MOQ starts at 500 pieces, the current mold fee is US$680 and the sample fee is US$360, with a stated sampling time of 20 days. The sample fee can be credited against the bulk order. These are custom-PU planning figures, not a universal MOQ or price for every squishy material or ready-stock item; the final quotation depends on the approved specification.",
     keywords: ["custom squishy toy MOQ", "squishy toy cost", "OEM squishy quotation", "custom toy mold cost", "private label squishy pricing"],
     sections: [
+      {
+        heading: "LINHAO custom PU MOQ, mold fee and sample policy",
+        paragraphs: [
+          "The following custom-PU commercial guidance was confirmed on September 2, 2026. Use it to prepare a sourcing budget, then confirm the exact shape, dimensions, design count, decoration and packaging in your quotation.",
+          "The mold fee and sample fee are separate from the finished-toy unit price. Typical custom PU bulk production takes 25–30 days after sample approval, as confirmed on September 5, 2026. Shipping time, freight, product-specific testing and the final order schedule are confirmed separately. The 20-day sampling period should not be treated as an order-to-delivery promise.",
+        ],
+        checklist: [
+          "Typical custom PU MOQ: from 500 pieces",
+          "Current mold fee: US$680",
+          "Current sample fee: US$360",
+          "Stated custom PU sampling time: 20 days",
+          "Typical custom PU bulk production: 25–30 days after sample approval",
+          "Sample fee can be credited against the bulk order",
+          "Final quotation: confirm design, size, decoration and packaging",
+        ],
+      },
+      {
+        heading: "Choose the quotation route before comparing MOQ",
+        paragraphs: [
+          "For ready-stock products, request the current quantity per SKU, color mix, carton quantity and dispatch timing. The custom-PU MOQ and development fees above do not describe a ready-stock purchase.",
+          "For an existing shape with your logo or packaging, identify what is changing: the toy, decoration, label, retail box or all of them. Ask which setup steps are required instead of assuming that every private-label order needs a new mold.",
+          "For a new custom PU shape, send the artwork, dimensions, target squeeze feel and quantity per design. Use the custom-PU figures above as planning guidance and confirm how the requested design and packout affect the final quote.",
+        ],
+      },
       {
         heading: "MOQ is a production-planning result",
         paragraphs: [
@@ -79,11 +103,16 @@ export const buyerGuides: BuyerGuide[] = [
       },
     ],
     faqs: [
-      { question: "What is a typical MOQ for custom squishy toys?", answer: "There is no universal MOQ. An existing product with a buyer label can have a different practical minimum from a new molded shape with multiple designs and printed packaging." },
+      { question: "How much are the mold and sample fees for a custom PU squishy?", answer: "The current custom PU mold fee is US$680 and the sample fee is US$360. The sample fee can be credited against the bulk order. Confirm the final quotation for your specification; these fees are not the finished-toy unit price." },
+      { question: "Does the 20-day sampling time include bulk production and delivery?", answer: "No. The stated 20 days is custom PU sampling time. Typical custom PU bulk production takes another 25–30 days after sample approval. Confirm inspection, packing, freight and the final schedule for the approved product and order." },
+      { question: "What is a typical MOQ for custom squishy toys?", answer: "LINHAO's typical custom PU squishy MOQ starts at 500 pieces, subject to the final design, size, decoration and packaging. This is not a universal minimum for other materials, ready-stock items or custom packaging." },
       { question: "Does each color or character count toward MOQ separately?", answer: "Often the quantity per design matters because each color, face artwork or package variant can add setup and inspection work. State both the total quantity and the split per design." },
       { question: "Can packaging have a different MOQ from the toy?", answer: "Yes. Printed bags, boxes and display trays may have supplier minimums of their own, so packaging should be planned together with the product." },
     ],
     relatedLinks: [
+      { label: "Review custom PU manufacturing, MOQ and sample fees", href: "/custom-pu-squishy-manufacturer" },
+      { label: "Compare ready-stock wholesale squishy toys", href: "/wholesale-squishy-toys" },
+      { label: "Plan sampling, production and shipment separately", href: "/resources/custom-toy-production-lead-time-guide" },
       { label: "Prepare a custom squishy manufacturing brief", href: "/resources/how-to-prepare-custom-squishy-toy-brief" },
       { label: "Compare real product directions", href: "/products" },
       { label: "Request quantity-based quotation options", href: "/contact" },
@@ -1445,10 +1474,10 @@ export const buyerGuides: BuyerGuide[] = [
     description:
       "Plan realistic custom toy timing by separating brief review, sampling, packaging approval, production, inspection and freight preparation instead of relying on one generic lead-time promise.",
     eyebrow: "PRODUCTION PLANNING",
-    updated: "2026-08-16",
+    updated: "2026-09-05",
     readTime: "7 min read",
     quickAnswer:
-      "Custom toy lead time is a sequence, not one fixed number. A practical plan separates artwork and brief review, sampling and revisions, packaging approval, material and production scheduling, inspection, packing and the buyer鈥檚 freight arrangement.",
+      "LINHAO's current custom PU sampling time is 20 days, followed by typical bulk production of 25–30 days after sample approval. Shipping time is separate. Plan brief review, sample revisions, packaging approval, production, inspection and freight as separate milestones. Other materials and product types require their own sample schedule.",
     keywords: [
       "custom toy production lead time",
       "custom squishy sample lead time",
@@ -1457,6 +1486,13 @@ export const buyerGuides: BuyerGuide[] = [
       "toy production schedule",
     ],
     sections: [
+      {
+        heading: "A concrete custom PU sampling reference",
+        paragraphs: [
+          "For a custom PU squishy project, LINHAO's current stated sampling time is 20 days, with a US$360 sample fee that can be credited against the bulk order. These commercial details were confirmed on September 2, 2026; confirm the sample scope and schedule for your exact project before setting a launch date.",
+          "Ask the quotation to identify when the sampling period starts, what the sample includes and how requested revisions affect the schedule. Typical custom PU bulk production takes 25–30 days after sample approval, as confirmed on September 5, 2026. Confirm testing, transport and the final delivery schedule separately; requested revisions and approval time must also be included in launch planning.",
+        ],
+      },
       {
         heading: "Separate the project stages before requesting timing",
         paragraphs: [
@@ -1501,12 +1537,14 @@ export const buyerGuides: BuyerGuide[] = [
       },
     ],
     faqs: [
-      { question: "How long does a custom toy sample take?", answer: "The timing depends on the shape, material, decoration, number of variants and required revisions. Confirm the sample scope and feedback process before relying on a launch schedule." },
+      { question: "How long does a custom toy sample take?", answer: "LINHAO's current custom PU sampling time is 20 days. Confirm the scope, starting point and revision schedule for the exact design. Typical custom PU bulk production takes 25–30 days after sample approval; shipping time is separate. Sampling and production for other materials and product types are confirmed separately." },
       { question: "When should packaging artwork be finalized?", answer: "Start it alongside product development whenever practical, then release final print files only after the product, labels and required information are confirmed for the intended market." },
       { question: "Can production start before every detail is approved?", answer: "Only proceed when the agreed production specification identifies what is fully approved and what remains open. Unresolved artwork, packout or material decisions can create rework or delay." },
       { question: "Is a factory production date the same as the delivery date?", answer: "No. Freight booking, transport, customs and final delivery occur after production and packing are complete." },
     ],
     relatedLinks: [
+      { label: "Review custom PU manufacturing and sampling", href: "/custom-pu-squishy-manufacturer" },
+      { label: "Check custom PU MOQ, mold and sample fees", href: "/resources/custom-squishy-toy-moq-cost-guide" },
       { label: "Prepare a custom squishy manufacturing brief", href: "/resources/how-to-prepare-custom-squishy-toy-brief" },
       { label: "Approve a production sample with one checklist", href: "/resources/custom-squishy-toy-sample-approval-checklist" },
       { label: "Plan packaging for wholesale or retail", href: "/resources/wholesale-squishy-toy-packaging-guide" },

@@ -17,7 +17,6 @@ import {
   getProductSpecifications,
   getProductUseCases,
   getRelatedProducts,
-  PRODUCT_MOQ,
 } from "@/lib/product-utils";
 
 const complianceDocs = [
@@ -97,29 +96,29 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                   {isReadyStock ? "Stock status" : detailsOnRequest ? "Order quantity" : "MOQ"}
                 </p>
                 <p className="mt-2 text-3xl font-black text-slate-950">
-                  {isReadyStock ? "Check stock" : detailsOnRequest ? "Confirm" : `${PRODUCT_MOQ} pcs`}
+                  {isReadyStock ? "Check stock" : "Confirm"}
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
                   {isReadyStock
                     ? "Live quantity, available colors and carton packing are confirmed with your inquiry."
                     : detailsOnRequest
                       ? "Current order quantity and packing configuration are confirmed with the quotation."
-                    : "Standard minimum for OEM sampling and bulk production. Final MOQ may vary by mold, material and packaging."}
+                    : "MOQ is confirmed for this product's design, material, decoration and packaging. Include your target quantity in the inquiry."}
                 </p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-xs font-black uppercase tracking-[0.14em] text-slate-500">
-                  {isReadyStock ? "Stock dispatch" : detailsOnRequest ? "Timing" : "Lead time"}
+                  {isReadyStock ? "Stock dispatch" : detailsOnRequest ? "Timing" : "Sampling"}
                 </p>
                 <p className="mt-2 text-3xl font-black text-slate-950">
-                  {isReadyStock ? "Confirm first" : detailsOnRequest ? "Confirm" : "3–7 days"}
+                  {isReadyStock ? "Confirm first" : "Confirm"}
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
                   {isReadyStock
                     ? "Dispatch timing is confirmed after the live-stock check and destination freight review."
                     : detailsOnRequest
                       ? "Availability, sampling or dispatch timing is confirmed after the product and destination review."
-                    : "Sample turnaround after artwork and specs are confirmed. Mass production schedule shared with quotation."}
+                    : "Sample timing is confirmed for the material, design and sample scope. Bulk production and shipping are planned separately."}
                 </p>
               </div>
             </div>
