@@ -40,6 +40,38 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "christmas-mystery-dumpling-squishy-advent-calendar": {
+    specifications: [
+      { label: "Calendar format", value: "24-gift Christmas countdown calendar; final contents and tray layout confirmed with the order" },
+      { label: "Designs shown", value: "Dumpling and bao-bun characters, Santa hats, reindeer antlers, scarves and a mixed festive squeeze-toy assortment" },
+      { label: "Material and feel", value: "Material, filling if applicable, softness and rebound confirmed against the approved sample" },
+      { label: "Dimensions", value: "Individual toy dimensions and calendar-box size confirmed with the quotation" },
+      { label: "Packaging shown", value: "Christmas window-opening calendar box; English and Polish-language artwork references are pictured" },
+      { label: "Assortment", value: "The assortment photograph and packaging illustrations show different mixes; confirm the exact 24-piece selection before ordering" },
+    ],
+    customization: [
+      "24-piece character and color selection",
+      "Window-opening calendar box and internal tray",
+      "Packaging language and seasonal artwork",
+      "Toy dimensions, material and squeeze feel",
+      "Logo, barcode and retail labeling requirements",
+      "Unit protection and outer-carton configuration",
+    ],
+    useCases: [
+      "Christmas countdown gift programs",
+      "Seasonal toy-store and gift-shop ranges",
+      "Holiday novelty and collectible assortments",
+      "Online Christmas gift-set retail",
+    ],
+    buyerBrief: [
+      "Required number of calendar sets and destination market",
+      "Preferred 24-piece character and color mix",
+      "Target toy size, material and squeeze feel",
+      "Packaging language, artwork and labeling requirements",
+      "Required receiving date and delivery destination",
+    ],
+    packagingAnswer: "The images show a 24-gift Christmas calendar format with window-opening packaging. English and Polish artwork references and a separate assortment photograph are provided. Confirm the final language, artwork, tray, exact 24-piece mix and outer-carton packing with the quotation.",
+  },
   "christmas-pu-squishy-toy-assortment": {
     specifications: [
       { label: "Material", value: "PU material stated by the owner; final material and finish confirmed against the approved sample" },
@@ -574,6 +606,13 @@ export function getProductBySlug(slug: string): Product | undefined {
 }
 
 export function getProductGallery(product: Product): ProductGalleryItem[] {
+  if (product.slug === "christmas-mystery-dumpling-squishy-advent-calendar") {
+    return [
+      { id: "hero", src: product.images.hero, label: "Assortment photograph" },
+      { id: "packaging", src: product.images.packaging!, label: "Packaging reference" },
+      { id: "detail", src: product.images.detail!, label: "Calendar opening reference" },
+    ];
+  }
   const gallery: ProductGalleryItem[] = [
     { id: "hero", src: product.images.hero, label: "Product view" },
   ];
