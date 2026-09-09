@@ -13,6 +13,7 @@ type ProductGalleryProps = {
 export default function ProductGallery({ productName, items, videoSrc }: ProductGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = items[activeIndex];
+  const imageFit = active.src.includes("dumpling-advent-calendar-") ? "object-contain" : "object-cover";
   const useOriginalImage = active.src.includes("ready-stock-halloween-butter-bar-squishy") || active.src.includes("ready-stock-chocolate-bar-squishy") || active.src.includes("squeaky-tongue-popping-animal-squishy");
 
   return (
@@ -25,7 +26,7 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
           width={1200}
           height={900}
           sizes="(max-width: 1024px) 100vw, 52vw"
-          className="h-full w-full object-cover"
+          className={`h-full w-full ${imageFit}`}
           priority
           unoptimized={useOriginalImage}
         />
@@ -51,7 +52,7 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
                   width={400}
                   height={300}
                   sizes="(max-width: 1024px) 25vw, 13vw"
-                  className="h-full w-full object-cover"
+                  className={`h-full w-full ${imageFit}`}
                   unoptimized={item.src.includes("ready-stock-halloween-butter-bar-squishy") || item.src.includes("ready-stock-chocolate-bar-squishy") || item.src.includes("squeaky-tongue-popping-animal-squishy")}
                 />
               </div>
