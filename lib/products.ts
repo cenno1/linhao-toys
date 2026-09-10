@@ -44,6 +44,32 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    slug: "christmas-mystery-dumpling-squishy-advent-calendar",
+    name: "Christmas Mystery Dumpling Squishy Advent Calendar",
+    category: "Christmas Squishy Advent Calendar / Wholesale",
+    tag: "24-Day Surprise Calendar",
+    note: "Count down to Christmas with a mystery squishy advent calendar. The 24-gift calendar presentation pairs dumpling and bao-bun characters with a colorful mix of festive squeeze-toy shapes, including Santa hats, reindeer antlers and scarf details. A seasonal gift-box format for toy stores, gift shops and holiday retail assortments. Contact us to confirm the final 24-piece mix, material, dimensions, packaging language, order quantity and delivery schedule.",
+    seoTitle: "Dumpling Squishy Advent Calendar Wholesale | 24-Day Christmas",
+    seoDescription: "Explore a 24-day Christmas mystery dumpling squishy advent calendar for wholesale holiday gifts. Request assortment, packaging and quantity-based pricing.",
+    alt: "Christmas mystery dumpling squishy advent calendar with colorful festive bun characters and mixed squeeze toys displayed on a 24-gift box",
+    keywords: [
+      "dumpling squishy advent calendar wholesale",
+      "Christmas mystery dumpling blind box",
+      "24 day squishy advent calendar",
+      "Christmas squishy gift set bulk",
+      "bao bun squishy calendar",
+      "holiday sensory toy calendar supplier",
+    ],
+    images: {
+      hero: "/images/products/dumpling-advent-calendar-assortment.png",
+      detail: "/images/products/dumpling-advent-calendar-opening.png",
+      packaging: "/images/products/dumpling-advent-calendar-packaging.png",
+    },
+    featured: true,
+    detailsOnRequest: true,
+    filterGroup: "squishy",
+  },
+  {
     slug: "christmas-pu-squishy-toy-assortment",
     name: "Christmas PU Squishy Toy Assortment",
     category: "Christmas Squishy / Wholesale",
