@@ -40,6 +40,38 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "pu-wrist-reflex-training-ball": {
+    specifications: [
+      { label: "Ball material", value: "PU material with good elasticity, as confirmed by the owner; final feel and rebound confirmed against the approved sample" },
+      { label: "Training format", value: "Ball connected to a wrist strap by an elastic return cord" },
+      { label: "Colors shown", value: "Blue, yellow, red, pink and multicolor directions; final color mix confirmed with the order" },
+      { label: "Dimensions", value: "Ball diameter, cord length and wrist-strap dimensions confirmed with the quotation" },
+      { label: "Use direction", value: "Hand-eye coordination practice, reaction drills and light recreational training" },
+      { label: "Packaging", value: "Unit protection, label, retail box or display packing confirmed with the quotation" },
+    ],
+    customization: [
+      "Ball color and mixed-color assortment",
+      "Ball diameter and target elasticity",
+      "Elastic cord length and return feel",
+      "Wrist-strap color, size and construction",
+      "Logo, label and warning artwork",
+      "Individual bag, retail box or display packing",
+    ],
+    useCases: [
+      "Hand-eye coordination practice",
+      "Reaction and reflex drills",
+      "Light recreational training",
+      "Sports, novelty and gift retail assortments",
+    ],
+    buyerBrief: [
+      "Required quantity and destination market",
+      "Preferred colors and assortment ratio",
+      "Target ball diameter and elasticity reference",
+      "Cord length and wrist-strap requirements",
+      "Packing, labels and requested delivery timing",
+    ],
+    packagingAnswer: "The supplied image shows each ball paired with a black wrist strap and elastic return cord. Confirm unit protection, strap-and-cord arrangement, labels, retail box or display packing and outer-carton details with the quotation.",
+  },
   "christmas-mystery-dumpling-squishy-advent-calendar": {
     specifications: [
       { label: "Calendar format", value: "24-gift Christmas countdown calendar; final contents and tray layout confirmed with the order" },
@@ -970,3 +1002,4 @@ export function buildProductInquiryMailtoFromForm(
 
   return `mailto:${INQUIRY_EMAIL}?subject=${encodeURIComponent(`${productName} — Inquiry`)}&body=${encodeURIComponent(body)}`;
 }
+

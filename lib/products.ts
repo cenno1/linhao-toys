@@ -44,6 +44,30 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    slug: "pu-wrist-reflex-training-ball",
+    name: "PU Wrist Reflex Training Ball with Wrist Strap",
+    category: "PU Reaction Training Ball / Wholesale",
+    tag: "Elastic Return-Cord Design",
+    note: "PU wrist reflex training ball with a wrist strap and elastic return cord. The PU ball is stated by the owner to have good elasticity, supporting hand-eye coordination practice, reaction drills and light recreational training. The supplied image shows blue, yellow, red, pink and multicolor directions. Confirm the final ball diameter, cord length, wrist-strap construction, color mix, unit packing, order quantity and supply timing with the quotation.",
+    seoTitle: "PU Wrist Reflex Training Ball Wholesale | Elastic Wrist Ball",
+    seoDescription: "Source PU wrist reflex training balls with an elastic return cord and wrist strap for coordination drills, recreational training and wholesale programs.",
+    alt: "PU wrist reflex training balls in blue yellow red pink and multicolor options with elastic return cords and black wrist straps",
+    keywords: [
+      "PU wrist reflex training ball wholesale",
+      "elastic wrist ball supplier",
+      "hand eye coordination training ball",
+      "reaction training ball with wrist strap",
+      "wrist rebound ball bulk",
+      "PU reflex ball manufacturer",
+    ],
+    images: {
+      hero: "/images/products/pu-wrist-reflex-training-ball.png",
+    },
+    featured: true,
+    detailsOnRequest: true,
+    filterGroup: "squishy",
+  },
+  {
     slug: "christmas-mystery-dumpling-squishy-advent-calendar",
     name: "Christmas Mystery Dumpling Squishy Advent Calendar",
     category: "Christmas Squishy Advent Calendar / Wholesale",
@@ -1226,3 +1250,4 @@ export const products: Product[] = [
     filterGroup: "oem",
   },
 ];
+
