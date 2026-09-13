@@ -13,7 +13,7 @@ type ProductGalleryProps = {
 export default function ProductGallery({ productName, items, videoSrc }: ProductGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = items[activeIndex];
-  const imageFit = active.src.includes("dumpling-advent-calendar-") ? "object-contain" : "object-cover";
+  const imageFit = active.src.includes("dumpling-advent-calendar-") || active.src.includes("pu-wrist-reflex-training-ball") ? "object-contain" : "object-cover";
   const useOriginalImage = active.src.includes("ready-stock-halloween-butter-bar-squishy") || active.src.includes("ready-stock-chocolate-bar-squishy") || active.src.includes("squeaky-tongue-popping-animal-squishy");
 
   return (
@@ -84,3 +84,4 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
     </div>
   );
 }
+
