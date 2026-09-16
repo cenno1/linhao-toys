@@ -44,6 +44,30 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
   {
+    "slug": "custom-pu-high-rebound-ball",
+    "name": "Custom PU High Rebound Ball",
+    "category": "PU Elastic Ball / Wholesale",
+    "tag": "Custom Sizes & Colors",
+    "note": "A high-elasticity PU ball with a colorful outer design and contrasting black circular details. Customize the ball size and color to suit your retail range, promotional project or wholesale assortment. The image shows red, blue, green, yellow, orange and pink options. Contact us with your preferred diameter, colors and quantity to discuss samples, branding and packaging.",
+    "seoTitle": "Custom PU High Rebound Ball | Custom Sizes & Colors",
+    "seoDescription": "Source high-elasticity PU balls with custom sizes and colors. Explore wholesale assortments, branding and packaging options with LINHAO Toys.",
+    "alt": "Red PU high rebound ball held in a hand with blue green yellow orange and pink balls in the background",
+    "keywords": [
+      "custom PU high rebound ball",
+      "high elasticity PU ball wholesale",
+      "custom size PU ball",
+      "custom color elastic ball",
+      "PU bouncy ball supplier",
+      "promotional PU ball"
+    ],
+    "images": {
+      "hero": "/images/products/custom-pu-high-rebound-ball.png"
+    },
+    "featured": true,
+    "detailsOnRequest": true,
+    "filterGroup": "squishy"
+  },
+  {
     slug: "pu-wrist-reflex-training-ball",
     name: "PU Wrist Reflex Training Ball with Wrist Strap",
     category: "PU Reaction Training Ball / Wholesale",
