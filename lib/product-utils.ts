@@ -40,6 +40,56 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "custom-pu-high-rebound-ball": {
+    "specifications": [
+      {
+        "label": "Material",
+        "value": "PU with high elasticity"
+      },
+      {
+        "label": "Size",
+        "value": "Custom ball sizes available; specify your required diameter for quotation"
+      },
+      {
+        "label": "Colors",
+        "value": "Custom colors available; red, blue, green, yellow, orange and pink are shown"
+      },
+      {
+        "label": "Design",
+        "value": "Colorful outer surface with contrasting black circular details"
+      },
+      {
+        "label": "Rebound and feel",
+        "value": "Confirm the required elasticity, squeeze feel and rebound against an approved sample"
+      },
+      {
+        "label": "Branding and packaging",
+        "value": "Logo placement, labels and packing options subject to artwork and quotation"
+      }
+    ],
+    "customization": [
+      "Custom ball diameter and size",
+      "Custom colors and mixed-color assortments",
+      "Elasticity and rebound requirements for sample review",
+      "Logo and branding options for feasibility review",
+      "Private-label cards, bags or boxes",
+      "Retail assortment and outer-carton packing"
+    ],
+    "useCases": [
+      "Toy and novelty retail assortments",
+      "Promotional and branded gift programs",
+      "Recreational play",
+      "Wholesale mixed-color ball collections"
+    ],
+    "buyerBrief": [
+      "Target diameter and required quantity",
+      "Preferred colors or color references",
+      "Desired elasticity and rebound sample",
+      "Logo artwork and packaging preferences",
+      "Destination market and required delivery date"
+    ],
+    "packagingAnswer": "Contact us to discuss individual bags, retail boxes, display packing, labels and outer-carton requirements. Packaging availability and pricing are confirmed with the quotation."
+  },
   "pu-wrist-reflex-training-ball": {
     specifications: [
       { label: "Ball material", value: "PU material with good elasticity, as confirmed by the owner; final feel and rebound confirmed against the approved sample" },
