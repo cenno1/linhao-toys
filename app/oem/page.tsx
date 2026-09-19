@@ -106,6 +106,7 @@ export default function Page() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/contact" className="btn btn-primary">Send a project brief</Link>
+            <Link href="/custom-pu-squishy-case-studies" className="btn border border-white/30 text-white">See real custom PU cases</Link>
             <Link href="/resources/how-to-prepare-custom-squishy-toy-brief" className="btn border border-white/30 text-white">Use the brief checklist</Link>
           </div>
         </div>

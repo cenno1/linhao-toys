@@ -27,6 +27,7 @@ export default function Footer() {
         <div>
           <b>Company</b>
           <Link href="/oem">OEM / ODM</Link>
+          <Link href="/custom-pu-squishy-case-studies">Custom PU Case Studies</Link>
           <Link href="/factory">Factory</Link>
           <Link href="/about">About LINHAO</Link>
           <Link href="/resources">Buyer Resources</Link>
