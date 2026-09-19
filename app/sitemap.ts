@@ -25,11 +25,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const reviewedPaths: Record<string, string> = {
     "": "2026-09-05",
     "/resources": "2026-09-05",
-    "/custom-pu-squishy-manufacturer": "2026-09-05",
+    "/custom-pu-squishy-manufacturer": "2026-09-19",
+    "/custom-pu-squishy-case-studies": "2026-09-19",
+    "/oem": "2026-09-19",
   };
   const staticPaths = [
     "",
     "/products",
+    "/custom-pu-squishy-case-studies",
     "/resources",
     "/custom-squishy-toy-manufacturer",
     "/custom-pu-squishy-manufacturer",

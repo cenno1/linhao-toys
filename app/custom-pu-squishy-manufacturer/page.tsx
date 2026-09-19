@@ -55,7 +55,7 @@ export default function Page() {
         "sesame-braided-bread-pu-squishy",
         "dessert-cake-pu-squishy-keychain-assortment",
       ]}
-      lastReviewed="2026-09-05"
+      lastReviewed="2026-09-19"
       serviceType="Custom PU slow-rising squishy OEM and private-label manufacturing"
       productHeading="PU squishy directions for custom shapes and retail collections."
       productDescription="Review original fruit and animal figures, slow-rise keychains, bakery assortments, seasonal designs and food shapes as references for a buyer-defined program."
@@ -114,6 +114,11 @@ export default function Page() {
         "Any product-specific testing or documentation requested by your buyer",
       ]}
       relatedPages={[
+        {
+          title: "Real Custom PU Cases",
+          text: "See actual character, robot and strawberry designs with customizable appearance and recovery speed. MOQ from 500 pieces.",
+          href: "/custom-pu-squishy-case-studies",
+        },
         {
           title: "Custom Squishy Manufacturing",
           text: "Compare the broader OEM route for PU, TPR and other sensory squishy programs.",
