@@ -96,7 +96,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
                   {isReadyStock ? "Stock status" : detailsOnRequest ? "Order quantity" : "MOQ"}
                 </p>
                 <p className="mt-2 text-3xl font-black text-slate-950">
-                  {isReadyStock ? "Check stock" : "Confirm"}
+                  {isReadyStock ? "Check stock" : product.minimumOrderQuantity ? `${product.minimumOrderQuantity} pieces` : "Confirm"}
                 </p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">
                   {isReadyStock

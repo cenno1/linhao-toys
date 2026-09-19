@@ -128,10 +128,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       return {
         url: absoluteUrl(`/products/${product.slug}`),
-        lastModified:
+        lastModified: product.lastModified ?? (
           product.detailsOnRequest || product.availability === "ready-stock"
             ? SITE_LAST_MODIFIED
-            : "2026-09-05",
+            : "2026-09-05"),
         changeFrequency: "monthly" as const,
         priority: 0.7,
         images: [new URL(product.images.hero, SITE_URL).toString()],

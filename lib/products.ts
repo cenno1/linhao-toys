@@ -25,6 +25,9 @@ export type Product = {
   keywords: string[];
   images: ProductImageSet;
   video?: string;
+  videoUploadDate?: string;
+  lastModified?: string;
+  minimumOrderQuantity?: number;
   featured?: boolean;
   bestseller?: boolean;
   availability?: "ready-stock";
@@ -43,6 +46,34 @@ function images(slug: string, hero: string): ProductImageSet {
 }
 
 export const products: Product[] = [
+  {
+    "slug": "premium-custom-pu-character-figure",
+    "name": "Premium Custom PU Character Figure",
+    "category": "Custom PU Character / OEM",
+    "tag": "Fine Detail & Paint Finish",
+    "note": "A premium custom PU character figure with clearly defined facial features, a sculpted cap, crisp clothing lines and finely applied painted details. The photographed design combines expressive eyes, cap artwork, a white top, black trousers and silver-tone decorative accents. Customize the character appearance, colors and recovery speed to match your project. View the actual product photo and demonstration video, then send your artwork and requirements for a quotation. MOQ from 500 pieces.",
+    "seoTitle": "Premium Custom PU Character Figure | Detailed Paint Finish",
+    "seoDescription": "Custom PU character figures with clear sculpted lines, fine painted details and customizable appearance and recovery speed. MOQ from 500 pieces. See photo and video.",
+    "alt": "Custom PU character figure with a gray printed cap, expressive eyes, white shirt, black trousers and silver-tone details",
+    "keywords": [
+      "custom PU character figure",
+      "premium PU squishy figure",
+      "custom character squishy manufacturer",
+      "detailed painted PU toy",
+      "custom mascot figure",
+      "OEM PU character toy"
+    ],
+    "images": {
+      "hero": "/images/products/premium-custom-pu-character-figure.jpg"
+    },
+    "video": "/videos/premium-custom-pu-character-figure.mp4",
+    "videoUploadDate": "2026-09-19",
+    "lastModified": "2026-09-19",
+    "minimumOrderQuantity": 500,
+    "featured": true,
+    "detailsOnRequest": true,
+    "filterGroup": "squishy"
+  },
   {
     "slug": "custom-pu-high-rebound-ball",
     "name": "Custom PU High Rebound Ball",

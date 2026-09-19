@@ -40,6 +40,56 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "premium-custom-pu-character-figure": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU"
+    },
+    {
+      "label": "Design",
+      "value": "Custom character shape with clearly defined facial features, cap, clothing and accessory details"
+    },
+    {
+      "label": "Surface finish",
+      "value": "Fine painted details, contrasting color areas and silver-tone decorative accents on the photographed reference"
+    },
+    {
+      "label": "Appearance customization",
+      "value": "Character form, facial expression, outfit, colors and artwork developed from your design brief"
+    },
+    {
+      "label": "Recovery speed",
+      "value": "Customizable; confirm the required recovery behavior against a physical sample"
+    },
+    {
+      "label": "Size",
+      "value": "Specify your target dimensions for design review and quotation"
+    }
+  ],
+  "customization": [
+    "Original character shape and facial expression",
+    "Outfit, cap and sculpted accessory details",
+    "Color scheme and surface decoration",
+    "Custom artwork and print placement",
+    "Recovery speed confirmed through sampling",
+    "Dimensions and packaging requirements for review"
+  ],
+  "useCases": [
+    "Custom character and mascot merchandise",
+    "Brand and promotional gift projects",
+    "Character-led retail collections",
+    "Wholesale custom PU toy programs"
+  ],
+  "buyerBrief": [
+    "Character artwork or clear reference images",
+    "Target size and quantity, starting from 500 pieces",
+    "Required colors and critical paint details",
+    "Preferred recovery speed or a reference video",
+    "Packaging requirements, destination and target delivery date"
+  ],
+  "packagingAnswer": "Send your preferred individual bag, printed box, insert or retail display requirements. The packaging format and quotation are confirmed for your design."
+},
   "custom-pu-high-rebound-ball": {
     "specifications": [
       {
@@ -796,7 +846,7 @@ export function getProductSpecifications(product: Product): ProductSpecification
     return [
       { label: "Product", value: product.name },
       ...(profile?.specifications ?? []),
-      { label: "Order quantity", value: "Confirmed with requested quantity and packing" },
+      { label: "Order quantity", value: product.minimumOrderQuantity ? `From ${product.minimumOrderQuantity} pieces` : "Confirmed with requested quantity and packing" },
       { label: "Supply timing", value: "Confirmed after availability, packing and destination review" },
     ];
   }
@@ -907,7 +957,7 @@ export function getProductFAQs(product: Product) {
       },
       {
         question: `What is the order quantity for ${product.name}?`,
-        answer: "Send the quantity you need and the destination market. We will confirm the practical order quantity together with the available packing configuration.",
+        answer: product.minimumOrderQuantity ? `MOQ starts at ${product.minimumOrderQuantity} pieces. Send your design, quantity and destination for a quotation.` : "Send the quantity you need and the destination market. We will confirm the practical order quantity together with the available packing configuration.",
       },
       {
         question: "Is the color-box packaging included?",
