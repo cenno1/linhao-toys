@@ -13,7 +13,7 @@ type ProductGalleryProps = {
 export default function ProductGallery({ productName, items, videoSrc }: ProductGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = items[activeIndex];
-  const imageFit = active.src.includes("dumpling-advent-calendar-") || active.src.includes("pu-wrist-reflex-training-ball") || active.src.includes("custom-pu-high-rebound-ball") ? "object-contain" : "object-cover";
+  const imageFit = active.src.includes("dumpling-advent-calendar-") || active.src.includes("pu-wrist-reflex-training-ball") || active.src.includes("custom-pu-high-rebound-ball") || active.src.includes("premium-custom-pu-character-figure") ? "object-contain" : "object-cover";
   const useOriginalImage = active.src.includes("ready-stock-halloween-butter-bar-squishy") || active.src.includes("ready-stock-chocolate-bar-squishy") || active.src.includes("squeaky-tongue-popping-animal-squishy");
 
   return (
@@ -71,7 +71,7 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
             preload="metadata"
             poster={items[0].src}
             aria-label={`${productName} squeeze and product demonstration video`}
-            className="aspect-video w-full object-cover"
+            className={videoSrc.includes("premium-custom-pu-character-figure") ? "mx-auto aspect-[9/16] max-h-[720px] w-full object-contain" : "aspect-video w-full object-cover"}
           >
             <source src={videoSrc} type="video/mp4" />
             Your browser does not support embedded video.
