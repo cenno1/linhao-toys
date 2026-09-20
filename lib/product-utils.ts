@@ -40,6 +40,64 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "ultra-slow-rising-realistic-pu-food-squishy": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU"
+    },
+    {
+      "label": "Recovery",
+      "value": "Ultra-slow rising after compression; confirm the preferred recovery behavior against a physical sample"
+    },
+    {
+      "label": "Touch",
+      "value": "Soft, moist-feeling tactile finish designed to evoke the feel of real food"
+    },
+    {
+      "label": "Appearance",
+      "value": "Lifelike food forms, textured surfaces and food-inspired colors"
+    },
+    {
+      "label": "Styles shown",
+      "value": "Textured bread bun, golden round design, brown square design, strawberry and butter stick"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Confirm dimensions and weight for the selected styles with the quotation"
+    },
+    {
+      "label": "Assortment",
+      "value": "Select styles and quantities for quotation; the photographs show series options"
+    },
+    {
+      "label": "Product type",
+      "value": "Non-edible food-shaped squishy toys"
+    }
+  ],
+  "customization": [
+    "Custom food shapes and dimensions for review",
+    "Food-inspired colors and surface details",
+    "Ultra-slow recovery and softness targets",
+    "Moist-feeling tactile finish for sample approval",
+    "Printed artwork and branding requirements",
+    "Individual packaging and wholesale assortments"
+  ],
+  "useCases": [
+    "Food-themed novelty and gift collections",
+    "Bakery and fruit squishy retail assortments",
+    "Custom branded food-shape toy projects",
+    "Wholesale tactile squeeze-toy collections"
+  ],
+  "buyerBrief": [
+    "Selected food styles or your own design references",
+    "Target dimensions and quantity for each style",
+    "Preferred ultra-slow recovery and tactile feel",
+    "Required colors, texture details and artwork",
+    "Packaging format, destination and delivery target"
+  ],
+  "packagingAnswer": "Individual packaging, printed boxes, display packing and assortment quantities can be discussed for the selected styles. Confirm the final packaging and quotation before ordering."
+},
   "premium-custom-pu-character-figure": {
   "specifications": [
     {
@@ -738,6 +796,7 @@ export function getProductBySlug(slug: string): Product | undefined {
 }
 
 export function getProductGallery(product: Product): ProductGalleryItem[] {
+  if (product.gallery?.length) return product.gallery;
   if (product.slug === "christmas-mystery-dumpling-squishy-advent-calendar") {
     return [
       { id: "hero", src: product.images.hero, label: "Assortment photograph" },

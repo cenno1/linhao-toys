@@ -44,6 +44,7 @@ export default function Page() {
       introduction="Build bakery, fruit, animal, mascot and keychain squishy programs around an approved PU slow-rise feel. LINHAO coordinates original shape development, recovery targets, color and face artwork, optional scent review and private-label retail packaging."
       buyerNote="Recovery time changes with material, product size, wall thickness, temperature and test method. Approve a physical reference and define how performance will be checked before bulk production."
       productSlugs={[
+        "ultra-slow-rising-realistic-pu-food-squishy",
         "bakery-slow-rise-squishy-assortment",
         "pu-slow-rise-animal-keychain",
         "custom-pu-fruit-animal-figures",

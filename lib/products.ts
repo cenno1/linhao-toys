@@ -24,6 +24,7 @@ export type Product = {
   alt: string;
   keywords: string[];
   images: ProductImageSet;
+  gallery?: { id: string; src: string; label: string }[];
   video?: string;
   videoUploadDate?: string;
   lastModified?: string;
@@ -46,6 +47,62 @@ function images(slug: string, hero: string): ProductImageSet {
 }
 
 export const products: Product[] = [
+  {
+    "slug": "ultra-slow-rising-realistic-pu-food-squishy",
+    "name": "Ultra-Slow-Rising Realistic PU Food Squishy Series",
+    "category": "Realistic PU Food Squishy / Wholesale",
+    "tag": "Ultra-Slow Recovery & Moist Feel",
+    "note": "A highly realistic PU food squishy series combining lifelike food shapes, detailed surface textures and ultra-slow recovery after squeezing. The soft, moist-feeling touch is designed to evoke the feel of real food. Explore five photographed styles, including textured bread, a golden round design, a brown square design, strawberry and butter stick, and watch the actual squeeze demonstration. Discuss custom shapes, colors, surface details and recovery preferences for your collection. MOQ from 500 pieces; confirm your selected styles and quantities when requesting a quotation. These are non-edible squishy toys.",
+    "seoTitle": "Realistic PU Food Squishies | Ultra-Slow Rising & Moist Feel",
+    "seoDescription": "Explore realistic PU food squishies with ultra-slow recovery and a soft, moist-feeling touch. Five photographed styles and a squeeze video. MOQ from 500 pieces.",
+    "alt": "Highly realistic textured golden bread bun PU squishy from the ultra-slow-rising food series",
+    "keywords": [
+      "realistic PU food squishy",
+      "ultra slow rising squishy",
+      "moist feel food squishy",
+      "realistic bread squishy wholesale",
+      "butter stick squishy",
+      "strawberry PU squishy",
+      "custom food squishy manufacturer"
+    ],
+    "images": {
+      "hero": "/images/products/ultra-slow-rising-realistic-pu-food-squishy/textured-bun.jpg"
+    },
+    "gallery": [
+      {
+        "id": "textured-bun",
+        "label": "Textured bread bun",
+        "src": "/images/products/ultra-slow-rising-realistic-pu-food-squishy/textured-bun.jpg"
+      },
+      {
+        "id": "golden-round",
+        "label": "Golden round design",
+        "src": "/images/products/ultra-slow-rising-realistic-pu-food-squishy/golden-round.jpg"
+      },
+      {
+        "id": "brown-square",
+        "label": "Brown square design",
+        "src": "/images/products/ultra-slow-rising-realistic-pu-food-squishy/brown-square.jpg"
+      },
+      {
+        "id": "strawberry",
+        "label": "Strawberry",
+        "src": "/images/products/ultra-slow-rising-realistic-pu-food-squishy/strawberry.jpg"
+      },
+      {
+        "id": "butter-stick",
+        "label": "Butter stick",
+        "src": "/images/products/ultra-slow-rising-realistic-pu-food-squishy/butter-stick.jpg"
+      }
+    ],
+    "video": "/videos/ultra-slow-rising-realistic-pu-food-squishy.mp4",
+    "videoUploadDate": "2026-09-20",
+    "lastModified": "2026-09-20",
+    "minimumOrderQuantity": 500,
+    "featured": true,
+    "detailsOnRequest": true,
+    "filterGroup": "squishy"
+  },
   {
     "slug": "premium-custom-pu-character-figure",
     "name": "Premium Custom PU Character Figure",
