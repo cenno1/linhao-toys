@@ -10,6 +10,7 @@ type FilterOption = { label: string; value: "all" | ProductFilterGroup };
 type ProductShowcaseProps = {
   initialFilter?: FilterOption["value"];
   productSlugs?: string[];
+  prioritySlugs?: string[];
   showFilters?: boolean;
   limit?: number;
   showCatalogLink?: boolean;
@@ -30,6 +31,7 @@ const filters: FilterOption[] = [
 export default function ProductShowcase({
   initialFilter = "all",
   productSlugs,
+  prioritySlugs,
   showFilters = true,
   limit,
   showCatalogLink = false,
@@ -51,9 +53,19 @@ export default function ProductShowcase({
         ? filtered.filter((product) => productSlugs.includes(product.slug))
         : filtered;
 
-      return limit ? selectedProducts.slice(0, limit) : selectedProducts;
+      // Rank only the requested surface; preserve catalog order for other callers.
+      const priority = new Map(prioritySlugs?.map((slug, index) => [slug, index]));
+      const orderedProducts = prioritySlugs
+        ? [...selectedProducts].sort(
+            (a, b) =>
+              (priority.get(a.slug) ?? Number.MAX_SAFE_INTEGER) -
+              (priority.get(b.slug) ?? Number.MAX_SAFE_INTEGER),
+          )
+        : selectedProducts;
+
+      return limit ? orderedProducts.slice(0, limit) : orderedProducts;
     },
-    [activeFilter, limit, productSlugs],
+    [activeFilter, limit, productSlugs, prioritySlugs],
   );
 
   return (
@@ -81,8 +93,7 @@ export default function ProductShowcase({
           ))}
         </div>}
         <div className="v7-product-grid">
-          {visibleProducts.map((p) => {
-            const index = products.findIndex((item) => item.slug === p.slug);
+          {visibleProducts.map((p, index) => {
 
             return (
               <article className="v7-card" key={p.slug}>
