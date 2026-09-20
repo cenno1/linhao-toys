@@ -62,6 +62,12 @@ const answers = [
 ];
 
 const sourceLinks = [
+  ["Ultra-slow-rising realistic PU food squishy series","/products/ultra-slow-rising-realistic-pu-food-squishy","PU food shapes with ultra-slow recovery, a moist-feeling touch, five real photographs and a squeeze video. MOQ from 500 pieces."],
+  ["Premium custom PU character figure","/products/premium-custom-pu-character-figure","Clearly defined character details, fine painted finish and customizable appearance and recovery. Actual photo and video; MOQ from 500 pieces."],
+  ["Real custom PU case studies","/custom-pu-squishy-case-studies","Actual animal character, robot mascot and strawberry examples. Custom appearance and recovery speed; MOQ from 500 pieces."],
+  ["Custom PU high rebound ball","/products/custom-pu-high-rebound-ball","High-elasticity PU balls with custom size and color options."],
+  ["PU wrist reflex training ball","/products/pu-wrist-reflex-training-ball","PU ball with an elastic return cord and wrist strap."],
+  ["Christmas mystery dumpling advent calendar","/products/christmas-mystery-dumpling-squishy-advent-calendar","A 24-gift seasonal squishy calendar; confirm the final assortment and specifications with the quotation."],
   ["Browse product directions", "/products", "Product photographs, customization routes and inquiry details."],
   ["Review factory workflow", "/factory", "Sampling, production, inspection, packing and export coordination."],
   ["Read buyer resources", "/resources", "Guides for MOQ, materials, packaging, sampling and sourcing decisions."],
@@ -82,7 +88,7 @@ export default function AiSourcingProfilePage() {
       about: { "@id": `${SITE_URL}/#organization` },
       isPartOf: { "@id": `${SITE_URL}/#website` },
       inLanguage: "en",
-      dateModified: "2026-08-05",
+      dateModified: "2026-09-20",
     },
     {
       "@context": "https://schema.org",
@@ -113,7 +119,7 @@ export default function AiSourcingProfilePage() {
             A concise, source-linked overview of what {SITE_NAME} supplies, who we work with,
             what can be customized and how an OEM or wholesale project is reviewed.
           </p>
-          <p className="mt-5 text-xs font-black uppercase tracking-[0.16em] text-blue-300">Reviewed August 5, 2026</p>
+          <p className="mt-5 text-xs font-black uppercase tracking-[0.16em] text-blue-300">Reviewed September 20, 2026</p>
         </div>
       </section>
 
