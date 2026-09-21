@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import TrustStrip from "@/components/TrustStrip";
@@ -42,13 +43,47 @@ export const metadata: Metadata = {
   },
 };
 
+// Google Search Console, Web, 2026-08-22 through 2026-09-18.
+// Clicks descending, then impressions descending. Unreported products retain catalog order.
+const homepagePrioritySlugs = [
+  "ready-stock-highland-cow-tpr-squishy",
+  "transparent-gel-cube-squishy",
+  "ready-stock-halloween-butter-bar-squishy",
+  "ready-stock-chocolate-bar-squishy",
+  "dumpling-squishy-blind-box",
+  "christmas-mystery-dumpling-squishy-advent-calendar",
+  "squeaky-tongue-popping-animal-squishy",
+  "custom-tpr-popsicle-butter-cube-squishy",
+  "glitter-basket-blue",
+  "glitter-bao-bun",
+  "custom-jumbo-ghost-squishy",
+  "ready-stock-cheese-cube-squishy",
+  "comfort-cat-plush",
+  "tennis-ball-plush-keychain"
+];
+
+const sourcingRoutes = [
+  { href: "/custom-squishy-toy-manufacturer", title: "Custom squishy toys", text: "Develop your own shape, colors and packaging.", action: "Explore custom manufacturing" },
+  { href: "/products", title: "Wholesale product catalog", text: "Compare real samples and product details.", action: "Browse all products" },
+  { href: "/trending-squishy-toys", title: "Trending squishy styles", text: "Explore product directions for your next collection.", action: "Explore trending styles" },
+];
+
 export default function Home() {
   return (
     <main>
       <Header />
       <Hero />
       <TrustStrip />
-      <ProductShowcase limit={30} showCatalogLink />
+      <nav className="shell grid gap-3 py-6 md:grid-cols-3" aria-label="Product sourcing options">
+        {sourcingRoutes.map((route) => (
+          <Link key={route.href} href={route.href} className="rounded-2xl border border-slate-200 bg-white p-5 transition-colors hover:border-blue-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600">
+            <span className="block text-lg font-bold text-slate-950">{route.title}</span>
+            <span className="mt-2 block text-sm leading-6 text-slate-600">{route.text}</span>
+            <span className="mt-3 block text-sm font-bold text-blue-600">{route.action} →</span>
+          </Link>
+        ))}
+      </nav>
+      <ProductShowcase prioritySlugs={homepagePrioritySlugs} limit={30} showCatalogLink />
       <Capabilities />
       <FactoryDirectComparison />
       <FactoryStory />

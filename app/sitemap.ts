@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Keep dates tied to material page changes, not the date of each build.
   const reviewedPaths: Record<string, string> = {
     "/ai-sourcing-profile": "2026-09-20",
-    "": "2026-09-05",
+    "": "2026-09-20",
     "/resources": "2026-09-05",
     "/custom-pu-squishy-manufacturer": "2026-09-19",
     "/custom-pu-squishy-case-studies": "2026-09-19",
