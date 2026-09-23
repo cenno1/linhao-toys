@@ -18,6 +18,149 @@ export type BuyerGuide = {
 };
 
 export const buyerGuides: BuyerGuide[] = [
+{
+  "slug": "custom-pu-squishy-toys-feel-slow-rise-design",
+  "title": "Custom PU Squishy Toys: A Buyer’s Guide to Feel, Slow Rise and Design",
+  "seoTitle": "Custom PU Squishy Toys: Feel, Slow Rise & Design Guide",
+  "description": "Plan custom PU squishy toys with the right surface feel, recovery speed and character details. Explore real examples and prepare a quotation brief. MOQ from 500.",
+  "eyebrow": "CUSTOM PU BUYER GUIDE",
+  "updated": "2026-09-23",
+  "readTime": "7 min read",
+  "quickAnswer": "Specify the PU material, shape, surface feel and recovery speed separately, then approve a physical sample against agreed criteria. LINHAO offers customizable PU appearance and recovery speed, with orders starting from 500 pieces.",
+  "keywords": [
+    "custom squishy toys",
+    "custom PU squishy toys",
+    "slow rising squishy toys",
+    "custom squishy manufacturer",
+    "PU food squishy"
+  ],
+  "sections": [
+    {
+      "heading": "Start with the feel as well as the shape",
+      "paragraphs": [
+        "Custom squishy toys should do more than match a drawing. They should also deliver the squeeze, surface feel and recovery speed your customers expect. For a PU squishy project, approving the appearance is only one part of approving the product.",
+        "LINHAO Toys offers custom PU designs with customizable appearance and recovery speed, with orders starting from 500 pieces. This guide explains what to include in a product brief and what to compare when reviewing samples."
+      ]
+    },
+    {
+      "heading": "What squishy buyers are asking on Reddit",
+      "paragraphs": [
+        "Public discussions offer useful questions for product development. In one discussion about a butter-shaped squishy, a buyer tried to find a particular soft texture and slow recovery that looked similar to other products but felt different. Another discussion about non-sticky squishies focused on surface tackiness and the inconvenience of frequent maintenance.",
+        "These are individual experiences across different products and materials, not laboratory findings or reviews of LINHAO Toys. For custom buyers, the practical lesson is to describe the intended feel as carefully as the intended shape."
+      ]
+    },
+    {
+      "heading": "1. Specify PU rather than relying on the word “squishy”",
+      "paragraphs": [
+        "PU means polyurethane. However, the broad retail term “squishy toy” can refer to products with different materials and constructions. Two toys with similar food shapes may feel very different when squeezed.",
+        "Start a custom squishy toys brief by naming the intended material and attaching a reference image or sample. If a reference product’s material is unknown, describe what you like about it instead of guessing its formula.",
+        "Separate three requirements: how easily the toy compresses, how the surface feels against the hand, and how it returns to its original shape. A product photo alone cannot establish all three."
+      ]
+    },
+    {
+      "heading": "2. Agree on what “slow rising” means for your project",
+      "paragraphs": [
+        "“Soft,” “slow rising” and “ultra-slow rising” are useful descriptions, but they do not define an exact acceptance standard. One buyer may want a long-lasting squeeze impression; another may prefer a quicker reset for repeated squeezing.",
+        "When reviewing a sample, agree on a repeatable demonstration: the part being squeezed, the amount of compression, how long it is held, and what counts as recovered. Record the release and recovery in one continuous video at normal speed. Agree on acceptable variation with the supplier before production.",
+        "LINHAO’s realistic PU food squishy series illustrates an ultra-slow-rising product direction. Its soft, moist-feeling touch describes a tactile effect; it does not mean the toy is real food or contains liquid. The products are non-edible toys."
+      ]
+    },
+    {
+      "heading": "3. Evaluate surface feel separately from softness",
+      "paragraphs": [
+        "A buyer looking for a dry-feeling finish may not enjoy the same texture as a buyer seeking a moist-feeling food squishy. Neither preference can be communicated reliably with “make it softer” alone.",
+        "Ask to handle the sample and describe the desired surface clearly. Check whether it feels tacky, whether it leaves a noticeable residue, and whether the feel remains acceptable during the agreed sample evaluation. Request care instructions for the specific product rather than applying cleaning or powdering advice intended for another material.",
+        "This turns the Reddit discussion about stickiness into a useful purchasing question: what surface experience should the finished product provide?"
+      ]
+    },
+    {
+      "heading": "4. Balance character detail with a squeezable design",
+      "paragraphs": [
+        "Faces, clothing, color boundaries and small accessories can make a custom character recognizable. Review these details both before and after squeezing the sample.",
+        "For example, the premium custom PU character figure shows defined facial features and painted clothing details. A custom brief can identify which features must remain visually clear and which details may be simplified during sample development.",
+        "Buyers also discuss durability in Reddit conversations about slow-rising toys. Those anecdotes do not predict the life of a different product. They do suggest a worthwhile sample check: examine narrow sections and decorated areas after repeated squeezing under an agreed test procedure. Avoid assuming that every shape or finish will perform identically."
+      ]
+    },
+    {
+      "heading": "5. Approve branding on the actual sample",
+      "paragraphs": [
+        "A promotional-products discussion raised difficulties with printing on soft squishy surfaces and considered branding the packaging instead. It covered squishy products broadly and should not be read as a rule about every PU finish.",
+        "For your project, ask which decoration method suits the selected design. Compare the logo’s position, legibility and appearance on a physical sample, then agree on how it will be evaluated after handling. If packaging carries important branding, include the packaging artwork in the approval process too."
+      ]
+    },
+    {
+      "heading": "What to send for a custom PU squishy quotation",
+      "paragraphs": [
+        "Prepare the following information:",
+        "LINHAO Toys accepts custom PU inquiries from 500 pieces. Final specifications, pricing and production arrangements should be confirmed for the individual project.",
+        "Explore our custom PU squishy case studies for animal, robot and fruit-shaped examples. For a different product direction, see our custom PU high-rebound ball, with customizable sizes and colors. A high-rebound ball and an ultra-slow-rising squishy serve different feel requirements, so identify the intended experience before choosing the design."
+      ],
+      "checklist": [
+        "Your artwork or reference images and intended product shape.",
+        "Target dimensions and preferred colors.",
+        "Desired squeeze resistance, surface feel and recovery speed.",
+        "Order quantity and any packaging or branding requirements.",
+        "Intended market, intended users and required product documentation."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can custom squishy toys have different recovery speeds?",
+      "answer": "Yes. LINHAO offers customizable recovery speed for PU squishy projects. Describe the desired result with a reference sample or normal-speed video and confirm it through sample approval."
+    },
+    {
+      "question": "Can I customize the appearance?",
+      "answer": "Yes. Custom appearance and colors can be discussed for your PU project. Send the artwork and dimensions so the design can be reviewed."
+    },
+    {
+      "question": "Does a realistic food squishy feel like real food?",
+      "answer": "The featured PU food series is designed with a realistic appearance and a soft, moist-feeling touch. The final feel should be judged from the actual sample. These are non-edible toys."
+    },
+    {
+      "question": "What is the minimum order quantity?",
+      "answer": "Custom PU inquiries start from 500 pieces. Confirm the requirements for your selected design when requesting a quotation."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "discussion about a butter-shaped squishy",
+      "href": "https://www.reddit.com/r/fidgettoys/comments/1url0xg/help_me_find_the_exact_material_of_this_fidget/"
+    },
+    {
+      "label": "discussion about non-sticky squishies",
+      "href": "https://www.reddit.com/r/fidgettoys/comments/1ukmx5u/wanted_to_find_non_sticky_squishy_fidget_toy/"
+    },
+    {
+      "label": "realistic PU food squishy series",
+      "href": "/products/ultra-slow-rising-realistic-pu-food-squishy"
+    },
+    {
+      "label": "premium custom PU character figure",
+      "href": "/products/premium-custom-pu-character-figure"
+    },
+    {
+      "label": "Reddit conversations about slow-rising toys",
+      "href": "https://www.reddit.com/r/fidgettoys/comments/1g7nj7f"
+    },
+    {
+      "label": "promotional-products discussion",
+      "href": "https://www.reddit.com/r/promotionalproducts/comments/1vf9db1/i_found_a_solution_for_printing_this_squishy_toy/"
+    },
+    {
+      "label": "custom PU squishy case studies",
+      "href": "/custom-pu-squishy-case-studies"
+    },
+    {
+      "label": "custom PU high-rebound ball",
+      "href": "/products/custom-pu-high-rebound-ball"
+    },
+    {
+      "label": "Contact LINHAO Toys",
+      "href": "/contact"
+    }
+  ]
+},
   {
     slug: "custom-squishy-toy-moq-cost-guide",
     title: "Custom Squishy Toy MOQ and Cost Drivers: A Buyer’s Guide",
