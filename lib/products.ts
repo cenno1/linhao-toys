@@ -47,6 +47,49 @@ function images(slug: string, hero: string): ProductImageSet {
 }
 
 export const products: Product[] = [
+{
+  "slug": "custom-pu-ice-skate-squishy",
+  "name": "Custom PU Ice Skate Squishy Toy",
+  "category": "Custom PU Squishy / OEM",
+  "tag": "Ice Skate Design · Custom PU",
+  "note": "A custom PU squishy toy shaped like an ice skate, with sculpted laces, stitched-look details, a rounded boot and a skate-shaped base. The design shown combines mint green, pale yellow, cream and light blue with a sun motif. Customize the appearance, colors, dimensions and recovery speed to suit your collection. Review the front-angle, side and squeeze-reference images, then send your artwork and requirements for a quotation. MOQ from 500 pieces. This is a decorative squeeze toy, not wearable skating equipment.",
+  "seoTitle": "Custom PU Ice Skate Squishy Toy | OEM from 500 Pieces",
+  "seoDescription": "Custom PU ice skate squishy toys with sculpted lace details. Customize appearance, colors, size and recovery speed. MOQ from 500 pieces. Request a quote.",
+  "alt": "Mint green PU ice skate squishy toy with pale yellow laces, cream panels, a sun motif and a light blue skate-shaped base",
+  "keywords": [
+    "custom PU ice skate squishy",
+    "ice skate squishy toy",
+    "custom squishy toys",
+    "PU skate squeeze toy",
+    "winter sports promotional gifts",
+    "OEM PU squishy manufacturer"
+  ],
+  "images": {
+    "hero": "/images/products/custom-pu-ice-skate-squishy/hero.webp"
+  },
+  "gallery": [
+    {
+      "id": "hero",
+      "label": "Front-angle view",
+      "src": "/images/products/custom-pu-ice-skate-squishy/hero.webp"
+    },
+    {
+      "id": "side",
+      "label": "Side view",
+      "src": "/images/products/custom-pu-ice-skate-squishy/side.webp"
+    },
+    {
+      "id": "squeeze",
+      "label": "Squeeze reference",
+      "src": "/images/products/custom-pu-ice-skate-squishy/squeeze.webp"
+    }
+  ],
+  "lastModified": "2026-09-24",
+  "minimumOrderQuantity": 500,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
   {
     "slug": "ultra-slow-rising-realistic-pu-food-squishy",
     "name": "Ultra-Slow-Rising Realistic PU Food Squishy Series",
