@@ -40,6 +40,55 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-pu-ice-skate-squishy": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU"
+    },
+    {
+      "label": "Design",
+      "value": "Ice skate shape with sculpted laces, stitched-look seams and a rounded skate-shaped base"
+    },
+    {
+      "label": "Colors shown",
+      "value": "Mint green, pale yellow, cream and light blue with a sun motif"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Custom dimensions reviewed with your design and quotation"
+    },
+    {
+      "label": "Recovery speed",
+      "value": "Customizable; agree on the desired squeeze feel and recovery using an approved sample"
+    },
+    {
+      "label": "Product type",
+      "value": "Decorative squishy toy; not wearable ice skates or skating equipment"
+    }
+  ],
+  "customization": [
+    "Ice skate silhouette and sculpted details",
+    "Custom dimensions and color combinations",
+    "Surface artwork and logo placement for review",
+    "Squeeze feel and recovery speed through sampling",
+    "Individual packaging and retail display requirements"
+  ],
+  "useCases": [
+    "Skating-themed gift collections",
+    "Winter sports promotional merchandise",
+    "Novelty toy and gift retail",
+    "Custom branded PU squishy collections"
+  ],
+  "buyerBrief": [
+    "Artwork or reference images",
+    "Target dimensions and colors",
+    "Quantity starting from 500 pieces",
+    "Preferred softness and recovery speed",
+    "Packaging, destination market and delivery target"
+  ],
+  "packagingAnswer": "Individual bags, printed boxes and display packing can be reviewed for your design. Confirm the final packaging format and price with the quotation."
+},
   "ultra-slow-rising-realistic-pu-food-squishy": {
   "specifications": [
     {
