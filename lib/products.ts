@@ -48,6 +48,43 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-tpr-squishy-brand-inserts",
+  "name": "Custom TPR Squishy with Branded Blocks & Plastic Inserts",
+  "category": "Custom TPR Squishy / OEM",
+  "tag": "Custom Blocks, Logo Pieces & Moving Inserts",
+  "note": "Put your brand inside a translucent TPR squishy. Customize the internal pieces as branded building blocks, logo-shaped plastic pieces, flat plastic inserts or other plastic shapes to suit your project. When squeezed, the inserts move with the internal filling, creating a visible flowing effect. The reference design shows a translucent purple cube with contrasting inserts and a matching window box. Discuss your preferred insert shape, artwork, colors, cube dimensions and packaging with LINHAO Toys. Final insert design and movement are confirmed through sample approval.",
+  "seoTitle": "Custom TPR Squishy with Branded Blocks & Plastic Inserts",
+  "seoDescription": "Customize TPR squishies with branded building blocks, logo plastic pieces or other inserts that move when squeezed. Explore custom colors and packaging.",
+  "alt": "Translucent purple TPR squishy cube with custom plastic inserts beside a pink and purple window box",
+  "keywords": [
+    "custom TPR squishy",
+    "branded building block squishy",
+    "custom plastic insert squishy",
+    "logo insert squeeze toy",
+    "flowing insert squishy cube",
+    "promotional squishy manufacturer"
+  ],
+  "images": {
+    "hero": "/images/products/custom-tpr-squishy-brand-inserts/hero.webp"
+  },
+  "gallery": [
+    {
+      "id": "hero",
+      "label": "Product and window-box reference",
+      "src": "/images/products/custom-tpr-squishy-brand-inserts/hero.webp"
+    },
+    {
+      "id": "detail",
+      "label": "Custom internal insert detail",
+      "src": "/images/products/custom-tpr-squishy-brand-inserts/detail.webp"
+    }
+  ],
+  "lastModified": "2026-09-25",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-pu-ice-skate-squishy",
   "name": "Custom PU Ice Skate Squishy Toy",
   "category": "Custom PU Squishy / OEM",
