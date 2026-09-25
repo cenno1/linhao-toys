@@ -40,6 +40,46 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-smiling-burger-squishy":{
+  "specifications": [
+    {
+      "label": "Design",
+      "value": "Smiling burger with sculpted bun and layered food details"
+    },
+    {
+      "label": "Customization",
+      "value": "Colors, facial artwork, dimensions and packaging reviewed for your project"
+    },
+    {
+      "label": "Material and recovery",
+      "value": "Confirmed against the approved sample and quotation"
+    },
+    {
+      "label": "Image",
+      "value": "AI-prepared design reference; final product subject to sample approval"
+    }
+  ],
+  "customization": [
+    "Bun and food-layer colors",
+    "Custom facial expression and artwork",
+    "Target dimensions for review",
+    "Squeeze feel and recovery requirements for sampling",
+    "Branding and retail packaging"
+  ],
+  "useCases": [
+    "Food-themed gift collections",
+    "Novelty toy retail",
+    "Promotional merchandise"
+  ],
+  "buyerBrief": [
+    "Design reference and preferred colors",
+    "Facial artwork or branding requirements",
+    "Dimensions and order quantity",
+    "Material and recovery preferences",
+    "Packaging and destination market"
+  ],
+  "packagingAnswer": "Send your preferred bag, box or display packaging for quotation. Packaging is confirmed for the final design."
+},
 "custom-tpr-squishy-brand-inserts": {
   "specifications": [
     {

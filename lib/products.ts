@@ -48,6 +48,37 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-smiling-burger-squishy",
+  "name": "Custom Smiling Burger Squishy Toy",
+  "category": "Custom Food Squishy / OEM",
+  "tag": "Custom Colors & Smiling Face",
+  "note": "A customizable burger-shaped squishy with a cheerful smiling face, rounded bun and colorful layered food details. Develop your own color palette, facial expression and artwork for a food-themed gift or retail collection. Dimensions, material, squeeze feel and recovery speed are confirmed during sampling. Send your design, quantity and packaging requirements for a quotation. The image is an AI-prepared design reference based on the supplied example; final production follows the approved sample. This is a non-edible toy.",
+  "seoTitle": "Custom Burger Squishy Toy | Smiling Hamburger OEM",
+  "seoDescription": "Custom smiling burger squishy toys for food-themed gifts and retail collections. Discuss colors, facial artwork, size and packaging with LINHAO Toys.",
+  "alt": "Design reference for an orange smiling hamburger squishy with green lettuce, yellow cheese and a brown patty",
+  "keywords": [
+    "custom burger squishy",
+    "smiling hamburger squishy toy",
+    "custom food squishy toys",
+    "burger squeeze toy wholesale",
+    "OEM hamburger squishy"
+  ],
+  "images": {
+    "hero": "/images/products/custom-smiling-burger-squishy/hero.webp"
+  },
+  "gallery": [
+    {
+      "id": "hero",
+      "label": "Custom design reference",
+      "src": "/images/products/custom-smiling-burger-squishy/hero.webp"
+    }
+  ],
+  "lastModified": "2026-09-25",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-tpr-squishy-brand-inserts",
   "name": "Custom TPR Squishy with Branded Blocks & Plastic Inserts",
   "category": "Custom TPR Squishy / OEM",
