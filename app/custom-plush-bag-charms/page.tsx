@@ -28,7 +28,7 @@ export default function Page() {
     title="Custom plush bag charms and keychains for branded accessory collections."
     introduction="Turn character, flower, mascot and gift concepts into compact plush accessories with coordinated colors, attachment hardware, labels and retail packaging."
     buyerNote="Ideal for accessory brands, gift shops, promotional programs, collectible ranges and online sellers. Feasibility and MOQ depend on construction and materials."
-    productSlugs={["long-leg-fuzzy-character-bag-charm", "mini-fuzzy-character-keychain", "cherry-plush-bag-charm", "bow-fuzzy-ball-bag-charm", "tennis-ball-plush-keychain", "lucky-persimmon-plush-charm"]}
+    productSlugs={["long-leg-fuzzy-character-bag-charm", "mini-fuzzy-character-keychain", "cherry-plush-bag-charm", "bow-fuzzy-ball-bag-charm", "lucky-persimmon-plush-charm"]}
     lastReviewed="2026-08-02"
     serviceType="Custom plush bag charm and keychain OEM manufacturing"
     productHeading="Plush accessory directions for OEM programs."
