@@ -49,12 +49,12 @@ function images(slug: string, hero: string): ProductImageSet {
 export const products: Product[] = [
 {
   "slug": "custom-smiling-burger-squishy",
-  "name": "Custom Smiling Burger Squishy Toy",
-  "category": "Custom Food Squishy / OEM",
+  "name": "Custom PU Smiling Burger Squishy Toy",
+  "category": "Custom PU Food Squishy / OEM",
   "tag": "Custom Colors & Smiling Face",
-  "note": "A customizable burger-shaped squishy with a cheerful smiling face, rounded bun and colorful layered food details. Develop your own color palette, facial expression and artwork for a food-themed gift or retail collection. Dimensions, material, squeeze feel and recovery speed are confirmed during sampling. Send your design, quantity and packaging requirements for a quotation. The image is an AI-prepared design reference based on the supplied example; final production follows the approved sample. This is a non-edible toy.",
-  "seoTitle": "Custom Burger Squishy Toy | Smiling Hamburger OEM",
-  "seoDescription": "Custom smiling burger squishy toys for food-themed gifts and retail collections. Discuss colors, facial artwork, size and packaging with LINHAO Toys.",
+  "note": "A customizable PU burger-shaped squishy with a cheerful smiling face, rounded bun and colorful layered food details. Develop your own color palette, facial expression and artwork for a food-themed gift or retail collection. PU material; dimensions, squeeze feel and recovery speed are confirmed during sampling. Send your design, quantity and packaging requirements for a quotation. The image is an AI-prepared design reference based on the supplied example; final production follows the approved sample. This is a non-edible toy.",
+  "seoTitle": "Custom PU Burger Squishy Toy | Smiling Hamburger OEM",
+  "seoDescription": "Custom PU smiling burger squishy toys for food-themed gifts and retail collections. Discuss colors, facial artwork, size and packaging with LINHAO Toys.",
   "alt": "Design reference for an orange smiling hamburger squishy with green lettuce, yellow cheese and a brown patty",
   "keywords": [
     "custom burger squishy",
