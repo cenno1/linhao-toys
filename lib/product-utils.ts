@@ -52,7 +52,7 @@ const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
     },
     {
       "label": "Material and recovery",
-      "value": "Confirmed against the approved sample and quotation"
+      "value": "PU; squeeze feel and recovery confirmed against the approved sample"
     },
     {
       "label": "Image",
