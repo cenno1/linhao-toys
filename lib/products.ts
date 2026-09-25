@@ -48,6 +48,50 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-pu-toast-squishy-blind-box",
+  "name": "Custom PU Toast Squishy Blind Box Series",
+  "category": "Custom PU Food Squishy / OEM",
+  "tag": "Three Toast Designs · Custom Blind Box",
+  "note": "Develop a custom PU toast squishy collection from your artwork with character faces, bread texture, topping shapes and detailed painted finishes. The supplied design references show Honey Butter, Strawberry Cream and Matcha directions. Work with LINHAO Toys to define colors, dimensions, squeeze feel, recovery speed and finish details through physical sampling. For retail programs, plan individual blind boxes, variant ratios, box artwork and display packing together. Agree on paint appearance and durability checks using an approved sample before bulk production. MOQ from 500 pieces; confirm quantities per design and packaging with the quotation. Images show design concepts, not finished production samples. These are non-edible toys.",
+  "seoTitle": "Custom PU Toast Squishy Blind Box | OEM Bread Toys",
+  "seoDescription": "Create custom PU toast squishy designs with detailed painted faces and toppings. Plan Honey Butter, Strawberry Cream and Matcha variants with custom blind-box packaging. MOQ from 500.",
+  "alt": "Custom PU toast squishy design reference showing honey butter topping, smiling face and detailed bread texture",
+  "keywords": [
+    "custom PU toast squishy",
+    "custom toast squishy manufacturer",
+    "bread squishy blind box",
+    "OEM slow rising toast toy",
+    "custom food squishy toys",
+    "painted PU squishy",
+    "custom blind box squishy"
+  ],
+  "images": {
+    "hero": "/images/products/custom-pu-toast-squishy-blind-box/honey-butter.webp"
+  },
+  "gallery": [
+    {
+      "id": "honey-butter",
+      "src": "/images/products/custom-pu-toast-squishy-blind-box/honey-butter.webp",
+      "label": "Honey Butter toast design reference"
+    },
+    {
+      "id": "strawberry-cream",
+      "src": "/images/products/custom-pu-toast-squishy-blind-box/strawberry-cream.webp",
+      "label": "Strawberry Cream toast design reference"
+    },
+    {
+      "id": "matcha",
+      "src": "/images/products/custom-pu-toast-squishy-blind-box/matcha.webp",
+      "label": "Matcha toast design reference"
+    }
+  ],
+  "lastModified": "2026-09-25",
+  "minimumOrderQuantity": 500,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-smiling-burger-squishy",
   "name": "Custom PU Smiling Burger Squishy Toy",
   "category": "Custom PU Food Squishy / OEM",

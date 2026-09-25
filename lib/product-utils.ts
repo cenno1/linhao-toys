@@ -40,6 +40,64 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-pu-toast-squishy-blind-box": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU"
+    },
+    {
+      "label": "Design references",
+      "value": "Honey Butter, Strawberry Cream and Matcha toast characters"
+    },
+    {
+      "label": "Decoration",
+      "value": "Custom face artwork, topping shapes, crust shading and painted surface details; final finish approved on physical samples"
+    },
+    {
+      "label": "Paint durability",
+      "value": "Agree on handling and flex checks for decorated areas during sample approval; no unverified test result is claimed"
+    },
+    {
+      "label": "Recovery",
+      "value": "Specify target squeeze feel and recovery speed against an approved sample"
+    },
+    {
+      "label": "Blind-box program",
+      "value": "Individual concealed packs, box artwork, assortment mix and display packing planned for the order"
+    },
+    {
+      "label": "Dimensions",
+      "value": "Custom size and weight confirmed with design and quotation"
+    },
+    {
+      "label": "Images",
+      "value": "Concept design references; final production and packaging confirmed by sample"
+    }
+  ],
+  "customization": [
+    "Original toast character shape and face artwork",
+    "Bread texture, crust shading and topping details",
+    "Honey, strawberry, matcha or buyer-defined colorways",
+    "Paint finish and durability criteria for sample approval",
+    "Size, softness and recovery behavior",
+    "Custom blind-box artwork, assortment ratios and display packing"
+  ],
+  "useCases": [
+    "Food-themed collectible blind boxes",
+    "Custom retail and gift collections",
+    "Branded promotional squishy assortments",
+    "Bakery-inspired novelty toy programs"
+  ],
+  "buyerBrief": [
+    "Character drawings or reference artwork for each toast variant",
+    "Target dimensions and quantity per design, starting from 500 pieces",
+    "Critical colors, topping shapes and painted details",
+    "Desired squeeze feel and recovery reference",
+    "Blind-box artwork, variant ratio, destination market and delivery target"
+  ],
+  "packagingAnswer": "Custom individual blind boxes, insert cards and display cartons can be planned from buyer artwork. The supplied images are design references and do not show finished blind-box packaging; approve a packing sample and final quotation before production."
+},
 "custom-smiling-burger-squishy":{
   "specifications": [
     {

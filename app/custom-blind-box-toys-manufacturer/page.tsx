@@ -36,8 +36,8 @@ export default function Page() {
       title="Custom blind box toys for collectible retail programs."
       introduction="Turn original characters, food themes and tactile toy concepts into blind-box assortments with planned variants, packaging and OEM sampling. LINHAO helps buyers align product design, assortment structure, retail presentation and production control before launch."
       buyerNote="Blind-box programs work best when the product, variant count, quantity per design, packout and claim strategy are discussed together. Final costs, MOQ, production timing and testing depend on the approved collection and destination market."
-      productSlugs={["dumpling-squishy-blind-box", "pu-slow-rise-animal-keychain", "capybara-squishy-assortment", "mini-animal-mix", "custom-pu-fruit-animal-figures"]}
-      lastReviewed="2026-08-16"
+      productSlugs={["custom-pu-toast-squishy-blind-box", "dumpling-squishy-blind-box", "pu-slow-rise-animal-keychain", "capybara-squishy-assortment", "mini-animal-mix", "custom-pu-fruit-animal-figures"]}
+      lastReviewed="2026-09-25"
       serviceType="Custom blind box and collectible toy OEM manufacturing"
       productHeading="Collectible toy directions for blind-box planning."
       productDescription="Review character, food, keychain and small-figure routes, then define your collection鈥檚 variants, rarity mix, tactile features and retail packaging."
