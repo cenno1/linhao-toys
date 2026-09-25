@@ -40,6 +40,56 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-tpr-squishy-brand-inserts": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "TPR"
+    },
+    {
+      "label": "Internal customization",
+      "value": "Custom branded building blocks, logo-shaped plastic pieces, flat plastic inserts or other plastic shapes"
+    },
+    {
+      "label": "Squeeze effect",
+      "value": "Internal pieces move with the filling when squeezed, creating a flowing visual effect"
+    },
+    {
+      "label": "Reference appearance",
+      "value": "Translucent purple cube with contrasting internal pieces"
+    },
+    {
+      "label": "Dimensions and quantity",
+      "value": "Confirmed for the selected cube size, insert design and packaging"
+    },
+    {
+      "label": "Packaging reference",
+      "value": "Pink and purple window box; final artwork and packing confirmed with quotation"
+    }
+  ],
+  "customization": [
+    "Custom branded building blocks inside the squishy",
+    "Logo-shaped plastic pieces and flat plastic inserts",
+    "Other plastic shapes developed from your artwork",
+    "Insert colors, arrangement and quantity for sample review",
+    "TPR body color, transparency and dimensions",
+    "Custom window-box artwork and retail packaging"
+  ],
+  "useCases": [
+    "Branded promotional gifts",
+    "Custom merchandise collections",
+    "Novelty and gift retail",
+    "Wholesale squeeze-toy assortments"
+  ],
+  "buyerBrief": [
+    "Logo artwork or drawings for the internal plastic pieces",
+    "Preferred building blocks, flat inserts or other plastic shapes",
+    "Target squishy dimensions, color and quantity",
+    "Desired insert movement and squeeze feel",
+    "Packaging artwork, destination and delivery requirements"
+  ],
+  "packagingAnswer": "The images show a printed window-box reference. Custom box artwork and other packing formats can be reviewed; confirm what is included in the quotation."
+},
 "custom-pu-ice-skate-squishy": {
   "specifications": [
     {
