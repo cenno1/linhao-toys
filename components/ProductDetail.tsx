@@ -89,6 +89,21 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               {product.name}
             </h1>
             <p className="mt-5 text-base leading-8 text-slate-600">{product.note}</p>
+            {product.customMaterial && (
+              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-sm font-bold text-blue-600">
+                <Link
+                  href={product.customMaterial === "PU" ? "/custom-pu-squishy-manufacturer" : "/tpr-squishy-toy-manufacturer"}
+                  className="hover:underline"
+                >
+                  {product.customMaterial === "PU" ? "Custom PU squishy manufacturing" : "Custom TPR squeeze toy development"} →
+                </Link>
+                {product.customMaterial === "PU" && (
+                  <Link href="/custom-pu-squishy-case-studies" className="hover:underline">
+                    View real custom PU cases →
+                  </Link>
+                )}
+              </div>
+            )}
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">

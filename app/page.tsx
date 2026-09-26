@@ -43,9 +43,17 @@ export const metadata: Metadata = {
   },
 };
 
-// Google Search Console, Web, 2026-08-22 through 2026-09-18.
-// Clicks descending, then impressions descending. Unreported products retain catalog order.
+// Prioritize custom PU cases and design references for the current sourcing focus.
+// Keep previously ranked wholesale items after the custom range.
 const homepagePrioritySlugs = [
+  "premium-custom-pu-character-figure",
+  "ultra-slow-rising-realistic-pu-food-squishy",
+  "custom-pu-toast-squishy-blind-box",
+  "custom-pu-ice-skate-squishy",
+  "custom-pu-high-rebound-ball",
+  "custom-smiling-burger-squishy",
+  "custom-pu-fruit-animal-figures",
+  "pu-slow-rise-animal-keychain",
   "ready-stock-highland-cow-tpr-squishy",
   "transparent-gel-cube-squishy",
   "ready-stock-halloween-butter-bar-squishy",
@@ -57,15 +65,13 @@ const homepagePrioritySlugs = [
   "glitter-basket-blue",
   "glitter-bao-bun",
   "custom-jumbo-ghost-squishy",
-  "ready-stock-cheese-cube-squishy",
-  "comfort-cat-plush",
-  "tennis-ball-plush-keychain"
+  "ready-stock-cheese-cube-squishy"
 ];
 
 const sourcingRoutes = [
-  { href: "/custom-squishy-toy-manufacturer", title: "Custom squishy toys", text: "Develop your own shape, colors and packaging.", action: "Explore custom manufacturing" },
+  { href: "/custom-squishy-toy-manufacturer", title: "Custom PU squishy toys", text: "Develop your own PU shape, recovery, painted details and packaging.", action: "Explore custom manufacturing" },
   { href: "/products", title: "Wholesale product catalog", text: "Compare real samples and product details.", action: "Browse all products" },
-  { href: "/trending-squishy-toys", title: "Trending squishy styles", text: "Explore product directions for your next collection.", action: "Explore trending styles" },
+  { href: "/custom-pu-squishy-case-studies", title: "Real custom PU cases", text: "See character, robot and strawberry projects with customizable appearance and recovery.", action: "View custom PU cases" },
 ];
 
 export default function Home() {
@@ -83,7 +89,14 @@ export default function Home() {
           </Link>
         ))}
       </nav>
-      <ProductShowcase prioritySlugs={homepagePrioritySlugs} limit={30} showCatalogLink />
+      <ProductShowcase
+        prioritySlugs={homepagePrioritySlugs}
+        limit={30}
+        showCatalogLink
+        eyebrow="CUSTOM PU FIRST · WHOLESALE & TPR OPTIONS"
+        heading="Custom PU squishy designs for your next collection."
+        description="Explore PU character and realistic food samples first, followed by toast, ice-skate and other design references. Product pages identify samples and references. More wholesale and TPR options follow below."
+      />
       <Capabilities />
       <FactoryDirectComparison />
       <FactoryStory />

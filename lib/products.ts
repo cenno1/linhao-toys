@@ -20,6 +20,7 @@ export type Product = {
   tag: string;
   note: string;
   seoTitle?: string;
+  customMaterial?: "PU" | "TPR";
   seoDescription?: string;
   alt: string;
   keywords: string[];
@@ -49,22 +50,15 @@ function images(slug: string, hero: string): ProductImageSet {
 export const products: Product[] = [
 {
   "slug": "custom-pu-toast-squishy-blind-box",
-  "name": "Custom PU Toast Squishy Blind Box Series",
+  "name": "Custom Toast Squishy Blind Box — PU Bread Series",
+    customMaterial: "PU",
   "category": "Custom PU Food Squishy / OEM",
   "tag": "Three Toast Designs · Custom Blind Box",
-  "note": "Develop a custom PU toast squishy collection from your artwork with character faces, bread texture, topping shapes and detailed painted finishes. The supplied design references show Honey Butter, Strawberry Cream and Matcha directions. Work with LINHAO Toys to define colors, dimensions, squeeze feel, recovery speed and finish details through physical sampling. For retail programs, plan individual blind boxes, variant ratios, box artwork and display packing together. Agree on paint appearance and durability checks using an approved sample before bulk production. MOQ from 500 pieces; confirm quantities per design and packaging with the quotation. Images show design concepts, not finished production samples. These are non-edible toys.",
-  "seoTitle": "Custom PU Toast Squishy Blind Box | OEM Bread Toys",
-  "seoDescription": "Create custom PU toast squishy designs with detailed painted faces and toppings. Plan Honey Butter, Strawberry Cream and Matcha variants with custom blind-box packaging. MOQ from 500.",
+  "note": "Develop a custom toast squishy blind box collection in PU from your artwork, with character faces, bread texture, topping shapes and detailed painted finishes. The supplied design references show Honey Butter, Strawberry Cream and Matcha directions. Work with LINHAO Toys to define colors, dimensions, squeeze feel, recovery speed and finish details through physical sampling. For retail programs, plan individual blind boxes, variant ratios, box artwork and display packing together. Agree on paint appearance and durability checks using an approved sample before bulk production. MOQ from 500 pieces; confirm quantities per design and packaging with the quotation. Images show design concepts, not finished production samples. These are non-edible toys.",
+  "seoTitle": "Custom Toast Squishy Blind Box | PU Bread OEM",
+  "seoDescription": "Develop a custom toast squishy blind box in PU with painted faces, topping designs and branded packaging. Honey, strawberry and matcha references. MOQ from 500.",
   "alt": "Custom PU toast squishy design reference showing honey butter topping, smiling face and detailed bread texture",
-  "keywords": [
-    "custom PU toast squishy",
-    "custom toast squishy manufacturer",
-    "bread squishy blind box",
-    "OEM slow rising toast toy",
-    "custom food squishy toys",
-    "painted PU squishy",
-    "custom blind box squishy"
-  ],
+  "keywords": ["custom toast squishy blind box","custom toast squishy blind box manufacturer","custom toast squishy blind box OEM"],
   "images": {
     "hero": "/images/products/custom-pu-toast-squishy-blind-box/honey-butter.webp"
   },
@@ -85,7 +79,7 @@ export const products: Product[] = [
       "label": "Matcha toast design reference"
     }
   ],
-  "lastModified": "2026-09-25",
+  "lastModified": "2026-09-26",
   "minimumOrderQuantity": 500,
   "featured": true,
   "detailsOnRequest": true,
@@ -93,20 +87,15 @@ export const products: Product[] = [
 },
 {
   "slug": "custom-smiling-burger-squishy",
-  "name": "Custom PU Smiling Burger Squishy Toy",
+  "name": "Custom PU Burger Squishy — Smiling Hamburger Toy",
+    customMaterial: "PU",
   "category": "Custom PU Food Squishy / OEM",
   "tag": "Custom Colors & Smiling Face",
-  "note": "A customizable PU burger-shaped squishy with a cheerful smiling face, rounded bun and colorful layered food details. Develop your own color palette, facial expression and artwork for a food-themed gift or retail collection. PU material; dimensions, squeeze feel and recovery speed are confirmed during sampling. Send your design, quantity and packaging requirements for a quotation. The image is an AI-prepared design reference based on the supplied example; final production follows the approved sample. This is a non-edible toy.",
-  "seoTitle": "Custom PU Burger Squishy Toy | Smiling Hamburger OEM",
-  "seoDescription": "Custom PU smiling burger squishy toys for food-themed gifts and retail collections. Discuss colors, facial artwork, size and packaging with LINHAO Toys.",
+  "note": "A custom PU burger squishy with a cheerful smiling face, rounded bun and colorful layered food details for buyer-defined hamburger toy collections. Develop your own color palette, facial expression and artwork for a food-themed gift or retail collection. PU material; dimensions, squeeze feel and recovery speed are confirmed during sampling. Send your design, quantity and packaging requirements for a quotation. The image is an AI-prepared design reference based on the supplied example; final production follows the approved sample. This is a non-edible toy.",
+  "seoTitle": "Custom PU Burger Squishy | Smiling Hamburger OEM",
+  "seoDescription": "Custom PU burger squishy toys with smiling faces and layered food details. Specify colors, artwork, dimensions and packaging for your OEM collection.",
   "alt": "Design reference for an orange smiling hamburger squishy with green lettuce, yellow cheese and a brown patty",
-  "keywords": [
-    "custom burger squishy",
-    "smiling hamburger squishy toy",
-    "custom food squishy toys",
-    "burger squeeze toy wholesale",
-    "OEM hamburger squishy"
-  ],
+  "keywords": ["custom PU burger squishy","custom PU burger squishy manufacturer","custom PU burger squishy OEM"],
   "images": {
     "hero": "/images/products/custom-smiling-burger-squishy/hero.webp"
   },
@@ -117,28 +106,22 @@ export const products: Product[] = [
       "src": "/images/products/custom-smiling-burger-squishy/hero.webp"
     }
   ],
-  "lastModified": "2026-09-25",
+  "lastModified": "2026-09-26",
   "featured": true,
   "detailsOnRequest": true,
   "filterGroup": "squishy"
 },
 {
   "slug": "custom-tpr-squishy-brand-inserts",
-  "name": "Custom TPR Squishy with Branded Blocks & Plastic Inserts",
+  "name": "Custom TPR Squishy with Logo Inserts & Branded Blocks",
+    customMaterial: "TPR",
   "category": "Custom TPR Squishy / OEM",
   "tag": "Custom Blocks, Logo Pieces & Moving Inserts",
-  "note": "Put your brand inside a translucent TPR squishy. Customize the internal pieces as branded building blocks, logo-shaped plastic pieces, flat plastic inserts or other plastic shapes to suit your project. When squeezed, the inserts move with the internal filling, creating a visible flowing effect. The reference design shows a translucent purple cube with contrasting inserts and a matching window box. Discuss your preferred insert shape, artwork, colors, cube dimensions and packaging with LINHAO Toys. Final insert design and movement are confirmed through sample approval.",
-  "seoTitle": "Custom TPR Squishy with Branded Blocks & Plastic Inserts",
-  "seoDescription": "Customize TPR squishies with branded building blocks, logo plastic pieces or other inserts that move when squeezed. Explore custom colors and packaging.",
+  "note": "Develop a custom TPR squishy with logo inserts to put your brand inside a translucent squeeze toy. Customize the internal pieces as branded building blocks, logo-shaped plastic pieces, flat plastic inserts or other plastic shapes to suit your project. When squeezed, the inserts move with the internal filling, creating a visible flowing effect. The reference design shows a translucent purple cube with contrasting inserts and a matching window box. Discuss your preferred insert shape, artwork, colors, cube dimensions and packaging with LINHAO Toys. Final insert design and movement are confirmed through sample approval.",
+  "seoTitle": "Custom TPR Squishy with Logo Inserts | Branded Blocks OEM",
+  "seoDescription": "Custom TPR squishy toys with logo inserts, branded blocks or plastic pieces that move when squeezed. Specify insert shapes, colors and retail packaging.",
   "alt": "Translucent purple TPR squishy cube with custom plastic inserts beside a pink and purple window box",
-  "keywords": [
-    "custom TPR squishy",
-    "branded building block squishy",
-    "custom plastic insert squishy",
-    "logo insert squeeze toy",
-    "flowing insert squishy cube",
-    "promotional squishy manufacturer"
-  ],
+  "keywords": ["custom TPR squishy with logo inserts","custom TPR squishy with logo inserts manufacturer","custom TPR squishy with logo inserts OEM"],
   "images": {
     "hero": "/images/products/custom-tpr-squishy-brand-inserts/hero.webp"
   },
@@ -154,7 +137,7 @@ export const products: Product[] = [
       "src": "/images/products/custom-tpr-squishy-brand-inserts/detail.webp"
     }
   ],
-  "lastModified": "2026-09-25",
+  "lastModified": "2026-09-26",
   "featured": true,
   "detailsOnRequest": true,
   "filterGroup": "squishy"
@@ -162,20 +145,14 @@ export const products: Product[] = [
 {
   "slug": "custom-pu-ice-skate-squishy",
   "name": "Custom PU Ice Skate Squishy Toy",
+    customMaterial: "PU",
   "category": "Custom PU Squishy / OEM",
   "tag": "Ice Skate Design · Custom PU",
-  "note": "A custom PU squishy toy shaped like an ice skate, with sculpted laces, stitched-look details, a rounded boot and a skate-shaped base. The design shown combines mint green, pale yellow, cream and light blue with a sun motif. Customize the appearance, colors, dimensions and recovery speed to suit your collection. Review the front-angle, side and squeeze-reference images, then send your artwork and requirements for a quotation. MOQ from 500 pieces. This is a decorative squeeze toy, not wearable skating equipment.",
-  "seoTitle": "Custom PU Ice Skate Squishy Toy | OEM from 500 Pieces",
-  "seoDescription": "Custom PU ice skate squishy toys with sculpted lace details. Customize appearance, colors, size and recovery speed. MOQ from 500 pieces. Request a quote.",
+  "note": "A custom PU ice skate squishy with sculpted laces, stitched-look details, a rounded boot and a skate-shaped base for an original sports-themed collection. The design shown combines mint green, pale yellow, cream and light blue with a sun motif. Customize the appearance, colors, dimensions and recovery speed to suit your collection. Review the front-angle, side and squeeze-reference images, then send your artwork and requirements for a quotation. MOQ from 500 pieces. This is a decorative squeeze toy, not wearable skating equipment.",
+  "seoTitle": "Custom PU Ice Skate Squishy | OEM from 500 Pieces",
+  "seoDescription": "Custom PU ice skate squishy toys with sculpted laces and buyer-defined colors, dimensions and recovery speed. MOQ from 500 pieces. Request a design quote.",
   "alt": "Mint green PU ice skate squishy toy with pale yellow laces, cream panels, a sun motif and a light blue skate-shaped base",
-  "keywords": [
-    "custom PU ice skate squishy",
-    "ice skate squishy toy",
-    "custom squishy toys",
-    "PU skate squeeze toy",
-    "winter sports promotional gifts",
-    "OEM PU squishy manufacturer"
-  ],
+  "keywords": ["custom PU ice skate squishy","custom PU ice skate squishy manufacturer","custom PU ice skate squishy OEM"],
   "images": {
     "hero": "/images/products/custom-pu-ice-skate-squishy/hero.webp"
   },
@@ -196,7 +173,7 @@ export const products: Product[] = [
       "src": "/images/products/custom-pu-ice-skate-squishy/squeeze.webp"
     }
   ],
-  "lastModified": "2026-09-24",
+  "lastModified": "2026-09-26",
   "minimumOrderQuantity": 500,
   "featured": true,
   "detailsOnRequest": true,
@@ -204,22 +181,15 @@ export const products: Product[] = [
 },
   {
     "slug": "ultra-slow-rising-realistic-pu-food-squishy",
-    "name": "Ultra-Slow-Rising Realistic PU Food Squishy Series",
+    "name": "Custom PU Food Squishy Toys — Realistic & Ultra-Slow Rising",
+    customMaterial: "PU",
     "category": "Realistic PU Food Squishy / Wholesale",
     "tag": "Ultra-Slow Recovery & Moist Feel",
-    "note": "A highly realistic PU food squishy series combining lifelike food shapes, detailed surface textures and ultra-slow recovery after squeezing. The soft, moist-feeling touch is designed to evoke the feel of real food. Explore five photographed styles, including textured bread, a golden round design, a brown square design, strawberry and butter stick, and watch the actual squeeze demonstration. Discuss custom shapes, colors, surface details and recovery preferences for your collection. MOQ from 500 pieces; confirm your selected styles and quantities when requesting a quotation. These are non-edible squishy toys.",
-    "seoTitle": "Realistic PU Food Squishies | Ultra-Slow Rising & Moist Feel",
-    "seoDescription": "Explore realistic PU food squishies with ultra-slow recovery and a soft, moist-feeling touch. Five photographed styles and a squeeze video. MOQ from 500 pieces.",
+    "note": "Custom PU food squishy toys combine lifelike food shapes, detailed surface textures and ultra-slow recovery for original retail collections. The soft, moist-feeling touch is designed to evoke the feel of real food. Explore five photographed styles, including textured bread, a golden round design, a brown square design, strawberry and butter stick, and watch the actual squeeze demonstration. Discuss custom shapes, colors, surface details and recovery preferences for your collection. MOQ from 500 pieces; confirm your selected styles and quantities when requesting a quotation. These are non-edible squishy toys.",
+    "seoTitle": "Custom PU Food Squishy Toys | Realistic Slow-Rise OEM",
+    "seoDescription": "Custom PU food squishy toys with realistic textures, ultra-slow recovery and a moist-feeling touch. View actual samples and video. MOQ from 500 pieces.",
     "alt": "Highly realistic textured golden bread bun PU squishy from the ultra-slow-rising food series",
-    "keywords": [
-      "realistic PU food squishy",
-      "ultra slow rising squishy",
-      "moist feel food squishy",
-      "realistic bread squishy wholesale",
-      "butter stick squishy",
-      "strawberry PU squishy",
-      "custom food squishy manufacturer"
-    ],
+    "keywords": ["custom PU food squishy toys","custom PU food squishy toys manufacturer","custom PU food squishy toys OEM"],
     "images": {
       "hero": "/images/products/ultra-slow-rising-realistic-pu-food-squishy/textured-bun.jpg"
     },
@@ -252,7 +222,7 @@ export const products: Product[] = [
     ],
     "video": "/videos/ultra-slow-rising-realistic-pu-food-squishy.mp4",
     "videoUploadDate": "2026-09-20",
-    "lastModified": "2026-09-20",
+    "lastModified": "2026-09-26",
     "minimumOrderQuantity": 500,
     "featured": true,
     "detailsOnRequest": true,
@@ -260,27 +230,21 @@ export const products: Product[] = [
   },
   {
     "slug": "premium-custom-pu-character-figure",
-    "name": "Premium Custom PU Character Figure",
+    "name": "Custom PU Character Squishy Figures",
+    customMaterial: "PU",
     "category": "Custom PU Character / OEM",
     "tag": "Fine Detail & Paint Finish",
-    "note": "A premium custom PU character figure with clearly defined facial features, a sculpted cap, crisp clothing lines and finely applied painted details. The photographed design combines expressive eyes, cap artwork, a white top, black trousers and silver-tone decorative accents. Customize the character appearance, colors and recovery speed to match your project. View the actual product photo and demonstration video, then send your artwork and requirements for a quotation. MOQ from 500 pieces.",
-    "seoTitle": "Premium Custom PU Character Figure | Detailed Paint Finish",
-    "seoDescription": "Custom PU character figures with clear sculpted lines, fine painted details and customizable appearance and recovery speed. MOQ from 500 pieces. See photo and video.",
+    "note": "Custom PU character squishy figures combine sculpted facial features, crisp clothing lines and detailed painted finishes for buyer-defined character projects. The photographed design combines expressive eyes, cap artwork, a white top, black trousers and silver-tone decorative accents. Customize the character appearance, colors and recovery speed to match your project. View the actual product photo and demonstration video, then send your artwork and requirements for a quotation. MOQ from 500 pieces.",
+    "seoTitle": "Custom PU Character Squishy | Detailed Figure OEM",
+    "seoDescription": "Custom PU character squishy figures with detailed painted features. Customize appearance, colors and recovery speed. MOQ from 500 pieces; request a quote.",
     "alt": "Custom PU character figure with a gray printed cap, expressive eyes, white shirt, black trousers and silver-tone details",
-    "keywords": [
-      "custom PU character figure",
-      "premium PU squishy figure",
-      "custom character squishy manufacturer",
-      "detailed painted PU toy",
-      "custom mascot figure",
-      "OEM PU character toy"
-    ],
+    "keywords": ["custom PU character squishy","custom PU character squishy manufacturer","custom PU character squishy OEM"],
     "images": {
       "hero": "/images/products/premium-custom-pu-character-figure.jpg"
     },
     "video": "/videos/premium-custom-pu-character-figure.mp4",
     "videoUploadDate": "2026-09-19",
-    "lastModified": "2026-09-19",
+    "lastModified": "2026-09-26",
     "minimumOrderQuantity": 500,
     "featured": true,
     "detailsOnRequest": true,
@@ -289,20 +253,15 @@ export const products: Product[] = [
   {
     "slug": "custom-pu-high-rebound-ball",
     "name": "Custom PU High Rebound Ball",
+    lastModified: "2026-09-26",
+    customMaterial: "PU",
     "category": "PU Elastic Ball / Wholesale",
     "tag": "Custom Sizes & Colors",
-    "note": "A high-elasticity PU ball with a colorful outer design and contrasting black circular details. Customize the ball size and color to suit your retail range, promotional project or wholesale assortment. The image shows red, blue, green, yellow, orange and pink options. Contact us with your preferred diameter, colors and quantity to discuss samples, branding and packaging.",
-    "seoTitle": "Custom PU High Rebound Ball | Custom Sizes & Colors",
-    "seoDescription": "Source high-elasticity PU balls with custom sizes and colors. Explore wholesale assortments, branding and packaging options with LINHAO Toys.",
+    "note": "Develop a custom PU high rebound ball with your preferred diameter, colors and branding, using the colorful outer design and contrasting circular details as a reference. Customize the ball size and color to suit your retail range, promotional project or wholesale assortment. The image shows red, blue, green, yellow, orange and pink options. Contact us with your preferred diameter, colors and quantity to discuss samples, branding and packaging.",
+    "seoTitle": "Custom PU High Rebound Ball | Size & Color OEM",
+    "seoDescription": "Custom PU high rebound balls with buyer-defined diameters and colors for branded retail and promotional projects. Discuss samples, branding and packaging.",
     "alt": "Red PU high rebound ball held in a hand with blue green yellow orange and pink balls in the background",
-    "keywords": [
-      "custom PU high rebound ball",
-      "high elasticity PU ball wholesale",
-      "custom size PU ball",
-      "custom color elastic ball",
-      "PU bouncy ball supplier",
-      "promotional PU ball"
-    ],
+    "keywords": ["custom PU high rebound ball","custom PU high rebound ball manufacturer","custom PU high rebound ball OEM"],
     "images": {
       "hero": "/images/products/custom-pu-high-rebound-ball.png"
     },
@@ -920,21 +879,16 @@ export const products: Product[] = [
   },
   {
     slug: "custom-tpr-popsicle-butter-cube-squishy",
-    name: "Custom TPR Popsicle & Butter Cube Squishy Assortment",
+    name: "Custom TPR Cube Squishy & Food-Shape Assortment",
+    lastModified: "2026-09-26",
+    customMaterial: "TPR",
     category: "TPR Fidget Toy / OEM-ODM",
     tag: "Colorful Sensory Assortment",
-    note: "Colorful TPR squeeze toys in popsicle, butter cube, ice cream and novelty food-inspired shapes for sensory assortments, gift programs and impulse retail. Customize original shapes, transparent or marbled color effects, softness, logo, protective packaging and mixed-SKU display packs.",
-    seoTitle: "Custom TPR Popsicle & Butter Cube Squishy Manufacturer",
-    seoDescription: "Source custom TPR popsicle, butter cube and ice-cream-inspired squishy fidget toys with buyer-specified shapes, colors, softness, packaging and private-label options.",
+    note: "Develop a custom TPR cube squishy collection with popsicle, butter-cube, ice-cream and other food-inspired assortment options for gift and retail programs. Customize original shapes, transparent or marbled color effects, softness, logo, protective packaging and mixed-SKU display packs.",
+    seoTitle: "Custom TPR Cube Squishy | Food-Shape Assortment OEM",
+    seoDescription: "Custom TPR cube squishies with popsicle and food-shape assortment options. Specify original shapes, colors, softness, logos and protective packaging.",
     alt: "custom colorful TPR popsicle butter cube squishy fidget toy assortment manufacturer",
-    keywords: [
-      "TPR squishy fidget toy manufacturer",
-      "popsicle squishy wholesale",
-      "butter cube squeeze toy OEM",
-      "ice cream stress toy bulk",
-      "colorful sensory toy assortment",
-      "custom TPR stress ball supplier",
-    ],
+    keywords: ["custom TPR cube squishy","custom TPR cube squishy manufacturer","custom TPR cube squishy OEM"],
     images: images(
       "custom-tpr-popsicle-butter-cube-squishy",
       "/images/products/custom-tpr-popsicle-butter-cube-squishy/hero.png",
@@ -1156,19 +1110,16 @@ export const products: Product[] = [
   },
   {
     slug: "pu-slow-rise-animal-keychain",
-    name: "OEM PU Slow-Rise Animal Squishy Keychain Blind Box",
+    name: "Custom PU Animal Squishy Keychain — Slow-Rise Blind Box",
+    lastModified: "2026-09-26",
+    customMaterial: "PU",
+    seoDescription: "Custom PU animal squishy keychains for slow-rise blind-box collections. Specify character artwork, colors, assortment mix and branded packaging.",
+    seoTitle: "Custom PU Animal Squishy Keychain | Blind Box OEM",
     category: "PU Slow-Rise Squishy · OEM/ODM",
     tag: "Blind Box Ready",
-    note: "Colorful PU slow-rise animal squishy keychains with 20+ character directions for blind boxes, vending, party favors and collectible retail. Custom artwork, colors, assortments and packaging available.",
+    note: "Develop a custom PU animal squishy keychain collection with slow-rise squeeze feel and animal character directions for blind boxes, vending and collectible retail. Custom artwork, colors, assortments and packaging available.",
     alt: "OEM PU slow-rise animal squishy keychain blind box assortment custom wholesale manufacturer",
-    keywords: [
-      "PU slow rise squishy manufacturer",
-      "custom squishy keychain",
-      "animal squishy blind box",
-      "OEM squishy keychain",
-      "wholesale decompression toys",
-      "custom animal squishy toys",
-    ],
+    keywords: ["custom PU animal squishy keychain","custom PU animal squishy keychain manufacturer","custom PU animal squishy keychain OEM"],
     images: images(
       "pu-slow-rise-animal-keychain",
       "/images/products/pu-slow-rise-animal-keychain/hero.png",
@@ -1178,19 +1129,16 @@ export const products: Product[] = [
   },
   {
     slug: "custom-pu-fruit-animal-figures",
-    name: "Custom PU Slow-Rise Fruit & Animal Squishy Figures",
+    name: "Custom PU Fruit and Animal Squishy Figures",
+    lastModified: "2026-09-26",
+    customMaterial: "PU",
+    seoDescription: "Turn fruit and animal artwork into custom PU squishy figures. Specify shape, size, softness, colors, facial details and branded retail packaging.",
+    seoTitle: "Custom PU Fruit and Animal Squishy | Original Shape OEM",
     category: "Custom Shape Squishy · OEM/ODM",
     tag: "Any Shape Custom",
-    note: "Turn drawings, fruit ideas, animals, mascots or original characters into PU slow-rise squeeze figures. Shape, size, softness, color, face artwork, logo and retail packaging can be developed for your project.",
+    note: "Develop custom PU fruit and animal squishy figures from original drawings, fruit concepts or animal artwork. Shape, size, softness, color, face artwork, logo and retail packaging can be developed for your project.",
     alt: "custom PU slow-rise fruit animal squishy figures made from buyer artwork OEM manufacturer",
-    keywords: [
-      "custom PU squishy manufacturer",
-      "custom shape slow rise toy",
-      "fruit squishy custom",
-      "animal PU figure OEM",
-      "squishy toy from drawing",
-      "custom decompression figure",
-    ],
+    keywords: ["custom PU fruit and animal squishy","custom PU fruit and animal squishy manufacturer","custom PU fruit and animal squishy OEM"],
     images: images(
       "custom-pu-fruit-animal-figures",
       "/images/products/custom-pu-fruit-animal-figures/hero.png",
