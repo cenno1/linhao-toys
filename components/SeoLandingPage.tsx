@@ -20,6 +20,9 @@ type Props = {
   productDescription: string;
   initialFilter?: "all" | ProductFilterGroup;
   productSlugs?: string[];
+  preserveProductOrder?: boolean;
+  productEyebrow?: string;
+  quoteLabel?: string;
   lastReviewed?: string;
   serviceType: string;
   capabilities: InfoItem[];
@@ -113,7 +116,7 @@ export default function SeoLandingPage(props: Props) {
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">{props.introduction}</p>
           <p className="mt-5 max-w-3xl text-sm leading-7 text-slate-400">{props.buyerNote}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/contact" className="btn btn-primary">Request a quotation</Link>
+            <Link href="/contact" className="btn btn-primary">{props.quoteLabel ?? "Request a quotation"}</Link>
             <Link href="#buyer-brief" className="btn border border-white/30 text-white">Prepare your brief</Link>
           </div>
           {props.lastReviewed && (
@@ -132,8 +135,9 @@ export default function SeoLandingPage(props: Props) {
       <ProductShowcase
         initialFilter={props.initialFilter}
         productSlugs={props.productSlugs}
+        prioritySlugs={props.preserveProductOrder ? props.productSlugs : undefined}
         showFilters={false}
-        eyebrow="RELATED PRODUCT SAMPLES"
+        eyebrow={props.productEyebrow ?? "RELATED PRODUCT SAMPLES"}
         heading={props.productHeading}
         description={props.productDescription}
       />

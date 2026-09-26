@@ -4,7 +4,7 @@ import SeoLandingPage from "@/components/SeoLandingPage";
 export const metadata: Metadata = {
   title: "TPR Squishy Toy Manufacturer | OEM & Wholesale",
   description:
-    "Develop custom TPR squishy toys with buyer-specified shape, firmness, color, surface feel, logo and protective retail packaging for OEM and wholesale programs.",
+    "Custom TPR ice-cube shapes, smiley-face squeeze toys and moving branded plastic inserts. Specify colors, feel and packaging for OEM development.",
   alternates: { canonical: "/tpr-squishy-toy-manufacturer" },
   keywords: [
     "TPR squishy toy manufacturer",
@@ -41,24 +41,22 @@ export default function Page() {
       path="/tpr-squishy-toy-manufacturer"
       eyebrow="TPR SQUISHY TOY MANUFACTURER"
       title="Custom TPR squishy toys for OEM and wholesale programs."
-      introduction="Develop soft, stretchy and visually distinctive TPR squeeze toys for sensory assortments, impulse retail, gifts and private-label collections. LINHAO reviews the intended shape, firmness, surface behavior, color effects and protective packaging before sampling."
-      buyerNote="TPR is one possible material route rather than a universal specification. The final compound, age grade, claims, testing and packaging must be confirmed for the exact product and destination market."
-      productSlugs={[
-        "custom-tpr-popsicle-butter-cube-squishy",
-        "soft-sticky-squishy-assortment",
-        "transparent-gel-cube-squishy",
-        "crystal-clear-cat-paw-squishy",
-      ]}
-      lastReviewed="2026-08-16"
+      introduction="Alongside our custom PU range, LINHAO develops selected TPR squeeze toys: original ice-cube shapes, smiley-face designs and transparent toys with custom branded blocks or other plastic inserts that move when squeezed. Share your design, dimensions, colors, desired feel and packaging for feasibility review."
+      buyerNote="TPR minimum quantities and prices are confirmed for the specific shape, compound, inserts and packaging. Approve the squeeze feel, recovery, surface behavior and insert movement on a physical sample before production."
+      productSlugs={["custom-tpr-popsicle-butter-cube-squishy","custom-tpr-squishy-brand-inserts","transparent-gel-cube-squishy","soft-sticky-squishy-assortment"]}
+      preserveProductOrder
+      productEyebrow="SELECTED TPR CUSTOMIZATION OPTIONS"
+      quoteLabel="Discuss Your TPR Design"
+      lastReviewed="2026-09-26"
       serviceType="Custom TPR squishy toy OEM and wholesale manufacturing"
       productHeading="TPR and gel-feel squishy directions for buyer review."
-      productDescription="Compare food-inspired, sticky, transparent and cube formats, then specify an original shape, tactile target, color system and retail presentation."
+      productDescription="Explore cube formats and moving custom-insert examples. Smiley-face artwork and other original shapes can be reviewed for custom development. Final feel, construction and branding are confirmed through sampling."
       capabilities={[
-        { title: "Original Shape", text: "Review food, animal, character, cube or simple tactile forms for a practical mold route." },
+        { title: "Original Shape", text: "Develop original ice-cube shapes, smiley-face designs and other simple tactile forms, with dimensions and appearance defined in your brief." },
         { title: "Firmness & Feel", text: "Define the intended squeeze resistance, stretch, recovery and surface behavior with physical samples." },
         { title: "Color Effects", text: "Develop transparent, translucent, marbled, glitter or coordinated solid-color assortments." },
         { title: "Surface Protection", text: "Plan dust control, release film and protective packing around the approved material and finish." },
-        { title: "Private Label", text: "Add approved logos, labels, inserts, barcodes, retail boxes and display packaging." },
+        { title: "Moving Brand Inserts", text: "Specify custom branded blocks or other plastic pieces inside suitable transparent squeeze designs. Confirm the insert shapes, construction and movement on a physical sample." },
         { title: "Market Review", text: "Confirm age grading, claims, destination-market testing and labeling before production." },
       ]}
       process={[
@@ -76,12 +74,15 @@ export default function Page() {
         "Packaging format, destination market and launch timing",
       ]}
       relatedPages={[
+        { title: "Custom PU Squishy Manufacturing", text: "Explore our primary PU range for detailed characters, realistic food, slow-rise toys and custom blind-box collections.", href: "/custom-pu-squishy-manufacturer" },
         { title: "Custom Squishy Manufacturing", text: "Review the broader OEM path from artwork and mold planning to approved production.", href: "/custom-squishy-toy-manufacturer" },
         { title: "PU vs TPR vs Silicone", text: "Compare material routes by feel, recovery, finish, durability questions and packaging needs.", href: "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide" },
         { title: "Taba-Style Squishy Development", text: "Plan soft jelly-style products with coordinated tactile targets and protective packaging.", href: "/taba-squishy-manufacturer" },
         { title: "MOQ & Cost Planning", text: "Understand how molds, effects, design count, packaging and volume influence a quotation.", href: "/resources/custom-squishy-toy-moq-cost-guide" },
       ]}
       faqs={[
+        { question: "Can you customize ice-cube and smiley-face squeeze toys?", answer: "Yes. We can review original cube shapes and smiley-face artwork, including custom dimensions, colors, feel and retail packaging. The mold route and final specification are confirmed through feasibility review and sample approval." },
+        { question: "Can branded blocks or plastic pieces move inside the toy?", answer: "For suitable transparent TPR squeeze designs, custom branded blocks or other plastic inserts can be developed to move when squeezed. Share the insert artwork, dimensions and preferred movement; construction and performance must be checked on a physical sample." },
         { question: "Can LINHAO manufacture custom TPR squishy toys from our artwork?", answer: "Yes. Send the artwork, target dimensions, tactile target, quantity, market and packaging format for feasibility and mold-route review." },
         { question: "What is the MOQ for a custom TPR squishy toy?", answer: "MOQ depends on the shape, material setup, color effects, number of designs, printing and packaging. A useful quotation requires the same confirmed specification at each quantity tier." },
         { question: "Can the firmness and surface feel be customized?", answer: "They can be reviewed during material and sample development. Approve the physical sample because words such as soft or sticky are not precise production specifications." },
