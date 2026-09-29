@@ -49,6 +49,41 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-crunchy-butter-squishy",
+  "name": "Custom Crunchy Butter Squishy — TPR Block-Filled Toy",
+  "customMaterial": "TPR",
+  "category": "Custom TPR Squishy / OEM",
+  "tag": "Butter Bar · Crunchy Block Filling",
+  "note": "Create a custom crunchy butter squishy with a soft TPR exterior and building-block filling that moves as the bar is squeezed. The combination produces a crunchy, crackling sound for an ASMR-style sensory experience. The supplied photos and demonstration video show the butter-stick design in pastel colors. Customize body colors, printed artwork and the internal block or plastic-piece design for your brand. Confirm the squeeze feel, sound, dimensions and finish with a physical sample before bulk production. Contact LINHAO Toys with your artwork, target quantity and packaging brief for a quotation. This is a non-edible squeeze toy.",
+  "seoTitle": "Custom Crunchy Butter Squishy | TPR OEM Manufacturer",
+  "seoDescription": "Customize TPR crunchy butter squishy toys with moving block filling, squeeze-activated crackling sound, branded printing and packaging. Request an OEM quote.",
+  "alt": "Pink and mint green TPR crunchy butter squishy bars with printed butter-stick artwork",
+  "keywords": [
+    "crunchy butter squishy",
+    "custom crunchy butter squishy",
+    "TPR butter squishy manufacturer",
+    "block filled squishy",
+    "wholesale butter squishy",
+    "custom ASMR squishy"
+  ],
+  "images": {
+    "hero": "/images/products/custom-crunchy-butter-squishy/hero.png"
+  },
+  "gallery": [
+    {
+      "id": "butter-bars",
+      "src": "/images/products/custom-crunchy-butter-squishy/hero.png",
+      "label": "Pink and mint butter-bar designs"
+    }
+  ],
+  "video": "/videos/custom-crunchy-butter-squishy.mp4",
+  "videoUploadDate": "2026-09-29T08:00:00+08:00",
+  "lastModified": "2026-09-29",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-pu-toast-squishy-blind-box",
   "name": "Custom Toast Squishy Blind Box — PU Bread Series",
     customMaterial: "PU",
