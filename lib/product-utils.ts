@@ -40,6 +40,53 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-crunchy-butter-squishy": {
+  "specifications": [
+    {
+      "label": "Outer material",
+      "value": "TPR"
+    },
+    {
+      "label": "Internal filling",
+      "value": "Building blocks; custom block or plastic-piece designs can be discussed"
+    },
+    {
+      "label": "Sensory effect",
+      "value": "Crunchy, crackling sound produced by squeezing and moving the internal filling"
+    },
+    {
+      "label": "Design",
+      "value": "Butter-stick shape with custom body colors and printed artwork"
+    },
+    {
+      "label": "Size and weight",
+      "value": "Confirm with the quotation and approved sample; printed butter-label weights are decorative artwork"
+    },
+    {
+      "label": "Order quantity",
+      "value": "Confirm quantity, customization and packaging requirements with your quotation"
+    }
+  ],
+  "customization": [
+    "Body colors and printed brand artwork",
+    "Internal building blocks or other custom plastic pieces, subject to sample approval",
+    "Squeeze feel and sound checked through physical sampling",
+    "Custom packaging and retail artwork"
+  ],
+  "useCases": [
+    "Branded promotional gifts",
+    "Sensory and fidget toy assortments",
+    "Novelty gift retail",
+    "Wholesale custom squishy collections"
+  ],
+  "buyerBrief": [
+    "Provide your artwork and preferred colors",
+    "Specify the desired internal block or plastic-piece design",
+    "Share target size, order quantity and destination",
+    "Confirm packaging requirements and approve a physical sample"
+  ],
+  "packagingAnswer": "Custom packaging can be discussed with your order. Send your preferred format, artwork and quantity so we can confirm the packing specification and quotation."
+},
 "custom-pu-toast-squishy-blind-box": {
   "specifications": [
     {
