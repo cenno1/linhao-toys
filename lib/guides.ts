@@ -19,6 +19,128 @@ export type BuyerGuide = {
 
 export const buyerGuides: BuyerGuide[] = [
 {
+  "slug": "custom-squishy-toy-logo-printing-packaging-guide",
+  "title": "Custom Squishy Toy Logo Printing: Direct Print or Branded Packaging?",
+  "seoTitle": "Custom Squishy Toy Logo Printing & Packaging Guide",
+  "description": "Compare direct logo printing, molded details and branded packaging for custom PU and TPR squishy toys. Use a practical sample checklist before bulk production.",
+  "eyebrow": "CUSTOM SQUISHY BRANDING GUIDE",
+  "updated": "2026-10-02",
+  "readTime": "6 min read",
+  "quickAnswer": "For a custom squishy toy, choose the branding method after approving the material, shape and squeeze feel. Direct printing can work when a physical sample keeps its color and position through handling. A printed box, sleeve or label can carry a larger logo when the toy surface is too small, tacky or highly stretched. Test the finished toy and packaging together before production.",
+  "keywords": [
+    "custom squishy toy logo printing",
+    "branded squishy toys",
+    "custom PU squishy toys",
+    "custom TPR squishy toys",
+    "squishy toy packaging",
+    "wholesale promotional squishy toys"
+  ],
+  "sections": [
+    {
+      "heading": "Why the logo needs its own sample approval",
+      "paragraphs": [
+        "A squishy toy bends and compresses in ways a rigid promotional item does not. A logo that looks sharp in a flat artwork file may appear distorted across a curved character, a bread texture or a butter-bar edge. Printing also has to be evaluated on the actual finished surface, not on a separate color chip.",
+        "A recent discussion among promotional-product sellers raised three practical concerns with branding flexible squishies: alignment, surface contamination and print flaking. Those are useful questions to ask during sampling, but the result depends on the exact PU or TPR formulation, finish, ink process and design. Neither material name alone proves that a logo will hold up."
+      ]
+    },
+    {
+      "heading": "Route 1: Put the logo on the toy",
+      "paragraphs": [
+        "Use direct printing when the toy itself must remain identifiable after the packaging is removed. Keep artwork large enough to read at the proposed print size and place it on a relatively smooth, visible area. Ask for a physical sample with the final colors and position, then photograph it before and after repeated normal squeezes.",
+        "If printed detail is part of a character or realistic food design, review the painted areas as well as the logo. Check whether edges stay crisp, colors rub off, or the image becomes unreadable when the toy returns to shape. A molded or raised detail may be another design option, but it requires its own mold and sample review."
+      ],
+      "checklist": [
+        "Confirm artwork size and exact position on every variant",
+        "View the mark on the uncompressed and compressed toy",
+        "Check color transfer with an agreed dry-rub and handling test",
+        "Approve the finished sample, not a digital mockup"
+      ]
+    },
+    {
+      "heading": "Route 2: Brand the packaging",
+      "paragraphs": [
+        "A printed retail box, paper sleeve, hangtag or label gives the brand more room for a name, product information and assortment artwork. This can be especially useful for small toys, highly textured surfaces and designs where a direct logo would compete with the character face. A window box can show the toy while keeping the brand prominent.",
+        "Packaging does not solve a weak toy surface or poor construction. Review the toy and package as one retail unit: visibility through the window, movement inside the pack, scuffing in transit and whether the brand remains clear on a shelf or in an online thumbnail. If the toy is sold loose, ask whether a tag or label will stay attached through normal handling."
+      ]
+    },
+    {
+      "heading": "PU and TPR need separate checks",
+      "paragraphs": [
+        "PU foam squishies are often chosen for sculpted characters, realistic food shapes and a specified recovery feel. TPR designs can offer a different stretch or squeeze experience, including clear or filled styles. The two materials do not share one universal printing or packaging method. Surface texture, coating, tackiness, deformation and any internal insert can change the right answer.",
+        "Request separate samples when comparing PU and TPR versions. For a TPR butter-bar or insert toy, check the seam and printed area after stretching and squeezing. For a painted PU figure, inspect detailed color transitions and the recovery after compression. State the intended age market and destination so applicable testing and labeling can be reviewed for the finished design."
+      ]
+    },
+    {
+      "heading": "A buyer brief that reduces revisions",
+      "paragraphs": [
+        "Send the supplier one brief with the toy sketch or reference, target dimensions, preferred material, squeeze feel, recovery target, color references, logo vector file, proposed branding position, packaging format, order quantity by variant, destination market and delivery window. Ask the supplier which details need a new mold, print setup or packaging artwork.",
+        "Before approving bulk production, compare the physical pre-production sample with the signed artwork. Record acceptable placement and color variation, and agree how samples from the production batch will be checked. If the design is intended for a specific retailer or market, request the relevant documentation for that exact finished product rather than assuming a previous report covers it."
+      ],
+      "checklist": [
+        "One approved toy and one approved retail pack per design",
+        "Written logo position, size and color references",
+        "Agreed squeeze, rub and transit checks",
+        "Variant quantities and packaging artwork",
+        "Market-specific labeling and test requirements"
+      ]
+    },
+    {
+      "heading": "Which option should you choose?",
+      "paragraphs": [
+        "Choose direct printing when the mark must stay on the toy and its sample performs well. Choose packaging-first branding when the toy has little printable space or the brand story needs more room. Many projects use both: a small mark on the product and full artwork on the package. The best route is the one a buyer can verify on a finished sample at the intended order scale."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can every PU or TPR squishy toy be printed with a logo?",
+      "answer": "No single print method fits every surface. Shape, coating, stretch and texture matter. Ask for a physical printed sample and approve its appearance after the agreed handling checks."
+    },
+    {
+      "question": "Is a branded box enough for a custom squishy toy?",
+      "answer": "A box can communicate the brand clearly, but the toy still needs its own quality review. Check the finished toy and packaged unit together."
+    },
+    {
+      "question": "What should I send to get a quotation for branded squishies?",
+      "answer": "Provide the shape or reference image, material preference, dimensions, feel and recovery goal, logo artwork, packaging request, quantity by variant, destination market and deadline."
+    },
+    {
+      "question": "Should I use the same logo placement for PU and TPR versions?",
+      "answer": "Not automatically. Approve placement and durability on a separate finished sample for each material and design."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Prepare a custom squishy toy brief",
+      "href": "/resources/how-to-prepare-custom-squishy-toy-brief"
+    },
+    {
+      "label": "Review sample approval checks",
+      "href": "/resources/custom-squishy-toy-sample-approval-checklist"
+    },
+    {
+      "label": "Compare wholesale packaging options",
+      "href": "/resources/wholesale-squishy-toy-packaging-guide"
+    },
+    {
+      "label": "Explore a custom PU character example",
+      "href": "/products/premium-custom-pu-character-figure"
+    },
+    {
+      "label": "Explore a custom TPR insert example",
+      "href": "/products/custom-tpr-squishy-brand-inserts"
+    },
+    {
+      "label": "Discuss your design with LINHAO",
+      "href": "/contact"
+    },
+    {
+      "label": "See the promotional-products branding discussion",
+      "href": "https://www.reddit.com/r/promotionalproducts/comments/1vf9db1/i_found_a_solution_for_printing_this_squishy_toy/"
+    }
+  ]
+},
+{
   "slug": "custom-pu-squishy-toys-feel-slow-rise-design",
   "title": "Custom PU Squishy Toys: A Buyer’s Guide to Feel, Slow Rise and Design",
   "seoTitle": "Custom PU Squishy Toys: Feel, Slow Rise & Design Guide",
