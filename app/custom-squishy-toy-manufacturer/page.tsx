@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
 export const metadata: Metadata = {
-  title: "Custom PU Squishy Toy Manufacturer | OEM & Private Label",
+  title: "Custom Squishy Manufacturer | PU OEM & Private Label",
   description: "Custom PU squishy toys from your artwork: character figures, realistic food and blind-box designs. MOQ from 500 pieces. Selected TPR designs also available.",
   alternates: { canonical: "/custom-squishy-toy-manufacturer" },
   keywords: ["custom squishy toy manufacturer", "custom PU squishy toys", "OEM PU squishy manufacturer", "custom slow rising squishy toys", "custom TPR squeeze toys"],
   openGraph: {
-    title: "Custom PU Squishy Toy Manufacturer | OEM & Private Label",
+    title: "Custom Squishy Manufacturer | PU OEM & Private Label",
     description: "Custom PU shapes, recovery speeds, painted details and private-label packaging, plus selected TPR cube and smiley-face projects.",
     url: "/custom-squishy-toy-manufacturer",
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom PU Squishy Toy Manufacturer | OEM & Private Label",
+    title: "Custom Squishy Manufacturer | PU OEM & Private Label",
     description: "Custom PU shapes, recovery speeds, painted details and private-label packaging, plus selected TPR cube and smiley-face projects.",
     images: ["/images/products/premium-custom-pu-character-figure.jpg"],
   },
@@ -24,15 +24,15 @@ export const metadata: Metadata = {
 export default function Page() {
   return <SeoLandingPage
     path="/custom-squishy-toy-manufacturer"
-    eyebrow="CUSTOM PU SQUISHY TOY MANUFACTURER"
-    title="Custom PU squishy toys made for your brand."
+    eyebrow="CUSTOM SQUISHY MANUFACTURER · PU OEM"
+    title="Custom squishy manufacturer for your original PU designs."
     introduction="Turn your artwork into custom PU squishy toys: detailed character figures, realistic food, toast blind-box collections and original shapes. Specify the appearance, size, colors, recovery speed, painted details and branded packaging. We also support selected TPR projects, including ice-cube shapes, smiley-face designs and squeeze toys with moving custom inserts."
     buyerNote="Custom PU projects typically start at 500 pieces. Send your design, dimensions, quantity and desired feel for a quotation. TPR minimum quantities and specifications are quoted separately by design; final details are confirmed through sample approval."
     productSlugs={["premium-custom-pu-character-figure","ultra-slow-rising-realistic-pu-food-squishy","custom-pu-toast-squishy-blind-box","custom-pu-ice-skate-squishy","custom-pu-fruit-animal-figures","custom-pu-high-rebound-ball","custom-tpr-squishy-brand-inserts","custom-tpr-popsicle-butter-cube-squishy"]}
     preserveProductOrder
     productEyebrow="PU CASES & DESIGN REFERENCES · SELECTED TPR OPTIONS"
-    quoteLabel="Send Your Design for a Quote"
-    lastReviewed="2026-09-26"
+    quoteLabel="Request a Custom Quote"
+    lastReviewed="2026-10-04"
     serviceType="Custom PU squishy toy OEM manufacturing with selected TPR development"
     productHeading="Explore custom PU designs, then selected TPR options."
     productDescription="Start with PU character and realistic food samples, followed by toast and ice-skate design references. Explore TPR cubes and custom-insert toys below. Product pages distinguish actual samples from design references; approve a physical sample for your own project."
@@ -59,6 +59,9 @@ export default function Page() {
       "Destination market, intended age grade and requested timing",
     ]}
     relatedPages={[
+      { title: "Custom Food Squishy Manufacturing", text: "Review real PU food samples, ultra-slow recovery and moist-feeling texture, then specify your original shapes and packaging.", href: "/products/ultra-slow-rising-realistic-pu-food-squishy" },
+      { title: "Custom Character Squishy Manufacturing", text: "Plan original character artwork, sculpted features, painted details and recovery speed around an approved physical sample.", href: "/products/premium-custom-pu-character-figure" },
+      { title: "Logo Printing & Packaging Guide", text: "Choose artwork positions, finish requirements and branded packing before approving your sample.", href: "/resources/custom-squishy-toy-logo-printing-packaging-guide" },
       { title: "Real Custom PU Cases", text: "View character, robot and strawberry examples with customizable appearance and recovery speed.", href: "/custom-pu-squishy-case-studies" },
       { title: "Selected TPR Customization", text: "Explore ice-cube shapes, smiley-face designs and moving custom brand inserts.", href: "/tpr-squishy-toy-manufacturer" },
       { title: "Custom PU Squishy Manufacturer", text: "Plan original PU shapes, slow-rise recovery, artwork and private-label packaging around one approved sample.", href: "/custom-pu-squishy-manufacturer" },
