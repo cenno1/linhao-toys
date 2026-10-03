@@ -7,6 +7,7 @@ import ProductInquiryForm from "@/components/ProductInquiryForm";
 import TrackedLink from "@/components/TrackedLink";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import PriorityBuyerGuides from "@/components/PriorityBuyerGuides";
+import PuCustomBuyingGuide from "@/components/PuCustomBuyingGuide";
 import type { Product } from "@/lib/products";
 import {
   getCustomizationOptions,
@@ -206,6 +207,8 @@ export default function ProductDetail({ product }: ProductDetailProps) {
           </div>
         </div>
       </section>
+
+      <PuCustomBuyingGuide slug={product.slug} />
 
       <section className="bg-white py-16 sm:py-20">
         <div className="shell grid gap-10 lg:grid-cols-[1.1fr_.9fr]">
