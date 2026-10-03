@@ -1249,6 +1249,70 @@ export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): 
 }
 
 export function getProductFAQs(product: Product) {
+  const customFAQs: Record<string, { question: string; answer: string }[]> = {
+  "ultra-slow-rising-realistic-pu-food-squishy": [
+    {
+      "question": "Can you manufacture custom food squishy toys in PU?",
+      "answer": "Yes. Send your original food references or artwork, dimensions, colors and quantity per design. We review the shape, molded texture, painted details and packaging before confirming the custom project."
+    },
+    {
+      "question": "What does the moist-feeling texture mean?",
+      "answer": "It describes the soft tactile effect of the PU food squishy surface. These are non-edible toys. Compare a physical sample to confirm the feel you want; appearance alone cannot establish the hand-feel."
+    },
+    {
+      "question": "Can ultra-slow recovery be adjusted for my design?",
+      "answer": "Discuss your preferred softness and recovery with the design brief. Confirm the actual response on a physical sample rather than assuming every food shape will recover at the same speed."
+    },
+    {
+      "question": "What is the MOQ for custom PU food squishy toys?",
+      "answer": "MOQ starts from 500 pieces. Include the quantity per design, color and packaging format so the practical order configuration can be confirmed in the quotation."
+    },
+    {
+      "question": "What should I check before approving a food squishy sample?",
+      "answer": "Check dimensions, molded food texture, color, hand-feel and recovery. Review the painted finish while squeezing and agree on a reference sample for production."
+    },
+    {
+      "question": "Can you supply private-label food squishy packaging?",
+      "answer": "Discuss individual bags, retail boxes, blind-box concepts, labels and assortment packing with your brief. Packaging cost and configuration are confirmed separately in the quotation."
+    },
+    {
+      "question": "What information is needed for a custom food squishy quote?",
+      "answer": "Send your artwork or food references, target dimensions, desired feel, quantity per design, packaging format, destination market and requested timing. Testing and documentation must be confirmed for the exact design, age grade and market."
+    }
+  ],
+  "premium-custom-pu-character-figure": [
+    {
+      "question": "Can you manufacture a custom character squishy from my artwork?",
+      "answer": "Yes. Provide artwork you own or are authorized to use, front/side/back references, dimensions and quantity per design. We review the character shape, sculpted details and painted finish before confirming development."
+    },
+    {
+      "question": "Which character details can be customized?",
+      "answer": "Discuss facial features, expression, clothing lines, colors and decorative accents. Small details and paint boundaries are reviewed on the sample to confirm what is practical for your design."
+    },
+    {
+      "question": "Can I choose the softness and recovery of a PU figure?",
+      "answer": "Share a reference for the feel and recovery you want. Confirm the result on a physical sample because the character shape and dimensions can affect the squeeze response."
+    },
+    {
+      "question": "What is the MOQ for custom PU character figures?",
+      "answer": "MOQ starts from 500 pieces. Send the quantity per character, color and packaging format for a project-specific quotation."
+    },
+    {
+      "question": "How should I approve the painted character sample?",
+      "answer": "Check the silhouette, facial alignment, clothing details and color boundaries against your artwork. Review the finish during squeezing, then agree on the approved sample before bulk production."
+    },
+    {
+      "question": "Can custom character squishies be supplied in blind boxes?",
+      "answer": "Blind-box concepts, retail boxes, labels and assortment configurations can be discussed. Confirm artwork, packaging construction and cost in the quotation; no packaging format is assumed to be included."
+    },
+    {
+      "question": "What should I send for a character squishy quotation?",
+      "answer": "Send authorized character artwork, dimensions, colors, quantity per design, preferred feel, packaging, target market and requested timing. Confirm testing requirements for the exact item and age grade before making a compliance claim."
+    }
+  ]
+};
+  if (customFAQs[product.slug]) return customFAQs[product.slug];
+
   const profile = productBuyingProfiles[product.slug];
   const isReadyStock = READY_STOCK_SLUGS.has(product.slug);
 
