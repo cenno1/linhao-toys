@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -28,13 +29,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       url: `/resources/${guide.slug}`,
       modifiedTime: guide.updated,
-      images: [{ url: DEFAULT_OG_IMAGE, alt: `${guide.title} by ${SITE_NAME}` }],
+      images: [{ url: guide.caseStudy?.image ?? DEFAULT_OG_IMAGE, alt: `${guide.title} by ${SITE_NAME}` }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description: guide.description,
-      images: [DEFAULT_OG_IMAGE],
+      images: [guide.caseStudy?.image ?? DEFAULT_OG_IMAGE],
     },
   };
 }
@@ -52,7 +53,7 @@ export default async function GuidePage({ params }: Props) {
       description: guide.description,
       dateModified: guide.updated,
       mainEntityOfPage: url,
-      image: absoluteUrl(DEFAULT_OG_IMAGE),
+      image: absoluteUrl(guide.caseStudy?.image ?? DEFAULT_OG_IMAGE),
       keywords: guide.keywords.join(", "),
       about: guide.keywords,
       author: { "@id": `${absoluteUrl("/")}#organization` },
@@ -107,6 +108,14 @@ export default async function GuidePage({ params }: Props) {
             <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-600">Quick answer</p>
             <p className="mt-4 text-lg font-bold leading-8 text-slate-800">{guide.quickAnswer}</p>
           </section>
+          {guide.caseStudy && (
+            <figure className="mb-14 overflow-hidden rounded-3xl border border-slate-200">
+              <Link href={guide.caseStudy.href}>
+                <Image src={guide.caseStudy.image} alt={guide.caseStudy.alt} width={1200} height={1200} sizes="(min-width: 896px) 848px, 100vw" className="max-h-[560px] w-full object-contain bg-slate-50" />
+              </Link>
+              <figcaption className="p-6 text-sm leading-7 text-slate-600">{guide.caseStudy.caption} <Link href={guide.caseStudy.href} className="font-bold text-blue-600 hover:underline">View product & video →</Link></figcaption>
+            </figure>
+          )}
           <div className="space-y-14">
             {guide.sections.map((section) => (
               <section key={section.heading}>
