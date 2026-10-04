@@ -3,11 +3,11 @@ import Link from "next/link";
 const guides: Record<string, { heading: string; intro: string; steps: { title: string; text: string }[]; related: string; relatedLabel: string }> = {
   "ultra-slow-rising-realistic-pu-food-squishy": {
     heading: "Custom food squishy manufacturing for your PU collection",
-    intro: "Develop original food-shaped PU squishy toys from your references. The photographed samples and squeeze video show the surface details and recovery of these styles; your own design and finish are confirmed through sampling.",
+    intro: "Develop original food-shaped PU squishy toys from your references. The photographed samples and squeeze video show the surface details and recovery of these styles; these are actual customization cases. Your own design, hardness or softness, scent and finish are confirmed through sampling.",
     steps: [
       { title: "1. Define the food design", text: "Send food references or artwork, target dimensions, colors and quantity per style. Identify the textures and decorative details that matter most to your collection." },
       { title: "2. Approve feel and finish", text: "Compare a physical sample for softness, recovery speed, moist-feeling touch and painted details during squeezing. Agree on the sample before bulk production; the texture is a tactile effect, not edible food." },
-      { title: "3. Confirm the retail program", text: "MOQ starts from 500 pieces. Confirm quantity per design, packaging artwork, barcode and destination requirements in the quotation. Sample timing, production timing and testing scope are reviewed for your project." },
+      { title: "3. Confirm the retail program", text: "MOQ is 500 pieces per shape and 500 pieces per color. Confirm quantity per design, packaging artwork, barcode and destination requirements in the quotation. We prepare a 3D rendering from your artwork, make samples in 12–15 days and ship them for approval. Bulk production takes 25–30 days; delivery time is separate." },
     ],
     related: "/products/premium-custom-pu-character-figure",
     relatedLabel: "Compare custom PU character figures",
@@ -18,7 +18,7 @@ const guides: Record<string, { heading: string; intro: string; steps: { title: s
     steps: [
       { title: "1. Share your character brief", text: "Provide artwork you own or are authorized to use, front/side/back references, dimensions, colors and quantity per design. Mark the facial, clothing and accessory details to preserve." },
       { title: "2. Review the painted sample", text: "Check the sculpted outline, face alignment, color boundaries and small decorative details. Compare softness and recovery, and review the painted finish while squeezing before approving production." },
-      { title: "3. Plan private-label packaging", text: "MOQ starts from 500 pieces. Discuss retail boxes, blind-box concepts, labels and assortment requirements. Confirm the exact packaging, testing scope and sample-to-production schedule with the quotation." },
+      { title: "3. Plan private-label packaging", text: "MOQ is 500 pieces per shape and 500 pieces per color. Discuss retail boxes, blind-box concepts, labels and assortment requirements. We prepare a 3D rendering from your artwork, make samples in 12–15 days and ship them for approval. Bulk production takes 25–30 days; delivery time is separate." },
     ],
     related: "/products/ultra-slow-rising-realistic-pu-food-squishy",
     relatedLabel: "Compare realistic PU food squishy toys",
