@@ -26,30 +26,30 @@ export default function Page() {
     path="/custom-squishy-toy-manufacturer"
     eyebrow="CUSTOM SQUISHY MANUFACTURER · PU OEM"
     title="Custom squishy manufacturer for your original PU designs."
-    introduction="Turn your artwork into custom PU squishy toys: detailed character figures, realistic food, toast blind-box collections and original shapes. Specify the appearance, size, colors, recovery speed, painted details and branded packaging. We also support selected TPR projects, including ice-cube shapes, smiley-face designs and squeeze toys with moving custom inserts."
-    buyerNote="Custom PU projects typically start at 500 pieces. Send your design, dimensions, quantity and desired feel for a quotation. TPR minimum quantities and specifications are quoted separately by design; final details are confirmed through sample approval."
+    introduction="LINHAO manufactures custom PU squishy toys from your artwork, including character figures, realistic food, animal forms and other original shapes. Customize dimensions, colors, hardness or softness, scent, printed or painted details and packaging. TPR customization is limited to existing molds and supports logo printing, colors, hand feel and custom packaging."
+    buyerNote="MOQ is 500 pieces per shape and 500 pieces per color. The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate."
     productSlugs={["premium-custom-pu-character-figure","ultra-slow-rising-realistic-pu-food-squishy","custom-pu-toast-squishy-blind-box","custom-pu-ice-skate-squishy","custom-pu-fruit-animal-figures","custom-pu-high-rebound-ball","custom-tpr-squishy-brand-inserts","custom-tpr-popsicle-butter-cube-squishy"]}
     preserveProductOrder
-    productEyebrow="PU CASES & DESIGN REFERENCES · SELECTED TPR OPTIONS"
+    productEyebrow="ACTUAL CUSTOMIZATION CASES"
     quoteLabel="Request a Custom Quote"
     lastReviewed="2026-10-04"
     serviceType="Custom PU squishy toy OEM manufacturing with selected TPR development"
     productHeading="Explore custom PU designs, then selected TPR options."
-    productDescription="Start with PU character and realistic food samples, followed by toast and ice-skate design references. Explore TPR cubes and custom-insert toys below. Product pages distinguish actual samples from design references; approve a physical sample for your own project."
+    productDescription="Explore actual PU customization cases, including characters, realistic food, toast, ice-skate and animal shapes. These cases demonstrate our manufacturing work; your design is confirmed by 3D rendering and physical sample approval."
     capabilities={[
       { title: "Custom PU Shapes", text: "Develop character figures, food designs, toast collections and other original PU shapes from your artwork, with buyer-defined dimensions." },
       { title: "PU Feel & Recovery", text: "Specify soft slow-rise, extra-slow recovery or higher-rebound requirements. Confirm the finished feel and recovery speed against a physical sample." },
       { title: "Painted Details & Branding", text: "Plan facial features, food textures, color gradients, logos and painted details. Review finish quality and durability requirements during sample approval." },
-      { title: "Selected TPR Designs", text: "Review original ice-cube and smiley-face shapes, or transparent squeeze toys containing custom branded blocks and other plastic inserts that move when squeezed." },
+      { title: "TPR Existing Molds", text: "Choose from existing square and other available TPR molds. Customize logo printing, colors, hand feel and packaging; new custom TPR shapes are not offered." },
       { title: "Private-Label Packaging", text: "Coordinate branded blind boxes, individual bags, labels, retail boxes, display trays and shipping marks." },
       { title: "Export Coordination", text: "Review destination, age grade and documentation needs before confirming production." },
     ]}
     process={[
-      { title: "Brief Review", text: "Review artwork, size, quantity, intended user, sales channel and destination market." },
-      { title: "Feasibility & Quote", text: "Align the mold route, material feel, decoration, packaging and realistic quantity tiers." },
-      { title: "Sample Approval", text: "Confirm shape, dimensions, color, print, squeeze feel and package artwork against the brief." },
-      { title: "Production Control", text: "Use the approved sample and specification for production, inspection and export preparation." },
-    ]}
+{ title: "Artwork & 3D Rendering", text: "Send your design artwork. We prepare a 3D rendering to review the appearance before sampling. TPR projects use existing molds." },
+{ title: "Sampling: 12–15 Days", text: "Develop the physical sample to check dimensions, colors, hardness or softness, scent for PU, logo and packaging." },
+{ title: "Ship & Approve Samples", text: "We ship the sample for your review. Approve the appearance, hand feel and finish before proceeding to bulk production; delivery time is separate." },
+{ title: "Bulk Production: 25–30 Days", text: "Produce against the approved sample and order specification. Confirm the order schedule and freight transit separately." },
+]}
     buyerChecklist={[
       "Artwork, character sheet or annotated reference images",
       "Target dimensions and preferred squeeze or recovery feel",
@@ -72,10 +72,12 @@ export default function Page() {
       { title: "OEM / ODM Development Process", text: "See how a broader custom toy project moves from concept review to production coordination.", href: "/oem" },
     ]}
     faqs={[
+{ question: "How long do sampling and bulk production take?", answer: "The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate." },
+{ question: "Are these actual customization cases?", answer: "Yes. The products presented here are actual customization cases supplied by LINHAO. Your own project is developed from your requirements and approved physical sample." },
       { question: "Which custom PU squishy toys can you develop?", answer: "We review custom character figures, realistic food squishies, toast blind-box collections, ice-skate shapes and other buyer-defined designs. Appearance, dimensions, color, recovery speed, painted details and packaging can be specified for sample review." },
-      { question: "Do you also offer custom TPR squeeze toys?", answer: "Yes. Selected TPR projects include original ice-cube shapes, smiley-face designs and transparent squeeze toys with moving custom branded blocks or other plastic inserts. Share the dimensions, intended feel, artwork and quantity for feasibility and pricing." },
+      { question: "Do you also offer custom TPR squeeze toys?", answer: "TPR customization is limited to existing molds, including square and other available shapes. Logo printing, colors, hand feel and packaging can be customized. We do not currently offer new custom TPR shapes." },
       { question: "Can you manufacture a squishy from our own design?", answer: "Yes. We can review sketches, reference images or 3D files and propose a practical mold, sampling and production path." },
-      { question: "What is the MOQ for a custom squishy toy?", answer: "Custom PU projects typically start at 500 pieces. TPR minimum quantities are quoted separately according to the shape, material setup, inserts, color effects and packaging. Confirm the final quantity against your specification." },
+      { question: "What is the MOQ for a custom squishy toy?", answer: "MOQ is 500 pieces per shape and 500 pieces per color. Specify the quantity per shape and per color in your quotation request." },
       { question: "Can we add our logo and retail packaging?", answer: "Yes. Logo application, artwork, labels and private-label packaging can be included in the development brief." },
       { question: "Do you support samples before mass production?", answer: "Yes. Sampling and approval are part of the OEM process before the approved reference moves into production." },
       { question: "What affects the price of a custom squishy toy?", answer: "Shape and mold complexity, dimensions, material feel, design count, printing, visual effects, packaging and order quantity all affect the production plan and quotation." },

@@ -106,6 +106,14 @@ export default function ProductDetail({ product }: ProductDetailProps) {
               </div>
             )}
 
+            {product.customMaterial && (
+              <div className="mt-6 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+                <h2 className="text-lg font-black text-slate-950">Confirmed customization & order terms</h2>
+                <p className="mt-3 text-sm leading-7 text-slate-700">{product.customMaterial === "PU" ? "Custom PU shapes include characters, food, animals and other designs. Hardness or softness, scent, colors, logos and packaging can be customized." : "TPR customization is limited to existing molds, including square and other available shapes. We support logo printing, colors, hand feel and custom packaging; new TPR shapes are not currently offered."}</p>
+                <p className="mt-3 text-sm font-bold leading-7 text-slate-700">MOQ is 500 pieces per shape and 500 pieces per color.</p>
+                <p className="mt-3 text-sm leading-7 text-slate-700">The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate.</p>
+              </div>
+            )}
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
                 <p className="text-xs font-black uppercase tracking-[0.14em] text-slate-500">

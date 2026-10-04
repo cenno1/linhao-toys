@@ -45,16 +45,16 @@ export default function Page() {
       path="/custom-pu-squishy-manufacturer"
       eyebrow="CUSTOM PU SQUISHY MANUFACTURER"
       title="Custom PU squishy manufacturing for slow-rise, original-shape programs."
-      introduction="LINHAO Toys supports custom PU squishy projects from buyer artwork and shape review through sample approval, surface decoration, assortment planning and private-label packaging. The approved sample defines the finished appearance, squeeze feel and recovery behavior for production."
-      buyerNote="A typical custom PU project starts at 500 pieces. The current mold fee is US$680. The sample fee is US$360 with a 20-day sampling time, and the sample fee can be credited against the bulk order. Typical bulk production takes 25–30 days after sample approval. Shipping time, testing scope and the final schedule are confirmed for the exact specification."
+      introduction="LINHAO manufactures custom PU squishy toys from your artwork, including character figures, realistic food, animal forms and other original shapes. Customize dimensions, colors, hardness or softness, scent, printed or painted details and packaging. TPR customization is limited to existing molds and supports logo printing, colors, hand feel and custom packaging."
+      buyerNote="MOQ is 500 pieces per shape and 500 pieces per color. The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate."
       productSlugs={["premium-custom-pu-character-figure","ultra-slow-rising-realistic-pu-food-squishy","custom-pu-toast-squishy-blind-box","custom-pu-ice-skate-squishy","custom-pu-fruit-animal-figures","custom-pu-high-rebound-ball"]}
       preserveProductOrder
-      productEyebrow="CUSTOM PU SAMPLES & DESIGN REFERENCES"
+      productEyebrow="ACTUAL CUSTOMIZATION CASES"
       quoteLabel="Send Your Design for a Quote"
-      lastReviewed="2026-09-26"
+      lastReviewed="2026-10-04"
       serviceType="Custom PU slow-rising squishy OEM and private-label manufacturing"
       productHeading="PU squishy directions for custom shapes and retail collections."
-      productDescription="Explore detailed character figures and realistic food samples first, followed by toast blind-box and ice-skate design references, custom fruit and animal figures, and high-rebound balls. Product pages identify actual samples and design references; the approved physical sample defines your finished product."
+      productDescription="Explore actual PU customization cases, including characters, realistic food, toast, ice-skate and animal shapes. These cases demonstrate our manufacturing work; your design is confirmed by 3D rendering and physical sample approval."
       capabilities={[
         {
           title: "Custom Shape & Size",
@@ -82,23 +82,11 @@ export default function Page() {
         },
       ]}
       process={[
-        {
-          title: "Review the Brief",
-          text: "Confirm artwork, finished dimensions, quantity, target market, intended age grade, packaging and required receive date.",
-        },
-        {
-          title: "Develop the Sample",
-          text: "Align shape feasibility, PU feel, recovery, colors, decoration and packaging. The current sample fee is US$360 and the stated sampling time is 20 days; the sample fee can be credited against the bulk order.",
-        },
-        {
-          title: "Approve the Reference",
-          text: "Record dimensions, appearance, squeeze behavior, artwork and packaging against one approved sample and specification.",
-        },
-        {
-          title: "Confirm Production",
-          text: "Typical custom PU bulk production takes 25–30 days after sample approval. Confirm the final production, inspection, packing and shipping schedule for the accepted specification and quotation.",
-        },
-      ]}
+{ title: "Artwork & 3D Rendering", text: "Send your design artwork. We prepare a 3D rendering to review the appearance before sampling. TPR projects use existing molds." },
+{ title: "Sampling: 12–15 Days", text: "Develop the physical sample to check dimensions, colors, hardness or softness, scent for PU, logo and packaging." },
+{ title: "Ship & Approve Samples", text: "We ship the sample for your review. Approve the appearance, hand feel and finish before proceeding to bulk production; delivery time is separate." },
+{ title: "Bulk Production: 25–30 Days", text: "Produce against the approved sample and order specification. Confirm the order schedule and freight transit separately." },
+]}
       buyerChecklist={[
         "Sketch, character sheet, 3D file or annotated reference images",
         "Finished dimensions and any thin or vulnerable shape features",
@@ -147,6 +135,8 @@ export default function Page() {
         },
       ]}
       faqs={[
+{ question: "How long do sampling and bulk production take?", answer: "The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate." },
+{ question: "Are these actual customization cases?", answer: "Yes. The products presented here are actual customization cases supplied by LINHAO. Your own project is developed from your requirements and approved physical sample." },
         {
           question: "What do you need to quote a custom PU squishy?",
           answer: "Send the design or reference, finished dimensions, target squeeze and recovery feel, quantity per design, decoration, packaging, destination market and required receive date. A comparable quotation depends on one confirmed specification.",
@@ -165,11 +155,11 @@ export default function Page() {
         },
         {
           question: "What is the MOQ and mold fee for a custom PU squishy?",
-          answer: "The current typical MOQ starts at 500 pieces and the mold fee is US$680. The final quotation is confirmed against the shape, dimensions, design count, decoration and packaging specification.",
+          answer: "MOQ is 500 pieces per shape and 500 pieces per color. Mold and sample fees are confirmed in the quotation for your specification.",
         },
         {
           question: "What is the sample fee and sampling time?",
-          answer: "The current sample fee is US$360 and the stated sampling time is 20 days. The sample fee can be credited against the bulk order. Typical bulk production takes 25–30 days after sample approval; shipping time is separate. Confirm the final schedule against the approved specification and order.",
+          answer: "The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate. Sample fees are confirmed in the quotation.",
         },
         {
           question: "Which testing documents can be arranged?",

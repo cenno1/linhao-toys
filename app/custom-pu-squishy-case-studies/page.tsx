@@ -64,7 +64,7 @@ const faqs = [
   },
   {
     question: "What is the minimum order quantity?",
-    answer: "The minimum order quantity starts at 500 pieces. Send the specific design, preferred recovery behavior and quantity for a quotation.",
+    answer: "MOQ is 500 pieces per shape and 500 pieces per color. Send your design, preferred feel, scent and quantity per color for a quotation.",
   },
   {
     question: "Do the photographs show actual products?",
@@ -85,7 +85,7 @@ export default function CustomPuCasesPage() {
       "@id": `${url}#collection`,
       name: title, description, url,
       inLanguage: "en",
-      dateModified: "2026-09-19",
+      dateModified: "2026-10-04",
       publisher: { "@id": `${SITE_URL}/#organization` },
       image: cases.map((item) => absoluteUrl(`${photoRoot}/${item.image}`)),
       mainEntity: {
@@ -183,7 +183,7 @@ export default function CustomPuCasesPage() {
           </div>
           <aside className="rounded-[2rem] bg-blue-50 p-7 sm:p-9">
             <h2 className="text-2xl font-black text-slate-950">Minimum order quantities</h2>
-            <p className="mt-5 text-lg leading-8 text-slate-700">Custom PU orders start at <strong>500 pieces</strong>.</p>
+            <p className="mt-5 text-lg leading-8 text-slate-700">Custom PU orders start at <strong>500 pieces per shape and per color</strong>.</p>
             <p className="mt-4 leading-7 text-slate-600">Send your reference, preferred recovery behavior and requested quantity so we can prepare a quotation for your design.</p>
             <Link href="/contact" className="btn btn-primary mt-7">Request a custom PU quote</Link>
           </aside>
