@@ -14,10 +14,119 @@ export type BuyerGuide = {
     checklist?: string[];
   }>;
   faqs: Array<{ question: string; answer: string }>;
+  caseStudy?: { image: string; alt: string; caption: string; href: string };
   relatedLinks: Array<{ label: string; href: string }>;
 };
 
 export const buyerGuides: BuyerGuide[] = [
+{
+  "updated": "2026-10-04",
+  "readTime": "5 min read",
+  "slug": "crunchy-butter-squishy-wholesale-sound-sample-guide",
+  "title": "Crunchy Butter Squishy Wholesale: How to Check the Sound Before Ordering",
+  "seoTitle": "Crunchy Butter Squishy Wholesale & Custom TPR Guide",
+  "description": "Compare squeeze-activated crunchy sound with plain butter squishies using an actual TPR block-filled case, a sample checklist and clear custom-order terms.",
+  "eyebrow": "CRUNCHY BUTTER BUYER GUIDE",
+  "quickAnswer": "A crunchy butter squishy is a butter-stick-shaped squeeze toy whose appeal includes a crunching or crackling sound. In LINHAO's actual case, the TPR exterior contains moving building-block filling. Confirm the sound with an unedited squeeze video and a physical sample: a butter-shaped photo alone does not establish a crunchy mechanism.",
+  "keywords": [
+    "crunchy butter squishy wholesale",
+    "custom crunchy butter squishy",
+    "TPR butter squishy manufacturer",
+    "block filled squishy",
+    "crunchy squishy sample"
+  ],
+  "caseStudy": {
+    "image": "/images/products/custom-crunchy-butter-squishy/hero.png",
+    "alt": "Actual pink and mint green TPR crunchy butter squishy bars",
+    "caption": "Actual LINHAO customization case: TPR butter bars with moving building-block filling. The product page includes the supplied squeeze video.",
+    "href": "/products/custom-crunchy-butter-squishy"
+  },
+  "sections": [
+    {
+      "heading": "Why buyers need to distinguish crunchy from plain squishy",
+      "paragraphs": [
+        "A September 3, 2026 Reddit discussion in r/Bahrain asked where to find an affordable crunchy butter squishy. The shopper explicitly distinguished the sound-producing version from ordinary squishy listings. This is a useful buyer question, not proof of market size or a quantified search trend.",
+        "For wholesale sourcing, translate that distinction into a specification: butter shape, exterior material, internal filling, squeeze resistance and the sound you expect. A colorful butter bar can look right while offering a different tactile or sound experience."
+      ]
+    },
+    {
+      "heading": "Actual case: TPR exterior and moving blocks",
+      "paragraphs": [
+        "LINHAO's supplied butter-bar photos and demonstration video show a TPR exterior with building-block filling that moves during squeezing and produces a crunchy, crackling effect. Pink, mint and yellow references illustrate color and printed-artwork directions. These are non-edible toys.",
+        "The case demonstrates an available construction; it does not establish a sound level, lifespan or result for every fill variation. TPR customization is limited to existing molds. We support logo printing, colors, hand feel and custom packaging, with the exact insert configuration reviewed on the sample."
+      ]
+    },
+    {
+      "heading": "Ask for a squeeze video that answers procurement questions",
+      "paragraphs": [
+        "Request a continuous clip showing the exact sample before, during and after squeezing. Ask whether the recorded audio is original and whether packaging is contributing noise. Compare squeeze pressure and speed with the physical sample instead of judging only a short social clip.",
+        "Separate recovery speed from sound. A product can make a satisfying crackle without matching the softness, shape return or surface finish needed for your retail program. Approve those characteristics together."
+      ],
+      "checklist": [
+        "Exact sample and variant visible",
+        "Original audio without added sound effects",
+        "Noise checked inside and outside the retail pack",
+        "Hand pressure and repeated squeeze behavior reviewed",
+        "Shape return, printing and exterior checked",
+        "Sample revision linked to the quotation"
+      ]
+    },
+    {
+      "heading": "Approve the physical toy and package together",
+      "paragraphs": [
+        "Inspect printed artwork before and after normal handling, check the exterior and any closure areas, and review the movement of the internal pieces. Agree with the supplier on how the finished sample will be checked during production. A photo cannot substitute for these observations.",
+        "Describe the product as a sound-producing sensory toy only where the sample supports that description. Avoid implying that all butter squishies have the same fill or claiming guaranteed therapeutic effects. Product-specific testing and labels should be confirmed for the intended market and age grade."
+      ]
+    },
+    {
+      "heading": "Custom order quantities and timing",
+      "paragraphs": [
+        "LINHAO's minimum order is 500 pieces per shape and 500 pieces per color. For example, two colors of one shape require at least 500 of each color, making 1,000 pieces in total. Choose an existing TPR mold and send logo artwork, color references, intended hand feel and packaging requirements.",
+        "The process is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days and bulk production takes 25–30 days. Confirm the order schedule; sample delivery and freight transit are separate. Include destination and required arrival date when requesting a quotation."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does crunchy butter squishy describe a material?",
+      "answer": "No. It describes a butter-style squeeze toy and sound experience. LINHAO's actual case uses a TPR exterior with moving building-block filling; confirm the construction for the exact product."
+    },
+    {
+      "question": "Can I order a new TPR butter shape?",
+      "answer": "TPR customization currently uses existing molds only. Logo printing, colors, hand feel and packaging can be customized on an available mold."
+    },
+    {
+      "question": "How do I verify the crunchy sound?",
+      "answer": "Request an unedited video with original audio, then compare the actual physical sample. Check whether the noise comes from the toy, filling or packaging."
+    },
+    {
+      "question": "What is the minimum order per color?",
+      "answer": "500 pieces per shape and 500 pieces per color. Two colors of the same shape therefore require at least 1,000 pieces in total."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "View the actual crunchy butter product and squeeze video",
+      "href": "/products/custom-crunchy-butter-squishy"
+    },
+    {
+      "label": "Review TPR existing-mold customization",
+      "href": "/tpr-squishy-toy-manufacturer"
+    },
+    {
+      "label": "Compare branded moving plastic inserts",
+      "href": "/products/custom-tpr-squishy-brand-inserts"
+    },
+    {
+      "label": "Send your artwork and quantity for a quotation",
+      "href": "/contact"
+    },
+    {
+      "label": "Reddit discussion informing the crunchy-versus-plain question",
+      "href": "https://www.reddit.com/r/Bahrain/comments/1w6dlrc/parents_has_anyone_found_a_crunchy_butter_squishy/"
+    }
+  ]
+},
 {
   "slug": "custom-squishy-toy-logo-printing-packaging-guide",
   "title": "Custom Squishy Toy Logo Printing: Direct Print or Branded Packaging?",
@@ -930,11 +1039,14 @@ export const buyerGuides: BuyerGuide[] = [
     description:
       "Plan scented or no-added-fragrance squishy toys with clear odor targets, sealed-sample checks, packaging review and product-specific compliance planning.",
     eyebrow: "SENSORY SPECIFICATION",
-    updated: "2026-08-02",
+    updated: "2026-10-04",
     readTime: "8 min read",
     quickAnswer: "A squishy toy scent brief should separate intentional fragrance from base-material and packaging odor. Define whether fragrance is allowed, approve the exact finished product after sealed storage, check odor and hand transfer at opening, and confirm product-specific testing for the destination market.",
     keywords: ["unscented squishy toys", "scented squishy manufacturer", "squishy toy chemical smell", "squishy toy odor control", "custom scented stress toy"],
+    caseStudy: {"image":"/images/products/ultra-slow-rising-realistic-pu-food-squishy/textured-bun.jpg","alt":"Actual realistic PU food squishy customization case with molded bread texture","caption":"Actual PU food customization case. Appearance and texture are visible; this photograph does not establish the fragrance of the sample.","href":"/products/ultra-slow-rising-realistic-pu-food-squishy"},
     sections: [
+{"heading":"A real user question: when the scent is too strong","paragraphs":["A January 15, 2026 r/fidgettoys discussion described a foam slow-rising squishy whose fragrance felt overwhelming and lingered on hands. Replies included different scent preferences. That disagreement is a practical reason to approve intensity with the intended audience rather than assume everyone wants a strong food fragrance.","This is a consumer discussion used to frame a sourcing question, not a customer testimonial for LINHAO or a validated cleaning method. This guide focuses on choosing and approving scent before manufacture."]},
+{"heading":"Actual PU food and character cases: appearance is separate from scent","paragraphs":["LINHAO's actual PU food examples show molded bread texture, strawberry and butter-stick directions; the PU character case shows detailed facial and clothing decoration. These cases support discussions of shape and finish, but their photographs do not prove a fragrance formula or intensity.","PU projects can customize character, food, animal and other shapes, hardness or softness, and scent. State the desired fragrance or request no added fragrance, then review the finished packed sample. TPR options use existing molds with logo, color, hand feel and packaging customization; do not assume PU scent capability automatically applies to a TPR order."]},
       {
         heading: "Separate fragrance, material odor and safety",
         paragraphs: [
@@ -980,12 +1092,17 @@ export const buyerGuides: BuyerGuide[] = [
       },
     ],
     faqs: [
+{"question":"What are LINHAO's MOQ and sampling terms for custom PU?","answer":"MOQ is 500 pieces per shape and 500 pieces per color. Customer artwork is developed into a 3D rendering, followed by sampling and sample shipment for approval. Sampling takes 12–15 days and bulk production takes 25–30 days; delivery time is separate."},
       { question: "Does unscented mean a squishy toy has no smell at all?", answer: "Not necessarily. No added fragrance is a clearer specification. Base materials, printing and sealed packaging can still create an initial odor that should be evaluated on the finished packed sample." },
       { question: "Does a strong smell prove a squishy toy is unsafe?", answer: "Odor alone cannot establish compliance or toxicity. Treat a strong or unpleasant odor as a quality and consumer-acceptance concern, then review the exact materials, formulation, finished product and applicable testing." },
       { question: "Can custom squishy toys use a branded fragrance?", answer: "A fragrance direction may be developed, but intensity, compatibility, labeling and market requirements should be reviewed on the exact product before production." },
       { question: "When should scent be approved?", answer: "Approve scent on the finished product in its intended inner and retail packaging after representative sealed storage, not only on an open material sample." },
     ],
     relatedLinks: [
+{"label":"View actual PU food cases and squeeze video","href":"/products/ultra-slow-rising-realistic-pu-food-squishy"},
+{"label":"Review custom PU character figures","href":"/products/premium-custom-pu-character-figure"},
+{"label":"Review PU capabilities and quotation terms","href":"/custom-pu-squishy-manufacturer"},
+{"label":"Reddit question about overwhelming squishy fragrance","href":"https://www.reddit.com/r/fidgettoys/comments/1qdgl04/removing_scent_from_squishy/"},
       { label: "Compare PU, TPR and silicone material routes", href: "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide" },
       { label: "Approve a custom squishy sample", href: "/resources/custom-squishy-toy-sample-approval-checklist" },
       { label: "Discuss a scented or no-added-fragrance project", href: "/contact" },
