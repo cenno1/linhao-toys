@@ -1133,7 +1133,9 @@ export function getCustomizationOptions(product: Product): string[] {
     ],
   };
 
-  return productBuyingProfiles[product.slug]?.customization ?? options[product.filterGroup];
+  if (product.customMaterial === "TPR") return ["Existing TPR mold selection", "Logo printing", "Custom colors", "Custom hand feel", "Custom packaging"];
+  const customization = productBuyingProfiles[product.slug]?.customization ?? options[product.filterGroup];
+  return product.customMaterial === "PU" ? [...customization, "Custom hardness or softness", "Custom scent"] : customization;
 }
 
 export type ProductSpecification = {
@@ -1149,7 +1151,7 @@ export function getProductSpecifications(product: Product): ProductSpecification
     return [
       { label: "Product", value: product.name },
       ...(profile?.specifications ?? []),
-      { label: "Order quantity", value: product.minimumOrderQuantity ? `From ${product.minimumOrderQuantity} pieces` : "Confirmed with requested quantity and packing" },
+      { label: "Order quantity", value: product.minimumOrderQuantity ? `From ${product.minimumOrderQuantity} pieces${product.customMaterial ? " per shape and per color" : ""}` : "Confirmed with requested quantity and packing" },
       { label: "Supply timing", value: "Confirmed after availability, packing and destination review" },
     ];
   }
@@ -1265,7 +1267,7 @@ export function getProductFAQs(product: Product) {
     },
     {
       "question": "What is the MOQ for custom PU food squishy toys?",
-      "answer": "MOQ starts from 500 pieces. Include the quantity per design, color and packaging format so the practical order configuration can be confirmed in the quotation."
+      "answer": "MOQ is 500 pieces per shape and 500 pieces per color. Send your design, quantity per color and packaging format for a quotation."
     },
     {
       "question": "What should I check before approving a food squishy sample?",
@@ -1295,7 +1297,7 @@ export function getProductFAQs(product: Product) {
     },
     {
       "question": "What is the MOQ for custom PU character figures?",
-      "answer": "MOQ starts from 500 pieces. Send the quantity per character, color and packaging format for a project-specific quotation."
+      "answer": "MOQ is 500 pieces per shape and 500 pieces per color. Send your character artwork, quantity per color and packaging format for a quotation."
     },
     {
       "question": "How should I approve the painted character sample?",
@@ -1311,10 +1313,17 @@ export function getProductFAQs(product: Product) {
     }
   ]
 };
-  if (customFAQs[product.slug]) return customFAQs[product.slug];
+  const manufacturingFAQs = product.customMaterial ? [
+{ question: "What is the MOQ per shape and color?", answer: "MOQ is 500 pieces per shape and 500 pieces per color." },
+{ question: "What is the sampling and production process?", answer: "The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate." },
+{ question: "Which customization options are available for this material?", answer: product.customMaterial === "PU" ? "PU supports original character, food, animal and other shapes, with custom hardness or softness, scent, colors, logos and packaging. Confirm your requirements against the approved sample." : "TPR customization uses existing molds only, including square and other available shapes. Logo printing, colors, hand feel and packaging can be customized; new TPR shapes are not currently offered." },
+] : [];
+  if (customFAQs[product.slug]) return [...manufacturingFAQs, ...customFAQs[product.slug]];
 
   const profile = productBuyingProfiles[product.slug];
   const isReadyStock = READY_STOCK_SLUGS.has(product.slug);
+
+  if (product.customMaterial) return [...manufacturingFAQs, { question: "Can I approve a sample before bulk production?", answer: "Yes. We ship the physical sample for approval after the 3D rendering and sampling stages. Review the shape, color, hand feel, decoration and packaging before approving production." }];
 
   if (product.detailsOnRequest) {
     return [
