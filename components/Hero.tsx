@@ -70,21 +70,21 @@ export default function Hero() {
 
       <div className="shell v7-hero-content">
         <div className="v7-copy">
-          <span className="eyebrow">REAL PRODUCTS 路 TREND-LED OEM</span>
+          <span className="eyebrow">CUSTOM PU TOYS · EXISTING-MOLD TPR</span>
           <h1>
-            Custom &amp; wholesale squishy toys
+            Custom PU squishy toys
             <br />
             <span>for global buyers.</span>
           </h1>
           <p>
-            Develop OEM/ODM squishy toys or source ready-stock styles for retail and
-            distribution. Compare real glitter, food, TPR, slow-rise and sensory
-            samples with custom colors, artwork, packaging and private-label support.
+            Turn your artwork into PU character, food and animal squishy toys.
+            Customize shape, colors, softness, scent and packaging. TPR projects
+            use existing molds with custom colors, logos, hand feel and packaging.
           </p>
           <div className="hero-actions">
             <WhatsAppButton context="hero" />
             <a className="btn btn-primary btn-lg" href="#products">
-              Browse real products
+              Explore product cases
             </a>
             <Link
               className="btn btn-outline btn-lg v7-hero-btn-outline"
@@ -95,16 +95,16 @@ export default function Hero() {
           </div>
           <div className="v7-proof">
             <div>
-              <b>OEM / ODM</b>
-              <span>development support</span>
+              <b>500 pieces</b>
+              <span>per shape and per color</span>
             </div>
             <div>
-              <b>Custom</b>
-              <span>products & packaging</span>
+              <b>12–15 days</b>
+              <span>sampling; delivery separate</span>
             </div>
             <div>
-              <b>Export</b>
-              <span>buyer coordination</span>
+              <b>25–30 days</b>
+              <span>bulk production; freight separate</span>
             </div>
           </div>
         </div>

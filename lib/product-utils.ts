@@ -1235,13 +1235,29 @@ export function getProductBuyerBrief(product: Product): string[] {
 }
 
 export function getRelatedProducts(product: Product, limit = 3): Product[] {
-  const sameGroup = products.filter(
-    (item) => item.slug !== product.slug && item.filterGroup === product.filterGroup,
-  );
-  const otherProducts = products.filter(
-    (item) => item.slug !== product.slug && item.filterGroup !== product.filterGroup,
-  );
-  return [...sameGroup, ...otherProducts].slice(0, limit);
+  if (limit <= 0) return [];
+  const candidates = products.filter((item) => item.slug !== product.slug);
+  const puCases = [
+    "premium-custom-pu-character-figure",
+    "ultra-slow-rising-realistic-pu-food-squishy",
+    "custom-pu-fruit-animal-figures",
+    "pu-slow-rise-animal-keychain",
+    "custom-pu-high-rebound-ball",
+  ];
+  const casePriority = (item: Product) => {
+    const index = puCases.indexOf(item.slug);
+    return product.customMaterial === "PU" && index >= 0 ? index : puCases.length;
+  };
+  // Prefer the confirmed material route, then the broader catalog category.
+  const score = (item: Product) =>
+    product.customMaterial && item.customMaterial === product.customMaterial
+      ? 0
+      : item.filterGroup === product.filterGroup
+        ? 1
+        : 2;
+  return [...candidates]
+    .sort((a, b) => score(a) - score(b) || casePriority(a) - casePriority(b))
+    .slice(0, limit);
 }
 
 export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): string {

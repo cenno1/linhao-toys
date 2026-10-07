@@ -11,6 +11,7 @@ type ProductShowcaseProps = {
   initialFilter?: FilterOption["value"];
   productSlugs?: string[];
   prioritySlugs?: string[];
+  cardDescriptions?: Record<string, string>;
   showFilters?: boolean;
   limit?: number;
   showCatalogLink?: boolean;
@@ -32,6 +33,7 @@ export default function ProductShowcase({
   initialFilter = "all",
   productSlugs,
   prioritySlugs,
+  cardDescriptions,
   showFilters = true,
   limit,
   showCatalogLink = false,
@@ -114,7 +116,7 @@ export default function ProductShowcase({
                   <h3>
                     <Link href={`/products/${p.slug}`}>{p.name}</Link>
                   </h3>
-                  <p>{p.note}</p>
+                  <p>{cardDescriptions?.[p.slug] ?? p.note}</p>
                   <Link href={`/products/${p.slug}`}>View details →</Link>
                 </div>
               </article>
