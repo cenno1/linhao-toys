@@ -915,13 +915,13 @@ export const products: Product[] = [
   {
     slug: "custom-tpr-popsicle-butter-cube-squishy",
     name: "Custom TPR Cube Squishy & Food-Shape Assortment",
-    lastModified: "2026-09-26",
+    lastModified: "2026-10-08",
     customMaterial: "TPR",
     category: "TPR Fidget Toy / OEM-ODM",
     tag: "Colorful Sensory Assortment",
-    note: "Develop a custom TPR cube squishy collection with popsicle, butter-cube, ice-cream and other food-inspired assortment options for gift and retail programs. Customize original shapes, transparent or marbled color effects, softness, logo, protective packaging and mixed-SKU display packs.",
+    note: "Choose from existing TPR cube and other available food-inspired molds for gift and retail programs. Customize colors, transparent or marbled effects, hand feel, logo printing, protective packaging and mixed-SKU display packs. Confirm available molds and final specifications through sampling; new custom TPR shapes are not offered.",
     seoTitle: "Custom TPR Cube Squishy | Food-Shape Assortment OEM",
-    seoDescription: "Custom TPR cube squishies with popsicle and food-shape assortment options. Specify original shapes, colors, softness, logos and protective packaging.",
+    seoDescription: "TPR cube squishies using existing molds. Customize colors, hand feel, logo printing and retail packaging. Confirm available food-shape options with a sample.",
     alt: "custom colorful TPR popsicle butter cube squishy fidget toy assortment manufacturer",
     keywords: ["custom TPR cube squishy","custom TPR cube squishy manufacturer","custom TPR cube squishy OEM"],
     images: images(

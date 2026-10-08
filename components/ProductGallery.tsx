@@ -22,7 +22,7 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
         <Image
           key={active.src}
           src={active.src}
-          alt={`${productName} 鈥?${active.label}`}
+          alt={`${productName} — ${active.label}`}
           width={1200}
           height={900}
           sizes="(max-width: 1024px) 100vw, 52vw"
@@ -48,7 +48,7 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
               <div className="relative aspect-[4/3]">
                 <Image
                   src={item.src}
-                  alt={`${productName} 鈥?${item.label}`}
+                  alt={`${productName} — ${item.label}`}
                   width={400}
                   height={300}
                   sizes="(max-width: 1024px) 25vw, 13vw"
@@ -77,7 +77,7 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
             Your browser does not support embedded video.
           </video>
           <p className="px-5 py-3 text-xs font-bold text-slate-300">
-            Product demonstration 路 appearance, squeeze feel and recovery
+            Product demonstration · appearance, squeeze feel and recovery
           </p>
         </div>
       )}

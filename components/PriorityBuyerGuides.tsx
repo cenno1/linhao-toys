@@ -53,7 +53,7 @@ export default function PriorityBuyerGuides() {
               </h3>
               <p className="mt-4 text-sm leading-7 text-slate-600">{guide.text}</p>
               <Link href={guide.href} className="mt-5 inline-flex text-sm font-black text-blue-600 hover:underline">
-                {guide.linkLabel} 鈫?              </Link>
+                {guide.linkLabel} →              </Link>
             </article>
           ))}
         </div>

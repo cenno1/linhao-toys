@@ -39,7 +39,7 @@ export default function Footer() {
           <a href={`mailto:${INQUIRY_EMAIL}`}>{INQUIRY_EMAIL}</a>
         </div>
       </div>
-      <div className="shell copyright">漏 2026 LINHAO Toys. All rights reserved.</div>
+      <div className="shell copyright">© 2026 LINHAO Toys. All rights reserved.</div>
     </footer>
   );
 }

@@ -43,30 +43,28 @@ export const metadata: Metadata = {
   },
 };
 
-// Prioritize custom PU cases and design references for the current sourcing focus.
-// Keep previously ranked wholesale items after the custom range.
+// Curated sourcing entry: PU first, then selected existing-mold TPR options.
 const homepagePrioritySlugs = [
   "premium-custom-pu-character-figure",
   "ultra-slow-rising-realistic-pu-food-squishy",
-  "custom-pu-toast-squishy-blind-box",
-  "custom-pu-ice-skate-squishy",
-  "custom-pu-high-rebound-ball",
-  "custom-smiling-burger-squishy",
   "custom-pu-fruit-animal-figures",
   "pu-slow-rise-animal-keychain",
-  "ready-stock-highland-cow-tpr-squishy",
-  "transparent-gel-cube-squishy",
-  "ready-stock-halloween-butter-bar-squishy",
-  "ready-stock-chocolate-bar-squishy",
-  "dumpling-squishy-blind-box",
-  "christmas-mystery-dumpling-squishy-advent-calendar",
-  "squeaky-tongue-popping-animal-squishy",
-  "custom-tpr-popsicle-butter-cube-squishy",
-  "glitter-basket-blue",
-  "glitter-bao-bun",
-  "custom-jumbo-ghost-squishy",
-  "ready-stock-cheese-cube-squishy"
+  "custom-pu-high-rebound-ball",
+  "sesame-braided-bread-pu-squishy",
+  "custom-crunchy-butter-squishy",
+  "custom-tpr-squishy-brand-inserts",
 ];
+
+const homepageDescriptions: Record<string, string> = {
+  "premium-custom-pu-character-figure": "Actual PU character photo and video. Develop your own silhouette, face, clothing details and painted finish.",
+  "ultra-slow-rising-realistic-pu-food-squishy": "Actual food samples and squeeze video. Specify food shapes, molded textures, softness, scent and recovery.",
+  "custom-pu-fruit-animal-figures": "Develop original PU fruit and animal forms from your artwork, with custom colors, faces, softness and packaging.",
+  "pu-slow-rise-animal-keychain": "Animal PU squishy keychains for collectible and blind-box programs. Specify characters, colors, accessories and packaging.",
+  "custom-pu-high-rebound-ball": "PU ball size, color and branding options for retail and promotional projects. Confirm rebound and finish on a sample.",
+  "sesame-braided-bread-pu-squishy": "Braided PU bread with toasted shading and sesame-style details. Discuss your own bakery collection and retail packing.",
+  "custom-crunchy-butter-squishy": "Existing TPR butter-bar mold with moving block filling and crackling sound. Customize colors, print and packaging.",
+  "custom-tpr-squishy-brand-inserts": "Existing TPR cube format with moving branded blocks or plastic inserts. Review the pictured reference through sampling.",
+};
 
 const sourcingRoutes = [
   { href: "/custom-squishy-toy-manufacturer", title: "Custom PU squishy toys", text: "Develop your own PU shape, recovery, painted details and packaging.", action: "Explore custom manufacturing" },
@@ -90,12 +88,15 @@ export default function Home() {
         ))}
       </nav>
       <ProductShowcase
+        productSlugs={homepagePrioritySlugs}
         prioritySlugs={homepagePrioritySlugs}
-        limit={30}
+        cardDescriptions={homepageDescriptions}
+        showFilters={false}
+        limit={8}
         showCatalogLink
         eyebrow="CUSTOM PU FIRST · WHOLESALE & TPR OPTIONS"
         heading="Custom PU squishy designs for your next collection."
-        description="Explore PU character and realistic food samples first, followed by toast, ice-skate and other design references. Product pages identify samples and references. More wholesale and TPR options follow below."
+        description="Start with six PU sourcing directions, then two existing-mold TPR options. Open each page for photos, videos, specifications and a custom quotation. Explore all other styles in the complete catalog."
       />
       <Capabilities />
       <FactoryDirectComparison />

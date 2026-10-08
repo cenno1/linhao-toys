@@ -30,12 +30,12 @@ export default function Page() {
     buyerNote="MOQ is 500 pieces per shape and 500 pieces per color. The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate."
     productSlugs={["premium-custom-pu-character-figure","ultra-slow-rising-realistic-pu-food-squishy","custom-pu-toast-squishy-blind-box","custom-pu-ice-skate-squishy","custom-pu-fruit-animal-figures","custom-pu-high-rebound-ball","custom-tpr-squishy-brand-inserts","custom-tpr-popsicle-butter-cube-squishy"]}
     preserveProductOrder
-    productEyebrow="ACTUAL CUSTOMIZATION CASES"
+    productEyebrow="PU CASES & DESIGN REFERENCES"
     quoteLabel="Request a Custom Quote"
-    lastReviewed="2026-10-04"
+    lastReviewed="2026-10-08"
     serviceType="Custom PU squishy toy OEM manufacturing with selected TPR development"
     productHeading="Explore custom PU designs, then selected TPR options."
-    productDescription="Explore actual PU customization cases, including characters, realistic food, toast, ice-skate and animal shapes. These cases demonstrate our manufacturing work; your design is confirmed by 3D rendering and physical sample approval."
+    productDescription="Explore actual PU character and food samples alongside design references for toast, ice-skate and other shapes. Each product page identifies the visuals shown. Your original PU design is developed through 3D rendering and physical sample approval; TPR options use existing molds."
     capabilities={[
       { title: "Custom PU Shapes", text: "Develop character figures, food designs, toast collections and other original PU shapes from your artwork, with buyer-defined dimensions." },
       { title: "PU Feel & Recovery", text: "Specify soft slow-rise, extra-slow recovery or higher-rebound requirements. Confirm the finished feel and recovery speed against a physical sample." },
@@ -73,10 +73,10 @@ export default function Page() {
     ]}
     faqs={[
 { question: "How long do sampling and bulk production take?", answer: "The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate." },
-{ question: "Are these actual customization cases?", answer: "Yes. The products presented here are actual customization cases supplied by LINHAO. Your own project is developed from your requirements and approved physical sample." },
+{ question: "Do these images show actual products or design references?", answer: "This collection includes actual PU product photos and videos as well as design references. Individual product pages identify what is shown; toast concepts are design references rather than finished production samples. Your own project is confirmed through an approved physical sample." },
       { question: "Which custom PU squishy toys can you develop?", answer: "We review custom character figures, realistic food squishies, toast blind-box collections, ice-skate shapes and other buyer-defined designs. Appearance, dimensions, color, recovery speed, painted details and packaging can be specified for sample review." },
       { question: "Do you also offer custom TPR squeeze toys?", answer: "TPR customization is limited to existing molds, including square and other available shapes. Logo printing, colors, hand feel and packaging can be customized. We do not currently offer new custom TPR shapes." },
-      { question: "Can you manufacture a squishy from our own design?", answer: "Yes. We can review sketches, reference images or 3D files and propose a practical mold, sampling and production path." },
+      { question: "Can you manufacture a squishy from our own design?", answer: "For PU, we can review sketches, reference images or 3D files for an original shape and sampling plan. TPR projects are limited to existing molds, with custom colors, logos, hand feel and packaging." },
       { question: "What is the MOQ for a custom squishy toy?", answer: "MOQ is 500 pieces per shape and 500 pieces per color. Specify the quantity per shape and per color in your quotation request." },
       { question: "Can we add our logo and retail packaging?", answer: "Yes. Logo application, artwork, labels and private-label packaging can be included in the development brief." },
       { question: "Do you support samples before mass production?", answer: "Yes. Sampling and approval are part of the OEM process before the approved reference moves into production." },
