@@ -869,27 +869,46 @@ export const products: Product[] = [
     filterGroup: "squishy",
   },
   {
-    slug: "dumpling-squishy-blind-box",
-    name: "Custom Dumpling Squishy Blind Box Series",
-    category: "Viral Squishy · OEM/ODM",
-    tag: "2026 Trend Pick",
-    note: "Pastel dumpling and bao bun squishies developed as blind-box assortments for collectible retail and social-commerce launches. Customize expressions, colorways, softness, scent, rarity mix and display packaging.",
-    seoTitle: "Dumpling Squishy Blind Box Manufacturer",
-    seoDescription: "Develop custom dumpling and bao bun squishy blind boxes with original expressions, color assortments, private-label packaging and OEM sampling.",
-    alt: "custom dumpling squishy blind box bao bun sensory toys wholesale manufacturer",
-    keywords: [
-      "dumpling squishy manufacturer",
-      "bao bun squishy wholesale",
-      "squishy blind box OEM",
-      "custom sensory toy supplier",
-      "kawaii dumpling squishy",
-      "private label squishy toys",
-    ],
-    images: images("dumpling-squishy-blind-box", "/images/products/dumpling-squishy-blind-box/hero.png"),
-    featured: true,
-    bestseller: true,
-    filterGroup: "squishy",
+  "slug": "dumpling-squishy-blind-box",
+  "name": "Custom PU Dumpling Squishy — Pleats, Faces & Blind Boxes",
+  "customMaterial": "PU",
+  "category": "Custom PU Food Squishy / OEM",
+  "tag": "Custom Pleats · Expressions · Packaging",
+  "note": "Develop custom PU dumpling squishy toys with buyer-defined pleats, crescent proportions and facial expressions. Choose colors, dimensions, softness, recovery feel and optional scent, then complete your collection with branded steamer-style presentation packaging or individual blind boxes. The golden studio image is an AI-edited photo reference with revised faces and background; the cream-and-sage advertisement is an original concept design. The reference sample video demonstrates squeezing on a different face design. Final shape, decoration, hand feel and packaging are confirmed on your physical sample. MOQ is 500 pieces per shape and 500 pieces per color. The process is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days, excluding sample delivery and freight transit. These are non-edible PU toys for custom food-themed retail, promotional gifts and collectible collections.",
+  "seoTitle": "Custom PU Dumpling Squishy | Pleats & Blind Box OEM",
+  "seoDescription": "Custom PU dumpling squishy toys with original pleats, expressions, scent and steamer-style or blind-box packaging. MOQ 500 per shape and color. Request an OEM quote.",
+  "alt": "Golden PU dumpling squishy design visualization with three revised smiling expressions on a cream studio background",
+  "keywords": [
+    "custom PU dumpling squishy",
+    "custom dumpling squishy manufacturer",
+    "dumpling squishy blind box OEM",
+    "PU food squishy wholesale",
+    "custom dumpling stress toy",
+    "steamer box squishy packaging"
+  ],
+  "images": {
+    "hero": "/images/products/dumpling-squishy-blind-box/custom-pu-hero.jpg"
   },
+  "gallery": [
+    {
+      "id": "hero",
+      "src": "/images/products/dumpling-squishy-blind-box/custom-pu-hero.jpg",
+      "label": "Revised faces · AI-edited photo reference"
+    },
+    {
+      "id": "concept",
+      "src": "/images/products/dumpling-squishy-blind-box/custom-pu-concept.jpg",
+      "label": "Original PU dumpling concept design"
+    }
+  ],
+  "video": "/videos/custom-pu-dumpling-squishy.mp4",
+  "videoUploadDate": "2026-10-09T12:00:00+08:00",
+  "lastModified": "2026-10-09",
+  "minimumOrderQuantity": 500,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
   {
     slug: "transparent-gel-cube-squishy",
     name: "Custom Transparent Gel Cube Sensory Squishy",
