@@ -40,6 +40,62 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-croissant-squishy": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU foam"
+    },
+    {
+      "label": "Shape and texture",
+      "value": "Croissant / crescent-shaped bread with layered bakery detail and golden toasted shading"
+    },
+    {
+      "label": "Squeeze and recovery",
+      "value": "Soft slow-rising feel; approve the target softness and recovery on a physical sample."
+    },
+    {
+      "label": "Decoration options",
+      "value": "Plain baked-color shading or optional chocolate-drizzle design; final decorated finish is confirmed on the approved sample"
+    },
+    {
+      "label": "Scent",
+      "value": "Optional custom scent, confirmed against the approved sample"
+    },
+    {
+      "label": "Dimensions and weight",
+      "value": "Custom dimensions and weight agreed with the design and quotation"
+    },
+    {
+      "label": "Sampling",
+      "value": "12–15 days; sample shipment and delivery time are separate"
+    },
+    {
+      "label": "Bulk production",
+      "value": "25–30 days; freight transit is separate"
+    }
+  ],
+  "customization": [
+    "Original croissant proportions, dimensions and bakery texture",
+    "Golden baked-color shading and optional chocolate-drizzle decoration",
+    "Custom colors, logo printing and brand artwork",
+    "Retail box, individual bag, hangtag or display packaging"
+  ],
+  "useCases": [
+    "Bakery and coffee-brand promotional merchandise",
+    "Food-themed toy and novelty gift collections",
+    "Private-label retail squishy assortments",
+    "Wholesale bakery-inspired sensory toy programs"
+  ],
+  "buyerBrief": [
+    "Send croissant artwork or shape references and target dimensions",
+    "Choose plain shading or chocolate-drizzle decoration",
+    "Specify softness, recovery and optional scent requirements",
+    "Provide quantity per shape and color, starting from 500 pieces each",
+    "Share logo artwork, packaging brief, destination and delivery target"
+  ],
+  "packagingAnswer": "Individual bags, branded retail boxes, hangtags and display packing can be quoted for your croissant design. The supplied photos are shape and finish references; final packaging artwork, construction and cost are approved separately."
+},
 "custom-crunchy-butter-squishy": {
   "specifications": [
     {
