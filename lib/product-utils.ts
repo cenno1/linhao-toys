@@ -861,24 +861,62 @@ const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
     packagingAnswer: "The current retail presentation, unit packing, carton quantity, carton dimensions and dispatch timing are confirmed against live stock before the wholesale order is accepted.",
   },
   "dumpling-squishy-blind-box": {
-    specifications: [
-      { label: "Material route", value: "PU slow-rise or another approved squeeze construction confirmed during sampling" },
-      { label: "Assortment format", value: "Original dumpling or bao characters with buyer-approved color and expression ratios" },
-      { label: "Packaging route", value: "Blind box, blind bag, display carton or private-label retail box" },
-    ],
-    customization: [
-      "Original dumpling, bao or food-character shapes",
-      "Expressions, accessories and secret-edition directions",
-      "Colorway and assortment-ratio planning",
-      "Softness, recovery and optional scent review",
-      "Blind box, display carton and barcode artwork",
-      "Private-label inserts, warning labels and export cartons",
-    ],
-    useCases: ["Blind-box collections", "Impulse retail", "Social-commerce launches", "Gift and vending assortments"],
-    buyerBrief: ["Number of characters and colorways", "Target size and squeeze feel", "Total quantity and quantity per design", "Blind-box rarity or assortment plan", "Destination market and packaging format"],
-    packagingAnswer: "Blind boxes, blind bags and counter-display cartons can be reviewed together with the character count, assortment ratio, barcode and destination-market labeling.",
-  },
-  "transparent-gel-cube-squishy": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU foam"
+    },
+    {
+      "label": "Custom shape",
+      "value": "Buyer-designed dumpling pleats, crescent proportions, dimensions and surface details"
+    },
+    {
+      "label": "Face artwork",
+      "value": "Original smiling, winking or buyer-defined expressions; final painted artwork approved on a sample"
+    },
+    {
+      "label": "Feel and scent",
+      "value": "Custom hardness or softness, recovery and optional scent, confirmed through physical sampling"
+    },
+    {
+      "label": "Packaging options",
+      "value": "Steamer-style presentation packaging, individual blind boxes, branded retail boxes or display cartons, developed and quoted for your project"
+    },
+    {
+      "label": "Images and video",
+      "value": "Golden image: AI-edited photo reference. Cream-and-sage image: concept design. Video: reference sample with a different facial design; final production approved by physical sample."
+    },
+    {
+      "label": "Sampling",
+      "value": "12–15 days; sample delivery is separate"
+    },
+    {
+      "label": "Bulk production",
+      "value": "25–30 days; freight transit is separate"
+    }
+  ],
+  "customization": [
+    "Original pleat pattern and dumpling shape from buyer artwork",
+    "Different facial expressions, colors and decorative artwork",
+    "Size, logo printing and collection variants",
+    "Steamer-style presentation packs and branded blind boxes",
+    "Assortment ratios, insert cards and retail display artwork"
+  ],
+  "useCases": [
+    "Food-themed collectible and blind-box collections",
+    "Restaurant and food-brand promotional merchandise",
+    "Gift-shop and novelty toy retail",
+    "Private-label PU squishy assortments"
+  ],
+  "buyerBrief": [
+    "Provide your dumpling design, pleat references and target dimensions",
+    "Share original face artwork and quantity per shape and color, from 500 pieces each",
+    "Specify softness, recovery and scent preferences",
+    "Choose steamer-style packing, blind boxes or another branded format",
+    "Confirm assortment ratios, destination and target delivery schedule"
+  ],
+  "packagingAnswer": "Steamer-style presentation packaging and individual blind boxes can be developed from your brief. Share the packaging construction, dimensions, branding, number of characters and assortment ratio. Packaging samples, cost and final packing details are approved separately; the supplied images do not show finished packaging."
+},  "transparent-gel-cube-squishy": {
     specifications: [
       { label: "Material route", value: "Clear elastomer or gel-style construction selected after firmness and market review" },
       { label: "Visual options", value: "Transparent color, glitter, suspended inclusions or clean crystal appearance" },

@@ -13,7 +13,7 @@ type ProductGalleryProps = {
 export default function ProductGallery({ productName, items, videoSrc }: ProductGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = items[activeIndex];
-  const imageFit = active.src.includes("custom-croissant-squishy") || active.src.includes("dumpling-advent-calendar-") || active.src.includes("pu-wrist-reflex-training-ball") || active.src.includes("custom-pu-high-rebound-ball") || active.src.includes("premium-custom-pu-character-figure") || active.src.includes("ultra-slow-rising-realistic-pu-food-squishy") ? "object-contain" : "object-cover";
+  const imageFit = active.src.includes("dumpling-squishy-blind-box") || active.src.includes("custom-croissant-squishy") || active.src.includes("dumpling-advent-calendar-") || active.src.includes("pu-wrist-reflex-training-ball") || active.src.includes("custom-pu-high-rebound-ball") || active.src.includes("premium-custom-pu-character-figure") || active.src.includes("ultra-slow-rising-realistic-pu-food-squishy") ? "object-contain" : "object-cover";
   const useOriginalImage = active.src.includes("ready-stock-halloween-butter-bar-squishy") || active.src.includes("ready-stock-chocolate-bar-squishy") || active.src.includes("squeaky-tongue-popping-animal-squishy");
 
   return (
@@ -71,13 +71,13 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
             preload="metadata"
             poster={items[0].src}
             aria-label={`${productName} squeeze and product demonstration video`}
-            className={(videoSrc.includes("premium-custom-pu-character-figure") || videoSrc.includes("ultra-slow-rising-realistic-pu-food-squishy")) ? "mx-auto aspect-[9/16] max-h-[720px] w-full object-contain" : "aspect-video w-full object-cover"}
+            className={(videoSrc.includes("custom-pu-dumpling-squishy") || videoSrc.includes("premium-custom-pu-character-figure") || videoSrc.includes("ultra-slow-rising-realistic-pu-food-squishy")) ? "mx-auto aspect-[9/16] max-h-[720px] w-full object-contain" : "aspect-video w-full object-cover"}
           >
             <source src={videoSrc} type="video/mp4" />
             Your browser does not support embedded video.
           </video>
           <p className="px-5 py-3 text-xs font-bold text-slate-300">
-            Product demonstration · appearance, squeeze feel and recovery
+            {videoSrc.includes("custom-pu-dumpling-squishy") ? "Reference sample video · facial design differs from the revised visualizations" : "Product demonstration · appearance, squeeze feel and recovery"}
           </p>
         </div>
       )}
