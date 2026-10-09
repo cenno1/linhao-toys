@@ -49,6 +49,50 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-croissant-squishy",
+  "name": "Custom Croissant Squishy — Realistic PU Bakery Toy",
+  "customMaterial": "PU",
+  "category": "Custom PU Food Squishy / OEM",
+  "tag": "Bakery Texture · Custom Scent",
+  "note": "Create a custom croissant squishy in PU with layered bakery texture, golden toasted shading and a soft slow-rising squeeze feel. The supplied reference photos show a plain croissant-style design and a hand-pressed view. Optional chocolate-drizzle decoration, custom scent, colors, dimensions, logo printing and branded packaging can be developed for your project; these options are confirmed on the approved sample. MOQ is 500 pieces per shape and 500 pieces per color. Send your artwork for 3D rendering, sampling and sample shipment. Sampling takes 12–15 days and bulk production takes 25–30 days, with sample delivery and freight transit separate. This is a non-edible squeeze toy for bakery-themed retail, gift and promotional collections.",
+  "seoTitle": "Custom Croissant Squishy | PU OEM Manufacturer",
+  "seoDescription": "Custom PU croissant squishy with realistic bakery texture, optional chocolate drizzle, scent, logo and packaging. MOQ 500 per shape and color. Request an OEM quote.",
+  "alt": "Golden croissant-shaped PU squishy with layered bakery texture held in a hand",
+  "keywords": [
+    "custom croissant squishy",
+    "croissant squishy manufacturer",
+    "PU croissant squishy wholesale",
+    "custom bakery squishy",
+    "slow rising croissant squishy",
+    "private label bread squishy"
+  ],
+  "images": {
+    "hero": "/images/products/custom-croissant-squishy/hero.jpg"
+  },
+  "gallery": [
+    {
+      "id": "hero",
+      "src": "/images/products/custom-croissant-squishy/hero.jpg",
+      "label": "Golden toasted croissant reference"
+    },
+    {
+      "id": "squeeze",
+      "src": "/images/products/custom-croissant-squishy/squeeze.jpg",
+      "label": "Hand-pressed shape demonstration"
+    },
+    {
+      "id": "texture",
+      "src": "/images/products/custom-croissant-squishy/texture.jpg",
+      "label": "Layered bakery texture reference"
+    }
+  ],
+  "lastModified": "2026-10-09",
+  "minimumOrderQuantity": 500,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-crunchy-butter-squishy",
   "name": "Custom Crunchy Butter Squishy — TPR Block-Filled Toy",
   "customMaterial": "TPR",
