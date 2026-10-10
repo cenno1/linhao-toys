@@ -20,6 +20,162 @@ export type BuyerGuide = {
 
 export const buyerGuides: BuyerGuide[] = [
 {
+  "slug": "custom-pu-squishy-paint-rubbing-off-guide",
+  "title": "Why Does Squishy Paint Rub Off? A Custom PU Toy Finish Guide",
+  "seoTitle": "Squishy Paint Rubbing Off? Custom PU Finish & Sample Guide",
+  "description": "Plan painted faces and food details for custom PU squishy toys. Learn what buyers should check for rubbing, cracking and color transfer before approving bulk production.",
+  "eyebrow": "PAINTED FINISH & SAMPLE APPROVAL",
+  "updated": "2026-10-10",
+  "readTime": "7 min read",
+  "quickAnswer": "If squishy face paint rubs off, the finish needs to be assessed together with the toy material, decoration method, squeezing pattern, handling and packaging. A nice-looking photo cannot demonstrate coating durability. For a custom PU order, agree on finished-sample checks, compare each expression or painted variant, record the result and approve a reference sample before bulk production.",
+  "keywords": [
+    "squishy paint rubbing off",
+    "custom PU squishy toys",
+    "squishy face paint durability",
+    "PU squishy sample approval",
+    "custom painted squishy manufacturer",
+    "custom dumpling squishy"
+  ],
+  "sections": [
+    {
+      "heading": "What recent squishy discussions tell buyers",
+      "paragraphs": [
+        "A Reddit discussion about touching up worn character paint includes users describing damaged faces and asking whether molded details would be easier to keep recognizable. A separate discussion about purchased squishies includes a report of face paint coming off. These are individual experiences with different products and constructions, rather than a controlled test of PU or a verified failure rate for any brand.",
+        "The useful sourcing question is broader: how will the exact face or food decoration look after the handling expected for your collection? This guide turns that question into a brief and sample-approval plan for custom PU toys. Source discussions are linked at the end; consumer repair suggestions are not a manufacturing specification."
+      ]
+    },
+    {
+      "heading": "Distinguish paint wear, coating cracks and foam damage",
+      "paragraphs": [
+        "Before asking for a replacement finish, document what actually changed. A missing eye graphic, a line in the painted layer, color left on packaging and a tear in the foam are different observations. Photograph the location before and after handling, describe the action and keep the affected sample for review.",
+        "Confirm whether the product is PU foam, a TPR shell or another construction. A repair recommendation for a filled shell does not establish a suitable decoration process for PU foam. LINHAO develops original PU shapes, while its current TPR customization uses existing molds with custom colors, printing, hand feel and packaging."
+      ],
+      "checklist": [
+        "Paint wear: a face or logo becomes lighter or disappears",
+        "Coating crack: a line appears in a decorated area during compression",
+        "Color transfer: visible color appears on the contact surface or pack",
+        "Foam tear: the body or edge splits",
+        "Identify material and retain the sample before drawing conclusions"
+      ]
+    },
+    {
+      "heading": "Write the face artwork around the intended squeeze",
+      "paragraphs": [
+        "For a dumpling character, mark which eyes, cheeks and mouth elements are essential to recognition. Show where the buyer expects the toy to be pressed, and ask the factory to review the decoration in those areas. For a PU figure, make the same review around facial features, clothing lines and small decorative accents.",
+        "Consider a simpler expression or sculpted detail where it suits the original design. Molded features can remain visible without depending entirely on a printed line, but sculpting does not automatically make the whole toy more durable. The final dimensions, softness and painted accents still need sample review.",
+        "Ask which details are molded and which are painted or printed. Agree on the proposed method and the finished appearance through samples, rather than requiring a particular paint formula based on an online repair anecdote."
+      ]
+    },
+    {
+      "heading": "Use product-specific checks before a bulk order",
+      "paragraphs": [
+        "Use a fully decorated physical sample made to the intended specification. Agree with the manufacturer on the compression depth, hold time, recovery interval and number of repetitions. Apply the same method to each candidate so you can compare the observations. There is no universal squeeze-cycle number claimed here.",
+        "Inspect the face before handling, during compression and after recovery. Include normal dry-hand handling and a repeatable rub check agreed for the actual finish. If cleaning instructions are part of the program, evaluate only the proposed product-specific method. Record the method and the observations; do not turn a short demonstration video into a guaranteed service-life claim."
+      ],
+      "checklist": [
+        "Record sample ID, variant, material and decoration method",
+        "Photograph eyes, mouth, cheeks, logo and paint boundaries",
+        "Agree on compression and repetition conditions",
+        "Check loss of detail, cracking and color transfer",
+        "Review the proposed care instructions on the exact finish",
+        "Set written acceptance criteria and retain an approved sample"
+      ]
+    },
+    {
+      "heading": "Check the packaging as well as the toy",
+      "paragraphs": [
+        "Repeat the review with the final retail pack. Check where the painted face touches a bag, tray or insert, whether the toy sits compressed and whether the unpacked finish matches the approved sample. Agree on packed-storage conditions and review timing for the order; no storage duration or transport performance is promised without evaluation.",
+        "For steamer-style packs and blind boxes, confirm the insert, number of pieces and product clearance. A concealed pack still needs accurate material, collection and variant information. If a design is a concept image or an AI-edited visualization, make that status clear and approve the final physical decoration and packaging separately."
+      ]
+    },
+    {
+      "heading": "Apply the checklist to LINHAO PU examples",
+      "paragraphs": [
+        "The custom PU character figure page includes an actual product photograph and demonstration video. It is a useful starting point for discussing facial alignment, clothing lines and decorative boundaries, but it does not provide a published cycle-test result.",
+        "The custom PU food collection shows photographed food shapes and a squeeze demonstration. Buyers can use it to discuss textured surfaces, color shading and the target recovery feel. Texture and visual realism should be approved alongside the decorated finish.",
+        "The custom PU dumpling page shows revised face and original concept visualizations, plus a reference sample video with different facial artwork. Use those materials to specify pleats, expressions and steamer-style or blind-box packaging, then approve the chosen design on a physical sample. The croissant page provides bakery-shape references, with chocolate-drizzle decoration and scent presented as optional customization. None of these pages should be read as a measured paint-durability guarantee."
+      ]
+    },
+    {
+      "heading": "Send a brief that connects decoration, MOQ and timing",
+      "paragraphs": [
+        "Send your original artwork, dimensions, colors, quantity per shape and color, preferred softness or hardness, optional scent, packing format and intended use. Identify the artwork elements that must remain recognizable and the checks you want recorded before approval.",
+        "LINHAO's confirmed custom PU MOQ is 500 pieces per shape and 500 pieces per color. The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days and bulk production takes 25–30 days; sample delivery and freight transit are separate. Confirm your order schedule and any additional revisions with the quotation.",
+        "For an original character or food collection, request a quote with the decoration and packaging brief together. This gives the sample review a clear purpose: approval of the finish, face, feel and pack that will define the bulk order."
+      ]
+    },
+    {
+      "heading": "Discussion sources and the limits of this guide",
+      "paragraphs": [
+        "Research reviewed on October 10, 2026. The linked Reddit threads are qualitative consumer feedback used to select the question, not market-size data, verified material identification or laboratory evidence. Relative dates shown on Reddit and search caches can differ, so this guide does not rank the topic by vote count or claim a measured demand increase.",
+        "This is a buyer planning guide. Sample checks support commercial approval and do not replace any product-specific testing or documentation required for the intended market. Ask for the exact product scope and evidence before making a durability or compliance claim."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Why does squishy face paint rub off?",
+      "answer": "Document the product material, finish and handling first. Review decoration compatibility, compression areas, rubbing and packaging contact on the finished sample. A photograph or online anecdote alone cannot establish the cause."
+    },
+    {
+      "question": "Can custom PU squishy faces be designed differently?",
+      "answer": "Yes. Original expressions, sculpted features, colors and painted details can be developed from your artwork. Confirm the final face and squeeze feel on a physical sample."
+    },
+    {
+      "question": "Are molded details automatically more durable than painted faces?",
+      "answer": "Molded features reduce reliance on a surface graphic for recognition, but the foam structure and any painted accents still need review. Compare the exact finished designs using agreed sample checks."
+    },
+    {
+      "question": "Can I use online paint or glue repair tips as my factory specification?",
+      "answer": "Consumer repair anecdotes do not establish a suitable production finish. Give the factory your artwork, handling requirements and acceptance criteria, then review its proposed method on a finished sample."
+    },
+    {
+      "question": "What is the MOQ and lead time for a custom PU project?",
+      "answer": "MOQ is 500 pieces per shape and 500 pieces per color. Sampling takes 12–15 days and bulk production takes 25–30 days. Sample delivery, freight transit and additional revisions are separate schedule considerations."
+    }
+  ],
+  "caseStudy": {
+    "image": "/images/products/premium-custom-pu-character-figure.jpg",
+    "alt": "LINHAO custom PU character figure with facial artwork and painted clothing details",
+    "caption": "Actual custom PU character case used to discuss face alignment and painted details. A product photograph does not establish a measured paint-durability result.",
+    "href": "/products/premium-custom-pu-character-figure"
+  },
+  "relatedLinks": [
+    {
+      "label": "Custom PU character figure — photo and reference video",
+      "href": "/products/premium-custom-pu-character-figure"
+    },
+    {
+      "label": "Custom PU food squishy — photographed food shapes",
+      "href": "/products/ultra-slow-rising-realistic-pu-food-squishy"
+    },
+    {
+      "label": "Custom PU dumpling — expressions, pleats and packaging",
+      "href": "/products/dumpling-squishy-blind-box"
+    },
+    {
+      "label": "Custom croissant squishy — bakery references",
+      "href": "/products/custom-croissant-squishy"
+    },
+    {
+      "label": "Custom PU squishy manufacturer",
+      "href": "/custom-pu-squishy-manufacturer"
+    },
+    {
+      "label": "Custom squishy logo printing guide",
+      "href": "/resources/custom-squishy-toy-logo-printing-packaging-guide"
+    },
+    {
+      "label": "Reddit discussion: touching up worn character paint",
+      "href": "https://www.reddit.com/r/NeeDoh/comments/1wlkq28/any_triedhad_any_success_touching_up_paint/"
+    },
+    {
+      "label": "Reddit discussion: purchased squishy finish feedback",
+      "href": "https://www.reddit.com/r/AmazonVineCanada/comments/1von1un/do_not_recommed/"
+    }
+  ]
+},
+{
   "updated": "2026-10-04",
   "readTime": "5 min read",
   "slug": "crunchy-butter-squishy-wholesale-sound-sample-guide",
