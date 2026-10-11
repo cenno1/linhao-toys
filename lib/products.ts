@@ -932,27 +932,44 @@ export const products: Product[] = [
     filterGroup: "squishy",
   },
   {
-    slug: "capybara-squishy-assortment",
-    name: "Custom Capybara Squishy Assortment",
-    category: "Character Squishy · OEM/ODM",
-    tag: "Viral Character",
-    note: "Original capybara squeeze characters with accessory variations for collectible assortments, impulse gifting and key retail moments. Customize poses, accessories, colors, material feel, packaging and assortment ratios.",
-    seoTitle: "Capybara Squishy Wholesale & OEM Manufacturer",
-    seoDescription: "Create original capybara squishy assortments with custom poses, accessories, colors, packaging and wholesale assortment planning.",
-    alt: "custom capybara squishy stress toy assortment wholesale OEM manufacturer",
-    keywords: [
-      "capybara squishy",
-      "capybara stress toy wholesale",
-      "custom animal squishy manufacturer",
-      "capybara sensory toy",
-      "OEM character squishy",
-      "bulk capybara toys",
-    ],
-    images: images("capybara-squishy-assortment", "/images/products/capybara-squishy-assortment/hero.png"),
-    featured: true,
-    bestseller: true,
-    filterGroup: "squishy",
+  "slug": "capybara-squishy-assortment",
+  "name": "Custom Capybara PU Squishy Toys",
+  "customMaterial": "PU",
+  "category": "Custom PU Animal Squishy / OEM",
+  "tag": "Costumes · Expressions · Backpacks",
+  "note": "Develop custom capybara squishy toys in PU foam with original body shapes, costumes, facial expressions and sculpted accessories. The supplied product photos show swimming and fruit-themed outfits, headphones, a popcorn-style costume, animal-shaped backpacks and different expressions. Customize dimensions, colors, softness or hardness, scent, printed details and branded packaging, including blind boxes or retail display sets. Confirm the final design, decoration, squeeze feel and recovery against your physical sample. MOQ is 500 pieces per shape and 500 pieces per color; one shape in two colors starts at 1,000 pieces. Send artwork for 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days and bulk production takes 25–30 days, with sample delivery, approval and freight transit separate. These are non-edible toys for animal-character, collectible and promotional gift collections.",
+  "seoTitle": "Custom Capybara PU Squishy | OEM Manufacturer",
+  "seoDescription": "Custom PU capybara squishy toys with costumes, expressions, backpacks, colors, softness, scent and branded packaging. MOQ 500 per shape and color. Request a quote.",
+  "alt": "Six custom PU capybara squishy characters with colorful costumes, headphones and sculpted accessories",
+  "keywords": [
+    "custom capybara squishy",
+    "capybara squishy manufacturer",
+    "PU capybara squishy wholesale",
+    "custom animal squishy toys",
+    "private label capybara toys",
+    "capybara blind box squishy"
+  ],
+  "images": {
+    "hero": "/images/products/custom-pu-capybara-costume-assortment.png",
+    "detail": "/images/products/custom-pu-capybara-backpack-expressions.png"
   },
+  "gallery": [
+    {
+      "id": "hero",
+      "src": "/images/products/custom-pu-capybara-costume-assortment.png",
+      "label": "Custom PU capybara costume assortment"
+    },
+    {
+      "id": "backpacks",
+      "src": "/images/products/custom-pu-capybara-backpack-expressions.png",
+      "label": "Animal backpacks and different facial expressions"
+    }
+  ],
+  "lastModified": "2026-10-11",
+  "minimumOrderQuantity": 500,
+  "featured": true,
+  "filterGroup": "squishy"
+},
   {
     slug: "soft-sticky-squishy-assortment",
     name: "Custom Soft Sticky Squishy Assortment",
@@ -1522,4 +1539,3 @@ export const products: Product[] = [
     filterGroup: "oem",
   },
 ];
-
