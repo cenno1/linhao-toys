@@ -1,3 +1,4 @@
+import { PuSourcingFacts, puSourcingQuestions } from "@/components/PuCustomBuyingGuide";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -33,6 +34,9 @@ type Props = {
 };
 
 export default function SeoLandingPage(props: Props) {
+  const isPuHub = ["/custom-pu-squishy-manufacturer", "/custom-squishy-toy-manufacturer"].includes(props.path);
+  const faqs = isPuHub ? [...props.faqs, ...puSourcingQuestions] : props.faqs;
+  const reviewed = isPuHub ? "2026-10-11" : props.lastReviewed;
   const listedProducts = props.productSlugs
     ? props.productSlugs
         .map((slug) => products.find((product) => product.slug === slug))
@@ -50,7 +54,7 @@ export default function SeoLandingPage(props: Props) {
       name: props.title,
       description: props.introduction,
       inLanguage: "en",
-      dateModified: props.lastReviewed,
+      dateModified: reviewed,
       mainEntity: listedProducts.length
         ? {
             "@type": "ItemList",
@@ -93,7 +97,7 @@ export default function SeoLandingPage(props: Props) {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: props.faqs.map(({ question, answer }) => ({
+      mainEntity: faqs.map(({ question, answer }) => ({
         "@type": "Question",
         name: question,
         acceptedAnswer: { "@type": "Answer", text: answer },
@@ -119,9 +123,9 @@ export default function SeoLandingPage(props: Props) {
             <Link href="/contact" className="btn btn-primary">{props.quoteLabel ?? "Request a quotation"}</Link>
             <Link href="#buyer-brief" className="btn border border-white/30 text-white">Prepare your brief</Link>
           </div>
-          {props.lastReviewed && (
+          {reviewed && (
             <p className="mt-4 text-xs font-bold uppercase tracking-[0.16em] text-blue-300">
-              Content reviewed {new Date(`${props.lastReviewed}T00:00:00Z`).toLocaleDateString("en-US", {
+              Content reviewed {new Date(`${reviewed}T00:00:00Z`).toLocaleDateString("en-US", {
                 year: "numeric",
                 month: "long",
                 day: "numeric",
@@ -131,6 +135,8 @@ export default function SeoLandingPage(props: Props) {
           )}
         </div>
       </section>
+
+      {isPuHub && <PuSourcingFacts />}
 
       <ProductShowcase
         initialFilter={props.initialFilter}
@@ -223,7 +229,7 @@ export default function SeoLandingPage(props: Props) {
         <div className="shell faq-grid">
           <div><span className="eyebrow">Buyer FAQ</span><h2>Practical answers for sourcing teams.</h2></div>
           <div>
-            {props.faqs.map(({ question, answer }) => (
+            {faqs.map(({ question, answer }) => (
               <details key={question}>
                 <summary>{question}<span>+</span></summary>
                 <p>{answer}</p>
