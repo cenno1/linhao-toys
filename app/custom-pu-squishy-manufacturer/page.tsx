@@ -3,14 +3,17 @@ import SeoLandingPage from "@/components/SeoLandingPage";
 import { localizedAlternates } from "@/lib/localized-catalog";
 
 export const metadata: Metadata = {
-  title: "Custom PU Squishy Manufacturer | Slow-Rising OEM",
+  title: "Custom PU Squishy Toys Manufacturer | Original Shape OEM",
   description:
-    "Custom PU squishy manufacturing with MOQ from 500 pieces, buyer-defined shapes, slow-rise sample approval and private-label packaging.",
+    "Custom PU foam squishy toys manufacturer for food, animal and mascot designs. Customize softness, scent, logos and packaging. MOQ 500 per shape and color.",
   alternates: {
     canonical: "/custom-pu-squishy-manufacturer",
     languages: localizedAlternates("customPu"),
   },
   keywords: [
+    "custom PU squishy toys manufacturer",
+    "custom PU toys manufacturer",
+    "custom PU foam toys",
     "custom PU squishy manufacturer",
     "slow rising PU squishy",
     "custom shape squishy",
@@ -18,7 +21,7 @@ export const metadata: Metadata = {
     "OEM PU squishy toys",
   ],
   openGraph: {
-    title: "Custom PU Squishy Manufacturer | Slow-Rising OEM",
+    title: "Custom PU Squishy Toys Manufacturer | Original Shape OEM",
     description:
       "Plan a custom PU squishy from shape and slow-rise feel through artwork, sample approval and private-label packaging.",
     url: "/custom-pu-squishy-manufacturer",
@@ -32,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom PU Squishy Manufacturer | Slow-Rising OEM",
+    title: "Custom PU Squishy Toys Manufacturer | Original Shape OEM",
     description:
       "Custom PU squishy development for original shapes, slow-rise recovery and private-label packaging.",
     images: ["/images/products/custom-pu-fruit-animal-figures/hero.png"],
@@ -44,17 +47,17 @@ export default function Page() {
     <SeoLandingPage
       path="/custom-pu-squishy-manufacturer"
       eyebrow="CUSTOM PU SQUISHY MANUFACTURER"
-      title="Custom PU squishy manufacturing for slow-rise, original-shape programs."
+      title="Custom PU squishy toys manufacturer for your original shapes."
       introduction="LINHAO manufactures custom PU squishy toys from your artwork, including character figures, realistic food, animal forms and other original shapes. Customize dimensions, colors, hardness or softness, scent, printed or painted details and packaging. TPR customization is limited to existing molds and supports logo printing, colors, hand feel and custom packaging."
       buyerNote="MOQ is 500 pieces per shape and 500 pieces per color. The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate."
-      productSlugs={["premium-custom-pu-character-figure","ultra-slow-rising-realistic-pu-food-squishy","custom-pu-toast-squishy-blind-box","custom-pu-ice-skate-squishy","custom-pu-fruit-animal-figures","custom-pu-high-rebound-ball"]}
+      productSlugs={["premium-custom-pu-character-figure","ultra-slow-rising-realistic-pu-food-squishy","capybara-squishy-assortment","dumpling-squishy-blind-box","custom-croissant-squishy","custom-pu-toast-squishy-blind-box","custom-pu-ice-skate-squishy","custom-pu-fruit-animal-figures"]}
       preserveProductOrder
-      productEyebrow="ACTUAL CUSTOMIZATION CASES"
+      productEyebrow="PU CUSTOM CASES & DESIGN REFERENCES"
       quoteLabel="Send Your Design for a Quote"
-      lastReviewed="2026-10-04"
+      lastReviewed="2026-10-13"
       serviceType="Custom PU slow-rising squishy OEM and private-label manufacturing"
       productHeading="PU squishy directions for custom shapes and retail collections."
-      productDescription="Explore actual PU customization cases, including characters, realistic food, toast, ice-skate and animal shapes. These cases demonstrate our manufacturing work; your design is confirmed by 3D rendering and physical sample approval."
+      productDescription="Explore PU character, food and capybara product photos alongside dumpling, croissant, toast and other design references. Each product page identifies the images and demonstrations shown; concepts and edited images illustrate a direction rather than verify final production performance. Confirm your original design through 3D rendering and physical sample approval."
       capabilities={[
         {
           title: "Custom Shape & Size",
@@ -104,8 +107,8 @@ export default function Page() {
           href: "/custom-pu-squishy-case-studies",
         },
         {
-          title: "Custom Squishy Manufacturing",
-          text: "Compare the broader OEM route for PU, TPR and other sensory squishy programs.",
+          title: "Custom Squishy Toys Manufacturer",
+          text: "Use the custom squishy toys manufacturer entry for brand development, quotations and PU cases; TPR customization uses existing molds.",
           href: "/custom-squishy-toy-manufacturer",
         },
         {
