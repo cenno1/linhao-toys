@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
 export const metadata: Metadata = {
-  title: "Custom Squishy Manufacturer | PU OEM & Private Label",
-  description: "Custom PU squishy toys from your artwork: character figures, realistic food and blind-box designs. MOQ from 500 pieces. Selected TPR designs also available.",
+  title: "Custom Squishy Toys Manufacturer | PU OEM & Private Label",
+  description: "Custom squishy toys manufacturer for original PU food, animal and mascot designs. MOQ 500 per shape and color. Custom softness, scent, logo and packaging.",
   alternates: { canonical: "/custom-squishy-toy-manufacturer" },
-  keywords: ["custom squishy toy manufacturer", "custom PU squishy toys", "OEM PU squishy manufacturer", "custom slow rising squishy toys", "custom TPR squeeze toys"],
+  keywords: ["custom squishy toys", "custom squishy toys manufacturer", "custom squishy toy manufacturer", "custom PU squishy toys", "OEM PU squishy manufacturer", "custom slow rising squishy toys", "custom TPR squeeze toys"],
   openGraph: {
-    title: "Custom Squishy Manufacturer | PU OEM & Private Label",
+    title: "Custom Squishy Toys Manufacturer | PU OEM & Private Label",
     description: "Custom PU shapes, recovery speeds, painted details and private-label packaging, plus selected TPR cube and smiley-face projects.",
     url: "/custom-squishy-toy-manufacturer",
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Squishy Manufacturer | PU OEM & Private Label",
+    title: "Custom Squishy Toys Manufacturer | PU OEM & Private Label",
     description: "Custom PU shapes, recovery speeds, painted details and private-label packaging, plus selected TPR cube and smiley-face projects.",
     images: ["/images/products/premium-custom-pu-character-figure.jpg"],
   },
@@ -24,18 +24,18 @@ export const metadata: Metadata = {
 export default function Page() {
   return <SeoLandingPage
     path="/custom-squishy-toy-manufacturer"
-    eyebrow="CUSTOM SQUISHY MANUFACTURER · PU OEM"
-    title="Custom squishy manufacturer for your original PU designs."
-    introduction="LINHAO manufactures custom PU squishy toys from your artwork, including character figures, realistic food, animal forms and other original shapes. Customize dimensions, colors, hardness or softness, scent, printed or painted details and packaging. TPR customization is limited to existing molds and supports logo printing, colors, hand feel and custom packaging."
+    eyebrow="CUSTOM SQUISHY TOYS · FACTORY OEM & PRIVATE LABEL"
+    title="Custom squishy toys manufacturer for original PU designs."
+    introduction="LINHAO is a custom squishy toys manufacturer developing PU foam toys from customer artwork for brands, retailers and promotional buyers. Create original character figures, realistic food, animal forms and other shapes. Customize dimensions, colors, hardness or softness, scent, printed or painted details and packaging. TPR customization is limited to existing molds and supports logo printing, colors, hand feel and custom packaging."
     buyerNote="MOQ is 500 pieces per shape and 500 pieces per color. The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate."
-    productSlugs={["premium-custom-pu-character-figure","ultra-slow-rising-realistic-pu-food-squishy","custom-pu-toast-squishy-blind-box","custom-pu-ice-skate-squishy","custom-pu-fruit-animal-figures","custom-pu-high-rebound-ball","custom-tpr-squishy-brand-inserts","custom-tpr-popsicle-butter-cube-squishy"]}
+    productSlugs={["premium-custom-pu-character-figure","ultra-slow-rising-realistic-pu-food-squishy","capybara-squishy-assortment","dumpling-squishy-blind-box","custom-croissant-squishy","custom-pu-toast-squishy-blind-box","custom-pu-ice-skate-squishy","custom-pu-high-rebound-ball","custom-tpr-squishy-brand-inserts"]}
     preserveProductOrder
     productEyebrow="PU CASES & DESIGN REFERENCES"
     quoteLabel="Request a Custom Quote"
-    lastReviewed="2026-10-08"
+    lastReviewed="2026-10-13"
     serviceType="Custom PU squishy toy OEM manufacturing with selected TPR development"
     productHeading="Explore custom PU designs, then selected TPR options."
-    productDescription="Explore actual PU character and food samples alongside design references for toast, ice-skate and other shapes. Each product page identifies the visuals shown. Your original PU design is developed through 3D rendering and physical sample approval; TPR options use existing molds."
+    productDescription="Compare original PU mascot figures, realistic food, capybara characters, dumplings and croissants. Product pages identify actual photos, edited references and concept designs. Use the closest case to define your artwork, softness, scent and packaging brief; your finished specification is confirmed on a physical sample. TPR options use existing molds."
     capabilities={[
       { title: "Custom PU Shapes", text: "Develop character figures, food designs, toast collections and other original PU shapes from your artwork, with buyer-defined dimensions." },
       { title: "PU Feel & Recovery", text: "Specify soft slow-rise, extra-slow recovery or higher-rebound requirements. Confirm the finished feel and recovery speed against a physical sample." },
@@ -72,6 +72,7 @@ export default function Page() {
       { title: "OEM / ODM Development Process", text: "See how a broader custom toy project moves from concept review to production coordination.", href: "/oem" },
     ]}
     faqs={[
+      { question: "Can you manufacture custom squishy toys for our brand?", answer: "Yes. LINHAO develops custom PU foam squishy toys from your artwork, including mascots, food and animal shapes. Specify dimensions, colors, softness or hardness, scent, logo decoration and branded packaging. The project moves through 3D rendering, physical sampling and shipped-sample approval before bulk production. MOQ is 500 pieces per shape and per color." },
 { question: "How long do sampling and bulk production take?", answer: "The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate." },
 { question: "Do these images show actual products or design references?", answer: "This collection includes actual PU product photos and videos as well as design references. Individual product pages identify what is shown; toast concepts are design references rather than finished production samples. Your own project is confirmed through an approved physical sample." },
       { question: "Which custom PU squishy toys can you develop?", answer: "We review custom character figures, realistic food squishies, toast blind-box collections, ice-skate shapes and other buyer-defined designs. Appearance, dimensions, color, recovery speed, painted details and packaging can be specified for sample review." },
