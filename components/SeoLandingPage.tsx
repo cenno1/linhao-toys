@@ -36,7 +36,7 @@ type Props = {
 export default function SeoLandingPage(props: Props) {
   const isPuHub = ["/custom-pu-squishy-manufacturer", "/custom-squishy-toy-manufacturer"].includes(props.path);
   const faqs = isPuHub ? [...props.faqs, ...puSourcingQuestions] : props.faqs;
-  const reviewed = isPuHub ? "2026-10-11" : props.lastReviewed;
+  const reviewed = props.lastReviewed ?? (isPuHub ? "2026-10-11" : undefined);
   const listedProducts = props.productSlugs
     ? props.productSlugs
         .map((slug) => products.find((product) => product.slug === slug))
