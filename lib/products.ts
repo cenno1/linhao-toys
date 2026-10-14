@@ -49,6 +49,45 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-pu-octopus-squishy",
+  "name": "Custom PU Octopus Slow-Rising Squishy Toy",
+  "customMaterial": "PU",
+  "category": "Custom PU Animal Squishy / OEM",
+  "tag": "Ocean Animal · Custom Faces & Colors",
+  "note": "Develop custom PU octopus squishy toys for ocean-animal collections, novelty gifts and branded sensory assortments. The supplied product images show a purple octopus with large round eyes, rosy cheeks, rounded tentacles, a pink base and a glossy-looking painted finish. Customize the original body shape, dimensions, facial expression, colors, softness or hardness, slow-rising recovery feel, optional scent, logo details and branded packaging. Surface appearance and recovery are confirmed against an approved physical sample. MOQ is 500 pieces per shape and 500 pieces per color; one shape in two colors starts at 1,000 pieces. Send your artwork for 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days and bulk production takes 25–30 days, with sample delivery, approval and freight transit separate. These are non-edible PU squeeze toys. Intended age grade and testing requirements are confirmed for the destination market before supply.",
+  "seoTitle": "Custom PU Octopus Squishy | Slow-Rising Toy Manufacturer",
+  "seoDescription": "Custom PU octopus slow-rising squishy toys with original shapes, faces, colors, softness, scent and branded packaging. MOQ 500 per shape and color. Get a factory quote.",
+  "alt": "Purple PU octopus squishy with large round eyes rosy cheeks rounded tentacles and a pink base",
+  "keywords": [
+    "custom octopus squishy",
+    "PU octopus squishy manufacturer",
+    "slow rising octopus squishy wholesale",
+    "custom ocean animal squishy",
+    "private label PU animal toys"
+  ],
+  "images": {
+    "hero": "/images/products/custom-pu-octopus-squishy-hero.png",
+    "detail": "/images/products/custom-pu-octopus-squishy-detail.png"
+  },
+  "gallery": [
+    {
+      "id": "hero",
+      "src": "/images/products/custom-pu-octopus-squishy-hero.png",
+      "label": "Supplied purple octopus product image"
+    },
+    {
+      "id": "detail",
+      "src": "/images/products/custom-pu-octopus-squishy-detail.png",
+      "label": "Supplied octopus finish and feature reference"
+    }
+  ],
+  "lastModified": "2026-10-14",
+  "minimumOrderQuantity": 500,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-tpr-tube-squishy",
   "name": "Custom TPR Tube Squishy Toy",
   "customMaterial": "TPR",
