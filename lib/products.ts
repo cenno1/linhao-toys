@@ -49,6 +49,47 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-tpr-tube-squishy",
+  "name": "Custom TPR Tube Squishy Toy",
+  "customMaterial": "TPR",
+  "category": "Custom TPR Squishy / OEM",
+  "tag": "Squeeze Tube · Custom Logo & Colors",
+  "note": "Source custom TPR tube squishy toys using our existing squeeze-tube mold. The supplied product photos show translucent red, green, yellow and blue designs with visible decorative pieces, glitter and printed artwork; the hand-pressed photo and reference video demonstrate the squeeze action. Customize body colors, logo printing, hand feel and branded packaging. Confirm the final filling composition, available decorative insert options, dimensions and squeeze feel against a physical sample. Reference printing is shown for appearance only; your order uses approved artwork. MOQ is 500 pieces per shape and 500 pieces per color. Send your artwork and select an available mold, review the rendering and physical sample, then approve the shipped sample before bulk production. Sampling takes 12–15 days and bulk production takes 25–30 days, with sample delivery, approval and freight transit separate. This is a non-edible sensory squeeze toy with a toothpaste-style tube appearance, not toothpaste or a skincare product.",
+  "seoTitle": "Custom TPR Tube Squishy | Squeeze Toy Manufacturer",
+  "seoDescription": "Custom TPR squeeze-tube squishy toys using existing molds. Customize colors, logo, hand feel and packaging. MOQ 500 per shape and color. Request a factory quote.",
+  "alt": "Transparent red green yellow and blue TPR tube squishy toys with glitter decorative inserts and caps",
+  "keywords": [
+    "custom TPR tube squishy",
+    "toothpaste tube squishy manufacturer",
+    "custom squeeze tube toy",
+    "private label TPR squishy",
+    "custom logo squeeze toy"
+  ],
+  "images": {
+    "hero": "/images/products/custom-tpr-tube-squishy-assortment.png",
+    "detail": "/images/products/custom-tpr-tube-squishy-squeeze.png"
+  },
+  "gallery": [
+    {
+      "id": "hero",
+      "src": "/images/products/custom-tpr-tube-squishy-assortment.png",
+      "label": "Actual tube squishy color assortment"
+    },
+    {
+      "id": "squeeze",
+      "src": "/images/products/custom-tpr-tube-squishy-squeeze.png",
+      "label": "Actual hand-pressed sample reference"
+    }
+  ],
+  "video": "/images/products/custom-tpr-tube-squishy-demo.mp4",
+  "videoUploadDate": "2026-10-14T11:00:00+08:00",
+  "lastModified": "2026-10-14",
+  "minimumOrderQuantity": 500,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-croissant-squishy",
   "name": "Custom Croissant Squishy — Realistic PU Bakery Toy",
   "customMaterial": "PU",
