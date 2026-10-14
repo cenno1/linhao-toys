@@ -49,6 +49,40 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-food-squishy-fidget-toys",
+  "name": "Custom Food Squishy Fidget Toys — Wholesale Bulk & Blind Bags",
+  "customMaterial": "PU",
+  "category": "Custom PU Food Squishy / Wholesale Bulk",
+  "tag": "Custom Fidget Toys · Food Blind-Bag Series",
+  "note": "Create custom food squishy fidget toys in slow-rising PU for wholesale bulk orders, collectible blind bags and desk gift collections. The supplied product case shows smiling burger, popcorn, soda, taco, pizza, donut and fries designs with individual boxes and a countertop display. Customize original food shapes, dimensions, facial expressions, colors, softness or hardness, recovery feel, optional scent, logo details and packaging. For squishy toys wholesale bulk programs, specify the selected designs, quantity per shape and color, assortment ratios and unit packing. Blind bags, individual boxes and branded displays can be developed for your collection; the photo shows boxed display packaging rather than a finished blind-bag format. Final artwork, feel and packing follow the approved physical sample. MOQ is 500 pieces per shape and 500 pieces per color. Send your artwork for 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days and bulk production takes 25–30 days, excluding sample delivery, approval and freight transit. These are non-edible PU squeeze toys for food-themed novelty retail, office desk gifting and promotional assortments.",
+  "seoTitle": "Custom Food Squishy Fidget Toys | Wholesale Bulk & Blind Bags",
+  "seoDescription": "Custom PU food squishy fidget toys for wholesale bulk and blind-bag collections. Original shapes, faces, scent and branded packaging. MOQ 500 per shape and color.",
+  "alt": "PU food squishy assortment with smiling burger popcorn soda taco pizza donuts and fries beside individual boxes and a countertop display",
+  "keywords": [
+    "custom fidget toys",
+    "squishy toys wholesale bulk",
+    "custom food squishy toys",
+    "food squishy manufacturer",
+    "slow rising food squishies blind bag",
+    "PU food squishy wholesale"
+  ],
+  "images": {
+    "hero": "/images/products/custom-food-squishy-fidget-toys.png"
+  },
+  "gallery": [
+    {
+      "id": "hero",
+      "src": "/images/products/custom-food-squishy-fidget-toys.png",
+      "label": "Food squishy case · individual boxes and countertop display"
+    }
+  ],
+  "lastModified": "2026-10-14",
+  "minimumOrderQuantity": 500,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-pu-octopus-squishy",
   "name": "Custom PU Octopus Slow-Rising Squishy Toy",
   "customMaterial": "PU",
