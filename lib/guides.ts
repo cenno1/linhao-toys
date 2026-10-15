@@ -20,6 +20,250 @@ export type BuyerGuide = {
 
 export const buyerGuides: BuyerGuide[] = [
 {
+  "slug": "custom-pu-food-squishy-blind-bag-guide",
+  "title": "Custom PU Food Squishy Blind Bags: Shapes, Faces and Packaging",
+  "seoTitle": "Custom Food Squishy Blind Bags | PU Wholesale & OEM Guide",
+  "description": "Plan custom PU food squishy blind bags with original shapes, expressions, softness, scent and packaging. See a boxed food case and calculate MOQ per shape and color.",
+  "eyebrow": "CUSTOM FOOD COLLECTION BUYER GUIDE",
+  "updated": "2026-10-15",
+  "readTime": "7 min read",
+  "quickAnswer": "Custom PU food squishy blind bags start with a defined food collection, original shape and face artwork, sample-approved hand feel and a written packing mix. LINHAO supports PU shape, color, softness, scent, logo and packaging customization. MOQ is 500 pieces per shape and 500 pieces per color. The food case pictured here shows individual boxes and a countertop display; blind bags are a packaging option to develop and approve, rather than the packaging shown in that photo.",
+  "keywords": [
+    "custom food squishy blind bags",
+    "custom fidget toys",
+    "squishy toys wholesale bulk",
+    "PU food squishy manufacturer",
+    "custom food squishy packaging"
+  ],
+  "caseStudy": {
+    "image": "/images/products/custom-food-squishy-fidget-toys.png",
+    "alt": "PU food squishy burger, popcorn, soda, taco, pizza, donut and fries assortment with individual boxes and a countertop display",
+    "caption": "Supplied product case: PU food shapes with individual boxes and a countertop display. A finished blind-bag version is not shown; its artwork, protection and packing mix require sample approval.",
+    "href": "/products/custom-food-squishy-fidget-toys"
+  },
+  "sections": [
+    {
+      "heading": "Build a food family with a reason to collect",
+      "paragraphs": [
+        "Start with a collection idea such as a bakery counter, a fast-food lunch or a dessert menu. Choose the food silhouettes first, then give each one a recognizable expression and color story. The supplied food case brings burger, popcorn, soda, taco, pizza, donut and fries directions together. It is a reference for collection planning, not a requirement to use those exact designs.",
+        "Original PU development can change the body shape, dimensions, molded details, faces and colors. A croissant collection, for example, can distinguish bakery texture and decorated versions while keeping a consistent visual style. Describe which details are molded and which are painted or printed; expression changes may involve artwork, tooling or both, so quote the actual design files."
+      ]
+    },
+    {
+      "heading": "Translate sensory preferences into a physical sample",
+      "paragraphs": [
+        "Reddit discussions include shoppers seeking a softer crunchy feel and others preferring denser squeeze resistance. Those individual preferences are useful questions for a brief, not evidence that all buyers want the same construction. A PU food collection should specify its own intended squeeze feel rather than borrow a promise from a different filled-shell toy.",
+        "For PU, state the preferred softness or hardness, recovery feel, surface appearance and whether scent is wanted. Approve these on a physical sample for each materially different variant. A photo demonstrates appearance, while an unedited squeeze clip helps show movement; neither establishes a measured lifespan, scent intensity or paint durability by itself."
+      ],
+      "checklist": [
+        "Shape and dimensions for each food design",
+        "Face artwork and color references",
+        "Softness and recovery reviewed separately",
+        "Optional scent selected on the sample",
+        "Decoration and package contact checked on the finished sample"
+      ]
+    },
+    {
+      "heading": "Choose blind bags, boxes and displays deliberately",
+      "paragraphs": [
+        "A blind bag hides the variant. An individual box provides another presentation format, and a countertop display groups retail units. Decide which combination fits your channel and have the packing specification name every layer, from inner protection to export carton. The photograph on this page shows boxed units and a display, so it should not be used as evidence of an already-produced blind-bag pack.",
+        "Check that every food shape fits the proposed pack and remains protected. Keep the collection name, contents description and artwork consistent across the bag, box, display and online listing. Review intended-market labeling and age-grade requirements for the exact product. These are non-edible toys; food styling does not imply edible contents or food-contact certification."
+      ]
+    },
+    {
+      "heading": "Calculate MOQ before promising a mixed collection",
+      "paragraphs": [
+        "For custom PU orders, the minimum is 500 pieces per shape and 500 pieces per color. As an arithmetic example, three different shapes in one color each start at 1,500 toys total: 500 of each shape. Adding a second color to one of those shapes adds another minimum of 500 pieces, making 2,000 toys. This is a quantity illustration, not a quotation; packaging quantities and design details are reviewed separately.",
+        "For squishy toys wholesale bulk programs, specify the quantity of each shape and color, the mix per display and whether a sealed collection is fixed or random. A random unit does not automatically mean a full display contains every variant. If you want a complete set or a guaranteed ratio, agree on the packing method before approving package claims."
+      ]
+    },
+    {
+      "heading": "Approve the complete food collection before production",
+      "paragraphs": [
+        "Send your design artwork, quantity by shape and color, desired hand feel, scent preference, packing format, destination and required arrival date. The process is customer artwork, 3D rendering, sampling and sample shipment for approval, followed by bulk production after the agreed sample approval.",
+        "Sampling takes 12–15 days and bulk production takes 25–30 days. Design revisions, sample delivery, approval and freight transit are separate schedule items. Keep the approved artwork revision, physical sample and assortment sheet together so the quotation, production and reorder all describe the same collection. Contact LINHAO with that brief for a product-specific quote."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I create original food-shaped PU fidget toys?",
+      "answer": "Yes. PU development supports original food shapes, dimensions, expressions, colors, softness or hardness, optional scent, logo details and packaging. Final design and feel follow the approved physical sample."
+    },
+    {
+      "question": "Can I mix several custom designs into a 500-piece order?",
+      "answer": "The MOQ is 500 pieces per shape and 500 pieces per color, rather than 500 mixed custom designs in total. Three different shapes in one color each start at 1,500 toys, with packaging terms confirmed separately."
+    },
+    {
+      "question": "Does the food case photo show finished blind bags?",
+      "answer": "No. It shows individual boxes and a countertop display. A blind-bag pack can be developed for the collection and must be approved with the product and packing mix."
+    },
+    {
+      "question": "Can a food collection include different softness or scent choices?",
+      "answer": "PU softness or hardness and optional scent can be specified. Identify the requirement for each variant and approve the physical samples before production."
+    },
+    {
+      "question": "How long does custom PU sampling and production take?",
+      "answer": "Sampling takes 12–15 days and bulk production takes 25–30 days. Design revisions, sample delivery, approval and freight transit are separate."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "View the actual PU food squishy collection and boxed display",
+      "href": "/products/custom-food-squishy-fidget-toys"
+    },
+    {
+      "label": "Explore a custom croissant food shape",
+      "href": "/products/custom-croissant-squishy"
+    },
+    {
+      "label": "Custom squishy toy manufacturer capabilities",
+      "href": "/custom-squishy-toy-manufacturer"
+    },
+    {
+      "label": "Wholesale squishy toys and bulk-order planning",
+      "href": "/wholesale-squishy-toys"
+    },
+    {
+      "label": "Detailed blind-box assortment and ratio planning",
+      "href": "/resources/blind-box-squishy-assortment-planning-guide"
+    },
+    {
+      "label": "Plan original seasonal calendar assortments",
+      "href": "/resources/custom-squishy-advent-calendar-design-guide"
+    },
+    {
+      "label": "Source discussion: individual crunchy and softness preferences",
+      "href": "https://www.reddit.com/r/fidgettoys/comments/1w407r7/crunchy_squishy_recommendations/"
+    },
+    {
+      "label": "Send a food collection brief for a quotation",
+      "href": "/contact"
+    }
+  ]
+},
+{
+  "slug": "custom-squishy-advent-calendar-design-guide",
+  "title": "Custom Squishy Advent Calendars: Original Designs and Assortment Planning",
+  "seoTitle": "Custom Squishy Advent Calendar | Wholesale Design Guide",
+  "description": "Plan an original squishy advent calendar with seasonal PU designs, a clear door-by-door assortment, honest product imagery, quantity calculations and sample approval.",
+  "eyebrow": "SEASONAL COLLECTION & WHOLESALE PLANNING",
+  "updated": "2026-10-15",
+  "readTime": "7 min read",
+  "quickAnswer": "A custom squishy advent calendar needs a door-by-door contents plan as well as festive packaging. Define which shapes, colors and expressions are exclusive to the collection, disclose the planned repeats and approve the assembled pack. LINHAO can develop original PU designs; MOQ is 500 pieces per shape and per color. The existing 24-gift calendar presentation is a reference, with its exact mix, materials and packing confirmed in the quotation.",
+  "keywords": [
+    "custom squishy advent calendar",
+    "squishy advent calendar wholesale",
+    "custom PU Christmas squishy",
+    "original squishy calendar designs",
+    "holiday squishy assortment"
+  ],
+  "caseStudy": {
+    "image": "/images/products/dumpling-advent-calendar-assortment.png",
+    "alt": "24-gift Christmas squishy calendar reference with festive dumpling and bun character directions and mixed squeeze toys",
+    "caption": "Existing 24-gift calendar presentation for assortment reference. Confirm the final contents, material of each item, dimensions and packaging in the quotation; this image does not establish that every item is PU or that all 24 shapes are unique.",
+    "href": "/products/christmas-mystery-dumpling-squishy-advent-calendar"
+  },
+  "sections": [
+    {
+      "heading": "Make the contents match the seasonal promise",
+      "paragraphs": [
+        "In a September 12, 2026 Reddit discussion, a buyer expressed disappointment that an advent calendar contained regular mini squishies rather than the Christmas-themed versions they expected. That is an individual experience, not a satisfaction survey. It suggests a practical sourcing question: what makes the toys inside your calendar seasonal, beyond the artwork on the outer box?",
+        "Choose a clear collection promise before designing the package. A bakery countdown might feature original holiday food shapes; an animal collection could use original silhouettes, winter accessories and expressions. Write down which changes are part of the toy itself and which are packaging decoration, then show buyers imagery that matches the approved contents."
+      ]
+    },
+    {
+      "heading": "Separate original PU development from existing-mold options",
+      "paragraphs": [
+        "PU customization supports original food, animal and character shapes, dimensions, softness or hardness, optional scent, colors, logo details and packaging. A seasonal collection can therefore develop original forms as well as face artwork. The cost and sample plan depend on whether each variation changes the molded body or only its decoration.",
+        "TPR customization currently uses existing molds only, with custom colors, logo printing, hand feel and packaging. Do not describe a new original TPR body as an available option. For a mixed-material calendar, identify the construction of each item separately; the existing calendar reference does not confirm one material for every piece."
+      ]
+    },
+    {
+      "heading": "Create a door-by-door assortment sheet",
+      "paragraphs": [
+        "Start with the number of compartments and the intended contents of every door. The existing calendar page presents a 24-gift direction. Any alternative layout needs a separate packaging review. A calendar with 24 gifts does not necessarily contain 24 unique molds, and repeated shapes can still differ in face or color if that is the agreed collection.",
+        "Use one master sheet connecting the door number, design code, material, color, expression, quantity and package artwork revision. Specify whether every calendar contains the same complete assortment. Random blind units and a fixed countdown assortment require different packing instructions, so do not promise no duplicates unless the agreed packing controls support that claim."
+      ],
+      "checklist": [
+        "Door number and design code",
+        "Body shape, material and dimensions",
+        "Color and facial artwork revision",
+        "Planned repeat or unique design",
+        "Quantity per variant and complete calendar",
+        "Compartment fit and inner protection",
+        "Approved photos of the complete contents"
+      ]
+    },
+    {
+      "heading": "Work out toy MOQ and calendar quantity separately",
+      "paragraphs": [
+        "Custom PU MOQ is 500 pieces per shape and 500 pieces per color. For illustration, 24 genuinely different shapes in one color each require at least 12,000 toys. If one of each goes into every calendar, those toys would supply 500 complete calendars. This arithmetic does not establish a quotation, a packaging MOQ or a guaranteed production capacity.",
+        "A collection using fewer body shapes and several expressions needs its own review of molded details, printing and color quantities. Send the actual variant matrix rather than assume that 500 mixed toys can cover every door. Ask for toy development, packaging and assembly to be itemized so the proposed collection can be assessed as a complete retail product."
+      ]
+    },
+    {
+      "heading": "Approve the packed calendar and plan backward from arrival",
+      "paragraphs": [
+        "Review each materially different physical toy sample and an assembled packaging sample. Check compartment fit, protection of painted surfaces, the door-opening presentation and the actual contents against the assortment sheet. Keep concept renders labeled as concepts until the matching physical samples are approved. Photographs of a reference assortment are not verified results for a new custom set.",
+        "The development process is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days and bulk production takes 25–30 days; design revisions, sample delivery, approval, packaging coordination and freight transit are separate. Give the factory a required arrival date and destination before promising a seasonal launch. An October inquiry alone does not establish delivery before Christmas."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does a 24-gift calendar need 24 unique squishy molds?",
+      "answer": "No. The assortment can include agreed repeats or variants, but the contents and any uniqueness claims must match the approved door-by-door plan."
+    },
+    {
+      "question": "Can the toys have original Christmas shapes rather than only a festive box?",
+      "answer": "Yes, original shapes and seasonal artwork can be developed in PU. TPR options are limited to existing molds with colors, printing, hand feel and packaging customization."
+    },
+    {
+      "question": "Is every item in the reference calendar confirmed as PU?",
+      "answer": "No. Confirm each item’s material and the final assortment in the quotation. Original PU designs can be developed for a new custom collection."
+    },
+    {
+      "question": "What is the MOQ for an original PU calendar collection?",
+      "answer": "Toy MOQ is 500 pieces per shape and 500 pieces per color. Calculate quantities for every variant, then confirm packaging and assembly terms separately; 500 mixed toys is not the minimum for an unlimited number of custom designs."
+    },
+    {
+      "question": "How should I plan the calendar delivery date?",
+      "answer": "Work backward from the required arrival date. Allow 12–15 days for sampling and 25–30 days for bulk production, plus design revisions, sample shipment, approval, packaging coordination and freight transit."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "View the existing 24-gift squishy calendar presentation",
+      "href": "/products/christmas-mystery-dumpling-squishy-advent-calendar"
+    },
+    {
+      "label": "Explore Christmas PU squishy shape references",
+      "href": "/products/christmas-pu-squishy-toy-assortment"
+    },
+    {
+      "label": "Plan custom PU food squishy blind bags",
+      "href": "/resources/custom-pu-food-squishy-blind-bag-guide"
+    },
+    {
+      "label": "Review general blind-box mix and ratio planning",
+      "href": "/resources/blind-box-squishy-assortment-planning-guide"
+    },
+    {
+      "label": "Custom squishy toy manufacturer capabilities",
+      "href": "/custom-squishy-toy-manufacturer"
+    },
+    {
+      "label": "Source discussion: seasonal contents versus regular mini toys",
+      "href": "https://www.reddit.com/r/SquishyDumplings/comments/1wenbkh/disappointed_in_dumpling_advent_calendar/"
+    },
+    {
+      "label": "Request a calendar assortment quotation",
+      "href": "/contact"
+    }
+  ]
+},
+{
   "slug": "custom-pu-squishy-paint-rubbing-off-guide",
   "title": "Why Does Squishy Paint Rub Off? A Custom PU Toy Finish Guide",
   "seoTitle": "Squishy Paint Rubbing Off? Custom PU Finish & Sample Guide",
@@ -176,8 +420,8 @@ export const buyerGuides: BuyerGuide[] = [
   ]
 },
 {
-  "updated": "2026-10-04",
-  "readTime": "5 min read",
+  "updated": "2026-10-15",
+  "readTime": "6 min read",
   "slug": "crunchy-butter-squishy-wholesale-sound-sample-guide",
   "title": "Crunchy Butter Squishy Wholesale: How to Check the Sound Before Ordering",
   "seoTitle": "Crunchy Butter Squishy Wholesale & Custom TPR Guide",
@@ -210,6 +454,21 @@ export const buyerGuides: BuyerGuide[] = [
       "paragraphs": [
         "LINHAO's supplied butter-bar photos and demonstration video show a TPR exterior with building-block filling that moves during squeezing and produces a crunchy, crackling effect. Pink, mint and yellow references illustrate color and printed-artwork directions. These are non-edible toys.",
         "The case demonstrates an available construction; it does not establish a sound level, lifespan or result for every fill variation. TPR customization is limited to existing molds. We support logo printing, colors, hand feel and custom packaging, with the exact insert configuration reviewed on the sample."
+      ]
+    },
+    {
+      "heading": "Specify crunchy sound, softness and recovery separately",
+      "paragraphs": [
+        "A September 1, 2026 discussion in r/fidgettoys asks for crunchy squishies that are not too firm. It highlights a useful distinction: a shopper can like crackling sound while preferring lower squeeze resistance. This is one consumer request, not a measured trend or evidence that every crunchy construction can achieve the same softness.",
+        "Write separate acceptance points for sound, squeeze resistance, shape recovery and surface feel. A louder clip does not tell a buyer how much force the toy needs, and slow recovery does not establish softness. Compare the exact physical sample with your reference, using the same squeeze action and recording the variant and revision.",
+        "For the existing TPR butter mold, describe the preferred hand feel and sound together so feasibility can be reviewed during sampling. Do not infer an internal recipe from a video or assume a different filling will preserve sound, printing and exterior behavior. Any change needs a new approved reference sample."
+      ],
+      "checklist": [
+        "Sound: original audio with the toy outside its packaging",
+        "Resistance: comfortable squeeze feel assessed on the physical sample",
+        "Recovery: observe shape return separately from sound",
+        "Surface: inspect printing, finish and closure areas after agreed handling",
+        "Approval: identify the exact color, filling configuration and sample revision"
       ]
     },
     {
@@ -258,6 +517,14 @@ export const buyerGuides: BuyerGuide[] = [
     {
       "question": "What is the minimum order per color?",
       "answer": "500 pieces per shape and 500 pieces per color. Two colors of the same shape therefore require at least 1,000 pieces in total."
+    },
+    {
+      "question": "Can a crunchy squishy also feel soft?",
+      "answer": "Crunchy describes a sound experience, while softness describes squeeze resistance. State both preferences in the brief and confirm the feasible combination on the exact physical sample; one does not guarantee the other."
+    },
+    {
+      "question": "Does a louder crunchy video mean a firmer toy?",
+      "answer": "No. Recording conditions, squeeze action, filling and packaging can affect the recorded sound. A video cannot establish squeeze resistance; compare a physical sample and original audio separately."
     }
   ],
   "relatedLinks": [
@@ -280,6 +547,10 @@ export const buyerGuides: BuyerGuide[] = [
     {
       "label": "Reddit discussion informing the crunchy-versus-plain question",
       "href": "https://www.reddit.com/r/Bahrain/comments/1w6dlrc/parents_has_anyone_found_a_crunchy_butter_squishy/"
+    },
+    {
+      "label": "Reddit source: a shopper seeking crunchy squishies with a softer feel",
+      "href": "https://www.reddit.com/r/fidgettoys/comments/1w407r7/crunchy_squishy_recommendations/"
     }
   ]
 },
