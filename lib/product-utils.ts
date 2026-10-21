@@ -40,6 +40,22 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "custom-pu-cruise-ship-squishy": {
+    specifications: [
+      { label: "Material", value: "PU foam; final formulation and hand feel approved on a physical sample" },
+      { label: "Design status", value: "Design concept rendering, not a finished sample or squeeze-test result" },
+      { label: "Shape and finish", value: "Custom cruise ship silhouette, decks, windows, funnel and painted hull artwork" },
+      { label: "Softness and recovery", value: "Custom softness or hardness and slow-rising recovery target; exact recovery time by approved physical sample" },
+      { label: "Dimensions and weight", value: "Custom specifications confirmed with the quotation and sample" },
+      { label: "Scent", value: "Optional scent or no added fragrance, confirmed during sample approval" },
+      { label: "Sampling", value: "12–15 days; revisions, approval and sample delivery separate" },
+      { label: "Bulk production", value: "25–30 days; freight transit separate" }
+    ],
+    customization: ["Original ship silhouette, deck layout and molded details", "Hull colors, window details, logo placement and approved artwork", "Softness or hardness, recovery target and optional scent", "Individual bags, branded souvenir boxes, inserts or retail display packaging"],
+    useCases: ["Cruise and travel souvenir merchandise", "Nautical gift and museum-shop collections", "Tourism and hospitality promotional gifts", "Private-label vehicle squishy assortments"],
+    buyerBrief: ["Ship artwork or an original design reference and preferred dimensions", "Quantity per shape and per color, plus target squeeze feel", "Logo files, hull graphics and preferred packaging", "Destination market, intended age grade and requested delivery date"],
+    packagingAnswer: "Individual bags, printed souvenir boxes, inserts and retail display packaging can be developed around the approved dimensions. Confirm packing artwork and the final quote before production."
+  },
 "custom-croissant-squishy": {
   "specifications": [
     {
@@ -1588,4 +1604,3 @@ export function buildProductInquiryMailtoFromForm(
 
   return `mailto:${INQUIRY_EMAIL}?subject=${encodeURIComponent(`${productName} — Inquiry`)}&body=${encodeURIComponent(body)}`;
 }
-

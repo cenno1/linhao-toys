@@ -49,6 +49,25 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  slug: "custom-pu-cruise-ship-squishy",
+  name: "Custom PU Cruise Ship Squishy — Slow-Rising Souvenir Toy",
+  customMaterial: "PU",
+  category: "Custom PU Vehicle Squishy / OEM",
+  tag: "Cruise Ship · Custom Design Concept",
+  note: "Develop a custom PU cruise ship squishy for travel souvenirs, nautical gift collections and branded promotional merchandise. This design concept illustrates a white multi-deck ship with blue windows, a blue funnel and flowing blue and turquoise hull graphics. Customize the ship silhouette, deck details, dimensions, colors, logo placement, painted artwork, softness or hardness, optional scent and branded packaging. A smooth, soft slow-rising feel is a development target to approve on a physical sample; exact recovery time and surface durability are confirmed through sampling. The supplied image is a design rendering, including the squeeze illustration and rear view, rather than a finished production sample or measured performance result. Your project uses buyer-approved artwork and branding. MOQ is 500 pieces per shape and 500 pieces per color; one shape in two colors starts at 1,000 pieces. Send your artwork for 3D rendering, sampling and sample shipment for approval before bulk production. Sampling takes 12–15 days and bulk production takes 25–30 days, excluding revisions, approval, sample delivery and freight transit. Request a factory quotation with your preferred ship design, quantity per color, destination market and packaging brief.",
+  seoTitle: "Custom PU Cruise Ship Squishy | OEM Toy Manufacturer",
+  seoDescription: "Custom PU cruise ship squishy toys for souvenir and promotional programs. Customize shape, colors, logo, softness and packaging. MOQ 500 per shape and color.",
+  alt: "Design rendering of a custom white PU cruise ship squishy with blue decks and turquoise wave artwork, with illustrated squeeze and rear views",
+  keywords: ["custom cruise ship squishy", "PU cruise ship squishy manufacturer", "custom ship stress toy", "slow rising boat squishy", "custom souvenir squishy toys", "custom fidget toys wholesale bulk"],
+  images: { hero: "/images/products/custom-pu-cruise-ship-squishy-concept.webp" },
+  gallery: [{ id: "concept", src: "/images/products/custom-pu-cruise-ship-squishy-concept.webp", label: "Design concept · squeeze and rear views are illustrations; final finish by approved sample" }],
+  lastModified: "2026-10-22",
+  minimumOrderQuantity: 500,
+  featured: true,
+  detailsOnRequest: true,
+  filterGroup: "squishy"
+},
+{
   "slug": "custom-food-squishy-fidget-toys",
   "name": "Custom Food Squishy Fidget Toys — Wholesale Bulk & Blind Bags",
   "customMaterial": "PU",
