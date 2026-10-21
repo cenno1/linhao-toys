@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Ship the small stylesheet with HTML to avoid a first-visit rendering waterfall.
+  experimental: { inlineCss: true },
   async redirects() {
     return [
       {
