@@ -2,7 +2,7 @@
 
 import Script from "next/script";
 import { usePathname, useSearchParams } from "next/navigation";
-import { Suspense, useEffect } from "react";
+import { Suspense, useEffect, useSyncExternalStore } from "react";
 import { captureConsentedSessionAttribution } from "@/lib/inquiry-attribution";
 
 declare global {
@@ -39,13 +39,27 @@ function PageViewTracker({ measurementId }: { measurementId: string }) {
   return null;
 }
 
+function subscribeToConsent(callback: () => void) {
+  window.addEventListener("linhao-consent-accepted", callback);
+  window.addEventListener("storage", callback);
+  return () => {
+    window.removeEventListener("linhao-consent-accepted", callback);
+    window.removeEventListener("storage", callback);
+  };
+}
+
+function hasAnalyticsConsent() {
+  return window.localStorage.getItem("linhao_analytics_consent") === "accepted";
+}
+
 export default function GoogleAnalytics({ measurementId }: { measurementId: string }) {
+  const consented = useSyncExternalStore(subscribeToConsent, hasAnalyticsConsent, () => false);
   return (
     <>
-      <Script
+      {consented && <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
         strategy="afterInteractive"
-      />
+      />}
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
