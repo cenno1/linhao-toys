@@ -49,6 +49,50 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-tpr-squishy-3d-accessories",
+  "name": "Custom TPR Jelly Squishy with 3D Accessories",
+  "category": "TPR Filled Squishy / Custom 3D Accessories",
+  "tag": "Petroleum Jelly Filling · MOQ 2,000",
+  "note": "Source custom TPR jelly squishy toys with a soft TPR exterior, petroleum jelly filling and custom 3D-shaped accessories. Develop original dinosaur, rabbit, panda or brand-specific accessory designs for sensory toy assortments, promotional gifts and private-label collections. Select an available outer-body mold, then specify colors, logo printing, hand feel, 3D accessory artwork and branded packaging. The supplied visuals show apple-style and rounded cube directions; accessory position, attachment and final construction are confirmed against an approved physical sample. The factory photo shows colorful cube-style samples with character accessories. MOQ for this product is 2,000 pieces. Confirm the quantity split by accessory design and color with your quotation. Send artwork or a 3D reference, preferred outer mold, target quantity and packaging requirements for feasibility review, rendering, sampling and sample shipment for approval. The exact sample and bulk schedule is confirmed for the selected accessory design and construction. This is a sensory squeeze toy; petroleum jelly describes the filling, not a skincare function. Product-specific dimensions, accessory material, durability checks and destination-market testing are confirmed during development.",
+  "seoTitle": "Custom TPR Squishy with 3D Accessories | MOQ 2,000",
+  "seoDescription": "Custom TPR jelly squishy toys with petroleum jelly filling and bespoke 3D accessories. Existing outer molds, logo, colors and packaging. MOQ 2,000 pieces.",
+  "alt": "TPR squishy reference assortment with transparent apple-style bodies and dinosaur rabbit and panda accessories",
+  "keywords": [
+    "custom TPR squishy with 3D accessories",
+    "petroleum jelly filled squishy",
+    "custom dinosaur squishy",
+    "custom jelly squishy manufacturer",
+    "TPR squishy wholesale bulk"
+  ],
+  "images": {
+    "hero": "/images/products/custom-tpr-squishy-3d-accessories-assortment.webp"
+  },
+  "gallery": [
+    {
+      "id": "assortment",
+      "src": "/images/products/custom-tpr-squishy-3d-accessories-assortment.webp",
+      "label": "Supplied appearance reference · accessory assortment"
+    },
+    {
+      "id": "dinosaur",
+      "src": "/images/products/custom-tpr-squishy-3d-accessories-dinosaur.webp",
+      "label": "Supplied dinosaur-filled cube reference"
+    },
+    {
+      "id": "factory",
+      "src": "/images/products/custom-tpr-squishy-3d-accessories-factory.webp",
+      "label": "Factory sample photo · colored cubes and character accessories"
+    }
+  ],
+  "video": "/images/products/custom-tpr-squishy-3d-accessories-demo.mp4",
+  "videoUploadDate": "2026-10-23T10:00:00+08:00",
+  "lastModified": "2026-10-23",
+  "minimumOrderQuantity": 2000,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   slug: "custom-pu-cruise-ship-squishy",
   name: "Custom PU Cruise Ship Squishy — Slow-Rising Souvenir Toy",
   customMaterial: "PU",

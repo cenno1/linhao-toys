@@ -40,6 +40,52 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-tpr-squishy-3d-accessories": {
+  "specifications": [
+    {
+      "label": "Exterior",
+      "value": "TPR; select from available outer-body molds"
+    },
+    {
+      "label": "Filling",
+      "value": "Petroleum jelly filling, as specified for this product"
+    },
+    {
+      "label": "3D accessories",
+      "value": "Custom 3D-shaped accessories; material, dimensions, position and attachment confirmed by sample"
+    },
+    {
+      "label": "Minimum order",
+      "value": "2,000 pieces; design and color allocation confirmed in the quotation"
+    },
+    {
+      "label": "Customization",
+      "value": "3D accessory design, available body colors, logo printing, hand feel and packaging"
+    },
+    {
+      "label": "Development schedule",
+      "value": "Confirmed after accessory design, outer mold and packaging review"
+    }
+  ],
+  "customization": [
+    "Custom 3D accessory shapes from artwork or a 3D reference",
+    "Available outer-body molds and custom colors",
+    "Logo printing and hand feel",
+    "Branded individual packaging and assortment planning"
+  ],
+  "useCases": [
+    "Private-label sensory toy assortments",
+    "Dinosaur and animal themed gift collections",
+    "Branded promotional squeeze toys"
+  ],
+  "buyerBrief": [
+    "Outer-body mold and preferred dimensions",
+    "3D accessory artwork and placement",
+    "Order quantity from 2,000 pieces and design/color split",
+    "Packaging, destination market and requested schedule"
+  ],
+  "packagingAnswer": "Custom packaging is available; approve unit packing, labeling and assortment ratios with the quotation."
+},
   "custom-pu-cruise-ship-squishy": {
     specifications: [
       { label: "Material", value: "PU foam; final formulation and hand feel approved on a physical sample" },
