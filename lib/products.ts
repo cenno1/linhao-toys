@@ -49,6 +49,48 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-food-grade-silicone-squishy",
+  "name": "Custom Food-Grade Silicone Squishy Toys — Original Shape OEM",
+  "category": "Custom Silicone Squishy / OEM",
+  "tag": "Food-Grade Silicone · MOQ 1,000",
+  "note": "Develop custom silicone squishy toys with food-grade silicone specified for your project, original molded shapes and branded packaging. The supplied examples show a pink rabbit, a penguin and a colorful mini bus in individual presentation bags. Customize your own character, animal, food or vehicle silhouette, dimensions, surface texture, colors, facial artwork and logo placement after design review. MOQ is 1,000 pieces; confirm the quantity allocation by design and color in your quotation. Send your artwork, preferred size, target squeeze feel, quantity, packaging and destination market for feasibility review, rendering, sampling and physical sample approval. Material selection and responsible packaging are part of the development brief: confirm the exact silicone specification and supporting material documentation, and request packaging options with less unnecessary material where suitable. Food-grade describes the specified silicone material; the finished toy, colorants, decorations, accessories and packaging must be reviewed for their intended use and destination market. Product-specific safety testing and age grading are confirmed before supply. Agree on the squeeze feel, finish, cleaning instructions and durability checks against an approved sample. Sampling and bulk-production schedules are quoted for the final silicone design and packing requirements.",
+  "seoTitle": "Custom Silicone Squishy Toys | Food-Grade Silicone OEM",
+  "seoDescription": "Custom food-grade silicone squishy toys with original shapes, colors, textures, logo and packaging. Rabbit, penguin and vehicle examples. MOQ 1,000 pieces.",
+  "alt": "Pink rabbit silicone squishy reference in an individual clear presentation bag",
+  "keywords": [
+    "custom silicone squishy toys",
+    "food grade silicone squishy manufacturer",
+    "custom shape silicone stress toy",
+    "silicone squeeze toy OEM",
+    "silicone squishy wholesale"
+  ],
+  "images": {
+    "hero": "/images/products/custom-food-grade-silicone-squishy-rabbit.webp"
+  },
+  "gallery": [
+    {
+      "id": "rabbit",
+      "src": "/images/products/custom-food-grade-silicone-squishy-rabbit.webp",
+      "label": "Supplied rabbit silicone squishy reference"
+    },
+    {
+      "id": "penguin",
+      "src": "/images/products/custom-food-grade-silicone-squishy-penguin.webp",
+      "label": "Supplied penguin shape and individual packaging reference"
+    },
+    {
+      "id": "bus",
+      "src": "/images/products/custom-food-grade-silicone-squishy-bus.webp",
+      "label": "Supplied mini bus shape and presentation packaging reference"
+    }
+  ],
+  "lastModified": "2026-10-24",
+  "minimumOrderQuantity": 1000,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-tpr-squishy-3d-accessories",
   "name": "Custom TPR Jelly Squishy with 3D Accessories",
   "category": "TPR Filled Squishy / Custom 3D Accessories",

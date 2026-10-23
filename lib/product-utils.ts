@@ -40,6 +40,57 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-food-grade-silicone-squishy": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "Food-grade silicone specified by the supplier; exact grade and supporting documents confirmed for the project"
+    },
+    {
+      "label": "Shape development",
+      "value": "Custom molded shapes from your original artwork; rabbit, penguin and mini bus references shown"
+    },
+    {
+      "label": "Minimum order",
+      "value": "1,000 pieces; quantity split by design and color confirmed in the quotation"
+    },
+    {
+      "label": "Hand feel and finish",
+      "value": "Squeeze feel, surface texture, decoration and cleaning instructions approved on a physical sample"
+    },
+    {
+      "label": "Safety review",
+      "value": "Verify material documentation and finished-toy testing for the intended age grade and destination market; no product-specific certificate claimed before review"
+    },
+    {
+      "label": "Packaging choices",
+      "value": "Custom individual presentation packing and labeling; discuss reduced-material packing where suitable"
+    },
+    {
+      "label": "Development schedule",
+      "value": "Quoted after silicone formulation, shape, decoration and packaging review"
+    }
+  ],
+  "customization": [
+    "Original silicone shape, dimensions and molded surface texture",
+    "Custom colors, facial artwork and logo placement",
+    "Squeeze feel and final finish confirmed by physical sample",
+    "Individual bags, printed cards, retail boxes and branded packaging"
+  ],
+  "useCases": [
+    "Private-label silicone sensory toy collections",
+    "Animal and vehicle themed novelty gifts",
+    "Custom promotional squeeze toys"
+  ],
+  "buyerBrief": [
+    "Original artwork and preferred size",
+    "Target hand feel and surface detail",
+    "Quantity from 1,000 pieces and design/color mix",
+    "Destination market, intended age grade and material/test documentation requirements",
+    "Packaging brief and requested delivery date"
+  ],
+  "packagingAnswer": "Custom individual bags, cards, retail boxes and labels are reviewed with the quotation. Discuss packing that uses less unnecessary material while protecting the product; no broad environmental certification is claimed."
+},
 "custom-tpr-squishy-3d-accessories": {
   "specifications": [
     {
