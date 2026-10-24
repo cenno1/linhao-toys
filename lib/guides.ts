@@ -20,6 +20,154 @@ export type BuyerGuide = {
 
 export const buyerGuides: BuyerGuide[] = [
 {
+  "slug": "silicone-squishy-sticky-oily-softness-quality-guide",
+  "title": "Silicone Squishy Toys: Stickiness, Oil Transfer, Softness and Packaging",
+  "seoTitle": "Silicone Squishy Quality Guide | Custom Toys & MOQ 1,000",
+  "description": "Source custom silicone squishy toys with clear checks for tack, dust pickup, oil transfer, odor, tearing and protective packaging. Original shapes, MOQ 1,000.",
+  "eyebrow": "CUSTOM SILICONE BUYER GUIDE",
+  "updated": "2026-10-24",
+  "readTime": "8 min read",
+  "quickAnswer": "For custom silicone squishy toys, approve the finished formulation, surface tack, transfer onto packaging, squeeze feel, delicate details and care instructions together. Taba describes a style rather than a verified material. Food-grade silicone is a material specification, not a finished-toy safety certificate. LINHAO offers custom silicone shapes with MOQ 1,000 pieces; design/color allocation, documentation and production timing are confirmed in the quotation.",
+  "keywords": [
+    "custom silicone squishy toys",
+    "silicone squishy sticky",
+    "silicone squishy oily",
+    "silicone stress toy manufacturer",
+    "silicone squishy wholesale",
+    "custom shape silicone squishy"
+  ],
+  "caseStudy": {
+    "image": "/images/products/custom-food-grade-silicone-squishy-rabbit.webp",
+    "alt": "Supplied pink rabbit silicone squishy reference in clear presentation packaging",
+    "caption": "Supplied product reference: pink rabbit in presentation packaging. Appearance does not establish measured softness, oil transfer, odor, durability or certification. Approve these properties separately on a finished sample.",
+    "href": "/products/custom-food-grade-silicone-squishy"
+  },
+  "sections": [
+    {
+      "heading": "What are squishy buyers asking on Reddit?",
+      "paragraphs": [
+        "A May 2026 r/tabasquishy discussion about extra-soft, spreading Taba textures showed approximately 37 votes when researched. Participants asked about softness and presentation bags; some described easier breakage or oily surfaces. A separate fidget-toy thread asks for squishies that do not smell strongly or collect dust. These are useful product questions, not a representative demand survey or proof of the materials in those toys.",
+        "An October 2026 post describes wrinkles after a hot day, but its author explicitly does not know the material. An older, higher-engagement post about liquid transfer also contains conflicting material guesses. We therefore use these discussions to define sample checks, rather than diagnose silicone chemistry or reproduce unverified mixing recipes."
+      ]
+    },
+    {
+      "heading": "Are Taba, silicone, TPR and PU the same material?",
+      "paragraphs": [
+        "No. A visual style, clear bag or soft squeeze does not identify the material or internal construction. Ask whether the finished item is molded silicone, a filled shell, TPR or PU foam, and request documentation for the specific construction. Do not copy care instructions or recovery claims between them.",
+        "For silicone OEM development, identify the actual formulation and decoration system in the supplier brief. A rabbit, penguin or vehicle silhouette can share a collection theme while requiring different thicknesses, detailing and packing protection."
+      ]
+    },
+    {
+      "heading": "Why does a silicone squishy feel sticky or collect dust?",
+      "paragraphs": [
+        "Surface tack is a property to specify and compare. A deliberately tacky tactile finish can pick up fibers differently from a less tacky finish. A photograph cannot establish whether the surface feel matches the buyer’s preference or whether a manufacturing issue is present.",
+        "Approve a physical surface reference and compare clean finished samples under the same conditions. Record handling, dust or fiber pickup, residue on hands and appearance after the approved cleaning method. Unexpected persistent tack or transfer should go back to the supplier for investigation."
+      ],
+      "checklist": [
+        "Agree on preferred tack using a physical reference",
+        "Inspect the final decorated version, not only an undecorated blank",
+        "Record pickup and transfer using an agreed handling method",
+        "Confirm cleaning and packaging with the same formulation"
+      ]
+    },
+    {
+      "heading": "Is an oily mark normal, and how should buyers check transfer?",
+      "paragraphs": [
+        "An oily-looking mark alone does not establish the substance, cause or safety of a toy. Reddit comments cannot verify those details. Ask the manufacturer to investigate visible transfer, document the observation and review the exact formulation and finished-product documentation.",
+        "As a procurement check, compare the approved product with its actual bag, card and other contacting materials over an agreed storage period and conditions. Record marks, surface change, print transfer and opening odor. This is a project acceptance check, not a substitute for laboratory testing, and no passing result is claimed for the pictured references."
+      ]
+    },
+    {
+      "heading": "Does extra soft mean slow rising or more durable?",
+      "paragraphs": [
+        "Softness, recovery and resistance to tearing are separate acceptance criteria. Ask for a squeeze video at the intended size and a physical sample. If recovery seconds matter, agree on compression, hold time, temperature and the endpoint before recording a number. We do not assign a recovery time to these silicone references without measurement.",
+        "For custom shapes, review narrow ears, thin limbs, deep textures and small protrusions. Record the handling method and inspect changes at these locations. Agree on a test plan and acceptance criteria for the intended use; a soft feel or attractive design does not establish a service life."
+      ]
+    },
+    {
+      "heading": "Should silicone squishies stay in their bags?",
+      "paragraphs": [
+        "Confirm whether the bag is intended for tactile play, display, transport or a combination. Do not assume that a decorative bag is durable enough for repeated squeezing. Inspect seams, closures, print, hardware and contact with the toy on the final sample.",
+        "For cleaning, use the instructions approved for the exact finished toy and decoration. Community suggestions involving powders, solvents, boiling, microwaves or altered mixing ratios are not validated instructions for your custom product. Request a care card and review the packed sample again after the proposed care method."
+      ]
+    },
+    {
+      "heading": "What does food-grade silicone establish for a custom toy?",
+      "paragraphs": [
+        "Food-grade describes the specified material and its supporting documentation for a defined use. It does not automatically establish the suitability of the finished toy, pigment, decoration, accessory or packaging for every age and market. Ask which report applies to which formulation and finished product.",
+        "State the intended age range and destination market when requesting a quote. Product-specific documentation and testing requirements must be reviewed for that project. Reduced unnecessary packaging can also be discussed, but silicone by itself is not evidence of biodegradability, recyclability or a broad environmental certification."
+      ]
+    },
+    {
+      "heading": "Custom silicone squishy manufacturing: prepare a useful brief",
+      "paragraphs": [
+        "LINHAO’s supplied silicone references include a pink rabbit, penguin and mini bus in individual presentation packaging. Original shape, dimensions, texture, colors, facial artwork, logo placement and packaging can be reviewed for custom development. The photographs support appearance discussion; they do not demonstrate tested performance.",
+        "MOQ is 1,000 pieces. Confirm allocation across designs and colors in the quotation. Send artwork, size, preferred squeeze feel, surface reference, packaging, destination market and required documentation. Rendering and physical sample review should precede bulk approval. Silicone sampling and production schedules are quoted for the final project."
+      ],
+      "checklist": [
+        "Original shape and dimensions",
+        "Quantity and design/color allocation",
+        "Preferred softness, tack and recovery reference",
+        "Transfer, detail durability and care acceptance checks",
+        "Bag purpose, branding and packaging compatibility",
+        "Destination, intended age range and documentation needs"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I customize the shape of a silicone squishy toy?",
+      "answer": "Yes. LINHAO reviews original silhouettes, dimensions, molded textures, colors, facial artwork and packaging for silicone development. MOQ is 1,000 pieces, with allocation and feasibility confirmed in the quotation."
+    },
+    {
+      "question": "Are silicone squishies always sticky or oily?",
+      "answer": "Do not assume a universal surface behavior. Approve tack and transfer on the exact finished formulation, decoration and packaging. Visible transfer requires investigation; an online photo cannot establish its cause."
+    },
+    {
+      "question": "Can I order a silicone squishy with no added fragrance?",
+      "answer": "Include no added fragrance in the development brief and confirm feasibility and opening odor on the finished packed sample. No added fragrance is not a guarantee of zero odor."
+    },
+    {
+      "question": "Is a food-grade silicone squishy automatically certified as a safe toy?",
+      "answer": "No. Check the material documents and review the finished toy, pigments, decoration, accessories and packaging for the intended use, age range and destination market."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Custom silicone squishy product references and quotation",
+      "href": "/products/custom-food-grade-silicone-squishy"
+    },
+    {
+      "label": "Compare PU, TPR and silicone",
+      "href": "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide"
+    },
+    {
+      "label": "Taba packaging and sticky surfaces",
+      "href": "/resources/taba-squishy-packaging-sticky-surface-guide"
+    },
+    {
+      "label": "Squishy durability acceptance planning",
+      "href": "/resources/squishy-toy-durability-testing-quality-control-guide"
+    },
+    {
+      "label": "Reddit: extra-soft Taba discussion (May 2026)",
+      "href": "https://www.reddit.com/r/tabasquishy/comments/1tcepkp/how_do_the_shops_make_the_extra_soft_spread_taba/"
+    },
+    {
+      "label": "Reddit: smell and dust pickup question",
+      "href": "https://www.reddit.com/r/fidgettoys/comments/12o9tq4/squishy_toys_that_dont_stink_or_collects_dust/"
+    },
+    {
+      "label": "Reddit: heat and wrinkles, material unconfirmed",
+      "href": "https://www.reddit.com/r/fidgettoys/comments/1x9ze1u/how_to_fix_taba_squishy_melting_and_becoming/"
+    },
+    {
+      "label": "Reddit: liquid-transfer discussion, material unconfirmed",
+      "href": "https://www.reddit.com/r/mildyinteresting/comments/1k3qkca/"
+    }
+  ]
+},
+{
   "slug": "custom-pu-food-squishy-blind-bag-guide",
   "title": "Custom PU Food Squishy Blind Bags: Shapes, Faces and Packaging",
   "seoTitle": "Custom Food Squishy Blind Bags | PU Wholesale & OEM Guide",
