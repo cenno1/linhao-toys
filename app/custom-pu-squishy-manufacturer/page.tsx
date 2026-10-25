@@ -54,7 +54,7 @@ export default function Page() {
       preserveProductOrder
       productEyebrow="PU CUSTOM CASES & DESIGN REFERENCES"
       quoteLabel="Send Your Design for a Quote"
-      lastReviewed="2026-10-13"
+      lastReviewed="2026-10-25"
       serviceType="Custom PU slow-rising squishy OEM and private-label manufacturing"
       productHeading="PU squishy directions for custom shapes and retail collections."
       productDescription="Explore PU character, food and capybara product photos alongside dumpling, croissant, toast and other design references. Each product page identifies the images and demonstrations shown; concepts and edited images illustrate a direction rather than verify final production performance. Confirm your original design through 3D rendering and physical sample approval."
@@ -121,6 +121,8 @@ export default function Page() {
           text: "Compare material routes by hand feel, recovery, appearance and packaging behavior.",
           href: "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide",
         },
+        {"title":"No Added Fragrance","text":"Approve packed-sample odor with softness, recovery and finish.","href":"/resources/scented-vs-unscented-squishy-toy-odor-control-guide"},
+        {"title":"Surface Finish and Paint Wear","text":"Prepare rubbing and appearance checks for the decorated sample.","href":"/resources/custom-pu-squishy-paint-rubbing-off-guide"},
         {
           title: "Recovery-Time Specification",
           text: "Define a repeatable slow-rise reference for sample and production approval.",
@@ -138,8 +140,12 @@ export default function Page() {
         },
       ]}
       faqs={[
+{"question":"Can custom PU squishies have no added fragrance?","answer":"Yes. Specify no added fragrance in your brief. Review opening odor and any odor transferred to hands on the final decorated, packed sample. No added fragrance does not guarantee zero material or packaging odor."},
+{"question":"How do we specify softness or hardness?","answer":"Provide a physical reference at the intended size and agree on a repeatable squeeze comparison. Shape, size and surface finish affect perceived feel. Approve the finished sample; a soft feel alone does not establish slow recovery or durability."},
+{"question":"How should slow-rise recovery time be confirmed?","answer":"Agree on sample temperature, compression depth, hold time and the recovery endpoint, then record the observed time and video for that exact sample. Specify an agreed acceptance range only after testing; there is no single recovery time for every custom PU shape."},
+{"question":"What surface treatment and decoration checks should we request?","answer":"Specify matte or glossy appearance, tack preference and painted or printed details. Check color transfer, rubbing, cracking and changes after the agreed handling and care procedure on the decorated sample. Record actual results before making durability claims."},
 { question: "How long do sampling and bulk production take?", answer: "The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate." },
-{ question: "Are these actual customization cases?", answer: "Yes. The products presented here are actual customization cases supplied by LINHAO. Your own project is developed from your requirements and approved physical sample." },
+{ question: "Are these actual customization cases?", answer: "The collection includes actual sample cases and clearly labeled concept or edited design references. Check the caption on each product page. Photos demonstrate appearance; measured performance requires evidence for the specific sample." },
         {
           question: "What do you need to quote a custom PU squishy?",
           answer: "Send the design or reference, finished dimensions, target squeeze and recovery feel, quantity per design, decoration, packaging, destination market and required receive date. A comparable quotation depends on one confirmed specification.",
