@@ -23,11 +23,12 @@ function absoluteLanguages(
 export default function sitemap(): MetadataRoute.Sitemap {
   // Keep dates tied to material page changes, not the date of each build.
   const reviewedPaths: Record<string, string> = {
+    "/products/custom-food-grade-silicone-squishy": "2026-10-25",
     "/custom-squishy-toy-manufacturer": "2026-10-13",
-    "/ai-sourcing-profile": "2026-09-20",
+    "/ai-sourcing-profile": "2026-10-25",
     "": "2026-10-08",
     "/resources": "2026-09-05",
-    "/custom-pu-squishy-manufacturer": "2026-10-13",
+    "/custom-pu-squishy-manufacturer": "2026-10-25",
     "/custom-pu-squishy-case-studies": "2026-09-19",
     "/oem": "2026-09-19",
   };
@@ -130,7 +131,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       return {
         url: absoluteUrl(`/products/${product.slug}`),
-        lastModified: product.lastModified ?? (
+        lastModified: reviewedPaths[`/products/${product.slug}`] ?? product.lastModified ?? (
           product.detailsOnRequest || product.availability === "ready-stock"
             ? SITE_LAST_MODIFIED
             : "2026-09-05"),
