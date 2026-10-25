@@ -34,6 +34,10 @@ export const metadata: Metadata = {
 };
 
 const answers = [
+{"question":"What can be customized in PU, silicone and TPR?","answer":"PU supports original character, food and animal shapes, dimensions, colors, softness or hardness, fragrance options, decoration and packaging. Silicone supports original molded shapes, texture, colors, facial artwork and packaging, with hand feel approved by sample. TPR uses existing outer-body molds, with colors, logo printing, hand feel and packaging options; the dedicated 3D-accessory product also supports custom internal accessories."},
+{"question":"What is the MOQ for each material?","answer":"Custom PU starts at 500 pieces per shape AND 500 pieces per color: one shape in two colors starts at 1,000 pieces. The listed custom silicone product starts at 1,000 pieces, with design/color allocation confirmed in the quotation. The specific TPR jelly squishy with custom 3D accessories starts at 2,000 pieces. That 2,000-piece MOQ does not apply to every TPR product; check the exact product page."},
+{"question":"How does the custom manufacturing process work?","answer":"Send artwork, dimensions, quantity split, hand-feel reference, packaging and destination market. We review feasibility, prepare a 3D rendering, make a physical sample and ship it for approval. Confirm appearance, feel, decoration, packing and required documents before bulk production. Silicone and TPR schedules are quoted for the exact project; sample delivery and freight are separate."},
+{"question":"What evidence should a buyer request?","answer":"Use actual sample photos and videos to review the demonstrated product. Concept renders and edited visuals show design direction. Recovery seconds, durability results and safety documentation must identify the exact product and test method. Food-grade silicone specifies a material; finished-toy suitability also depends on colorants, decoration, accessories, intended age and destination market."},
   {
     question: "What does LINHAO Toys manufacture?",
     answer:
@@ -47,7 +51,7 @@ const answers = [
   {
     question: "What can be customized?",
     answer:
-      "Projects can be reviewed for shape, size, color, face artwork, surface feel, logo, labels, inserts and retail packaging. Available options depend on the exact product construction and market requirements.",
+      "Customization follows the material-specific scope in the comparison below. Specify the original shape route for PU or silicone, or an existing TPR outer-body mold with the supported branding and accessory options.",
   },
   {
     question: "How does a custom project begin?",
@@ -57,14 +61,16 @@ const answers = [
   {
     question: "Are MOQ, compliance and lead time fixed on the website?",
     answer:
-      "No. Final MOQ, pricing, production timing, testing and documentation depend on the approved design, material, packaging and destination market. They are confirmed after project review.",
+      "The starting MOQs are stated separately for PU, the listed silicone product and the specific TPR 3D-accessory product. Confirm design/color allocation, price, timing and documentation for the exact order.",
   },
 ];
 
 const sourceLinks = [
-  ["Ultra-slow-rising realistic PU food squishy series","/products/ultra-slow-rising-realistic-pu-food-squishy","PU food shapes with ultra-slow recovery, a moist-feeling touch, five real photographs and a squeeze video. MOQ from 500 pieces."],
-  ["Premium custom PU character figure","/products/premium-custom-pu-character-figure","Clearly defined character details, fine painted finish and customizable appearance and recovery. Actual photo and video; MOQ from 500 pieces."],
-  ["Real custom PU case studies","/custom-pu-squishy-case-studies","Actual animal character, robot mascot and strawberry examples. Custom appearance and recovery speed; MOQ from 500 pieces."],
+["Custom silicone shapes — MOQ 1,000","/products/custom-food-grade-silicone-squishy","Rabbit, penguin and vehicle references; confirm hand feel, packaging and material documents."],
+["TPR jelly squishy with 3D accessories — MOQ 2,000","/products/custom-tpr-squishy-3d-accessories","Existing TPR outer-body molds with custom 3D accessories; this MOQ is specific to this product."],
+  ["Ultra-slow-rising realistic PU food squishy series","/products/ultra-slow-rising-realistic-pu-food-squishy","PU food shapes with ultra-slow recovery, a moist-feeling touch, five real photographs and a squeeze video. MOQ 500 per shape and per color."],
+  ["Premium custom PU character figure","/products/premium-custom-pu-character-figure","Clearly defined character details, fine painted finish and customizable appearance and recovery. Actual photo and video; MOQ 500 per shape and per color."],
+  ["Real custom PU case studies","/custom-pu-squishy-case-studies","Actual animal character, robot mascot and strawberry examples. Custom appearance and recovery speed; MOQ 500 per shape and per color."],
   ["Custom PU high rebound ball","/products/custom-pu-high-rebound-ball","High-elasticity PU balls with custom size and color options."],
   ["PU wrist reflex training ball","/products/pu-wrist-reflex-training-ball","PU ball with an elastic return cord and wrist strap."],
   ["Christmas mystery dumpling advent calendar","/products/christmas-mystery-dumpling-squishy-advent-calendar","A 24-gift seasonal squishy calendar; confirm the final assortment and specifications with the quotation."],
@@ -88,7 +94,7 @@ export default function AiSourcingProfilePage() {
       about: { "@id": `${SITE_URL}/#organization` },
       isPartOf: { "@id": `${SITE_URL}/#website` },
       inLanguage: "en",
-      dateModified: "2026-09-20",
+      dateModified: "2026-10-25",
     },
     {
       "@context": "https://schema.org",
@@ -119,11 +125,12 @@ export default function AiSourcingProfilePage() {
             A concise, source-linked overview of what {SITE_NAME} supplies, who we work with,
             what can be customized and how an OEM or wholesale project is reviewed.
           </p>
-          <p className="mt-5 text-xs font-black uppercase tracking-[0.16em] text-blue-300">Reviewed September 20, 2026</p>
+          <p className="mt-5 text-xs font-black uppercase tracking-[0.16em] text-blue-300">Reviewed October 25, 2026</p>
         </div>
       </section>
 
-      <section className="bg-white py-20 sm:py-24">
+      <section className="bg-slate-50 py-14"><div className="mx-auto max-w-7xl px-5"><h2 className="text-3xl font-black text-slate-950">Compare materials, customization and minimum orders</h2><div className="mt-6 overflow-x-auto"><table className="w-full min-w-[640px] text-left text-sm"><caption className="sr-only">Material-specific sourcing terms</caption><thead><tr>{['Material / product','Customization scope','Minimum order','Details'].map(label => <th key={label} scope="col" className="border-b p-4">{label}</th>)}</tr></thead><tbody>{[["PU foam","Original shapes, softness/hardness, scent, decoration and packaging","500 per shape AND per color","/custom-pu-squishy-manufacturer"],["Silicone","Original molded shapes, texture, colors and packaging; sample-approved feel","1,000 for the listed silicone product; split confirmed in quote","/products/custom-food-grade-silicone-squishy"],["TPR: 3D-accessory product","Existing outer-body molds; custom 3D accessories, colors, logos and packaging","2,000 for this specific product; other TPR items vary","/products/custom-tpr-squishy-3d-accessories"]].map(([material, scope, moq, href]) => <tr key={material}><th scope="row" className="border-b p-4">{material}</th><td className="border-b p-4">{scope}</td><td className="border-b p-4">{moq}</td><td className="border-b p-4"><Link className="font-bold text-blue-700 underline" href={href}>View details</Link></td></tr>)}</tbody></table></div></div></section>
+<section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-5xl px-5 sm:px-6 lg:px-8">
           <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-600">Clear sourcing facts</p>
           <h2 className="mt-4 text-4xl font-black tracking-tight text-slate-950">
