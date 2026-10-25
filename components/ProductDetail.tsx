@@ -308,7 +308,8 @@ export default function ProductDetail({ product }: ProductDetailProps) {
       <section className="section section-soft">
         <div className="shell faq-grid">
           <div>
-            <span className="eyebrow">Product FAQ</span>
+            {product.slug === "custom-food-grade-silicone-squishy" && <aside className="mb-8 rounded-2xl border border-slate-200 bg-slate-50 p-6"><h2 className="text-2xl font-bold">Prepare your silicone sample approval</h2><p className="mt-3">Compare surface tack, oil or color transfer, softness, delicate details and the final packaging. Review material documentation for the exact product and intended market.</p><Link href="/resources/silicone-squishy-sticky-oily-softness-quality-guide" className="mt-4 inline-block font-bold text-blue-700 underline">Read the silicone quality and packaging guide</Link><p className="mt-3"><Link href="/ai-sourcing-profile" className="font-bold text-blue-700 underline">Compare PU, silicone and TPR sourcing terms</Link></p></aside>}
+<span className="eyebrow">Product FAQ</span>
             <h2>Answers for buyers sourcing this product.</h2>
           </div>
           <div>
