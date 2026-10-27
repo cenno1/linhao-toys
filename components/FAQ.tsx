@@ -4,17 +4,22 @@ const questions = [
   {
     question: "What can be customized?",
     answer:
-      "Shape, dimensions, softness, color, glitter effect, face artwork, logo, labels and packaging can be developed according to the project.",
+      "PU projects support original food, character and animal shapes, dimensions, colors, softness or hardness, optional fragrance, decoration and packaging. The listed silicone product supports custom shapes and packaging. TPR uses existing outer-body molds; supported options include colors, logo printing, hand feel, packaging and product-specific internal accessories. Confirm the scope against the selected product and physical sample.",
   },
   {
     question: "How long does sampling take?",
     answer:
-      "For custom PU squishy projects, our current sampling time is 20 days. Sampling for other materials and product types is confirmed with the project brief. Custom PU bulk production typically takes 25–30 days after sample approval; shipping time is confirmed separately.",
+      "Custom PU sampling takes 12–15 days. Sample shipment, buyer approval and revisions are separate. Bulk production takes 25–30 days after sample approval; confirm the order schedule and freight transit separately. Silicone, TPR and other product schedules are quoted for the exact project.",
   },
   {
     question: "Can you support low MOQ projects?",
     answer:
-      "Our typical custom PU squishy MOQ starts at 500 pieces. Other products and ready-stock orders have their own quantity requirements. Final MOQ is confirmed against the design, material, decoration and packaging.",
+      "Custom PU MOQ is 500 pieces per shape AND per color: one shape in two colors starts at 1,000 pieces. The listed custom silicone squishy starts at 1,000 pieces, with design and color allocation confirmed in the quotation. The specific TPR squishy with custom 3D accessories starts at 2,000 pieces; this is not a universal TPR minimum. Check the material and MOQ comparison for the matching product.",
+  },
+  {
+    question: "How do we confirm softness, fragrance and slow recovery?",
+    answer:
+      "Send a hand-feel reference and approve the decorated, packed physical sample. No added fragrance does not guarantee zero material or packaging odor. Agree a recovery test method and target for the specific PU design, then check surface tack, paint wear and packaging contact. Concept renders show design direction; measured recovery or durability claims need results tied to the actual sample.",
   },
   {
     question: "Which markets do you support?",
@@ -50,6 +55,16 @@ export default function FAQ() {
           <p className="mt-5">
             <Link href="/custom-pu-squishy-manufacturer" className="font-bold text-blue-600 hover:underline">
               Custom PU MOQ, mold fee and sampling details →
+            </Link>
+          </p>
+          <p className="mt-4">
+            <Link href="/ai-sourcing-profile" className="font-bold text-blue-600 hover:underline">
+              Compare PU, silicone and TPR materials &amp; MOQs →
+            </Link>
+          </p>
+          <p className="mt-4">
+            <Link href="/resources/scented-vs-unscented-squishy-toy-odor-control-guide" className="font-bold text-blue-600 hover:underline">
+              No-added-fragrance and sample odor checks →
             </Link>
           </p>
         </div>
