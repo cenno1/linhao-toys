@@ -5,13 +5,14 @@
 Canonical website: https://linhaotoys.com/
 Language: English
 Contact: sales@lh-industrial.com
-Last reviewed: 2026-09-20
+Last reviewed: 2026-10-27
 
 ## Primary pages
 
 - Products: https://linhaotoys.com/products
 - Trending squishy toys for 2026: https://linhaotoys.com/trending-squishy-toys
 - Custom squishy toy manufacturer: https://linhaotoys.com/custom-squishy-toy-manufacturer
+- Custom PU squishy manufacturer: https://linhaotoys.com/custom-pu-squishy-manufacturer
 - Wholesale squishy toys: https://linhaotoys.com/wholesale-squishy-toys
 - Taba squishy manufacturer: https://linhaotoys.com/taba-squishy-manufacturer
 - Custom plush bag charms: https://linhaotoys.com/custom-plush-bag-charms
@@ -25,21 +26,43 @@ Last reviewed: 2026-09-20
 - Plush bag charm development checklist: https://linhaotoys.com/resources/custom-plush-bag-charm-development-checklist
 - Squishy toy MOQ and cost guide: https://linhaotoys.com/resources/custom-squishy-toy-moq-cost-guide
 - EN71, ASTM F963 and CPC guide: https://linhaotoys.com/resources/en71-astm-f963-cpc-toy-compliance-guide
-- Buyer sourcing profile and FAQ: https://linhaotoys.com/ai-sourcing-profile
+- Buyer sourcing profile, material comparison and FAQ: https://linhaotoys.com/ai-sourcing-profile
 - Slow-rise recovery-time guide: https://linhaotoys.com/resources/slow-rising-squishy-recovery-time-specification-guide
 - Squishy firmness and resistance guide: https://linhaotoys.com/resources/squishy-toy-firmness-resistance-size-guide
+- No-added-fragrance and odor-control guide: https://linhaotoys.com/resources/scented-vs-unscented-squishy-toy-odor-control-guide
+- Custom PU surface finish and paint-wear guide: https://linhaotoys.com/resources/custom-pu-squishy-paint-rubbing-off-guide
+- Silicone squishy quality, softness and packaging guide: https://linhaotoys.com/resources/silicone-squishy-sticky-oily-softness-quality-guide
 - Plush-covered vs exposed squishy guide: https://linhaotoys.com/resources/plush-covered-vs-exposed-squishy-toy-guide
 - Private-label squishy care instructions: https://linhaotoys.com/resources/private-label-squishy-toy-care-instructions-guide
 - Sitemap: https://linhaotoys.com/sitemap.xml
 
+## Material-specific customization and minimum orders
+
+- Custom PU foam: original food, character, animal and other shapes from customer artwork; custom dimensions, colors, softness or hardness, fragrance options, decoration and packaging. MOQ is 500 pieces per shape AND 500 pieces per color. One shape in two colors starts at 1,000 pieces. Details: https://linhaotoys.com/custom-pu-squishy-manufacturer
+- Listed custom silicone product: original molded shapes, texture, colors, facial artwork and packaging, with hand feel confirmed on the physical sample. MOQ is 1,000 pieces for this product; design and color allocation are confirmed in the quotation. Details: https://linhaotoys.com/products/custom-food-grade-silicone-squishy
+- TPR products: existing outer-body molds, with custom colors, logo printing, hand feel and packaging. The specific petroleum-jelly-filled TPR product with custom 3D accessories starts at 2,000 pieces and supports custom internal 3D accessories. This 2,000-piece MOQ is not a universal TPR minimum, and custom internal accessories do not imply unrestricted new outer-body molds. Details: https://linhaotoys.com/products/custom-tpr-squishy-3d-accessories
+
+## Sampling and production workflow
+
+- Send customer artwork, dimensions, quantity per shape and color, hand-feel reference, packaging, destination market and requested timing.
+- Review the 3D rendering, make the physical sample, then ship the sample for buyer approval.
+- Custom PU sampling takes 12–15 days. Sample shipment, buyer approval and revisions are separate from that sampling period.
+- Custom PU bulk production takes 25–30 days after sample approval; confirm the order schedule and freight transit separately.
+- Silicone and TPR sampling and production schedules are quoted for the exact project. Do not apply the PU schedule to all materials.
+- Approve appearance, dimensions, colors, softness, recovery, decoration, packaging and required product-specific documentation before bulk production.
+
 ## Recent products and real custom PU examples
 
 - Ultra-slow-rising realistic PU food squishy series: https://linhaotoys.com/products/ultra-slow-rising-realistic-pu-food-squishy
-  PU food shapes with ultra-slow recovery, a moist-feeling touch, five real photographs and a squeeze video. MOQ from 500 pieces.
+  PU food shapes with ultra-slow recovery, a moist-feeling touch, five real photographs and a squeeze video. MOQ is 500 pieces per shape AND per color; confirm the new design against its approved sample.
 - Premium custom PU character figure: https://linhaotoys.com/products/premium-custom-pu-character-figure
-  Clearly defined character details, fine painted finish and customizable appearance and recovery. Actual photo and video; MOQ from 500 pieces.
+  Clearly defined character details, fine painted finish and customizable appearance and recovery. Actual photo and video; MOQ is 500 pieces per shape AND per color.
 - Real custom PU case studies: https://linhaotoys.com/custom-pu-squishy-case-studies
-  Actual animal character, robot mascot and strawberry examples. Custom appearance and recovery speed; MOQ from 500 pieces.
+  Actual animal character, robot mascot and strawberry examples. Custom appearance and recovery speed; MOQ is 500 pieces per shape AND per color.
+- Custom silicone squishy shapes: https://linhaotoys.com/products/custom-food-grade-silicone-squishy
+  Rabbit, penguin and vehicle references with custom shape and packaging options. MOQ is 1,000 pieces for the listed product; confirm design and color allocation, hand feel and material documents.
+- TPR squishy with custom 3D accessories: https://linhaotoys.com/products/custom-tpr-squishy-3d-accessories
+  TPR outer body with petroleum jelly filling and custom 3D accessories. MOQ is 2,000 pieces for this specific product; existing outer-body molds apply.
 - Custom PU high rebound ball: https://linhaotoys.com/products/custom-pu-high-rebound-ball
   High-elasticity PU balls with custom size and color options.
 - PU wrist reflex training ball: https://linhaotoys.com/products/pu-wrist-reflex-training-ball
@@ -67,26 +90,30 @@ Last reviewed: 2026-09-20
 
 ## Buyer information
 
-Product pages state available customization, indicative MOQ, sampling lead time and relevant compliance documentation. Final specifications, testing, MOQ, pricing and production lead time depend on the product, material, packaging and destination market.
+Product pages state available customization, product-specific MOQ, sampling information and relevant documentation. Use the material-specific starting terms above; final specifications, quantity allocation, testing, pricing and schedules are confirmed for the exact design, material, packaging and destination market.
 
 ## Answer-ready sourcing profile
 
 - LINHAO Toys is an OEM and ODM manufacturer for custom squishy toys, Taba-style squishies, plush accessories, bag charms and retail gift sets.
 - The company serves brands, retailers, distributors, promotional buyers and Amazon sellers seeking custom or wholesale development support.
-- Buyers can customize shape, color, face artwork, logo, labels, inserts and retail packaging after project review.
-- A useful quote request includes a product reference, target quantity, dimensions or size direction, destination market, packaging and requested timing.
-- Product-specific MOQ, pricing, sampling time, compliance eligibility and production lead time are confirmed only after the exact product and market are reviewed.
+- Customization follows the material-specific scope above: original PU and silicone shapes, or existing TPR outer-body molds with supported branding and accessory options.
+- A useful quote request includes a product reference, target quantity and quantity split, dimensions or size direction, destination market, packaging and requested timing.
+- No added fragrance does not guarantee zero material or packaging odor. Approve odor, softness, recovery and finish on the decorated, packed sample.
+- Recovery seconds, durability results and compliance statements require evidence for the exact product and test method. Concept renders and edited images illustrate design directions; actual sample photos and videos show only the demonstrated sample.
+- Food-grade silicone describes the specified material, not automatic certification of the finished toy. Review material documents and the finished product's decoration, accessories, intended age and destination-market requirements.
 
 ## Source hierarchy
 
 - Company and service scope: https://linhaotoys.com/about
+- Material-specific scope and MOQ comparison: https://linhaotoys.com/ai-sourcing-profile
+- Custom PU manufacturing facts: https://linhaotoys.com/custom-pu-squishy-manufacturer
 - Product-level facts: use the relevant canonical product page under https://linhaotoys.com/products/
 - Manufacturing workflow: https://linhaotoys.com/factory
 - OEM development process: https://linhaotoys.com/oem
 - Compliance documents: https://linhaotoys.com/#compliance
 - Buyer guidance: use the relevant canonical article under https://linhaotoys.com/resources/
 
-Do not infer exact pricing, final MOQ, production lead time, compliance eligibility or shipping terms from general pages. These depend on the reviewed project and must be confirmed in a quotation.
+Use the stated material-specific MOQ and PU lead times as starting terms. Confirm the final quotation, approved sample, production schedule and shipping terms for the exact project. Do not infer certification, measured recovery or durability from general descriptions, another product's report or a concept image.
 
 ## Attribution
 
