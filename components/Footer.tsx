@@ -16,6 +16,7 @@ export default function Footer() {
           <b>Collections</b>
           <Link href="/trending-squishy-toys">Trending Squishy Toys</Link>
           <Link href="/custom-squishy-toy-manufacturer">Custom Squishy Toys</Link>
+          <Link href="/custom-pu-squishy-manufacturer">Custom PU Manufacturing</Link>
           <Link href="/custom-stress-ball-manufacturer">Custom Stress Balls</Link>
           <Link href="/custom-blind-box-toys-manufacturer">Custom Blind Box Toys</Link>
           <Link href="/wholesale-squishy-toys">Wholesale Squishy Toys</Link>
@@ -31,6 +32,7 @@ export default function Footer() {
           <Link href="/factory">Factory</Link>
           <Link href="/about">About LINHAO</Link>
           <Link href="/resources">Buyer Resources</Link>
+          <Link href="/ai-sourcing-profile">Materials &amp; MOQ Comparison</Link>
           <Link href="/privacy">Privacy Policy</Link>
         </div>
         <div>
