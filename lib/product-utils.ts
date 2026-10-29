@@ -40,6 +40,61 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"silicone-mushroom-night-light-squishy": {
+  "specifications": [
+    {
+      "label": "Product",
+      "value": "Mushroom-shaped silicone night light with a soft-touch exterior and internal lighting/electrical components"
+    },
+    {
+      "label": "Charging",
+      "value": "USB rechargeable; connector, input rating, battery capacity and charging accessories confirmed for the chosen model"
+    },
+    {
+      "label": "Controls",
+      "value": "Tap control and timer function specified for the range; operation and timer duration confirmed by model"
+    },
+    {
+      "label": "Style references",
+      "value": "Mushroom house, red-cap character and seated beige mushroom; photos show separate style options"
+    },
+    {
+      "label": "Wholesale minimum",
+      "value": "100 pieces for this lamp listing; model/color allocation confirmed in the quotation"
+    },
+    {
+      "label": "Dimensions and light settings",
+      "value": "Obtain the selected model specification for size, light appearance, brightness settings and runtime"
+    },
+    {
+      "label": "Packaging and supply",
+      "value": "Individual packing, carton configuration, available quantity, sample arrangements and lead time quoted for the selected lamp"
+    },
+    {
+      "label": "Documentation",
+      "value": "Review electrical, battery, transport and destination-market documentation for the exact finished lamp; no certificate inferred from appearance"
+    }
+  ],
+  "customization": [
+    "Model and color selection subject to confirmation",
+    "Logo or packaging requests reviewed against the selected model and quantity",
+    "Individual packaging, labels and gift-packing requirements reviewed with the quotation"
+  ],
+  "useCases": [
+    "Bedroom and bedside ambient-light assortments",
+    "Dorm-room and desk decorative gifts",
+    "Lifestyle gift shops and seasonal home-accessory collections"
+  ],
+  "buyerBrief": [
+    "Preferred mushroom style or supplied reference image",
+    "Required quantity from 100 pieces and requested model/color split",
+    "USB connector and charging-accessory requirements",
+    "Required tap-control, timer and light-setting specification",
+    "Packaging, destination market and applicable documentation requirements",
+    "Delivery destination and required arrival date"
+  ],
+  "packagingAnswer": "Confirm individual packing, carton quantity, charging accessories and any logo or gift-packaging requests for the chosen model. Do not assume every pictured style includes identical accessories or controls."
+},
 "custom-pu-cosmetic-tube-squishy-keychain": {
   "specifications": [
     {
@@ -1532,6 +1587,32 @@ export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): 
 
 export function getProductFAQs(product: Product) {
   const customFAQs: Record<string, { question: string; answer: string }[]> = {
+"silicone-mushroom-night-light-squishy": [
+  {
+    "question": "What is the MOQ for this silicone night light squishy?",
+    "answer": "MOQ is 100 pieces for this mushroom lamp listing. Confirm the quantity allocation across the selected models and colors in the quotation."
+  },
+  {
+    "question": "Does the mushroom lamp support USB charging, tap control and a timer?",
+    "answer": "USB charging, tap control and a timer are specified for this product range. Request the exact operating instructions, connector type and timer duration for the selected model before approving an order."
+  },
+  {
+    "question": "Are the three pictured mushroom lamps the same model?",
+    "answer": "They are separate supplied style references: a mushroom house, a red-cap character and a seated beige mushroom. Confirm the exact model, dimensions, light settings, controls and included accessories in the quotation."
+  },
+  {
+    "question": "What does squishy mean for this silicone night light?",
+    "answer": "It refers to the soft-touch silicone surface of the lamp. Review its tactile feel, tap response and construction on a model-specific sample. No measured recovery-time or squeeze-durability result is claimed from the pictures."
+  },
+  {
+    "question": "Can I request logo or gift packaging?",
+    "answer": "Send your logo placement and packaging brief with the preferred model and quantity. Feasibility, minimum quantities, cost and timing are reviewed for that lamp; original-shape electronic-lamp development is not assumed to be included."
+  },
+  {
+    "question": "Which specifications and documents should I request?",
+    "answer": "Request the exact dimensions, charging input and connector, battery specification, timer operation, runtime conditions, packing list and instructions. Review documentation for the selected finished lamp and destination market rather than assuming a general material description certifies the electrical product."
+  }
+],
 "custom-pu-cosmetic-tube-squishy-keychain": [
   {
     "question": "Is this a cosmetic product or a working tube?",

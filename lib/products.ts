@@ -49,6 +49,49 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "silicone-mushroom-night-light-squishy",
+  "name": "Mushroom Silicone Night Light Squishy — USB Rechargeable",
+  "category": "Silicone Night Light / Mushroom Lamp",
+  "tag": "USB Rechargeable · MOQ 100",
+  "note": "Add a soft-touch mushroom lamp to your bedside, bedroom or dorm-room gift range. This silicone night light squishy combines a squeezable silicone touch surface with USB charging, tap control and a timer function, as specified for this product range. The supplied style references show a mushroom-house design, a red-cap character and a seated beige mushroom. Select the exact model and confirm its controls, timer setting, light appearance and included accessories before ordering. Squishy describes the tactile silicone surface; confirm the feel on the selected lamp sample. MOQ is 100 pieces for this lamp listing. Allocation across models and colors, availability, packaging and delivery timing are confirmed in the quotation. Send your preferred reference, quantity, destination market and required arrival date for a model-specific offer. Battery capacity, charging connector, dimensions, brightness settings and timer duration are supplied with the confirmed model specification. Electrical, battery and destination-market documentation must match the selected finished lamp; no product-specific certification or waterproof claim is made here.",
+  "seoTitle": "Silicone Night Light Squishy | USB Mushroom Lamp",
+  "seoDescription": "Mushroom silicone night light squishy with USB charging, tap control and timer. Cute bedroom, bedside and dorm-room gift styles. Wholesale MOQ 100 pieces.",
+  "alt": "Warm glowing mushroom-house silicone night light style reference with a small decorative rabbit figure",
+  "keywords": [
+    "silicone night light squishy",
+    "mushroom silicone night light",
+    "USB rechargeable mushroom lamp",
+    "tap control silicone night light",
+    "mushroom bedside lamp wholesale",
+    "silicone night light wholesale"
+  ],
+  "images": {
+    "hero": "/images/products/silicone-mushroom-night-light-squishy-house.webp"
+  },
+  "gallery": [
+    {
+      "id": "mushroom-house",
+      "src": "/images/products/silicone-mushroom-night-light-squishy-house.webp",
+      "label": "Supplied mushroom-house style reference · confirm the selected model specification"
+    },
+    {
+      "id": "red-cap",
+      "src": "/images/products/silicone-mushroom-night-light-squishy-red.webp",
+      "label": "Supplied red-cap character style reference"
+    },
+    {
+      "id": "beige-mushroom",
+      "src": "/images/products/silicone-mushroom-night-light-squishy-beige.webp",
+      "label": "Supplied seated beige mushroom style reference"
+    }
+  ],
+  "lastModified": "2026-10-29",
+  "minimumOrderQuantity": 100,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "emotional-gifts"
+},
+{
   "slug": "custom-pu-cosmetic-tube-squishy-keychain",
   "name": "Custom PU Slow-Rising Cosmetic Tube Squishy Keychain",
   "category": "PU Squishy Keychain / Cosmetic Tube OEM",
