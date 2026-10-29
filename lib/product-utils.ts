@@ -40,6 +40,63 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-pu-cosmetic-tube-squishy-keychain": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU foam; slow-rising squeeze feel confirmed against the approved physical sample"
+    },
+    {
+      "label": "Design reference",
+      "value": "Cosmetic tube silhouette with brand artwork; a novelty toy/accessory rather than a cosmetic container"
+    },
+    {
+      "label": "Brand customization",
+      "value": "Original logo, patterns, text layout, colors and packaging; print feasibility reviewed at the selected dimensions"
+    },
+    {
+      "label": "Keychain fittings",
+      "value": "Gold-tone chain and clasp shown as a reference; final fitting style, finish and foam connection approved by sample"
+    },
+    {
+      "label": "MOQ allocation",
+      "value": "500 pieces per shape AND per color; one shape in two colors starts at 1,000 pieces"
+    },
+    {
+      "label": "PU sampling",
+      "value": "12–15 days; sample shipment, buyer approval and revisions are separate"
+    },
+    {
+      "label": "PU bulk production",
+      "value": "25–30 days after sample approval; freight transit is additional"
+    },
+    {
+      "label": "Dimensions and recovery",
+      "value": "Dimensions, hand feel, finish and recovery target confirmed for the actual design; no measured recovery seconds or attachment-strength result claimed"
+    }
+  ],
+  "customization": [
+    "Original PU silhouette and dimensions",
+    "Brand logo, decorative patterns and artwork placement",
+    "Custom colors and surface-finish reference",
+    "Keychain fittings and attachment construction reviewed by sample",
+    "Printed cards, individual bags, retail boxes and branded packaging"
+  ],
+  "useCases": [
+    "Beauty-brand promotional merchandise and launch gifts",
+    "Gift-with-purchase accessories for personal-care campaigns",
+    "Private-label squishy keychain and bag-accessory collections"
+  ],
+  "buyerBrief": [
+    "Original tube or other shape artwork and preferred dimensions",
+    "Logo/vector artwork, patterns, text layout and color references",
+    "Quantity per shape and per color, from 500 pieces each",
+    "Preferred softness, recovery reference and fragrance preference",
+    "Chain/clasp style, finish, attachment requirements and intended use",
+    "Individual packaging, destination market and requested arrival date"
+  ],
+  "packagingAnswer": "Discuss individual bags, branded cards, retail boxes and labels with your quotation. Approve the packed sample for artwork, surface contact, fitting protection and attachment presentation."
+},
 "custom-food-grade-silicone-squishy": {
   "specifications": [
     {
@@ -1475,6 +1532,24 @@ export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): 
 
 export function getProductFAQs(product: Product) {
   const customFAQs: Record<string, { question: string; answer: string }[]> = {
+"custom-pu-cosmetic-tube-squishy-keychain": [
+  {
+    "question": "Is this a cosmetic product or a working tube?",
+    "answer": "No. It is a PU foam squishy toy and decorative keychain in a cosmetic tube shape. Ingredient wording and capacity markings in the supplied design are reference artwork, not toy contents or a usable cosmetic capacity."
+  },
+  {
+    "question": "Can my brand logo and patterns be printed on the squishy?",
+    "answer": "Yes. Send your logo, patterns, color references and proposed text layout. We review placement and print feasibility for the selected dimensions, then confirm readability, finish and color on the decorated sample."
+  },
+  {
+    "question": "Can the chain, clasp and attachment be customized?",
+    "answer": "Share your preferred fitting style, finish and intended use. The gold-tone fittings in the image are a design reference. Confirm the final hardware and foam connection on a physical sample, including agreed attachment checks before bulk approval."
+  },
+  {
+    "question": "How do we approve slow rise and the surface finish?",
+    "answer": "Provide a hand-feel or recovery reference and compare the finished decorated sample. Agree a recovery measurement method if seconds matter, and review print wear, surface tack and the connection area during the intended handling. The design image does not establish a measured test result."
+  }
+],
 "custom-food-grade-silicone-squishy": [{"question":"What is the MOQ for this custom silicone squishy?","answer":"MOQ is 1,000 pieces for this silicone product. Confirm the allocation across designs and colors in the quotation. PU and the specific TPR 3D-accessory product have separate order requirements."},{"question":"What packaging can be customized?","answer":"Review individual bags, printed cards, retail boxes and labels with the product. State whether a bag is for transport, display or repeated tactile use. Approve seams, closures, decoration and compatibility with the finished toy on the packed sample."},{"question":"How do we approve silicone hand feel?","answer":"Provide a physical softness and surface-tack reference. Compare the finished sample for squeeze resistance, recovery, dust pickup, residue or transfer, delicate details and the proposed cleaning method. Record actual observations; no universal recovery seconds or durability result is claimed."},{"question":"Which material documents should we request?","answer":"Request documentation identifying the exact silicone grade, formulation and intended use. Food-grade material does not automatically certify the finished toy. Review colorants, decoration, accessories and packaging for the intended age range and destination market; product-specific testing is confirmed for the project."},{"question":"Can we develop our own shape, and what is the process?","answer":"Yes. Send artwork, size, quantity split, preferred hand feel, packaging and destination. The route is feasibility review, 3D rendering, sampling, sample shipment and approval before bulk production. Silicone sampling and production timing are quoted for the final specification."}],
   "ultra-slow-rising-realistic-pu-food-squishy": [
     {

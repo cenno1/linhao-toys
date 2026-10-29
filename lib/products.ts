@@ -49,6 +49,40 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-pu-cosmetic-tube-squishy-keychain",
+  "name": "Custom PU Slow-Rising Cosmetic Tube Squishy Keychain",
+  "category": "PU Squishy Keychain / Cosmetic Tube OEM",
+  "tag": "Custom Logo & Patterns · PU Foam",
+  "customMaterial": "PU",
+  "note": "Create a PU foam slow-rising squishy keychain in a cosmetic tube shape, customized with your brand logo, patterns and colors. Develop original silhouettes, dimensions, artwork placement, softness or hardness, optional fragrance and branded packaging for beauty-brand merchandise, gift-with-purchase programs and promotional collections. The supplied blue tube and gold-tone chain/clasp visual is a design and appearance reference; final printing, fittings, attachment construction and squeeze response are approved on a physical sample. This is a PU foam novelty toy and decorative accessory. Cosmetic wording, ingredient names and capacity markings in the reference are artwork only and do not describe toy contents or a working cosmetic container. MOQ is 500 pieces per shape AND per color; one shape in two colors starts at 1,000 pieces. Send your artwork for design review, 3D rendering, sampling and sample shipment for approval. PU sampling takes 12–15 days; bulk production takes 25–30 days after sample approval. Buyer approval, revisions and freight transit are separate. Confirm dimensions, logo readability, surface finish, recovery and the keychain connection on the finished packed sample.",
+  "seoTitle": "Custom PU Cosmetic Tube Squishy Keychain | Logo Printing",
+  "seoDescription": "Custom PU slow-rising cosmetic tube squishy keychains with your brand logo, patterns, colors and packaging. Factory OEM, MOQ 500 per shape and color.",
+  "alt": "Blue cosmetic tube shaped PU squishy keychain design reference with custom gold-colored branding, chain and clasp",
+  "keywords": [
+    "custom PU squishy keychain",
+    "cosmetic tube squishy keychain",
+    "custom logo squishy keychain",
+    "slow rising foam keychain",
+    "custom squishy toys manufacturer",
+    "promotional squishy keychain wholesale"
+  ],
+  "images": {
+    "hero": "/images/products/custom-pu-cosmetic-tube-squishy-keychain.webp"
+  },
+  "gallery": [
+    {
+      "id": "design-reference",
+      "src": "/images/products/custom-pu-cosmetic-tube-squishy-keychain.webp",
+      "label": "Supplied design reference · final appearance and performance subject to sample approval"
+    }
+  ],
+  "lastModified": "2026-10-29",
+  "minimumOrderQuantity": 500,
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-food-grade-silicone-squishy",
   "name": "Custom Food-Grade Silicone Squishy Toys — Original Shape OEM",
   "category": "Custom Silicone Squishy / OEM",
