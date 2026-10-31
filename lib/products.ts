@@ -49,6 +49,27 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  slug: "cat-soft-rubber-squishy-toys",
+  name: "Cute Cat Soft Rubber Squishy Toys",
+  category: "Cat Squishy / Wholesale Squeeze Toys",
+  tag: "Three Styles · Wholesale Inquiries",
+  note: "Bring expressive kitten characters to your squeeze-toy and gift collection. These soft rubber cat squishy toys are presented in three distinct styles: an orange-and-white kitten in a flower-decorated basket with a pink bow, an orange tabby with a lace collar and mint bow, and a pink fantasy kitten with decorative tails. Compare the facial details, colors and accessory presentation to select the right style for your assortment. Request samples to review the squeeze feel, finish and selected model. Send your preferred style, quantity, destination and packaging requirements for a wholesale quotation. Dimensions, material specification, minimum order, included accessories and delivery timing are confirmed for the selected item.",
+  seoTitle: "Cat Squishy Toys Wholesale | Soft Rubber Kitten Gifts",
+  seoDescription: "Explore cute soft rubber cat squishy toys in basket, lace-collar and fantasy-tail styles. Request samples, packing details and a wholesale quotation.",
+  alt: "Orange-and-white cat squishy toy with a pink bow in a flower-decorated cream basket",
+  keywords: ["cat squishy toys", "cat squishy wholesale", "soft rubber cat squishy", "cute kitten squeeze toy", "cat stress relief toy", "animal squishy gifts"],
+  images: { hero: "/images/products/cat-soft-rubber-squishy-toys/basket-style.webp" },
+  gallery: [
+    { id: "basket", src: "/images/products/cat-soft-rubber-squishy-toys/basket-style.webp", label: "Basket style · pink bow" },
+    { id: "lace-collar", src: "/images/products/cat-soft-rubber-squishy-toys/lace-collar-style.webp", label: "Lace collar style · mint bow" },
+    { id: "fantasy-tail", src: "/images/products/cat-soft-rubber-squishy-toys/fantasy-tail-style.webp", label: "Fantasy tail style · pink kitten" },
+  ],
+  lastModified: "2026-10-31",
+  featured: true,
+  detailsOnRequest: true,
+  filterGroup: "squishy",
+},
+{
   "slug": "silicone-mushroom-night-light-squishy",
   "name": "Mushroom Silicone Night Light Squishy — USB Rechargeable",
   "category": "Silicone Night Light / Mushroom Lamp",

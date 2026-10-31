@@ -13,6 +13,7 @@ type ProductGalleryProps = {
 export default function ProductGallery({ productName, items, videoSrc }: ProductGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = items[activeIndex];
+  const isCatStyle = active.src.includes("/cat-soft-rubber-squishy-toys/");
   const imageFit = active.src.includes("custom-pu-cruise-ship-squishy") || active.src.includes("dumpling-squishy-blind-box") || active.src.includes("custom-croissant-squishy") || active.src.includes("dumpling-advent-calendar-") || active.src.includes("pu-wrist-reflex-training-ball") || active.src.includes("custom-pu-high-rebound-ball") || active.src.includes("premium-custom-pu-character-figure") || active.src.includes("ultra-slow-rising-realistic-pu-food-squishy") ? "object-contain" : "object-cover";
   const useOriginalImage = active.src.includes("ready-stock-halloween-butter-bar-squishy") || active.src.includes("ready-stock-chocolate-bar-squishy") || active.src.includes("squeaky-tongue-popping-animal-squishy");
 
@@ -26,7 +27,7 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
           width={1200}
           height={900}
           sizes="(max-width: 1024px) 100vw, 52vw"
-          className={`h-full w-full ${imageFit}`}
+          className={`h-full w-full ${isCatStyle ? "object-contain" : imageFit}`}
           priority
           unoptimized={useOriginalImage}
         />
@@ -52,7 +53,7 @@ export default function ProductGallery({ productName, items, videoSrc }: Product
                   width={400}
                   height={300}
                   sizes="(max-width: 1024px) 25vw, 13vw"
-                  className={`h-full w-full ${imageFit}`}
+                  className={`h-full w-full ${isCatStyle ? "object-contain" : imageFit}`}
                   unoptimized={item.src.includes("ready-stock-halloween-butter-bar-squishy") || item.src.includes("ready-stock-chocolate-bar-squishy") || item.src.includes("squeaky-tongue-popping-animal-squishy")}
                 />
               </div>

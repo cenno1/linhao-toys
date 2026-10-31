@@ -40,6 +40,25 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "cat-soft-rubber-squishy-toys": {
+    specifications: [
+      { label: "Style options", value: "Basket kitten with pink bow; tabby kitten with lace collar and mint bow; pink fantasy kitten with decorative tails" },
+      { label: "Material and feel", value: "Soft rubber squeeze-toy construction; confirm the exact material specification, softness and recovery on the selected model sample" },
+      { label: "Appearance", value: "Expressive kitten faces, molded surface details and style-specific colors; images are presentation references for separate styles" },
+      { label: "Dimensions", value: "Request the height, width and unit weight for your selected style" },
+      { label: "Accessories", value: "Basket, bow, collar and other decorative accessories are confirmed in the packing list for the chosen style; display props are not assumed included" },
+      { label: "Intended product", value: "Novelty squeeze toy and gift item for people; not a pet chew toy. Intended age grade and instructions are confirmed for the selected item" },
+    ],
+    customization: [
+      "Select the basket, lace-collar or fantasy-tail style",
+      "Confirm the available colors and quantity split by style",
+      "Review individual packing, gift-box and retail-label requirements",
+      "Submit branding requests for feasibility and quantity review",
+    ],
+    useCases: ["Novelty and animal-themed gift shops", "Squeeze-toy and desk-companion assortments", "Seasonal gifting and retail gift sets"],
+    buyerBrief: ["Preferred cat style and required quantity per style", "Required dimensions and sample request", "Accessory inclusion and individual packing requirements", "Retail labels or branding requests", "Destination market, intended age range and receiving date"],
+    packagingAnswer: "Ask for a style-specific packing list and quotation. Confirm the basket, bow, collar, individual bag or gift box separately; scene decorations in the images are not assumed included.",
+  },
 "silicone-mushroom-night-light-squishy": {
   "specifications": [
     {
@@ -1587,6 +1606,13 @@ export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): 
 
 export function getProductFAQs(product: Product) {
   const customFAQs: Record<string, { question: string; answer: string }[]> = {
+  "cat-soft-rubber-squishy-toys": [
+    { question: "Which cat squishy styles can I request?", answer: "Choose the orange-and-white basket kitten with a pink bow, orange tabby with a lace collar and mint bow, or pink fantasy kitten with decorative tails. The images show separate style references; confirm availability and the quantity split for your order." },
+    { question: "What is the wholesale minimum order?", answer: "Send the selected style, quantity per style, packing requirement and destination. Minimum order, unit price and delivery timing are confirmed in the quotation for that item." },
+    { question: "Are the basket, collar and gift packaging included?", answer: "Accessory inclusion varies by style and must be confirmed in the packing list. Request the exact contents, unit packing and carton quantity. Decorative scene props are not assumed included." },
+    { question: "Can these decorated cat squishies be washed?", answer: "Request care instructions for the selected toy, painted finish and accessories before washing. The basket, ribbon and collar may require different care from the squeeze-toy body; no universal washing method is specified for all three styles." },
+    { question: "Can I check the squeeze feel and material before ordering?", answer: "Request the selected model specification and a physical sample. Review softness, recovery, surface finish, decorative details and packing. Confirm the intended age range and product-specific documents for your destination market." },
+  ],
 "silicone-mushroom-night-light-squishy": [
   {
     "question": "What is the MOQ for this silicone night light squishy?",
