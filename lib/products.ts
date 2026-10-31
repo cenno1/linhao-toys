@@ -1059,6 +1059,7 @@ export const products: Product[] = [
 
   {
     slug: "ready-stock-chocolate-bar-squishy",
+    lastModified: "2026-10-31",
     name: "Ready Stock Chocolate Bar Squishy",
     category: "Food Squishy / Wholesale",
     tag: "Ready Stock",

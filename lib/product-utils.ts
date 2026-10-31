@@ -1,16 +1,5 @@
 import { products, type Product, type ProductFilterGroup } from "./products";
 
-const READY_STOCK_SLUGS = new Set([
-  "ready-stock-highland-cow-tpr-squishy",
-  "ready-stock-mango-squishy",
-  "ready-stock-giant-peach-squishy",
-  "ready-stock-cheese-cube-squishy",
-  "ready-stock-giant-strawberry-squishy",
-  "ready-stock-giant-banana-squishy",
-  "ready-stock-dragon-fruit-squishy",
-  "ready-stock-halloween-butter-bar-squishy",
-]);
-
 export const FULL_GALLERY_SLUGS = new Set([
   "dessert-cake-pu-squishy-keychain-assortment",
   "fruit-building-block-squishy-assortment",
@@ -40,6 +29,18 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "ready-stock-chocolate-bar-squishy": {
+    specifications: [
+      { label: "Product format", value: "Chocolate-bar-shaped squeeze toy; non-edible" },
+      { label: "Availability", value: "Live stock quantity and available variants confirmed before order acceptance" },
+      { label: "Sample details", value: "Request the current material specification, dimensions, unit weight and squeeze demonstration for the available item" },
+      { label: "Packing", value: "Confirm individual retail packing, pieces per carton, carton dimensions and gross weight with the quotation" },
+    ],
+    customization: ["Live stock and available variant check", "Quantity and carton allocation", "Current retail packing and label review", "Destination-specific shipping quotation", "Dispatch date confirmed after stock review"],
+    useCases: ["Novelty and gift shops", "Food-themed squeeze-toy assortments", "Seasonal retail displays"],
+    buyerBrief: ["Requested quantity and preferred available variant", "Destination country and postal code", "Individual packing and retail-label requirements", "Sample or current squeeze-video request", "Required receiving date and preferred shipping method"],
+    packagingAnswer: "Request current packing photos, unit-pack details, carton quantity, carton dimensions and gross weight. Confirm any branding request separately; a custom mold or new design is not included in a ready-stock order.",
+  },
   "cat-soft-rubber-squishy-toys": {
     specifications: [
       { label: "Style options", value: "Basket kitten with pink bow; tabby kitten with lace collar and mint bow; pink fantasy kitten with decorative tails" },
@@ -1483,7 +1484,7 @@ export type ProductSpecification = {
 
 export function getProductSpecifications(product: Product): ProductSpecification[] {
   const profile = productBuyingProfiles[product.slug];
-  const isReadyStock = READY_STOCK_SLUGS.has(product.slug);
+  const isReadyStock = product.availability === "ready-stock";
 
   if (product.detailsOnRequest) {
     return [
@@ -1727,7 +1728,7 @@ export function getProductFAQs(product: Product) {
   if (customFAQs[product.slug]) return [...manufacturingFAQs, ...customFAQs[product.slug]];
 
   const profile = productBuyingProfiles[product.slug];
-  const isReadyStock = READY_STOCK_SLUGS.has(product.slug);
+  const isReadyStock = product.availability === "ready-stock";
 
   if (product.customMaterial) return [...manufacturingFAQs, { question: "Can I approve a sample before bulk production?", answer: "Yes. We ship the physical sample for approval after the 3D rendering and sampling stages. Review the shape, color, hand feel, decoration and packaging before approving production." }];
 
