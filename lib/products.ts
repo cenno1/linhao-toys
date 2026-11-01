@@ -49,6 +49,45 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-football-player-slow-rising-squishy",
+  "name": "Custom Football Player Slow-Rising Squishy",
+  "category": "Custom PU Squishy / Sports Character",
+  "tag": "Custom Athlete Design · PU Foam",
+  "customMaterial": "PU",
+  "note": "Develop a custom American football player slow-rising squishy in PU foam for sports promotions, fan merchandise and character gift collections. The supplied preliminary sculpt concept shows an 11 cm figure with a blue uniform, jersey number, gloves and detailed hair, alongside front and three-quarter face views. Customize the athlete character, jersey colors, number, facial details and branded packaging to suit your project. The window-box image is a packaging concept reference. Final dimensions, colors, surface finish, softness and recovery speed are confirmed on an approved physical sample. Send your design brief, quantity, destination and packaging requirements for a quotation. Athlete names, likenesses and team artwork are supplied by the buyer with the necessary permission; the reference does not indicate an official licensing partnership.",
+  "seoTitle": "Custom Football Player Squishy | Slow-Rising PU Figure",
+  "seoDescription": "Custom American football player slow-rising PU squishy with an 11 cm concept reference. Customize jerseys, character details and window-box packaging.",
+  "alt": "Preliminary 11 cm PU football player figure concept with full-body, front-face and three-quarter views",
+  "keywords": [
+    "custom football player squishy",
+    "American football squishy",
+    "athlete slow rising squishy",
+    "custom PU sports figure",
+    "football player stress toy",
+    "custom sports promotional gifts"
+  ],
+  "images": {
+    "hero": "/images/products/custom-football-player-slow-rising-squishy/sculpt-concept.png"
+  },
+  "gallery": [
+    {
+      "id": "sculpt",
+      "src": "/images/products/custom-football-player-slow-rising-squishy/sculpt-concept.png",
+      "label": "11 cm sculpt concept · full figure and face details"
+    },
+    {
+      "id": "packaging",
+      "src": "/images/products/custom-football-player-slow-rising-squishy/packaging-concept.png",
+      "label": "Window-box packaging concept · front and back"
+    }
+  ],
+  "referenceSize": "11 cm concept reference; final size confirmed on sample",
+  "lastModified": "2026-11-01",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   slug: "cat-soft-rubber-squishy-toys",
   name: "Cute Cat Soft Rubber Squishy Toys",
   category: "Cat Squishy / Wholesale Squeeze Toys",
