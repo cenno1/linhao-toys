@@ -29,6 +29,46 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-pu-foam-vehicle-squishy": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU foam; hardness, softness and recovery response confirmed on the approved sample"
+    },
+    {
+      "label": "Vehicle references",
+      "value": "Blue sports car concept and orange-cab box truck style; separate designs"
+    },
+    {
+      "label": "Dimensions and weight",
+      "value": "Custom project dimensions and unit weight confirmed during sampling"
+    },
+    {
+      "label": "Construction",
+      "value": "Vehicle-shaped squeeze toy; moving wheels or mechanical functions require separate confirmation"
+    }
+  ],
+  "customization": [
+    "Original car, truck or transport silhouette",
+    "Custom body colors and painted details",
+    "Logo and artwork placement",
+    "Foam hardness, softness and optional scent",
+    "Individual packing and retail box development"
+  ],
+  "useCases": [
+    "Automotive promotional merchandise",
+    "Transport and logistics brand gifts",
+    "Vehicle-themed novelty toy assortments"
+  ],
+  "buyerBrief": [
+    "Vehicle drawings or authorized design reference",
+    "Target dimensions and preferred squeeze feel",
+    "Quantity per vehicle shape and color",
+    "Logo files and packaging brief",
+    "Destination market and requested receiving date"
+  ],
+  "packagingAnswer": "Individual bags, retail boxes and other packaging can be reviewed for the project. Confirm protective packing, carton quantity, dimensions and gross weight with the quotation."
+},
 "pu-coffee-cola-cup-slow-rising-squishy": {
   "specifications": [
     {

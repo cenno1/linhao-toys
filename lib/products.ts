@@ -49,6 +49,44 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-pu-foam-vehicle-squishy",
+  "name": "Custom PU Foam Vehicle Squishy Toys",
+  "category": "Custom PU Foam / Vehicle Shapes",
+  "tag": "Custom Cars & Trucks · PU Foam",
+  "customMaterial": "PU",
+  "note": "Develop custom PU foam vehicle-shaped squeeze toys for promotional merchandise, transport-themed gift collections and novelty toy assortments. The supplied references show a blue open-top sports car design and a black box truck with an orange cab. Use these as separate vehicle-style references when discussing your own car, truck or transport design. Customize the silhouette, dimensions, body colors, printed details, logo placement, foam hardness or softness and packaging according to the approved sample. Vehicle windows, wheels and body details describe the appearance; rolling wheels, working axles or other mechanical functions are not assumed. Request a physical sample to check the squeeze response, recovery, painted finish and fine details. Send your vehicle artwork or drawings, dimensions, quantity per design and color, destination and packing requirements for a quotation. Final size, weight, construction, testing scope and delivery schedule are confirmed for the selected project.",
+  "seoTitle": "Custom PU Foam Vehicle Squishy | Car & Truck Toys",
+  "seoDescription": "Custom PU foam car and truck squishy toys with vehicle shapes, colors, logos and packaging. Review sports car and box truck references and request a sample.",
+  "alt": "Blue open-top sports car design reference with red wheel details for a custom PU foam vehicle squishy",
+  "keywords": [
+    "custom PU foam vehicle",
+    "car squishy toy",
+    "truck squishy toy",
+    "custom vehicle stress toy",
+    "PU foam car toy manufacturer",
+    "promotional vehicle squeeze toys"
+  ],
+  "images": {
+    "hero": "/images/products/custom-pu-foam-vehicle-squishy/sports-car-reference.png"
+  },
+  "gallery": [
+    {
+      "id": "sports-car",
+      "src": "/images/products/custom-pu-foam-vehicle-squishy/sports-car-reference.png",
+      "label": "Sports car design reference · blue body and red wheel details"
+    },
+    {
+      "id": "box-truck",
+      "src": "/images/products/custom-pu-foam-vehicle-squishy/box-truck-reference.png",
+      "label": "Box truck style reference · orange cab and black cargo body"
+    }
+  ],
+  "lastModified": "2026-11-03",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "pu-coffee-cola-cup-slow-rising-squishy",
   "name": "PU Slow-Rising Coffee & Cola Cup Squishy Toys",
   "category": "PU Squishy / Drink Cup Toys",
