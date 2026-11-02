@@ -29,6 +29,45 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"pu-coffee-cola-cup-slow-rising-squishy": {
+  "specifications": [
+    {
+      "label": "Material and recovery",
+      "value": "PU foam with slow-rising squeeze response; confirm softness and recovery speed on the selected sample"
+    },
+    {
+      "label": "Photo styles",
+      "value": "Pink whipped-top cup with purple straw detail; blue takeaway cup with black lid"
+    },
+    {
+      "label": "Dimensions and weight",
+      "value": "Request height, width and unit weight for the selected style"
+    },
+    {
+      "label": "Product use",
+      "value": "Cup-shaped novelty squeeze toy; not a cup for holding drinks"
+    }
+  ],
+  "customization": [
+    "Select the cup style and quantity split",
+    "Confirm available colors",
+    "Review logo or artwork feasibility",
+    "Confirm individual packing and carton requirements"
+  ],
+  "useCases": [
+    "Novelty and gift shops",
+    "Drink-themed squeeze-toy assortments",
+    "Promotional gift projects subject to design review"
+  ],
+  "buyerBrief": [
+    "Preferred cup style and quantity per style",
+    "Sample request and desired squeeze feel",
+    "Individual packing and labeling requirements",
+    "Destination country and postal code",
+    "Required receiving date"
+  ],
+  "packagingAnswer": "The supplied photos show the toys without retail packaging. Confirm individual bags or boxes, carton quantity, carton dimensions and gross weight with the quotation."
+},
   "ready-stock-chocolate-bar-squishy": {
     specifications: [
       { label: "Product format", value: "Chocolate-bar-shaped squeeze toy; non-edible" },

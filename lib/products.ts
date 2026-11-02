@@ -49,6 +49,43 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "pu-coffee-cola-cup-slow-rising-squishy",
+  "name": "PU Slow-Rising Coffee & Cola Cup Squishy Toys",
+  "category": "PU Squishy / Drink Cup Toys",
+  "tag": "Drink Cup Shapes · Slow-Rising PU",
+  "note": "Add drink-inspired squeeze toys to your novelty and gift assortment with these PU slow-rising coffee and cola cup squishies. The supplied photos show two separate styles: a pink cup with a whipped-cream-style top and purple straw detail, and a blue takeaway cup with a black lid. The cup, lid and topping features form the toy design. These are cup-shaped foam toys, not drink containers. Request a sample to review the squeeze feel, recovery speed, size, unit weight and surface finish of your selected style. Send your preferred cup style, required quantity, destination and packaging needs for a wholesale quotation. Available colors, material specification, minimum order, packing and delivery timing are confirmed for the selected item. Any logo, color or packaging changes are reviewed before confirmation.",
+  "seoTitle": "PU Coffee & Cola Cup Squishy | Slow-Rising Drink Toys",
+  "seoDescription": "PU slow-rising coffee and cola cup squishy toys in pink whipped-top and blue takeaway styles. Request samples, dimensions, packing and a wholesale quote.",
+  "alt": "Pink PU drink cup squishy with a white whipped-cream-style top and purple straw detail",
+  "keywords": [
+    "coffee cup squishy",
+    "cola cup squishy",
+    "PU slow rising squishy",
+    "drink cup squishy wholesale",
+    "takeaway cup squeeze toy",
+    "coffee cup stress toy"
+  ],
+  "images": {
+    "hero": "/images/products/pu-coffee-cola-cup-slow-rising-squishy/pink-whipped-cup.png"
+  },
+  "gallery": [
+    {
+      "id": "pink-cup",
+      "src": "/images/products/pu-coffee-cola-cup-slow-rising-squishy/pink-whipped-cup.png",
+      "label": "Pink cup · whipped-cream-style top and straw detail"
+    },
+    {
+      "id": "blue-cup",
+      "src": "/images/products/pu-coffee-cola-cup-slow-rising-squishy/blue-takeaway-cup.png",
+      "label": "Blue takeaway cup · black lid design"
+    }
+  ],
+  "lastModified": "2026-11-03",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-football-player-slow-rising-squishy",
   "name": "Custom Football Player Slow-Rising Squishy",
   "category": "Custom PU Squishy / Sports Character",
