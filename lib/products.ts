@@ -49,6 +49,49 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-pu-capsule-blind-box-squishy-series",
+  "name": "Custom PU Capsule Blind Box Squishy Series",
+  "category": "Custom PU Squishy / Capsule Blind Boxes",
+  "tag": "Bear Bread · Fruit · Ocean Series",
+  "customMaterial": "PU",
+  "note": "Create a themed capsule blind box collection with custom PU foam squishy toys, egg-shaped capsules and coordinated counter displays. The supplied series references show bear bread characters, fruit characters and ocean animals. Bear bread designs include bun and toast shapes; the fruit range includes citrus, mango, avocado, apple, strawberry and cherry-inspired characters; the ocean range includes squid, sharks and whale shark-inspired designs. Choose a series direction or develop your own authorized character artwork, colors and foam feel through sampling. Capsule shells, printed wraps, assortment configuration and counter-display artwork are reviewed as a complete packaging project. The English images are localized presentation references based on the supplied artwork; final toy details, capsule fit and printed packaging are approved on physical samples. Confirm capsule dimensions and dispensing compatibility separately before planning vending-machine use. Send quantities per design and color, target market, packaging brief and destination for a quotation. Toy dimensions, recovery response, scent options, capsule count, assortment ratios, any random packing and production schedule are confirmed for the order. These are novelty toys, not food.",
+  "seoTitle": "Custom PU Capsule Squishy | Blind Box Toy Series",
+  "seoDescription": "Custom PU capsule blind box squishies in bear bread, fruit and ocean themes. Develop toy designs, egg capsules and counter displays with sample approval.",
+  "alt": "English presentation reference of bear bread PU squishy toys with egg capsules and a themed counter display",
+  "keywords": [
+    "custom PU capsule squishy",
+    "squishy blind box series",
+    "capsule squishy toys wholesale",
+    "egg capsule squishy toys",
+    "custom blind box toys",
+    "fruit animal PU squishy assortment"
+  ],
+  "images": {
+    "hero": "/images/products/custom-pu-capsule-blind-box-squishy-series/bear-bread-series.webp"
+  },
+  "gallery": [
+    {
+      "id": "bear-bread",
+      "src": "/images/products/custom-pu-capsule-blind-box-squishy-series/bear-bread-series.webp",
+      "label": "Bear bread series · English presentation reference"
+    },
+    {
+      "id": "fruit",
+      "src": "/images/products/custom-pu-capsule-blind-box-squishy-series/fruit-series.webp",
+      "label": "Fruit character series · English presentation reference"
+    },
+    {
+      "id": "ocean",
+      "src": "/images/products/custom-pu-capsule-blind-box-squishy-series/ocean-series.webp",
+      "label": "Ocean animal series · English presentation reference"
+    }
+  ],
+  "lastModified": "2026-11-03",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-pu-foam-vehicle-squishy",
   "name": "Custom PU Foam Vehicle Squishy Toys",
   "category": "Custom PU Foam / Vehicle Shapes",

@@ -29,6 +29,51 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-pu-capsule-blind-box-squishy-series": {
+  "specifications": [
+    {
+      "label": "Toy material",
+      "value": "PU foam; sample approval covers softness, recovery response and finish"
+    },
+    {
+      "label": "Series references",
+      "value": "Bear bread, fruit characters and ocean animals; final designs confirmed with artwork approval"
+    },
+    {
+      "label": "Packaging concept",
+      "value": "Egg-shaped capsules, printed wraps and a coordinated counter display; final contents and counts confirmed in quotation"
+    },
+    {
+      "label": "Dimensions and compatibility",
+      "value": "Toy dimensions, capsule size and fit confirmed by sample; vending-machine compatibility requires separate review"
+    },
+    {
+      "label": "Assortment",
+      "value": "Design count, quantity split, random packing and any special variants must be agreed before production"
+    }
+  ],
+  "customization": [
+    "Original character and theme development",
+    "Custom toy shape, colors and face details",
+    "Foam hardness, softness and optional scent review",
+    "Capsule wraps and counter-display artwork",
+    "Assortment and packing configuration"
+  ],
+  "useCases": [
+    "Novelty and gift shop capsule collections",
+    "Retail blind box assortments",
+    "Seasonal character gift ranges",
+    "Brand promotional collections"
+  ],
+  "buyerBrief": [
+    "Chosen series or authorized original character artwork",
+    "Quantity per design and color",
+    "Toy and capsule dimensions or machine compatibility requirements",
+    "Assortment ratio and packing instructions",
+    "Display artwork, destination market and required timing"
+  ],
+  "packagingAnswer": "Capsules, printed wraps and counter displays are a project-specific packaging option. Confirm toy contents, capsule quantity, display count, carton configuration and artwork before ordering."
+},
 "custom-pu-foam-vehicle-squishy": {
   "specifications": [
     {
