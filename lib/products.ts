@@ -49,6 +49,44 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-pu-foam-realistic-fruit-squishy",
+  "name": "Custom PU Foam Realistic Fruit Squishy Toys",
+  "category": "Custom PU Squishy / Realistic Fruit",
+  "tag": "Strawberry Reference · Custom Fruit Shapes",
+  "customMaterial": "PU",
+  "note": "Develop custom PU foam realistic fruit squishy toys for wholesale gift ranges, novelty assortments and promotional projects. The supplied photos show a red strawberry with molded seed texture and green leaf details, plus a hand-squeeze demonstration of the strawberry design. Use this strawberry as a visual reference when discussing fruit shapes, dimensions, colors, surface details and your preferred foam hardness or softness. Request a physical sample to review the size, unit weight, compression, recovery response and painted finish. Other fruit designs are developed against your approved brief; the photos do not represent a fixed multi-fruit assortment. Send your reference artwork, quantity per shape and color, target dimensions, destination and packing requirements for a quotation. Optional logo work, scent and retail packaging are reviewed for the project. These are fruit-shaped foam squeeze toys, not edible fruit; final material specification, age grading, testing scope and timing are confirmed for the selected item.",
+  "seoTitle": "Custom PU Foam Fruit Squishy | Realistic Strawberry Toys",
+  "seoDescription": "Wholesale custom PU foam realistic fruit squishy toys, shown with strawberry texture and squeeze demonstration. Request custom shapes, samples and packing details.",
+  "alt": "Two red strawberry-shaped PU foam squishy toys with molded seed texture and green leaves",
+  "keywords": [
+    "custom PU foam fruit squishy",
+    "realistic fruit squishy wholesale",
+    "strawberry squishy toy",
+    "PU foam strawberry",
+    "custom fruit stress toy",
+    "fruit squeeze toys manufacturer"
+  ],
+  "images": {
+    "hero": "/images/products/custom-pu-foam-realistic-fruit-squishy/strawberry-reference.png"
+  },
+  "gallery": [
+    {
+      "id": "appearance",
+      "src": "/images/products/custom-pu-foam-realistic-fruit-squishy/strawberry-reference.png",
+      "label": "Strawberry design reference · seed texture and green leaves"
+    },
+    {
+      "id": "squeeze",
+      "src": "/images/products/custom-pu-foam-realistic-fruit-squishy/strawberry-squeeze.png",
+      "label": "Hand-squeeze demonstration · strawberry style"
+    }
+  ],
+  "lastModified": "2026-11-03",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-pu-capsule-blind-box-squishy-series",
   "name": "Custom PU Capsule Blind Box Squishy Series",
   "category": "Custom PU Squishy / Capsule Blind Boxes",

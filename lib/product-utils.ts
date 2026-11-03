@@ -29,6 +29,50 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-pu-foam-realistic-fruit-squishy": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU foam; final material specification and foam feel confirmed on the selected sample"
+    },
+    {
+      "label": "Shown fruit design",
+      "value": "Red strawberry with molded seed texture and green leaf details"
+    },
+    {
+      "label": "Squeeze and recovery",
+      "value": "Hand compression shown in the reference image; recovery speed and firmness confirmed by sample or video"
+    },
+    {
+      "label": "Dimensions and weight",
+      "value": "Custom dimensions and unit weight confirmed during sampling"
+    },
+    {
+      "label": "Product format",
+      "value": "Fruit-shaped novelty squeeze toy; non-edible"
+    }
+  ],
+  "customization": [
+    "Original fruit shapes and dimensions",
+    "Custom fruit colors and surface details",
+    "Foam hardness or softness adjustment",
+    "Logo and optional scent feasibility review",
+    "Individual packing and retail artwork"
+  ],
+  "useCases": [
+    "Fruit-themed gift collections",
+    "Novelty and squeeze-toy assortments",
+    "Brand promotional projects"
+  ],
+  "buyerBrief": [
+    "Fruit shape reference or original artwork",
+    "Target dimensions and preferred foam feel",
+    "Quantity per shape and color",
+    "Logo and individual packing requirements",
+    "Destination market and required receiving date"
+  ],
+  "packagingAnswer": "Confirm individual packing, protective packaging for leaf and stem details, carton quantity, carton dimensions and gross weight with the quotation."
+},
 "custom-pu-capsule-blind-box-squishy-series": {
   "specifications": [
     {
