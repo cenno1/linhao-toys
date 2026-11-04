@@ -29,6 +29,50 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-pu-airplane-stress-ball": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU foam; softness and recovery response confirmed on the selected physical sample"
+    },
+    {
+      "label": "Aircraft references",
+      "value": "Red-tail gray-wing airplane and rounded white aircraft with blue windows; separate reference styles"
+    },
+    {
+      "label": "Dimensions and weight",
+      "value": "Target length, wingspan, height and unit weight confirmed during sampling"
+    },
+    {
+      "label": "Construction review",
+      "value": "Review wing and tail attachment, surface finish and decoration on the approved sample"
+    },
+    {
+      "label": "Product format",
+      "value": "Novelty foam squeeze toy; not a flying aircraft or calibrated exercise device"
+    }
+  ],
+  "customization": [
+    "Original aircraft shape and dimensions",
+    "Body, wing and tail colors",
+    "Logo and aircraft artwork placement",
+    "Foam hardness or softness adjustment",
+    "Individual packing and branded retail packaging"
+  ],
+  "useCases": [
+    "Aviation-themed promotional gifts",
+    "Travel campaign merchandise",
+    "Novelty and transport-themed gift assortments"
+  ],
+  "buyerBrief": [
+    "Aircraft reference or authorized original drawings",
+    "Target length, wingspan and desired foam feel",
+    "Quantity per shape and color",
+    "Logo artwork and packaging requirements",
+    "Destination market and required receiving date"
+  ],
+  "packagingAnswer": "Confirm protective packing for wings and tail, individual bags or retail boxes, carton quantity, carton dimensions and gross weight with the quotation."
+},
 "custom-pu-foam-realistic-fruit-squishy": {
   "specifications": [
     {

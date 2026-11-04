@@ -49,6 +49,44 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-pu-airplane-stress-ball",
+  "name": "Custom PU Airplane Stress Ball Toys",
+  "category": "Custom PU Foam / Airplane Stress Toys",
+  "tag": "Custom Aircraft Shapes · Logo & Colors",
+  "customMaterial": "PU",
+  "note": "Develop custom PU foam airplane stress ball toys for aviation-themed promotional gifts, travel campaigns and novelty toy assortments. The supplied references show two different aircraft styles: a white plane with gray wings and a red tail, and a rounded white airplane presentation with blue window details. Select a reference direction or submit your own authorized aircraft artwork for custom shape, dimensions, colors, logo placement and packaging review. These are airplane-shaped foam squeeze toys; flight, moving parts or a calibrated grip-training resistance are not assumed. Request a physical sample to check softness, compression, recovery response, painted details and the wing and tail construction. The airport scene is a presentation reference and does not indicate the size of the finished toy or any airline affiliation. Send your target dimensions, quantity per shape and color, logo files, destination and packaging requirements for a project quotation. Final dimensions, unit weight, material specification, testing scope and production timing are confirmed against the approved sample.",
+  "seoTitle": "Custom PU Airplane Stress Balls | Foam Plane Toys",
+  "seoDescription": "Custom PU foam airplane stress ball toys with aircraft shapes, colors, logo printing and packaging. Review two airplane references and request a sample quote.",
+  "alt": "White PU airplane squeeze-toy reference with gray wings, printed windows and a red tail",
+  "keywords": [
+    "custom airplane stress ball",
+    "PU foam airplane toy",
+    "airplane stress balls wholesale",
+    "custom aircraft squeeze toy",
+    "promotional plane stress toy",
+    "aviation gift manufacturer"
+  ],
+  "images": {
+    "hero": "/images/products/custom-pu-airplane-stress-ball/red-tail-airplane.png"
+  },
+  "gallery": [
+    {
+      "id": "red-tail",
+      "src": "/images/products/custom-pu-airplane-stress-ball/red-tail-airplane.png",
+      "label": "Red-tail airplane · gray-wing style reference"
+    },
+    {
+      "id": "rounded-plane",
+      "src": "/images/products/custom-pu-airplane-stress-ball/rounded-airplane-scene.png",
+      "label": "Rounded airplane · airport presentation reference"
+    }
+  ],
+  "lastModified": "2026-11-04",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-pu-foam-realistic-fruit-squishy",
   "name": "Custom PU Foam Realistic Fruit Squishy Toys",
   "category": "Custom PU Squishy / Realistic Fruit",
