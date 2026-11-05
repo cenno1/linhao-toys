@@ -29,6 +29,50 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "custom-plush-slow-rise-pu-foam-squishy": {
+  "specifications": [
+    {
+      "label": "Outer shell",
+      "value": "Soft plush fabric; confirm pile, color and feel on the selected sample"
+    },
+    {
+      "label": "Core",
+      "value": "Slow-rise PU foam; approve firmness and recovery on the assembled sample"
+    },
+    {
+      "label": "Face and trim",
+      "value": "Review face construction, seams, ears, bows and other selected details during sampling"
+    },
+    {
+      "label": "Optional attachment",
+      "value": "Keyring or bag charm attachment can be reviewed with the design and tested on the sample"
+    },
+    {
+      "label": "Size and weight",
+      "value": "Confirm target dimensions and finished unit weight after sampling"
+    }
+  ],
+  "customization": [
+    "Original or authorized character artwork",
+    "Plush fabric color and texture",
+    "Face, ear and trim design",
+    "Foam firmness and recovery target",
+    "Optional keyring and retail packaging"
+  ],
+  "useCases": [
+    "Character gift collections",
+    "Collectible plush assortments",
+    "Optional bag charm and keyring programs"
+  ],
+  "buyerBrief": [
+    "Character artwork and target dimensions",
+    "Preferred fabric color and pile",
+    "Target softness and recovery feel",
+    "Quantity per design and optional keyring requirements",
+    "Retail packing, destination market and requested delivery date"
+  ],
+  "packagingAnswer": "Review individual bags, retail boxes, labels and carton configuration with the approved product design. Confirm the packaging and carton quantities in the quotation."
+},
 "custom-pu-airplane-stress-ball": {
   "specifications": [
     {

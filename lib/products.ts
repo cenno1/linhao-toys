@@ -49,6 +49,48 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-plush-slow-rise-pu-foam-squishy",
+  "name": "Custom Plush Squishy Characters with Slow-Rise PU Foam",
+  "category": "Custom Plush / Slow-Rise Foam Characters",
+  "tag": "Soft Plush Shell · Slow-Rise PU Foam Core",
+  "note": "Develop custom plush squishy characters with a soft plush fabric shell and a slow-rise polyurethane (PU) foam core. The green and tan character photos show two individual design references. The English lineup illustration shows other styling directions, including ears, bows, face details and optional keyring attachments. Choose a character shape, fabric color and texture, facial details and accessories for your project. The plush surface and foam core can feel different depending on the design, so request a physical sample to approve the softness, squeeze recovery, seams and finish together. For a keychain or bag charm version, confirm the attachment type and how it connects to the plush shell. Send your original or authorized artwork, target dimensions, quantity per design, packing needs and destination for a wholesale quotation.",
+  "seoTitle": "Custom Plush Squishy Toys | Slow-Rise PU Foam Core",
+  "seoDescription": "Custom plush squishy characters with a soft fabric shell and slow-rise PU foam core. Explore fabric, face and keyring options and request a sample quote.",
+  "alt": "Green custom squishy character reference with a soft plush fabric surround and a smooth green face",
+  "keywords": [
+    "custom plush squishy",
+    "plush squishy with foam core",
+    "slow rise plush squishy",
+    "PU foam plush doll",
+    "custom plush squishy keychain",
+    "plush foam character toys wholesale"
+  ],
+  "images": {
+    "hero": "/images/products/custom-plush-slow-rise-pu-foam-squishy/green-character.webp"
+  },
+  "gallery": [
+    {
+      "id": "green",
+      "src": "/images/products/custom-plush-slow-rise-pu-foam-squishy/green-character.webp",
+      "label": "Green character · plush fabric and face details"
+    },
+    {
+      "id": "tan",
+      "src": "/images/products/custom-plush-slow-rise-pu-foam-squishy/tan-character.webp",
+      "label": "Tan character · pink bow and plush trim"
+    },
+    {
+      "id": "lineup",
+      "src": "/images/products/custom-plush-slow-rise-pu-foam-squishy/english-style-reference.webp",
+      "label": "English style illustration · character and keyring options"
+    }
+  ],
+  "lastModified": "2026-11-06",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "plush"
+},
+{
   "slug": "custom-pu-airplane-stress-ball",
   "name": "Custom PU Airplane Stress Ball Toys",
   "category": "Custom PU Foam / Airplane Stress Toys",
