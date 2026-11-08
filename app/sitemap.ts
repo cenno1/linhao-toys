@@ -30,13 +30,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "": "2026-10-27",
     "/resources": "2026-09-05",
     "/custom-pu-squishy-manufacturer": "2026-10-25",
-    "/custom-pu-squishy-case-studies": "2026-09-19",
+    "/custom-pu-squishy-case-studies": "2026-11-08",
+    "/custom-pu-squishy-case-studies/soft-foam-sampling": "2026-11-08",
     "/oem": "2026-09-19",
   };
   const staticPaths = [
     "",
     "/products",
     "/custom-pu-squishy-case-studies",
+    "/custom-pu-squishy-case-studies/soft-foam-sampling",
     "/resources",
     "/custom-squishy-toy-manufacturer",
     "/custom-pu-squishy-manufacturer",
