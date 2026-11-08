@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
 export const metadata: Metadata = {
@@ -32,7 +33,34 @@ export default function Page() {
     preserveProductOrder
     productEyebrow="PU CASES & DESIGN REFERENCES"
     quoteLabel="Request a Custom Quote"
-    lastReviewed="2026-10-13"
+    lastReviewed="2026-11-08"
+    browseLabel="Explore custom designs"
+    beforeProducts={
+      <section className="bg-white py-16" aria-labelledby="custom-project-route">
+        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+          <h2 id="custom-project-route" className="text-3xl font-black tracking-tight text-slate-950">Choose the right route for your custom squishy.</h2>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {[
+              { title: "Original PU shape", text: "For your own mascot, product replica, food or animal design. Review artwork, 3D proportions, physical feel and decoration before production.", href: "/custom-pu-squishy-manufacturer", label: "Review PU development" },
+              { title: "Existing-mold TPR customization", text: "For available TPR shapes with your colors, logo, hand feel and packaging. New original TPR molds are not part of this route.", href: "/tpr-squishy-toy-manufacturer", label: "See TPR options" },
+              { title: "Ready-stock wholesale", text: "For buyers who want existing styles for resale. Request current stock, quantities per SKU, packing and dispatch details.", href: "/wholesale-squishy-toys", label: "Browse bulk squishy toys" },
+            ].map((item) => (
+              <article key={item.href} className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                <h3 className="text-xl font-bold text-slate-950">{item.title}</h3>
+                <p className="mt-3 leading-7 text-slate-600">{item.text}</p>
+                <Link href={item.href} className="mt-5 inline-block font-bold text-blue-700 hover:underline">{item.label} →</Link>
+              </article>
+            ))}
+          </div>
+          <aside className="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-7">
+            <p className="text-xs font-bold uppercase tracking-widest text-blue-700">Documented customer project</p>
+            <h3 className="mt-3 text-2xl font-bold text-slate-950">See a buyer brief become a physical PU sample.</h3>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-600">Follow a real project through logo and color review, packaging planning and a squeeze demonstration. Customer details are anonymized. The documented stage is sampling and video feedback; bulk delivery is not claimed.</p>
+            <Link href="/custom-pu-squishy-case-studies/soft-foam-sampling" className="mt-5 inline-block font-bold text-blue-700 hover:underline">Watch the sample and read the case →</Link>
+          </aside>
+        </div>
+      </section>
+    }
     serviceType="Custom PU squishy toy OEM manufacturing with selected TPR development"
     productHeading="Explore custom PU designs, then selected TPR options."
     productDescription="Compare original PU mascot figures, realistic food, capybara characters, dumplings and croissants. Product pages identify actual photos, edited references and concept designs. Use the closest case to define your artwork, softness, scent and packaging brief; your finished specification is confirmed on a physical sample. TPR options use existing molds."

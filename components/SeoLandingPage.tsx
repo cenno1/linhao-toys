@@ -1,5 +1,6 @@
 import { PuSourcingFacts, puSourcingQuestions } from "@/components/PuCustomBuyingGuide";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
@@ -21,6 +22,9 @@ type Props = {
   productDescription: string;
   initialFilter?: "all" | ProductFilterGroup;
   productSlugs?: string[];
+  cardDescriptions?: Record<string, string>;
+  beforeProducts?: ReactNode;
+  browseLabel?: string;
   preserveProductOrder?: boolean;
   productEyebrow?: string;
   quoteLabel?: string;
@@ -121,7 +125,7 @@ export default function SeoLandingPage(props: Props) {
           <p className="mt-5 max-w-3xl text-sm leading-7 text-slate-400">{props.buyerNote}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/contact" className="btn btn-primary">{props.quoteLabel ?? "Request a quotation"}</Link>
-            <Link href="#buyer-brief" className="btn border border-white/30 text-white">Prepare your brief</Link>
+            <Link href={props.browseLabel ? "#products" : "#buyer-brief"} className="btn border border-white/30 text-white">{props.browseLabel ?? "Prepare your brief"}</Link>
           </div>
           {reviewed && (
             <p className="mt-4 text-xs font-bold uppercase tracking-[0.16em] text-blue-300">
@@ -136,11 +140,14 @@ export default function SeoLandingPage(props: Props) {
         </div>
       </section>
 
+      {props.beforeProducts}
+
       {isPuHub && <PuSourcingFacts />}
 
       <ProductShowcase
         initialFilter={props.initialFilter}
         productSlugs={props.productSlugs}
+        cardDescriptions={props.cardDescriptions}
         prioritySlugs={props.preserveProductOrder ? props.productSlugs : undefined}
         showFilters={false}
         eyebrow={props.productEyebrow ?? "RELATED PRODUCT SAMPLES"}
