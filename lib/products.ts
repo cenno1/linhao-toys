@@ -49,6 +49,44 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "custom-shaped-foam-squishy-stress-balls",
+  "name": "Custom Shaped Stress Balls & Foam Squishy Toys",
+  "category": "Custom PU Foam / Character Shapes",
+  "tag": "Custom Shapes · Colors & Logo",
+  "customMaterial": "PU",
+  "note": "Develop custom shaped stress balls and foam squishy toys from your original character artwork or product silhouette. These two appearance references show a white unicorn resting on a yellow crescent moon and a green cactus character in a terracotta-colored pot with a red flower. Select a theme or send your own design to review shape, dimensions, colors, facial details, logo placement and retail packaging. PU foam softness and slow-rise recovery are approved on a physical sample. For the crescent design, review the horn, legs, tail and raised details; for the cactus, review the flower and side projections together with the finished surface. The supplied photos show existing surface texture and creases, so agree the acceptable finish and handling criteria during sampling. Suitable project directions include brand promotional merchandise, character gift collections and wholesale novelty assortments. Send target dimensions, quantity per design and color, artwork, destination and packaging requirements for a quotation. Final size, weight, minimum order, sampling cost, production schedule and market-specific testing scope are confirmed for the selected project.",
+  "seoTitle": "Custom Shaped Stress Balls | Foam Squishy Toys",
+  "seoDescription": "Custom shaped stress balls and PU foam squishy toys in unicorn moon, cactus or your own design. Customize colors, logos and packaging. Request a sample quote.",
+  "alt": "White unicorn foam squishy toy resting on a yellow crescent moon with rainbow-colored details",
+  "keywords": [
+    "custom shaped stress balls",
+    "foam squishy toys",
+    "custom foam squishy toys",
+    "PU foam stress toys",
+    "unicorn moon squishy",
+    "cactus squishy wholesale"
+  ],
+  "images": {
+    "hero": "/images/products/custom-shaped-foam-squishy-stress-balls/unicorn-moon.png"
+  },
+  "gallery": [
+    {
+      "id": "unicorn-moon",
+      "src": "/images/products/custom-shaped-foam-squishy-stress-balls/unicorn-moon.png",
+      "label": "Unicorn and crescent moon · appearance reference"
+    },
+    {
+      "id": "cactus",
+      "src": "/images/products/custom-shaped-foam-squishy-stress-balls/cactus-flower.png",
+      "label": "Flowering cactus in pot · appearance reference"
+    }
+  ],
+  "lastModified": "2026-11-09",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-plush-slow-rise-pu-foam-squishy",
   "name": "Custom Plush Squishy Characters with Slow-Rise PU Foam",
   "category": "Custom Plush / Slow-Rise Foam Characters",

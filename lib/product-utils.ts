@@ -29,6 +29,46 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"custom-shaped-foam-squishy-stress-balls": {
+  "specifications": [
+    {
+      "label": "Material",
+      "value": "PU foam; approve firmness and recovery response on the physical sample"
+    },
+    {
+      "label": "Reference shapes",
+      "value": "Unicorn on a crescent moon and flowering cactus in a pot; two separate designs"
+    },
+    {
+      "label": "Size and weight",
+      "value": "Custom dimensions and unit weight confirmed during sampling"
+    },
+    {
+      "label": "Surface and details",
+      "value": "Approve paint coverage, surface texture and the construction of raised details"
+    }
+  ],
+  "customization": [
+    "Original shape and character artwork",
+    "Body colors and painted face details",
+    "Logo placement and decoration",
+    "Foam softness and recovery target",
+    "Individual retail packing and carton configuration"
+  ],
+  "useCases": [
+    "Custom promotional gifts",
+    "Character merchandise collections",
+    "Wholesale novelty toy assortments"
+  ],
+  "buyerBrief": [
+    "Original or authorized artwork and preferred reference",
+    "Target dimensions and softness",
+    "Quantity per design and color",
+    "Logo files and retail packaging brief",
+    "Destination market and required arrival date"
+  ],
+  "packagingAnswer": "Request individual bags, printed boxes or assortment packaging to suit the selected shape. Approve fit, protective packing, labeling and carton quantities with the sample and quotation."
+},
   "custom-plush-slow-rise-pu-foam-squishy": {
   "specifications": [
     {
