@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
+const title = "Wholesale Squishy Toys for Resale | Bulk Orders";
+const description = "Buy squishy toys in bulk for your store. Compare boxed animal and fruit styles, check mixed-order options, and request wholesale pricing by style and carton.";
+
 export const metadata: Metadata = {
-  title: "Wholesale Squishy Toys & Bulk Supplier | Ready Stock",
-  description: "Source wholesale squishy toys in bulk from LINHAO Toys. Compare ready-stock fruit and novelty styles, MOQ, carton packing, dispatch timing and freight options.",
+  title,
+  description,
   alternates: {
     canonical: "/wholesale-squishy-toys",
     languages: {
@@ -16,16 +19,16 @@ export const metadata: Metadata = {
   },
   keywords: ["wholesale squishy toys", "squishy toys in stock", "bulk squishy toys", "ready stock squishy toys", "squishy toy supplier", "squishy toys wholesale"],
   openGraph: {
-    title: "Wholesale Squishy Toys & Bulk Supplier | Ready Stock",
-    description: "Review ready-stock and bulk squishy toy options for retailers and distributors, then request live quantity, packing and dispatch details.",
+    title,
+    description,
     url: "/wholesale-squishy-toys",
     type: "website",
     images: [{ url: "/images/products/ready-stock-mango-squishy/hero.png", alt: "Ready-stock fruit squishy toys for bulk wholesale" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wholesale Squishy Toys & Bulk Supplier | Ready Stock",
-    description: "Review ready-stock and bulk squishy toy options for retailers and distributors, then request live quantity, packing and dispatch details.",
+    title,
+    description,
     images: ["/images/products/ready-stock-mango-squishy/hero.png"],
   },
 };
@@ -34,14 +37,15 @@ export default function Page() {
   return <SeoLandingPage
     path="/wholesale-squishy-toys"
     eyebrow="READY-STOCK WHOLESALE SQUISHY TOYS"
-    title="Wholesale squishy toys in bulk for retailers and distributors."
-    introduction="Source bulk squishy toys for gift shops, importers, distributors, party suppliers and online sellers. Review current fruit and novelty styles, then confirm live quantity, available colors, carton packing and dispatch timing before ordering."
-    buyerNote="Send the product name, required quantity, destination country and receiving date. We will check current stock first, then return the available quantity, packing and freight route."
-    productSlugs={["ready-stock-chocolate-bar-squishy", "ready-stock-cheese-cube-squishy", "ready-stock-mango-squishy", "ready-stock-giant-strawberry-squishy", "ready-stock-giant-peach-squishy", "ready-stock-giant-banana-squishy", "ready-stock-dragon-fruit-squishy", "ready-stock-highland-cow-tpr-squishy"]}
+    title="Wholesale squishy toys for resale"
+    introduction="Choose a boxed Highland cow for your gift shop, build a fruit assortment for a retail display, or develop a squishy under your own label. Compare the styles below and request bulk pricing for the quantities your store needs."
+    buyerNote="For a stock quote, send the pieces you want per style or color, your delivery postcode and your receiving date. Ask us to confirm the unit price, pieces per carton and freight for that mix."
+    productSlugs={["ready-stock-highland-cow-tpr-squishy", "ready-stock-chocolate-bar-squishy", "ready-stock-mango-squishy", "ready-stock-cheese-cube-squishy", "ready-stock-giant-strawberry-squishy", "ready-stock-giant-peach-squishy", "ready-stock-giant-banana-squishy", "ready-stock-dragon-fruit-squishy"]}
     preserveProductOrder
     browseLabel="Browse wholesale styles"
     quoteLabel="Request Stock & Bulk Pricing"
     cardDescriptions={{
+      "ready-stock-highland-cow-tpr-squishy": "Brown and orange Highland cow styles with a retail presentation box. View the packing photo and request availability by color.",
       "ready-stock-chocolate-bar-squishy": "Chocolate-bar squeeze toy in retail packaging. Request live quantity, unit packing and carton details.",
       "ready-stock-cheese-cube-squishy": "Boxed cheese-cube toy. Reference size: 12 × 12 × 12 cm. Confirm stock and outer-carton packing.",
       "ready-stock-mango-squishy": "Fruit-shaped squeeze toy. Reference size: 11.5 × 6 cm. Confirm available colors and carton quantities.",
@@ -53,13 +57,12 @@ export default function Page() {
     beforeProducts={
       <section className="bg-white py-16" aria-labelledby="wholesale-order-route">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-          <h2 id="wholesale-order-route" className="text-3xl font-black tracking-tight text-slate-950">Choose a wholesale order route.</h2>
-          <p className="mt-4 max-w-3xl leading-7 text-slate-600">Buying squishies for resale starts with the assortment, quantity per style and packaging. Choose current stock for an availability check, or a development route for your own design.</p>
+          <h2 id="wholesale-order-route" className="text-3xl font-black tracking-tight text-slate-950">How would you like to order?</h2>
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {[
-              { title: "Ready-stock bulk squishies", text: "Compare fruit, chocolate and novelty styles below. Send quantities per SKU for a live-stock and carton check.", href: "#products", label: "Compare stock styles" },
-              { title: "Custom dumpling & blind-box ranges", text: "Develop original PU dumpling shapes, expressions and steamer-style or blind-box packaging. Sampling and MOQ apply.", href: "/products/dumpling-squishy-blind-box", label: "Explore custom dumpling squishies" },
-              { title: "Your own slow-rise PU design", text: "Start from artwork for custom shapes, colors, squeeze feel and branded packaging. Confirm specifications on a physical sample.", href: "/custom-squishy-toy-manufacturer", label: "Plan a custom squishy order" },
+              { title: "One style in bulk", text: "The Highland cow comes in brown and orange, with a retail box pictured on the product page. Pick a color and ask how many boxed toys fit in the current shipping carton.", href: "/products/ready-stock-highland-cow-tpr-squishy", label: "See the toy and retail box" },
+              { title: "A mixed wholesale order", text: "List each style and the pieces you need, for example mango, strawberry and peach. We check which styles can ship together, whether each needs a full carton and the freight to your postcode.", href: "/contact", label: "Request a mixed-order quote" },
+              { title: "Private-label squishies", text: "Send artwork for your shape or retail pack, the quantity per design and the target launch date. Review a physical sample before placing the production order.", href: "/custom-squishy-toy-manufacturer", label: "Explore private-label manufacturing" },
             ].map((item) => (
               <article key={item.href} className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
                 <h3 className="text-xl font-bold text-slate-950">{item.title}</h3>
@@ -86,9 +89,9 @@ export default function Page() {
         </div>
       </section>
     }
-    lastReviewed="2026-11-08"
+    lastReviewed="2026-11-15"
     serviceType="Ready-stock wholesale squishy toy supply"
-    productHeading="Current ready-stock squishy directions for bulk buyers."
+    productHeading="Compare squishy toys for your store"
     productDescription="Reference items for live-stock checks. Quantity, color mix, carton packing and dispatch timing are reconfirmed with every inquiry."
     capabilities={[
       { title: "Live Stock Check", text: "Confirm current quantity and available colors before payment or shipment planning." },
@@ -113,6 +116,7 @@ export default function Page() {
       "Any product document or destination-market requirement",
     ]}
     relatedPages={[
+      { title: "Custom Dumpling Squishies", text: "Compare dumpling shapes and blind-box packaging for a private-label assortment.", href: "/products/dumpling-squishy-blind-box" },
       { title: "Wholesale Packaging Guide", text: "Compare bags, blind packs, retail boxes, displays and online multipack directions.", href: "/resources/wholesale-squishy-toy-packaging-guide" },
       { title: "Squishy Durability Guide", text: "Understand how material, shape, seams, storage and squeeze behavior influence product lifespan.", href: "/resources/squishy-toy-durability-testing-quality-control-guide" },
       { title: "ASTM F963 Buyer Checklist", text: "Review ASTM F963-23, older report versions, CPC responsibilities and product-specific document checks.", href: "/resources/en71-astm-f963-cpc-toy-compliance-guide" },
