@@ -29,6 +29,135 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+"caramel-pudding-building-block-clay-squishy": {
+  "specifications": [
+    {
+      "label": "Construction",
+      "value": "TPR outer shell with building block clay and petroleum jelly filling; approve the exact composition and feel on the selected sample"
+    },
+    {
+      "label": "Design shown",
+      "value": "A caramel pudding character in a clear individual pack, presented in a countertop display marked 12 packs per display box."
+    },
+    {
+      "label": "Size and weight",
+      "value": "Request toy dimensions and net unit weight for the selected style"
+    },
+    {
+      "label": "Squeeze feel",
+      "value": "Request a squeeze demonstration and physical sample to compare resistance, filling movement and recovery"
+    },
+    {
+      "label": "Packaging",
+      "value": "The catalog photograph shows 12 individual packs in a countertop display box. Confirm the final display count and outer shipping carton separately."
+    }
+  ],
+  "customization": [
+    "Selected style and color assortment",
+    "Retail labeling and barcode requirements",
+    "Display artwork feasibility review",
+    "Individual packing and shipping-carton configuration"
+  ],
+  "useCases": [
+    "Gift-shop and novelty-store assortments",
+    "Food-themed sensory toy displays",
+    "Wholesale squeeze-toy collections"
+  ],
+  "buyerBrief": [
+    "Selected style and quantity per color",
+    "Individual pack and countertop display requirements",
+    "Destination market and receiving date",
+    "Barcode, label and display artwork",
+    "Sample and product-specific document requirements"
+  ],
+  "packagingAnswer": "The catalog photograph shows 12 individual packs in a countertop display box. Confirm the final display count and outer shipping carton separately."
+},
+"sweet-corn-petroleum-jelly-filled-squishy": {
+  "specifications": [
+    {
+      "label": "Construction",
+      "value": "TPR outer shell with building block clay and petroleum jelly filling; approve the exact composition and feel on the selected sample"
+    },
+    {
+      "label": "Design shown",
+      "value": "A yellow corn cob with molded kernel texture, packed in individual clear bags in a yellow countertop display."
+    },
+    {
+      "label": "Size and weight",
+      "value": "Request toy dimensions and net unit weight for the selected style"
+    },
+    {
+      "label": "Squeeze feel",
+      "value": "Request a squeeze demonstration and physical sample to compare resistance, filling movement and recovery"
+    },
+    {
+      "label": "Packaging",
+      "value": "Individual clear bags and a yellow corn-themed countertop display are pictured. Confirm pieces per display and displays per shipping carton."
+    }
+  ],
+  "customization": [
+    "Selected style and color assortment",
+    "Retail labeling and barcode requirements",
+    "Display artwork feasibility review",
+    "Individual packing and shipping-carton configuration"
+  ],
+  "useCases": [
+    "Gift-shop and novelty-store assortments",
+    "Food-themed sensory toy displays",
+    "Wholesale squeeze-toy collections"
+  ],
+  "buyerBrief": [
+    "Selected style and quantity per color",
+    "Individual pack and countertop display requirements",
+    "Destination market and receiving date",
+    "Barcode, label and display artwork",
+    "Sample and product-specific document requirements"
+  ],
+  "packagingAnswer": "Individual clear bags and a yellow corn-themed countertop display are pictured. Confirm pieces per display and displays per shipping carton."
+},
+"grape-building-block-clay-squishy": {
+  "specifications": [
+    {
+      "label": "Construction",
+      "value": "TPR outer shell with building block clay and petroleum jelly filling; approve the exact composition and feel on the selected sample"
+    },
+    {
+      "label": "Design shown",
+      "value": "A purple grape bunch with rounded grape details and a green leaf, shown with individual clear display boxes in a fruit-themed countertop tray."
+    },
+    {
+      "label": "Size and weight",
+      "value": "Request toy dimensions and net unit weight for the selected style"
+    },
+    {
+      "label": "Squeeze feel",
+      "value": "Request a squeeze demonstration and physical sample to compare resistance, filling movement and recovery"
+    },
+    {
+      "label": "Packaging",
+      "value": "Individual clear display boxes and a fruit-themed countertop tray are pictured. Confirm the final count, printed artwork and outer-carton details."
+    }
+  ],
+  "customization": [
+    "Selected style and color assortment",
+    "Retail labeling and barcode requirements",
+    "Display artwork feasibility review",
+    "Individual packing and shipping-carton configuration"
+  ],
+  "useCases": [
+    "Gift-shop and novelty-store assortments",
+    "Food-themed sensory toy displays",
+    "Wholesale squeeze-toy collections"
+  ],
+  "buyerBrief": [
+    "Selected style and quantity per color",
+    "Individual pack and countertop display requirements",
+    "Destination market and receiving date",
+    "Barcode, label and display artwork",
+    "Sample and product-specific document requirements"
+  ],
+  "packagingAnswer": "Individual clear display boxes and a fruit-themed countertop tray are pictured. Confirm the final count, printed artwork and outer-carton details."
+},
 "custom-shaped-foam-squishy-stress-balls": {
   "specifications": [
     {

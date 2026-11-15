@@ -49,6 +49,102 @@ function images(slug: string, hero: string): ProductImageSet {
 
 export const products: Product[] = [
 {
+  "slug": "caramel-pudding-building-block-clay-squishy",
+  "name": "Caramel Pudding Building Block Clay Squishy",
+  "category": "TPR + Building Block Clay / Wholesale",
+  "tag": "Petroleum Jelly Fill · Retail Display",
+  "note": "A caramel pudding character in a clear individual pack, presented in a countertop display marked 12 packs per display box. This food-shaped squeeze toy combines a TPR outer shell with building block clay and petroleum jelly filling, as confirmed for this catalog range. Compare the filled squeeze feel with a physical sample when choosing an assortment for your gift shop, novelty store or sensory-toy range. The catalog photograph shows 12 individual packs in a countertop display box. Confirm the final display count and outer shipping carton separately. Ask about the selected color, retail labels, display artwork and mixed-style order options. Send the quantity per style, destination country, packaging requirements and requested receiving date for a wholesale quotation. Confirm dimensions, unit weight, minimum quantity, availability and dispatch timing for your order. The food shape is a non-edible toy. Approve the intended age grade, labeling and product-specific testing documentation for your destination market.",
+  "seoTitle": "Caramel Pudding Building Block Clay Squishy Wholesale",
+  "seoDescription": "Wholesale caramel pudding building block clay squishy with TPR shell, petroleum jelly fill and retail display packaging. Request samples, packing details and bulk pricing.",
+  "alt": "A caramel pudding character in a clear individual pack, presented in a countertop display marked 12 packs per display box.",
+  "keywords": [
+    "caramel pudding squishy wholesale",
+    "building block clay squishy",
+    "petroleum jelly filled squishy",
+    "TPR filled squishy toys",
+    "food shaped squishy toys bulk",
+    "clay filled squishy wholesale"
+  ],
+  "images": {
+    "hero": "/images/products/caramel-pudding-building-block-clay-squishy/catalog-display.jpg"
+  },
+  "gallery": [
+    {
+      "id": "catalog-display",
+      "src": "/images/products/caramel-pudding-building-block-clay-squishy/catalog-display.jpg",
+      "label": "Catalog product and retail display"
+    }
+  ],
+  "lastModified": "2026-11-15",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
+  "slug": "sweet-corn-petroleum-jelly-filled-squishy",
+  "name": "Sweet Corn Petroleum Jelly Filled Squishy",
+  "category": "TPR + Building Block Clay / Wholesale",
+  "tag": "Petroleum Jelly Fill · Retail Display",
+  "note": "A yellow corn cob with molded kernel texture, packed in individual clear bags in a yellow countertop display. This food-shaped squeeze toy combines a TPR outer shell with building block clay and petroleum jelly filling, as confirmed for this catalog range. Compare the filled squeeze feel with a physical sample when choosing an assortment for your gift shop, novelty store or sensory-toy range. Individual clear bags and a yellow corn-themed countertop display are pictured. Confirm pieces per display and displays per shipping carton. Ask about the selected color, retail labels, display artwork and mixed-style order options. Send the quantity per style, destination country, packaging requirements and requested receiving date for a wholesale quotation. Confirm dimensions, unit weight, minimum quantity, availability and dispatch timing for your order. The food shape is a non-edible toy. Approve the intended age grade, labeling and product-specific testing documentation for your destination market.",
+  "seoTitle": "Sweet Corn Petroleum Jelly Filled Squishy Wholesale",
+  "seoDescription": "Wholesale sweet corn petroleum jelly filled squishy with TPR shell, petroleum jelly fill and retail display packaging. Request samples, packing details and bulk pricing.",
+  "alt": "A yellow corn cob with molded kernel texture, packed in individual clear bags in a yellow countertop display.",
+  "keywords": [
+    "corn squishy wholesale",
+    "building block clay squishy",
+    "petroleum jelly filled squishy",
+    "TPR filled squishy toys",
+    "food shaped squishy toys bulk",
+    "clay filled squishy wholesale"
+  ],
+  "images": {
+    "hero": "/images/products/sweet-corn-petroleum-jelly-filled-squishy/catalog-display.jpg"
+  },
+  "gallery": [
+    {
+      "id": "catalog-display",
+      "src": "/images/products/sweet-corn-petroleum-jelly-filled-squishy/catalog-display.jpg",
+      "label": "Catalog product and retail display"
+    }
+  ],
+  "lastModified": "2026-11-15",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
+  "slug": "grape-building-block-clay-squishy",
+  "name": "Grape Building Block Clay Squishy",
+  "category": "TPR + Building Block Clay / Wholesale",
+  "tag": "Petroleum Jelly Fill · Retail Display",
+  "note": "A purple grape bunch with rounded grape details and a green leaf, shown with individual clear display boxes in a fruit-themed countertop tray. This food-shaped squeeze toy combines a TPR outer shell with building block clay and petroleum jelly filling, as confirmed for this catalog range. Compare the filled squeeze feel with a physical sample when choosing an assortment for your gift shop, novelty store or sensory-toy range. Individual clear display boxes and a fruit-themed countertop tray are pictured. Confirm the final count, printed artwork and outer-carton details. Ask about the selected color, retail labels, display artwork and mixed-style order options. Send the quantity per style, destination country, packaging requirements and requested receiving date for a wholesale quotation. Confirm dimensions, unit weight, minimum quantity, availability and dispatch timing for your order. The food shape is a non-edible toy. Approve the intended age grade, labeling and product-specific testing documentation for your destination market.",
+  "seoTitle": "Grape Building Block Clay Squishy Wholesale",
+  "seoDescription": "Wholesale grape building block clay squishy with TPR shell, petroleum jelly fill and retail display packaging. Request samples, packing details and bulk pricing.",
+  "alt": "A purple grape bunch with rounded grape details and a green leaf, shown with individual clear display boxes in a fruit-themed countertop tray.",
+  "keywords": [
+    "grape squishy wholesale",
+    "building block clay squishy",
+    "petroleum jelly filled squishy",
+    "TPR filled squishy toys",
+    "food shaped squishy toys bulk",
+    "clay filled squishy wholesale"
+  ],
+  "images": {
+    "hero": "/images/products/grape-building-block-clay-squishy/catalog-display.jpg"
+  },
+  "gallery": [
+    {
+      "id": "catalog-display",
+      "src": "/images/products/grape-building-block-clay-squishy/catalog-display.jpg",
+      "label": "Catalog product and retail display"
+    }
+  ],
+  "lastModified": "2026-11-15",
+  "featured": true,
+  "detailsOnRequest": true,
+  "filterGroup": "squishy"
+},
+{
   "slug": "custom-shaped-foam-squishy-stress-balls",
   "name": "Custom Shaped Stress Balls & Foam Squishy Toys",
   "category": "Custom PU Foam / Character Shapes",
