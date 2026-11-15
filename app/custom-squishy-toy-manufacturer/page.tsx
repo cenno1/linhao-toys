@@ -29,11 +29,11 @@ export default function Page() {
     title="Custom squishy toys manufacturer for original PU designs."
     introduction="LINHAO is a custom squishy toys manufacturer developing PU foam toys from customer artwork for brands, retailers and promotional buyers. Create original character figures, realistic food, animal forms and other shapes. Customize dimensions, colors, hardness or softness, scent, printed or painted details and packaging. TPR customization is limited to existing molds and supports logo printing, colors, hand feel and custom packaging."
     buyerNote="MOQ is 500 pieces per shape and 500 pieces per color. The workflow is customer artwork, 3D rendering, sampling and sample shipment for approval. Sampling takes 12–15 days; bulk production takes 25–30 days. Confirm the schedule for your order; sample delivery and freight transit are separate."
-    productSlugs={["premium-custom-pu-character-figure","ultra-slow-rising-realistic-pu-food-squishy","capybara-squishy-assortment","dumpling-squishy-blind-box","custom-croissant-squishy","custom-pu-toast-squishy-blind-box","custom-pu-ice-skate-squishy","custom-pu-high-rebound-ball","custom-tpr-squishy-brand-inserts"]}
+    productSlugs={["premium-custom-pu-character-figure","ultra-slow-rising-realistic-pu-food-squishy","capybara-squishy-assortment","dumpling-squishy-blind-box","custom-smiling-burger-squishy","custom-croissant-squishy","custom-pu-toast-squishy-blind-box","custom-pu-ice-skate-squishy","custom-pu-high-rebound-ball","custom-tpr-squishy-brand-inserts"]}
     preserveProductOrder
     productEyebrow="PU CASES & DESIGN REFERENCES"
     quoteLabel="Request a Custom Quote"
-    lastReviewed="2026-11-08"
+    lastReviewed="2026-11-15"
     browseLabel="Explore custom designs"
     beforeProducts={
       <section className="bg-white py-16" aria-labelledby="custom-project-route">
@@ -54,9 +54,9 @@ export default function Page() {
           </div>
           <aside className="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-7">
             <p className="text-xs font-bold uppercase tracking-widest text-blue-700">Documented customer project</p>
-            <h3 className="mt-3 text-2xl font-bold text-slate-950">See a buyer brief become a physical PU sample.</h3>
-            <p className="mt-3 max-w-3xl leading-7 text-slate-600">Follow a real project through logo and color review, packaging planning and a squeeze demonstration. Customer details are anonymized. The documented stage is sampling and video feedback; bulk delivery is not claimed.</p>
-            <Link href="/custom-pu-squishy-case-studies/soft-foam-sampling" className="mt-5 inline-block font-bold text-blue-700 hover:underline">Watch the sample and read the case →</Link>
+            <h3 className="mt-3 text-2xl font-bold text-slate-950">How do you check the feel of a custom PU sample?</h3>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-600">In this anonymized project, the buyer asked for a soft PU shape with an 8–12 second recovery target. Watch the 17-second, original-speed clip to see how the sample responds to a hand squeeze. The case shows the buyer’s brief, design views and packaging concept alongside the sample video.</p>
+            <Link href="/custom-pu-squishy-case-studies/soft-foam-sampling" className="mt-5 inline-block font-bold text-blue-700 hover:underline">Watch the 17-second sample video →</Link>
           </aside>
         </div>
       </section>

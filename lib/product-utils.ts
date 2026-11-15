@@ -2032,6 +2032,20 @@ export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): 
 
 export function getProductFAQs(product: Product) {
   const customFAQs: Record<string, { question: string; answer: string }[]> = {
+  "custom-smiling-burger-squishy": [
+    {
+      question: "Can squishy burger toys be customized or personalized?",
+      answer: "Yes. LINHAO Toys can match the bun, patty, cheese and lettuce colors to your artwork, change the face, and review a logo position on the bun or retail box. Mark the logo position on your sketch so we can check its size and legibility on the curved surface."
+    },
+    {
+      question: "Does my burger design need a new mold?",
+      answer: "A new printed face or a color change can be reviewed as a decoration change. Altering the bun silhouette, overall size or sculpted layers changes the shape. Send a side view and target dimensions so we can check whether an existing mold fits or quote new tooling."
+    },
+    {
+      question: "What should I send for a burger squishy quote and sample?",
+      answer: "Send front and side artwork, the target width and height, quantity per color, packaging choice and destination. For a promotion, include your event date. On the physical sample, check the logo at actual size, the paint boundaries between layers and how the bun recovers after squeezing."
+    }
+  ],
   "cat-soft-rubber-squishy-toys": [
     { question: "Which cat squishy styles can I request?", answer: "Choose the orange-and-white basket kitten with a pink bow, orange tabby with a lace collar and mint bow, or pink fantasy kitten with decorative tails. The images show separate style references; confirm availability and the quantity split for your order." },
     { question: "What is the wholesale minimum order?", answer: "Send the selected style, quantity per style, packing requirement and destination. Minimum order, unit price and delivery timing are confirmed in the quotation for that item." },

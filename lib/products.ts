@@ -896,9 +896,9 @@ export const products: Product[] = [
     customMaterial: "PU",
   "category": "Custom PU Food Squishy / OEM",
   "tag": "Custom Colors & Smiling Face",
-  "note": "A custom PU burger squishy with a cheerful smiling face, rounded bun and colorful layered food details for buyer-defined hamburger toy collections. Develop your own color palette, facial expression and artwork for a food-themed gift or retail collection. PU material; dimensions, squeeze feel and recovery speed are confirmed during sampling. Send your design, quantity and packaging requirements for a quotation. The image is an AI-prepared design reference based on the supplied example; final production follows the approved sample. This is a non-edible toy.",
-  "seoTitle": "Custom PU Burger Squishy | Smiling Hamburger OEM",
-  "seoDescription": "Custom PU burger squishy toys with smiling faces and layered food details. Specify colors, artwork, dimensions and packaging for your OEM collection.",
+  "note": "LINHAO Toys can make a custom PU foam burger squishy from your artwork. Choose the bun and filling colors, change the smiling face or specify where your logo should go. For a different bun shape, size or arrangement of sculpted layers, send front and side views so we can review the mold and quote the design. The image is an AI-prepared design reference for this non-edible toy. Approve the colors, hand feel and recovery on a physical sample before production.",
+  "seoTitle": "Custom Burger Squishy Toys | PU Foam, Logos & Packaging",
+  "seoDescription": "Customize a PU foam burger squishy with bun colors, face artwork, a logo and retail packaging. MOQ 500 per shape and color. Send your design for a factory quote.",
   "alt": "Design reference for an orange smiling hamburger squishy with green lettuce, yellow cheese and a brown patty",
   "keywords": ["custom PU burger squishy","custom PU burger squishy manufacturer","custom PU burger squishy OEM"],
   "images": {
@@ -911,7 +911,8 @@ export const products: Product[] = [
       "src": "/images/products/custom-smiling-burger-squishy/hero.webp"
     }
   ],
-  "lastModified": "2026-09-26",
+  "minimumOrderQuantity": 500,
+  "lastModified": "2026-11-15",
   "featured": true,
   "detailsOnRequest": true,
   "filterGroup": "squishy"
