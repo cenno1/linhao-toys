@@ -2032,6 +2032,16 @@ export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): 
 
 export function getProductFAQs(product: Product) {
   const customFAQs: Record<string, { question: string; answer: string }[]> = {
+  "dumpling-squishy-blind-box": [
+    {
+      question: "Can I order a mixed display of dumpling squishies for my store?",
+      answer: "Send the dumpling shapes, colors and faces you want, plus the number of each design in a display. The production minimum is 500 pieces per shape and per color. We review that production split separately from the mix packed into each display."
+    },
+    {
+      question: "How do I compare blind-box and steamer-style packaging costs?",
+      answer: "Request two quotes for the same toy and order quantity. Specify the pieces per retail pack, packs per counter display and displays per shipping carton. Include the destination and receiving date so you can compare the packed unit cost and freight for each option."
+    }
+  ],
   "custom-smiling-burger-squishy": [
     {
       question: "Can squishy burger toys be customized or personalized?",
