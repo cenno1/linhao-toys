@@ -27,6 +27,7 @@ type Props = {
   browseLabel?: string;
   preserveProductOrder?: boolean;
   productEyebrow?: string;
+  quoteHref?: string;
   quoteLabel?: string;
   lastReviewed?: string;
   serviceType: string;
@@ -124,7 +125,7 @@ export default function SeoLandingPage(props: Props) {
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">{props.introduction}</p>
           <p className="mt-5 max-w-3xl text-sm leading-7 text-slate-400">{props.buyerNote}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/contact" className="btn btn-primary">{props.quoteLabel ?? "Request a quotation"}</Link>
+            <Link href={props.quoteHref ?? "/contact"} className="btn btn-primary">{props.quoteLabel ?? "Request a quotation"}</Link>
             <Link href={props.browseLabel ? "#products" : "#buyer-brief"} className="btn border border-white/30 text-white">{props.browseLabel ?? "Prepare your brief"}</Link>
           </div>
           {reviewed && (

@@ -26,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/products": "2026-10-31",
     "/products/custom-food-grade-silicone-squishy": "2026-10-25",
     "/custom-squishy-toy-manufacturer": "2026-11-15",
-    "/wholesale-squishy-toys": "2026-11-15",
+    "/wholesale-squishy-toys": "2026-11-17",
     "/ai-sourcing-profile": "2026-10-25",
     "": "2026-10-27",
     "/resources": "2026-09-05",

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import WholesaleOrder from "@/components/WholesaleOrder";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
 const title = "Wholesale Squishy Toys for Resale | Bulk Orders";
-const description = "Buy squishy toys in bulk for your store. Compare boxed animal and fruit styles, check mixed-order options, and request wholesale pricing by style and carton.";
+const description = "Buy bulk squishy toys for resale. Compare 21 clay-filled styles with a 500-piece minimum per style, check pieces per outer carton, and request wholesale pricing.";
 
 export const metadata: Metadata = {
   title,
@@ -38,12 +38,13 @@ export default function Page() {
     path="/wholesale-squishy-toys"
     eyebrow="READY-STOCK WHOLESALE SQUISHY TOYS"
     title="Wholesale squishy toys for resale"
-    introduction="Choose a boxed Highland cow for your gift shop, build a fruit assortment for a retail display, or develop a squishy under your own label. Compare the styles below and request bulk pricing for the quantities your store needs."
-    buyerNote="For a stock quote, send the pieces you want per style or color, your delivery postcode and your receiving date. Ask us to confirm the unit price, pieces per carton and freight for that mix."
+    introduction="Order bulk squishy toys for your gift shop or retail display. Compare shipping carton options for 21 clay-filled designs, from caramel pudding to sweet corn, or browse our other wholesale styles below."
+    buyerNote="The clay-filled collection starts at 500 pieces per style. Select your styles and quantities to prepare a wholesale quote request."
     productSlugs={["ready-stock-highland-cow-tpr-squishy", "ready-stock-chocolate-bar-squishy", "ready-stock-mango-squishy", "ready-stock-cheese-cube-squishy", "ready-stock-giant-strawberry-squishy", "ready-stock-giant-peach-squishy", "ready-stock-giant-banana-squishy", "ready-stock-dragon-fruit-squishy"]}
     preserveProductOrder
     browseLabel="Browse wholesale styles"
-    quoteLabel="Request Stock & Bulk Pricing"
+    quoteLabel="Get a wholesale quote"
+    quoteHref="#first-wholesale-order"
     cardDescriptions={{
       "ready-stock-highland-cow-tpr-squishy": "Brown and orange Highland cow styles with a retail presentation box. View the packing photo and request availability by color.",
       "ready-stock-chocolate-bar-squishy": "Chocolate-bar squeeze toy in retail packaging. Request live quantity, unit packing and carton details.",
@@ -54,44 +55,10 @@ export default function Page() {
       "ready-stock-giant-banana-squishy": "Oversized banana for display-focused ranges. Reference size: 35 × 7.5 cm. Request carton and freight details.",
       "ready-stock-dragon-fruit-squishy": "Colorful fruit style. Reference size: 18.2 × 12 cm. Request live quantity and packing information.",
     }}
-    beforeProducts={
-      <section className="bg-white py-16" aria-labelledby="wholesale-order-route">
-        <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-          <h2 id="wholesale-order-route" className="text-3xl font-black tracking-tight text-slate-950">How would you like to order?</h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
-            {[
-              { title: "One style in bulk", text: "The Highland cow comes in brown and orange, with a retail box pictured on the product page. Pick a color and ask how many boxed toys fit in the current shipping carton.", href: "/products/ready-stock-highland-cow-tpr-squishy", label: "See the toy and retail box" },
-              { title: "A mixed wholesale order", text: "List each style and the pieces you need, for example mango, strawberry and peach. We check which styles can ship together, whether each needs a full carton and the freight to your postcode.", href: "/contact", label: "Request a mixed-order quote" },
-              { title: "Private-label squishies", text: "Send artwork for your shape or retail pack, the quantity per design and the target launch date. Review a physical sample before placing the production order.", href: "/custom-squishy-toy-manufacturer", label: "Explore private-label manufacturing" },
-            ].map((item) => (
-              <article key={item.href} className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                <h3 className="text-xl font-bold text-slate-950">{item.title}</h3>
-                <p className="mt-3 leading-7 text-slate-600">{item.text}</p>
-                <Link href={item.href} className="mt-5 inline-block font-bold text-blue-700 hover:underline">{item.label} →</Link>
-              </article>
-            ))}
-          </div>
-          <div className="mt-10 overflow-x-auto rounded-2xl border border-slate-200">
-            <table className="w-full min-w-[600px] border-collapse text-left text-sm">
-              <caption className="bg-slate-50 p-5 text-left text-lg font-bold text-slate-950">Compare bulk quotations on the same basis</caption>
-              <thead className="bg-slate-950 text-white"><tr><th scope="col" className="p-4">Order detail</th><th scope="col" className="p-4">What to confirm</th><th scope="col" className="p-4">Why it matters</th></tr></thead>
-              <tbody>
-                {[
-                  ["Quantity & MOQ", "Pieces per SKU and color; carton multiples; any mixed-SKU option.", "A total assortment quantity may not meet each item's minimum."],
-                  ["Unit & display packing", "Individual bag or box, units per display, barcode and labeling requirements.", "Retail presentation and packing changes affect the quote."],
-                  ["Carton & freight", "Units per carton, carton dimensions, gross weight and destination.", "Compare total landed cost with freight and applicable import costs."],
-                  ["Availability & timing", "Current quantity, dispatch estimate, inspection and transit time.", "Ready stock still needs a live availability and delivery check."],
-                ].map(([label, detail, reason]) => (<tr key={label} className="border-t border-slate-200"><th scope="row" className="p-4 font-bold text-slate-950">{label}</th><td className="p-4 leading-6 text-slate-600">{detail}</td><td className="p-4 leading-6 text-slate-600">{reason}</td></tr>))}
-              </tbody>
-            </table>
-          </div>
-          <p className="mt-4 text-sm leading-6 text-slate-600">There is no single stock MOQ or pack quantity for every style. Ask for the current specification and a sample where needed before confirming a bulk order.</p>
-        </div>
-      </section>
-    }
-    lastReviewed="2026-11-15"
+    beforeProducts={<WholesaleOrder />}
+    lastReviewed="2026-11-17"
     serviceType="Ready-stock wholesale squishy toy supply"
-    productHeading="Compare squishy toys for your store"
+    productHeading="More wholesale squishy styles"
     productDescription="Reference items for live-stock checks. Quantity, color mix, carton packing and dispatch timing are reconfirmed with every inquiry."
     capabilities={[
       { title: "Live Stock Check", text: "Confirm current quantity and available colors before payment or shipment planning." },
@@ -130,7 +97,7 @@ export default function Page() {
       { question: "What information is needed for a stock quotation?", answer: "Send the product name, quantity, destination, receiving date and any packing or document requirements." },
       { question: "Can several ready-stock squishy toys ship together?", answer: "A mixed shipment may be possible after the selected SKUs, quantity, carton data and warehouse availability are checked." },
       { question: "How fast can ready-stock squishy toys be dispatched?", answer: "Dispatch depends on live availability, payment, inspection, warehouse handling and the selected freight route. We confirm timing with the quotation." },
-      { question: "Is there one MOQ for every in-stock squishy toy?", answer: "No. The practical wholesale quantity can vary by product, available color, packing and current warehouse stock." },
+      { question: "What is the minimum order for the clay-filled collection?", answer: "The minimum is 500 pieces per style for the 21 clay-filled designs listed in the first-order table. Tell us the colour split and delivery destination for a packing and freight quote. Other ranges are quoted separately." },
       { question: "Can ready-stock items use custom labels or packaging?", answer: "Some secondary packing or labeling may be reviewed, but changes can affect quantity and dispatch timing. State the requirement before the stock quote is confirmed." },
     ]}
   />;
