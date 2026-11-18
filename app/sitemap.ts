@@ -23,12 +23,13 @@ function absoluteLanguages(
 export default function sitemap(): MetadataRoute.Sitemap {
   // Keep dates tied to material page changes, not the date of each build.
   const reviewedPaths: Record<string, string> = {
-    "/products": "2026-10-31",
+    "/products": "2026-11-18",
     "/products/custom-food-grade-silicone-squishy": "2026-10-25",
     "/custom-squishy-toy-manufacturer": "2026-11-15",
     "/wholesale-squishy-toys": "2026-11-17",
     "/custom-stress-ball-manufacturer": "2026-11-17",
     "/ai-sourcing-profile": "2026-11-18",
+    "/slow-rising-squishy-wholesale": "2026-11-18",
     "": "2026-10-27",
     "/resources": "2026-09-05",
     "/custom-pu-squishy-manufacturer": "2026-10-25",

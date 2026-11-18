@@ -48,6 +48,24 @@ function images(slug: string, hero: string): ProductImageSet {
 }
 
 export const products: Product[] = [
+  {
+    slug: "kawaii-smiley-banana-squishy-toys",
+    name: "Kawaii Squishy Toys — Smiley Banana",
+    category: "TPR + Building Block Clay / Wholesale",
+    tag: "Cute Fruit Style · MOQ 500",
+    note: "These kawaii squishy toys pair a yellow smiley banana shape with green tips, individual clear boxes and a matching countertop tray, as shown in the catalog. The TPR outer shell contains building block clay and petroleum jelly filling. Wholesale orders start at 500 pieces per style, with listed outer-carton options of 144 or 288 pieces. Review the filled squeeze feel on a sample and confirm the final packing allocation. Ask about color, face artwork, retail labels and display-artwork changes for this existing style. Send your quantity, delivery postcode, packing requirements and arrival date for a wholesale quote. These are non-edible toys.",
+    seoTitle: "Kawaii Squishy Toys Wholesale | Smiley Banana, MOQ 500",
+    seoDescription: "Wholesale kawaii squishy toys in a smiley banana design. TPR shell with clay and petroleum jelly filling, clear retail boxes and MOQ 500 per style. Request a quote.",
+    alt: "Yellow smiley banana squishy toys with green tips, individual clear retail boxes and a banana-themed display tray",
+    keywords: ["kawaii squishy toys", "kawaii squishy toys wholesale", "smiley banana squishy", "cute squishy toys bulk", "banana squishy wholesale", "clay filled fruit squishy"],
+    images: { hero: "/images/products/kawaii-smiley-banana-squishy-toys/catalog-display.jpg" },
+    gallery: [{ id: "catalog-display", src: "/images/products/kawaii-smiley-banana-squishy-toys/catalog-display.jpg", label: "Catalog smiley banana and retail display" }],
+    lastModified: "2026-11-18",
+    minimumOrderQuantity: 500,
+    featured: true,
+    detailsOnRequest: true,
+    filterGroup: "squishy",
+  },
 {
   "slug": "caramel-pudding-building-block-clay-squishy",
   "name": "Caramel Pudding Building Block Clay Squishy",

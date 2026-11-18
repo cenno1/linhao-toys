@@ -29,6 +29,21 @@ type ProductBuyingProfile = {
 };
 
 const productBuyingProfiles: Partial<Record<string, ProductBuyingProfile>> = {
+  "kawaii-smiley-banana-squishy-toys": {
+    specifications: [
+      { label: "Construction", value: "TPR outer shell with building block clay and petroleum jelly filling, as confirmed for this catalog collection" },
+      { label: "Appearance", value: "Yellow banana shape with a cute printed face and green tips" },
+      { label: "Minimum order", value: "500 pieces per style; confirm the color and packing split in the quotation" },
+      { label: "Retail packing", value: "Individual clear boxes in a banana-themed countertop display; confirm pieces per display and final artwork" },
+      { label: "Outer carton options", value: "144 or 288 pieces per shipping carton, as listed in the product information sheet; confirm final allocation and any partial-carton packing" },
+      { label: "Dimensions and weight", value: "Request toy dimensions, net unit weight, shipping-carton dimensions and gross weight for the selected packing option" },
+      { label: "Squeeze feel", value: "Review filling movement, resistance and recovery on a physical sample; no measured recovery time is specified" },
+    ],
+    customization: ["Existing smiley banana style", "Color and face-artwork review", "Retail labels and barcodes", "Counter-display artwork review", "Individual box and carton configuration"],
+    useCases: ["Kawaii gift-shop collections", "Fruit-themed novelty-store displays", "Wholesale cute squeeze-toy assortments", "Retailers planning countertop impulse displays"],
+    buyerBrief: ["Quantity of smiley banana squishies, starting at 500 pieces", "Preferred color, face artwork and any label changes", "Individual box and countertop-display requirements", "Preferred outer-carton option and any mixed-shipment request", "Delivery country, postcode and required arrival date", "Sample, age-grade and destination-market document requirements"],
+    packagingAnswer: "The catalog image shows individual clear boxes in a banana-themed countertop display. The product information sheet lists outer-carton options of 144 or 288 pieces. Confirm pieces per display, final carton allocation, any partial cartons, artwork and included packing costs in the quotation.",
+  },
 "caramel-pudding-building-block-clay-squishy": {
   "specifications": [
     {
@@ -2032,6 +2047,14 @@ export function getProductCategoryLandingPath(filterGroup: ProductFilterGroup): 
 
 export function getProductFAQs(product: Product) {
   const customFAQs: Record<string, { question: string; answer: string }[]> = {
+    "kawaii-smiley-banana-squishy-toys": [
+      { question: "What makes these kawaii squishy toys suitable for a cute retail assortment?", answer: "The catalog style combines a yellow banana shape, a small expressive face and green tips with clear individual boxes and a matching countertop tray. Review the sample and final packaging for your store's range." },
+      { question: "Are these banana squishies PU slow-rising foam toys?", answer: "This catalog style has a TPR outer shell with building block clay and petroleum jelly filling. Evaluate its filled squeeze feel and recovery on a physical sample; no PU foam construction or fixed recovery time is claimed for this item." },
+      { question: "What is the wholesale MOQ for this smiley banana style?", answer: "The minimum is 500 pieces per style. Confirm the color allocation and retail packing with the quotation. Combining different styles in a shipment does not remove each style's minimum." },
+      { question: "How are the toys packed for retail and shipping?", answer: "The catalog image shows individual clear boxes in a countertop display. Outer shipping-carton options are 144 or 288 pieces according to the product information sheet. Confirm the display count, final cartons and any partial-carton packing for your quantity." },
+      { question: "Can I request custom artwork or packaging?", answer: "Send the face artwork, colors, barcode, label or display design you want for this existing style. Changes and their minimums or setup costs are reviewed before quotation. Confirm toy dimensions, packing, timing and product-specific documents with the sample." },
+      { question: "What should I send for a wholesale quote?", answer: "Send the quantity, preferred retail and carton packing, destination country and postcode, required arrival date and any artwork changes. We will confirm unit pricing, availability, sample timing, dispatch and freight for the order." },
+    ],
   "dumpling-squishy-blind-box": [
     {
       question: "Can I order a mixed display of dumpling squishies for my store?",
