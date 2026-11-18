@@ -74,21 +74,22 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
-      <section className="relative overflow-hidden bg-slate-950 py-24 text-white sm:py-28">
+      <section className="relative overflow-hidden bg-slate-950 py-10 text-white sm:py-16">
         <div className="absolute right-0 top-0 h-80 w-80 rounded-full bg-blue-600/20 blur-3xl" />
         <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <p className="text-sm font-black uppercase tracking-[0.22em] text-blue-400">Contact</p>
-          <h1 className="mt-5 max-w-4xl text-5xl font-black tracking-[-0.055em] sm:text-6xl">
+          <h1 className="mt-5 max-w-4xl text-3xl font-black tracking-[-0.055em] sm:text-5xl">
             Tell us about your custom toy project.
           </h1>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">
-            Include your product reference, target quantity, size, destination
-            market and preferred packaging for a more useful first quotation.
+            Start with your email, estimated quantity and delivery country.
+            Product references and packaging details are optional for the first inquiry.
           </p>
+          <TrackedLink href="#contact-inquiry" method="quote" location="contact_hero" className="btn btn-primary mt-5">Start your inquiry</TrackedLink>
         </div>
       </section>
 
-      <section className="bg-[#f8fafc] py-20 sm:py-24">
+      <section id="contact-inquiry" className="scroll-mt-24 bg-[#f8fafc] py-10 sm:py-16">
         <div className="mx-auto grid max-w-7xl gap-8 px-5 sm:px-6 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
           <div className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-9">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-blue-600">
@@ -98,9 +99,8 @@ export default function ContactPage() {
               Send the essentials for your first quotation.
             </h2>
             <p className="mt-4 leading-7 text-slate-600">
-              The form sends your brief securely to the sales inbox. Add a shareable
-              artwork or product-reference link now; if delivery is unavailable,
-              your email app opens with the same details as a fallback.
+              Send your request directly to our sales team. You can add company,
+              artwork and packaging details now or discuss them when we reply.
             </p>
             <div className="mt-8">
               <ProductInquiryForm productName="General OEM / wholesale inquiry" />

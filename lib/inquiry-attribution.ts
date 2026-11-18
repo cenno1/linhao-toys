@@ -32,6 +32,7 @@ export function captureConsentedSessionAttribution(
   pathname: string,
   searchParams: SearchParamsReader,
 ) {
+  try {
   if (
     typeof window === "undefined" ||
     window.localStorage.getItem("linhao_analytics_consent") !== "accepted"
@@ -39,7 +40,6 @@ export function captureConsentedSessionAttribution(
     return;
   }
 
-  try {
     setFirstSessionValue(STORAGE_KEYS.landingPage, clean(pathname));
 
     if (document.referrer) {
@@ -75,14 +75,14 @@ export function createInquiryAttribution(): InquiryAttribution {
     utmCampaign: "",
   };
 
-  if (
-    typeof window === "undefined" ||
-    window.localStorage.getItem("linhao_analytics_consent") !== "accepted"
-  ) {
-    return emptyAttribution;
-  }
-
   try {
+    if (
+      typeof window === "undefined" ||
+      window.localStorage.getItem("linhao_analytics_consent") !== "accepted"
+    ) {
+      return emptyAttribution;
+    }
+
     return {
       ...emptyAttribution,
       landingPage: clean(window.sessionStorage.getItem(STORAGE_KEYS.landingPage)),

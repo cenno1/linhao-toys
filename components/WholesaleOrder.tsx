@@ -3,8 +3,8 @@
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { trackEvent } from "@/lib/analytics";
-import { INQUIRY_EMAIL } from "@/lib/product-utils";
+import { useInquirySubmission } from "@/lib/use-inquiry-submission";
+import InquiryActions from "@/components/InquiryActions";
 import { wholesaleStyles } from "./wholesale-styles";
 
 const examples = [
@@ -15,31 +15,38 @@ const examples = [
 
 export default function WholesaleOrder() {
   const [error, setError] = useState("");
-  function prepareQuote(event: FormEvent<HTMLFormElement>) {
+  const inquiry = useInquirySubmission("Wholesale clay-filled squishy selection", "wholesale_first_order");
+  async function prepareQuote(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const items = wholesaleStyles.flatMap(({name}) => {
+    const element = event.currentTarget;
+    const form = new FormData(element);
+    const items = wholesaleStyles.flatMap(({name, cartons}) => {
       const qty = form.get(name);
-      return qty ? [name + " — " + qty + " pieces"] : [];
+      return qty ? [{ name, quantity: Number(qty), cartons }] : [];
     });
-    if (!items.length) {
-      setError("Enter a quantity for at least one style.");
-      event.currentTarget.querySelector<HTMLInputElement>('input[type="number"]')?.focus();
+    if (!items.length || items.some(item => !Number.isInteger(item.quantity) || item.quantity < 500 || item.quantity > 99999999)) {
+      setError("Enter at least 500 pieces for each selected style.");
+      inquiry.markInvalid();
+      element.querySelector<HTMLInputElement>('input[type="number"]')?.focus();
       return;
     }
     const destination = String(form.get("destination") || "").trim();
     if (!destination) {
       setError("Enter your delivery country and postcode.");
-      event.currentTarget.querySelector<HTMLInputElement>('input[name="destination"]')?.focus();
+      inquiry.markInvalid();
+      element.querySelector<HTMLInputElement>('input[name="destination"]')?.focus();
       return;
     }
     const notes = String(form.get("notes") || "").trim();
-    const message = ["Hello LINHAO,", "Please quote these wholesale clay-filled squishies for resale:", ...items,
+    const message = ["Please quote these wholesale clay-filled squishies for resale:", ...items.map(item => `${item.name}: ${item.quantity} pieces; packing reference: ${item.cartons.join(" / ")} pieces per outer carton.`),
       "Deliver to: " + destination, notes, "Please confirm unit prices, colour availability, carton packing, freight and dispatch timing."];
     if (items.length > 1) message.push("Can these styles share an outer carton or ship together in separate cartons?");
     setError("");
-    trackEvent("email_click", { contact_method: "email", contact_location: "wholesale_first_order" });
-    window.location.href = "mailto:" + INQUIRY_EMAIL + "?subject=Wholesale%20squishy%20order&body=" + encodeURIComponent(message.filter(Boolean).join("\n"));
+    if (await inquiry.submit({
+      company: "", email: String(form.get("email") || "").trim(),
+      projectType: "Wholesale existing products", quantity: String(items.reduce((total, item) => total + item.quantity, 0)) + " pieces total",
+      market: destination, timeline: "", packaging: "", referenceUrl: "", requirements: message.filter(Boolean).join("\n"),
+    }, String(form.get("website") || ""))) element.reset();
   }
   return (
     <section id="first-wholesale-order" className="scroll-mt-24 bg-white py-14" aria-labelledby="first-order-title">
@@ -52,7 +59,9 @@ export default function WholesaleOrder() {
             <strong className="mt-2 block text-blue-700">{name}</strong><span className="text-sm">{packing}</span>
           </Link>)}
         </div>
-        <form onSubmit={prepareQuote} onChange={() => setError("")}>
+        <form onSubmit={prepareQuote} onChange={() => { setError(""); inquiry.markStarted(); }} onInvalidCapture={inquiry.markInvalid} aria-busy={inquiry.status === "sending"}>
+          <fieldset disabled={inquiry.status === "sending"} className="min-w-0">
+          <label className="hidden" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off" /></label>
           <table className="w-full border-collapse text-left text-sm">
             <caption className="py-3 text-left text-lg font-bold">Select styles and quantities</caption>
             <thead><tr className="bg-slate-100">
@@ -65,12 +74,13 @@ export default function WholesaleOrder() {
             </tr>)}</tbody>
           </table>
           <div className="my-5 grid gap-4 sm:grid-cols-2">
-            <label className="font-semibold">Delivery country and postcode<input name="destination" required maxLength={120} className="mt-2 block w-full rounded-lg border border-slate-400 p-3 font-normal" /></label>
-            <label className="font-semibold">Colours, packing or receiving date (optional)<input name="notes" maxLength={300} className="mt-2 block w-full rounded-lg border border-slate-400 p-3 font-normal" /></label>
+            <label className="font-semibold">Email<input type="email" name="email" autoComplete="email" required maxLength={320} placeholder="you@company.com" className="mt-2 block w-full rounded-lg border border-slate-400 p-3 font-normal" /></label>
+            <label className="font-semibold">Delivery country and postcode<input name="destination" required maxLength={120} placeholder="e.g. United States, 10001" className="mt-2 block w-full rounded-lg border border-slate-400 p-3 font-normal" /></label>
+            <label className="font-semibold sm:col-span-2">Colours, packing or receiving date (optional)<input name="notes" maxLength={300} className="mt-2 block w-full rounded-lg border border-slate-400 p-3 font-normal" /></label>
           </div>
           {error && <p role="alert" className="mb-3 text-red-700">{error}</p>}
-          <button className="btn btn-primary" type="submit">Open wholesale quote email</button>
-          <p className="mt-2 text-sm text-slate-600">Review the itemised request in your email app before sending. You can also <Link className="underline" href="/contact">contact sales online</Link>.</p>
+          </fieldset>
+          <InquiryActions status={inquiry.status} fallbackHref={inquiry.fallbackHref} location="wholesale_first_order" label="Send wholesale quote request" />
         </form>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import { buildWhatsAppUrl } from "@/lib/product-utils";
 import TrackedLink from "@/components/TrackedLink";
 
-export default function CTA() {
+export default function CTA({ quoteHref = "/contact" }: { quoteHref?: string }) {
   return (
     <section className="section">
       <div className="shell v5-cta">
@@ -17,7 +17,7 @@ export default function CTA() {
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
-          <TrackedLink className="btn btn-white" href="/contact" method="quote" location="section_cta">
+          <TrackedLink className="btn btn-white" href={quoteHref} method="quote" location="section_cta">
             Request a Quote
           </TrackedLink>
           <TrackedLink

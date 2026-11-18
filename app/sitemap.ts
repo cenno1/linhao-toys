@@ -25,8 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const reviewedPaths: Record<string, string> = {
     "/products": "2026-11-18",
     "/products/custom-food-grade-silicone-squishy": "2026-10-25",
-    "/custom-squishy-toy-manufacturer": "2026-11-15",
-    "/wholesale-squishy-toys": "2026-11-17",
+    "/custom-squishy-toy-manufacturer": "2026-11-19",
+    "/wholesale-squishy-toys": "2026-11-19",
+    "/contact": "2026-11-19",
     "/custom-stress-ball-manufacturer": "2026-11-17",
     "/ai-sourcing-profile": "2026-11-18",
     "/slow-rising-squishy-wholesale": "2026-11-18",

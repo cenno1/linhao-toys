@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTA from "@/components/CTA";
+import TrackedLink from "@/components/TrackedLink";
 import ProductShowcase from "@/components/ProductShowcase";
 import { products, type ProductFilterGroup } from "@/lib/products";
 import { absoluteUrl } from "@/lib/seo";
@@ -125,7 +126,7 @@ export default function SeoLandingPage(props: Props) {
           <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">{props.introduction}</p>
           <p className="mt-5 max-w-3xl text-sm leading-7 text-slate-400">{props.buyerNote}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href={props.quoteHref ?? "/contact"} className="btn btn-primary">{props.quoteLabel ?? "Request a quotation"}</Link>
+            <TrackedLink href={props.quoteHref ?? "/contact"} method="quote" location={props.path + "_hero"} className="btn btn-primary">{props.quoteLabel ?? "Request a quotation"}</TrackedLink>
             <Link href={props.browseLabel ? "#products" : "#buyer-brief"} className="btn border border-white/30 text-white">{props.browseLabel ?? "Prepare your brief"}</Link>
           </div>
           {reviewed && (
@@ -246,7 +247,7 @@ export default function SeoLandingPage(props: Props) {
           </div>
         </div>
       </section>
-      <CTA />
+      <CTA quoteHref={props.quoteHref} />
       <Footer />
     </main>
   );

@@ -56,7 +56,7 @@ export default function Page() {
       "ready-stock-dragon-fruit-squishy": "Colorful fruit style. Reference size: 18.2 × 12 cm. Request live quantity and packing information.",
     }}
     beforeProducts={<WholesaleOrder />}
-    lastReviewed="2026-11-17"
+    lastReviewed="2026-11-19"
     serviceType="Ready-stock wholesale squishy toy supply"
     productHeading="More wholesale squishy styles"
     productDescription="Reference items for live-stock checks. Quantity, color mix, carton packing and dispatch timing are reconfirmed with every inquiry."

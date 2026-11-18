@@ -54,6 +54,9 @@ export async function POST(request: Request) {
   } catch {
     return Response.json({ error: "Invalid request." }, { status: 400 });
   }
+  if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
+    return Response.json({ error: "Invalid request." }, { status: 400 });
+  }
 
   // Hidden honeypot field: bots commonly fill it, real visitors do not.
   if (clean(payload.website, 200)) {
@@ -69,7 +72,7 @@ export async function POST(request: Request) {
     productName: clean(payload.productName, 200),
     company: clean(payload.company, 200),
     email: clean(payload.email, 320),
-    projectType: clean(payload.projectType, 200),
+    projectType: clean(payload.projectType, 200) || "General sourcing inquiry",
     quantity: clean(payload.quantity, 100),
     market: clean(payload.market, 200),
     timeline: clean(payload.timeline, 200),
@@ -87,8 +90,6 @@ export async function POST(request: Request) {
 
   if (
     !data.productName ||
-    !data.company ||
-    !data.projectType ||
     !data.quantity ||
     !data.market ||
     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)
@@ -107,7 +108,7 @@ export async function POST(request: Request) {
     ["Referrer", data.referrerHost || "Not available"],
     ["Campaign", data.utmCampaign || "Not available"],
     ["UTM source / medium", `${data.utmSource || "Not available"} / ${data.utmMedium || "Not available"}`],
-    ["Company / brand", data.company],
+    ["Company / brand", data.company || "Not provided"],
     ["Buyer email", data.email],
     ["Project type", data.projectType],
     ["Estimated quantity", data.quantity],
@@ -118,12 +119,16 @@ export async function POST(request: Request) {
     ["Additional requirements", data.requirements || "Not provided"],
   ];
 
-  const response = await fetch("https://api.resend.com/emails", {
+  let response: Response;
+  try {
+  response = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json",
+      "Idempotency-Key": `inquiry/${data.leadId}`,
     },
+    signal: AbortSignal.timeout(20000),
     body: JSON.stringify({
       from: fromEmail,
       to: [toEmail],
@@ -142,14 +147,20 @@ export async function POST(request: Request) {
       `,
     }),
   });
+  } catch {
+    console.warn(JSON.stringify({ event: "inquiry_delivery_unconfirmed", leadId: data.leadId }));
+    return Response.json({ error: "Unable to confirm delivery. Please retry." }, { status: 502 });
+  }
 
   if (!response.ok) {
+    console.warn(JSON.stringify({ event: "inquiry_delivery_rejected", leadId: data.leadId, providerStatus: response.status }));
     return Response.json(
       { error: "Email delivery failed. Please use the email option." },
       { status: 502 },
     );
   }
 
-  return Response.json({ ok: true });
+  console.info(JSON.stringify({ event: "inquiry_delivery_accepted", leadId: data.leadId }));
+  return Response.json({ ok: true, leadId: data.leadId });
 }
 

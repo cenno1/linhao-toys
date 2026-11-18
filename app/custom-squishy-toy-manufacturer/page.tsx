@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SeoLandingPage from "@/components/SeoLandingPage";
+import ProductInquiryForm from "@/components/ProductInquiryForm";
 
 export const metadata: Metadata = {
   title: "Custom Squishy Toys Manufacturer | PU OEM & Private Label",
@@ -33,9 +34,23 @@ export default function Page() {
     preserveProductOrder
     productEyebrow="PU CASES & DESIGN REFERENCES"
     quoteLabel="Request a Custom Quote"
-    lastReviewed="2026-11-15"
+    quoteHref="#custom-squishy-quote"
+    lastReviewed="2026-11-19"
     browseLabel="Explore custom designs"
     beforeProducts={
+      <>
+      <section id="custom-squishy-quote" className="scroll-mt-24 bg-slate-50 py-12" aria-labelledby="custom-quote-title">
+        <div className="mx-auto grid max-w-5xl gap-8 px-5 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+          <div>
+            <h2 id="custom-quote-title" className="text-3xl font-black tracking-tight text-slate-950">Get a quote for your custom squishy</h2>
+            <p className="mt-4 leading-7 text-slate-600">Start with your email, estimated quantity and delivery country. Add your shape, logo or artwork if available; we can clarify the remaining details with you.</p>
+            <p className="mt-4 rounded-xl border border-blue-200 bg-blue-50 p-4 text-sm leading-7 text-slate-800"><strong>MOQ: 500 pieces per shape and per color.</strong> Sampling: 12–15 days. Bulk production: 25–30 days. Confirm your order schedule; shipping time is separate.</p>
+          </div>
+          <div className="min-w-0 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+            <ProductInquiryForm productName="Custom squishy toy manufacturing" />
+          </div>
+        </div>
+      </section>
       <section className="bg-white py-16" aria-labelledby="custom-project-route">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <h2 id="custom-project-route" className="text-3xl font-black tracking-tight text-slate-950">Choose the right route for your custom squishy.</h2>
@@ -60,6 +75,7 @@ export default function Page() {
           </aside>
         </div>
       </section>
+      </>
     }
     serviceType="Custom PU squishy toy OEM manufacturing with selected TPR development"
     productHeading="Explore custom PU designs, then selected TPR options."
