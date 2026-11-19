@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import WholesaleOrder from "@/components/WholesaleOrder";
 import SeoLandingPage from "@/components/SeoLandingPage";
+import SourcingEvidence from "@/components/SourcingEvidence";
 
 const title = "Wholesale Squishy Toys for Resale | Bulk Orders";
 const description = "Buy bulk squishy toys for resale. Compare 21 clay-filled styles with a 500-piece minimum per style, check pieces per outer carton, and request wholesale pricing.";
@@ -55,7 +56,7 @@ export default function Page() {
       "ready-stock-giant-banana-squishy": "Oversized banana for display-focused ranges. Reference size: 35 × 7.5 cm. Request carton and freight details.",
       "ready-stock-dragon-fruit-squishy": "Colorful fruit style. Reference size: 18.2 × 12 cm. Request live quantity and packing information.",
     }}
-    beforeProducts={<WholesaleOrder />}
+    beforeProducts={<><WholesaleOrder /><SourcingEvidence route="wholesale" /></>}
     lastReviewed="2026-11-19"
     serviceType="Ready-stock wholesale squishy toy supply"
     productHeading="More wholesale squishy styles"
@@ -83,6 +84,7 @@ export default function Page() {
       "Any product document or destination-market requirement",
     ]}
     relatedPages={[
+      { title: "Retail Displays & Testers", text: "Separate demonstration samples from sealed stock and use actual sell-through to plan replenishment.", href: "/resources/squishy-toy-retail-display-tester-stock-guide" },
       { title: "Custom Dumpling Squishies", text: "Compare dumpling shapes and blind-box packaging for a private-label assortment.", href: "/products/dumpling-squishy-blind-box" },
       { title: "Wholesale Packaging Guide", text: "Compare bags, blind packs, retail boxes, displays and online multipack directions.", href: "/resources/wholesale-squishy-toy-packaging-guide" },
       { title: "Squishy Durability Guide", text: "Understand how material, shape, seams, storage and squeeze behavior influence product lifespan.", href: "/resources/squishy-toy-durability-testing-quality-control-guide" },

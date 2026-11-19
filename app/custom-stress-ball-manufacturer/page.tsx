@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ProductInquiryForm from "@/components/ProductInquiryForm";
 import SeoLandingPage from "@/components/SeoLandingPage";
+import SourcingEvidence from "@/components/SourcingEvidence";
 
 const title = "Stress Balls with Company Logo | Custom Manufacturer";
 const description = "Order sports-shaped stress balls with a raised or recessed company logo from 500 pieces. Allow about 15 days for a sample and 25 days for bulk production.";
@@ -52,6 +53,7 @@ export default function Page() {
       quoteHref="#logo-quote"
       quoteLabel="Get a company logo quote"
       beforeProducts={
+        <>
         <section className="bg-white py-16">
           <div className="mx-auto max-w-6xl px-5 sm:px-6">
             <h2 className="text-3xl font-black tracking-tight">Logo stress relievers in sports shapes</h2>
@@ -78,9 +80,11 @@ export default function Page() {
             </div>
           </div>
         </section>
+        <SourcingEvidence route="logo" />
+        </>
       }
       productSlugs={["custom-eva-geometric-cutout-squeeze-ball", "adult-desk-sensory-squishy", "squeaky-tongue-popping-animal-squishy", "custom-jumbo-ghost-squishy"]}
-      lastReviewed="2026-11-17"
+      lastReviewed="2026-11-19"
       serviceType="Custom stress ball and squeeze toy OEM manufacturing"
       productHeading="Stress-ball and squeeze-toy directions for buyer review."
       productDescription="Use these product directions to define the target hand feel, shape, branding route and retail or promotional presentation for your own program."
@@ -113,6 +117,7 @@ export default function Page() {
         { title: "Request a Quote", text: "Send your artwork, quantity and destination for a feasibility review.", href: "/contact" },
       ]}
       faqs={[
+        { question: "What is the difference between an embossed and debossed logo on a stress ball?", answer: "An embossed logo is raised above the surface; a debossed logo is recessed below it. Both differ from a surface print. Send the artwork, intended logo size and position, then approve the lettering and relief on a physical sample. The sports photos show design and artwork placement references." },
         { question: "Can you make a stress ball from our logo or mascot?", answer: "A logo, mascot or reference image can be reviewed for a practical shape, artwork and sampling path. Final feasibility depends on detail level, dimensions, material and intended use." },
         { question: "Can the firmness of a custom squeeze toy be specified?", answer: "The intended resistance and recovery can be reviewed during sampling. Approve a physical sample because terms such as soft, firm or slow-rise are not complete production specifications." },
         { question: "How many sports stress balls can I order with my company logo?", answer: "The minimum order for branded sports stress balls is 500 pieces. Send the quantity you need, the colours and your artwork for a quote." },

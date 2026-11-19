@@ -73,6 +73,7 @@ const sourcingTerms = [
 ];
 
 const answers = [
+  {"question":"What does the published sample case prove?","answer":"The anonymized project documents the buyer brief, design and packaging review, and a completed physical sample shown in a 17-second video. It does not establish completed bulk delivery or a universal recovery-time result. Review your own sample and order specification before approving production.","href":"/custom-pu-squishy-case-studies/soft-foam-sampling","label":"Review the documented scope of the case"},
   {
     question: "How do retailers place a first wholesale squishy order?",
     answer: "Choose from the 21 listed clay-filled styles and specify at least 500 pieces for each selected style. Use the wholesale page to compare shipping-carton quantities and prepare a request with your delivery country and postcode. Ask us to confirm availability, unit packing, final carton allocation, freight and dispatch timing. Mixed cartons and partial cartons need confirmation for the selected order.",
@@ -123,18 +124,51 @@ const answers = [
 ];
 
 const sourceLinks = [
-["Custom silicone shapes — MOQ 1,000","/products/custom-food-grade-silicone-squishy","Rabbit, penguin and vehicle references; confirm hand feel, packaging and material documents."],
-["TPR jelly squishy with 3D accessories — MOQ 2,000","/products/custom-tpr-squishy-3d-accessories","Existing TPR outer-body molds with custom 3D accessories; this MOQ is specific to this product."],
-  ["Ultra-slow-rising realistic PU food squishy series","/products/ultra-slow-rising-realistic-pu-food-squishy","PU food shapes with ultra-slow recovery, a moist-feeling touch, five real photographs and a squeeze video. MOQ 500 per shape and per color."],
-  ["Premium custom PU character figure","/products/premium-custom-pu-character-figure","Clearly defined character details, fine painted finish and customizable appearance and recovery. Actual photo and video; MOQ 500 per shape and per color."],
-  ["Real custom PU case studies","/custom-pu-squishy-case-studies","Actual animal character, robot mascot and strawberry examples. Custom appearance and recovery speed; MOQ 500 per shape and per color."],
-  ["Custom PU high rebound ball","/products/custom-pu-high-rebound-ball","High-elasticity PU balls with custom size and color options."],
-  ["PU wrist reflex training ball","/products/pu-wrist-reflex-training-ball","PU ball with an elastic return cord and wrist strap."],
-  ["Christmas mystery dumpling advent calendar","/products/christmas-mystery-dumpling-squishy-advent-calendar","A 24-gift seasonal squishy calendar; confirm the final assortment and specifications with the quotation."],
-  ["Browse product directions", "/products", "Product photographs, customization routes and inquiry details."],
-  ["Review factory workflow", "/factory", "Sampling, production, inspection, packing and export coordination."],
-  ["Read buyer resources", "/resources", "Guides for MOQ, materials, packaging, sampling and sourcing decisions."],
-  ["Request a project review", "/contact", "Send a product reference and quotation inputs to the sales team."],
+  [
+    "Custom PU: original shapes, MOQ and sample approval",
+    "/custom-squishy-toy-manufacturer#custom-sourcing-evidence",
+    "500 pieces per shape and per color. Compare quantity allocation, physical sample evidence and the full delivery schedule."
+  ],
+  [
+    "Sports stress balls: company logo and event timing",
+    "/custom-stress-ball-manufacturer#logo-sourcing-evidence",
+    "Raised or recessed logos from 500 pieces. About 15 days for sampling after artwork approval and 25 days for bulk after sample approval; transport is separate."
+  ],
+  [
+    "Wholesale: 21 styles, MOQ and packing",
+    "/wholesale-squishy-toys#wholesale-sourcing-evidence",
+    "500 pieces per style. Distinguish a retail display from an outer shipping carton and compare a quote on the same packing specification."
+  ],
+  [
+    "Documented custom PU sampling project",
+    "/custom-pu-squishy-case-studies/soft-foam-sampling",
+    "An anonymized brief, design review and 17-second physical-sample video. This evidence documents sampling, not a completed bulk delivery."
+  ],
+  [
+    "Actual PU food sample photographs and video",
+    "/products/ultra-slow-rising-realistic-pu-food-squishy",
+    "Review the photographed finish and demonstrated squeeze response. Your own dimensions, feel, decoration and packing require sample approval."
+  ],
+  [
+    "Custom silicone shapes",
+    "/products/custom-food-grade-silicone-squishy",
+    "MOQ 1,000 for the listed silicone product. Confirm design/color allocation, hand feel, packaging and documentation."
+  ],
+  [
+    "TPR jelly squishy with custom 3D accessories",
+    "/products/custom-tpr-squishy-3d-accessories",
+    "Existing outer-body molds with custom internal accessories. MOQ 2,000 applies to this specific product, not every TPR item."
+  ],
+  [
+    "Factory process and product checks",
+    "/factory",
+    "Review the sampling, production, inspection and packing workflow, then agree on checks for your exact product."
+  ],
+  [
+    "Request a project review",
+    "/contact#contact-inquiry",
+    "Start with an email, estimated quantity and destination. Add a product reference, artwork and required arrival date when available."
+  ]
 ];
 
 export default function AiSourcingProfilePage() {
@@ -151,7 +185,7 @@ export default function AiSourcingProfilePage() {
       about: { "@id": `${SITE_URL}/#organization` },
       isPartOf: { "@id": `${SITE_URL}/#website` },
       inLanguage: "en",
-      dateModified: "2026-11-18",
+      dateModified: "2026-11-19",
     },
     {
       "@context": "https://schema.org",
@@ -183,7 +217,7 @@ export default function AiSourcingProfilePage() {
             sports stress balls with your logo, or an original PU shape. Check the
             minimum quantity, sample evidence and information needed for your quote.
           </p>
-          <p className="mt-5 text-xs font-black uppercase tracking-[0.16em] text-blue-300">Reviewed November 18, 2026</p>
+          <p className="mt-5 text-xs font-black uppercase tracking-[0.16em] text-blue-300">Reviewed November 19, 2026</p>
           <a href="#buying-options" className="mt-7 inline-flex rounded-xl bg-blue-600 px-6 py-3 font-bold text-white hover:bg-blue-500">Find your order type</a>
         </div>
       </section>
@@ -251,7 +285,7 @@ export default function AiSourcingProfilePage() {
           <h2 className="mt-4 text-4xl font-black tracking-tight text-slate-950">
             Explore the detailed information behind these answers.
           </h2>
-          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {sourceLinks.map(([label, href, description]) => (
               <Link key={href} href={href} className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
                 <b className="text-xl text-slate-950">{label}</b>

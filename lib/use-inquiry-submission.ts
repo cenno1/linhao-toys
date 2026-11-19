@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { trackEvent } from "@/lib/analytics";
+import { identifyAiTrafficSource } from "@/lib/ai-traffic-source";
 import { addAttributionToMailto, createInquiryAttribution, type InquiryAttribution } from "@/lib/inquiry-attribution";
 import { buildProductInquiryMailtoFromForm, type ProductInquiryFormData } from "@/lib/product-utils";
 
@@ -36,7 +37,9 @@ export function useInquirySubmission(productName: string, formName: string) {
       attempt.current = { signature, attribution: createInquiryAttribution() };
     }
     const attribution = attempt.current.attribution;
-    const eventData = { ...context(), lead_id: attribution.leadId, landing_page: attribution.landingPage };
+    const aiSource = identifyAiTrafficSource(attribution.referrerHost, attribution.utmSource);
+    const eventData = { ...context(), lead_id: attribution.leadId, landing_page: attribution.landingPage,
+      ai_source_platform: aiSource.platform, ai_source_basis: aiSource.basis };
     setFallbackHref(addAttributionToMailto(buildProductInquiryMailtoFromForm(productName, form), attribution));
     trackEvent("inquiry_submit_attempt", eventData);
     try {

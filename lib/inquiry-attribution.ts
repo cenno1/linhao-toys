@@ -1,3 +1,5 @@
+import { describeAiTrafficSource } from "@/lib/ai-traffic-source";
+
 export type InquiryAttribution = {
   leadId: string;
   sourcePage: string;
@@ -109,6 +111,7 @@ export function addAttributionToMailto(
       `Source page: ${attribution.sourcePage || "Not available"}`,
       `Landing page: ${attribution.landingPage || "Not available"}`,
       `Referrer: ${attribution.referrerHost || "Not available"}`,
+      `AI source signal: ${describeAiTrafficSource(attribution.referrerHost, attribution.utmSource)}`,
       `Campaign: ${attribution.utmCampaign || "Not available"}`,
       `UTM source / medium: ${attribution.utmSource || "Not available"} / ${attribution.utmMedium || "Not available"}`,
       "",

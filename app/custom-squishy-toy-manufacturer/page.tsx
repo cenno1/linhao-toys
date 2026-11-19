@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SeoLandingPage from "@/components/SeoLandingPage";
 import ProductInquiryForm from "@/components/ProductInquiryForm";
+import SourcingEvidence from "@/components/SourcingEvidence";
 
 export const metadata: Metadata = {
   title: "Custom Squishy Toys Manufacturer | PU OEM & Private Label",
@@ -51,6 +52,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <SourcingEvidence route="custom" />
       <section className="bg-white py-16" aria-labelledby="custom-project-route">
         <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
           <h2 id="custom-project-route" className="text-3xl font-black tracking-tight text-slate-950">Choose the right route for your custom squishy.</h2>

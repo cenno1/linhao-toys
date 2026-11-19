@@ -1,4 +1,5 @@
 import { INQUIRY_EMAIL } from "@/lib/product-utils";
+import { describeAiTrafficSource } from "@/lib/ai-traffic-source";
 
 type InquiryPayload = {
   productName?: string;
@@ -106,6 +107,7 @@ export async function POST(request: Request) {
     ["Source page", data.sourcePage || "Not available"],
     ["Landing page", data.landingPage || "Not available"],
     ["Referrer", data.referrerHost || "Not available"],
+    ["AI source signal", describeAiTrafficSource(data.referrerHost, data.utmSource)],
     ["Campaign", data.utmCampaign || "Not available"],
     ["UTM source / medium", `${data.utmSource || "Not available"} / ${data.utmMedium || "Not available"}`],
     ["Company / brand", data.company || "Not provided"],
