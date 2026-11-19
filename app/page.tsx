@@ -43,32 +43,55 @@ export const metadata: Metadata = {
   },
 };
 
-// Curated sourcing entry: PU first, then selected existing-mold TPR options.
+// Lead with search-interest signals, then cover custom and wholesale buying routes.
 const homepagePrioritySlugs = [
+  "custom-crunchy-butter-squishy",
   "premium-custom-pu-character-figure",
   "ultra-slow-rising-realistic-pu-food-squishy",
-  "custom-pu-fruit-animal-figures",
-  "pu-slow-rise-animal-keychain",
-  "custom-pu-high-rebound-ball",
-  "sesame-braided-bread-pu-squishy",
-  "custom-crunchy-butter-squishy",
   "custom-tpr-squishy-brand-inserts",
+  "caramel-pudding-building-block-clay-squishy",
+  "kawaii-smiley-banana-squishy-toys",
+  "dumpling-squishy-blind-box",
+  "pu-slow-rise-animal-keychain",
+  "grape-building-block-clay-squishy",
+  "custom-pu-ice-skate-squishy",
+  "custom-pu-foam-realistic-fruit-squishy",
+  "cat-soft-rubber-squishy-toys",
 ];
 
 const homepageDescriptions: Record<string, string> = {
-  "premium-custom-pu-character-figure": "Actual PU character photo and video. Develop your own silhouette, face, clothing details and painted finish.",
-  "ultra-slow-rising-realistic-pu-food-squishy": "Actual food samples and squeeze video. Specify food shapes, molded textures, softness, scent and recovery.",
-  "custom-pu-fruit-animal-figures": "Develop original PU fruit and animal forms from your artwork, with custom colors, faces, softness and packaging.",
-  "pu-slow-rise-animal-keychain": "Animal PU squishy keychains for collectible and blind-box programs. Specify characters, colors, accessories and packaging.",
-  "custom-pu-high-rebound-ball": "PU ball size, color and branding options for retail and promotional projects. Confirm rebound and finish on a sample.",
-  "sesame-braided-bread-pu-squishy": "Braided PU bread with toasted shading and sesame-style details. Discuss your own bakery collection and retail packing.",
   "custom-crunchy-butter-squishy": "Existing TPR butter-bar mold with moving block filling and crackling sound. Customize colors, print and packaging.",
-  "custom-tpr-squishy-brand-inserts": "Existing TPR cube format with moving branded blocks or plastic inserts. Review the pictured reference through sampling.",
+  "premium-custom-pu-character-figure": "Actual PU sample photo and video. Custom character shapes, colors and packaging. MOQ 500 per shape and color.",
+  "ultra-slow-rising-realistic-pu-food-squishy": "Real PU food samples and squeeze video. Customize shape, softness, scent and packaging. MOQ 500 per shape and color.",
+  "custom-tpr-squishy-brand-inserts": "Existing TPR cube with custom logo-shaped inserts and retail packaging. Confirm insert design, minimum quantity and movement on a sample.",
+  "caramel-pudding-building-block-clay-squishy": "TPR shell with clay and petroleum jelly filling. Clear retail packs and a countertop display. Wholesale MOQ 500 per style.",
+  "kawaii-smiley-banana-squishy-toys": "Kawaii banana with a TPR shell and clay-based filling. Clear individual boxes and display tray. Wholesale MOQ 500 per style.",
+  "dumpling-squishy-blind-box": "Custom PU dumplings with branded blind-box packaging. MOQ 500 per shape and color. View design references and a sample squeeze video.",
+  "pu-slow-rise-animal-keychain": "PU animal keychains for blind-box and collectible ranges. Customize characters, colors and packaging; confirm assortment and quantities in your quote.",
+  "grape-building-block-clay-squishy": "Grape-shaped TPR shell with clay and petroleum jelly filling. Clear retail boxes and a fruit display tray. Wholesale MOQ 500 per style.",
+  "custom-pu-ice-skate-squishy": "Sports-themed PU ice-skate design with sculpted details. Customize colors, size and recovery feel. MOQ 500 per shape and color.",
+  "custom-pu-foam-realistic-fruit-squishy": "Realistic PU strawberry reference with a hand-squeeze demonstration. Develop fruit shapes, colors and packaging. MOQ 500 per shape and color.",
+  "cat-soft-rubber-squishy-toys": "Soft rubber kitten styles for gift and novelty assortments. Compare basket and collar designs; confirm material, accessories and minimum quantity for your selected model.",
+};
+
+const homepageTags: Record<string, string> = {
+  "custom-crunchy-butter-squishy": "Crunchy TPR",
+  "premium-custom-pu-character-figure": "Custom PU Character",
+  "ultra-slow-rising-realistic-pu-food-squishy": "Slow-Rise PU Food",
+  "custom-tpr-squishy-brand-inserts": "Custom Logo Inserts",
+  "caramel-pudding-building-block-clay-squishy": "Retail Display",
+  "kawaii-smiley-banana-squishy-toys": "Kawaii · MOQ 500",
+  "dumpling-squishy-blind-box": "Custom PU Blind Box",
+  "pu-slow-rise-animal-keychain": "PU Animal Keychains",
+  "grape-building-block-clay-squishy": "Retail Packaging",
+  "custom-pu-ice-skate-squishy": "Custom Sports Shape",
+  "custom-pu-foam-realistic-fruit-squishy": "Realistic PU Fruit",
+  "cat-soft-rubber-squishy-toys": "Cat Gift Styles",
 };
 
 const sourcingRoutes = [
   { href: "/custom-squishy-toy-manufacturer", title: "Custom PU squishy toys", text: "Develop your own PU shape, recovery, painted details and packaging.", action: "Explore custom manufacturing" },
-  { href: "/products", title: "Wholesale product catalog", text: "Compare real samples and product details.", action: "Browse all products" },
+  { href: "/wholesale-squishy-toys#first-wholesale-order", title: "Wholesale squishies for resale", text: "Choose from 21 clay-filled styles, starting at 500 pieces per style.", action: "Select styles and request pricing" },
   { href: "/custom-pu-squishy-case-studies", title: "Real custom PU cases", text: "See character, robot and strawberry projects with customizable appearance and recovery.", action: "View custom PU cases" },
 ];
 
@@ -91,12 +114,14 @@ export default function Home() {
         productSlugs={homepagePrioritySlugs}
         prioritySlugs={homepagePrioritySlugs}
         cardDescriptions={homepageDescriptions}
+        cardTags={homepageTags}
         showFilters={false}
-        limit={8}
+        limit={12}
+        imageFit="contain"
         showCatalogLink
-        eyebrow="CUSTOM PU FIRST · WHOLESALE & TPR OPTIONS"
-        heading="Custom PU squishy designs for your next collection."
-        description="Start with six PU sourcing directions, then two existing-mold TPR options. Open each page for photos, videos, specifications and a custom quotation. Explore all other styles in the complete catalog."
+        eyebrow="CUSTOM PU · WHOLESALE STYLES · TPR BRANDING"
+        heading="Custom & wholesale squishy toys for your next collection."
+        description="Explore 12 product directions for custom development and retail assortments. Compare materials, samples and packaging, then open a product page to discuss your quantity and requirements."
       />
       <Capabilities />
       <FactoryDirectComparison />

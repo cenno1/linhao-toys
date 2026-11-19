@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/custom-stress-ball-manufacturer": "2026-11-17",
     "/ai-sourcing-profile": "2026-11-18",
     "/slow-rising-squishy-wholesale": "2026-11-18",
-    "": "2026-10-27",
+    "": "2026-11-19",
     "/resources": "2026-09-05",
     "/custom-pu-squishy-manufacturer": "2026-10-25",
     "/custom-pu-squishy-case-studies": "2026-11-08",

@@ -12,8 +12,10 @@ type ProductShowcaseProps = {
   productSlugs?: string[];
   prioritySlugs?: string[];
   cardDescriptions?: Record<string, string>;
+  cardTags?: Record<string, string>;
   showFilters?: boolean;
   limit?: number;
+  imageFit?: "cover" | "contain";
   showCatalogLink?: boolean;
   eyebrow?: string;
   heading?: string;
@@ -34,8 +36,10 @@ export default function ProductShowcase({
   productSlugs,
   prioritySlugs,
   cardDescriptions,
+  cardTags,
   showFilters = true,
   limit,
+  imageFit = "cover",
   showCatalogLink = false,
   eyebrow = "REAL SAMPLE GALLERY",
   heading = "Wholesale-ready squishy & plush SKUs for Amazon, retail and OEM.",
@@ -105,10 +109,11 @@ export default function ProductShowcase({
                     alt={p.alt ?? p.name}
                     width={1200}
                     height={900}
+                    style={{ objectFit: imageFit }}
                     sizes="(max-width: 620px) 50vw, (max-width: 980px) 50vw, 25vw"
                     unoptimized={p.images.hero.includes("ready-stock-halloween-butter-bar-squishy") || p.images.hero.includes("ready-stock-chocolate-bar-squishy") || p.images.hero.includes("squeaky-tongue-popping-animal-squishy")}
                   />
-                  <b>{p.tag}</b>
+                  <b style={cardTags ? { maxWidth: "calc(100% - 70px)" } : undefined}>{cardTags?.[p.slug] ?? p.tag}</b>
                   <em>{String(index + 1).padStart(2, "0")}</em>
                 </Link>
                 <div className="v7-card-copy">
