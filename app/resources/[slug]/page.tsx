@@ -56,6 +56,7 @@ export default async function GuidePage({ params }: Props) {
       image: absoluteUrl(guide.caseStudy?.image ?? DEFAULT_OG_IMAGE),
       keywords: guide.keywords.join(", "),
       about: guide.keywords,
+      citation: guide.sections.flatMap((section) => section.sources?.map((source) => source.href) ?? []),
       author: { "@id": `${absoluteUrl("/")}#organization` },
       publisher: { "@id": `${absoluteUrl("/")}#organization` },
       isPartOf: { "@type": "CollectionPage", "@id": `${absoluteUrl("/resources")}#collection` },
@@ -113,7 +114,7 @@ export default async function GuidePage({ params }: Props) {
               <Link href={guide.caseStudy.href}>
                 <Image src={guide.caseStudy.image} alt={guide.caseStudy.alt} width={1200} height={1200} sizes="(min-width: 896px) 848px, 100vw" className="max-h-[560px] w-full object-contain bg-slate-50" />
               </Link>
-              <figcaption className="p-6 text-sm leading-7 text-slate-600">{guide.caseStudy.caption} <Link href={guide.caseStudy.href} className="font-bold text-blue-600 hover:underline">View product & video →</Link></figcaption>
+              <figcaption className="p-6 text-sm leading-7 text-slate-600">{guide.caseStudy.caption} <Link href={guide.caseStudy.href} className="font-bold text-blue-600 hover:underline">{guide.caseStudy.linkLabel ?? "View product & video →"}</Link></figcaption>
             </figure>
           )}
           <div className="space-y-14">
@@ -125,6 +126,35 @@ export default async function GuidePage({ params }: Props) {
                     <p key={paragraph} className="text-base leading-8 text-slate-600">{paragraph}</p>
                   ))}
                 </div>
+                {section.sources && (
+                  <div className="mt-5 space-y-2 text-sm leading-6 text-slate-600">
+                    <p className="font-bold">Discussion sources</p>
+                    {section.sources.map((source) => (
+                      <p key={source.href}>
+                        <a href={source.href} className="text-blue-600 underline underline-offset-4">{source.label}</a>
+                      </p>
+                    ))}
+                  </div>
+                )}
+                {section.table && (
+                  <div className="mt-6 overflow-x-auto rounded-2xl border border-slate-200" role="region" aria-label={`${section.heading}: comparison table`} tabIndex={0}>
+                    <table className="w-full min-w-[620px] border-collapse text-left text-sm leading-6">
+                      <caption className="sr-only">{section.heading}</caption>
+                      <thead className="bg-slate-100 text-slate-950">
+                        <tr>{section.table.columns.map((column) => <th key={column} scope="col" className="p-4 font-bold">{column}</th>)}</tr>
+                      </thead>
+                      <tbody className="text-slate-700">
+                        {section.table.rows.map((row) => (
+                          <tr key={row[0]} className="border-t border-slate-200">
+                            {row.map((cell, index) => index === 0
+                              ? <th key={index} scope="row" className="p-4 align-top font-bold">{cell}</th>
+                              : <td key={index} className="p-4 align-top">{cell}</td>)}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
                 {section.checklist && (
                   <ul className="mt-6 grid gap-3 rounded-3xl bg-[#f4f7fb] p-7 sm:grid-cols-2">
                     {section.checklist.map((item) => (

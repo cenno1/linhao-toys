@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/ai-sourcing-profile": "2026-11-18",
     "/slow-rising-squishy-wholesale": "2026-11-18",
     "": "2026-11-19",
-    "/resources": "2026-09-05",
+    "/resources": "2026-11-19",
     "/custom-pu-squishy-manufacturer": "2026-10-25",
     "/custom-pu-squishy-case-studies": "2026-11-08",
     "/custom-pu-squishy-case-studies/soft-foam-sampling": "2026-11-08",

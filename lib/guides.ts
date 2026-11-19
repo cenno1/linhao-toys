@@ -12,13 +12,365 @@ export type BuyerGuide = {
     heading: string;
     paragraphs: string[];
     checklist?: string[];
+    sources?: Array<{ label: string; href: string }>;
+    table?: { columns: string[]; rows: string[][] };
   }>;
   faqs: Array<{ question: string; answer: string }>;
-  caseStudy?: { image: string; alt: string; caption: string; href: string };
+  caseStudy?: { image: string; alt: string; caption: string; href: string; linkLabel?: string };
   relatedLinks: Array<{ label: string; href: string }>;
 };
 
 export const buyerGuides: BuyerGuide[] = [
+{
+  "slug": "squishy-toy-retail-display-tester-stock-guide",
+  "title": "Squishy Toy Retail Displays: Testers, Sealed Stock and Reorders",
+  "seoTitle": "Squishy Toy Retail Display & Tester Guide | LINHAO",
+  "description": "Plan a squishy toy retail display with separate testers, sealed sale units, clear prices and reorder information. A practical guide for wholesale buyers.",
+  "eyebrow": "RETAIL DISPLAY GUIDE",
+  "updated": "2026-11-19",
+  "readTime": "7 min read",
+  "quickAnswer": "Build a squishy toy display around three decisions: how customers can assess the feel, which units remain sealed for sale, and how staff identify stock for reordering. Use a clearly identified demonstration sample only when its handling and care can be managed; otherwise use a product video. Confirm display dimensions, packing quantities and sample approval before placing the wholesale order.",
+  "keywords": [
+    "squishy toy retail display",
+    "squishy display box",
+    "squishy toy tester",
+    "squishy counter display",
+    "retail ready squishy packaging",
+    "squishy shop stock planning"
+  ],
+  "caseStudy": {
+    "image": "/images/products/custom-pu-capsule-blind-box-squishy-series/bear-bread-series.webp",
+    "alt": "Bear bread PU squishy capsule collection with a coordinated counter display reference",
+    "caption": "LINHAO capsule-series presentation reference. Capsule fit, display dimensions, assortment ratios and units per display are confirmed on the physical packaging sample; the illustration is not a fixed packing specification.",
+    "href": "/products/custom-pu-capsule-blind-box-squishy-series",
+    "linkLabel": "Explore capsule collection options"
+  },
+  "sections": [
+    {
+      "heading": "What retail discussions reveal about the squishy display problem",
+      "paragraphs": [
+        "In a June 2026 Reddit discussion, retail employees described opened squishy packages, damaged stock and repeated questions about availability. Another discussion described customers asking for a squishy before its display was ready. The practical question for a buyer is how to make the product easy to understand without turning every sale unit into a tester.",
+        "These are individual reports, not audited store results or a forecast for your shop. The display workflow below is LINHAO's planning recommendation, informed by those questions. Measure its effect in your own store rather than assuming that online attention guarantees sales."
+      ],
+      "sources": [
+        {
+          "label": "Reddit: retail employees discuss opened packaging and stock enquiries",
+          "href": "https://www.reddit.com/r/MichaelsEmployees/comments/1u90vt0/sick_and_tired_of_squishy_madness/"
+        },
+        {
+          "label": "Reddit: enquiries before a squishy display launch",
+          "href": "https://www.reddit.com/r/retailhell/comments/1u0x4rj/tiktok_trends/"
+        }
+      ]
+    },
+    {
+      "heading": "Separate the feel demonstration from stock for sale",
+      "paragraphs": [
+        "Choose one demonstration method for each texture family. A clearly marked sample lets customers compare feel, but it also needs inspection, an approved care method and a replacement budget. Keep it separate from sealed units and do not return a handled tester to new stock.",
+        "If staff cannot manage a shared sample, show a short video of the exact item being squeezed. Record the normal squeeze and release without speeding it up. For a crunchy design, let shoppers hear an unaltered recording rather than describing it as quiet. A photograph or video supports selection but does not replace your own physical sample approval."
+      ],
+      "checklist": [
+        "Label demonstration stock clearly",
+        "Keep sealed sale units in a separate position",
+        "Assign responsibility for inspecting the tester",
+        "Use the approved care method for that exact product",
+        "Remove leaking, torn or otherwise damaged samples from use",
+        "Use a video when hands-on demonstration is impractical"
+      ]
+    },
+    {
+      "heading": "Choose the display format around the buying experience",
+      "paragraphs": [
+        "A counter display, hanging pack and capsule assortment answer different retail needs. Start with your available space and whether shoppers should see the exact design. Then ask the supplier to pack actual samples in the proposed format. Review the assembled display, including the header and access to remaining units as stock sells down."
+      ],
+      "table": {
+        "columns": [
+          "Format",
+          "Useful when",
+          "Confirm before ordering"
+        ],
+        "rows": [
+          [
+            "Counter tray with individual packs",
+            "Shoppers choose a visible design near checkout",
+            "Footprint, height, pack access and units per tray"
+          ],
+          [
+            "Hanging retail pack",
+            "The shop uses hooks or a pegboard",
+            "Packed weight, hang-hole position and readable labels"
+          ],
+          [
+            "Capsule or blind-box display",
+            "The assortment is sold as a surprise collection",
+            "Design ratios, duplicate policy and what the outer pack promises"
+          ],
+          [
+            "Sealed box with a demonstration video",
+            "A shared physical tester is not practical",
+            "Exact product shown, visible size and honest recovery or sound"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Put price, product identity and feel information where buyers can see them",
+      "paragraphs": [
+        "Give each sale unit a recognizable product name or SKU, a clear price and an accurate picture of what is included. Describe the feel in plain language supported by the approved sample: for example, soft PU foam with slow recovery, or a filled TPR toy with a crunchy sound. These are different constructions, even when both look like food.",
+        "For surprise packs, explain whether a purchase contains one random design or a complete set. Do not promise no duplicates unless the agreed packing process supports that claim. Keep food-shaped toys visibly identified as toys, and finalize age information, required labeling and care text for the particular product and destination."
+      ]
+    },
+    {
+      "heading": "Turn display capacity into a realistic first wholesale order",
+      "paragraphs": [
+        "Separate the number of units that fit on the shelf from the number you must buy. LINHAO's current 21-style wholesale selection has a minimum of 500 pieces per style. Four selected styles therefore start at 2,000 pieces; that does not mean 500 pieces split across four styles. Confirm mixed-carton arrangements separately.",
+        "Ask for units per inner pack, units per master carton, carton dimensions and weight, display-pack quantities and any packaging minimums. These are order-specific details, not numbers to infer from a catalog picture. Compare the landed cost with your intended selling price, allowing for freight, applicable charges, demonstration units and unsellable stock."
+      ]
+    },
+    {
+      "heading": "Track sell-through and damage before expanding the assortment",
+      "paragraphs": [
+        "Keep a simple record by SKU: opening stock, deliveries, units sold, units removed from sale and closing sellable stock. Record the reason for removals, such as an opened package, a damaged toy or an incorrect pack. This tells you whether a popular-looking design is selling or mainly creating handling work.",
+        "Use actual sales and confirmed replenishment timing to plan the next order. For example, a SKU selling 10 units a week would take 50 weeks to sell a 500-piece order if that rate stayed constant. This is arithmetic for planning, not a sales forecast. A reorder point can be estimated from weekly sales multiplied by replenishment weeks, plus a buffer chosen for your business."
+      ]
+    },
+    {
+      "heading": "What to send for a retail-ready squishy quotation",
+      "paragraphs": [
+        "Send your selected styles, quantity per style, destination and required arrival date. Include a photo or measurements of the available shelf or counter, the preferred sale pack, and whether you need a demonstration sample or video. Ask for toy, packaging, display and freight information to be shown clearly in the quotation.",
+        "For original PU shapes, LINHAO's starting MOQ is 500 pieces per shape and color. For existing TPR styles, discuss the available mold, colors, logo, inserts and packaging. Display artwork and packing are approved alongside the product sample. Confirm production timing, stock availability and transport separately before announcing a retail launch."
+      ],
+      "checklist": [
+        "Style or original artwork and quantity allocation",
+        "Retail space dimensions and sale-pack format",
+        "Demonstration method and sample requirements",
+        "Destination, arrival target and labeling needs",
+        "Inner pack, master carton and display quantities",
+        "Packaging artwork, barcode area and quotation breakdown"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Should every squishy on display be available for customers to squeeze?",
+      "answer": "Plan a separate demonstration sample if its inspection and care can be managed. Keep stock for sale sealed. If a shared tester is impractical, use a video of the exact product and retain a sample for your own buying decision."
+    },
+    {
+      "question": "Does a capsule display picture confirm the number of toys in each carton?",
+      "answer": "No. Confirm units per capsule pack, display, inner carton and master carton in the quotation and approve the assembled packaging sample."
+    },
+    {
+      "question": "Can I split the 500-piece wholesale minimum across several styles?",
+      "answer": "For LINHAO's current 21-style wholesale selection, the minimum is 500 pieces per style. Mixed-carton packing is a separate question and must be confirmed for the order."
+    },
+    {
+      "question": "How can a retailer choose which squishy styles to reorder?",
+      "answer": "Compare sales, sellable stock, removal reasons and replenishment time by SKU. Online mentions can suggest styles to investigate, but your own sell-through and costs should guide the reorder."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Choose wholesale squishy toys for resale and request a quote",
+      "href": "/wholesale-squishy-toys#first-wholesale-order"
+    },
+    {
+      "label": "Explore custom capsule blind-box collections",
+      "href": "/products/custom-pu-capsule-blind-box-squishy-series"
+    },
+    {
+      "label": "Review crunchy butter samples and sound",
+      "href": "/products/custom-crunchy-butter-squishy"
+    },
+    {
+      "label": "Plan squishy storage and packaging contact checks",
+      "href": "/resources/how-to-store-squishy-toys-guide"
+    },
+    {
+      "label": "Compare wholesale packaging formats",
+      "href": "/resources/wholesale-squishy-toy-packaging-guide"
+    },
+    {
+      "label": "Send a retail display and packaging brief",
+      "href": "/contact#contact-inquiry"
+    }
+  ]
+},
+{
+  "slug": "how-to-store-squishy-toys-guide",
+  "title": "How to Store Squishy Toys: Foam, TPR and Silicone",
+  "seoTitle": "How to Store Squishy Toys | Foam, TPR & Silicone Guide",
+  "description": "Plan squishy toy storage around material, decoration and packaging. Learn what to check for color transfer, compression, individual bags and retail stock.",
+  "eyebrow": "SQUISHY STORAGE GUIDE",
+  "updated": "2026-11-19",
+  "readTime": "6 min read",
+  "quickAnswer": "Store squishy toys according to the care instructions for their exact material and finish. Keep unfamiliar toys separated, give them space rather than forcing them into a tight container, and retain approved protective packaging where appropriate. For wholesale orders, approve the finished toy in its actual bag, insert and carton; a generic storage bag is not automatically compatible with every PU, TPR or silicone product.",
+  "keywords": [
+    "how to store squishy toys",
+    "squishy storage",
+    "foam squishy storage",
+    "squishy color transfer",
+    "squishy storage bags",
+    "TPR squishy storage",
+    "squishy packaging compatibility"
+  ],
+  "caseStudy": {
+    "image": "/images/products/ultra-slow-rising-realistic-pu-food-squishy/textured-bun.jpg",
+    "alt": "Textured bread-shaped PU foam squishy sample showing its painted surface details",
+    "caption": "Actual LINHAO PU food-squishy sample. Its surface detail is a reason to review fit and contact with packaging; this photograph does not establish a storage life or a packaging-test result.",
+    "href": "/products/ultra-slow-rising-realistic-pu-food-squishy",
+    "linkLabel": "View PU food samples and squeeze video"
+  },
+  "sections": [
+    {
+      "heading": "Why collectors are asking about squishy storage",
+      "paragraphs": [
+        "A November 18, 2026 Reddit thread asks how people organize their squishies. One participant wants a container that keeps individual toys separated. An earlier foam-squishy discussion reports color transfer after unbagged toys were left on a shelf, although the writer could not identify what caused it.",
+        "These accounts identify useful questions, not proof that a particular bag or material caused damage. The practical starting point is to identify the toy, its decoration and the surfaces it will touch. The storage and sample-review steps below are recommendations for organizing that decision."
+      ],
+      "sources": [
+        {
+          "label": "Reddit: What Does Your Main Squishy Storage Look Like?",
+          "href": "https://www.reddit.com/r/Squishies/comments/1xzrma6/what_does_your_main_squishy_storage_look_like/"
+        },
+        {
+          "label": "Reddit: how to store and protect foam squishies?",
+          "href": "https://www.reddit.com/r/fidgettoys/comments/1n4fozu/"
+        }
+      ]
+    },
+    {
+      "heading": "Identify the construction before choosing a container",
+      "paragraphs": [
+        "Squishy is a product description, not a material specification. A slow-rising foam bun, a filled rubbery toy and a soft silicone character can require different storage and cleaning instructions. The word Taba, a food shape or a clear bag does not identify the formulation.",
+        "If the material is unknown, keep the product label and ask the seller for its care instructions. Do not apply another brand's cleaning or storage advice just because the toys feel similar. A photograph cannot establish compatibility between the toy and a proposed bag or liner."
+      ],
+      "table": {
+        "columns": [
+          "Construction",
+          "Storage review",
+          "Ask the supplier"
+        ],
+        "rows": [
+          [
+            "Decorated PU foam",
+            "Painted surfaces, raised details and space to retain the intended shape",
+            "Approved bag or insert and acceptable contact or compression"
+          ],
+          [
+            "Filled TPR shell",
+            "Shell condition, closure area and contact with the pack",
+            "Care instructions for the exact shell, filling and decoration"
+          ],
+          [
+            "Molded silicone",
+            "Surface tack, visible transfer and the purpose of the presentation bag",
+            "Compatible contact materials and approved cleaning method"
+          ],
+          [
+            "Plush-covered squishy",
+            "Fabric, seams, exposed areas and shape inside the pack",
+            "Whether the cover is removable and which care method applies"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Use separate spaces instead of compressing a collection into one box",
+      "paragraphs": [
+        "Choose a clean storage space that lets each toy sit in its intended shape. Avoid making a lid or a heavy stack hold a soft toy under pressure. For delicate ears, thin details or attached keyrings, allow enough room so neighboring items do not press against them.",
+        "Separate unfamiliar finishes until their storage compatibility is known. Individual approved packs or suitably sized compartments can help organize the collection, but the compartment and liner are contact materials too. Follow the maker's storage conditions; if a temperature range or storage duration is important, obtain it rather than guessing a universal number."
+      ],
+      "checklist": [
+        "Keep product identity and care information",
+        "Allow room around thin or raised details",
+        "Keep hardware from pressing on painted surfaces",
+        "Avoid pressure from a tight lid or heavy stack",
+        "Use approved contact materials",
+        "Check stored items for visible changes"
+      ]
+    },
+    {
+      "heading": "Are zip bags or the original packaging always suitable?",
+      "paragraphs": [
+        "No bag type should be treated as universally suitable. Ask whether the original pack was designed for transport, long-term storage, display or squeezing through the bag. Those uses place different demands on its fit, seams and closure. A split or visibly contaminated pack should not be treated as protective storage.",
+        "For a new collection, check the actual bag, printed card, insert and toy together. A replacement zip bag may differ from the approved pack even if it looks similar. Likewise, paper or fabric liners are not automatic fixes for an unknown transfer problem. Do not add powders, oils or cleaners as a storage treatment unless the maker approves them for that finished product."
+      ]
+    },
+    {
+      "heading": "What to do if you notice color transfer or a surface change",
+      "paragraphs": [
+        "Separate the affected item and photograph the mark, the neighboring item and the packaging before changing anything. Record how it was stored and what it touched. The appearance of a mark alone does not establish its source, so send the observations to the supplier rather than assuming that the toy or container is responsible.",
+        "Use only the approved cleaning instructions. If a toy is torn, leaking or damaged, remove it from use and follow the maker's advice rather than treating a home repair as evidence that it is ready to use again. Keep the item and order information identifiable so a retailer can investigate the affected batch."
+      ]
+    },
+    {
+      "heading": "For wholesale buyers: approve a packed sample, not just a loose toy",
+      "paragraphs": [
+        "Request finished, decorated samples in the proposed retail pack and master-carton arrangement. Keep an unpacked reference for comparison. Agree with the supplier on the storage period, conditions, loading and review criteria that represent your order; this is a product acceptance exercise, not a universal certification test.",
+        "At the agreed review point, photograph shape, paint, contact marks, bag condition and any change in feel or opening odor. Record the package material and artwork version. If the bag, insert, decoration or formulation changes later, review that combination again instead of assuming the previous approval still applies."
+      ],
+      "checklist": [
+        "Product SKU, material and sample version",
+        "Actual bag, printed card, insert and carton",
+        "Agreed storage duration and conditions",
+        "Unpacked comparison sample",
+        "Photos before packing and after review",
+        "Written acceptance criteria and follow-up actions"
+      ]
+    },
+    {
+      "heading": "Include storage requirements in your custom squishy brief",
+      "paragraphs": [
+        "Tell LINHAO how the toys will be sold and stored: individually displayed, kept as a collection, placed in a capsule, shipped in a multipack or held as retail backstock. Send dimensions, quantity, destination and the proposed packaging. This makes fit and storage requirements part of sampling rather than an afterthought.",
+        "For original PU designs, MOQ starts at 500 pieces per shape and color. Existing TPR molds offer options for colors, logo, inserts and packaging, subject to the selected item. Custom silicone projects start at 1,000 pieces, with allocation confirmed in the quotation. Storage compatibility and product-specific care should be approved for the final sample in each case."
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can different squishies be stored together?",
+      "answer": "Use separate approved packs or compartments when the finishes and their compatibility are unknown. Do not assume that different toys can remain in direct contact simply because they are all called squishies."
+    },
+    {
+      "question": "Should slow-rising foam squishies stay compressed in storage?",
+      "answer": "Choose packing that supports the intended shape and ask the maker what compression is acceptable. A toy's recovery after a hand squeeze does not establish its response to prolonged pressure inside a tightly packed container."
+    },
+    {
+      "question": "Will an ordinary zip bag prevent color transfer?",
+      "answer": "It is not a universal guarantee. Review the toy and the actual bag or liner together, including decoration and any printed surfaces. Use the packing approved for that product."
+    },
+    {
+      "question": "Does a storage check replace toy safety testing?",
+      "answer": "No. A storage and packaging review checks agreed product conditions. It does not replace the finished-product documentation or testing required for the intended age range and destination."
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "Explore custom PU food squishy samples",
+      "href": "/products/ultra-slow-rising-realistic-pu-food-squishy"
+    },
+    {
+      "label": "Compare PU, TPR and silicone constructions",
+      "href": "/resources/pu-vs-tpr-vs-silicone-squishy-material-guide"
+    },
+    {
+      "label": "Review painted PU surface quality",
+      "href": "/resources/custom-pu-squishy-paint-rubbing-off-guide"
+    },
+    {
+      "label": "Plan retail displays and demonstration stock",
+      "href": "/resources/squishy-toy-retail-display-tester-stock-guide"
+    },
+    {
+      "label": "Prepare private-label care instructions",
+      "href": "/resources/private-label-squishy-toy-care-instructions-guide"
+    },
+    {
+      "label": "Request product and packaging samples",
+      "href": "/contact#contact-inquiry"
+    }
+  ]
+},
 {
   "slug": "silicone-squishy-sticky-oily-softness-quality-guide",
   "title": "Silicone Squishy Toys: Stickiness, Oil Transfer, Softness and Packaging",
